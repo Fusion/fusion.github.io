@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta property="og:title" content=" Clean-up Wordpress and upgrade to 3.0 &middot;  The Nexus" />
+    <meta property="og:site_name" content="The Nexus" />
+    <meta property="og:url" content="http://nexus.zteo.com/posts/clean-up-wordpress-and-upgrade-to-30/" />
+
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content="2010-05-27T08:27:57Z" />
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta name="twitter:title" content="Clean-up Wordpress and upgrade to 3.0" />
+    
+    <meta name="twitter:image" content="http://nexus.zteo.com/images/97092d35-098f-4a20-89fd-414a8606ef24.png" />
+    
+    <meta name="twitter:description" content="That&rsquo;s something I had to do myself recently. It was not quite as painful as I feared it to be.
+My aging Wordpress install had certainly gone through its share of hacking: I started with a 1.x version, added multi-blog plugins, uninstalled them, moved to Wordpress MU, then back to single-blog Wordpress. In the process I wrote scripts to rename my tables, added multi- domains plugins&hellip;all the while manually upgrading to various 2." />
+    <meta name="twitter:url" content="http://nexus.zteo.com/posts/clean-up-wordpress-and-upgrade-to-30/" />
+    
+
+    <title> Clean-up Wordpress and upgrade to 3.0 &middot;  The Nexus</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://nexus.zteo.com//js/main.js" as="script" />
+    <link rel="preload" href="http://nexus.zteo.com//css/main.css" as="style" />
+    
+    <link rel="preload" href="http://nexus.zteo.com//css/cfr.css" as="style" />
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/cfr.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/syntax.css">
+    
+    
+    
+
+
+    
+    <meta name="description" content="Clean-up Wordpress and upgrade to 3.0" />
+    
+
+    
+    <meta name="p:domain_verify" content=""/>
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+
+    
+    <link href="http://nexus.zteo.com/index.xml" rel="alternate" type="application/rss+xml" title="The Nexus" />
+    
+
+    
+    <link rel="canonical" href="http://nexus.zteo.com/posts/clean-up-wordpress-and-upgrade-to-30/" />
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://nexus.zteo.com/posts/clean-up-wordpress-and-upgrade-to-30/"
+        },
+        "headline": "Clean-up Wordpress and upgrade to 3.0",
+        "description": "Clean-up Wordpress and upgrade to 3.0",
+        "author": {
+            "@type": "Person",
+            "name": " ",
+            "url": "http://profiles.google.com/?rel=author",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https:",
+              "height": 80,
+              "width": 80
+            }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "http://nexus.zteo.com/",
+          "name": "The Nexus",
+          "url": "http://nexus.zteo.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https:",
+            "height": 80,
+            "width": 80
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://nexus.zteo.com/97092d35-098f-4a20-89fd-414a8606ef24.png",
+          "height": 133,
+          "width": 200
+        },
+        "datePublished": "2010-05-27",
+        "dateModified": "2010-05-27",
+        "wordCount": 733,
+        
+    }
+    </script>
+    
+
+    
+    <script type="text/javascript">
+        
+        
+    </script>
+    
+
+    <script type="text/javascript">
+        var config = {
+            baseUrl: "http:\/\/nexus.zteo.com\/"
+        };
+    </script>
+
+</head>
+<body class="home-template">
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+<section id="wrapper" style="display: none;">
+    <div id="ajax-container">
+        <nav id="nav" class="nav">
+            <div class="nav-logo">
+                <a href="http://nexus.zteo.com/">
+                    
+                    The Nexus
+                    
+                </a>
+            </div>
+            <div id="main-menu" class="nav-menu">
+                
+                
+                <a id="search-button" onclick="$('#search-form').toggle();" title="Search"><i class="fa fa-search"></i></a>
+                <form id="search-form" method="get" role="search" action="https://google.com/search">
+                    <input type="hidden" name="as_sitesearch" value="http://nexus.zteo.com/">
+                    <input type="text" name="q" maxlength="255" placeholder="Search..." class="form-control">
+                    <input type="submit" value="Search">
+                </form>
+                
+                
+                
+                
+            </div>
+        </nav>
+
+
+<main class="content" role="main">
+    <article class="post post-with-bg">
+        <div class="inner">
+
+            <div id="push">
+
+                <header class="post-header">
+                
+                    <span class="post-meta">
+                        <span class="post-date">27 May 2010</span> <span class="reading-time">| <span class="estimated-reading-time">4 min.</span> (<span class="word-count">733</span> words)</span></span>
+                    </span>
+                <div class="clear"></div>
+                
+                <h1 class="post-title">Clean-up Wordpress and upgrade to 3.0</h1>
+              </header>
+
+              <section class="post-content">
+                
+                  
+
+<p><a href="http://www.flickr.com/photos/datacharmer/3543295520/"><img src="/images/3543295520_0ae9d41929_o-300x300.png" alt="" /></a>That&rsquo;s
+something I had to do myself recently. It was not quite as painful as I feared
+it to be.<br />
+My aging Wordpress install had certainly gone through its share of hacking: I
+started with a 1.x version, added multi-blog plugins, uninstalled them, moved
+to <a href="http://mu.wordpress.org/">Wordpress MU</a>, then back to single-blog
+Wordpress. In the process I wrote scripts to rename my tables, added multi-
+domains plugins&hellip;all the while manually upgrading to various 2.x releases.<br />
+Things stopped working. Helpful things, such as JavaScript, just about
+everywhere.</p>
+
+<p>Now, Wordpress 3.0 is about to be released, nightly builds are available, and
+migrating to 3.0 is going to prove a challenge on its own since it re-
+introduces multi-blogs support and, as a major release, existing Wordpress
+installed databases will be quite &ndash; but hopefully gently &ndash; re-shaped by the
+upgrade process.</p>
+
+<p>So, here is what I consider the safest upgrade/clean-up path. I hope it works
+for you as well as it does for me. Everything is now back to stable and
+working and I am not seeing major incompatibilities with any of my existing
+plug-ins.</p>
+
+<h2 id="cleaning-up-the-database">Cleaning-up the Database</h2>
+
+<p>This is something I recommend doing if you have been using Wordpress MU or any
+other plug-in that renames your tables.<br />
+First, dump your old database&rsquo;s content into a temporary file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mysqldump old_database_name &gt; tmp.sql</code></pre></div>
+<p>If you need to rename tables, edit tmp.sql; in my case, I use vi (sorry!) and
+this command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plaintext" data-lang="plaintext">:%s/wp_xxxxxx_/wp_/g</code></pre></div>
+<p>where _wp_xxxxxx__ represents the prefix used by your plug-in. For instance,
+when using Wordpress MU with the Nexus, it was something like
+_wp_nexus_zteo_com__<br />
+If you have a statistics plug-in, you may also reclaim a fantastic amount of
+space by removing its data from your export file.</p>
+
+<p>BTW, I have not tested it myself but there is a plug-in you might be
+interested in using before you dump your old database: Wordpress Cleanup, by
+Nisipeanu Mihai, discards comments tagged as spam as well as pages and posts
+revisions: <a href="http://wiki.nisi.ro/my-wordpress-plugins/cleanup-
+wordpress-plugin/">plugin page</a>.</p>
+
+<h2 id="new-install">New Install</h2>
+
+<p>Create a new database, let&rsquo;s call it &ldquo;new_database_name.&rdquo;<br />
+You need to create a new install with the same version of Wordpress you are
+currently running. It is very likely that you do not have the archive handy
+anymore. It&rsquo;s not a problem: just go to
+<a href="http://wordpress.org/download/release-archive/">http://wordpress.org/download/release-archive/</a> and download your version.</p>
+
+<p><strong>Note:</strong> You can check your current version in the Dashboard in the ACP
+(&ldquo;Right Now&rdquo;)<br />
+Expand the Wordpress archive to a new directory. By default, it will be
+<em>wordpress/</em>. You can rename it to something else if you need to but I will
+keep referring to it as <em>wordpress/</em> in this post.<br />
+Now, go to the link where your new &ldquo;old&rdquo; install can be found and install.
+Provide your new database&rsquo;s info.<br />
+When your pristine new blog is fully installed, import your cured file into
+the new database, clobbering whatever was installed just now:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mysql new_database_name &lt; tmp.sql</code></pre></div>
+<h2 id="upgrade">Upgrade</h2>
+
+<p>This is where the magic happens. We are going to left Wordpress upgrade your
+install.<br />
+Until Wordpress 3.0 reaches final status, we will use Peter Westwood&rsquo;s plugin
+to perform the upgrade. Get it from
+<a href="http://wordpress.org/extend/plugins/wordpress-beta-tester/">http://wordpress.org/extend/plugins/wordpress-beta-tester/</a><br />
+Activate the plug-in, then go to Tools &gt; Beta Testing and select <em>Nightly
+builds</em>.<br />
+Finally, choose Tools &gt; Upgrade.</p>
+
+<p>Because you installed Wordpress in a new place, but you wish to preserve your
+Google juice, you will want to make sure that your blog is still available at
+the &ldquo;old&rdquo; place. Doing so requires playing musical chairs with your
+directories. For instance:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mv old_directory bogus_name  
+mv wordpress old_directory</code></pre></div>
+<p>But that&rsquo;s not all! You need to inform Wordpress of its relocation. In MySQL:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">update</span> <span class="n">wp_options</span> <span class="k">set</span> <span class="n">option_value</span><span class="o">=</span><span class="k">replace</span><span class="p">(</span><span class="n">option_value</span><span class="p">,</span><span class="s1">&#39;temporary_new_link&#39;</span><span class="p">,</span><span class="s1">&#39;old_link&#39;</span><span class="p">);</span></code></pre></div>
+<p>For instance if your blog was originally found at <a href="http://example.com/blog">http://example.com/blog</a> and
+you expanded your new Wordpress install at the same level, this new blog
+should be found at <a href="http://example.com/wordpress">http://example.com/wordpress</a>.<br />
+You would therefore type, from the command-line (you may also use a web
+interface, simply adapt as needed):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mv blog old_blog  
+mv wordpress blog</code></pre></div>
+<p>And in MySQL:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">update</span> <span class="n">wp_options</span> <span class="k">set</span> <span class="n">option_value</span><span class="o">=</span><span class="k">replace</span><span class="p">(</span><span class="n">option_value</span><span class="p">,</span><span class="s1">&#39;www.example.com/wordpress&#39;</span><span class="p">,</span><span class="s1">&#39;www.example.com/blog&#39;</span><span class="p">);</span></code></pre></div>
+<p>You could, alternately, just completely remove your old directory. But it&rsquo;s
+good practice to keep it around until you know that everything is spick and
+span.</p>
+
+<h2 id="help-it-s-all-messed-up">Help! It&rsquo;s all messed up!</h2>
+
+<p>Well, let me know, I may be able to assist with that.<br />
+Note that thanks to the paranoid steps we just took, it is extremely easy to
+revert to your original install. Following the example we just used:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mv old_blog blog</code></pre></div>
+<p>Done!</p>
+
+              </section>
+
+              <footer class="post-footer">
+                  <div class="post-tags">
+            
+                  </div>
+                
+              </footer>
+
+            
+                <aside class="post-comments">
+    
+    
+    
+</aside>
+
+            
+            </div>
+
+            <nav class="post-nav">
+                
+                    <a class="post-nav-item post-nav-next" href="http://nexus.zteo.com/posts/notes-on-enabling-multisites-in-wp30/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">Notes on enabling multisites in WP3.0</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                
+                    <a class="post-nav-item post-nav-prev" href="http://nexus.zteo.com/posts/google-analytics-wordpress-plugins/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">Google Analytics Wordpress Plugins</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                <div class="clear"></div>
+            </nav>
+
+        </div>
+    </article>
+</main>
+
+                <div id="body-class" style="display: none;"></div>
+                <footer id="footer">
+                    <section class="credits">
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2018 The Nexus
+                    </span>
+                    </section>
+                </footer>
+                
+
+                
+
+                
+                <div class="overlay"></div>
+            </div>
+        </section>
+
+<video autoplay loop id="video-background" muted plays-inline>
+<source src="http://nexus.zteo.com/static/vid/hd0198.mp4" type="video/mp4">
+</video>
+
+
+
+    <script async src="http://nexus.zteo.com//js/main.js"></script>
+
+
+
+  <noscript><link rel="stylesheet" href="http://nexus.zteo.com//css/main.css"></noscript>
+</body>
+</html>
+

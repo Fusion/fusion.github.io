@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta property="og:title" content=" C coroutines: no assembly (bad pun) required &middot;  The Nexus" />
+    <meta property="og:site_name" content="The Nexus" />
+    <meta property="og:url" content="http://nexus.zteo.com/posts/c-coroutines-no-assembly-bad-pun-required/" />
+
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content="2013-08-21T01:53:06Z" />
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta name="twitter:title" content="C coroutines: no assembly (bad pun) required" />
+    
+    <meta name="twitter:image" content="http://nexus.zteo.com/images/0927b440-3633-45de-8724-dc87e55a05b3.jpg" />
+    
+    <meta name="twitter:description" content="I was reading Yossi Kreinin&rsquo;s quick&rsquo;n fun way to implement coroutines in C and, as an embedded development architect, was a bit saddened by the &ndash; necessary &ndash; use of assembly code to manage a separate stack.
+Granted, it&rsquo;s only a few lines of code, but hey, why re-invent the wheel when we can use existing tools and badmouth Posix a little bit in the process?
+Posix? Well, yes. Reading his solution it is immediately obvious that rather than setjmp()/longjmp() one could use context management functions." />
+    <meta name="twitter:url" content="http://nexus.zteo.com/posts/c-coroutines-no-assembly-bad-pun-required/" />
+    
+
+    <title> C coroutines: no assembly (bad pun) required &middot;  The Nexus</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://nexus.zteo.com//js/main.js" as="script" />
+    <link rel="preload" href="http://nexus.zteo.com//css/main.css" as="style" />
+    
+    <link rel="preload" href="http://nexus.zteo.com//css/cfr.css" as="style" />
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/cfr.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/syntax.css">
+    
+    
+    
+
+
+    
+    <meta name="description" content="C coroutines: no assembly (bad pun) required" />
+    
+
+    
+    <meta name="p:domain_verify" content=""/>
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+
+    
+    <link href="http://nexus.zteo.com/index.xml" rel="alternate" type="application/rss+xml" title="The Nexus" />
+    
+
+    
+    <link rel="canonical" href="http://nexus.zteo.com/posts/c-coroutines-no-assembly-bad-pun-required/" />
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://nexus.zteo.com/posts/c-coroutines-no-assembly-bad-pun-required/"
+        },
+        "headline": "C coroutines: no assembly (bad pun) required",
+        "description": "C coroutines: no assembly (bad pun) required",
+        "author": {
+            "@type": "Person",
+            "name": " ",
+            "url": "http://profiles.google.com/?rel=author",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https:",
+              "height": 80,
+              "width": 80
+            }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "http://nexus.zteo.com/",
+          "name": "The Nexus",
+          "url": "http://nexus.zteo.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https:",
+            "height": 80,
+            "width": 80
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://nexus.zteo.com/0927b440-3633-45de-8724-dc87e55a05b3.jpg",
+          "height": 133,
+          "width": 200
+        },
+        "datePublished": "2013-08-21",
+        "dateModified": "2013-08-21",
+        "wordCount": 667,
+        
+    }
+    </script>
+    
+
+    
+    <script type="text/javascript">
+        
+        
+    </script>
+    
+
+    <script type="text/javascript">
+        var config = {
+            baseUrl: "http:\/\/nexus.zteo.com\/"
+        };
+    </script>
+
+</head>
+<body class="home-template">
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+<section id="wrapper" style="display: none;">
+    <div id="ajax-container">
+        <nav id="nav" class="nav">
+            <div class="nav-logo">
+                <a href="http://nexus.zteo.com/">
+                    
+                    The Nexus
+                    
+                </a>
+            </div>
+            <div id="main-menu" class="nav-menu">
+                
+                
+                <a id="search-button" onclick="$('#search-form').toggle();" title="Search"><i class="fa fa-search"></i></a>
+                <form id="search-form" method="get" role="search" action="https://google.com/search">
+                    <input type="hidden" name="as_sitesearch" value="http://nexus.zteo.com/">
+                    <input type="text" name="q" maxlength="255" placeholder="Search..." class="form-control">
+                    <input type="submit" value="Search">
+                </form>
+                
+                
+                
+                
+            </div>
+        </nav>
+
+
+<main class="content" role="main">
+    <article class="post post-with-bg">
+        <div class="inner">
+
+            <div id="push">
+
+                <header class="post-header">
+                
+                    <span class="post-meta">
+                        <span class="post-date">21 Aug 2013</span> <span class="reading-time">| <span class="estimated-reading-time">4 min.</span> (<span class="word-count">667</span> words)</span></span>
+                    </span>
+                <div class="clear"></div>
+                
+                <h1 class="post-title">C coroutines: no assembly (bad pun) required</h1>
+              </header>
+
+              <section class="post-content">
+                
+                  
+
+<p><img src="/images/ID-100181779.jpg" alt="Image courtesy of machipai/FreeDigitalPhotos.net" /> I was reading Yossi Kreinin&rsquo;s quick&rsquo;n fun way to <a href="http://www.embeddedrelated.com/showarticle/455.php">implement coroutines in C</a> and, as an embedded
+development architect, was a bit saddened by the &ndash; necessary &ndash; use of
+assembly code to manage a separate stack.</p>
+
+<p>Granted, it&rsquo;s only a few lines of code, but hey, why re-invent the wheel when
+we can use existing tools and badmouth Posix a little bit in the process?</p>
+
+<h2 id="posix">Posix?</h2>
+
+<p>Well, yes. Reading his solution it is immediately obvious that rather than
+setjmp()/longjmp() one could use context management functions. This approach
+uses the context maintained for thread management to implement coroutines
+persistency. Except, well. Someone working on Posix decided that it was a bad
+thing and deprecated these calls, leaving us with a different type of
+alternative: nothing!</p>
+
+<p>Or, if you feel like it, you can re invent everything yourself. You know, <em>no
+one</em> ever got confused by threads, right?</p>
+
+<p>Anyway, deprecated or not you will find that I am not the only one out there
+saying &ldquo;Hey, they still work and they work well!&rdquo;</p>
+
+<h2 id="listing-time">Listing Time!</h2>
+
+<p>Here is what our test file will look like. As you can see, I kept it as
+similar as possible to Yuri&rsquo;s implementation. I simply added an extra test to
+ensure that I can use coroutines multiple times and reuse them if I want to.</p>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&#34;coroutine.h&#34;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="n">coroutine</span><span class="o">*</span> <span class="n">c</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">max_x</span><span class="p">,</span> <span class="n">max_y</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">iter</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">iterate</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">iter</span><span class="o">*</span> <span class="n">it</span> <span class="o">=</span> <span class="p">(</span><span class="n">iter</span><span class="o">*</span><span class="p">)</span><span class="n">p</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">xmax_x</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">ymax_y</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">it</span><span class="o">-&gt;</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+        <span class="n">it</span><span class="o">-&gt;</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>
+        <span class="n">yield</span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">c</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">coroutine</span> <span class="n">c</span><span class="p">;</span>
+    <span class="n">iter</span> <span class="n">it</span> <span class="o">=</span> <span class="p">{</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">};</span>
+    <span class="n">puts</span><span class="p">(</span><span class="s">&#34;Running coroutine test...&#34;</span><span class="p">);</span>
+    <span class="n">start</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">iterate</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">it</span><span class="p">);</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">next</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">it</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">it</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">puts</span><span class="p">(</span><span class="s">&#34;Can I use a coroutine multiple times?&#34;</span><span class="p">);</span>
+    <span class="n">start</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">iterate</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">it</span><span class="p">);</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">next</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">it</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">it</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">puts</span><span class="p">(</span><span class="s">&#34;All done.&#34;</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Of course, a few definitions go into coroutine.h:</p>
+<div class="highlight"><pre class="chroma"><code class="language-h" data-lang="h"><span class="cp">#define _XOPEN_SOURCE 600
+</span><span class="cp">#include</span> 
+
+<span class="cpf">enum { COROUTINE_IDLE = 0, COROUTINE_YIELDING, COROUTINE_DONE };</span><span class="cp">
+</span><span class="cp"></span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="n">ucontext_t</span> <span class="n">callee_context</span><span class="p">;</span>
+    <span class="n">ucontext_t</span> <span class="n">caller_context</span><span class="p">;</span>
+    <span class="k">volatile</span> <span class="kt">char</span> <span class="n">state</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">coroutine</span><span class="p">;</span>
+
+<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">func</span><span class="p">)(</span><span class="kt">void</span><span class="o">*</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="nf">start</span><span class="p">(</span><span class="n">coroutine</span><span class="o">*</span> <span class="n">c</span><span class="p">,</span> <span class="n">func</span> <span class="n">f</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">arg</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">yield</span><span class="p">(</span><span class="n">coroutine</span><span class="o">*</span> <span class="n">c</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">next</span><span class="p">(</span><span class="n">coroutine</span><span class="o">*</span> <span class="n">c</span><span class="p">);</span></code></pre></div>
+<p>Yes, the first line was necessary to please OS X.</p>
+
+<p>And finally, coroutine.c:</p>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&#34;coroutine.h&#34;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="kt">void</span> <span class="nf">yield</span><span class="p">(</span><span class="n">coroutine</span><span class="o">*</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">c</span><span class="o">-&gt;</span><span class="n">state</span> <span class="o">=</span> <span class="n">COROUTINE_YIELDING</span><span class="p">;</span>
+    <span class="n">swapcontext</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">callee_context</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">caller_context</span><span class="p">);</span>
+    <span class="n">c</span><span class="o">-&gt;</span><span class="n">state</span> <span class="o">=</span> <span class="n">COROUTINE_DONE</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">next</span><span class="p">(</span><span class="n">coroutine</span><span class="o">*</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// This first guard check added in case the callee doesn&#39;t return.
+</span><span class="c1"></span>    <span class="c1">// Yes it&#39;s an error but at least not a crash.
+</span><span class="c1"></span>    <span class="k">if</span><span class="p">(</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">state</span> <span class="o">!=</span> <span class="n">COROUTINE_DONE</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">swapcontext</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">caller_context</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">callee_context</span><span class="p">);</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">state</span> <span class="o">!=</span> <span class="n">COROUTINE_DONE</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">coroutine_wrap</span><span class="p">(</span><span class="n">coroutine</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="n">func</span> <span class="n">f</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">f</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+    <span class="n">c</span><span class="o">-&gt;</span><span class="n">state</span> <span class="o">=</span> <span class="n">COROUTINE_DONE</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">start</span><span class="p">(</span><span class="n">coroutine</span><span class="o">*</span> <span class="n">c</span><span class="p">,</span> <span class="n">func</span> <span class="n">f</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">arg</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">c</span><span class="o">-&gt;</span><span class="n">state</span> <span class="o">=</span> <span class="n">COROUTINE_IDLE</span><span class="p">;</span>
+    <span class="n">getcontext</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">callee_context</span><span class="p">);</span>
+    <span class="k">const</span> <span class="kt">int</span> <span class="n">stack_size</span> <span class="o">=</span> <span class="mi">64</span><span class="o">*</span><span class="mi">1024</span><span class="p">;</span>  <span class="c1">// Still arbitrary! But at least big enough...
+</span><span class="c1"></span>    <span class="n">c</span><span class="o">-&gt;</span><span class="n">callee_context</span><span class="p">.</span><span class="n">uc_stack</span><span class="p">.</span><span class="n">ss_sp</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">stack_size</span><span class="p">);</span>
+    <span class="n">c</span><span class="o">-&gt;</span><span class="n">callee_context</span><span class="p">.</span><span class="n">uc_stack</span><span class="p">.</span><span class="n">ss_size</span> <span class="o">=</span> <span class="n">stack_size</span><span class="p">;</span>
+    <span class="n">c</span><span class="o">-&gt;</span><span class="n">callee_context</span><span class="p">.</span><span class="n">uc_link</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">caller_context</span><span class="p">;</span>
+    <span class="n">makecontext</span><span class="p">(</span><span class="o">&amp;</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">callee_context</span><span class="p">,</span> <span class="n">coroutine_wrap</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">arg</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Fun fact #1:hey look in this implementation I&rsquo;m leaking the stack!</p>
+
+<p>Fun fact #2: speaking of&hellip;make sure your stack is big enough or you will
+notice some surprising behaviors such as your app simply failing &ndash; silently
+&ndash; to swap contexts.</p>
+
+<p>Fun fact #3: yes, I am aware that context functions themselves are likely to
+manipulate the stack using assembly language. Would you rather do it yourself
+for all your potential target architectures?</p>
+
+<h2 id="what-s-different">What&rsquo;s different?</h2>
+
+<p>Well, using contexts forced me to change the algorithm somewhat. For instance,
+I am now wrapping my coroutine in a function that will make a note of our
+coroutine&rsquo;s state change, letting the iterator function know that we are done.
+I also check this guard twice to ensure that if we have a runaway coroutine,
+at least our main task will not crash.</p>
+
+<p>As you can see, regardless of the method used, it is still feasible to
+implement coroutines quite economically.</p>
+
+<p>I am considering pushing this bit of code to Github; after all, like my
+<a href="https://github.com/Fusion/CActor">C-Actor library</a>, it&rsquo;s not as much size as
+what you can do with it that matters.</p>
+
+              </section>
+
+              <footer class="post-footer">
+                  <div class="post-tags">
+            
+                  </div>
+                
+              </footer>
+
+            
+                <aside class="post-comments">
+    
+    
+    
+</aside>
+
+            
+            </div>
+
+            <nav class="post-nav">
+                
+                    <a class="post-nav-item post-nav-next" href="http://nexus.zteo.com/posts/journleragain-and-mavericks/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">Journler(Again) and Mavericks</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                
+                    <a class="post-nav-item post-nav-prev" href="http://nexus.zteo.com/posts/memonic-extension-patched-for-google-chrome/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">Memonic extension patched for Google Chrome</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                <div class="clear"></div>
+            </nav>
+
+        </div>
+    </article>
+</main>
+
+                <div id="body-class" style="display: none;"></div>
+                <footer id="footer">
+                    <section class="credits">
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2018 The Nexus
+                    </span>
+                    </section>
+                </footer>
+                
+
+                
+
+                
+                <div class="overlay"></div>
+            </div>
+        </section>
+
+<video autoplay loop id="video-background" muted plays-inline>
+<source src="http://nexus.zteo.com/static/vid/hd0198.mp4" type="video/mp4">
+</video>
+
+
+
+    <script async src="http://nexus.zteo.com//js/main.js"></script>
+
+
+
+  <noscript><link rel="stylesheet" href="http://nexus.zteo.com//css/main.css"></noscript>
+</body>
+</html>
+

@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta property="og:title" content=" Update your XAMPP PHP and keep Mediawiki &amp; Drupal happy &middot;  The Nexus" />
+    <meta property="og:site_name" content="The Nexus" />
+    <meta property="og:url" content="http://nexus.zteo.com/posts/update-your-xampp-php-and-keep-mediawiki-drupal-happy/" />
+
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content="2010-09-22T07:19:29Z" />
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta name="twitter:title" content="Update your XAMPP PHP and keep Mediawiki &amp; Drupal happy" />
+    
+    <meta name="twitter:image" content="http://nexus.zteo.com/images/73eeef74-26e5-4918-a6b3-36745bbf1b08.jpg" />
+    
+    <meta name="twitter:description" content="Once again, the &ndash; otherwise very nice, I&rsquo;m sure &ndash; PHP people have done this thing that has made me miserable with my own open-source code and is now also affecting Mediawiki: in PHP 5.3.1, references passed to __call() are silently turned into values.
+Apparently, this bug was fixed but a contract was broken in the process: even if packages such as Wikipedia or Drupal were wrong in the way they were passing references, this used to work." />
+    <meta name="twitter:url" content="http://nexus.zteo.com/posts/update-your-xampp-php-and-keep-mediawiki-drupal-happy/" />
+    
+
+    <title> Update your XAMPP PHP and keep Mediawiki &amp; Drupal happy &middot;  The Nexus</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://nexus.zteo.com//js/main.js" as="script" />
+    <link rel="preload" href="http://nexus.zteo.com//css/main.css" as="style" />
+    
+    <link rel="preload" href="http://nexus.zteo.com//css/cfr.css" as="style" />
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/cfr.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/syntax.css">
+    
+    
+    
+
+
+    
+    <meta name="description" content="Update your XAMPP PHP and keep Mediawiki &amp; Drupal happy" />
+    
+
+    
+    <meta name="p:domain_verify" content=""/>
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+
+    
+    <link href="http://nexus.zteo.com/index.xml" rel="alternate" type="application/rss+xml" title="The Nexus" />
+    
+
+    
+    <link rel="canonical" href="http://nexus.zteo.com/posts/update-your-xampp-php-and-keep-mediawiki-drupal-happy/" />
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://nexus.zteo.com/posts/update-your-xampp-php-and-keep-mediawiki-drupal-happy/"
+        },
+        "headline": "Update your XAMPP PHP and keep Mediawiki &amp; Drupal happy",
+        "description": "Update your XAMPP PHP and keep Mediawiki &amp; Drupal happy",
+        "author": {
+            "@type": "Person",
+            "name": " ",
+            "url": "http://profiles.google.com/?rel=author",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https:",
+              "height": 80,
+              "width": 80
+            }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "http://nexus.zteo.com/",
+          "name": "The Nexus",
+          "url": "http://nexus.zteo.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https:",
+            "height": 80,
+            "width": 80
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://nexus.zteo.com/73eeef74-26e5-4918-a6b3-36745bbf1b08.jpg",
+          "height": 133,
+          "width": 200
+        },
+        "datePublished": "2010-09-22",
+        "dateModified": "2010-09-22",
+        "wordCount": 371,
+        
+    }
+    </script>
+    
+
+    
+    <script type="text/javascript">
+        
+        
+    </script>
+    
+
+    <script type="text/javascript">
+        var config = {
+            baseUrl: "http:\/\/nexus.zteo.com\/"
+        };
+    </script>
+
+</head>
+<body class="home-template">
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+<section id="wrapper" style="display: none;">
+    <div id="ajax-container">
+        <nav id="nav" class="nav">
+            <div class="nav-logo">
+                <a href="http://nexus.zteo.com/">
+                    
+                    The Nexus
+                    
+                </a>
+            </div>
+            <div id="main-menu" class="nav-menu">
+                
+                
+                <a id="search-button" onclick="$('#search-form').toggle();" title="Search"><i class="fa fa-search"></i></a>
+                <form id="search-form" method="get" role="search" action="https://google.com/search">
+                    <input type="hidden" name="as_sitesearch" value="http://nexus.zteo.com/">
+                    <input type="text" name="q" maxlength="255" placeholder="Search..." class="form-control">
+                    <input type="submit" value="Search">
+                </form>
+                
+                
+                
+                
+            </div>
+        </nav>
+
+
+<main class="content" role="main">
+    <article class="post post-with-bg">
+        <div class="inner">
+
+            <div id="push">
+
+                <header class="post-header">
+                
+                    <span class="post-meta">
+                        <span class="post-date">22 Sep 2010</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">371</span> words)</span></span>
+                    </span>
+                <div class="clear"></div>
+                
+                <h1 class="post-title">Update your XAMPP PHP and keep Mediawiki &amp; Drupal happy</h1>
+              </header>
+
+              <section class="post-content">
+                
+                  
+
+<p><img src="/images/4331595990_614ef8f1b6-289x300.jpg" alt="" />Once again,
+the &ndash; otherwise very nice, I&rsquo;m sure &ndash; PHP people have done this thing that
+has made me miserable with my own open-source code and is now <a href="http://bugs.php.net/bug.php?id=50394">also affecting
+Mediawiki</a>: in PHP 5.3.1, references
+passed to __<em>call()</em> are silently turned into values.<br />
+Apparently, this bug was fixed but <strong>a contract was broken</strong> in the process:
+even if packages such as Wikipedia or Drupal were wrong in the way they were
+passing references, this used to work. Now, when running the same code, not
+only is a warning issued &ndash; good &ndash; but the function is <strong>not called</strong>. The
+latter is quite hard to justify.<br />
+Of course, this means that a simple &ldquo;dot&rdquo; upgrade can render your whole
+website <strong>unusable</strong> ; it&rsquo;s a pill that&rsquo;s a tad hard to swallow.</p>
+
+<p>If you are running a LAMP stack, such as XAMPP, from
+<a href="http://www.apachefriends.org/">ApacheFriends</a>, you may feel that you are
+sorry out of luck. XAMPP, for instance, currently ships with PHP 5.3.1 and the
+Mediawiki updater encourages you to either upgrade or downgrade your version
+of PHP. How do you do this when running a full stack? XAMPP Beta, for
+instance, does not come with an upgrade path to the next release. I scoured
+the their forums and did not find much advice on how to get things back up and
+running without pain.</p>
+
+<p>So, here is how to <strong>upgrade your PHP version</strong> -- and PHP only &ndash; to 5.3.3,
+while Apache, MySQL, etc. remain untouched. Oh and that &rsquo;s on Linux.</p>
+
+<p>Go to your XAMPP root directory. Typically:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /opt/lampp</code></pre></div>
+<p>Make a backup of your current PHP files (or not, it&rsquo;s up to you):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tar cvf BEFORE_php533.tar bin/php* etc/php* etc/pear* lib/* modules</code></pre></div>
+<p>Download XAMPP Beta from <a href="/admin/blog/blogpost/134/">http://www.apachefriends.org/en/xampp-
+beta.html</a></p>
+
+<p>Extract XAMPP Beta to, say, ~/Tmp/</p>
+
+<p>Stop Apache:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">/opt/lampp/lampp stopapache</code></pre></div>
+<p>Now, copy all the files you will need:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cp -rf ~/Tmp/lampp/bin/* bin/  
+cp -f ~/Tmp/lampp/etc/p* etc/  
+cp -rf ~/Tmp/lampp/lib/php lib/  
+cp -f ~/Tmp/lampp/lib/libssl.so* lib/  
+cp -f ~/Tmp/lampp/lib/libcrypto.so* lib/  
+cp -f ~/Tmp/lampp/lib/libldap* lib/  
+cp -f ~/Tmp/lampp/lib/liblber* lib/  
+cp -rf ~/Tmp/lampp/modules lib/</code></pre></div>
+<p>Start Apache:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">/opt/lampp/lampp startapache</code></pre></div>
+<h2 id="i-want-something-simpler">I want something simpler</h2>
+
+<p>OK, then. Simply download the &ldquo;patch&rdquo; below and extract it in your XAMPP root
+directory. You will still need to restart Apache.</p>
+
+<p><a href="http://rapidshare.com/files/420492816/php533up.tgz">Caution! 15MB Download.</a></p>
+
+              </section>
+
+              <footer class="post-footer">
+                  <div class="post-tags">
+            
+                  </div>
+                
+              </footer>
+
+            
+                <aside class="post-comments">
+    
+    
+    
+</aside>
+
+            
+            </div>
+
+            <nav class="post-nav">
+                
+                    <a class="post-nav-item post-nav-next" href="http://nexus.zteo.com/posts/android-create-a-lite-version-of-your-application/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">Android: Create a &#34;lite&#34; version of your application</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                
+                    <a class="post-nav-item post-nav-prev" href="http://nexus.zteo.com/posts/suggestedittext-android-auto-suggest-component/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">SuggestEditText: Android auto-suggest component</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                <div class="clear"></div>
+            </nav>
+
+        </div>
+    </article>
+</main>
+
+                <div id="body-class" style="display: none;"></div>
+                <footer id="footer">
+                    <section class="credits">
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2018 The Nexus
+                    </span>
+                    </section>
+                </footer>
+                
+
+                
+
+                
+                <div class="overlay"></div>
+            </div>
+        </section>
+
+<video autoplay loop id="video-background" muted plays-inline>
+<source src="http://nexus.zteo.com/static/vid/hd0198.mp4" type="video/mp4">
+</video>
+
+
+
+    <script async src="http://nexus.zteo.com//js/main.js"></script>
+
+
+
+  <noscript><link rel="stylesheet" href="http://nexus.zteo.com//css/main.css"></noscript>
+</body>
+</html>
+

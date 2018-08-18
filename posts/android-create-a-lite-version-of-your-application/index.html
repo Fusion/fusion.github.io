@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta property="og:title" content=" Android: Create a &#34;lite&#34; version of your application &middot;  The Nexus" />
+    <meta property="og:site_name" content="The Nexus" />
+    <meta property="og:url" content="http://nexus.zteo.com/posts/android-create-a-lite-version-of-your-application/" />
+
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content="2010-10-20T04:10:41Z" />
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta name="twitter:title" content="Android: Create a &#34;lite&#34; version of your application" />
+    
+    <meta name="twitter:image" content="http://nexus.zteo.com/images/9f879eda-1f5a-4fd8-90ed-075ab4f25a9e.jpg" />
+    
+    <meta name="twitter:description" content="Like many Android developers, I recently realized that pushing a &ldquo;lite&rdquo; version of my application to the Android Marketplace would improve my application&rsquo;s visibility.
+(My application: SplitAndTip; light version)
+It&rsquo;s not as easy as it seems because Android uses your application&rsquo;s main class&rsquo; full path to identify it. Therefore, simply compiling two versions of the same source code with, say, two different certificates &ndash; the Adobe approach &ndash; does not work." />
+    <meta name="twitter:url" content="http://nexus.zteo.com/posts/android-create-a-lite-version-of-your-application/" />
+    
+
+    <title> Android: Create a &#34;lite&#34; version of your application &middot;  The Nexus</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://nexus.zteo.com//js/main.js" as="script" />
+    <link rel="preload" href="http://nexus.zteo.com//css/main.css" as="style" />
+    
+    <link rel="preload" href="http://nexus.zteo.com//css/cfr.css" as="style" />
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/cfr.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/syntax.css">
+    
+    
+    
+
+
+    
+    <meta name="description" content="Android: Create a &#34;lite&#34; version of your application" />
+    
+
+    
+    <meta name="p:domain_verify" content=""/>
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+
+    
+    <link href="http://nexus.zteo.com/index.xml" rel="alternate" type="application/rss+xml" title="The Nexus" />
+    
+
+    
+    <link rel="canonical" href="http://nexus.zteo.com/posts/android-create-a-lite-version-of-your-application/" />
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://nexus.zteo.com/posts/android-create-a-lite-version-of-your-application/"
+        },
+        "headline": "Android: Create a &#34;lite&#34; version of your application",
+        "description": "Android: Create a &#34;lite&#34; version of your application",
+        "author": {
+            "@type": "Person",
+            "name": " ",
+            "url": "http://profiles.google.com/?rel=author",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https:",
+              "height": 80,
+              "width": 80
+            }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "http://nexus.zteo.com/",
+          "name": "The Nexus",
+          "url": "http://nexus.zteo.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https:",
+            "height": 80,
+            "width": 80
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://nexus.zteo.com/9f879eda-1f5a-4fd8-90ed-075ab4f25a9e.jpg",
+          "height": 133,
+          "width": 200
+        },
+        "datePublished": "2010-10-20",
+        "dateModified": "2010-10-20",
+        "wordCount": 311,
+        
+    }
+    </script>
+    
+
+    
+    <script type="text/javascript">
+        
+        
+    </script>
+    
+
+    <script type="text/javascript">
+        var config = {
+            baseUrl: "http:\/\/nexus.zteo.com\/"
+        };
+    </script>
+
+</head>
+<body class="home-template">
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+<section id="wrapper" style="display: none;">
+    <div id="ajax-container">
+        <nav id="nav" class="nav">
+            <div class="nav-logo">
+                <a href="http://nexus.zteo.com/">
+                    
+                    The Nexus
+                    
+                </a>
+            </div>
+            <div id="main-menu" class="nav-menu">
+                
+                
+                <a id="search-button" onclick="$('#search-form').toggle();" title="Search"><i class="fa fa-search"></i></a>
+                <form id="search-form" method="get" role="search" action="https://google.com/search">
+                    <input type="hidden" name="as_sitesearch" value="http://nexus.zteo.com/">
+                    <input type="text" name="q" maxlength="255" placeholder="Search..." class="form-control">
+                    <input type="submit" value="Search">
+                </form>
+                
+                
+                
+                
+            </div>
+        </nav>
+
+
+<main class="content" role="main">
+    <article class="post post-with-bg">
+        <div class="inner">
+
+            <div id="push">
+
+                <header class="post-header">
+                
+                    <span class="post-meta">
+                        <span class="post-date">20 Oct 2010</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">311</span> words)</span></span>
+                    </span>
+                <div class="clear"></div>
+                
+                <h1 class="post-title">Android: Create a &#34;lite&#34; version of your application</h1>
+              </header>
+
+              <section class="post-content">
+                
+                  <p><img src="/images/4408737402_e9cd02c8ff_z-200x300.jpg" alt="" /></p>
+
+<p>Like many Android
+developers, I recently realized that pushing a &ldquo;lite&rdquo; version of my
+application to the Android Marketplace would improve my application&rsquo;s
+visibility.</p>
+
+<p>(My application:
+<a href="http://www.appbrain.com/app/splitandtip/com.voilaweb.mobile.splitcheck">SplitAndTip</a>;
+<a href="http://www.appbrain.com/app/splitandtip-lite/com.voilaweb.mobile.splitandtiplite">light version</a>)</p>
+
+<p>It&rsquo;s not as easy as it seems because Android uses your application&rsquo;s main
+class&rsquo; full path to identify it. Therefore, simply compiling two versions of
+the same source code with, say, two different certificates &ndash; the Adobe
+approach &ndash; does not work.</p>
+
+<p>You need to use different package names, potentially different databases,
+depending on your preference, etc.</p>
+
+<p>When I was looking for a solution I read <a href="http://blog.donnfelker.com/2010/08/05/howto-android-full-and-lite-versions/">this article</a> with great interest.<br />
+It relies on Project Libraries and you need to re-organize your code into its
+own library, then simply invoke it from two different packages.<br />
+It&rsquo;s a bit or work but nothing too horrible using Eclipse&rsquo;s refactoring
+abilities.</p>
+
+<p>Unfortunately, what I realized after playing with it for a few hours is that
+this method is only available to you if you only care about devices running
+Froyo (2.2)<br />
+Personally, it is an absolute show stopper as I write my applications to be
+compatible with versions of the Android SDK dating back to version 1.5. Only
+supporting Froyo, according to <a href="http://developer.android.com/resources/dashboard/platform-versions.html">Google&rsquo;s own figures</a>, means that your application is unavailable totwo-thirds of the
+Android market.</p>
+
+<p>My approach, then, was to write a small script that will create a copy of my
+original application and modify what needs to be modified to turn this copy
+into a light version.<br />
+I never modify the light version directly; instead I added a test to the
+original application that will be used at runtime to decide which application
+type we are running. Here it is, ready for consumption:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">this</span><span class="o">.</span><span class="na">lite</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="na">getPackageName</span><span class="o">().</span><span class="na">toLowerCase</span><span class="o">().</span><span class="na">contains</span><span class="o">(</span><span class="s">&#34;myliteapp&#34;</span><span class="o">);</span></code></pre></div>
+<p>Obviously you will want to replace &ldquo;myliteapp&rdquo; with your own package name.</p>
+
+<p>And here is the (Bash) script where all the magic takes place:</p>
+
+<p>[download id=&ldquo;4&rdquo;]<br />
+.</p>
+
+              </section>
+
+              <footer class="post-footer">
+                  <div class="post-tags">
+            
+                  </div>
+                
+              </footer>
+
+            
+                <aside class="post-comments">
+    
+    
+    
+</aside>
+
+            
+            </div>
+
+            <nav class="post-nav">
+                
+                    <a class="post-nav-item post-nav-next" href="http://nexus.zteo.com/posts/so-is-android-using-the-linux-scheduler-can-i-patch-it/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">So, is Android using the Linux scheduler? Can I patch it?</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                
+                    <a class="post-nav-item post-nav-prev" href="http://nexus.zteo.com/posts/update-your-xampp-php-and-keep-mediawiki-drupal-happy/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">Update your XAMPP PHP and keep Mediawiki &amp; Drupal happy</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                <div class="clear"></div>
+            </nav>
+
+        </div>
+    </article>
+</main>
+
+                <div id="body-class" style="display: none;"></div>
+                <footer id="footer">
+                    <section class="credits">
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2018 The Nexus
+                    </span>
+                    </section>
+                </footer>
+                
+
+                
+
+                
+                <div class="overlay"></div>
+            </div>
+        </section>
+
+<video autoplay loop id="video-background" muted plays-inline>
+<source src="http://nexus.zteo.com/static/vid/hd0198.mp4" type="video/mp4">
+</video>
+
+
+
+    <script async src="http://nexus.zteo.com//js/main.js"></script>
+
+
+
+  <noscript><link rel="stylesheet" href="http://nexus.zteo.com//css/main.css"></noscript>
+</body>
+</html>
+

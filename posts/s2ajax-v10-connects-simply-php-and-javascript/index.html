@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta property="og:title" content=" S2ajax v1.0 connects simply PHP and JavaScript &middot;  The Nexus" />
+    <meta property="og:site_name" content="The Nexus" />
+    <meta property="og:url" content="http://nexus.zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/" />
+
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content="2009-10-07T08:18:49Z" />
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta name="twitter:title" content="S2ajax v1.0 connects simply PHP and JavaScript" />
+    
+    <meta name="twitter:image" content="http://nexus.zteo.com/images/33b3049c-7751-42bd-afec-f00aef8afed6.png" />
+    
+    <meta name="twitter:description" content="Here comes S2ajax v1.0!
+And it was long overdue. Six months already since I posted S2ajax says &ldquo;hi()&rdquo; I can hardly believe it.
+What I think of as v1.0&rsquo;s main feature is that it is now possible to simply export classes in PHP and these classes can be instantiated in JavaScript. Whenever these instances are modified through asynchronous method calls, these modifications are transparently persisted server-side.
+The concept Is it a PHP class?" />
+    <meta name="twitter:url" content="http://nexus.zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/" />
+    
+
+    <title> S2ajax v1.0 connects simply PHP and JavaScript &middot;  The Nexus</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://nexus.zteo.com//js/main.js" as="script" />
+    <link rel="preload" href="http://nexus.zteo.com//css/main.css" as="style" />
+    
+    <link rel="preload" href="http://nexus.zteo.com//css/cfr.css" as="style" />
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/cfr.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/syntax.css">
+    
+    
+    
+
+
+    
+    <meta name="description" content="S2ajax v1.0 connects simply PHP and JavaScript" />
+    
+
+    
+    <meta name="p:domain_verify" content=""/>
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+
+    
+    <link href="http://nexus.zteo.com/index.xml" rel="alternate" type="application/rss+xml" title="The Nexus" />
+    
+
+    
+    <link rel="canonical" href="http://nexus.zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/" />
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://nexus.zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/"
+        },
+        "headline": "S2ajax v1.0 connects simply PHP and JavaScript",
+        "description": "S2ajax v1.0 connects simply PHP and JavaScript",
+        "author": {
+            "@type": "Person",
+            "name": " ",
+            "url": "http://profiles.google.com/?rel=author",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https:",
+              "height": 80,
+              "width": 80
+            }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "http://nexus.zteo.com/",
+          "name": "The Nexus",
+          "url": "http://nexus.zteo.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https:",
+            "height": 80,
+            "width": 80
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://nexus.zteo.com/33b3049c-7751-42bd-afec-f00aef8afed6.png",
+          "height": 133,
+          "width": 200
+        },
+        "datePublished": "2009-10-07",
+        "dateModified": "2009-10-07",
+        "wordCount": 429,
+        
+    }
+    </script>
+    
+
+    
+    <script type="text/javascript">
+        
+        
+    </script>
+    
+
+    <script type="text/javascript">
+        var config = {
+            baseUrl: "http:\/\/nexus.zteo.com\/"
+        };
+    </script>
+
+</head>
+<body class="home-template">
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+<section id="wrapper" style="display: none;">
+    <div id="ajax-container">
+        <nav id="nav" class="nav">
+            <div class="nav-logo">
+                <a href="http://nexus.zteo.com/">
+                    
+                    The Nexus
+                    
+                </a>
+            </div>
+            <div id="main-menu" class="nav-menu">
+                
+                
+                <a id="search-button" onclick="$('#search-form').toggle();" title="Search"><i class="fa fa-search"></i></a>
+                <form id="search-form" method="get" role="search" action="https://google.com/search">
+                    <input type="hidden" name="as_sitesearch" value="http://nexus.zteo.com/">
+                    <input type="text" name="q" maxlength="255" placeholder="Search..." class="form-control">
+                    <input type="submit" value="Search">
+                </form>
+                
+                
+                
+                
+            </div>
+        </nav>
+
+
+<main class="content" role="main">
+    <article class="post post-with-bg">
+        <div class="inner">
+
+            <div id="push">
+
+                <header class="post-header">
+                
+                    <span class="post-meta">
+                        <span class="post-date">7 Oct 2009</span> <span class="reading-time">| <span class="estimated-reading-time">3 min.</span> (<span class="word-count">429</span> words)</span></span>
+                    </span>
+                <div class="clear"></div>
+                
+                <h1 class="post-title">S2ajax v1.0 connects simply PHP and JavaScript</h1>
+              </header>
+
+              <section class="post-content">
+                
+                  
+
+<p><img src="/images/S2ajax2.png" alt="S2ajax" />Here comes S2ajax v1.0!<br />
+And it was long overdue. Six months already since I posted <a href="/2009/03/02/php-classes-and-javascript-s2ajax-says-hi/"><em>S2ajax says &ldquo;hi()&rdquo;</em></a> I can hardly
+believe it.</p>
+
+<p>What I think of as v1.0&rsquo;s main feature is that it is now possible to simply
+<strong>export classes</strong> in PHP and these classes can be instantiated in JavaScript.
+Whenever these instances are modified through asynchronous method calls, these
+modifications are transparently <strong>persisted</strong> server-side.</p>
+
+<h1 id="the-concept">The concept</h1>
+
+<p>Is it a PHP class? Is it a JavaScript class? Why, it&rsquo;s both! The class is
+defined in PHP on the server. Instances of the class are created on demand
+using JavaScript on the client. Whatever modifications are made to an instance
+are serialized on the server.<br />
+You can create a complex application using as many classes and instances as
+you need.</p>
+
+<p><img src="/images/100.png" alt="100" /></p>
+
+<h1 id="under-the-hood">Under the hood</h1>
+
+<p>The PHP class is exported; the proxy JavaScript code is generated.<br />
+Whenever the client needs to access one of the class&rsquo; properties/methods, the
+proxy <strong>transparently</strong> talks to the class; the class lives server-side.</p>
+
+<p><img src="/images/99.png" alt="99" /></p>
+
+<h1 id="the-client-s-point-of-view">The Client&rsquo;s point of view</h1>
+
+<p>An arbitrary number of <strong>instances</strong> of the class can be created in
+JavaScript.<br />
+The only hint that you are using a client-server architecture is the fact that
+when invoking a method, its return value is obtained through a callback. This
+mechanism allows your client interface to remain responsive while the server
+is preparing a response.</p>
+
+<p><img src="/images/101.png" alt="101" /></p>
+
+<h1 id="the-server-s-point-of-view">The server&rsquo;s point of view</h1>
+
+<p>S2ajax automatically persists your instances&rsquo; <strong>state</strong> and <strong>data</strong> between
+consecutive asynchronous calls. You still get the benefits of the &ldquo;shared
+nothing&rdquo; approach of PHP but complex objects can be manipulated through an
+unlimited number of clients requests.</p>
+
+<p><img src="/images/102.png" alt="102" /></p>
+
+<h1 id="a-code-sample">A code sample</h1>
+
+<h4 id="server-side">Server-side</h4>
+
+<p>Let&rsquo;s create a class that will increment an instance variable every time a
+method is invoked. Let&rsquo;s keep it as simple as possible:</p>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">class CounterTester  
+{  
+    private $counter;
+
+    function __construct() {  
+        $this-&gt;counter = 0;  
+    }
+
+    public function increment_counter() {  
+        $this-&gt;counter++;  
+        return $this-&gt;counter;  
+    }  
+}  </code></pre></div>
+<p>Clearly, every time <strong>increment_counter()</strong> is invoked, <em>$counter</em> will be
+incremented and its new value returned.</p>
+
+<h4 id="client-side">Client-Side</h4>
+
+<p>First, an instance of our class is created. Then, when a user click on the
+button labeled &lsquo;Increment counter&rsquo;, the instance&rsquo;s <strong>increment_counter()</strong>
+method will be invoked and the new <em>$counter</em> value returned to our callback
+and displayed.</p>
+
+<p>Increment counter</p>
+
+<p>Note that we could create as many instances of our class as we wish and
+provided we display the matching buttons, we could independently increment
+multiple counters.</p>
+
+<h1 id="get-it-now">Get it now!</h1>
+
+<p>Click our valiant friend &ldquo;Octocat&rdquo;, artistically represented below, to go to
+S2ajax&rsquo;s Github page. If you just wish to use the library, look for the
+[Download] button:</p>
+
+<p><a href="http://github.com/Fusion/s2ajax"><img src="https://avatars2.githubusercontent.com/u/6265563?s=460&amp;v=4" alt="Git!" /></a></p>
+
+<p>Git!</p>
+
+              </section>
+
+              <footer class="post-footer">
+                  <div class="post-tags">
+            
+                  </div>
+                
+              </footer>
+
+            
+                <aside class="post-comments">
+    
+    
+    
+</aside>
+
+            
+            </div>
+
+            <nav class="post-nav">
+                
+                    <a class="post-nav-item post-nav-next" href="http://nexus.zteo.com/posts/clicdev-display-last-24-hours-visitors/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">ClicDev: display last 24 hours visitors</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                
+                    <a class="post-nav-item post-nav-prev" href="http://nexus.zteo.com/posts/php-pdo-class-and-xamppexotic-mysql-configurations/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">PHP PDO class and XAMPP/&#34;exotic&#34; MySQL configurations</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                <div class="clear"></div>
+            </nav>
+
+        </div>
+    </article>
+</main>
+
+                <div id="body-class" style="display: none;"></div>
+                <footer id="footer">
+                    <section class="credits">
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2018 The Nexus
+                    </span>
+                    </section>
+                </footer>
+                
+
+                
+
+                
+                <div class="overlay"></div>
+            </div>
+        </section>
+
+<video autoplay loop id="video-background" muted plays-inline>
+<source src="http://nexus.zteo.com/static/vid/hd0198.mp4" type="video/mp4">
+</video>
+
+
+
+    <script async src="http://nexus.zteo.com//js/main.js"></script>
+
+
+
+  <noscript><link rel="stylesheet" href="http://nexus.zteo.com//css/main.css"></noscript>
+</body>
+</html>
+

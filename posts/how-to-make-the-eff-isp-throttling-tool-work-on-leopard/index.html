@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta property="og:title" content=" How To Make The EFF ISP Throttling Tool Work On Leopard &middot;  The Nexus" />
+    <meta property="og:site_name" content="The Nexus" />
+    <meta property="og:url" content="http://nexus.zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/" />
+
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content="2008-08-02T22:54:00Z" />
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta name="twitter:title" content="How To Make The EFF ISP Throttling Tool Work On Leopard" />
+    
+    <meta name="twitter:description" content="I love the idea of Switzerland, the new EFF tool for checking ISP throttling ; unfortunately as of release Zero.0.5, Leopard seems to still be a mere afterthought. Here is how I worked around the few things that were not working out of the box.
+First, Switzerland is written in Python and will require Psyco. It&rsquo;s a good thing since Psyco is all about performance. If you do not have it already installed:" />
+    <meta name="twitter:url" content="http://nexus.zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/" />
+    
+
+    <title> How To Make The EFF ISP Throttling Tool Work On Leopard &middot;  The Nexus</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://nexus.zteo.com//js/main.js" as="script" />
+    <link rel="preload" href="http://nexus.zteo.com//css/main.css" as="style" />
+    
+    <link rel="preload" href="http://nexus.zteo.com//css/cfr.css" as="style" />
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/cfr.css">
+    <link rel="stylesheet" href="http://nexus.zteo.com//css/syntax.css">
+    
+    
+    
+
+
+    
+    <meta name="description" content="How To Make The EFF ISP Throttling Tool Work On Leopard" />
+    
+
+    
+    <meta name="p:domain_verify" content=""/>
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+
+    
+    <link href="http://nexus.zteo.com/index.xml" rel="alternate" type="application/rss+xml" title="The Nexus" />
+    
+
+    
+    <link rel="canonical" href="http://nexus.zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/" />
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://nexus.zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/"
+        },
+        "headline": "How To Make The EFF ISP Throttling Tool Work On Leopard",
+        "description": "How To Make The EFF ISP Throttling Tool Work On Leopard",
+        "author": {
+            "@type": "Person",
+            "name": " ",
+            "url": "http://profiles.google.com/?rel=author",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https:",
+              "height": 80,
+              "width": 80
+            }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "http://nexus.zteo.com/",
+          "name": "The Nexus",
+          "url": "http://nexus.zteo.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https:",
+            "height": 80,
+            "width": 80
+          }
+        },
+        
+        "image": {
+          "@type": "ImageObject",
+          "url": "",
+          "height": 80,
+          "width": 80
+        },
+        "datePublished": "2008-08-02",
+        "dateModified": "2008-08-02",
+        "wordCount": 317,
+        
+    }
+    </script>
+    
+
+    
+    <script type="text/javascript">
+        
+        
+    </script>
+    
+
+    <script type="text/javascript">
+        var config = {
+            baseUrl: "http:\/\/nexus.zteo.com\/"
+        };
+    </script>
+
+</head>
+<body class="home-template">
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+<section id="wrapper" style="display: none;">
+    <div id="ajax-container">
+        <nav id="nav" class="nav">
+            <div class="nav-logo">
+                <a href="http://nexus.zteo.com/">
+                    
+                    The Nexus
+                    
+                </a>
+            </div>
+            <div id="main-menu" class="nav-menu">
+                
+                
+                <a id="search-button" onclick="$('#search-form').toggle();" title="Search"><i class="fa fa-search"></i></a>
+                <form id="search-form" method="get" role="search" action="https://google.com/search">
+                    <input type="hidden" name="as_sitesearch" value="http://nexus.zteo.com/">
+                    <input type="text" name="q" maxlength="255" placeholder="Search..." class="form-control">
+                    <input type="submit" value="Search">
+                </form>
+                
+                
+                
+                
+            </div>
+        </nav>
+
+
+<main class="content" role="main">
+    <article class="post post-with-bg">
+        <div class="inner">
+
+            <div id="push">
+
+                <header class="post-header">
+                
+                    <span class="post-meta">
+                        <span class="post-date">2 Aug 2008</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">317</span> words)</span></span>
+                    </span>
+                <div class="clear"></div>
+                
+                <h1 class="post-title">How To Make The EFF ISP Throttling Tool Work On Leopard</h1>
+              </header>
+
+              <section class="post-content">
+                
+                  <p><img src="https://www.eff.org/files/action_images/switzerland_text_logo.png" alt="Switzerland
+Logo" />I love the idea of <a href="http://www.eff.org/press/archives/2008/07/31">Switzerland</a>,
+the new EFF tool for checking <strong>ISP throttling</strong> ; unfortunately as of release
+Zero.0.5, Leopard seems to still be a mere afterthought. Here is how I worked
+around the few things that were not working out of the box.</p>
+
+<p>First, Switzerland is written in <strong>Python</strong> and will require <strong>Psyco</strong>. It&rsquo;s a
+good thing since Psyco is all about performance. If you do not have it already
+installed:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">svn co http://codespeak.net/svn/psyco/dist/ psyco-dist  
+<span class="nb">cd</span> psyco-dist/  
+sudo python setup.py install  
+<span class="nb">cd</span> ..  </code></pre></div>
+<p>Download Switzerland from
+<a href="https://sourceforge.net/project/showfiles.php?group_id=233013">https://sourceforge.net/project/showfiles.php?group_id=233013</a><br />
+Extract it and change to its directory; eg</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tar zxvf switzerland-0.0.5.tgz  
+<span class="nb">cd</span> switzerland-0.0.5  </code></pre></div>
+<p>The <strong>FastCollector</strong> provided doesn&rsquo;t work. So&hellip;</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">rm bin/FastCollector.darwin  </code></pre></div>
+<p>Now when we build FastCollector, it will be available in
+<em>/usr/local/bin/FastCollector</em></p>
+
+<p>Here comes the only moderately scary thing for non-developers. Use the
+<em><strong>patch</strong></em> command to modify <em>switzerland/client/PacketListener.py</em>. This is
+the input for patch:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plaintext" data-lang="plaintext">diff --git a/switzerland/client/PacketListener.py b/switzerland/client/PacketListener.py  
+    index 211b68f..dc0bbcc 100755  
+--- a/switzerland/client/PacketListener.py  
++++ b/switzerland/client/PacketListener.py  
+@@ -93,8 +93,7 @@ class PacketListener(threading.Thread):  
+            p = platform.system()  
+            # Implementing the recommendations from  
+            # http://www.net.t-labs.tu-berlin.de/research/hppc/  
+-        if p[-3:] == &#34;BSD&#34; or p == &#34;Darwin&#34;:  
+-          print p  
++        if p[-3:] == &#34;BSD&#34;:  
+            cmd = [&#34;sysctl&#34;,&#34;-w&#34;,&#34;net.bpf.bufsize=10485760&#34;]  
+            try:     # Recent FreeBSDs  
+                proc = Popen(cmd, stdin=PIPE, stdout=PIPE)  
+@@ -110,6 +109,14 @@ class PacketListener(threading.Thread):  
+                proc = Popen(cmd, stdin=PIPE, stdout=PIPE)  
+                assert proc.wait() == 0  
+    
++        elif p == &#34;Darwin&#34;:  
++          cmd = [&#34;sysctl&#34;,&#34;-w&#34;,&#34;debug.bpf_bufsize=10485760&#34;]  
++          proc = Popen(cmd, stdin=PIPE, stdout=PIPE)  
++          assert proc.wait() == 0  
++          cmd[2] = &#34;debug.bpf_maxbufsize=10485760&#34;  
++          proc = Popen(cmd, stdin=PIPE, stdout=PIPE)  
++          assert proc.wait() == 0  
++  
+            elif p == &#34;Linux&#34;:  
+            vars = [(&#34;/proc/sys/net/core/rmem_default&#34;, &#34;33554432&#34;),  
+                    (&#34;/proc/sys/net/core/rmem_max&#34;, &#34;33554432&#34;),</code></pre></div>
+<p>Let&rsquo;s build and install everything:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo python setup.py install  </code></pre></div>
+<p>Well, it was easy (if it worked!)</p>
+
+<p>Let&rsquo;s create a log directory for Switzerland:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo mkdir /var/log/switzerland-pcaps  
+sudo chmod a+wx /var/log/switzerland-pcaps  </code></pre></div>
+<p>And finally let&rsquo;s run it:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo switzerland-client  </code></pre></div>
+<p>or if you wish to run your own server (you need to advertise it too!)</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo switzerland-client --server yourserveraddress  </code></pre></div>
+<p>Questions?</p>
+
+              </section>
+
+              <footer class="post-footer">
+                  <div class="post-tags">
+            
+                  </div>
+                
+              </footer>
+
+            
+                <aside class="post-comments">
+    
+    
+    
+</aside>
+
+            
+            </div>
+
+            <nav class="post-nav">
+                
+                    <a class="post-nav-item post-nav-next" href="http://nexus.zteo.com/posts/how-i-setup-networking-for-virtualbox-on-ubuntu/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">How I setup networking for VirtualBox on Ubuntu</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                
+                    <a class="post-nav-item post-nav-prev" href="http://nexus.zteo.com/posts/twitterifiedat-last/">
+                        <section class="post-nav-teaser">
+                            <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
+                            <span class="post-nav-info">
+                                <h4 class="post-nav-title">Twitterified…at last!</h4>
+                            </span>
+                        </section>
+                    </a>
+                
+                <div class="clear"></div>
+            </nav>
+
+        </div>
+    </article>
+</main>
+
+                <div id="body-class" style="display: none;"></div>
+                <footer id="footer">
+                    <section class="credits">
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2018 The Nexus
+                    </span>
+                    </section>
+                </footer>
+                
+
+                
+
+                
+                <div class="overlay"></div>
+            </div>
+        </section>
+
+<video autoplay loop id="video-background" muted plays-inline>
+<source src="http://nexus.zteo.com/static/vid/hd0198.mp4" type="video/mp4">
+</video>
+
+
+
+    <script async src="http://nexus.zteo.com//js/main.js"></script>
+
+
+
+  <noscript><link rel="stylesheet" href="http://nexus.zteo.com//css/main.css"></noscript>
+</body>
+</html>
+
