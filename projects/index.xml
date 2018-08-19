@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on The Nexus</title>
-    <link>https://fusion.github.io/projects/</link>
+    <link>http://zteo.com/projects/</link>
     <description>Recent content in Projects on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Nov 2012 09:16:42 +0000</lastBuildDate>
     
-	<atom:link href="https://fusion.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://zteo.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Journler, Again!</title>
-      <link>https://fusion.github.io/projects/journler-again/</link>
+      <link>http://zteo.com/projects/journler-again/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:42 +0000</pubDate>
       
-      <guid>https://fusion.github.io/projects/journler-again/</guid>
+      <guid>http://zteo.com/projects/journler-again/</guid>
       <description>A &amp;ldquo;refreshed,&amp;rdquo; Lion and Mountain-Lion compatible Journler: read the blog post
 I want to make very clear that I am not the author of Journler and if you use Phil&amp;rsquo;s application, he&amp;rsquo;s the person you need to be grateful to. Inf act, if you enjoy Journler &amp;ndash; or, in my incarnation, &amp;ldquo;Journler Again,&amp;rdquo; I encourage you to buy a license from Phil&amp;rsquo;s site.
 No, you do not have to; the application is fully functional and there is no limit of any kind on how you can use it.</description>
@@ -24,10 +24,10 @@ No, you do not have to; the application is fully functional and there is no limi
     
     <item>
       <title>Tools</title>
-      <link>https://fusion.github.io/projects/tools/</link>
+      <link>http://zteo.com/projects/tools/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:41 +0000</pubDate>
       
-      <guid>https://fusion.github.io/projects/tools/</guid>
+      <guid>http://zteo.com/projects/tools/</guid>
       <description>TinySU TinySU is a very small &amp;ldquo;su&amp;rdquo; binary, compiled to run on all ARM-based Android devices.
 It does not interact with SuperUser.apk and thus the user is not prompted to grant access to their device. You may thus think of it as less &amp;ldquo;secure&amp;rdquo; than the su binary that comes with SuperUser.apk.
 On the other hand, TinySU works in every possible situation where its more complex brethren may not; for instance when automatically rooting a device (e.</description>
@@ -35,29 +35,29 @@ On the other hand, TinySU works in every possible situation where its more compl
     
     <item>
       <title>Tooredo Alpha</title>
-      <link>https://fusion.github.io/projects/tooredo-alpha/</link>
+      <link>http://zteo.com/projects/tooredo-alpha/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:40 +0000</pubDate>
       
-      <guid>https://fusion.github.io/projects/tooredo-alpha/</guid>
+      <guid>http://zteo.com/projects/tooredo-alpha/</guid>
       <description> [August 2018 Update] Well, since 2012, Toodledo have extensively reworked their user interface and Tooredo is not needed anymore. Screenshots</description>
     </item>
     
     <item>
       <title>FreeBlog - Air</title>
-      <link>https://fusion.github.io/projects/freeblog/</link>
+      <link>http://zteo.com/projects/freeblog/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:39 +0000</pubDate>
       
-      <guid>https://fusion.github.io/projects/freeblog/</guid>
+      <guid>http://zteo.com/projects/freeblog/</guid>
       <description>== Flash is dead, Flex is dead, Air is dead, this tool is now officially discontinued ==
 FreeBlog is a multi-platform tool (Linux, Windows, OS X) that helps you in your blogging tasks.FreeBlog was born out of frustration after its author tried various blogging software, most of it on the Mac: that type of software usually offers all sorts of features, such as publishing which music you are currently listening to, and seem to forget to focus on the basics: a real rich-text editor that renders your posts as closely to what they will look like on your weblog as possible.</description>
     </item>
     
     <item>
       <title>Condo</title>
-      <link>https://fusion.github.io/projects/condo/</link>
+      <link>http://zteo.com/projects/condo/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:36 +0000</pubDate>
       
-      <guid>https://fusion.github.io/projects/condo/</guid>
+      <guid>http://zteo.com/projects/condo/</guid>
       <description>[August 2018 update] Condo was my very modest contribution to envisioning a future where we would use containers instead of VMs and dedicate them to specific, isolated tasks.
 Less than a year after I created Condo, Docker was released and I shelved my amateurish attempt. Now, reading the text below, I have mixed feelings: a good attempt, but no quite ambitious enough.
 What is was Condo? Condo is a brand-new multi-environment hosting project that is currently in its early development stage.</description>
@@ -65,10 +65,10 @@ What is was Condo? Condo is a brand-new multi-environment hosting project that i
     
     <item>
       <title>ezEdit</title>
-      <link>https://fusion.github.io/projects/ezedit/</link>
+      <link>http://zteo.com/projects/ezedit/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:36 +0000</pubDate>
       
-      <guid>https://fusion.github.io/projects/ezedit/</guid>
+      <guid>http://zteo.com/projects/ezedit/</guid>
       <description>ezEdit is a very unintrusive script. It serves two different purposes:
  Work as a mini-CMS that you can add to your existing website. Work as a prototyping tool, to see &amp;ldquo;what if:&amp;rdquo; what would happen if you modified a page&amp;rsquo;s content  ezEdit as a mini-CMS ezEdit can be installed by dropping in place two files: ezedit.js and ezedit.php.
 Including ezEdit in your existing web pages is as simple as:</description>
@@ -76,10 +76,10 @@ Including ezEdit in your existing web pages is as simple as:</description>
     
     <item>
       <title>Projects List</title>
-      <link>https://fusion.github.io/projects/projects-list/</link>
+      <link>http://zteo.com/projects/projects-list/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:35 +0000</pubDate>
       
-      <guid>https://fusion.github.io/projects/projects-list/</guid>
+      <guid>http://zteo.com/projects/projects-list/</guid>
       <description>Live Watches This plug-in for a Sony Ericsson LiveView display brings to your wristwatch something it has surprisingly lacked until now: an analog display, with small and big hands, all customizable, even a flashlight.
 
 Optimus V Tools This is a suite of tools that will let you root your LG Optimus V device and, optionally, flash a new ROM such as CyanogenMod 7.
@@ -89,10 +89,10 @@ Tiny SU TinySU is a very small “su” binary, compiled to run on all ARM-based
     
     <item>
       <title>S2ajax</title>
-      <link>https://fusion.github.io/projects/s2ajax/</link>
+      <link>http://zteo.com/projects/s2ajax/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:35 +0000</pubDate>
       
-      <guid>https://fusion.github.io/projects/s2ajax/</guid>
+      <guid>http://zteo.com/projects/s2ajax/</guid>
       <description>[August 2018 Update] Feel free to user S2ajax if you are looking for something lightweight.
 On the other hand, between jQuery 3, React, Angular, etc. S2&amp;rsquo;s concept is definitely getting quite long in the tooth.
 S2ajax is a &amp;lsquo;managed&amp;rsquo; AJAX framework. It is derived from Sajax, written by the Modern Method folks a few years ago.
@@ -101,10 +101,10 @@ This modern implementation allows the developer to declare classes on the server
     
     <item>
       <title>n2</title>
-      <link>https://fusion.github.io/projects/n2/</link>
+      <link>http://zteo.com/projects/n2/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:35 +0000</pubDate>
       
-      <guid>https://fusion.github.io/projects/n2/</guid>
+      <guid>http://zteo.com/projects/n2/</guid>
       <description>[August 2018 update] Classical message boards are now a thing of the past. Do not get me wrong! I am still a regular of some sites that use vBulletin (https://forums.watchuseek.com) but these are not technically evolving anymore.
 These days, online communities have become mostly support communities and some greate software, such as Discourse or Flarum, have made browsing and contributing simpler.
 Look around for a couple minutes and you will also find mixed textual-audio communities and more interesting developments.</description>
