@@ -143,6 +143,35 @@ Development of nextBBS v2 was steered in a new direction about two months ago an
                     
                 </a>
             </div>
+
+            <nav id="nav2" role="navigation">
+                <a href="#nav" title="Show navigation">Show navigation</a>
+                <a href="#" title="Hide navigation">Hide navigation</a>
+                <ul class="clearfix">
+                    <li><a href="https://fusion.github.io/">BLOG</a></li>
+                    <li>
+                        <a href="https://fusion.github.io/meta/about" aria-haspopup="true"><span>ABOUT</span></a>
+                        <ul>
+                            <li><a href="https://fusion.github.io/meta/egosurfing">Ego Surfing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://fusion.github.io/projects/projects-list" aria-haspopup="true"><span>PROJECTS</span></a>
+                        <ul>
+                            <li><a href="https://fusion.github.io/projects/n2">n2</a></li>
+                            <li><a href="https://fusion.github.io/projects/s2ajax">S2ajax</a></li>
+                            <li><a href="https://fusion.github.io/projects/condo">Condo</a></li>
+                            <li><a href="https://fusion.github.io/projects/ezedit">ezEdit</a></li>
+                            <li><a href="https://fusion.github.io/projects/freeblog">FreeBlog - Air</a></li>
+                            <li><a href="https://fusion.github.io/projects/tooredo-alpha">Tooredo Alpha</a></li>
+                            <li><a href="https://fusion.github.io/projects/tools">Tools</a></li>
+                            <li><a href="https://fusion.github.io/projects/journler-again">Journlr, Again!</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
             <div id="main-menu" class="nav-menu">
                 
                 
@@ -283,8 +312,56 @@ demo online soon.</p>
 </video>
 
 
+<script async src="https://fusion.github.io//js/main.js"></script>
+<script>
 
-    <script async src="https://fusion.github.io//js/main.js"></script>
+
+function defer(method) {
+    if (window.jQuery) {
+        method();
+    } else {
+        setTimeout(function() { defer(method) }, 50);
+    }
+}
+defer(function() {
+    jQuery.fn.doubleTapToGo = function( params ) {
+        if( !( 'ontouchstart' in window ) &&
+            !navigator.msMaxTouchPoints &&
+            !navigator.userAgent.toLowerCase().match( /windows phone os 7/i ) ) return false;
+
+        this.each( function()
+        {
+            var curItem = false;
+
+            jQuery( this ).on( 'click', function( e )
+            {
+                var item = jQuery( this );
+                if( item[ 0 ] != curItem[ 0 ] )
+                {
+                    e.preventDefault();
+                    curItem = item;
+                }
+            });
+
+            jQuery( document ).on( 'click touchstart MSPointerDown', function( e )
+            {
+                var resetItem = true,
+                    parents	  = jQuery( e.target ).parents();
+
+                for( var i = 0; i < parents.length; i++ )
+                    if( parents[ i ] == curItem[ 0 ] )
+                        resetItem = false;
+
+                if( resetItem )
+                    curItem = false;
+            });
+        });
+        return this;
+    };
+    jQuery( '#nav li:has(ul)' ).doubleTapToGo();
+});
+</script>
+
 
 
 

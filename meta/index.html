@@ -83,6 +83,35 @@
                     
                 </a>
             </div>
+
+            <nav id="nav2" role="navigation">
+                <a href="#nav" title="Show navigation">Show navigation</a>
+                <a href="#" title="Hide navigation">Hide navigation</a>
+                <ul class="clearfix">
+                    <li><a href="https://fusion.github.io/">BLOG</a></li>
+                    <li>
+                        <a href="https://fusion.github.io/meta/about" aria-haspopup="true"><span>ABOUT</span></a>
+                        <ul>
+                            <li><a href="https://fusion.github.io/meta/egosurfing">Ego Surfing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://fusion.github.io/projects/projects-list" aria-haspopup="true"><span>PROJECTS</span></a>
+                        <ul>
+                            <li><a href="https://fusion.github.io/projects/n2">n2</a></li>
+                            <li><a href="https://fusion.github.io/projects/s2ajax">S2ajax</a></li>
+                            <li><a href="https://fusion.github.io/projects/condo">Condo</a></li>
+                            <li><a href="https://fusion.github.io/projects/ezedit">ezEdit</a></li>
+                            <li><a href="https://fusion.github.io/projects/freeblog">FreeBlog - Air</a></li>
+                            <li><a href="https://fusion.github.io/projects/tooredo-alpha">Tooredo Alpha</a></li>
+                            <li><a href="https://fusion.github.io/projects/tools">Tools</a></li>
+                            <li><a href="https://fusion.github.io/projects/journler-again">Journlr, Again!</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
             <div id="main-menu" class="nav-menu">
                 
                 
@@ -146,11 +175,13 @@ It relies on Toodledo to store these tasks as many mobile applications do.</p>
 			<span class="post-date">21 Nov 2012</span>
 		</span>
 		<h2 class="post-title"><a href="https://fusion.github.io/meta/egosurfing/">EgoSurfing</a></h2>
-		<p class="post-excerpt">**They had good things to say about this blog
-** (and I do not mind sending some page ranking their way for that) **
-**
-* &lt;http://retromatt.com/2007/05/19/sifr-without-flash/&gt;  &ldquo;Clic!Dev has made [enhancing any site with quality fonts ] even easier and more affordable than ever.&rdquo;
-* &lt;http://blogs.open.ac.uk/Maths/ajh59/010415.html&gt;  &ldquo;In the meantime, how hard could it be to generate a panelled display from an OPML feed using something like Chris RavensroftÃ¢a‚¬a„¢s &ldquo;Create your own WebTop in php/js in no time&rdquo; approach?</p>
+		<p class="post-excerpt">Sometimes, people are misguided and comment positively on the author
+ http://retromatt.com/2007/05/19/sifr-without-flash/
+&ldquo;Clic!Dev has made [enhancing any site with quality fonts ] even easier and more affordable than ever.&rdquo;
+ http://blogs.open.ac.uk/Maths/ajh59/010415.html
+&ldquo;In the meantime, how hard could it be to generate a panelled display from an OPML feed using something like Chris RavensroftÃ¢a‚¬a„¢s &ldquo;Create your own WebTop in php/js in no time&rdquo; approach? ;-)&rdquo;
+ http://webscriptz.be/2007/08/03/php4-is-out/
+(On PHP5) &ldquo;I have to say that Photomatt has it right and Clic!</p>
 		<span class="post-more"><a href="https://fusion.github.io/meta/egosurfing/">Read more <i class="fa fa-angle-right"></i></a></span>
 	</div>
 </article>
@@ -168,7 +199,10 @@ It relies on Toodledo to store these tasks as many mobile applications do.</p>
 		<h2 class="post-title"><a href="https://fusion.github.io/meta/about/">About</a></h2>
 		<p class="post-excerpt">(TODO: Update this page as it is quite out of date!)
 The goal of this blog is to keep you appraised of various project Chris FR and his team have been working on and plan to work on.These projects include:
-* the new free blog host [zteo.com](/admin/pages/richtextpage/9/www.zteo.com), * the open-source community software [nextbbs.com](/admin/pages/richtextpage/9/www.nextbbs.com), * various web sites in our network, such as [staffexpo.com](/admin/pages/richtextpage/9/www.zteo.com) and [militate.com](/admin/pages/richtextpage/9/www.militate.com), * external collaborations such as [kittenauth](/admin/pages/richtextpage/9/www.</p>
+ the new free blog host zteo.com,
+ the open-source community software nextbbs.com,
+ various web sites in our network, such as staffexpo.com and militate.com,
+ external collaborations such as kittenauth (status: dead?</p>
 		<span class="post-more"><a href="https://fusion.github.io/meta/about/">Read more <i class="fa fa-angle-right"></i></a></span>
 	</div>
 </article>
@@ -213,8 +247,56 @@ The goal of this blog is to keep you appraised of various project Chris FR and h
 </video>
 
 
+<script async src="https://fusion.github.io//js/main.js"></script>
+<script>
 
-    <script async src="https://fusion.github.io//js/main.js"></script>
+
+function defer(method) {
+    if (window.jQuery) {
+        method();
+    } else {
+        setTimeout(function() { defer(method) }, 50);
+    }
+}
+defer(function() {
+    jQuery.fn.doubleTapToGo = function( params ) {
+        if( !( 'ontouchstart' in window ) &&
+            !navigator.msMaxTouchPoints &&
+            !navigator.userAgent.toLowerCase().match( /windows phone os 7/i ) ) return false;
+
+        this.each( function()
+        {
+            var curItem = false;
+
+            jQuery( this ).on( 'click', function( e )
+            {
+                var item = jQuery( this );
+                if( item[ 0 ] != curItem[ 0 ] )
+                {
+                    e.preventDefault();
+                    curItem = item;
+                }
+            });
+
+            jQuery( document ).on( 'click touchstart MSPointerDown', function( e )
+            {
+                var resetItem = true,
+                    parents	  = jQuery( e.target ).parents();
+
+                for( var i = 0; i < parents.length; i++ )
+                    if( parents[ i ] == curItem[ 0 ] )
+                        resetItem = false;
+
+                if( resetItem )
+                    curItem = false;
+            });
+        });
+        return this;
+    };
+    jQuery( '#nav li:has(ul)' ).doubleTapToGo();
+});
+</script>
+
 
 
 

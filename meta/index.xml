@@ -29,11 +29,13 @@ It relies on Toodledo to store these tasks as many mobile applications do.</desc
       <pubDate>Wed, 21 Nov 2012 09:16:34 +0000</pubDate>
       
       <guid>https://fusion.github.io/meta/egosurfing/</guid>
-      <description>**They had good things to say about this blog
-** (and I do not mind sending some page ranking their way for that) **
-**
-* &amp;lt;http://retromatt.com/2007/05/19/sifr-without-flash/&amp;gt;  &amp;ldquo;Clic!Dev has made [enhancing any site with quality fonts ] even easier and more affordable than ever.&amp;rdquo;
-* &amp;lt;http://blogs.open.ac.uk/Maths/ajh59/010415.html&amp;gt;  &amp;ldquo;In the meantime, how hard could it be to generate a panelled display from an OPML feed using something like Chris RavensroftÃ¢a‚¬a„¢s &amp;ldquo;Create your own WebTop in php/js in no time&amp;rdquo; approach?</description>
+      <description>Sometimes, people are misguided and comment positively on the author
+ http://retromatt.com/2007/05/19/sifr-without-flash/
+&amp;ldquo;Clic!Dev has made [enhancing any site with quality fonts ] even easier and more affordable than ever.&amp;rdquo;
+ http://blogs.open.ac.uk/Maths/ajh59/010415.html
+&amp;ldquo;In the meantime, how hard could it be to generate a panelled display from an OPML feed using something like Chris RavensroftÃ¢a‚¬a„¢s &amp;ldquo;Create your own WebTop in php/js in no time&amp;rdquo; approach? ;-)&amp;rdquo;
+ http://webscriptz.be/2007/08/03/php4-is-out/
+(On PHP5) &amp;ldquo;I have to say that Photomatt has it right and Clic!</description>
     </item>
     
     <item>
@@ -44,7 +46,10 @@ It relies on Toodledo to store these tasks as many mobile applications do.</desc
       <guid>https://fusion.github.io/meta/about/</guid>
       <description>(TODO: Update this page as it is quite out of date!)
 The goal of this blog is to keep you appraised of various project Chris FR and his team have been working on and plan to work on.These projects include:
-* the new free blog host [zteo.com](/admin/pages/richtextpage/9/www.zteo.com), * the open-source community software [nextbbs.com](/admin/pages/richtextpage/9/www.nextbbs.com), * various web sites in our network, such as [staffexpo.com](/admin/pages/richtextpage/9/www.zteo.com) and [militate.com](/admin/pages/richtextpage/9/www.militate.com), * external collaborations such as [kittenauth](/admin/pages/richtextpage/9/www.</description>
+ the new free blog host zteo.com,
+ the open-source community software nextbbs.com,
+ various web sites in our network, such as staffexpo.com and militate.com,
+ external collaborations such as kittenauth (status: dead?</description>
     </item>
     
   </channel>
