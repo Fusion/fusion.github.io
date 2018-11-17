@@ -35,6 +35,9 @@ Simple steps to use your own rich-text editor:
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
+    <link href="/mermaid/mermaid.cfr.css?1542493113" type="text/css" rel="stylesheet" />
+    
+    
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
@@ -207,7 +210,12 @@ Simple steps to use your own rich-text editor:
 
               <section class="post-content">
                 
-                  <p>If, like me, your company&rsquo;s insistence on using Sharepoint as an Intranet tool
+
+                
+                
+                
+
+                <p>If, like me, your company&rsquo;s insistence on using Sharepoint as an Intranet tool
 contributes to rapid neurons death, there is as least a glimmer of hope: you
 can still use Firefox without being punished by having to type raw HTML code
 when editing a page (Sharepoint, unsurprisingly, only likes IE)</p>
@@ -295,8 +303,9 @@ when editing a page (Sharepoint, unsurprisingly, only likes IE)</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-
+<script src="/mermaid/mermaid.js?1542493113"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+
 <script>
 
 
@@ -344,6 +353,10 @@ defer(function() {
     };
     jQuery( '#nav li:has(ul)' ).doubleTapToGo();
 });
+</script>
+
+<script>
+    mermaid.initialize({ startOnLoad: true });
 </script>
 
 

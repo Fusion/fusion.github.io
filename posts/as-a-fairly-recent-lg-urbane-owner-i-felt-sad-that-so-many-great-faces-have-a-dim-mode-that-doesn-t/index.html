@@ -36,6 +36,9 @@ It will not work with protected faces and will likely also not work it a face ma
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
+    <link href="/mermaid/mermaid.cfr.css?1542493113" type="text/css" rel="stylesheet" />
+    
+    
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
@@ -207,7 +210,12 @@ It will not work with protected faces and will likely also not work it a face ma
 
               <section class="post-content">
                 
-                  <p>As a fairly recent LG urbane owner, I felt sad that so many great faces have a
+
+                
+                
+                
+
+                <p>As a fairly recent LG urbane owner, I felt sad that so many great faces have a
 dim mode that doesn&rsquo;t look near as good as their bright mode.</p>
 
 <p>So I put together this small racket app: <a href="https://github.com/fusion/Watch-It-/releases">https://github.com/fusion/Watch-It-/releases</a></p>
@@ -286,8 +294,9 @@ makes heavy usage of scripting.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-
+<script src="/mermaid/mermaid.js?1542493113"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+
 <script>
 
 
@@ -335,6 +344,10 @@ defer(function() {
     };
     jQuery( '#nav li:has(ul)' ).doubleTapToGo();
 });
+</script>
+
+<script>
+    mermaid.initialize({ startOnLoad: true });
 </script>
 
 

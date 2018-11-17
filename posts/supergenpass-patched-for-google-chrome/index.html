@@ -35,6 +35,9 @@ I&rsquo;ve patched the basic version of SuperGenPass so that it can now work on 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
+    <link href="/mermaid/mermaid.cfr.css?1542493113" type="text/css" rel="stylesheet" />
+    
+    
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
@@ -206,7 +209,12 @@ I&rsquo;ve patched the basic version of SuperGenPass so that it can now work on 
 
               <section class="post-content">
                 
-                  <p><a href="http://www.flickr.com/photos/rattodisabina/2460905893/"><img src="/images/2460905893_0c3fc213c5-300x225.jpg" alt="" /></a>I
+
+                
+                
+                
+
+                <p><a href="http://www.flickr.com/photos/rattodisabina/2460905893/"><img src="/images/2460905893_0c3fc213c5-300x225.jpg" alt="" /></a>I
 am a huge fan of <a href="http://supergenpass.com/">SuperGenPass</a>. There are so many
 obvious reasons why it&rsquo;s a great concept that I won&rsquo;t bore you with a rehash
 of all of them.<br />
@@ -298,8 +306,9 @@ patch it yourself. Here is what the patch looks like:</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-
+<script src="/mermaid/mermaid.js?1542493113"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+
 <script>
 
 
@@ -347,6 +356,10 @@ defer(function() {
     };
     jQuery( '#nav li:has(ul)' ).doubleTapToGo();
 });
+</script>
+
+<script>
+    mermaid.initialize({ startOnLoad: true });
 </script>
 
 

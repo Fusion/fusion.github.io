@@ -34,6 +34,9 @@ function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
+    <link href="/mermaid/mermaid.cfr.css?1542493113" type="text/css" rel="stylesheet" />
+    
+    
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
@@ -205,7 +208,12 @@ function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison
 
               <section class="post-content">
                 
-                  <p><a href="http://www.flickr.com/photos/93752018@N00/3025827461/"><img src="/images/3025827461_5065a550e4_t.jpg" alt="Submarine Net" /></a>I was reading Paul Gregg&rsquo;s very clear explanation of
+
+                
+                
+                
+
+                <p><a href="http://www.flickr.com/photos/93752018@N00/3025827461/"><img src="/images/3025827461_5065a550e4_t.jpg" alt="Submarine Net" /></a>I was reading Paul Gregg&rsquo;s very clear explanation of
 &ldquo;classless&rdquo; ranges comparison when I realized that his code was not as &ldquo;bare
 metal&rdquo; as could be.So, here is the code I&rsquo;ve been using in nextBBS.It only
 accepts ranges in the form &ldquo;x.x.x.x/b&rdquo; but it&rsquo;s short and all I needed,
@@ -290,8 +298,9 @@ really.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-
+<script src="/mermaid/mermaid.js?1542493113"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+
 <script>
 
 
@@ -339,6 +348,10 @@ defer(function() {
     };
     jQuery( '#nav li:has(ul)' ).doubleTapToGo();
 });
+</script>
+
+<script>
+    mermaid.initialize({ startOnLoad: true });
 </script>
 
 

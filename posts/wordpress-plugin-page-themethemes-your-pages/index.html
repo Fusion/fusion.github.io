@@ -34,6 +34,9 @@ I had, a while ago, created a tiny plugin that did just that for me but it was w
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
+    <link href="/mermaid/mermaid.cfr.css?1542493113" type="text/css" rel="stylesheet" />
+    
+    
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
@@ -205,7 +208,12 @@ I had, a while ago, created a tiny plugin that did just that for me but it was w
 
               <section class="post-content">
                 
-                  <p><img src="/images/3295125837_3e01677dde_b-300x168.jpg" alt="" /><br />
+
+                
+                
+                
+
+                <p><img src="/images/3295125837_3e01677dde_b-300x168.jpg" alt="" /><br />
 I was quite surprised, when looking for a way to assign different themes to
 some pages, to not manage to find an easy way to do that. It is not baked into
 WordPress, and I could not find a suitable plugin either.<br />
@@ -302,8 +310,9 @@ like:<br />
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-
+<script src="/mermaid/mermaid.js?1542493113"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+
 <script>
 
 
@@ -351,6 +360,10 @@ defer(function() {
     };
     jQuery( '#nav li:has(ul)' ).doubleTapToGo();
 });
+</script>
+
+<script>
+    mermaid.initialize({ startOnLoad: true });
 </script>
 
 

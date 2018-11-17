@@ -34,6 +34,9 @@ It&rsquo;s still a very unambitious thing but at least it does what every blog o
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
+    <link href="/mermaid/mermaid.cfr.css?1542493113" type="text/css" rel="stylesheet" />
+    
+    
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
@@ -205,7 +208,12 @@ It&rsquo;s still a very unambitious thing but at least it does what every blog o
 
               <section class="post-content">
                 
-                  <p><img src="/images/teste-300x201.png" alt="" />Until now, this freebie has
+
+                
+                
+                
+
+                <p><img src="/images/teste-300x201.png" alt="" />Until now, this freebie has
 been known only to my Twitter followers, but considering the positive feedback
 it received, I am going to put it out there for everybody: a few months ago,
 being disappointed with the lack of true rich-text editing provided by typical
@@ -288,8 +296,9 @@ better than the other potential names I came up with.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-
+<script src="/mermaid/mermaid.js?1542493113"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+
 <script>
 
 
@@ -337,6 +346,10 @@ defer(function() {
     };
     jQuery( '#nav li:has(ul)' ).doubleTapToGo();
 });
+</script>
+
+<script>
+    mermaid.initialize({ startOnLoad: true });
 </script>
 
 

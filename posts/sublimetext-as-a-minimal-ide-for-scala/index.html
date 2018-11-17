@@ -37,6 +37,9 @@ Syntax highlighting, error detection
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
+    <link href="/mermaid/mermaid.cfr.css?1542493113" type="text/css" rel="stylesheet" />
+    
+    
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
@@ -208,7 +211,12 @@ Syntax highlighting, error detection
 
               <section class="post-content">
                 
-                  <p>Well, the Coursera &ldquo;<a href="https://class.coursera.org/progfun-2012-001/class/index">Functional Programming Principles in Scala</a>&rdquo; class was a
+
+                
+                
+                
+
+                <p>Well, the Coursera &ldquo;<a href="https://class.coursera.org/progfun-2012-001/class/index">Functional Programming Principles in Scala</a>&rdquo; class was a
 success. Both <a href="http://tomchappell.com/">Tom Chappell</a> and I really enjoyed it.
 However, I&rsquo;ve never much liked Eclipse as an IDE. Here is how I am using
 Sublime Text 2 instead.</p>
@@ -386,8 +394,9 @@ even tighter integration.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-
+<script src="/mermaid/mermaid.js?1542493113"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+
 <script>
 
 
@@ -435,6 +444,10 @@ defer(function() {
     };
     jQuery( '#nav li:has(ul)' ).doubleTapToGo();
 });
+</script>
+
+<script>
+    mermaid.initialize({ startOnLoad: true });
 </script>
 
 
