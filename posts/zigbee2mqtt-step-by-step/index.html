@@ -33,7 +33,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1545792925" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1545856663" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -109,7 +109,7 @@
         },
         "datePublished": "2018-12-25",
         "dateModified": "2018-12-25",
-        "wordCount": 1189,
+        "wordCount": 1255,
         
     }
     </script>
@@ -198,7 +198,7 @@
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">25 Dec 2018</span> <span class="reading-time">| <span class="estimated-reading-time">6 min.</span> (<span class="word-count">1189</span> words)</span></span>
+                        <span class="post-date">25 Dec 2018</span> <span class="reading-time">| <span class="estimated-reading-time">6 min.</span> (<span class="word-count">1255</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -230,7 +230,7 @@
 
 <p><img src="/images/ccdebugger.jpg" alt="Example image" /></p>
 
-<p>It should get a couple weeks for these components to arrive after you order them.</p>
+<p>It should take a couple weeks for these components to arrive after you order them.</p>
 
 <p><a href="https://koenkk.github.io/zigbee2mqtt/getting_started/flashing_the_cc2531.html">This page</a> does a pretty good job of explaining how to flash the firmware. A few things that are not immediately clear, though:</p>
 
@@ -324,6 +324,10 @@
 
 <p>Software-side, it is as simple as removing our local database:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">rm data/database.db</code></pre></div>
+<p>Of course, this is the nuclear option: all your devices are now gone from the database.</p>
+
+<p>To cleanly remove <strong>a single</strong> device, send this message (see below for more MQTT information):</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">zigbee2mqtt/bridge/config/remove<span class="p">:</span><span class="w"> </span>{<span class="s2">&#34;friendly_name&#34;</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{device name}&#34;</span>}</code></pre></div>
 <p>Dongle-side, let&rsquo;s write a quick program that will perform a hard reset:</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="err">#</span> <span class="nx">cfr</span><span class="p">.</span><span class="nx">js</span>
 
@@ -370,11 +374,13 @@
 </span><span class="w"></span>--<span class="w"> </span>etc<span class="w"> </span>--</code></pre></div>
 <p>You should now find the corresponding devices in Home Assistant&rsquo;s device state page.</p>
 
+<p>Alternatively, you can use the <a href="https://mosquitto.org/man/mosquitto_pub-1.html">mosquitto publisher client</a> so, for instance, to remove a device as described earlier:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mosquito_pub -h <span class="o">{</span>IP address of your mqtt broker<span class="o">}</span> -t zigbee2mqtt/bridge/config/remove -m <span class="s1">&#39;{&#34;friendly_name&#34;: &#34;{device name}&#34;}&#39;</span></code></pre></div>
 <h2 id="systemctl">systemctl</h2>
 
-<p>So, after getting all this working, you&rsquo;ve been following <a href="https://koenkk.github.io/zigbee2mqtt/getting_started/running_zigbee2mqtt.html">these instructions</a> but it&rsquo;s not working.</p>
+<p>So, after getting all this working, you&rsquo;ve been following <a href="https://koenkk.github.io/zigbee2mqtt/getting_started/running_zigbee2mqtt.html">these instructions</a> but <strong>that</strong> is not working.</p>
 
-<p>If, like me, you are using <code>nodenv</code>, then you need to adapt the startup script a smidge. In my example:</p>
+<p>If, like me, you are using <code>nodenv</code>, then you need to adapt the startup script a smidge. In my case:</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">ExecStart</span><span class="p">=</span><span class="err">/</span><span class="nx">home</span><span class="err">/</span><span class="nx">chris</span><span class="err">/</span><span class="p">.</span><span class="nx">nodenv</span><span class="err">/</span><span class="nx">versions</span><span class="err">/</span><span class="mf">10.14</span><span class="p">.</span><span class="mi">2</span><span class="err">/</span><span class="nx">bin</span><span class="err">/</span><span class="nx">node</span> <span class="nx">index</span><span class="p">.</span><span class="nx">js</span></code></pre></div>
 <p>And, to keep debugging your server and devices&rsquo; lifecycle, log output can now be found here:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">journalctl -u zigbee2mqtt.service -f</code></pre></div>
@@ -436,7 +442,7 @@
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1545792925"></script>
+<script src="/mermaid/mermaid.js?1545856663"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>
