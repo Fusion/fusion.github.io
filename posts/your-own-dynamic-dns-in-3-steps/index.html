@@ -34,7 +34,7 @@ You will still have to buy your own domain, cheap if you go to internet.bs or na
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1542494201" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1545792925" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -346,25 +346,25 @@ Obviously you will need to modify &lt; your home dir &gt;, &lt; master DNS name 
 host1.d.mydomain.com and Khost1.d.mydomain.com.XXXXX.private:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
 </span><span class="cp"></span>
-<span class="c1"># Servers: http://dynupdate.no-ip.com/ip.php,
-</span><span class="c1"></span>http://www.antedes.com/getip.php, ..?  
-<span class="c1"># Less straifghtforward: http://checkip.dyndns.org/, ...  
-</span><span class="c1"></span><span class="nv">IPS</span><span class="o">=</span>http://dynupdate.no-ip.com/ip.php
+<span class="c1"># Servers: http://dynupdate.no-ip.com/ip.php,</span>
+http://www.antedes.com/getip.php, ..?  
+<span class="c1"># Less straifghtforward: http://checkip.dyndns.org/, ...</span>  
+<span class="nv">IPS</span><span class="o">=</span>http://dynupdate.no-ip.com/ip.php
 
 <span class="nv">DNSP</span><span class="o">=</span>/home/&lt; your home dir &gt;/DNS_KEY
 
 <span class="k">while</span> true<span class="p">;</span> <span class="k">do</span>
 
-<span class="c1"># First, retrieve IP address  
-</span><span class="c1"></span><span class="nv">CURIP</span><span class="o">=</span><span class="sb">`</span>curl -s <span class="nv">$IPS</span> <span class="p">|</span> awk <span class="s1">&#39;{ print $1 }&#39;</span><span class="sb">`</span>  
+<span class="c1"># First, retrieve IP address</span>  
+<span class="nv">CURIP</span><span class="o">=</span><span class="sb">`</span>curl -s <span class="nv">$IPS</span> <span class="p">|</span> awk <span class="s1">&#39;{ print $1 }&#39;</span><span class="sb">`</span>  
 <span class="nv">OLDIP</span><span class="o">=</span><span class="sb">`</span>cat <span class="nv">$DNSP</span>/oldip<span class="sb">`</span>
 
-<span class="c1"># Compare to previously saved IP  
-</span><span class="c1"></span><span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$CURIP</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="nv">$OLDIP</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>  
+<span class="c1"># Compare to previously saved IP</span>  
+<span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$CURIP</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="nv">$OLDIP</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>  
 <span class="nb">echo</span> <span class="nv">$CURIP</span> &gt; <span class="nv">$DNSP</span>/oldip
 
-<span class="c1"># If different, tell DNS  
-</span><span class="c1"></span><span class="nb">echo</span> <span class="s2">&#34;server &lt; master DNS name &gt;&#34;</span> &gt; <span class="nv">$DNSP</span>/zone  
+<span class="c1"># If different, tell DNS</span>  
+<span class="nb">echo</span> <span class="s2">&#34;server &lt; master DNS name &gt;&#34;</span> &gt; <span class="nv">$DNSP</span>/zone  
 <span class="nb">echo</span> <span class="s2">&#34;zone d.mydomain.com&#34;</span> &gt;&gt; <span class="nv">$DNSP</span>/zone  
 <span class="nb">echo</span> <span class="s2">&#34;update delete host1.d.mydomain.com. A&#34;</span> &gt;&gt; <span class="nv">$DNSP</span>/zone  
 <span class="nb">echo</span> <span class="s2">&#34;update add host1.d.mydomain.com. 14400 A </span><span class="nv">$CURIP</span><span class="s2">&#34;</span> &gt;&gt; <span class="nv">$DNSP</span>/zone  
@@ -372,9 +372,9 @@ host1.d.mydomain.com and Khost1.d.mydomain.com.XXXXX.private:</p>
 <span class="nb">echo</span> <span class="s2">&#34;send&#34;</span> &gt;&gt; <span class="nv">$DNSP</span>/zone  
 /usr/bin/nsupdate -k <span class="nv">$DNSP</span>/Khost1.d.mydomain.com.XXXXX.private <span class="nv">$DNSP</span>/zone
 
-<span class="c1"># Sleeeeeeep I tell you  
-</span><span class="c1"># 1800 = 30 minutes  
-</span><span class="c1"></span>sleep <span class="m">1800</span>  
+<span class="c1"># Sleeeeeeep I tell you</span>  
+<span class="c1"># 1800 = 30 minutes</span>  
+sleep <span class="m">1800</span>  
 <span class="k">done</span></code></pre></div>
 <p>You can install this script on Linux as your own daemon or run it manually
 using &lsquo;nohup &lt; scriptname &gt; &amp;&rsquo; or get rid of the loop and use crontab.<br />
@@ -459,7 +459,7 @@ them for too long :)</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1542494201"></script>
+<script src="/mermaid/mermaid.js?1545792925"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

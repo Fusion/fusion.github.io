@@ -33,7 +33,7 @@ KERNEL=&#34;tun&#34;, NAME=&#34;net/%k&#34;  Then create this script - you will 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1542494201" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1545792925" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -244,19 +244,19 @@ sleep <span class="m">1</span>
 <span class="nb">echo</span> <span class="s2">&#34;Binding bridge to physical interface&#34;</span>  
 sudo brctl addif br0 eth0  
 sleep <span class="m">1</span>  
-<span class="c1">#sudo ifconfig br0 10.255.203.34 netmask 255.255.255.0  
-</span><span class="c1"></span><span class="nb">echo</span> <span class="s2">&#34;Configuring IP address&#34;</span>  
+<span class="c1">#sudo ifconfig br0 10.255.203.34 netmask 255.255.255.0</span>  
+<span class="nb">echo</span> <span class="s2">&#34;Configuring IP address&#34;</span>  
 sudo ifconfig br0 <span class="m">198</span>.206.186.210 netmask <span class="m">255</span>.255.255.0  
-<span class="c1"># sudo dhclient br0 # The new way!  
-</span><span class="c1"></span>sleep <span class="m">1</span>  
+<span class="c1"># sudo dhclient br0 # The new way!</span>  
+sleep <span class="m">1</span>  
 <span class="nb">echo</span> <span class="s2">&#34;Binding bridge to virtual interface&#34;</span>  
 sudo brctl addif br0 tap0  
 sleep <span class="m">1</span>  
 <span class="nb">echo</span> <span class="s2">&#34;Enabling virtual interface&#34;</span>  
 sudo ifconfig tap0 up  
 sleep <span class="m">1</span>  
-<span class="c1">#sudo route add default gw 10.255.203.254  
-</span><span class="c1"></span><span class="nb">echo</span> <span class="s2">&#34;Adding default route&#34;</span>  
+<span class="c1">#sudo route add default gw 10.255.203.254</span>  
+<span class="nb">echo</span> <span class="s2">&#34;Adding default route&#34;</span>  
 sudo route add default gw <span class="m">198</span>.206.186.254  
 <span class="nb">echo</span> <span class="s2">&#34;All done!&#34;</span>  </code></pre></div>
 <p>What&rsquo;s that, then?<br />
@@ -336,7 +336,7 @@ over communicating with the rest of the world!</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1542494201"></script>
+<script src="/mermaid/mermaid.js?1545792925"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

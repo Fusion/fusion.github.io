@@ -6,10 +6,19 @@
     <description>Recent content on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Sep 2018 13:33:01 -1400</lastBuildDate>
+    <lastBuildDate>Tue, 25 Dec 2018 16:24:11 -0800</lastBuildDate>
     
 	<atom:link href="http://zteo.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Zigbee2mqtt Step by Step</title>
+      <link>http://zteo.com/posts/zigbee2mqtt-step-by-step/</link>
+      <pubDate>Tue, 25 Dec 2018 16:24:11 -0800</pubDate>
+      
+      <guid>http://zteo.com/posts/zigbee2mqtt-step-by-step/</guid>
+      <description>&lt;p&gt;Here is a solution to build and use your own Zigbee controller. It will work with most Zigbee devices out there, simply because it doesn&amp;rsquo;t come with any manufacturer-specific assumptions.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Creating a ReasonML Native App: Memoizing DNS queries</title>
@@ -98,9 +107,7 @@
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0500</pubDate>
       
       <guid>http://zteo.com/posts/reason-native-app-part-5/</guid>
-      <description>&lt;p&gt;This is going to be a fairly short post, as it focuses on using the &lt;code&gt;config-file&lt;/code&gt; library. As previously mentioned, when I mention a library in RasonML&amp;rsquo;s native context, chances are pretty good that I am referring to one of OCaml&amp;rsquo;s many available libraries.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is going to be a fairly short post, as it focuses on using the &lt;code&gt;config-file&lt;/code&gt; library. As previously mentioned, when I mention a library in RasonML&amp;rsquo;s native context, chances are pretty good that I am referring to one of OCaml&amp;rsquo;s many available libraries.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -109,9 +116,7 @@
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0400</pubDate>
       
       <guid>http://zteo.com/posts/reason-native-app-part-4/</guid>
-      <description>&lt;p&gt;Before going into how specific features were implemented with Reason and OCaml&amp;rsquo;s help, let&amp;rsquo;s have a quick look at our application&amp;rsquo;s logic&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Before going into how specific features were implemented with Reason and OCaml&amp;rsquo;s help, let&amp;rsquo;s have a quick look at our application&amp;rsquo;s logic&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -122,9 +127,7 @@
       <guid>http://zteo.com/posts/reason-native-app-part-3/</guid>
       <description>&lt;p&gt;This is by far the most boring piece of this whole endeavor.&lt;/p&gt;
 
-&lt;p&gt;Unfortunately, as we accumulate years of experience, old habits accrete on the programmer and tools such as &lt;code&gt;Make&lt;/code&gt; become an integral part of our fossilized identity. You will have to forgive me for my use of Makefiles!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;Unfortunately, as we accumulate years of experience, old habits accrete on the programmer and tools such as &lt;code&gt;Make&lt;/code&gt; become an integral part of our fossilized identity. You will have to forgive me for my use of Makefiles!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -135,9 +138,7 @@
       <guid>http://zteo.com/posts/reason-native-app-part-2/</guid>
       <description>&lt;h1 id=&#34;installing-reason&#34;&gt;Installing Reason&lt;/h1&gt;
 
-&lt;p&gt;First, we will need OCaml. This is because our Reason code will be compiled to OCaml, then, using the OCaml compiler, to native code.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;First, we will need OCaml. This is because our Reason code will be compiled to OCaml, then, using the OCaml compiler, to native code.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -146,9 +147,7 @@
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0100</pubDate>
       
       <guid>http://zteo.com/posts/reason-native-app/</guid>
-      <description>&lt;p&gt;I believe this is, as of now (2018), one of few articles you will find about creating a native application using &lt;a href=&#34;https://reasonml.github.io/&#34;&gt;ReasonML&lt;/a&gt;. While Facebook came up with this interesting language/syntax that compiles to OCaml, it seems that they have focused their energy on transpiling it to JavaScript using &lt;a href=&#34;https://github.com/BuckleScript/bucklescript&#34;&gt;BuckleScript&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I believe this is, as of now (2018), one of few articles you will find about creating a native application using &lt;a href=&#34;https://reasonml.github.io/&#34;&gt;ReasonML&lt;/a&gt;. While Facebook came up with this interesting language/syntax that compiles to OCaml, it seems that they have focused their energy on transpiling it to JavaScript using &lt;a href=&#34;https://github.com/BuckleScript/bucklescript&#34;&gt;BuckleScript&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1590,8 +1589,7 @@ Of course, I decided to use existing open-source code for the applications&amp;r
       <pubDate>Sun, 10 Dec 2006 09:26:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/cd-v2-nextbbs-multi/</guid>
-      <description>Well, after spending quite some time cleaning up the code, making sure that no &amp;lsquo;dangerous&amp;rsquo; Admin CP operation is available in multi-boards mode, and identifying which settings need to be made immutable, we are almost there.
-I am currently working on the automatic setup script. Remaining to do: **mkdir** servers/SERVERID servers/SERVERID/attachments servers/SERVERID/avatars servers/SERVERID/emoticons servers/SERVERID/lang servers/SERVERID/lang/en servers/SERVERID/uploads servers/SERVERID/templates servers/SERVERID/templates/* servers/SERVERID/templates/*_c **cp** servers/SERVERID/emoticons/* servers/SERVERID/templates/*[!_c]/* Note that the only &#39;router&#39; module currently ready is the one based on subdomains.</description>
+      <description>![nextBBS](/images/logo_nextbbs.png)Well, after spending quite some time cleaning up the code, making sure that no &#39;dangerous&#39; Admin CP operation is available in multi-boards mode, and identifying which settings need to be made immutable, we are almost there. I am currently working on the automatic setup script. Remaining to do: **mkdir** servers/SERVERID servers/SERVERID/attachments servers/SERVERID/avatars servers/SERVERID/emoticons servers/SERVERID/lang servers/SERVERID/lang/en servers/SERVERID/uploads servers/SERVERID/templates servers/SERVERID/templates/* servers/SERVERID/templates/*_c **cp** servers/SERVERID/emoticons/* servers/SERVERID/templates/*[!_c]/* Note that the only &#39;router&#39; module currently ready is the one based on subdomains.</description>
     </item>
     
     <item>
@@ -1600,7 +1598,7 @@ I am currently working on the automatic setup script. Remaining to do: **mkdir**
       <pubDate>Thu, 07 Dec 2006 07:33:46 +0000</pubDate>
       
       <guid>http://zteo.com/posts/opening-of-this-development-blog/</guid>
-      <description>Not much to say. It&amp;rsquo;s open!</description>
+      <description>Not much to say. It&#39;s open!  </description>
     </item>
     
     <item>
