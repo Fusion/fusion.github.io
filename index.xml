@@ -6,10 +6,24 @@
     <description>Recent content on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Dec 2018 16:24:11 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 23 Feb 2019 14:06:09 -0800</lastBuildDate>
     
 	<atom:link href="http://zteo.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fixing Vmware Fusion Broken Vmmon</title>
+      <link>http://zteo.com/posts/fixing-vmware-fusion-broken-vmmon/</link>
+      <pubDate>Sat, 23 Feb 2019 14:06:09 -0800</pubDate>
+      
+      <guid>http://zteo.com/posts/fixing-vmware-fusion-broken-vmmon/</guid>
+      <description>Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded
+ /dev/vmmon: broken pipe
+ or
+ /dev/vmmon: No such file or directory
+ Here are three different fixes, because this is definitely nor a &amp;ldquo;one size fits all&amp;rdquo; scenario:
+1-If Fusion complains about not being authorized Go to the Security andd Privacy control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted.</description>
+    </item>
     
     <item>
       <title>Zigbee2mqtt Step by Step</title>

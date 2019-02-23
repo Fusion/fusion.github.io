@@ -7,29 +7,30 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta property="og:title" content=" DEVONthink: MarkDown to Viewer &middot;  The Nexus" />
+    <meta property="og:title" content=" Fixing Vmware Fusion Broken Vmmon &middot;  The Nexus" />
     <meta property="og:site_name" content="The Nexus" />
-    <meta property="og:url" content="http://zteo.com/posts/devonthink-markdown-to-viewer/" />
+    <meta property="og:url" content="http://zteo.com/posts/fixing-vmware-fusion-broken-vmmon/" />
 
     
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content="2012-01-19T22:43:42Z" />
+    <meta property="og:article:published_time" content="2019-02-23T14:06:09-08:00" />
     
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
-    <meta name="twitter:title" content="DEVONthink: MarkDown to Viewer" />
+    <meta name="twitter:title" content="Fixing Vmware Fusion Broken Vmmon" />
     
-    <meta name="twitter:image" content="http://zteo.com/images/071c67b7-7c75-47f3-9feb-81a5e983ba72.jpg" />
-    
-    <meta name="twitter:description" content="Like many other DEVONthink users, I have started to feel regret that MarkDown is not natively supported.
-Now, a piece of good news is that, as long as you edit a plain-text document in DT, you are, in effect, editing a potential MarkDown document.
-In the past, it was possible to open a DT document in an application such as the excellent Marked.app. But it is not any longer. I totally understand the author&rsquo;s argument: as a pure viewer, it feels wrong for an application to register as an editor." />
-    <meta name="twitter:url" content="http://zteo.com/posts/devonthink-markdown-to-viewer/" />
+    <meta name="twitter:description" content="Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded
+ /dev/vmmon: broken pipe
+ or
+ /dev/vmmon: No such file or directory
+ Here are three different fixes, because this is definitely nor a &ldquo;one size fits all&rdquo; scenario:
+1-If Fusion complains about not being authorized Go to the Security andd Privacy control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted." />
+    <meta name="twitter:url" content="http://zteo.com/posts/fixing-vmware-fusion-broken-vmmon/" />
     
 
-    <title> DEVONthink: MarkDown to Viewer &middot;  The Nexus</title>
+    <title> Fixing Vmware Fusion Broken Vmmon &middot;  The Nexus</title>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
@@ -48,7 +49,7 @@ In the past, it was possible to open a DT document in an application such as the
 
 
     
-    <meta name="description" content="DEVONthink: MarkDown to Viewer" />
+    <meta name="description" content="" />
     
 
     
@@ -67,7 +68,7 @@ In the past, it was possible to open a DT document in an application such as the
     
 
     
-    <link rel="canonical" href="http://zteo.com/posts/devonthink-markdown-to-viewer/" />
+    <link rel="canonical" href="http://zteo.com/posts/fixing-vmware-fusion-broken-vmmon/" />
 
     
     <script type="application/ld+json">
@@ -76,10 +77,10 @@ In the past, it was possible to open a DT document in an application such as the
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/devonthink-markdown-to-viewer/"
+          "@id": "http://zteo.com/posts/fixing-vmware-fusion-broken-vmmon/"
         },
-        "headline": "DEVONthink: MarkDown to Viewer",
-        "description": "DEVONthink: MarkDown to Viewer",
+        "headline": "Fixing Vmware Fusion Broken Vmmon",
+        "description": "",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -103,15 +104,16 @@ In the past, it was possible to open a DT document in an application such as the
             "width": 80
           }
         },
+        
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/071c67b7-7c75-47f3-9feb-81a5e983ba72.jpg",
-          "height": 133,
-          "width": 200
+          "url": "",
+          "height": 80,
+          "width": 80
         },
-        "datePublished": "2012-01-19",
-        "dateModified": "2012-01-19",
-        "wordCount": 242,
+        "datePublished": "2019-02-23",
+        "dateModified": "2019-02-23",
+        "wordCount": 290,
         
     }
     </script>
@@ -200,11 +202,11 @@ In the past, it was possible to open a DT document in an application such as the
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">19 Jan 2012</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">242</span> words)</span></span>
+                        <span class="post-date">23 Feb 2019</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">290</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
-                <h1 class="post-title">DEVONthink: MarkDown to Viewer</h1>
+                <h1 class="post-title">Fixing Vmware Fusion Broken Vmmon</h1>
               </header>
 
               <section class="post-content">
@@ -214,43 +216,66 @@ In the past, it was possible to open a DT document in an application such as the
                 
                 
 
-                <p><img src="/images/DateLine.jpg" alt="" /><br />
-Like many other DEVONthink users, I have started to feel regret that MarkDown
-is not natively supported.<br />
-Now, a piece of good news is that, as long as you edit a plain-text document
-in DT, you are, in effect, editing a potential MarkDown document.<br />
-In the past, it was possible to open a DT document in an application such as
-the excellent Marked.app. <a href="http://support.markedapp.com/discussions/problems/30-marked-no-longer-appears-in-open-with-context-menu">But it is not any longer</a>. I totally understand the author&rsquo;s
-argument: as a pure viewer, it feels wrong for an application to register as
-an editor.</p>
+                
 
-<p>So, here is my solution:</p>
+<p>Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded</p>
 
-<p>Create a short script</p>
-<div class="highlight"><pre class="chroma"><code class="language-applescript" data-lang="applescript"><span class="k">tell</span> <span class="nb">application</span> <span class="na">id</span> <span class="s2">&#34;com.devon-technologies.thinkpro2&#34;</span>  
-    <span class="k">set</span> <span class="nv">docInfo</span> <span class="k">to</span> <span class="nb">the</span> <span class="na">content</span> <span class="nv">record</span>  
-    <span class="k">set</span> <span class="nv">docPath</span> <span class="k">to</span> <span class="k">get</span> <span class="nb">the</span> <span class="na">path</span> <span class="k">of</span> <span class="nv">docInfo</span>  
-    <span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;Marked&#34;</span>  
-        <span class="nb">activate</span>  
-        <span class="nb">open</span> <span class="nv">docPath</span>  
-    <span class="k">end</span> <span class="k">tell</span>  
-<span class="k">end</span> <span class="k">tell</span></code></pre></div>
-<p>Save this script as <em>/Application\ Support/DEVONthink\ Pro\ 2/Scripts/DTInMarkdown.scpt</em><br />
-Note: your actual DEVONthink folder name may differ based on which version you
-are using.</p>
+<blockquote>
+<p>/dev/vmmon: broken pipe</p>
+</blockquote>
 
-<p>In DT, select &lsquo;Script menu (icon) &gt; Update Scripts Menu&rsquo;: you should now see your new script.</p>
+<p>or</p>
 
-<p>From the System Menu, open &lsquo;System Preferences&hellip;&rsquo; then:<br />
-&lsquo;Keyboard &gt; Keyboard Shortcuts &gt; Application Shortcuts&rsquo;</p>
+<blockquote>
+<p>/dev/vmmon: No such file or directory</p>
+</blockquote>
 
-<p>Create a new entry for DEVONthink Pro (or DEVONthink Pro Office); enter Menu
-Title: <em>DTInMarkdown</em> and enter a keyboard shortcut. I personally use
-<strong>Cmd+Shift+Return</strong>.</p>
+<p>Here are three different fixes, because this is definitely nor a &ldquo;one size fits all&rdquo; scenario:</p>
 
-<p>Now, next time you are editing a plain text/MarkDown document in DT, that
-keyboard shortcut should open the document in Marked.app for instant preview.
-Note that the preview is updated every time you save your document.</p>
+<h2 id="1-if-fusion-complains-about-not-being-authorized">1-If Fusion complains about not being authorized</h2>
+
+<p>Go to the <span class="simpleitem1">Security andd Privacy</span>
+ control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted.</p>
+
+<h2 id="2-starting-with-mojave-is-disk-access-authorized">2-Starting with Mojave: is disk access authorized?</h2>
+
+<p>In the same control panel, go to the <span class="simpletab1">Privacy</span>
+ tab and make sure that Fusion is allowed to write to disk&hellip;</p>
+
+<h2 id="3-if-fusion-still-complains-about-not-being-authorized">3-If Fusion still complains about not being authorized</h2>
+
+<p>Check if it&rsquo;s because the image itself got quarantined: run</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">xattr -l ~/Downloads/VMware-Fusion-*.dmg <span class="p">|</span> grep quarantine</code></pre></div>
+<p>If you are getting any output, this is going to be a bit more work: you need to uninstall Fusion; run the command below; re-install Fusion:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">xattr -dr com.apple.quarantine ~/Downloads/VMware-Fusion-*.dmg</code></pre></div>
+<h2 id="4-if-that-still-did-not-help">4-If that still did not help</h2>
+
+<p>Maybe you have loaded too many kernel extensions (kext files) &ndash; this can happen easily if you also installed VirtualBox, Parallels, etc.</p>
+
+<p>Run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">kextstat <span class="p">|</span> grep com.vmware <span class="p">|</span>  awk <span class="s1">&#39;{print $6}&#39;</span></code></pre></div>
+<p>You should get something similar to:</p>
+
+<blockquote>
+<p>com.vmware.kext.vmci</p>
+
+<p>com.vmware.kext.vmnet</p>
+
+<p>com.vmware.kext.vmx86</p>
+
+<p>com.vmware.kext.vmioplug.18.1.2</p>
+</blockquote>
+
+<p>If you are getting fewer rows, this could be your issue. Now, you need to select what other software you wish to sacrifice to allow Fusion to work.</p>
+
+<p>Let&rsquo;s say you decide on VirtualBox. First, remove it from your system. I find something like <a href="https://www.appzapper.com/">App Zapper</a> to be quite thorough. Unfortunately, even this little guy will not remove the kexts. You will need to remove them manually.</p>
+
+<p>As super user, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> kext in <span class="k">$(</span>ls /Library/Application<span class="se">\ </span>Support/VirtualBox<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+  kextutil /Library/Application<span class="se">\ </span>Support/VirtualBox/<span class="si">${</span><span class="nv">kext</span><span class="si">}</span> <span class="se">\
+</span><span class="se"></span>    -r /Library/Application<span class="se">\ </span>Support/VirtualBox<span class="p">;</span>
+<span class="k">done</span></code></pre></div>
+<p>Voila. (I hope!)</p>
 
               </section>
 
@@ -273,21 +298,12 @@ Note that the preview is updated every time you save your document.</p>
 
             <nav class="post-nav">
                 
-                    <a class="post-nav-item post-nav-next" href="http://zteo.com/posts/install-parallel-tools-in-archchakra-linux/">
-                        <section class="post-nav-teaser">
-                            <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
-                            <span class="post-nav-info">
-                                <h4 class="post-nav-title">Install Parallel Tools in Arch/Chakra Linux</h4>
-                            </span>
-                        </section>
-                    </a>
                 
-                
-                    <a class="post-nav-item post-nav-prev" href="http://zteo.com/posts/delicious4shelves/">
+                    <a class="post-nav-item post-nav-prev" href="http://zteo.com/posts/zigbee2mqtt-step-by-step/">
                         <section class="post-nav-teaser">
                             <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
                             <span class="post-nav-info">
-                                <h4 class="post-nav-title">Delicious4Shelves</h4>
+                                <h4 class="post-nav-title">Zigbee2mqtt Step by Step</h4>
                             </span>
                         </section>
                     </a>
