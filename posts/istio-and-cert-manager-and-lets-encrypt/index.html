@@ -37,7 +37,7 @@ Anyway, in a futile attempt to remain somewhat ahead of the curve, this article 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588213276" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -449,7 +449,7 @@ kubectl delete -f test-resources.yaml
 </span><span class="s">  namespace: cert-manager
 </span><span class="s">type: Opaque
 </span><span class="s">stringData:
-</span><span class="s">  api-token: baZliX0yn6jHYq_iFRF0-iE2wceRq4Fo1cJfaKtj
+</span><span class="s">  api-token: your-cloudflare-token
 </span><span class="s">EOF</span>
 
 kubectl apply -f acme-store-token.yaml
@@ -462,14 +462,14 @@ kubectl apply -f acme-store-token.yaml
 </span><span class="s">  namespace: cert-manager
 </span><span class="s">spec:
 </span><span class="s">  acme:
-</span><span class="s">    email: chris@yoursite.com
+</span><span class="s">    email: you@yoursite.com
 </span><span class="s">    server: https://acme-v02.api.letsencrypt.org/directory
 </span><span class="s">    privateKeySecretRef:
 </span><span class="s">      name: acme-issuer-account-key
 </span><span class="s">    solvers:
 </span><span class="s">    - dns01:
 </span><span class="s">        cloudflare:
-</span><span class="s">          email: chris@yoursite.com
+</span><span class="s">          email: you@yoursite.com
 </span><span class="s">          apiTokenSecretRef:
 </span><span class="s">            name: cloudflare-api-token-secret
 </span><span class="s">            key: api-token
@@ -490,8 +490,8 @@ kubectl apply -f acme-issuer.yaml
 </span><span class="s">  namespace: default
 </span><span class="s">spec:
 </span><span class="s">  dnsNames:
-</span><span class="s">    - test1.gamesmap.com
-</span><span class="s">  secretName: acme-test1-gamesmap-secret
+</span><span class="s">    - web.yoursite.com
+</span><span class="s">  secretName: acme-web-yoursite-secret
 </span><span class="s">  issuerRef:
 </span><span class="s">    name: cloudflare-letsencrypt-prod
 </span><span class="s">    kind: ClusterIssuer
@@ -811,7 +811,7 @@ function clearActiveStatesInTableOfContents() {
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1588206894"></script>
+<script src="/mermaid/mermaid.js?1588213276"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>
