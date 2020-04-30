@@ -23,9 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/064c4b6d-1ea6-4a6f-af82-0a30099fc33e.jpg" />
     
-    <meta name="twitter:description" content="A lot of applications expect the status bar to be at the top of your device&rsquo;s screen. It&rsquo;s true in most cases so their developers are somewhat justified in making this assumption.
-However, with more and more tablets on the market, this is becoming an increasingly dangerous assumption.
-Also somewhat dangerous: the notion that your status bar&rsquo;s height will be (your visible area&rsquo;s height - zero). Google never made any commitment that the status bar will always start at pixel zero." />
+    <meta name="twitter:description" content="A lot of applications expect the status bar to be at the top of your device&rsquo;s screen. It&rsquo;s true in most cases so their developers are somewhat justified in making this assumption.However, with more and more tablets on the market, this is becoming an increasingly dangerous assumption." />
     <meta name="twitter:url" content="http://zteo.com/posts/android-statusbar-height-the-cautious-way/" />
     
 
@@ -35,7 +33,7 @@ Also somewhat dangerous: the notion that your status bar&rsquo;s height will be 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +74,7 @@ Also somewhat dangerous: the notion that your status bar&rsquo;s height will be 
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/android-statusbar-height-the-cautious-way/"
+          "@id": "http:\/\/zteo.com\/posts\/android-statusbar-height-the-cautious-way\/"
         },
         "headline": "Android StatusBar Height, the cautious way",
         "description": "Android StatusBar Height, the cautious way",
@@ -93,9 +91,9 @@ Also somewhat dangerous: the notion that your status bar&rsquo;s height will be 
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -105,13 +103,13 @@ Also somewhat dangerous: the notion that your status bar&rsquo;s height will be 
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/064c4b6d-1ea6-4a6f-af82-0a30099fc33e.jpg",
+          "url": "http:\/\/zteo.com\/064c4b6d-1ea6-4a6f-af82-0a30099fc33e.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2011-11-08",
         "dateModified": "2011-11-08",
-        "wordCount": 129,
+        "wordCount":  129 ,
         
     }
     </script>
@@ -191,6 +189,16 @@ Also somewhat dangerous: the notion that your status bar&rsquo;s height will be 
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -214,17 +222,17 @@ Also somewhat dangerous: the notion that your status bar&rsquo;s height will be 
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/asirap/5587611705/sizes/z/in/photostream/"><img src="/images/5587611705_2aa6dfbe31_z-300x200.jpg" alt="" /></a>A
+
+                
+                    <p><a href="http://www.flickr.com/photos/asirap/5587611705/sizes/z/in/photostream/"><img src="/images/5587611705_2aa6dfbe31_z-300x200.jpg" alt=""></a>A
 lot of applications expect the status bar to be at the top of your device&rsquo;s
 screen. It&rsquo;s true in most cases so their developers are somewhat justified in
-making this assumption.<br />
+making this assumption.<br>
 However, with more and more tablets on the market, this is becoming an
 increasingly dangerous assumption.</p>
-
 <p>Also somewhat dangerous: the notion that your status bar&rsquo;s height will be
 (your visible area&rsquo;s height - zero). Google never made any commitment that the
 status bar will always start at pixel zero.</p>
-
 <p>So, here is how I do it:</p>
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Rect</span> <span class="n">outerRect</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rect</span><span class="o">();</span>
 <span class="n">Rect</span> <span class="n">usableRect</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rect</span><span class="o">();</span>
@@ -236,7 +244,9 @@ status bar will always start at pixel zero.</p>
 </span><span class="c1"></span><span class="kt">int</span> <span class="n">bottomGap</span> <span class="o">=</span> <span class="n">outerRect</span><span class="o">.</span><span class="na">bottom</span> <span class="o">-</span> <span class="n">usableRect</span><span class="o">.</span><span class="na">bottom</span><span class="o">;</span>
 <span class="k">if</span><span class="o">(</span><span class="n">bottomGap</span> <span class="o">&gt;</span> <span class="n">statusBarHeight</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">statusBarHeight</span> <span class="o">=</span> <span class="n">bottomGap</span><span class="o">;</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span>
+</code></pre></div>
+                
               </section>
 
               <footer class="post-footer">
@@ -283,11 +293,35 @@ status bar will always start at pixel zero.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -304,7 +338,7 @@ status bar will always start at pixel zero.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

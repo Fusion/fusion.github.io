@@ -21,7 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="C!D v2 = nextBBS multi" />
     
-    <meta name="twitter:description" content="![nextBBS](/images/logo_nextbbs.png)Well, after spending quite some time cleaning up the code, making sure that no &#39;dangerous&#39; Admin CP operation is available in multi-boards mode, and identifying which settings need to be made immutable, we are almost there. I am currently working on the automatic setup script. Remaining to do: **mkdir** servers/SERVERID servers/SERVERID/attachments servers/SERVERID/avatars servers/SERVERID/emoticons servers/SERVERID/lang servers/SERVERID/lang/en servers/SERVERID/uploads servers/SERVERID/templates servers/SERVERID/templates/* servers/SERVERID/templates/*_c **cp** servers/SERVERID/emoticons/* servers/SERVERID/templates/*[!_c]/* Note that the only &#39;router&#39; module currently ready is the one based on subdomains." />
+    <meta name="twitter:description" content="Well, after spending quite some time cleaning up the code, making sure that no &lsquo;dangerous&rsquo; Admin CP operation is available in multi-boards mode, and identifying which settings need to be made immutable, we are almost there." />
     <meta name="twitter:url" content="http://zteo.com/posts/cd-v2-nextbbs-multi/" />
     
 
@@ -31,7 +31,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -72,7 +72,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/cd-v2-nextbbs-multi/"
+          "@id": "http:\/\/zteo.com\/posts\/cd-v2-nextbbs-multi\/"
         },
         "headline": "C!D v2 = nextBBS multi",
         "description": "C!D v2 = nextBBS multi",
@@ -89,9 +89,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -108,7 +108,7 @@
         },
         "datePublished": "2006-12-10",
         "dateModified": "2006-12-10",
-        "wordCount": 109,
+        "wordCount":  109 ,
         
     }
     </script>
@@ -188,6 +188,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -211,7 +221,9 @@
                 
                 
 
-                <pre><code>![nextBBS](/images/logo_nextbbs.png)Well, after spending quite some time cleaning up the code, making sure that no 'dangerous' Admin CP operation is available in multi-boards mode, and identifying which settings need to be made immutable, we are almost there.
+
+                
+                    <pre><code>![nextBBS](/images/logo_nextbbs.png)Well, after spending quite some time cleaning up the code, making sure that no 'dangerous' Admin CP operation is available in multi-boards mode, and identifying which settings need to be made immutable, we are almost there.
 
 
 
@@ -251,6 +263,7 @@ Note that the only 'router' module currently ready is the one based on subdomain
 Of course,  as usual with everything nextBBS, this code will be available in the software's next release. Your first chance to take a look under Clic!Dev's hood.
 </code></pre>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -297,11 +310,35 @@ Of course,  as usual with everything nextBBS, this code will be available in the
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -318,7 +355,7 @@ Of course,  as usual with everything nextBBS, this code will be available in the
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -24,7 +24,6 @@
     <meta name="twitter:title" content="Creating a ReasonML Native App: Building and Running" />
     
     <meta name="twitter:description" content="This is by far the most boring piece of this whole endeavor.
-
 Unfortunately, as we accumulate years of experience, old habits accrete on the programmer and tools such as Make become an integral part of our fossilized identity. You will have to forgive me for my use of Makefiles!" />
     <meta name="twitter:url" content="http://zteo.com/posts/reason-native-app-part-3/" />
     
@@ -35,7 +34,7 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +75,7 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/reason-native-app-part-3/"
+          "@id": "http:\/\/zteo.com\/posts\/reason-native-app-part-3\/"
         },
         "headline": "Creating a ReasonML Native App: Building and Running",
         "description": "",
@@ -93,9 +92,9 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -112,8 +111,8 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
         },
         "datePublished": "2018-09-08",
         "dateModified": "2018-09-08",
-        "wordCount": 334,
-        "keywords": ["reason","functional"] 
+        "wordCount":  334 ,
+        "keywords": "[\"reason\",\"functional\"]" 
     }
     </script>
     
@@ -192,6 +191,16 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -218,27 +227,6 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
                     This post is part of a series. Related posts:
                     <ul>
                     
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
                     
                         
                         
@@ -728,9 +716,36 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
                     
                         
                         
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
                             
                                 <li>Creating a ReasonML Native App: Memoizing DNS queries</li>
                             
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
                         
                     
                         
@@ -743,12 +758,11 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
                     </div>
                 
 
-                <p>This is by far the most boring piece of this whole endeavor.</p>
 
+                
+                    <p>This is by far the most boring piece of this whole endeavor.</p>
 <p>Unfortunately, as we accumulate years of experience, old habits accrete on the programmer and tools such as <code>Make</code> become an integral part of our fossilized identity. You will have to forgive me for my use of Makefiles!</p>
-
 <p>Our Makefile will contain targets for building release binaries for MacOS and Linux as well as preparing our system for Curses bindings.</p>
-
 <p>Our build targets are the simplest. Since I am building on MacOS, the <code>build</code> target will be run both natively and in a docker container to &ldquo;cross-compile&rdquo; a Linux version:</p>
 <div class="highlight"><pre class="chroma"><code class="language-makefile" data-lang="makefile"><span class="nf">build</span><span class="o">:</span>
         jbuilder build
@@ -762,36 +776,34 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
 <span class="nf">releases/reasonable-fidelity-linux</span><span class="o">:</span>
         @echo <span class="s2">&#34;Storing linux release in releases/&#34;</span> <span class="o">&amp;&amp;</span> <span class="se">\
 </span><span class="se"></span>        docker cp ubuntu-headless:/home/chris/reasonable-fidelity/_build/default/src/main.exe releases/reasonable-fidelity-linux
-</code></pre></div>
-<p>Our use of <a href="https://github.com/andyli/jbuilder">jbuilder</a> should be a pretty clear indicator that we are working squarely in an OCaml tooling environment.</p>
-
+</code></pre></div><p>Our use of <a href="https://github.com/andyli/jbuilder">jbuilder</a> should be a pretty clear indicator that we are working squarely in an OCaml tooling environment.</p>
 <p>Running our compiled binaries while under development is as simple as:</p>
 <div class="highlight"><pre class="chroma"><code class="language-makefile" data-lang="makefile"><span class="nf">run</span><span class="o">:</span> <span class="n">build</span>
         ./_build/install/default/bin/reasonable-fidelity run
-</code></pre></div>
-<p>The remainder of the Makefile is dedicated to making sure we have working Curses bindings:</p>
+
+</code></pre></div><p>The remainder of the Makefile is dedicated to making sure we have working Curses bindings:</p>
 <div class="highlight"><pre class="chroma"><code class="language-makefile" data-lang="makefile"><span class="nv">CURSES_PKG_NAME</span><span class="o">=</span>ocaml-curses-1.0.3.ogunden1.tar.gz
 
 <span class="nf">prepare_curses</span><span class="o">:</span> <span class="n">prepare_tools</span> <span class="n">ocaml</span>-<span class="n">curses</span>-1.0.3 <span class="n">ocaml</span>-<span class="n">curses</span>-1.0.3/<span class="n">patched</span> <span class="n">curses_howto</span>
 
 <span class="nf">prepare_tools</span><span class="o">:</span>
-<span class="err">ifeq</span> <span class="o">(</span>,<span class="k">$(</span>shell which curl<span class="k">)</span><span class="o">)</span>
-<span class="err">ifeq</span> <span class="o">(</span>,<span class="k">$(</span>shell which wget2<span class="k">)</span><span class="o">)</span>
-        @echo <span class="s2">&#34;\n# Please, install curl or wget #\n&#34;</span>
-        <span class="nb">exit</span> <span class="m">1</span>
+<span class="err">ifeq</span> <span class="err">(,</span><span class="k">$(</span><span class="nv">shell</span> <span class="nv">which</span> <span class="nv">curl</span><span class="k">)</span><span class="err">)</span>
+<span class="err">ifeq</span> <span class="err">(,</span><span class="k">$(</span><span class="nv">shell</span> <span class="nv">which</span> <span class="nv">wget</span>2<span class="k">)</span><span class="err">)</span>
+        <span class="err">@echo</span> <span class="s2">&#34;\n# Please, install curl or wget #\n&#34;</span>
+        <span class="err">exit</span> <span class="err">1</span>
 <span class="err">else</span>
-        <span class="k">$(</span><span class="nb">eval</span> getter :<span class="o">=</span> wget<span class="k">)</span>
+        <span class="nf">$(eval getter </span><span class="o">:</span>= <span class="n">wget</span>)
 <span class="err">endif</span>
 <span class="err">else</span>
-        <span class="k">$(</span><span class="nb">eval</span> getter :<span class="o">=</span> curl -O<span class="k">)</span>
+        <span class="nf">$(eval getter </span><span class="o">:</span>= <span class="n">curl</span> -<span class="n">O</span>)
 <span class="err">endif</span>
-<span class="err">ifeq</span> <span class="o">(</span>,<span class="k">$(</span>shell which autoreconf<span class="k">)</span><span class="o">)</span>
-        @echo <span class="s2">&#34;\n# Please, install autoconf/autoreconf #\n&#34;</span>
-        <span class="nb">exit</span> <span class="m">1</span>
+<span class="err">ifeq</span> <span class="err">(,</span><span class="k">$(</span><span class="nv">shell</span> <span class="nv">which</span> <span class="nv">autoreconf</span><span class="k">)</span><span class="err">)</span>
+        <span class="err">@echo</span> <span class="s2">&#34;\n# Please, install autoconf/autoreconf #\n&#34;</span>
+        <span class="err">exit</span> <span class="err">1</span>
 <span class="err">endif</span>
-<span class="err">ifeq</span> <span class="o">(</span>,<span class="k">$(</span>shell which make<span class="k">)</span><span class="o">)</span>
-        @echo <span class="s2">&#34;\n# Please, install make and build essential #\n&#34;</span>
-        <span class="nb">exit</span> <span class="m">1</span>
+<span class="err">ifeq</span> <span class="err">(,</span><span class="k">$(</span><span class="nv">shell</span> <span class="nv">which</span> <span class="nv">make</span><span class="k">)</span><span class="err">)</span>
+        <span class="err">@echo</span> <span class="s2">&#34;\n# Please, install make and build essential #\n&#34;</span>
+        <span class="err">exit</span> <span class="err">1</span>
 <span class="err">endif</span>
 
 <span class="nf">ocaml-curses-1.0.3</span><span class="o">:</span>
@@ -812,6 +824,7 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
         @echo <span class="s2">&#34;\nIf you are using this patched curses version\n(all the patch does is lie about &#39;term.h&#39;)&#34;</span> <span class="o">&amp;&amp;</span> <span class="se">\
 </span><span class="se"></span>        <span class="nb">echo</span> <span class="s2">&#34;then do not forget to:\n\n    cd ocaml-curses-1.0.3\n    make all opt install\n&#34;</span>
 </code></pre></div>
+                
               </section>
 
               <footer class="post-footer">
@@ -864,11 +877,35 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -885,7 +922,7 @@ Unfortunately, as we accumulate years of experience, old habits accrete on the p
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

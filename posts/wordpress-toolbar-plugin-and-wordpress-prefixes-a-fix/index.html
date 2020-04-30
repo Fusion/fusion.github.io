@@ -21,10 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Wordpress Toolbar Plugin and Wordpress Prefixes: A Fix" />
     
-    <meta name="twitter:description" content="First of all, that&rsquo;s an awesome plugin that will allow your visitors to have a look at external links while retaining the ability to comment locally on your blog. Get it!
-Unfortunately, if you have modified your Wordpress database prefix, for instance because you are using Wordpress MU or the Virtual Module, the toolbar will fail to display.
-Here is my very modest fix that will make it work.
-1. Open wordpress-toolbar/toolbar." />
+    <meta name="twitter:description" content="First of all, that&rsquo;s an awesome plugin that will allow your visitors to have a look at external links while retaining the ability to comment locally on your blog. Get it!" />
     <meta name="twitter:url" content="http://zteo.com/posts/wordpress-toolbar-plugin-and-wordpress-prefixes-a-fix/" />
     
 
@@ -34,7 +31,7 @@ Here is my very modest fix that will make it work.
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +72,7 @@ Here is my very modest fix that will make it work.
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/wordpress-toolbar-plugin-and-wordpress-prefixes-a-fix/"
+          "@id": "http:\/\/zteo.com\/posts\/wordpress-toolbar-plugin-and-wordpress-prefixes-a-fix\/"
         },
         "headline": "Wordpress Toolbar Plugin and Wordpress Prefixes: A Fix",
         "description": "Wordpress Toolbar Plugin and Wordpress Prefixes: A Fix",
@@ -92,9 +89,9 @@ Here is my very modest fix that will make it work.
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -111,7 +108,7 @@ Here is my very modest fix that will make it work.
         },
         "datePublished": "2009-02-17",
         "dateModified": "2009-02-17",
-        "wordCount": 105,
+        "wordCount":  105 ,
         
     }
     </script>
@@ -191,6 +188,16 @@ Here is my very modest fix that will make it work.
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -214,23 +221,22 @@ Here is my very modest fix that will make it work.
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/96878569@N00/1350963678/"><img src="http://farm2.static.flickr.com/1276/1350963678_6a230ad476_s.jpg" alt="Bandaid" /></a>First of all, that&rsquo;s an awesome plugin that will allow your visitors
+
+                
+                    <p><a href="http://www.flickr.com/photos/96878569@N00/1350963678/"><img src="http://farm2.static.flickr.com/1276/1350963678_6a230ad476_s.jpg" alt="Bandaid"></a>First of all, that&rsquo;s an awesome plugin that will allow your visitors
 to have a look at external links while retaining the ability to comment
 locally on your blog. <a href="http://abhinavsingh.com/blog/2009/02/wordpress-toolbar-plugin/">Get it</a>!</p>
-
 <p>Unfortunately, if you have modified your Wordpress database prefix, for
 instance because you are using Wordpress MU or the <a href="http://nexus.zteo.com/2009/02/13/fixing-permissions-after-a-wordpress-prefix-change/">Virtual Module</a>, the toolbar will fail to display.</p>
-
 <p>Here is my very modest fix that will make it work.</p>
-
 <p>1. Open wordpress-toolbar/toolbar.php</p>
-
 <p>2. Find, near the top of the file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">$resultset = $wpdb-&gt;get_results(&#34;SELECT * FROM wp_options where option_name in (&#39;wordpress_toolbar_social&#39;,&#39;wordpress_toolbar_excludedomains&#39;,&#39;wordpress_toolbar_skin&#39;,&#39;wordpress_toolbar_custom&#39;)&#34;);  </code></pre></div>
-<p>Replace with:</p>
-<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">$resultset = $wpdb-&gt;get_results(&#34;SELECT * FROM {$wpdb-&gt;options} where option_name in (&#39;wordpress_toolbar_social&#39;,&#39;wordpress_toolbar_excludedomains&#39;,&#39;wordpress_toolbar_skin&#39;,&#39;wordpress_toolbar_custom&#39;)&#34;);  </code></pre></div>
-<p>3. That&rsquo;s it!</p>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">$resultset = $wpdb-&gt;get_results(&#34;SELECT * FROM wp_options where option_name in (&#39;wordpress_toolbar_social&#39;,&#39;wordpress_toolbar_excludedomains&#39;,&#39;wordpress_toolbar_skin&#39;,&#39;wordpress_toolbar_custom&#39;)&#34;);  
+</code></pre></div><p>Replace with:</p>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">$resultset = $wpdb-&gt;get_results(&#34;SELECT * FROM {$wpdb-&gt;options} where option_name in (&#39;wordpress_toolbar_social&#39;,&#39;wordpress_toolbar_excludedomains&#39;,&#39;wordpress_toolbar_skin&#39;,&#39;wordpress_toolbar_custom&#39;)&#34;);  
+</code></pre></div><p>3. That&rsquo;s it!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -277,11 +283,35 @@ instance because you are using Wordpress MU or the <a href="http://nexus.zteo.co
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -298,7 +328,7 @@ instance because you are using Wordpress MU or the <a href="http://nexus.zteo.co
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

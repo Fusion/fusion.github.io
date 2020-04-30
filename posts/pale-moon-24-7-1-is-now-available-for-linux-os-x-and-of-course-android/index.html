@@ -21,8 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Pale Moon 24.7.1 is now available for Linux, OS X and of course Android." />
     
-    <meta name="twitter:description" content="Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.
-Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243﻿" />
+    <meta name="twitter:description" content="Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;amp;t=5243﻿" />
     <meta name="twitter:url" content="http://zteo.com/posts/pale-moon-24-7-1-is-now-available-for-linux-os-x-and-of-course-android/" />
     
 
@@ -32,7 +31,7 @@ Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243﻿" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -73,7 +72,7 @@ Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243﻿" />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/pale-moon-24-7-1-is-now-available-for-linux-os-x-and-of-course-android/"
+          "@id": "http:\/\/zteo.com\/posts\/pale-moon-24-7-1-is-now-available-for-linux-os-x-and-of-course-android\/"
         },
         "headline": "Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.",
         "description": "Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.",
@@ -90,9 +89,9 @@ Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243﻿" />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -109,7 +108,7 @@ Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243﻿" />
         },
         "datePublished": "2014-08-03",
         "dateModified": "2014-08-03",
-        "wordCount": 16,
+        "wordCount":  16 ,
         
     }
     </script>
@@ -189,6 +188,16 @@ Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243﻿" />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -212,13 +221,14 @@ Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243﻿" />
                 
                 
 
-                <p>Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.</p>
 
+                
+                    <p>Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.</p>
 <p>Changelist:
 <a href="http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243">http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243</a>﻿</p>
+<p><a href="http://sourceforge.net/projects/pm4linux/files/24.7.1/"><img src="https://lh5.googleusercontent.com/proxy/P12iLTahGfK40KTWHqvmokbLqa8cKkLSLCOWAxm_Td1kkgzLF26qbRHdCuu5AIsn-9nwruL32d5DSP3ddtkc2Q0U3u04Jg=w120-h120" alt=""></a></p>
 
-<p><a href="http://sourceforge.net/projects/pm4linux/files/24.7.1/"><img src="https://lh5.googleusercontent.com/proxy/P12iLTahGfK40KTWHqvmokbLqa8cKkLSLCOWAxm_Td1kkgzLF26qbRHdCuu5AIsn-9nwruL32d5DSP3ddtkc2Q0U3u04Jg=w120-h120" alt="" /></a></p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -265,11 +275,35 @@ Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243﻿" />
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -286,7 +320,7 @@ Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;t=5243﻿" />
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

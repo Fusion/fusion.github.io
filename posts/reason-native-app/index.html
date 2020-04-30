@@ -33,7 +33,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +74,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/reason-native-app/"
+          "@id": "http:\/\/zteo.com\/posts\/reason-native-app\/"
         },
         "headline": "Creating a ReasonML Native App: What We Are Building",
         "description": "",
@@ -91,9 +91,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,8 +110,8 @@
         },
         "datePublished": "2018-09-08",
         "dateModified": "2018-09-08",
-        "wordCount": 527,
-        "keywords": ["reason","functional"] 
+        "wordCount":  527 ,
+        "keywords": "[\"reason\",\"functional\"]" 
     }
     </script>
     
@@ -190,6 +190,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -216,27 +226,6 @@
                     This post is part of a series. Related posts:
                     <ul>
                     
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
                     
                         
                         
@@ -726,9 +715,36 @@
                     
                         
                         
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
                             
                                 <li>Creating a ReasonML Native App: Memoizing DNS queries</li>
                             
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
                         
                     
                         
@@ -741,26 +757,20 @@
                     </div>
                 
 
-                <p>I believe this is, as of now (2018), one of few articles you will find about creating a native application using <a href="https://reasonml.github.io/">ReasonML</a>. While Facebook came up with this interesting language/syntax that compiles to OCaml, it seems that they have focused their energy on transpiling it to JavaScript using <a href="https://github.com/BuckleScript/bucklescript">BuckleScript</a></p>
 
+                
+                    <main>
+                        <div class="content blog-content">
+                        <p>I believe this is, as of now (2018), one of few articles you will find about creating a native application using <a href="https://reasonml.github.io/">ReasonML</a>. While Facebook came up with this interesting language/syntax that compiles to OCaml, it seems that they have focused their energy on transpiling it to JavaScript using <a href="https://github.com/BuckleScript/bucklescript">BuckleScript</a></p>
 <p>This means that if you wish to create a &ldquo;native&rdquo; application, it seems that you are expected to rely on <del>Node and Electron</del>. And that&rsquo;s a shame, because OCaml itself provides a very competent native compiler and we are going to use it. I hope I can remember all the hoops I had to jump through so that you don&rsquo;t have to.</p>
-
-<p><i class="fa fa-github"></i> <a href="https://github.com/Fusion/reasonable-fidelity">GitHub Project</a></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="https://github.com/Fusion/reasonable-fidelity">GitHub Project</a></p>
 <h1 id="my-goal">My goal</h1>
-
 <p>This is, hopefully, the first of a series of blog posts I will write over a few weeks to make it easier for anyone else to start using ReasonML natively.</p>
-
 <p>I will show you how I created an application that provides an easy way to check that a web site — especially a single page application (&lsquo;SPA&rsquo;) — reliably sends the same replies to the same queries, thus avoiding regressions due to new features being added or old issues being addressed.</p>
-
 <p>This application needs to be fast and multi platforms.</p>
-
 <h2 id="how">How?</h2>
-
 <p>You favorite web browser likely provides a way to generate a HAR file, and we are going to leverage this file. A <a href="https://en.wikipedia.org/wiki/.har">.har file</a>  contains, in json format, a list of all HTTP queries and the website&rsquo;s responses.</p>
-
 <p>For instance, in Chrome:</p>
-
 <ul>
 <li>Open a tab to the page you are planning on automating</li>
 <li>Open the developer console (on MacOS: <kbd>⌘</kbd>
@@ -775,11 +785,8 @@
 <li>Select <span class="simpleitem1">Save as HAR with content</span>
  and save with a memorable name.</li>
 </ul>
-
 <p>This was step #1. Step #2 consists of running our application (&ldquo;reasonable fidelity&rdquo;) and make sure that it is happy.</p>
-
 <h1 id="so-what-will-we-learn">So, what will we learn?</h1>
-
 <ul>
 <li>Installing Reason and OCaml</li>
 <li>Configuring our favorite editor as an IDE</li>
@@ -797,22 +804,15 @@
 <li>Parsing/Generating JSON Natively (no JavaScript library)</li>
 <li>Memoizing DNS queries</li>
 </ul>
-
 <h2 id="tldr">TLDR</h2>
-
 <p>Yes, there&rsquo;s a &ndash; very &ndash; short version:</p>
-
 <ul>
 <li>Forget about all the JavaScript interop literature you will find online</li>
 <li>OCaml &ndash; and its vast library &ndash; is your (not-at-all) secret weapon: after all, Reason lives on top of OCaml!</li>
 </ul>
-
 <p>Don&rsquo;t panic! If you are not all that familiar with OCaml&rsquo;s syntax, Reason comes with an excellent tool called <code>refmt</code> which allows you to translate OCaml code to Reason.</p>
-
 <p>Keep in mind that, target-wise, native compiling and using BuckleScript <strong>do not</strong> intersect:</p>
-
 <p>(Refresh if the diagram below doesn&rsquo;t display properly)</p>
-
 <div class="mermaid" align="center">
 graph TB;
     sc["Reason Code"] --> |compile| oc["Ocaml Code"]
@@ -825,6 +825,26 @@ graph TB;
         bl --> |BuckleScript compile| JavaScript
     end
 </div>
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#my-goal">My goal</a>
+      <ul>
+        <li><a href="#how">How?</a></li>
+      </ul>
+    </li>
+    <li><a href="#so-what-will-we-learn">So, what will we learn?</a>
+      <ul>
+        <li><a href="#tldr">TLDR</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -877,11 +897,35 @@ graph TB;
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -898,7 +942,7 @@ graph TB;
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

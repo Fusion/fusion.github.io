@@ -21,12 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Flv Player" />
     
-    <meta name="twitter:description" content="The player I used in my previous post ( &lsquo;nBBS Admin CP&rsquo; ) is now available in the Wordpress.org&rsquo;s plugin directory.
-A quick overview:
- This plugin lets you embed a flash stream using Geoff Stearn&rsquo;s player.
- You can embed multiple movies in the same page and/or post.
- You can embed movies in posts and comments.
- You can specify a width and a height to override the default values of 640x480." />
+    <meta name="twitter:description" content="The player I used in my previous post ( &lsquo;nBBS Admin CP&rsquo; ) is now available in the Wordpress.org&rsquo;s plugin directory." />
     <meta name="twitter:url" content="http://zteo.com/posts/flv-player/" />
     
 
@@ -36,7 +31,7 @@ A quick overview:
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +72,7 @@ A quick overview:
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/flv-player/"
+          "@id": "http:\/\/zteo.com\/posts\/flv-player\/"
         },
         "headline": "Flv Player",
         "description": "Flv Player",
@@ -94,9 +89,9 @@ A quick overview:
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -113,7 +108,7 @@ A quick overview:
         },
         "datePublished": "2007-07-02",
         "dateModified": "2007-07-02",
-        "wordCount": 108,
+        "wordCount":  108 ,
         
     }
     </script>
@@ -193,6 +188,16 @@ A quick overview:
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -216,29 +221,33 @@ A quick overview:
                 
                 
 
-                <p><a href="http://nexus.zteo.com/files/2007/07/wordpress.jpg" title="Wordpress Logo"><img src="/images/wordpress.thumbnail.jpg" alt="Wordpress
-Logo" /></a>The player I used in my previous post ( &lsquo;nBBS Admin CP&rsquo; ) is
+
+                
+                    <p><a href="http://nexus.zteo.com/files/2007/07/wordpress.jpg" title="Wordpress Logo"><img src="/images/wordpress.thumbnail.jpg" alt="WordpressLogo"></a>The player I used in my previous post ( &lsquo;nBBS Admin CP&rsquo; ) is
 now available in the Wordpress.org&rsquo;s plugin directory.</p>
-
 <p>A quick overview:</p>
-
 <ul>
-<li><p>This plugin lets you embed a flash stream using Geoff Stearn&rsquo;s player.</p></li>
-
-<li><p>You can embed multiple movies in the same page and/or post.</p></li>
-
-<li><p>You can embed movies in posts and comments.</p></li>
-
-<li><p>You can specify a width and a height to override the default values of 640x480.</p></li>
-
-<li><p>I use Geoff&rsquo;s Javascript to work around Adobe&rsquo;s restriction on flash content display.</p></li>
+<li>
+<p>This plugin lets you embed a flash stream using Geoff Stearn&rsquo;s player.</p>
+</li>
+<li>
+<p>You can embed multiple movies in the same page and/or post.</p>
+</li>
+<li>
+<p>You can embed movies in posts and comments.</p>
+</li>
+<li>
+<p>You can specify a width and a height to override the default values of 640x480.</p>
+</li>
+<li>
+<p>I use Geoff&rsquo;s Javascript to work around Adobe&rsquo;s restriction on flash content display.</p>
+</li>
 </ul>
-
 <p>I know it&rsquo;s not the first Flash plugin for Wordpress&hellip;just let me know if you
 have creative ideas for this little guy.</p>
-
 <p>Find it <a href="http://wordpress.org/extend/plugins/flv-player/">here</a>.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -285,11 +294,35 @@ have creative ideas for this little guy.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -306,7 +339,7 @@ have creative ideas for this little guy.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -21,11 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Leopard: Quick Removal of iCalFix" />
     
-    <meta name="twitter:description" content="Great news: with Leopard, there is no need for iCalFix anymore!
-Bad news: iCalFix is not compatible with the new version of iCal and the latter keeps complaining about the former.
-A lot of people have asked the author -BTW: thanks again, Robert, for creating iCalFix when it was needed- how to remove iCalFix but never got a reply.
-Here is a veeery simple fix:
-Simply remove the input manager from /Library/InputManagers" />
+    <meta name="twitter:description" content="Great news: with Leopard, there is no need for iCalFix anymore!Bad news: iCalFix is not compatible with the new version of iCal and the latter keeps complaining about the former.A lot of people have asked the author -BTW: thanks again, Robert, for creating iCalFix when it was needed- how to remove iCalFix but never got a reply." />
     <meta name="twitter:url" content="http://zteo.com/posts/leopard-quick-removal-of-icalfix/" />
     
 
@@ -35,7 +31,7 @@ Simply remove the input manager from /Library/InputManagers" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +72,7 @@ Simply remove the input manager from /Library/InputManagers" />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/leopard-quick-removal-of-icalfix/"
+          "@id": "http:\/\/zteo.com\/posts\/leopard-quick-removal-of-icalfix\/"
         },
         "headline": "Leopard: Quick Removal of iCalFix",
         "description": "Leopard: Quick Removal of iCalFix",
@@ -93,9 +89,9 @@ Simply remove the input manager from /Library/InputManagers" />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -112,7 +108,7 @@ Simply remove the input manager from /Library/InputManagers" />
         },
         "datePublished": "2008-01-04",
         "dateModified": "2008-01-04",
-        "wordCount": 79,
+        "wordCount":  79 ,
         
     }
     </script>
@@ -192,6 +188,16 @@ Simply remove the input manager from /Library/InputManagers" />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,22 +221,22 @@ Simply remove the input manager from /Library/InputManagers" />
                 
                 
 
-                <p><img src="/images/she-leopard.jpg" alt="" /> Great news: with
-Leopard, there is no need for iCalFix anymore!<br />
+
+                
+                    <p><img src="/images/she-leopard.jpg" alt=""> Great news: with
+Leopard, there is no need for iCalFix anymore!<br>
 Bad news: iCalFix is not compatible with the new version of iCal and the
-latter keeps complaining about the former.<br />
+latter keeps complaining about the former.<br>
 A lot of people have <a href="http://www.robertblum.com/articles/2007/10/16/ive-been-appled">asked the
 author</a> -BTW:
 thanks again, Robert, for creating iCalFix when it was needed- how to remove
 iCalFix but never got a reply.</p>
-
 <p>Here is a veeery simple fix:</p>
-
 <p>Simply remove the input manager from /Library/InputManagers</p>
+<p>Using the shell:<br>
+<em>sudo rm -rf /Library/InputManagers/iCalFix</em></p>
 
-<p>Using the shell:<br />
- <em>sudo rm -rf /Library/InputManagers/iCalFix</em></p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -277,11 +283,35 @@ iCalFix but never got a reply.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -298,7 +328,7 @@ iCalFix but never got a reply.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

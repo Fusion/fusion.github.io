@@ -21,10 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="OS X: “Please try installing again”" />
     
-    <meta name="twitter:description" content="It&rsquo;s like this message has become a feature of OS X.
-You download a .dmg, double-click and expect that all your files should be an exact copy of the original install files. And yet, sometimes, you get stuck with this message.
-Here is a very simple fix that works 90% of the time: make sure that your post-install script can be executed!
-Open a shell window, go to where your package is, and type:" />
+    <meta name="twitter:description" content="It&rsquo;s like this message has become a feature of OS X." />
     <meta name="twitter:url" content="http://zteo.com/posts/os-x-please-try-installing-again/" />
     
 
@@ -34,7 +31,7 @@ Open a shell window, go to where your package is, and type:" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +72,7 @@ Open a shell window, go to where your package is, and type:" />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/os-x-please-try-installing-again/"
+          "@id": "http:\/\/zteo.com\/posts\/os-x-please-try-installing-again\/"
         },
         "headline": "OS X: “Please try installing again”",
         "description": "OS X: “Please try installing again”",
@@ -92,9 +89,9 @@ Open a shell window, go to where your package is, and type:" />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -111,7 +108,7 @@ Open a shell window, go to where your package is, and type:" />
         },
         "datePublished": "2007-03-24",
         "dateModified": "2007-03-24",
-        "wordCount": 86,
+        "wordCount":  86 ,
         
     }
     </script>
@@ -191,6 +188,16 @@ Open a shell window, go to where your package is, and type:" />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -214,19 +221,19 @@ Open a shell window, go to where your package is, and type:" />
                 
                 
 
-                <p>It&rsquo;s like this message has become a feature of OS X.</p>
 
+                
+                    <p>It&rsquo;s like this message has become a feature of OS X.</p>
 <p>You download a .dmg, double-click and expect that all your files should be an
 exact copy of the original install files. And yet, sometimes, you get stuck
 with this message.</p>
-
 <p>Here is a very simple fix that works 90% of the time: make sure that your
 post-install script can be executed!</p>
-
 <p>Open a shell window, go to where your package is, and type:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">chmod a+x yourpackage.pkg/Content/Resources/postinstall</code></pre></div>
-<p>Of course, replace &lsquo;yourpackage,pkg&rsquo; with the package&rsquo;s actual name.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">chmod a+x yourpackage.pkg/Content/Resources/postinstall
+</code></pre></div><p>Of course, replace &lsquo;yourpackage,pkg&rsquo; with the package&rsquo;s actual name.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -273,11 +280,35 @@ post-install script can be executed!</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -294,7 +325,7 @@ post-install script can be executed!</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

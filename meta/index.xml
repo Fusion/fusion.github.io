@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meta on The Nexus</title>
@@ -18,8 +18,8 @@
       
       <guid>http://zteo.com/meta/overview/</guid>
       <description>n2 BBS n2 is the result of the merger of two exciting forums software: wtcBB and nextBBS. It&amp;rsquo;s easy to use and easy to admin. Committed to remain open-source forever. Fork it!
-  
-  Tooredo Tooredo offers instant filtering, context and project management, all in one page!
+   
+Tooredo Tooredo offers instant filtering, context and project management, all in one page!
 It relies on Toodledo to store these tasks as many mobile applications do.</description>
     </item>
     
@@ -29,13 +29,7 @@ It relies on Toodledo to store these tasks as many mobile applications do.</desc
       <pubDate>Wed, 21 Nov 2012 09:16:34 +0000</pubDate>
       
       <guid>http://zteo.com/meta/egosurfing/</guid>
-      <description>Sometimes, people are misguided and comment positively on the author
- http://retromatt.com/2007/05/19/sifr-without-flash/
-&amp;ldquo;Clic!Dev has made [enhancing any site with quality fonts ] even easier and more affordable than ever.&amp;rdquo;
- http://blogs.open.ac.uk/Maths/ajh59/010415.html
-&amp;ldquo;In the meantime, how hard could it be to generate a panelled display from an OPML feed using something like Chris RavensroftÃ¢a‚¬a„¢s &amp;ldquo;Create your own WebTop in php/js in no time&amp;rdquo; approach? ;-)&amp;rdquo;
- http://webscriptz.be/2007/08/03/php4-is-out/
-(On PHP5) &amp;ldquo;I have to say that Photomatt has it right and Clic!</description>
+      <description>They had good things to say about this blog(and I do not mind sending some page ranking their way for that)</description>
     </item>
     
     <item>
@@ -46,10 +40,10 @@ It relies on Toodledo to store these tasks as many mobile applications do.</desc
       <guid>http://zteo.com/meta/about/</guid>
       <description>(TODO: Update this page as it is quite out of date!)
 The goal of this blog is to keep you appraised of various project Chris FR and his team have been working on and plan to work on.These projects include:
- the new free blog host zteo.com,
- the open-source community software nextbbs.com,
- various web sites in our network, such as staffexpo.com and militate.com,
- external collaborations such as kittenauth (status: dead?</description>
+  the new free blog host zteo.com,
+  the open-source community software nextbbs.com,
+  various web sites in our network, such as staffexpo.com and militate.com,
+  external collaborations such as kittenauth (status: dead?</description>
     </item>
     
   </channel>

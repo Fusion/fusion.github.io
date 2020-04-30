@@ -33,7 +33,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +74,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/zigbee2mqtt-step-by-step/"
+          "@id": "http:\/\/zteo.com\/posts\/zigbee2mqtt-step-by-step\/"
         },
         "headline": "Zigbee2mqtt Step by Step",
         "description": "",
@@ -91,9 +91,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -103,13 +103,13 @@
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/zigbee-logo.jpg",
+          "url": "http:\/\/zteo.com\/zigbee-logo.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2018-12-25",
         "dateModified": "2018-12-25",
-        "wordCount": 1255,
+        "wordCount":  1252 ,
         
     }
     </script>
@@ -189,6 +189,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -198,7 +208,7 @@
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">25 Dec 2018</span> <span class="reading-time">| <span class="estimated-reading-time">6 min.</span> (<span class="word-count">1255</span> words)</span></span>
+                        <span class="post-date">25 Dec 2018</span> <span class="reading-time">| <span class="estimated-reading-time">6 min.</span> (<span class="word-count">1252</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -212,127 +222,99 @@
                 
                 
 
-                <p>Here is a solution to build and use your own Zigbee controller. It will work with most Zigbee devices out there, simply because it doesn&rsquo;t come with any manufacturer-specific assumptions.</p>
 
+                
+                    <main>
+                        <div class="content blog-content">
+                        <p>Here is a solution to build and use your own Zigbee controller. It will work with most Zigbee devices out there, simply because it doesn&rsquo;t come with any manufacturer-specific assumptions.</p>
 <p>This is achieved by using your own hardware to sniff Zigbee packets and correctly interpreting these packets to feed relevant information to your iOT platform of choice. In my case: <a href="https://www.home-assistant.io/">Home Assistant</a>.</p>
-
 <p>The name of this project is <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee 2 MQTT</a> and you can get support directly from Koen Kanters on the <a href="https://community.home-assistant.io/t/zigbee2mqtt-getting-rid-of-your-proprietary-zigbee-bridges-xiaomi-hue-tradfri">Home Assistant forum topic</a>.</p>
-
 <p>It is a bit tricky to get working because every step needs to be performed in the correct order. So, here goes.</p>
-
 <h1 id="hardware">Hardware</h1>
-
 <p>First, you need hardware that will work with this project. You will be using a Texas Instruments CC2531USB sniffer to read/write Zigbee RF packets. I found mine in this eBay listing: <a href="https://www.ebay.com/itm/CC2531-CC2540-Sniffer-Protocol-Analyzer-USB-Dongle-BTool-Downloader-for-Zigbee/202095932748?ssPageName=STRK%3AMEBIDX%3AIT&amp;var=502090253363&amp;_trksid=p2057872.m2749.l2649">CC2531 CC2540 Sniffer Protocol Analyzer USB Dongle&amp;BTool + Downloader for Zigbee</a>. Yes, it comes with its own download cable.</p>
-
-<p><img src="/images/cc2351.jpg" alt="Example image" /></p>
-
+<p><img src="/images/cc2351.jpg" alt="Example image"></p>
 <p>You also need to flash a specific firmware om this dongle. The firmware can be found <a href="https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/CC2531/bin">here</a> and the box to flash it in this listing: <a href="https://www.ebay.com/itm/CC-Debugger-and-Programmer-Downloader-for-RF-System-on-Chips-ICSH015A/291997463057?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2057872.m2749.l2649">CC Debugger and Programmer Downloader for RF System-on-Chips ICSH015A</a>.</p>
-
-<p><img src="/images/ccdebugger.jpg" alt="Example image" /></p>
-
+<p><img src="/images/ccdebugger.jpg" alt="Example image"></p>
 <p>It should take a couple weeks for these components to arrive after you order them.</p>
-
 <p><a href="https://koenkk.github.io/zigbee2mqtt/getting_started/flashing_the_cc2531.html">This page</a> does a pretty good job of explaining how to flash the firmware. A few things that are not immediately clear, though:</p>
-
 <ul>
 <li>Make sure that <strong>both</strong> the programmer/debugger box and the cc2351 dongle are connected to your computer&rsquo;s USB ports!</li>
 <li>On Windows, if the programmer shows in your Device Manager as an unknown device, you need to manually update its device driver. Right-click, select <em>Properties</em> then <em>Update Driver</em>. From the CC Debugger Driver archive, select <em>cebal/win_64bit_x64/</em> or from the <em>SmartRF Tools</em> folder itself, select <em>Drivers/Cebal/win_64bit_x64</em>.</li>
 <li>The programmer may not be able to &ldquo;see&rdquo; the dongle. In this case, you may need to first upgrade the programmer itself: using the same tools recommended in this page, you can not only flash the dongle itself, but you can also update the programmer&rsquo;s firmware as well: select the firmware from <em>SmartRF Tools/Firmware/CC Debugger/cebal_fw_sf05dbg.hex</em> and in the tool itself under &ldquo;What do you want to program?&rdquo; select &ldquo;Program Evaluation Board&rdquo;</li>
 </ul>
-
 <p>If, despite all this, the programmer&rsquo;s light remains red, triple-check your connections. If this doesn&rsquo;t fix it, I am sorry to have to tell you that some of these guys may be defective (check there is no bridge in the jumper headers, these amazingly cheap components sometime suffer from some shoddy soldering)</p>
-
 <h1 id="connectivity">Connectivity</h1>
-
 <p>Now, for what you might expect to be the &ldquo;easier&rdquo; part. It may not be.</p>
-
 <p>When you insert the dongle in a Linux box&rsquo;s USB port, a new device should show up: likely <em>/dev/ttyACM0</em> or <em>/dev/ttyUSB0</em>. In my case, because I already had a ZWave USB stick in another port, the Zigbee dongle ended up being <em>/dev/ttyACM1</em>.</p>
-
 <h2 id="nothing-shows-up">Nothing shows up&hellip;</h2>
-
 <p>First check the output of <code>dmesg</code> and see if anything suspiscious is in there. If you see a message informing you that some unknown USB device was added, but nothing more, your kernel may be missing a driver for the &lsquo;gadget&rsquo; protocol.</p>
-
 <p>Run this command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">lsmod <span class="p">|</span> grep cdc_acm</code></pre></div>
-<p>If it does not return anything, you will need to add this driver.  Sorry, but this case would require its own blog post. Or&hellip; you could take the easy path, if you have another Linux laptop where this driver is installed.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">lsmod <span class="p">|</span> grep cdc_acm
+</code></pre></div><p>If it does not return anything, you will need to add this driver.  Sorry, but this case would require its own blog post. Or&hellip; you could take the easy path, if you have another Linux laptop where this driver is installed.</p>
 <p>If it does return something, however, the kernel may simply have missed the insertion. Try reloading the driver:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">rmmod cdc_acm <span class="o">&amp;&amp;</span> modprobe cdc_acm</code></pre></div>
-<h3 id="what-was-that-about-another-laptop">What was that about another laptop?</h3>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">rmmod cdc_acm <span class="o">&amp;&amp;</span> modprobe cdc_acm
+</code></pre></div><h3 id="what-was-that-about-another-laptop">What was that about another laptop?</h3>
 <p>Ah, yes. In my case, the laptop I was trying to run Zigbee2mqtt on is running an older version of RancherOS. But, since I had another laptop running a less exotic kernel, I decided to share the device between the two laptops. This is pretty easy.</p>
-
 <p>On the device with the &ldquo;good&rdquo; kernel, install <code>socat</code> and run:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo tcp-l:4001,keepalive,reuseaddr /dev/ttyACM0</code></pre></div>
-<p>On the laptop you wish to mount this device:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo socat pty,link<span class="o">=</span>/dev/lio0,user<span class="o">=</span>rancher,group<span class="o">=</span>dialout,mode<span class="o">=</span><span class="m">660</span>,ignoreof,waitslave tcp:<span class="o">{</span>connected host ip<span class="o">}</span>:4001</code></pre></div>
-<p><strong>By the way</strong> do not forget to add your user to the group this device will belong to. For instance:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">usermod -aG dialout <span class="o">{</span>your user<span class="o">}</span></code></pre></div>
-<h1 id="pairing">Pairing</h1>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo tcp-l:4001,keepalive,reuseaddr /dev/ttyACM0
+</code></pre></div><p>On the laptop you wish to mount this device:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo socat pty,link<span class="o">=</span>/dev/lio0,user<span class="o">=</span>rancher,group<span class="o">=</span>dialout,mode<span class="o">=</span>660,ignoreof,waitslave tcp:<span class="o">{</span>connected host ip<span class="o">}</span>:4001
+</code></pre></div><p><strong>By the way</strong> do not forget to add your user to the group this device will belong to. For instance:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">usermod -aG dialout <span class="o">{</span>your user<span class="o">}</span>
+</code></pre></div><h1 id="pairing">Pairing</h1>
 <ul>
 <li>Install Zigbee2mqtt as described <a href="https://koenkk.github.io/zigbee2mqtt/getting_started/running_zigbee2mqtt.html">here</a>. An easy way to install the pre-requisite Node is to use <a href="https://github.com/nodenv/nodenv">nodenv</a></li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">nodenv install <span class="m">10</span>.14.2
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">nodenv install 10.14.2
 <span class="nb">echo</span> <span class="s1">&#39;export PATH=~/.nodenv/versions/10.14.2/bin:~/.nodenv/bin:$PATH&#39;</span> &gt;&gt; ~/.bashrc
-<span class="nb">exec</span> bash</code></pre></div>
-<ul>
+<span class="nb">exec</span> bash
+</code></pre></div><ul>
 <li>In the configuration file (<em>data/configuration.yaml</em>) make sure that you have:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">homeassistant<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w"></span>permit_join<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w"></span>mqtt<span class="p">:</span><span class="w">
-</span><span class="w">  </span>base_topic<span class="p">:</span><span class="w"> </span>zigbee2mqtt<span class="w">
-</span><span class="w">  </span>server<span class="p">:</span><span class="w"> </span><span class="s1">&#39;mqtt://{IP address of your mqtt broker}&#39;</span><span class="w">
-</span><span class="w"></span>serial<span class="p">:</span><span class="w">
-</span><span class="w">  </span>port<span class="p">:</span><span class="w"> </span>/dev/ttyACM0</code></pre></div>
-<ul>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">homeassistant</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w"></span><span class="k">permit_join</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w"></span><span class="k">mqtt</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">base_topic</span><span class="p">:</span><span class="w"> </span>zigbee2mqtt<span class="w">
+</span><span class="w">  </span><span class="k">server</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;mqtt://{IP address of your mqtt broker}&#39;</span><span class="w">
+</span><span class="w"></span><span class="k">serial</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">port</span><span class="p">:</span><span class="w"> </span>/dev/ttyACM0<span class="w">
+</span></code></pre></div><ul>
 <li>Insert the dongle into the USB port. The green LED turns on.</li>
 <li>Push the tiny <em>debug</em> button next to the USB connector. The LED should turn off. Do not skip this step!</li>
 <li>Run Zigbee2mqtt:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm start</code></pre></div>
-<p>When the server tells you it is ready, you can start pairing your device.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm start
+</code></pre></div><p>When the server tells you it is ready, you can start pairing your device.</p>
 <p>In my case, I am installing a <a href="https://us.sengled.com/products/element-classic-kit">Sengled lightbulb</a>. To initiate pairing, I turn it on, then off-on 10 times.</p>
-
 <p>After a while, you should start seeing log entries about receiving messages from an unknow device. Eventually, this unknown device will become known. Score!</p>
-
-<h2 id="it-doesn-s-show-up-in-home-assistant">It doesn&rsquo;s show up in Home Assistant</h2>
-
+<h2 id="it-doesns-show-up-in-home-assistant">It doesn&rsquo;s show up in Home Assistant</h2>
 <p>In Home Assistant&rsquo;s <em>configuration.yaml</em> check your <code>mqtt</code> entry.</p>
-
 <p>If you are also using a Smartthing MQTT bridge, you will need to remove the filter. Delete:</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">  </span>discovery_prefix<span class="p">:</span><span class="w"> </span>smartthings</code></pre></div>
-<p>You also need to tell mqtt what topics to pay attention to:</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">mqtt<span class="p">:</span><span class="w">
-</span><span class="w">  </span>broker<span class="p">:</span><span class="w"> </span>{IP<span class="w"> </span>address<span class="w"> </span>of<span class="w"> </span>your<span class="w"> </span>mqtt<span class="w"> </span>broker}<span class="w">
-</span><span class="w">  </span>discovery<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>birth_message<span class="p">:</span><span class="w">
-</span><span class="w">    </span>topic<span class="p">:</span><span class="w"> </span><span class="s1">&#39;hass/status&#39;</span><span class="w">
-</span><span class="w">    </span>payload<span class="p">:</span><span class="w"> </span><span class="s1">&#39;online&#39;</span><span class="w">
-</span><span class="w">  </span>will_message<span class="p">:</span><span class="w">
-</span><span class="w">    </span>topic<span class="p">:</span><span class="w"> </span><span class="s1">&#39;hass/status&#39;</span><span class="w">
-</span><span class="w">    </span>payload<span class="p">:</span><span class="w"> </span><span class="s1">&#39;offline&#39;</span></code></pre></div>
-<p>Restart Home Assistant!</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">  </span><span class="k">discovery_prefix</span><span class="p">:</span><span class="w"> </span>smartthings<span class="w">
+</span></code></pre></div><p>You also need to tell mqtt what topics to pay attention to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">mqtt</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">broker</span><span class="p">:</span><span class="w"> </span>{IP<span class="w"> </span>address<span class="w"> </span>of<span class="w"> </span>your<span class="w"> </span>mqtt<span class="w"> </span>broker}<span class="w">
+</span><span class="w">  </span><span class="k">discovery</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">birth_message</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">topic</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;hass/status&#39;</span><span class="w">
+</span><span class="w">    </span><span class="k">payload</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;online&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">will_message</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">topic</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;hass/status&#39;</span><span class="w">
+</span><span class="w">    </span><span class="k">payload</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;offline&#39;</span><span class="w">
+</span></code></pre></div><p>Restart Home Assistant!</p>
 <h2 id="i-need-to-remove-the-pairing">I need to remove the pairing</h2>
-
 <p>This could happen because you have had unsuccessful attempts at discovering the new device. Now, when Zigbee2mqtt comes up, it reminds us how it &ldquo;knows&rdquo; about this device. Maybe it does. Maybe not well enough. Maybe Home Assistant does not want to hear about this device <em>again</em>.</p>
-
 <p>Let&rsquo;s make both Zigbee2mqtt and the dongle forget about this device.</p>
-
 <p>Software-side, it is as simple as removing our local database:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">rm data/database.db</code></pre></div>
-<p>Of course, this is the nuclear option: all your devices are now gone from the database.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">rm data/database.db
+</code></pre></div><p>Of course, this is the nuclear option: all your devices are now gone from the database.</p>
 <p>To cleanly remove <strong>a single</strong> device, send this message (see below for more MQTT information):</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">zigbee2mqtt/bridge/config/remove<span class="p">:</span><span class="w"> </span>{<span class="s2">&#34;friendly_name&#34;</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{device name}&#34;</span>}</code></pre></div>
-<p>Dongle-side, let&rsquo;s write a quick program that will perform a hard reset:</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">zigbee2mqtt/bridge/config/remove</span><span class="p">:</span><span class="w"> </span>{<span class="k">&#34;friendly_name&#34;: </span><span class="s2">&#34;{device name}&#34;</span>}<span class="w">
+</span></code></pre></div><p>Dongle-side, let&rsquo;s write a quick program that will perform a hard reset:</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="err">#</span> <span class="nx">cfr</span><span class="p">.</span><span class="nx">js</span>
 
-<span class="k">const</span> <span class="nx">ZShepherd</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;zigbee-shepherd&#39;</span><span class="p">);</span>
-<span class="k">const</span> <span class="nx">zserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ZShepherd</span><span class="p">(</span><span class="s1">&#39;/dev/ttyACM0&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">ZShepherd</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;zigbee-shepherd&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">zserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ZShepherd</span><span class="p">(</span><span class="s1">&#39;/dev/ttyACM0&#39;</span><span class="p">);</span>
 
 <span class="nx">zserver</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;ready&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="nx">zserver</span><span class="p">.</span><span class="nx">reset</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
@@ -348,42 +330,60 @@
     <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
 <span class="p">});</span>
-</code></pre></div>
-<p>You need to fix a minor bug in Zigbee2mqtt due to Node&rsquo;s library updates:</p>
-
+</code></pre></div><p>You need to fix a minor bug in Zigbee2mqtt due to Node&rsquo;s library updates:</p>
 <p>In <code>node_modules/zigbee-shepherd/lib/shepherd.js</code> look for &lsquo;baudrate&rsquo; and update the line with &lsquo;baudRate&rsquo;</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js">    <span class="nx">spCfg</span><span class="p">.</span><span class="nx">options</span> <span class="o">=</span> <span class="nx">opts</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">&#39;sp&#39;</span><span class="p">)</span> <span class="o">?</span> <span class="nx">opts</span><span class="p">.</span><span class="nx">sp</span> <span class="o">:</span> <span class="p">{</span> <span class="nx">baudRate</span><span class="o">:</span> <span class="mi">115200</span><span class="p">,</span> <span class="nx">rtscts</span><span class="o">:</span> <span class="kc">true</span> <span class="p">};</span>
-</code></pre></div>
-<p>Then</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">node cfr.js</code></pre></div>
-<p>You can now restart Zigbee2mqtt and attempt the pairing procedure again. Make sure the dongle is in debug mode!</p>
-
+</code></pre></div><p>Then</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">node cfr.js
+</code></pre></div><p>You can now restart Zigbee2mqtt and attempt the pairing procedure again. Make sure the dongle is in debug mode!</p>
 <h2 id="debugging-mqtt">Debugging MQTT</h2>
-
 <p>The simplest way is to install this Chrome extension: <a href="https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm?hl=en">MQT Lens</a>.</p>
-
 <p>Configure a connection to your broker&rsquo;s IP address, port 1883.</p>
-
 <p>Then, subscribe to <code>#</code> &lsquo;at least once&rsquo; &ndash; you will now see all MQTT messages.</p>
-
 <p>When Zigbee2mqtt comes up:</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">zigbee2mqtt/bridge/state<span class="p">:</span><span class="w"> </span>online</code></pre></div>
-<p>When a device is pairing:</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">zigbee2mqtt/bridge/state</span><span class="p">:</span><span class="w"> </span>online<span class="w">
+</span></code></pre></div><p>When a device is pairing:</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">homeassistant/light/0x....<span class="w">
 </span><span class="w"></span>homeassistant/sensor/0x....<span class="w">
-</span><span class="w"></span>--<span class="w"> </span>etc<span class="w"> </span>--</code></pre></div>
-<p>You should now find the corresponding devices in Home Assistant&rsquo;s device state page.</p>
-
+</span><span class="w"></span>-- etc<span class="w"> </span>--<span class="w">
+</span></code></pre></div><p>You should now find the corresponding devices in Home Assistant&rsquo;s device state page.</p>
 <p>Alternatively, you can use the <a href="https://mosquitto.org/man/mosquitto_pub-1.html">mosquitto publisher client</a> so, for instance, to remove a device as described earlier:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mosquito_pub -h <span class="o">{</span>IP address of your mqtt broker<span class="o">}</span> -t zigbee2mqtt/bridge/config/remove -m <span class="s1">&#39;{&#34;friendly_name&#34;: &#34;{device name}&#34;}&#39;</span></code></pre></div>
-<h2 id="systemctl">systemctl</h2>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mosquito_pub -h <span class="o">{</span>IP address of your mqtt broker<span class="o">}</span> -t zigbee2mqtt/bridge/config/remove -m <span class="s1">&#39;{&#34;friendly_name&#34;: &#34;{device name}&#34;}&#39;</span>
+</code></pre></div><h2 id="systemctl">systemctl</h2>
 <p>So, after getting all this working, you&rsquo;ve been following <a href="https://koenkk.github.io/zigbee2mqtt/getting_started/running_zigbee2mqtt.html">these instructions</a> but <strong>that</strong> is not working.</p>
-
 <p>If, like me, you are using <code>nodenv</code>, then you need to adapt the startup script a smidge. In my case:</p>
-<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">ExecStart</span><span class="p">=</span><span class="err">/</span><span class="nx">home</span><span class="err">/</span><span class="nx">chris</span><span class="err">/</span><span class="p">.</span><span class="nx">nodenv</span><span class="err">/</span><span class="nx">versions</span><span class="err">/</span><span class="mf">10.14</span><span class="p">.</span><span class="mi">2</span><span class="err">/</span><span class="nx">bin</span><span class="err">/</span><span class="nx">node</span> <span class="nx">index</span><span class="p">.</span><span class="nx">js</span></code></pre></div>
-<p>And, to keep debugging your server and devices&rsquo; lifecycle, log output can now be found here:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">journalctl -u zigbee2mqtt.service -f</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">ExecStart</span><span class="p">=</span><span class="err">/</span><span class="nx">home</span><span class="err">/</span><span class="nx">chris</span><span class="err">/</span><span class="p">.</span><span class="nx">nodenv</span><span class="err">/</span><span class="nx">versions</span><span class="err">/</span><span class="mf">10.14</span><span class="p">.</span><span class="mi">2</span><span class="err">/</span><span class="nx">bin</span><span class="err">/</span><span class="nx">node</span> <span class="nx">index</span><span class="p">.</span><span class="nx">js</span>
+</code></pre></div><p>And, to keep debugging your server and devices&rsquo; lifecycle, log output can now be found here:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">journalctl -u zigbee2mqtt.service -f
+</code></pre></div>
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#hardware">Hardware</a></li>
+    <li><a href="#connectivity">Connectivity</a>
+      <ul>
+        <li><a href="#nothing-shows-up">Nothing shows up&hellip;</a>
+          <ul>
+            <li><a href="#what-was-that-about-another-laptop">What was that about another laptop?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#pairing">Pairing</a>
+      <ul>
+        <li><a href="#it-doesns-show-up-in-home-assistant">It doesn&rsquo;s show up in Home Assistant</a></li>
+        <li><a href="#i-need-to-remove-the-pairing">I need to remove the pairing</a></li>
+        <li><a href="#debugging-mqtt">Debugging MQTT</a></li>
+        <li><a href="#systemctl">systemctl</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -405,11 +405,11 @@
 
             <nav class="post-nav">
                 
-                    <a class="post-nav-item post-nav-next" href="http://zteo.com/posts/fixing-vmware-fusion-broken-vmmon/">
+                    <a class="post-nav-item post-nav-next" href="http://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/">
                         <section class="post-nav-teaser">
                             <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
                             <span class="post-nav-info">
-                                <h4 class="post-nav-title">Fixing Vmware Fusion Broken Vmmon</h4>
+                                <h4 class="post-nav-title">Istio, Cert-Manager and Let&#39;s Encrypt April &#39;20</h4>
                             </span>
                         </section>
                     </a>
@@ -430,11 +430,35 @@
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -451,7 +475,7 @@
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

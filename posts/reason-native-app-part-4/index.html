@@ -33,7 +33,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +74,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/reason-native-app-part-4/"
+          "@id": "http:\/\/zteo.com\/posts\/reason-native-app-part-4\/"
         },
         "headline": "Creating a ReasonML Native App: Command Line Arguments",
         "description": "",
@@ -91,9 +91,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,8 +110,8 @@
         },
         "datePublished": "2018-09-08",
         "dateModified": "2018-09-08",
-        "wordCount": 878,
-        "keywords": ["reason","functional"] 
+        "wordCount":  845 ,
+        "keywords": "[\"reason\",\"functional\"]" 
     }
     </script>
     
@@ -190,6 +190,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -199,7 +209,7 @@
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">8 Sep 2018</span> <span class="reading-time">| <span class="estimated-reading-time">5 min.</span> (<span class="word-count">878</span> words)</span></span>
+                        <span class="post-date">8 Sep 2018</span> <span class="reading-time">| <span class="estimated-reading-time">4 min.</span> (<span class="word-count">845</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -216,27 +226,6 @@
                     This post is part of a series. Related posts:
                     <ul>
                     
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
                     
                         
                         
@@ -726,9 +715,36 @@
                     
                         
                         
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
                             
                                 <li>Creating a ReasonML Native App: Memoizing DNS queries</li>
                             
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
                         
                     
                         
@@ -741,10 +757,12 @@
                     </div>
                 
 
-                <p>Before going into how specific features were implemented with Reason and OCaml&rsquo;s help, let&rsquo;s have a quick look at our application&rsquo;s logic</p>
 
+                
+                    <main>
+                        <div class="content blog-content">
+                        <p>Before going into how specific features were implemented with Reason and OCaml&rsquo;s help, let&rsquo;s have a quick look at our application&rsquo;s logic</p>
 <p>(Refresh if the diagram below doesn&rsquo;t display properly)</p>
-
 <div class="mermaid" align="center">
 graph TB;
     main --> |play scenario| run
@@ -768,23 +786,16 @@ graph TB;
     CfrIO -.- |execute| cmds["local commands"]
 </div>
 
-
 <p>You will immediately notice that:</p>
-
 <ul>
 <li>This is a CLI application, with some help from NCurses when editing a scenario file.</li>
 <li>We try to keep all local side effects isolated in their own class.</li>
 <li>Surely, most of this business must be asynchronous!</li>
 </ul>
-
 <p>Since this is a CLI application, the first thing we are going to do is try to figure out what it is the user wants us to do. That is&hellip;</p>
-
 <h1 id="handling-command-line-arguments">Handling command line arguments</h1>
-
 <p>The beauty of having pattern matching available is that we can quickly write some arguments handling without requiring an additional library.</p>
-
 <p>First, we are going to have a quick look at <code>Sys.argv</code> to determine what high level operation we are trying to perform. We may wish to run a scenario, edit its json file, display our program&rsquo;s help page, etc.</p>
-
 <p>Keeping in mind that, as in any language, <code>argv[0]</code> represents our executable itself, here is some simple routing:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">let</span> <span class="bp">()</span> <span class="o">=</span>
   <span class="n">switch</span> <span class="o">(</span><span class="nn">Sys</span><span class="p">.</span><span class="n">argv</span><span class="o">)</span> <span class="o">{</span>
@@ -799,14 +810,9 @@ graph TB;
   <span class="o">|</span> <span class="o">[|_,</span> <span class="s2">&#34;modified&#34;</span><span class="o">|]</span> <span class="o">=&gt;</span> <span class="n">display_modifications</span><span class="bp">()</span>
   <span class="o">|</span> <span class="o">[|_,</span> <span class="s2">&#34;edit&#34;</span><span class="o">,</span> <span class="n">fn</span><span class="o">|]</span> <span class="o">=&gt;</span> <span class="nn">Editor</span><span class="p">.</span><span class="n">edit_source</span><span class="o">(</span><span class="n">fn</span><span class="o">)</span>
   <span class="o">|</span> <span class="o">_</span> <span class="o">=&gt;</span> <span class="n">display_help</span><span class="bp">()</span>
-  <span class="o">};</span></code></pre></div>
-<p>If the user, for instance, types <code>./reasonable-fidelity timestamp</code> and omits both timestamp parameters, we will default to displaying the help page.</p>
-
-<div class="noticesc">
-    In ReasonML, arrays are denoted by <code>[| |]</code> while lists use <code>[ ]</code>
-</div>
-
-
+  <span class="o">};</span>
+</code></pre></div><p>If the user, for instance, types <code>./reasonable-fidelity timestamp</code> and omits both timestamp parameters, we will default to displaying the help page.</p>
+<!-- raw HTML omitted -->
 <p>Our most interesting match is the <code>run</code> argument, which was purposefuly elided here. What our program does is check for pre-requisites, take the relevant remaining arguments and passes them to a function that will then match these arguments to build an array of valid requests:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">let</span> <span class="k">rec</span> <span class="n">process_args</span> <span class="o">=</span> <span class="o">(</span><span class="n">args</span><span class="o">,</span> <span class="n">ret</span><span class="o">)</span> <span class="o">=&gt;</span>
   <span class="n">switch</span> <span class="o">(</span><span class="n">args</span><span class="o">)</span> <span class="o">{</span>
@@ -829,14 +835,14 @@ graph TB;
       <span class="o">}</span>
     <span class="o">|</span> <span class="n">arg_</span> <span class="o">=&gt;</span> <span class="k">raise</span><span class="o">(</span><span class="nc">InvalidArgument</span><span class="o">(</span><span class="n">arg_</span><span class="o">))</span>
     <span class="o">}</span>
-  <span class="o">};</span></code></pre></div>
-<p>These valid requests were declared as a <a href="https://reasonml.github.io/docs/en/variant">variant type</a>:</p>
+  <span class="o">};</span>
+</code></pre></div><p>These valid requests were declared as a <a href="https://reasonml.github.io/docs/en/variant">variant type</a>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">type</span> <span class="n">cmdlineargs</span> <span class="o">=</span>
   <span class="o">|</span> <span class="nc">Source_file</span><span class="o">(</span><span class="kt">string</span><span class="o">)</span>
   <span class="o">|</span> <span class="nc">Config_dir</span><span class="o">(</span><span class="kt">string</span><span class="o">)</span>
   <span class="o">|</span> <span class="nc">ForceLogin</span>
-  <span class="o">|</span> <span class="nc">Csv</span><span class="o">;</span></code></pre></div>
-<p>Now that we have a normalized array of requests, we can process it:</p>
+  <span class="o">|</span> <span class="nc">Csv</span><span class="o">;</span>
+</code></pre></div><p>Now that we have a normalized array of requests, we can process it:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">let</span> <span class="n">arg_use_csv</span> <span class="o">=</span> <span class="n">ref</span><span class="o">(</span><span class="bp">false</span><span class="o">);</span>
 <span class="k">let</span> <span class="n">arg_no_login</span> <span class="o">=</span> <span class="n">ref</span><span class="o">(</span><span class="bp">true</span><span class="o">);</span>
 <span class="k">let</span> <span class="n">arg_source_file</span> <span class="o">=</span> <span class="n">ref</span><span class="o">(</span><span class="s2">&#34;example.har&#34;</span><span class="o">);</span>
@@ -850,31 +856,34 @@ graph TB;
     <span class="o">|</span> <span class="nc">Config_dir</span><span class="o">(</span><span class="n">dir_path</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">arg_dir_path</span> <span class="o">:=</span> <span class="n">dir_path</span>
     <span class="o">},</span>
     <span class="n">args</span><span class="o">,</span>
-<span class="o">);</span></code></pre></div>
-<p>Using mutability, we will set some variables to default sane values, then update them with our array&rsquo;s content.</p>
-
-<div class="noticesc">
-    In ReasonML, mutable variables can be declared using <code>ref(value)</code> and that referenced value can be updated using the <code>:=</code> operator.
-</div>
-
-
+<span class="o">);</span>
+</code></pre></div><p>Using mutability, we will set some variables to default sane values, then update them with our array&rsquo;s content.</p>
+<!-- raw HTML omitted -->
 <p><strong>But, what is ArgSet?</strong></p>
-
 <p>The missing piece: ReasonML lets you create modules based on other modules, to implement your own behaviors. In this example, we are talking about a very light implementation:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">module</span> <span class="nc">ArgSet</span> <span class="o">=</span>
   <span class="nn">Set</span><span class="p">.</span><span class="nc">Make</span><span class="o">({</span>
     <span class="k">type</span> <span class="n">t</span> <span class="o">=</span> <span class="n">cmdlineargs</span><span class="o">;</span>
     <span class="k">let</span> <span class="n">compare</span> <span class="o">=</span> <span class="nn">Pervasives</span><span class="p">.</span><span class="n">compare</span><span class="o">;</span>
-  <span class="o">});</span></code></pre></div>
-<p>We are creating a new module, meant to store requests in a set. This set is declared to be of a type <code>cmdlineargs</code> (see above) and its components can be compared using the default <code>Pervasives</code> module&rsquo;s comparison method. If you are not yet familiar with this module, please <a href="https://reasonml.github.io/api/Pervasives.html">bookmark this page</a> as it provides basic operations over ReasonML&rsquo;s built-in types.</p>
-
+  <span class="o">});</span>
+</code></pre></div><p>We are creating a new module, meant to store requests in a set. This set is declared to be of a type <code>cmdlineargs</code> (see above) and its components can be compared using the default <code>Pervasives</code> module&rsquo;s comparison method. If you are not yet familiar with this module, please <a href="https://reasonml.github.io/api/Pervasives.html">bookmark this page</a> as it provides basic operations over ReasonML&rsquo;s built-in types.</p>
 <p>As you write more ReasonML, you will see lots of references to <code>type t</code> as an object&rsquo;s type. This convention is used for clarity. For instance, it could be used when <a href="https://reasonml.github.io/docs/en/destructuring">destructuring</a> objects to write concise matching.</p>
-
 <p>Finally, we use a couple exceptions to denote incorrect arguments:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">exception</span> <span class="nc">MissingArgument</span><span class="o">(</span><span class="kt">string</span><span class="o">);</span>
-<span class="k">exception</span> <span class="nc">InvalidArgument</span><span class="o">(</span><span class="kt">string</span><span class="o">);</span></code></pre></div>
-<p>Yes, ReasonML has exceptions support. No, you should not use them in idiomatic code. Here, I am using exceptions because I wish to bail out of the program itself. If it was in the middle of, say, processing files in a fairly long loop, returning an <code>option</code> object would allow the program to treat this error code as any expected condition.
+<span class="k">exception</span> <span class="nc">InvalidArgument</span><span class="o">(</span><span class="kt">string</span><span class="o">);</span>
+</code></pre></div><p>Yes, ReasonML has exceptions support. No, you should not use them in idiomatic code. Here, I am using exceptions because I wish to bail out of the program itself. If it was in the middle of, say, processing files in a fairly long loop, returning an <code>option</code> object would allow the program to treat this error code as any expected condition.
 This is not a new pattern, but it is worth noticing its adoption in &ldquo;modern&rdquo; languages: the authors of the Rust language decided not to support exceptions and instead always provide error codes. This forces the developer to immediately think about how to handle these errors, as opposed to passing the buck further up the execution stack.</p>
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#handling-command-line-arguments">Handling command line arguments</a></li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -927,11 +936,35 @@ This is not a new pattern, but it is worth noticing its adoption in &ldquo;moder
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -948,7 +981,7 @@ This is not a new pattern, but it is worth noticing its adoption in &ldquo;moder
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

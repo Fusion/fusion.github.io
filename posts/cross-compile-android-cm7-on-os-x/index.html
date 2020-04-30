@@ -23,11 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/a5e727f8-f73a-4274-b4dc-4b86fba19238.jpg" />
     
-    <meta name="twitter:description" content="This is your &ldquo;up-to-date 5 minutes ago&rdquo; guide on how to build CyanogenMod 7 using your Mac. Check the date: 05/10/2011.
-Note that, obviously, these instructions should also help you with building other ROMs.
-Let&rsquo;s start with the good news :
- This guide, found in the Cyanogen Wiki, still works (mostly) so we will follow it
- And the guide would work with any CM7 target. Simply use your own target name; e." />
+    <meta name="twitter:description" content="This is your &ldquo;up-to-date 5 minutes ago&rdquo; guide on how to build CyanogenMod 7 using your Mac. Check the date: 05/10/2011.Note that, obviously, these instructions should also help you with building other ROMs." />
     <meta name="twitter:url" content="http://zteo.com/posts/cross-compile-android-cm7-on-os-x/" />
     
 
@@ -37,7 +33,7 @@ Let&rsquo;s start with the good news :
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -78,7 +74,7 @@ Let&rsquo;s start with the good news :
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/cross-compile-android-cm7-on-os-x/"
+          "@id": "http:\/\/zteo.com\/posts\/cross-compile-android-cm7-on-os-x\/"
         },
         "headline": "Cross-Compile Android (CM7) on OS X",
         "description": "Cross-Compile Android (CM7) on OS X",
@@ -95,9 +91,9 @@ Let&rsquo;s start with the good news :
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -107,13 +103,13 @@ Let&rsquo;s start with the good news :
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/a5e727f8-f73a-4274-b4dc-4b86fba19238.jpg",
+          "url": "http:\/\/zteo.com\/a5e727f8-f73a-4274-b4dc-4b86fba19238.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2011-05-11",
         "dateModified": "2011-05-11",
-        "wordCount": 289,
+        "wordCount":  290 ,
         
     }
     </script>
@@ -193,6 +189,16 @@ Let&rsquo;s start with the good news :
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -202,7 +208,7 @@ Let&rsquo;s start with the good news :
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">11 May 2011</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">289</span> words)</span></span>
+                        <span class="post-date">11 May 2011</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">290</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -216,47 +222,42 @@ Let&rsquo;s start with the good news :
                 
                 
 
-                <p><img src="/images/Download-CyanogenMod-7-RC2-300x290.jpg" alt="" />This is
+
+                
+                    <p><img src="/images/Download-CyanogenMod-7-RC2-300x290.jpg" alt="">This is
 your &ldquo;up-to-date 5 minutes ago&rdquo; guide on how to build CyanogenMod 7 using your
-Mac. Check the date: <strong>05/10/2011</strong>.<br />
+Mac. Check the date: <strong>05/10/2011</strong>.<br>
 Note that, obviously, these instructions should also help you with building
 other ROMs.</p>
-
 <p>Let&rsquo;s start with <strong>the good news</strong> :</p>
-
 <ul>
-<li><p><a href="http://wiki.cyanogenmod.com/index.php?title=Compile_CyanogenMod_for_Vision_%28Mac%29">This guide</a>, found in the Cyanogen Wiki, still works (mostly) so we will follow it</p></li>
-
-<li><p>And the guide would work with any CM7 target. Simply use your own target name; e.g. for Droid Incredible, replace &lsquo;vision&rsquo; with &lsquo;inc&rsquo;</p></li>
+<li>
+<p><a href="http://wiki.cyanogenmod.com/index.php?title=Compile_CyanogenMod_for_Vision_%28Mac%29">This guide</a>, found in the Cyanogen Wiki, still works (mostly) so we will follow it</p>
+</li>
+<li>
+<p>And the guide would work with any CM7 target. Simply use your own target name; e.g. for Droid Incredible, replace &lsquo;vision&rsquo; with &lsquo;inc&rsquo;</p>
+</li>
 </ul>
-
-<p>Now, ahem, <strong>the bad news</strong> :<br />
+<p>Now, ahem, <strong>the bad news</strong> :<br>
 You will need to do a bit more work than what&rsquo;s in that guide.</p>
-
 <p>Namely:</p>
-
 <p>The most recent version of XCode, the one you paid for, will fail with this
 message:</p>
-
 <blockquote>
 <p>ld: <em>illegal text reloc to DwarfCUImpl</em></p>
 </blockquote>
-
 <p><strong>Fix:</strong></p>
-
 <p>Download an older, compatible version. Oh, and it&rsquo;s free too. I found out
 (thanks Newsgroups!) that 3.2.4 could very well be the last version of XCode
-to work properly.<br />
-Get it from <a href="http://connect.apple.com/cgi-
-bin/WebObjects/MemberSite.woa/wo/5.1.17.2.1.3.3.1.0.1.1.0.3.3.3.3.1">this page</a>. That&rsquo;s
+to work properly.<br>
+Get it from [this page](<a href="http://connect.apple.com/cgi-">http://connect.apple.com/cgi-</a>
+bin/WebObjects/MemberSite.woa/wo/5.1.17.2.1.3.3.1.0.1.1.0.3.3.3.3.1). That&rsquo;s
 the page you get when you go to <a href="http://connect.apple.com">connect.apple.com</a>
-and select &lsquo;Developer Tools&rsquo;.<br />
+and select &lsquo;Developer Tools&rsquo;.<br>
 You will not find this page when visiting developers.apple.com!</p>
-
 <p>After downloading, install the package. You can install it next to your
 shinier XCode 4 by selecting an alternate destination on the &lsquo;Installation
 Type&rsquo; screen. I installed it in /Developer324</p>
-
 <p>I created this short script to build CM7. It replaces the guide&rsquo;s &lsquo;Compile&rsquo;
 section:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /Volumes/CyanogenModWorkspace/android/system/  
@@ -264,18 +265,17 @@ sudo mv /Developer /Developer.new
 sudo mv /Developer324 /Developer  
 <span class="nb">time</span> make -j<span class="sb">`</span>sysctl -an hw.logicalcpu<span class="sb">`</span> bacon  
 sudo mv /Developer /Developer324  
-sudo mv /Developer.new /Developer</code></pre></div>
-<p>If you build now, you will, however, get another error:</p>
-
+sudo mv /Developer.new /Developer
+</code></pre></div><p>If you build now, you will, however, get another error:</p>
 <blockquote>
 <p>ASSERTION FAILURE external/elfcopy/elfcopy.c:932: [ranges[i].start &gt;= last_end]</p>
 </blockquote>
-
 <p>This fix is much faster: open external/elfcopy/elfcopy.c and add this before
 line 928:</p>
-<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="n">sort_ranges</span><span class="p">(</span><span class="n">section_ranges</span><span class="p">);</span></code></pre></div>
-<p>Then&hellip;oh, wait. That&rsquo;s it. Run the make script and you&rsquo;re done.</p>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="n">sort_ranges</span><span class="p">(</span><span class="n">section_ranges</span><span class="p">);</span>
+</code></pre></div><p>Then&hellip;oh, wait. That&rsquo;s it. Run the make script and you&rsquo;re done.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -322,11 +322,35 @@ line 928:</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -343,7 +367,7 @@ line 928:</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

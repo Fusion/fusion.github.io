@@ -33,7 +33,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +74,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/rent-a-foreigner-in-china/"
+          "@id": "http:\/\/zteo.com\/posts\/rent-a-foreigner-in-china\/"
         },
         "headline": "‘Rent-a-Foreigner in China’",
         "description": "‘Rent-a-Foreigner in China’",
@@ -91,9 +91,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -103,13 +103,13 @@
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/0b0c058d-2c08-45a9-9c48-a7e8c1badd16",
+          "url": "http:\/\/zteo.com\/0b0c058d-2c08-45a9-9c48-a7e8c1badd16",
           "height": 133,
           "width": 200
         },
         "datePublished": "2015-05-04",
         "dateModified": "2015-05-04",
-        "wordCount": 20,
+        "wordCount":  20 ,
         
     }
     </script>
@@ -189,6 +189,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -212,11 +222,13 @@
                 
                 
 
-                <p>In this short documentary, housing developers in China hire ordinary
+
+                
+                    <p>In this short documentary, housing developers in China hire ordinary
 foreigners to pose as celebrities to raise flagging property sales.</p>
+<p><a href="http://www.nytimes.com/2015/04/28/opinion/rent-a-foreigner-in-china.html"><img src="https://lh4.googleusercontent.com/proxy/h5eRe7HQkuNbU5oNvtdKeW2ldovroKyYWwRjZDR8fFlr6_OUhMCnvFDllB3OOpm-L_ngi2tU1ZN0OvHiRlG9bXstFB_UogIUI5_BfAa5wV2Zbg7iH3DsSIGSPqEczhPr7JzHHQhPiuFVdey8k8SEfdSFLmvC6g=w506-h303" alt=""></a></p>
 
-<p><a href="http://www.nytimes.com/2015/04/28/opinion/rent-a-foreigner-in-china.html"><img src="https://lh4.googleusercontent.com/proxy/h5eRe7HQkuNbU5oNvtdKeW2ldovroKyYWwRjZDR8fFlr6_OUhMCnvFDllB3OOpm-L_ngi2tU1ZN0OvHiRlG9bXstFB_UogIUI5_BfAa5wV2Zbg7iH3DsSIGSPqEczhPr7JzHHQhPiuFVdey8k8SEfdSFLmvC6g=w506-h303" alt="" /></a></p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -263,11 +275,35 @@ foreigners to pose as celebrities to raise flagging property sales.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -284,7 +320,7 @@ foreigners to pose as celebrities to raise flagging property sales.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -23,7 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/8a08a311-90bd-478c-9ba9-ee726b9ddb56.jpg" />
     
-    <meta name="twitter:description" content="Since &#43;Adam Outler is into doing networky things, now, I don&rsquo;t see why I couldn&rsquo;t flash a few EEPROMs.﻿" />
+    <meta name="twitter:description" content="Since &#43;Adam Outler is into doing networky things, now, I don&#39;t see why I couldn&#39;t flash a few EEPROMs.﻿" />
     <meta name="twitter:url" content="http://zteo.com/posts/since-adam-outler-is-into-doing-networky-things-now-i-don-t-see-why-i-couldn-t-flash-a-few-eeproms/" />
     
 
@@ -33,7 +33,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,10 +74,10 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/since-adam-outler-is-into-doing-networky-things-now-i-don-t-see-why-i-couldn-t-flash-a-few-eeproms/"
+          "@id": "http:\/\/zteo.com\/posts\/since-adam-outler-is-into-doing-networky-things-now-i-don-t-see-why-i-couldn-t-flash-a-few-eeproms\/"
         },
-        "headline": "Since &#43;Adam Outler is into doing networky things, now, I don&#39;t see why I couldn&#39;t flash a few EEPROMs...",
-        "description": "Since &#43;Adam Outler is into doing networky things, now, I don&#39;t see why I couldn&#39;t flash a few EEPROMs...",
+        "headline": "Since \x2bAdam Outler is into doing networky things, now, I don\x27t see why I couldn\x27t flash a few EEPROMs...",
+        "description": "Since \x2bAdam Outler is into doing networky things, now, I don\x27t see why I couldn\x27t flash a few EEPROMs...",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -91,9 +91,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -103,13 +103,13 @@
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/8a08a311-90bd-478c-9ba9-ee726b9ddb56.jpg",
+          "url": "http:\/\/zteo.com\/8a08a311-90bd-478c-9ba9-ee726b9ddb56.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2014-08-18",
         "dateModified": "2014-08-18",
-        "wordCount": 19,
+        "wordCount":  19 ,
         
     }
     </script>
@@ -189,6 +189,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -212,11 +222,13 @@
                 
                 
 
-                <p>Since +<a href="https://plus.google.com/104711040110222472212">Adam Outler</a> is into
+
+                
+                    <p>Since +<a href="https://plus.google.com/104711040110222472212">Adam Outler</a> is into
 doing networky things, now, I don&rsquo;t see why I couldn&rsquo;t flash a few EEPROMs.﻿</p>
+<p><a href="https://plus.google.com/photos/111381966376152171662/albums/6048699751343070657/6048699750541858962"><img src="https://lh4.googleusercontent.com/-9pUs2m3zNHQ/U_FMYDAKmJI/AAAAAAAAH64/KapKyujxZ-4/w506-h750/IMG_0064.JPG" alt=""></a></p>
 
-<p><a href="https://plus.google.com/photos/111381966376152171662/albums/6048699751343070657/6048699750541858962"><img src="https://lh4.googleusercontent.com/-9pUs2m3zNHQ/U_FMYDAKmJI/AAAAAAAAH64/KapKyujxZ-4/w506-h750/IMG_0064.JPG" alt="" /></a></p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -263,11 +275,35 @@ doing networky things, now, I don&rsquo;t see why I couldn&rsquo;t flash a few E
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -284,7 +320,7 @@ doing networky things, now, I don&rsquo;t see why I couldn&rsquo;t flash a few E
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

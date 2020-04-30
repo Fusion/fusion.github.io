@@ -23,9 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/071c67b7-7c75-47f3-9feb-81a5e983ba72.jpg" />
     
-    <meta name="twitter:description" content="Like many other DEVONthink users, I have started to feel regret that MarkDown is not natively supported.
-Now, a piece of good news is that, as long as you edit a plain-text document in DT, you are, in effect, editing a potential MarkDown document.
-In the past, it was possible to open a DT document in an application such as the excellent Marked.app. But it is not any longer. I totally understand the author&rsquo;s argument: as a pure viewer, it feels wrong for an application to register as an editor." />
+    <meta name="twitter:description" content="Like many other DEVONthink users, I have started to feel regret that MarkDown is not natively supported.Now, a piece of good news is that, as long as you edit a plain-text document in DT, you are, in effect, editing a potential MarkDown document.In the past, it was possible to open a DT document in an application such as the excellent Marked.app. But it is not any longer. I totally understand the author&rsquo;s argument: as a pure viewer, it feels wrong for an application to register as an editor." />
     <meta name="twitter:url" content="http://zteo.com/posts/devonthink-markdown-to-viewer/" />
     
 
@@ -35,7 +33,7 @@ In the past, it was possible to open a DT document in an application such as the
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +74,7 @@ In the past, it was possible to open a DT document in an application such as the
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/devonthink-markdown-to-viewer/"
+          "@id": "http:\/\/zteo.com\/posts\/devonthink-markdown-to-viewer\/"
         },
         "headline": "DEVONthink: MarkDown to Viewer",
         "description": "DEVONthink: MarkDown to Viewer",
@@ -93,9 +91,9 @@ In the past, it was possible to open a DT document in an application such as the
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -105,13 +103,13 @@ In the past, it was possible to open a DT document in an application such as the
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/071c67b7-7c75-47f3-9feb-81a5e983ba72.jpg",
+          "url": "http:\/\/zteo.com\/071c67b7-7c75-47f3-9feb-81a5e983ba72.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2012-01-19",
         "dateModified": "2012-01-19",
-        "wordCount": 242,
+        "wordCount":  242 ,
         
     }
     </script>
@@ -191,6 +189,16 @@ In the past, it was possible to open a DT document in an application such as the
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -214,18 +222,18 @@ In the past, it was possible to open a DT document in an application such as the
                 
                 
 
-                <p><img src="/images/DateLine.jpg" alt="" /><br />
+
+                
+                    <p><img src="/images/DateLine.jpg" alt=""><br>
 Like many other DEVONthink users, I have started to feel regret that MarkDown
-is not natively supported.<br />
+is not natively supported.<br>
 Now, a piece of good news is that, as long as you edit a plain-text document
-in DT, you are, in effect, editing a potential MarkDown document.<br />
+in DT, you are, in effect, editing a potential MarkDown document.<br>
 In the past, it was possible to open a DT document in an application such as
 the excellent Marked.app. <a href="http://support.markedapp.com/discussions/problems/30-marked-no-longer-appears-in-open-with-context-menu">But it is not any longer</a>. I totally understand the author&rsquo;s
 argument: as a pure viewer, it feels wrong for an application to register as
 an editor.</p>
-
 <p>So, here is my solution:</p>
-
 <p>Create a short script</p>
 <div class="highlight"><pre class="chroma"><code class="language-applescript" data-lang="applescript"><span class="k">tell</span> <span class="nb">application</span> <span class="na">id</span> <span class="s2">&#34;com.devon-technologies.thinkpro2&#34;</span>  
     <span class="k">set</span> <span class="nv">docInfo</span> <span class="k">to</span> <span class="nb">the</span> <span class="na">content</span> <span class="nv">record</span>  
@@ -234,24 +242,21 @@ an editor.</p>
         <span class="nb">activate</span>  
         <span class="nb">open</span> <span class="nv">docPath</span>  
     <span class="k">end</span> <span class="k">tell</span>  
-<span class="k">end</span> <span class="k">tell</span></code></pre></div>
-<p>Save this script as <em>/Application\ Support/DEVONthink\ Pro\ 2/Scripts/DTInMarkdown.scpt</em><br />
+<span class="k">end</span> <span class="k">tell</span>
+</code></pre></div><p>Save this script as <em>/Application\ Support/DEVONthink\ Pro\ 2/Scripts/DTInMarkdown.scpt</em><br>
 Note: your actual DEVONthink folder name may differ based on which version you
 are using.</p>
-
 <p>In DT, select &lsquo;Script menu (icon) &gt; Update Scripts Menu&rsquo;: you should now see your new script.</p>
-
-<p>From the System Menu, open &lsquo;System Preferences&hellip;&rsquo; then:<br />
+<p>From the System Menu, open &lsquo;System Preferences&hellip;&rsquo; then:<br>
 &lsquo;Keyboard &gt; Keyboard Shortcuts &gt; Application Shortcuts&rsquo;</p>
-
 <p>Create a new entry for DEVONthink Pro (or DEVONthink Pro Office); enter Menu
 Title: <em>DTInMarkdown</em> and enter a keyboard shortcut. I personally use
 <strong>Cmd+Shift+Return</strong>.</p>
-
 <p>Now, next time you are editing a plain text/MarkDown document in DT, that
 keyboard shortcut should open the document in Marked.app for instant preview.
 Note that the preview is updated every time you save your document.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -298,11 +303,35 @@ Note that the preview is updated every time you save your document.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -319,7 +348,7 @@ Note that the preview is updated every time you save your document.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

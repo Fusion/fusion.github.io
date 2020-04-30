@@ -23,8 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/b1b7f8a9-3d86-4511-92e0-18eb8123e18e" />
     
-    <meta name="twitter:description" content="A great man has left us.
-http://www.media.mit.edu/people/in-memory/papert﻿" />
+    <meta name="twitter:description" content="A great man has left us.http://www.media.mit.edu/people/in-memory/papert﻿" />
     <meta name="twitter:url" content="http://zteo.com/posts/a-great-man-has-left-us/" />
     
 
@@ -34,7 +33,7 @@ http://www.media.mit.edu/people/in-memory/papert﻿" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +74,7 @@ http://www.media.mit.edu/people/in-memory/papert﻿" />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/a-great-man-has-left-us/"
+          "@id": "http:\/\/zteo.com\/posts\/a-great-man-has-left-us\/"
         },
         "headline": "A great man has left us.",
         "description": "A great man has left us.",
@@ -92,9 +91,9 @@ http://www.media.mit.edu/people/in-memory/papert﻿" />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -104,13 +103,13 @@ http://www.media.mit.edu/people/in-memory/papert﻿" />
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/b1b7f8a9-3d86-4511-92e0-18eb8123e18e",
+          "url": "http:\/\/zteo.com\/b1b7f8a9-3d86-4511-92e0-18eb8123e18e",
           "height": 133,
           "width": 200
         },
         "datePublished": "2016-08-03",
         "dateModified": "2016-08-03",
-        "wordCount": 7,
+        "wordCount":  10 ,
         
     }
     </script>
@@ -190,6 +189,16 @@ http://www.media.mit.edu/people/in-memory/papert﻿" />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -199,7 +208,7 @@ http://www.media.mit.edu/people/in-memory/papert﻿" />
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">3 Aug 2016</span> <span class="reading-time">| <span class="estimated-reading-time">1 min.</span> (<span class="word-count">7</span> words)</span></span>
+                        <span class="post-date">3 Aug 2016</span> <span class="reading-time">| <span class="estimated-reading-time">1 min.</span> (<span class="word-count">10</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -213,14 +222,15 @@ http://www.media.mit.edu/people/in-memory/papert﻿" />
                 
                 
 
-                <p>A great man has left us.</p>
 
+                
+                    <p>A great man has left us.</p>
 <p><a href="http://www.media.mit.edu/people/in-memory/papert">http://www.media.mit.edu/people/in-memory/papert</a>﻿</p>
+<p>[![](https://lh3.googleusercontent.com/proxy/jWgmzCr1w062Sd66Rjt2yQJb6KeW7uRat-
+QlTi2qhR17N7LBAlYePHV19EI7eONe0PjFQWFvoKmJ8_le=w506-h910)](<a href="http://www.media.mit.edu/people/in-">http://www.media.mit.edu/people/in-</a>
+memory/papert)</p>
 
-<p><a href="http://www.media.mit.edu/people/in-
-memory/papert"><img src="https://lh3.googleusercontent.com/proxy/jWgmzCr1w062Sd66Rjt2yQJb6KeW7uRat-
-QlTi2qhR17N7LBAlYePHV19EI7eONe0PjFQWFvoKmJ8_le=w506-h910" alt="" /></a></p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -267,11 +277,35 @@ QlTi2qhR17N7LBAlYePHV19EI7eONe0PjFQWFvoKmJ8_le=w506-h910" alt="" /></a></p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -288,7 +322,7 @@ QlTi2qhR17N7LBAlYePHV19EI7eONe0PjFQWFvoKmJ8_le=w506-h910" alt="" /></a></p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -21,10 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="PHP classes and Javascript: S2ajax says &#34;hi()&#34;" />
     
-    <meta name="twitter:description" content="Sajax is a ‘managed’ AJAX framework that was created by the fine folks at Modern Method a few years ago.
-What’s so great about it is the seamless communication between your back-end and the web page itself: you write your PHP code, tell Sajax which functions to export and they are now accessible from Javascript.
-For instance &ndash; from the ‘example_types.php’ file:
-function return_string() { return &#34;Name: Tom / Age: 26&#34;; }  The corresponding Javascript call would be:" />
+    <meta name="twitter:description" content="Sajax is a ‘managed’ AJAX framework that was created by the fine folks at Modern Method a few years ago.What’s so great about it is the seamless communication between your back-end and the web page itself: you write your PHP code, tell Sajax which functions to export and they are now accessible from Javascript." />
     <meta name="twitter:url" content="http://zteo.com/posts/php-classes-and-javascript-s2ajax-says-hi/" />
     
 
@@ -34,7 +31,7 @@ function return_string() { return &#34;Name: Tom / Age: 26&#34;; }  The correspo
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,10 +72,10 @@ function return_string() { return &#34;Name: Tom / Age: 26&#34;; }  The correspo
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/php-classes-and-javascript-s2ajax-says-hi/"
+          "@id": "http:\/\/zteo.com\/posts\/php-classes-and-javascript-s2ajax-says-hi\/"
         },
-        "headline": "PHP classes and Javascript: S2ajax says &#34;hi()&#34;",
-        "description": "PHP classes and Javascript: S2ajax says &#34;hi()&#34;",
+        "headline": "PHP classes and Javascript: S2ajax says \x22hi()\x22",
+        "description": "PHP classes and Javascript: S2ajax says \x22hi()\x22",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -92,9 +89,9 @@ function return_string() { return &#34;Name: Tom / Age: 26&#34;; }  The correspo
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -111,7 +108,7 @@ function return_string() { return &#34;Name: Tom / Age: 26&#34;; }  The correspo
         },
         "datePublished": "2009-03-02",
         "dateModified": "2009-03-02",
-        "wordCount": 249,
+        "wordCount":  249 ,
         
     }
     </script>
@@ -191,6 +188,16 @@ function return_string() { return &#34;Name: Tom / Age: 26&#34;; }  The correspo
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -214,48 +221,45 @@ function return_string() { return &#34;Name: Tom / Age: 26&#34;; }  The correspo
                 
                 
 
-                <p><img src="/images/s2ajax1.png" alt="S2ajax Logo" />Sajax is a ‘managed’ AJAX framework that
-was created by the fine folks at <a href="http://www.modernmethod.com/sajax/index.phtml">Modern Method</a> a few years ago.<br />
+
+                
+                    <p><img src="/images/s2ajax1.png" alt="S2ajax Logo">Sajax is a ‘managed’ AJAX framework that
+was created by the fine folks at <a href="http://www.modernmethod.com/sajax/index.phtml">Modern Method</a> a few years ago.<br>
 What’s so great about it is the seamless communication between your back-end
 and the web page itself: you write your PHP code, tell Sajax which functions
 to export and they are now accessible from Javascript.</p>
-
 <p>For instance &ndash; from the ‘example_types.php’ file:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">return_string</span><span class="p">()</span> <span class="p">{</span>  
     <span class="k">return</span> <span class="s2">&#34;Name: Tom / Age: 26&#34;</span><span class="p">;</span>  
 <span class="p">}</span>  
-</code></pre></div>
-<p>The corresponding Javascript call would be:</p>
-
+</code></pre></div><p>The corresponding Javascript call would be:</p>
 <pre><code>Return as string  
 </code></pre>
-
 <p>OK so this is a pretty great package, no doubt.</p>
-
 <p>Unfortunately there are exactly three things that bother me here:</p>
-
 <ol>
-<li><p>The choice to prefix all remote calls with ‘x_’ which feels less natural, even though it is a convenient way to avoid namespace collisions.</p></li>
-
-<li><p>More importantly, Sajax does not support PHP classes and I am not comfortable working with strictly procedural code. After all, object-oriented PHP has been around for quite some time now.</p></li>
-
-<li><p>Of course, it would seem that the last Sajax release happened sometime in 2006, which would explain #2</p></li>
+<li>
+<p>The choice to prefix all remote calls with ‘x_’ which feels less natural, even though it is a convenient way to avoid namespace collisions.</p>
+</li>
+<li>
+<p>More importantly, Sajax does not support PHP classes and I am not comfortable working with strictly procedural code. After all, object-oriented PHP has been around for quite some time now.</p>
+</li>
+<li>
+<p>Of course, it would seem that the last Sajax release happened sometime in 2006, which would explain #2</p>
+</li>
 </ol>
-
 <p>Thus, S2ajax was born.</p>
-
 <p>If supports classes and methods, does not require prefixing and the export()
-calls are now more powerful.<br />
-The syntax is still very straightforward and relies on clean Javascript code.<br />
+calls are now more powerful.<br>
+The syntax is still very straightforward and relies on clean Javascript code.<br>
 And the license, obviously, is still the very open BSD.</p>
-
 <p>Additionally, this S2ajax can be easily integrated with PHP 5’s magic class
 and methods loading. For instance, it works with <a href="http://github.com/Fusion/lenses/tree/master">my own PHP
 framework</a>.</p>
-
 <p>As usual, all this goodness is <a href="http://github.com/Fusion/s2ajax/tree/master"><strong>available at
 github.com</strong></a>!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -302,11 +306,35 @@ github.com</strong></a>!</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -323,7 +351,7 @@ github.com</strong></a>!</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

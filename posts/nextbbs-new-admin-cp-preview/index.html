@@ -21,11 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="NextBBS: New Admin CP Preview" />
     
-    <meta name="twitter:description" content="Soon to be unleashed on your unsuspecting screens (well&hellip;if you&rsquo;re using NextBBS, that is *):
-[flvplayer http://www.nextbbs.com/D/acp2.flv]
-.
-See Topic Here
-*: if you&rsquo;re not, you really should :)" />
+    <meta name="twitter:description" content="Soon to be unleashed on your unsuspecting screens (well&hellip;if you&rsquo;re using NextBBS, that is *):[flvplayer http://www.nextbbs.com/D/acp2.flv]" />
     <meta name="twitter:url" content="http://zteo.com/posts/nextbbs-new-admin-cp-preview/" />
     
 
@@ -35,7 +31,7 @@ See Topic Here
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +72,7 @@ See Topic Here
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/nextbbs-new-admin-cp-preview/"
+          "@id": "http:\/\/zteo.com\/posts\/nextbbs-new-admin-cp-preview\/"
         },
         "headline": "NextBBS: New Admin CP Preview",
         "description": "NextBBS: New Admin CP Preview",
@@ -93,9 +89,9 @@ See Topic Here
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -112,7 +108,7 @@ See Topic Here
         },
         "datePublished": "2007-07-02",
         "dateModified": "2007-07-02",
-        "wordCount": 29,
+        "wordCount":  29 ,
         
     }
     </script>
@@ -192,6 +188,16 @@ See Topic Here
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,14 +221,16 @@ See Topic Here
                 
                 
 
-                <p>Soon to be unleashed on your unsuspecting screens (well&hellip;if you&rsquo;re using
-NextBBS, that is *):<br />
-[flvplayer <a href="http://www.nextbbs.com/D/acp2.flv">http://www.nextbbs.com/D/acp2.flv</a>]</p>
 
-<p>.<br />
-<a href="http://www.nextbbs.com/do_topic_id_1066">See Topic Here</a><br />
+                
+                    <p>Soon to be unleashed on your unsuspecting screens (well&hellip;if you&rsquo;re using
+NextBBS, that is *):<br>
+[flvplayer http://www.nextbbs.com/D/acp2.flv]</p>
+<p>.<br>
+<a href="http://www.nextbbs.com/do_topic_id_1066">See Topic Here</a><br>
 *: if you&rsquo;re not, you really should :)</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -269,11 +277,35 @@ NextBBS, that is *):<br />
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -290,7 +322,7 @@ NextBBS, that is *):<br />
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

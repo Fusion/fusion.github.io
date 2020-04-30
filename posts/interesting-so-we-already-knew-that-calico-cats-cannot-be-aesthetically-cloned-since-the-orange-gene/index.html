@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Interesting. So, we already knew that Calico cats cannot be aesthetically cloned since the orange gene..." />
     
-    <meta name="twitter:description" content="Interesting. So, we already knew that Calico cats cannot be aesthetically cloned since the orange gene is randomly expressed yet, if I am not misusing the lingo, spatially restricted, thus creating orange patches.
-Now, it appears that, as should be expected, extrinsic factors such as womb temperature will have a less dramatic yet still relevant effect on other coloring.
-In conclusion: I owe my wife an apology for buying into the oft made claim that cats can be visually cloned." />
+    <meta name="twitter:description" content="Interesting. So, we already knew that Calico cats cannot be aesthetically cloned since the orange gene is randomly expressed yet, if I am not misusing the lingo, spatially restricted, thus creating orange patches.Now, it appears that, as should be expected, extrinsic factors such as womb temperature will have a less dramatic yet still relevant effect on other coloring.In conclusion: I owe my wife an apology for buying into the oft made claim that cats can be visually cloned.﻿" />
     <meta name="twitter:url" content="http://zteo.com/posts/interesting-so-we-already-knew-that-calico-cats-cannot-be-aesthetically-cloned-since-the-orange-gene/" />
     
 
@@ -33,7 +31,7 @@ In conclusion: I owe my wife an apology for buying into the oft made claim that 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +72,7 @@ In conclusion: I owe my wife an apology for buying into the oft made claim that 
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/interesting-so-we-already-knew-that-calico-cats-cannot-be-aesthetically-cloned-since-the-orange-gene/"
+          "@id": "http:\/\/zteo.com\/posts\/interesting-so-we-already-knew-that-calico-cats-cannot-be-aesthetically-cloned-since-the-orange-gene\/"
         },
         "headline": "Interesting. So, we already knew that Calico cats cannot be aesthetically cloned since the orange gene...",
         "description": "Interesting. So, we already knew that Calico cats cannot be aesthetically cloned since the orange gene...",
@@ -91,9 +89,9 @@ In conclusion: I owe my wife an apology for buying into the oft made claim that 
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ In conclusion: I owe my wife an apology for buying into the oft made claim that 
         },
         "datePublished": "2014-08-17",
         "dateModified": "2014-08-17",
-        "wordCount": 80,
+        "wordCount":  80 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ In conclusion: I owe my wife an apology for buying into the oft made claim that 
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,17 +221,18 @@ In conclusion: I owe my wife an apology for buying into the oft made claim that 
                 
                 
 
-                <p>Interesting. So, we already knew that Calico cats cannot be aesthetically
+
+                
+                    <p>Interesting. So, we already knew that Calico cats cannot be aesthetically
 cloned since the orange gene is randomly expressed yet, if I am not misusing
-the lingo, spatially restricted, thus creating orange patches.<br />
+the lingo, spatially restricted, thus creating orange patches.<br>
 Now, it appears that, as should be expected, extrinsic factors such as womb
 temperature will have a less dramatic yet still relevant effect on other
 coloring.</p>
-
 <p>In conclusion: I owe my wife an apology for buying into the oft made claim that cats can be visually cloned.</p>
+<p><a href="http://drsophiayin.com/blog/entry/cloning-cats-rainbow-and-cc-prove-that-cloning-wont-resurrect-your-pet"><img src="https://i.ytimg.com/vi/RclpeBH9LkY/maxresdefault.jpg" alt=""></a></p>
 
-<p><a href="http://drsophiayin.com/blog/entry/cloning-cats-rainbow-and-cc-prove-that-cloning-wont-resurrect-your-pet"><img src="https://i.ytimg.com/vi/RclpeBH9LkY/maxresdefault.jpg" alt="" /></a></p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -270,11 +279,35 @@ coloring.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -291,7 +324,7 @@ coloring.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

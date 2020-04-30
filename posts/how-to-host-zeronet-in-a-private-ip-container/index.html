@@ -23,11 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/733613cc-3abe-456e-812b-f5228367745e.png" />
     
-    <meta name="twitter:description" content="Not an issue, but I wasn&rsquo;t sure where to post this tip: And, yes, I am aware that you may then want to protect your ZeroNet install(!)
-Here is a typical configuration:
- Host machine runs haproxy ZeroNet in a Docker or OpenVZ container  1-Make the main UI available to the world:
-In the container:
-python zeronet.py --ui_ip 0.0.0.0 On the host, you need to configure this container&rsquo;s IP in haproxy &ndash; for instance, edit haproxy." />
+    <meta name="twitter:description" content="Not an issue, but I wasn&rsquo;t sure where to post this tip (so I posted it on Github, obviously)" />
     <meta name="twitter:url" content="http://zteo.com/posts/how-to-host-zeronet-in-a-private-ip-container/" />
     
 
@@ -37,7 +33,7 @@ python zeronet.py --ui_ip 0.0.0.0 On the host, you need to configure this contai
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -78,7 +74,7 @@ python zeronet.py --ui_ip 0.0.0.0 On the host, you need to configure this contai
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/how-to-host-zeronet-in-a-private-ip-container/"
+          "@id": "http:\/\/zteo.com\/posts\/how-to-host-zeronet-in-a-private-ip-container\/"
         },
         "headline": "How to host ZeroNet in a private IP container",
         "description": "How to host ZeroNet in a private IP container",
@@ -95,9 +91,9 @@ python zeronet.py --ui_ip 0.0.0.0 On the host, you need to configure this contai
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -107,13 +103,13 @@ python zeronet.py --ui_ip 0.0.0.0 On the host, you need to configure this contai
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/733613cc-3abe-456e-812b-f5228367745e.png",
+          "url": "http:\/\/zteo.com\/733613cc-3abe-456e-812b-f5228367745e.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2015-05-15",
         "dateModified": "2015-05-15",
-        "wordCount": 216,
+        "wordCount":  216 ,
         
     }
     </script>
@@ -193,6 +189,16 @@ python zeronet.py --ui_ip 0.0.0.0 On the host, you need to configure this contai
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -216,56 +222,44 @@ python zeronet.py --ui_ip 0.0.0.0 On the host, you need to configure this contai
                 
                 
 
-                <p>Not an issue, but I wasn&rsquo;t sure where to post this tip:
+
+                
+                    <p>Not an issue, but I wasn&rsquo;t sure where to post this tip:
 And, yes, I am aware that you may then want to protect your ZeroNet install(!)</p>
-
 <p>Here is a typical configuration:</p>
-
 <ul>
 <li>Host machine runs haproxy</li>
 <li>ZeroNet in a Docker or OpenVZ container</li>
 </ul>
-
 <p>1-Make the main UI available to the world:</p>
-
 <p>In the container:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">python zeronet.py --ui_ip <span class="m">0</span>.0.0.0</code></pre></div>
-<p>On the host, you need to configure this container&rsquo;s IP in haproxy &ndash; for instance, edit haproxy.conf:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">python zeronet.py --ui_ip 0.0.0.0
+</code></pre></div><p>On the host, you need to configure this container&rsquo;s IP in haproxy &ndash; for instance, edit haproxy.conf:</p>
 <div class="highlight"><pre class="chroma"><code class="language-lighttpd" data-lang="lighttpd"><span class="k">frontend</span> <span class="k">http_in</span>
     <span class="k">acl</span> <span class="k">host_zeronet</span> <span class="k">hdr</span><span class="p">(</span><span class="k">host</span><span class="p">)</span> <span class="k">-i</span> <span class="k">zeronet.example.com</span>
     <span class="k">use_backend</span> <span class="k">be_zeronet</span> <span class="k">if</span> <span class="k">host_zeronet</span>
 <span class="k">backend</span> <span class="k">be_zeronet</span>
     <span class="k">balance</span> <span class="k">lastconn</span>
     <span class="k">option</span> <span class="k">httpclose</span>
-    <span class="k">server</span> <span class="k">pub_zeronet</span> <span class="err">:</span><span class="m">43110</span> <span class="k">cookie</span> <span class="k">pub_zeronet</span> <span class="k">check</span></code></pre></div>
-<p>Restart haproxy.</p>
-
+    <span class="k">server</span> <span class="k">pub_zeronet</span> <span class="err">:</span><span class="m">43110</span> <span class="k">cookie</span> <span class="k">pub_zeronet</span> <span class="k">check</span>
+</code></pre></div><p>Restart haproxy.</p>
 <p>2-Make the file server available: I would recommend using NAT to avoid any surprise. In /etc/../iptables:</p>
-
 <p>nat:</p>
-
 <pre><code># we will nat incoming packets on port 15441
 -A PREROUTING -i eth0 -p tcp -m tcp --dport 15441 -j DNAT --to-destination &lt;container ip&gt;:15441
 -A PREROUTING -i eth0 -p udp -m udp --dport 15441 -j DNAT --to-destination &lt;container ip&gt;:15441
-</code></pre>
-
-<p>filter:</p>
-
+</code></pre><p>filter:</p>
 <pre><code># host forwards incoming container packets
 -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
 -A FORWARD -s &lt;container network&gt;/24 -i &lt;bridge interface&gt; -j ACCEPT
 # host
 accepts incoming container packets to its own services
 -A INPUT -s &lt;container network&gt;/24 -i &lt;bridge interface&gt; -j ACCEPT
-</code></pre>
-
-<p>Cleanup your iptables configuration then</p>
-
+</code></pre><p>Cleanup your iptables configuration then</p>
 <pre><code>iptable-restore &lt; etc/../iptable
-</code></pre>
+</code></pre><p>And you&rsquo;re good to go! (in theory)</p>
 
-<p>And you&rsquo;re good to go! (in theory)</p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -312,11 +306,35 @@ accepts incoming container packets to its own services
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -333,7 +351,7 @@ accepts incoming container packets to its own services
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -21,11 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Twitterified Client v1.3 Almost Ready" />
     
-    <meta name="twitter:description" content="I should be able to release this new client tomorrow or day after tomorrow.
-I am currently battling a couple bugs with beta support for Present.ly:
- Time zone discrepancy: all posts appear as seven hours behind
- Avatars are too big!
-  " />
+    <meta name="twitter:description" content="I should be able to release this new client tomorrow or day after tomorrow." />
     <meta name="twitter:url" content="http://zteo.com/posts/twitterified-client-v13-almost-ready/" />
     
 
@@ -35,7 +31,7 @@ I am currently battling a couple bugs with beta support for Present.ly:
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +72,7 @@ I am currently battling a couple bugs with beta support for Present.ly:
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/twitterified-client-v13-almost-ready/"
+          "@id": "http:\/\/zteo.com\/posts\/twitterified-client-v13-almost-ready\/"
         },
         "headline": "Twitterified Client v1.3 Almost Ready",
         "description": "Twitterified Client v1.3 Almost Ready",
@@ -93,9 +89,9 @@ I am currently battling a couple bugs with beta support for Present.ly:
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -112,7 +108,7 @@ I am currently battling a couple bugs with beta support for Present.ly:
         },
         "datePublished": "2009-03-16",
         "dateModified": "2009-03-16",
-        "wordCount": 40,
+        "wordCount":  40 ,
         
     }
     </script>
@@ -192,6 +188,16 @@ I am currently battling a couple bugs with beta support for Present.ly:
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,17 +221,21 @@ I am currently battling a couple bugs with beta support for Present.ly:
                 
                 
 
-                <p>I should be able to release this new client tomorrow or day after tomorrow.</p>
 
+                
+                    <p>I should be able to release this new client tomorrow or day after tomorrow.</p>
 <p>I am currently battling a couple bugs with beta support for
 <a href="http://presently.com/">Present.ly</a>:</p>
-
 <ul>
-<li><p>Time zone discrepancy: all posts appear as seven hours behind</p></li>
-
-<li><p>Avatars are too big!</p></li>
+<li>
+<p>Time zone discrepancy: all posts appear as seven hours behind</p>
+</li>
+<li>
+<p>Avatars are too big!</p>
+</li>
 </ul>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -272,11 +282,35 @@ I am currently battling a couple bugs with beta support for Present.ly:
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -293,7 +327,7 @@ I am currently battling a couple bugs with beta support for Present.ly:
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

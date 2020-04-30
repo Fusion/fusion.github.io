@@ -23,10 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/ce9b4d06-96f2-45c8-a594-a82f0256b69c" />
     
-    <meta name="twitter:description" content="Chef and Puppet require Ruby before they will even talk to you.
-Ansible does not require remote agents but is complex.
-Introducing TighBeam: because it works with the same tools sysadmins use all the time. This is a personal project, not some actual open source big deal. I wrote something for myself, keeping it as small as possible. Use it too in a week-end project or what not.
-But it has a logo!" />
+    <meta name="twitter:description" content="Super minimalist remote configuration tool" />
     <meta name="twitter:url" content="http://zteo.com/posts/chef-and-puppet-require-ruby-before-they-will-even-talk-to-you/" />
     
 
@@ -36,7 +33,7 @@ But it has a logo!" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +74,7 @@ But it has a logo!" />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/chef-and-puppet-require-ruby-before-they-will-even-talk-to-you/"
+          "@id": "http:\/\/zteo.com\/posts\/chef-and-puppet-require-ruby-before-they-will-even-talk-to-you\/"
         },
         "headline": "Chef and Puppet require Ruby before they will even talk to you.",
         "description": "Chef and Puppet require Ruby before they will even talk to you.",
@@ -94,9 +91,9 @@ But it has a logo!" />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -106,13 +103,13 @@ But it has a logo!" />
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/ce9b4d06-96f2-45c8-a594-a82f0256b69c",
+          "url": "http:\/\/zteo.com\/ce9b4d06-96f2-45c8-a594-a82f0256b69c",
           "height": 133,
           "width": 200
         },
         "datePublished": "2014-08-04",
         "dateModified": "2014-08-04",
-        "wordCount": 85,
+        "wordCount":  85 ,
         
     }
     </script>
@@ -192,6 +189,16 @@ But it has a logo!" />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,17 +222,16 @@ But it has a logo!" />
                 
                 
 
-                <p>Chef and Puppet require Ruby before they will even talk to you.<br />
+
+                
+                    <p>Chef and Puppet require Ruby before they will even talk to you.<br>
 Ansible does not require remote agents but is complex.</p>
-
 <p>Introducing TighBeam: because it works with the same tools sysadmins use all the time. This is a personal project, not some actual open source big deal. I wrote something for myself, keeping it as small as possible. Use it too in a week-end project or what not.</p>
-
 <p><strong>But it has a logo!</strong></p>
-
 <p>Yes. Proof that any bunk idea can have its own branding :)</p>
+<p><a href="https://github.com/Fusion/TightBeam"><img src="https://lh3.googleusercontent.com/proxy/w8CbXFFXpRup1WsWqpbrRlHDy20S72B7N61NKUFUGAhJCg7qqqqIRIOKCwWwyHQffdM4JRh6HlaRiqyGVxFfR-wRuKeLX6QUCE9d=w506-h303-p" alt=""></a></p>
 
-<p><a href="https://github.com/Fusion/TightBeam"><img src="https://lh3.googleusercontent.com/proxy/w8CbXFFXpRup1WsWqpbrRlHDy20S72B7N61NKUFUGAhJCg7qqqqIRIOKCwWwyHQffdM4JRh6HlaRiqyGVxFfR-wRuKeLX6QUCE9d=w506-h303-p" alt="" /></a></p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -272,11 +278,35 @@ Ansible does not require remote agents but is complex.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -293,7 +323,7 @@ Ansible does not require remote agents but is complex.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

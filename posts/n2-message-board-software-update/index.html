@@ -21,11 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="&#34;n2&#34; Message Board Software: Update" />
     
-    <meta name="twitter:description" content="This is a cross-posting with the nextBBS support board.
-Some of you already know about this but keep reading&hellip;
-Development of nextBBS v2 was steered in a new direction about two months ago and this is for the better.
-&ldquo;n2&rdquo; is the software&rsquo;s new code name. And the change is more than skin-deep because it is actually the result of the merger of three different pieces of software:
-&#43; wtcBB" />
+    <meta name="twitter:description" content="This is a cross-posting with the nextBBS support board." />
     <meta name="twitter:url" content="http://zteo.com/posts/n2-message-board-software-update/" />
     
 
@@ -35,7 +31,7 @@ Development of nextBBS v2 was steered in a new direction about two months ago an
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,10 +72,10 @@ Development of nextBBS v2 was steered in a new direction about two months ago an
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/n2-message-board-software-update/"
+          "@id": "http:\/\/zteo.com\/posts\/n2-message-board-software-update\/"
         },
-        "headline": "&#34;n2&#34; Message Board Software: Update",
-        "description": "&#34;n2&#34; Message Board Software: Update",
+        "headline": "\x22n2\x22 Message Board Software: Update",
+        "description": "\x22n2\x22 Message Board Software: Update",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -93,9 +89,9 @@ Development of nextBBS v2 was steered in a new direction about two months ago an
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -112,7 +108,7 @@ Development of nextBBS v2 was steered in a new direction about two months ago an
         },
         "datePublished": "2009-07-04",
         "dateModified": "2009-07-04",
-        "wordCount": 215,
+        "wordCount":  215 ,
         
     }
     </script>
@@ -192,6 +188,16 @@ Development of nextBBS v2 was steered in a new direction about two months ago an
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,43 +221,36 @@ Development of nextBBS v2 was steered in a new direction about two months ago an
                 
                 
 
-                <p><em>This is a cross-posting with the nextBBS support board.</em></p>
 
+                
+                    <p><em>This is a cross-posting with the nextBBS support board.</em></p>
 <p>Some of you already know about this but keep reading&hellip;</p>
-
 <p>Development of <strong>nextBBS v2</strong> was steered in a new direction about two months
 ago and this is for the better.</p>
-
 <p>&ldquo;n2&rdquo; is the software&rsquo;s new code name. And the change is more than skin-deep
 because it is actually the result of the merger of three different pieces of
 software:</p>
-
-<p>+ wtcBB<br />
-+ nextBBS v2 &ldquo;current&rdquo;<br />
+<p>+ wtcBB<br>
++ nextBBS v2 &ldquo;current&rdquo;<br>
 + My own PHP framework called &ldquo;Lenses&rdquo;</p>
-
 <p>The result is a very fast, very user and admin-friendly board with easy
 install and localization across the board.</p>
-
 <p>This new direction is very exciting for at least two reasons:</p>
-
 <p>1. It allows me to work without being hindered by &ldquo;youthful&rdquo; mistakes I had
 made when developing nBBS v1 such as <strong>SEO</strong> being an afterthought and an
 Admin Control Panel that was too intimidating</p>
-
 <p>2. <strong>wtcBB</strong> and <strong>nextBBS</strong> share a common philosophy on many levels and
 integrating both programs allows me to pick the best implementation. A few
 examples are BBCode editor, sub-sub forums, micro-caching, high logging
 granularity, editing look and feel in the admin cp&hellip;</p>
-
 <p>You can follow progress through <a href="http://github.com/Fusion/n2/commits/master">my
 submits</a> and the <a href="http://github.com/Fusion/n2/issues">issues
 tracker</a>.</p>
-
 <p><a href="http://nextbbs.com/do_topic_id_1399_post_7293_">Go to my original post to see a few
 screenshots</a>. I should bring a
 demo online soon.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -298,11 +297,35 @@ demo online soon.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -319,7 +342,7 @@ demo online soon.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

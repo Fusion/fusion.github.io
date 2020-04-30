@@ -23,9 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/bda85704-c1e5-4eba-b938-59829a9c25eb.jpg" />
     
-    <meta name="twitter:description" content="It seems that tons of people have the same complaint: the Wordpress application for iPhone does not discover their blog and, therefore, is of no use to them.
-The same goes for many desktop-based applications.
-I, too, spent quite a lot of time trying to figure that one out but now that I have succeeded, here is how I would recommend working on this issue if your blog is affected:" />
+    <meta name="twitter:description" content="It seems that tons of people have the same complaint: the Wordpress application for iPhone does not discover their blog and, therefore, is of no use to them.The same goes for many desktop-based applications.I, too, spent quite a lot of time trying to figure that one out but now that I have succeeded, here is how I would recommend working on this issue if your blog is affected:" />
     <meta name="twitter:url" content="http://zteo.com/posts/help-blog-editors-reliably-discover-your-api/" />
     
 
@@ -35,7 +33,7 @@ I, too, spent quite a lot of time trying to figure that one out but now that I h
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +74,7 @@ I, too, spent quite a lot of time trying to figure that one out but now that I h
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/help-blog-editors-reliably-discover-your-api/"
+          "@id": "http:\/\/zteo.com\/posts\/help-blog-editors-reliably-discover-your-api\/"
         },
         "headline": "Help Blog Editors Reliably Discover Your API",
         "description": "Help Blog Editors Reliably Discover Your API",
@@ -93,9 +91,9 @@ I, too, spent quite a lot of time trying to figure that one out but now that I h
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -105,13 +103,13 @@ I, too, spent quite a lot of time trying to figure that one out but now that I h
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/bda85704-c1e5-4eba-b938-59829a9c25eb.jpg",
+          "url": "http:\/\/zteo.com\/bda85704-c1e5-4eba-b938-59829a9c25eb.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2009-10-20",
         "dateModified": "2009-10-20",
-        "wordCount": 277,
+        "wordCount":  279 ,
         
     }
     </script>
@@ -191,6 +189,16 @@ I, too, spent quite a lot of time trying to figure that one out but now that I h
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -200,7 +208,7 @@ I, too, spent quite a lot of time trying to figure that one out but now that I h
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">20 Oct 2009</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">277</span> words)</span></span>
+                        <span class="post-date">20 Oct 2009</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">279</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -214,40 +222,40 @@ I, too, spent quite a lot of time trying to figure that one out but now that I h
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/71813425@N00/2913018697/" title="Wordpress Schawg"><img src="/images/2913018697_ccbb33e993_t.jpg" alt="Wordpress Schawg" /></a>It seems that <a href="http://iphone.forums.wordpress.org/topic/xml-rpc-service-for-you-blog-
-cannot-be-found/">tons of people</a> have the same complaint: the Wordpress application for
-iPhone does not discover their blog and, therefore, is of no use to them.<br />
-The same goes for many desktop-based applications.<br />
+
+                
+                    <p>[<img src="/images/2913018697_ccbb33e993_t.jpg" alt="Wordpress Schawg">](<a href="http://www.flickr.com/photos/71813425@N00/2913018697/%22Wordpress">http://www.flickr.com/photos/71813425@N00/2913018697/&quot;Wordpress</a> Schawg&rdquo;)It seems that [tons of people](<a href="http://iphone.forums.wordpress.org/topic/xml-rpc-service-for-you-blog-">http://iphone.forums.wordpress.org/topic/xml-rpc-service-for-you-blog-</a>
+cannot-be-found/) have the same complaint: the Wordpress application for
+iPhone does not discover their blog and, therefore, is of no use to them.<br>
+The same goes for many desktop-based applications.<br>
 I, too, spent quite a lot of time trying to figure that one out but now that I
 have succeeded, here is how I would recommend working on this issue if your
 blog is affected:</p>
-
 <ol>
-<li><p>Go to your blog home page and select &ldquo;View source&rdquo;</p></li>
-
-<li><p>Look for <strong><em>&lt; link ref=&ldquo;EditURI&rdquo;&hellip;</em></strong> you will see that this line contains a URL ending with <strong><em>xmlrpc.php?rsd</em></strong>. Point your browser to that URL. A rather empty page should be displayed. Check its source; if it is XML, it&rsquo;s all good.</p></li>
-
-<li><p>If the previous step fails, go to the same URL but without <strong><em>?rsd</em></strong>. If this fails too, you need to check that you have a file called <strong>xmlrpc.php</strong> and that: <em>a.</em> No rewrite rule messes up your URL; <em>b.</em> No plugin renders it invisible &ndash; e.g. &ldquo;private&rdquo;</p></li>
-
-<li><p>If both steps work well, it is VERY likely that the blog editor you are using &ndash; or trying to use, more accurately &ndash; is choking on malformed XHTML code. It is what seems to mystify most of us.</p></li>
+<li>
+<p>Go to your blog home page and select &ldquo;View source&rdquo;</p>
+</li>
+<li>
+<p>Look for <strong><em>&lt; link ref=&quot;EditURI&rdquo;&hellip;</em></strong> you will see that this line contains a URL ending with <strong><em>xmlrpc.php?rsd</em></strong>. Point your browser to that URL. A rather empty page should be displayed. Check its source; if it is XML, it&rsquo;s all good.</p>
+</li>
+<li>
+<p>If the previous step fails, go to the same URL but without <strong><em>?rsd</em></strong>. If this fails too, you need to check that you have a file called <strong>xmlrpc.php</strong> and that: <em>a.</em> No rewrite rule messes up your URL; <em>b.</em> No plugin renders it invisible &ndash; e.g. &ldquo;private&rdquo;</p>
+</li>
+<li>
+<p>If both steps work well, it is VERY likely that the blog editor you are using &ndash; or trying to use, more accurately &ndash; is choking on malformed XHTML code. It is what seems to mystify most of us.</p>
+</li>
 </ol>
-
 <p>To convince your blog editor to &ldquo;discover&rdquo; your blog, we are going to give it
 a nicely formed XHTML page:</p>
-
 <p>First, make a copy of index.php: <strong>cp index.php index.o.php</strong></p>
-
 <p>Now, create a new index.php page with this code:</p>
-
 <p>Of course, you need to replace all instances of <strong><em>nexus.zteo.com</em></strong> with your
 own blog&rsquo;s information; for instance <strong><em>myblog.mydomain.com</em></strong></p>
-
 <p>Discover your blog using your favourite blog editor.</p>
-
 <p>Restore your index.php: <strong>cp index.o.php index.php</strong></p>
-
 <p>Done!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -294,11 +302,35 @@ own blog&rsquo;s information; for instance <strong><em>myblog.mydomain.com</em><
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -315,7 +347,7 @@ own blog&rsquo;s information; for instance <strong><em>myblog.mydomain.com</em><
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

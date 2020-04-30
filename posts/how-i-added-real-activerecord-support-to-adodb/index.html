@@ -21,8 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="How I added real ActiveRecord support to adodb" />
     
-    <meta name="twitter:description" content="For my new projects, I have decided to use PHP5 , mostly because at least a couple projects will be worked on by a team and the learning curve is fairly forgiving.
-I decided, however, to follow the model offered by Rails. I looked into a few PHP frameworks, such as Akelos, but realized that they were too constraining for our purpose. That&rsquo;s when I decided to develop my own thin layer framework." />
+    <meta name="twitter:description" content="For my new projects, I have decided to use PHP5, mostly because at least a couple projects will be worked on by a team and the learning curve is fairly forgiving.I decided, however, to follow the model offered by Rails.  I looked into a few PHP frameworks, such as Akelos, but realized that they were too constraining for our purpose. That&rsquo;s when I decided to develop my own thin layer framework." />
     <meta name="twitter:url" content="http://zteo.com/posts/how-i-added-real-activerecord-support-to-adodb/" />
     
 
@@ -32,7 +31,7 @@ I decided, however, to follow the model offered by Rails. I looked into a few PH
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -73,7 +72,7 @@ I decided, however, to follow the model offered by Rails. I looked into a few PH
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/how-i-added-real-activerecord-support-to-adodb/"
+          "@id": "http:\/\/zteo.com\/posts\/how-i-added-real-activerecord-support-to-adodb\/"
         },
         "headline": "How I added real ActiveRecord support to adodb",
         "description": "How I added real ActiveRecord support to adodb",
@@ -90,9 +89,9 @@ I decided, however, to follow the model offered by Rails. I looked into a few PH
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -109,7 +108,7 @@ I decided, however, to follow the model offered by Rails. I looked into a few PH
         },
         "datePublished": "2008-07-26",
         "dateModified": "2008-07-26",
-        "wordCount": 716,
+        "wordCount":  722 ,
         
     }
     </script>
@@ -189,6 +188,16 @@ I decided, however, to follow the model offered by Rails. I looked into a few PH
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -198,7 +207,7 @@ I decided, however, to follow the model offered by Rails. I looked into a few PH
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">26 Jul 2008</span> <span class="reading-time">| <span class="estimated-reading-time">4 min.</span> (<span class="word-count">716</span> words)</span></span>
+                        <span class="post-date">26 Jul 2008</span> <span class="reading-time">| <span class="estimated-reading-time">4 min.</span> (<span class="word-count">722</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -212,51 +221,50 @@ I decided, however, to follow the model offered by Rails. I looked into a few PH
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/hindesite/134586223/"><img src="/images/134586223_76a9fdeeeb_m.jpg" alt="Dead hard drive" /></a>For my new projects, I have decided to use <strong>PHP5</strong> , mostly
+
+                
+                    <p><a href="http://www.flickr.com/photos/hindesite/134586223/"><img src="/images/134586223_76a9fdeeeb_m.jpg" alt="Dead hard drive"></a>For my new projects, I have decided to use <strong>PHP5</strong> , mostly
 because at least a couple projects will be worked on by a team and the
-learning curve is fairly forgiving.<br />
+learning curve is fairly forgiving.<br>
 I decided, however, to follow the model offered by <strong>Rails</strong>. I looked into a
 few PHP frameworks, such as Akelos, but realized that they were too
 constraining for our purpose. That&rsquo;s when I decided to develop my own thin
 layer framework.</p>
-
 <p>An excellent productivity tool is the <strong>ActiveRecord</strong> pattern. After all, it
 doesn&rsquo;t matter what it is, that&rsquo;s being mapped; whether it&rsquo;s database tables
-or web services should not be relevant to the controller.<br />
+or web services should not be relevant to the controller.<br>
 I have, in the past, used <a href="http://adodb.sourceforge.net/">adodb</a> successfully
 and I was happy when I realized that it comes with a ADOdb_Active_Record
 class.</p>
-
 <p>Unfortunately, that class does a very basic job of mapping <strong>one</strong> class to a
 database table and that&rsquo;s it. Therefore, support for <strong>has_many</strong> or
-<strong>belongs_to</strong> clauses.<br />
+<strong>belongs_to</strong> clauses.<br>
 I know that AR offers more features that those but I thought that these fit
-the very minimum requirement for them to be useful.<br />
+the very minimum requirement for them to be useful.<br>
 And that&rsquo;s how I ended up modifying ADOdb_Active_Record to support these.</p>
-
 <p>This article is mostly a series of listings that show the modifications-a bit-
 and how to use them-a bit more. First, here is how I am using them in my
-framework:<br />
+framework:<br>
 Let&rsquo;s imagine a database that contains songs, artists and genres. Let&rsquo;s look
 at the definition of a Song object:</p>
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">belongsTo(&#39;artist&#39;);  
                 $this-&gt;belongsTo(&#39;genre&#39;);  
         }  
 }  
-?&gt;</code></pre></div>
-<p>and an Artist object:</p>
+?&gt;
+</code></pre></div><p>and an Artist object:</p>
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">hasMany(&#39;songs&#39;);  
         }  
 }  
-?&gt;  </code></pre></div>
-<p>let&rsquo;s have a look at a very basic controller that will allow us to retrieve
+?&gt;  
+</code></pre></div><p>let&rsquo;s have a look at a very basic controller that will allow us to retrieve
 our artists. Their songs will also be retrieved, since artists are defined as
 having many songs:</p>
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">artists = <span class="err">&amp;</span>$artist-&gt;find(ALL, &#34;artists.id=1&#34;, array(&#39;loading&#39;=&gt;ADODB_LAZY_AR));  
         }  
 }  
-?&gt;  </code></pre></div>
-<p>Through the magic of my framework, which is outside the scope of this post, we
+?&gt;  
+</code></pre></div><p>Through the magic of my framework, which is outside the scope of this post, we
 will then be able to display our artists with their respective songs like so:</p>
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">        {$artist-&gt;name}
 
@@ -267,15 +275,14 @@ will then be able to display our artists with their respective songs like so:</p
 &#34;;  
                 }  
         }  
-        ?&gt;</code></pre></div>
-<p>Note that, for this example, I removed as many irrelevant pieces of code as
+        ?&gt;
+</code></pre></div><p>Note that, for this example, I removed as many irrelevant pieces of code as
 possible. For instance, we are always retrieving artist #1. The array that we
 are passing to the find() statement allows us to configure some of AR&rsquo;s
 behaviours. In this example, we are passing ADODB_LAZY_AR, which is a hint
 that we do not wish to perform massive joins, but retrieve related objects
 <strong>on demand</strong>. If we wished to retrieve everything upfront, we could have used
 ADODB_JOIN_AR instead.</p>
-
 <p>Now, our model classes are subclasses of ActiveRecord, which is another one of
 my framework classes, which provides a light abstraction on top of
 ADOdb_Active_Record. The relevant piece, for you, would be this one since we
@@ -300,37 +307,33 @@ invoke it:</p>
 
                 // Assumption: ALL == $mode - return multiple rows  
                 return parent::find($condition, $bindArr, $pKeyArr, $extra);  
-        }  </code></pre></div>
-<p>It is interesting because the last line contains the actual call to
+        }  
+</code></pre></div><p>It is interesting because the last line contains the actual call to
 ADOdb_Active_Record&rsquo;s find() method.</p>
-
 <p>In adodb itself, two files were modified: adodb-active-record.php and
 adodb.inc.php.</p>
-
 <p>The former now contains two new structures: _hasMany and _belongsTo. ARs are
 now aware of the concept of foreign name, which is the name by which this
 object will be known to another object if a relationship is defined. This
 allows us, among other things, to naturally <em>inflect</em> tables names.</p>
-
 <p>The latter was modified so that it accepts extra parameters, for instance in
 GetActiveRecordsClass(), and handle massive joins. Note that joins can be
 deferred through the use of ADODB_LAZY_AR. In which case I will use the model
 objects&rsquo; __get() method to load missing properties on-demand.</p>
-
-<p><strong>&ldquo;Buyer Beware&rdquo;</strong><br />
+<p><strong>&ldquo;Buyer Beware&rdquo;</strong><br>
 I hope to publish my full PHP framework in the near future; in the meantime,
 this hacked version of adodb has been very helpful in my work. I hope you too
 find it helpful. Beware, though: this is an early work and I would rather
 offer it to John Lim and let him integrate it in adodb-or can it if he&rsquo;s too
-horrified!<br />
+horrified!<br>
 I am aware of at least one bug, which may happen when using the join method on
 belongs_to objects. It could also do more things for you. Definitely not the
-cat&rsquo;s meow.<br />
+cat&rsquo;s meow.<br>
 But if you like it and need help, drop me a line.</p>
+<p>[<img src="/images/download.png" alt="Download">](<a href="http://twitterified.com/file/get/adodb-">http://twitterified.com/file/get/adodb-</a>
+ext-ar.zip &ldquo;Download patched adodb files&rdquo;)</p>
 
-<p><a href="http://twitterified.com/file/get/adodb-
-ext-ar.zip" title="Download patched adodb files"><img src="/images/download.png" alt="Download" /></a></p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -377,11 +380,35 @@ ext-ar.zip" title="Download patched adodb files"><img src="/images/download.png"
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -398,7 +425,7 @@ ext-ar.zip" title="Download patched adodb files"><img src="/images/download.png"
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

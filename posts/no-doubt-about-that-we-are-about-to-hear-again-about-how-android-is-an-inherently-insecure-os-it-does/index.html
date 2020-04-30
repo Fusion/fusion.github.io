@@ -23,10 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/2a6d39f6-e4b6-4c28-aa98-829f379428ae.png" />
     
-    <meta name="twitter:description" content="http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf
-No doubt about that: we are about to hear again about how Android is an inherently insecure OS. It does not matter that the same algorithm would likely work on other mobile devices or, for that matter, any OS.
-It&rsquo;s a clever attack. Well, the &ldquo;theft&rdquo; bits of it (invisible activity or photo hijacking) are pretty standard but the first part, the activity detection one, is pretty smart.
-Note that it&rsquo;s nothing new though; simply a mix of computer forensics and a timing attack." />
+    <meta name="twitter:description" content="No doubt about that: we are about to hear again about how Android is an inherently insecure OS. It does not matter that the same algorithm would likely work on other mobile devices or, for that matter, any OS.It&#39;s a clever attack. Well, the &quot;theft&quot; bits of it (invisible activity or photo hijacking) are pretty standard but the first part, the activity detection one, is pretty smart.Note that it&#39;s nothing new though; simply a mix of computer forensics and a timing attack.So, how do you protect your data?In short: it&#39;s not too bad. Read on.Bad news: not much you can do, at this point, to prevent the &quot;active&quot; part of the attack: it is easy to open a transparent activity; as opposed to a transparent screen overlay, which requires a special set of permissions that MIUI, for instance, denies by default.Conceivably, though, if your phone is rooted, it would be fairly trivial to write an Xposed module that displays a Toast like:     * switching to app_blah *Good news, though, regarding the detection bit: as if often the case, I believe that this experiment can only be reproduced in a tightly controlled environment.If your device has a different screen resolution/density; if you use an alternate keyboard (in some cases); if you are using a customized ROM; (insert here other factors that would change your activity&#39;s signature); then you are now dramatically lowering the odds that this exploit will work at all.These videos are impressive but keep in mind that they were made using the researchers&#39; own devices, not your device.I am not saying that you are safe, though. I am simply pointing out that this is definitely not a trivial attack and I am sure that as soon as my fellow XDA-ers start giving it some thoughts, a workaround will become available.﻿" />
     <meta name="twitter:url" content="http://zteo.com/posts/no-doubt-about-that-we-are-about-to-hear-again-about-how-android-is-an-inherently-insecure-os-it-does/" />
     
 
@@ -36,7 +33,7 @@ Note that it&rsquo;s nothing new though; simply a mix of computer forensics and 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +74,7 @@ Note that it&rsquo;s nothing new though; simply a mix of computer forensics and 
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/no-doubt-about-that-we-are-about-to-hear-again-about-how-android-is-an-inherently-insecure-os-it-does/"
+          "@id": "http:\/\/zteo.com\/posts\/no-doubt-about-that-we-are-about-to-hear-again-about-how-android-is-an-inherently-insecure-os-it-does\/"
         },
         "headline": "No doubt about that: we are about to hear again about how Android is an inherently insecure OS. It does...",
         "description": "No doubt about that: we are about to hear again about how Android is an inherently insecure OS. It does...",
@@ -94,9 +91,9 @@ Note that it&rsquo;s nothing new though; simply a mix of computer forensics and 
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -106,13 +103,13 @@ Note that it&rsquo;s nothing new though; simply a mix of computer forensics and 
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/2a6d39f6-e4b6-4c28-aa98-829f379428ae.png",
+          "url": "http:\/\/zteo.com\/2a6d39f6-e4b6-4c28-aa98-829f379428ae.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2014-08-24",
         "dateModified": "2014-08-24",
-        "wordCount": 310,
+        "wordCount":  310 ,
         
     }
     </script>
@@ -192,6 +189,16 @@ Note that it&rsquo;s nothing new though; simply a mix of computer forensics and 
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,48 +222,42 @@ Note that it&rsquo;s nothing new though; simply a mix of computer forensics and 
                 
                 
 
-                <p><a href="http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf">http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf</a></p>
 
+                
+                    <p><a href="http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf">http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf</a></p>
 <p>No doubt about that: we are about to hear again about how Android is an
 inherently insecure OS. It does not matter that the same algorithm would
 likely work on other mobile devices or, for that matter, any OS.</p>
-
 <p>It&rsquo;s a clever attack. Well, the &ldquo;theft&rdquo; bits of it (invisible activity or
 photo hijacking) are pretty standard but the first part, the activity
-detection one, is pretty smart.<br />
+detection one, is pretty smart.<br>
 Note that it&rsquo;s nothing new though; simply a mix of computer forensics and a
 timing attack.</p>
-
 <p><strong>So, how do you protect your data?</strong></p>
-
 <p>In short: it&rsquo;s not too bad. Read on.</p>
-
 <p>Bad news: not much you can do, at this point, to prevent the &ldquo;active&rdquo; part of
 the attack: it is easy to open a transparent activity; as opposed to a
 transparent screen overlay, which requires a special set of permissions that
 MIUI, for instance, denies by default.</p>
-
 <p>Conceivably, though, if your phone is rooted, it would be fairly trivial to
 write an Xposed module that displays a Toast like:</p>
-
 <blockquote>
 <p>switching to app_blah</p>
 </blockquote>
-
 <p>Good news, though, regarding the detection bit: as if often the case, I
 believe that this experiment can only be reproduced in a tightly controlled
-environment.<br />
+environment.<br>
 If your device has a different screen resolution/density; if you use an
 alternate keyboard (in some cases); if you are using a customized ROM; (insert
 here other factors that would change your activity&rsquo;s signature); then you are
-now dramatically lowering the odds that this exploit will work at all.<br />
+now dramatically lowering the odds that this exploit will work at all.<br>
 These videos are impressive but keep in mind that they were made using the
 researchers&rsquo; own devices, not <em>your</em> device.</p>
-
 <p>I am not saying that you are safe, though. I am simply pointing out that this
 is definitely <strong>not</strong> a trivial attack and I am sure that as soon as my fellow
 XDA-ers start giving it some thoughts, a workaround will become available.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -303,11 +304,35 @@ XDA-ers start giving it some thoughts, a workaround will become available.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -324,7 +349,7 @@ XDA-ers start giving it some thoughts, a workaround will become available.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

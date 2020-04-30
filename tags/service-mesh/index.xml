@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>service mesh on The Nexus</title>
+    <link>http://zteo.com/tags/service-mesh/</link>
+    <description>Recent content in service mesh on The Nexus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Apr 2020 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://zteo.com/tags/service-mesh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Istio, Cert-Manager and Let&#39;s Encrypt April &#39;20</title>
+      <link>http://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</link>
+      <pubDate>Wed, 29 Apr 2020 10:54:24 +0200</pubDate>
+      
+      <guid>http://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</guid>
+      <description>What is this? It is very easy to find blog posts and articles explaining how to make some of these components work together. They are also completely outdated.
+It is not their fault: Kubernetes moves fast, Istio&amp;rsquo;s development seems to move even faster, and cert-manager breaks backward compatibility. Chances are, by the time you read it it will be too late!
+Anyway, in a futile attempt to remain somewhat ahead of the curve, this article was written for Istio-1.</description>
+    </item>
+    
+  </channel>
+</rss>

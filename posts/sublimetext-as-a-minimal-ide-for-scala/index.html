@@ -23,11 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/edfccf8a-cbfd-47fe-bedb-fb9eb79bdfd6.png" />
     
-    <meta name="twitter:description" content="Well, the Coursera &ldquo;Functional Programming Principles in Scala&rdquo; class was a success. Both Tom Chappell and I really enjoyed it. However, I&rsquo;ve never much liked Eclipse as an IDE. Here is how I am using Sublime Text 2 instead.
-Syntax highlighting, error detection
-1-Install Sublime Text 2
-2- Now, let&rsquo;s prepare our environment for Ensime (aka &ldquo;ENhanced Scala Interaction Mode for Emac&rdquo;) and its &ldquo;sbt&rdquo; plugin:
- Add to the end of ~/." />
+    <meta name="twitter:description" content="Well, the Coursera &ldquo;Functional Programming Principles in Scala&rdquo; class was a success. Both Tom Chappell and I really enjoyed it. However, I&rsquo;ve never much liked Eclipse as an IDE. Here is how I am using Sublime Text 2 instead." />
     <meta name="twitter:url" content="http://zteo.com/posts/sublimetext-as-a-minimal-ide-for-scala/" />
     
 
@@ -37,7 +33,7 @@ Syntax highlighting, error detection
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -78,7 +74,7 @@ Syntax highlighting, error detection
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/sublimetext-as-a-minimal-ide-for-scala/"
+          "@id": "http:\/\/zteo.com\/posts\/sublimetext-as-a-minimal-ide-for-scala\/"
         },
         "headline": "SublimeText as a minimal IDE for Scala",
         "description": "SublimeText as a minimal IDE for Scala",
@@ -95,9 +91,9 @@ Syntax highlighting, error detection
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -107,13 +103,13 @@ Syntax highlighting, error detection
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/edfccf8a-cbfd-47fe-bedb-fb9eb79bdfd6.png",
+          "url": "http:\/\/zteo.com\/edfccf8a-cbfd-47fe-bedb-fb9eb79bdfd6.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2012-11-26",
         "dateModified": "2012-11-26",
-        "wordCount": 361,
+        "wordCount":  361 ,
         
     }
     </script>
@@ -193,6 +189,16 @@ Syntax highlighting, error detection
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -216,100 +222,81 @@ Syntax highlighting, error detection
                 
                 
 
-                <p>Well, the Coursera &ldquo;<a href="https://class.coursera.org/progfun-2012-001/class/index">Functional Programming Principles in Scala</a>&rdquo; class was a
+
+                
+                    <p>Well, the Coursera &ldquo;<a href="https://class.coursera.org/progfun-2012-001/class/index">Functional Programming Principles in Scala</a>&rdquo; class was a
 success. Both <a href="http://tomchappell.com/">Tom Chappell</a> and I really enjoyed it.
 However, I&rsquo;ve never much liked Eclipse as an IDE. Here is how I am using
 Sublime Text 2 instead.</p>
-
-<p><img src="/images/Screenshot%2011:25:12%2011:20%20PM.png" alt="" /></p>
-
+<p><img src="/images/Screenshot%2011:25:12%2011:20%20PM.png" alt=""></p>
 <p><strong>Syntax highlighting, error detection</strong></p>
-
 <p>1-Install Sublime Text 2</p>
-
 <p>2- Now, let&rsquo;s prepare our environment for Ensime (aka &ldquo;ENhanced Scala
 Interaction Mode for Emac&rdquo;) and its &ldquo;sbt&rdquo; plugin:</p>
-
 <ul>
 <li>Add to the end of ~/.sbt/plugins/plugins.sbt (or create it if needed):</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="n">addSbtPlugin</span><span class="o">(</span><span class="s">&#34;org.ensime&#34;</span> <span class="o">%</span> <span class="s">&#34;ensime-sbt-cmd&#34;</span> <span class="o">%</span> <span class="s">&#34;0.1.0&#34;</span><span class="o">)</span></code></pre></div>
-<ul>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="n">addSbtPlugin</span><span class="o">(</span><span class="s">&#34;org.ensime&#34;</span> <span class="o">%</span> <span class="s">&#34;ensime-sbt-cmd&#34;</span> <span class="o">%</span> <span class="s">&#34;0.1.0&#34;</span><span class="o">)</span>
+</code></pre></div><ul>
 <li>Add ensime to Sublime Text 2:</li>
 </ul>
-
 <p>Preferences &gt; Package Control &gt; Install Package &gt; Ensime or</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git clone git://github.com/sublimescala/sublime-ensime.git Ensime</code></pre></div>
-<p>3-Install the Ensime server:</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git clone git://github.com/sublimescala/sublime-ensime.git Ensime
+</code></pre></div><p>3-Install the Ensime server:</p>
 <ul>
 <li>Download it from <a href="https://github.com/sublimescala/ensime/downloads">https://github.com/sublimescala/ensime/downloads</a></li>
 <li>Command line:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tar zxvf to ~/Library/Application<span class="se">\ </span>Support/Sublime<span class="se">\ </span>Text<span class="se">\ </span><span class="m">2</span>/Packages/Ensime
-mv <span class="s1">&#39;ensime_xxxx&#39;</span> to <span class="s1">&#39;server&#39;</span></code></pre></div>
-<ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tar zxvf to ~/Library/Application<span class="se">\ </span>Support/Sublime<span class="se">\ </span>Text<span class="se">\ </span>2/Packages/Ensime
+mv <span class="s1">&#39;ensime_xxxx&#39;</span> to <span class="s1">&#39;server&#39;</span>
+</code></pre></div><ul>
 <li>Restart Sublime Text 2</li>
 <li>Start the Ensime server: {Cmd}{S}P Ensime: Startup or Tools &gt; Maintenance &gt; Startup</li>
 </ul>
-
 <p>4-Let&rsquo;s a couple templates for Scala projects:</p>
-
 <ul>
 <li>Install Conscript:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl https://raw.github.com/n8han/conscript/master/setup.sh <span class="p">|</span> sh</code></pre></div>
-<ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl https://raw.github.com/n8han/conscript/master/setup.sh <span class="p">|</span> sh
+</code></pre></div><ul>
 <li>Using Conscript, install giter8:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cs n8han/giter8</code></pre></div>
-<ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cs n8han/giter8
+</code></pre></div><ul>
 <li>g8 templates found at: <a href="https://github.com/n8han/giter8/wiki/giter8-templates">https://github.com/n8han/giter8/wiki/giter8-templates</a>:</li>
 </ul>
-
 <p>&ldquo;ymasory/sbt&rdquo; is a good start for github; &ldquo;typesafehub/scala-sbt&rdquo; is total
 boilerplate 5-This is the interesting part. We can now create a project and
 prepare its template and Ensime server:</p>
-
 <ul>
 <li>Command line:</li>
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /your project home directory/
 gr8 typesafehub/scala-sbt
 sbt
-ensime generate</code></pre></div>
-<ul>
+ensime generate
+</code></pre></div><ul>
 <li>Run Subime Text 2:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">subl .</code></pre></div>
-<ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">subl .
+</code></pre></div><ul>
 <li>Display Ensime&rsquo;s console window: Tools &gt; Ensime &gt; Development &gt; Show Notes</li>
 </ul>
-
 <p><strong>Using the Scala REPL</strong> **</p>
-
 <ul>
 <li>Install SublimeREPL (instructions by fellow Coursera student Alexei Alekhin!)</li>
 </ul>
-
 <p>We wish to install a version of SublimeREPL that support sbt; therefore,
 rather than using the main branch:</p>
-
 <p>Preferences &gt; Package Control &gt; Install Package &gt; Ensime &gt; Package Control: Add repository</p>
-
 <p>Add this path: <a href="https://github.com/laughedelic/SublimeREPL/archive/sbt.zip">https://github.com/laughedelic/SublimeREPL/archive/sbt.zip</a></p>
-
 <p>Preferences &gt; Package Control &gt; Install Package &gt; SublimeREPL</p>
-
 <ul>
 <li>Not working? Make sure that sbt or a link to sbt is found in /usr/local/bin/</li>
 <li>OPTIONAL: Install the companion  app: LoadFileToRepl</li>
 </ul>
-
 <p>Preferences &gt; Package Control &gt; Install Package &gt; LoadFiletoRepl</p>
-
 <p>**Building/Running  **</p>
-
 <ul>
 <li>Create new build profile</li>
 </ul>
@@ -319,14 +306,14 @@ rather than using the main branch:</p>
     <span class="nt">&#34;selector&#34;</span><span class="p">:</span> <span class="s2">&#34;source.scala&#34;</span><span class="p">,</span>
     <span class="nt">&#34;working_dir&#34;</span><span class="p">:</span> <span class="s2">&#34;${project_path:${folder}}&#34;</span><span class="p">,</span>
     <span class="nt">&#34;shell&#34;</span><span class="p">:</span> <span class="s2">&#34;true&#34;</span>
-<span class="p">}</span></code></pre></div>
-<ul>
+<span class="p">}</span>
+</code></pre></div><ul>
 <li>Use /F4/ and /Shift//F4/ to navigate through errors</li>
 </ul>
-
 <p>That&rsquo;s it for now. I&rsquo;ll be sure to add more info if I find wasy to provide
 even tighter integration.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -373,11 +360,35 @@ even tighter integration.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -394,7 +405,7 @@ even tighter integration.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

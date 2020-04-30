@@ -23,8 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/015d6b66-8f43-490b-8b6a-60fee00185f8.png" />
     
-    <meta name="twitter:description" content="I like things neatly organized. I absolutely hate the idea that I could buy a book I already own. So, it&rsquo;s not surprise that, as a Mac user, I trust Delicious Library to keep tracks of my books, DVS and video games.
-As an Android user, I also like that Shelves even exists. After all, it is mostly when I am walking the aisles of Barnes &amp; Noble that I am the most susceptible to wonder whether I already own a given book &ndash; although Amazon may eventually lure me away from that experience &ndash; and if that information is only available on my Mac happily waiting for my return back home, it&rsquo;s not very helpful to me." />
+    <meta name="twitter:description" content="I like things neatly organized. I absolutely hate the idea that I could buy a book I already own. So, it&rsquo;s not surprise that, as a Mac user, I trust Delicious Library to keep tracks of my books, DVS and video games.As an Android user, I also like that Shelves even exists. After all, it is mostly when I am walking the aisles of Barnes &amp; Noble that I am the most susceptible to wonder whether I already own a given book &ndash; although Amazon may eventually lure me away from that experience &ndash; and if that information is only available on my Mac happily waiting for my return back home, it&rsquo;s not very helpful to me. Therefore, Shelves is my saviour." />
     <meta name="twitter:url" content="http://zteo.com/posts/delicious4shelves/" />
     
 
@@ -34,7 +33,7 @@ As an Android user, I also like that Shelves even exists. After all, it is mostl
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +74,7 @@ As an Android user, I also like that Shelves even exists. After all, it is mostl
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/delicious4shelves/"
+          "@id": "http:\/\/zteo.com\/posts\/delicious4shelves\/"
         },
         "headline": "Delicious4Shelves",
         "description": "Delicious4Shelves",
@@ -92,9 +91,9 @@ As an Android user, I also like that Shelves even exists. After all, it is mostl
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -104,13 +103,13 @@ As an Android user, I also like that Shelves even exists. After all, it is mostl
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/015d6b66-8f43-490b-8b6a-60fee00185f8.png",
+          "url": "http:\/\/zteo.com\/015d6b66-8f43-490b-8b6a-60fee00185f8.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2012-01-02",
         "dateModified": "2012-01-02",
-        "wordCount": 277,
+        "wordCount":  277 ,
         
     }
     </script>
@@ -190,6 +189,16 @@ As an Android user, I also like that Shelves even exists. After all, it is mostl
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,11 +222,13 @@ As an Android user, I also like that Shelves even exists. After all, it is mostl
                 
                 
 
-                <p><img src="/images/delicious4shelvesicon.png" alt="" /><br />
+
+                
+                    <p><img src="/images/delicious4shelvesicon.png" alt=""><br>
 I like things neatly organized. I absolutely hate the idea that I could buy a
 book I already own. So, it&rsquo;s not surprise that, as a Mac user, I trust
 <a href="http://www.delicious-monster.com/">Delicious Library</a> to keep tracks of my
-books, DVS and video games.<br />
+books, DVS and video games.<br>
 As an Android user, I also like that
 <a href="http://www.shelvesforandroid.com/">Shelves</a> even exists. After all, it is
 mostly when I am walking the aisles of Barnes &amp; Noble that I am the most
@@ -225,27 +236,23 @@ susceptible to wonder whether I already own a given book &ndash; although Amazon
 may eventually lure me away from that experience &ndash; and if that information is
 only available on my Mac happily waiting for my return back home, it&rsquo;s not
 very helpful to me. Therefore, Shelves is my saviour.</p>
-
 <p>Unfortunately, keeping Shelves updated with Delicious Library&rsquo;s information is
 too involved a process: select export, check all the correct variables, select
 separators, rename the exported file, etc. This is not a good process for the
 procrastinator in me.</p>
-
 <p>So, I wrote a small application &ndash; a compiled Apple Script really &ndash; that
 queries Delicious Library&rsquo;s database and exports the relevant information to a
 file placed on my desktop. This file is already called
 &lsquo;Delicious_Library_Books.txt&rsquo; and I only need to copy it to my phone and re-
 import it every time I add new books to my collection.</p>
-
 <p>I could of course work on it some more to, for instance, handle other types of
 collections, but it fits my needs as is. If there is a request for a more
 complete script, I may modify it accordingly.</p>
-
 <p>In the meantime, if you think it could help you, you are welcome to download
 it!</p>
+<p>[download id=&quot;17&rdquo;]</p>
 
-<p>[download id=&ldquo;17&rdquo;]</p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -292,11 +299,35 @@ it!</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -313,7 +344,7 @@ it!</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

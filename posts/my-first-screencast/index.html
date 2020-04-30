@@ -21,10 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="My First Screencast" />
     
-    <meta name="twitter:description" content="Well, this was much more work than I had anticipated.
-And now, of course, I find that my voice sounds weird, the rhythm seems off, etc. The way I&rsquo;m supposed to feel about it, I guess.
-Here is the quite undecipherable version. For a better, bigger, readable one: http://www.nextbbs.com/do_topic_id_1166
-I will soon post on my newly acquired experience. If it saves you time just once -the first time you try creating your own screencast-, I will feel entitled to the warm feeling that comes from having helped somebody." />
+    <meta name="twitter:description" content="Well, this was much more work than I had anticipated.And now, of course, I find that my voice sounds weird, the rhythm seems off, etc. The way I&rsquo;m supposed to feel about it, I guess.Here is the quite undecipherable version. For a better, bigger, readable one: http://www.nextbbs.com/do_topic_id_1166" />
     <meta name="twitter:url" content="http://zteo.com/posts/my-first-screencast/" />
     
 
@@ -34,7 +31,7 @@ I will soon post on my newly acquired experience. If it saves you time just once
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +72,7 @@ I will soon post on my newly acquired experience. If it saves you time just once
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/my-first-screencast/"
+          "@id": "http:\/\/zteo.com\/posts\/my-first-screencast\/"
         },
         "headline": "My First Screencast",
         "description": "My First Screencast",
@@ -92,9 +89,9 @@ I will soon post on my newly acquired experience. If it saves you time just once
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -111,7 +108,7 @@ I will soon post on my newly acquired experience. If it saves you time just once
         },
         "datePublished": "2007-10-18",
         "dateModified": "2007-10-18",
-        "wordCount": 88,
+        "wordCount":  88 ,
         
     }
     </script>
@@ -191,6 +188,16 @@ I will soon post on my newly acquired experience. If it saves you time just once
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -214,22 +221,23 @@ I will soon post on my newly acquired experience. If it saves you time just once
                 
                 
 
-                <p>Well, this was much more work than I had anticipated.<br />
+
+                
+                    <p>Well, this was much more work than I had anticipated.<br>
 And now, of course, I find that my voice sounds weird, the rhythm seems off,
-etc. The way I&rsquo;m supposed to feel about it, I guess.<br />
+etc. The way I&rsquo;m supposed to feel about it, I guess.<br>
 Here is the quite undecipherable version. For a better, bigger, readable one:
 <a href="http://www.nextbbs.com/do_topic_id_1166">http://www.nextbbs.com/do_topic_id_1166</a></p>
-
 <p>I will soon post on my newly acquired experience. If it saves you time <em>just
 once</em> -the first time you try creating your own screencast-, I will feel
 entitled to the warm feeling that comes from having helped somebody.</p>
 
-
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/572O_GJNKbg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/572O_GJNKbg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
+                
               </section>
 
               <footer class="post-footer">
@@ -276,11 +284,35 @@ entitled to the warm feeling that comes from having helped somebody.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -297,7 +329,7 @@ entitled to the warm feeling that comes from having helped somebody.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

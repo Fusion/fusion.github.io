@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Condo" />
     
-    <meta name="twitter:description" content="[August 2018 update] Condo was my very modest contribution to envisioning a future where we would use containers instead of VMs and dedicate them to specific, isolated tasks.
-Less than a year after I created Condo, Docker was released and I shelved my amateurish attempt. Now, reading the text below, I have mixed feelings: a good attempt, but no quite ambitious enough.
-What is was Condo? Condo is a brand-new multi-environment hosting project that is currently in its early development stage." />
+    <meta name="twitter:description" content="Condo is brand-new multi-environment hosting project that is currently in its early development stage." />
     <meta name="twitter:url" content="http://zteo.com/projects/condo/" />
     
 
@@ -33,7 +31,7 @@ What is was Condo? Condo is a brand-new multi-environment hosting project that i
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +72,7 @@ What is was Condo? Condo is a brand-new multi-environment hosting project that i
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/projects/condo/"
+          "@id": "http:\/\/zteo.com\/projects\/condo\/"
         },
         "headline": "Condo",
         "description": "Condo",
@@ -91,9 +89,9 @@ What is was Condo? Condo is a brand-new multi-environment hosting project that i
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ What is was Condo? Condo is a brand-new multi-environment hosting project that i
         },
         "datePublished": "2012-11-21",
         "dateModified": "2012-11-21",
-        "wordCount": 203,
+        "wordCount":  203 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ What is was Condo? Condo is a brand-new multi-environment hosting project that i
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,40 +221,55 @@ What is was Condo? Condo is a brand-new multi-environment hosting project that i
                 
                 
 
+
                 
-
-<h2 id="august-2018-update">[August 2018 update]</h2>
-
+                    <main>
+                        <div class="content blog-content">
+                        <h2 id="august-2018-update">[August 2018 update]</h2>
 <p><em>Condo was my very modest contribution to envisioning a future where we would use containers instead of VMs and dedicate them to specific, isolated tasks.</em></p>
-
 <p><em>Less than a year after I created Condo, Docker was released and I shelved my amateurish attempt.</em>
 <em>Now, reading the text below, I have mixed feelings: a good attempt, but no quite ambitious enough.</em></p>
-
-<hr />
-
+<hr>
 <h2 id="what-is-was-condo">What <del>is</del> was Condo?</h2>
-
 <p>Condo is a brand-new multi-environment hosting project that is currently in its
 early development stage.</p>
-
 <h2 id="condo-in-action">Condo in action</h2>
-
 <p><strong>A few interesting facts about this video:</strong></p>
-
 <ul>
-<li><p>It runs in a virtual machine. Condo is compatible with VMs because Condo itself is not a VM; it is a jailed environment.</p></li>
-
-<li><p>First, the super user creates an account for &ldquo;Mr Johns.&rdquo; Mr Johns logs in, starts his own instance of lighttpd and MySQL and installs a couple applications.</p></li>
-
-<li><p>It gets more interesting around 4:36, when the super user creates &ldquo;Mr Smith.&rdquo; Mr Smith then starts his own instances, sets up security and installs his applications.</p></li>
-
-<li><p>Notice how, when using the command-line, each sees their own file systems and processes. Because these processes are very lightweight, you can create many more environment, even in a VM!</p></li>
+<li>
+<p>It runs in a virtual machine. Condo is compatible with VMs because Condo itself is not a VM; it is a jailed environment.</p>
+</li>
+<li>
+<p>First, the super user creates an account for &ldquo;Mr Johns.&rdquo; Mr Johns logs in, starts his own instance of lighttpd and MySQL and installs a couple applications.</p>
+</li>
+<li>
+<p>It gets more interesting around 4:36, when the super user creates &ldquo;Mr Smith.&rdquo; Mr Smith then starts his own instances, sets up security and installs his applications.</p>
+</li>
+<li>
+<p>Notice how, when using the command-line, each sees their own file systems and processes. Because these processes are very lightweight, you can create many more environment, even in a VM!</p>
+</li>
 </ul>
-
 <h2 id="why-condo-current-brain-dump">Why Condo? Current brain dump</h2>
+<p><img src="/images/braindump.jpg" alt=""></p>
 
-<p><img src="/images/braindump.jpg" alt="" /></p>
-
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#august-2018-update">[August 2018 update]</a></li>
+        <li><a href="#what-is-was-condo">What is was Condo?</a></li>
+        <li><a href="#condo-in-action">Condo in action</a></li>
+        <li><a href="#why-condo-current-brain-dump">Why Condo? Current brain dump</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -293,11 +316,35 @@ early development stage.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -314,7 +361,7 @@ early development stage.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

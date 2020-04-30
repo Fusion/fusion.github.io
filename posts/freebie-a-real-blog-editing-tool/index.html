@@ -23,8 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/54f07556-f6f2-458e-b613-6cfb10f80608.png" />
     
-    <meta name="twitter:description" content="Until now, this freebie has been known only to my Twitter followers, but considering the positive feedback it received, I am going to put it out there for everybody: a few months ago, being disappointed with the lack of true rich-text editing provided by typical blog editing tools, I started work on mine.
-It&rsquo;s still a very unambitious thing but at least it does what every blog owner wants: it allows you to work on your posts in a convenient and intuitive way." />
+    <meta name="twitter:description" content="Until now, this freebie has been known only to my Twitter followers, but considering the positive feedback it received, I am going to put it out there for everybody: a few months ago, being disappointed with the lack of true rich-text editing provided by typical blog editing tools, I started work on mine." />
     <meta name="twitter:url" content="http://zteo.com/posts/freebie-a-real-blog-editing-tool/" />
     
 
@@ -34,7 +33,7 @@ It&rsquo;s still a very unambitious thing but at least it does what every blog o
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +74,7 @@ It&rsquo;s still a very unambitious thing but at least it does what every blog o
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/freebie-a-real-blog-editing-tool/"
+          "@id": "http:\/\/zteo.com\/posts\/freebie-a-real-blog-editing-tool\/"
         },
         "headline": "Freebie: A real blog editing tool",
         "description": "Freebie: A real blog editing tool",
@@ -92,9 +91,9 @@ It&rsquo;s still a very unambitious thing but at least it does what every blog o
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -104,13 +103,13 @@ It&rsquo;s still a very unambitious thing but at least it does what every blog o
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/54f07556-f6f2-458e-b613-6cfb10f80608.png",
+          "url": "http:\/\/zteo.com\/54f07556-f6f2-458e-b613-6cfb10f80608.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2010-06-23",
         "dateModified": "2010-06-23",
-        "wordCount": 129,
+        "wordCount":  129 ,
         
     }
     </script>
@@ -190,6 +189,16 @@ It&rsquo;s still a very unambitious thing but at least it does what every blog o
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,22 +222,21 @@ It&rsquo;s still a very unambitious thing but at least it does what every blog o
                 
                 
 
-                <p><img src="/images/teste-300x201.png" alt="" />Until now, this freebie has
+
+                
+                    <p><img src="/images/teste-300x201.png" alt="">Until now, this freebie has
 been known only to my Twitter followers, but considering the positive feedback
 it received, I am going to put it out there for everybody: a few months ago,
 being disappointed with the lack of true rich-text editing provided by typical
 blog editing tools, I started work on mine.</p>
-
 <p>It&rsquo;s still a very unambitious thing but at least it does what every blog owner
 wants: it allows you to work on your posts in a convenient and intuitive way.</p>
-
 <p>The new guy is unimaginatively called &lsquo;Free Blog&rsquo; and believe me it&rsquo;s way
 better than the other potential names I came up with.</p>
-
 <p>And yes, I intend to add many features to it if you guys like it.</p>
-
 <p>More info on Free Blog: <a href="http://nexus.zteo.com/projects/freeblog/">Free Blog&rsquo;s Page</a>.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -275,11 +283,35 @@ better than the other potential names I came up with.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -296,7 +328,7 @@ better than the other potential names I came up with.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -21,12 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="PON or “PHP Object Notation” Is Already Here" />
     
-    <meta name="twitter:description" content="UPDATE
-MJ7&rsquo;s post, below, reminded me of the existence of this long forgotten post.
-As I had written in the comments, this tongue-in-cheek post was not meant to be taken seriously. Please, do not do this.
-JSON, or JavaScript Object Notation, is fairly popular.
-This is just my modest take on a &lsquo;PHP Object Notation&rsquo; implementation.
-Note that it is meant to follow how your mind works rather than being syntactically correct; therefore, associative arrays are used in a loose manner where you have to worry about associative syntax as little as possible." />
+    <meta name="twitter:description" content="UPDATE" />
     <meta name="twitter:url" content="http://zteo.com/posts/pon-or-php-object-notation-is-already-here/" />
     
 
@@ -36,7 +31,7 @@ Note that it is meant to follow how your mind works rather than being syntactica
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +72,7 @@ Note that it is meant to follow how your mind works rather than being syntactica
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/pon-or-php-object-notation-is-already-here/"
+          "@id": "http:\/\/zteo.com\/posts\/pon-or-php-object-notation-is-already-here\/"
         },
         "headline": "PON or “PHP Object Notation” Is Already Here",
         "description": "PON or “PHP Object Notation” Is Already Here",
@@ -94,9 +89,9 @@ Note that it is meant to follow how your mind works rather than being syntactica
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -113,7 +108,7 @@ Note that it is meant to follow how your mind works rather than being syntactica
         },
         "datePublished": "2008-02-09",
         "dateModified": "2008-02-09",
-        "wordCount": 508,
+        "wordCount":  508 ,
         
     }
     </script>
@@ -193,6 +188,16 @@ Note that it is meant to follow how your mind works rather than being syntactica
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -216,20 +221,19 @@ Note that it is meant to follow how your mind works rather than being syntactica
                 
                 
 
-                <p><strong>UPDATE</strong></p>
 
-<p><em>MJ7&rsquo;s post, below, reminded me of the existence of this long forgotten post.<br />
+                
+                    <p><strong>UPDATE</strong></p>
+<p><em>MJ7&rsquo;s post, below, reminded me of the existence of this long forgotten post.<br>
 As I had written in the comments, this tongue-in-cheek post was not meant to
 be taken seriously. <strong>Please, do not do this</strong>.</em></p>
-
-<p><img src="/images/json.jpg" alt="JSON" /> JSON, or JavaScript
-Object Notation, is fairly popular.<br />
-This is just my modest take on a &lsquo;PHP Object Notation&rsquo; implementation.<br />
+<p><img src="/images/json.jpg" alt="JSON"> JSON, or JavaScript
+Object Notation, is fairly popular.<br>
+This is just my modest take on a &lsquo;PHP Object Notation&rsquo; implementation.<br>
 Note that it is meant to follow how your <strong>mind</strong> works rather than being
 syntactically correct; therefore, associative arrays are used in a loose
-manner where you have to worry about associative syntax as little as possible.<br />
+manner where you have to worry about associative syntax as little as possible.<br>
 Basically, type away until your object is fully described.</p>
-
 <p>Here is a notation sample:</p>
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">array(  
         &#39;root level&#39; =&gt; array(  
@@ -237,8 +241,8 @@ Basically, type away until your object is fully described.</p>
                         &#39;sublevel 2&#39; =&gt; &#39;sublevel 3&#39;,  
                 ),  
         )  
-);  </code></pre></div>
-<p>This syntax can then be used the same way JSON is used, using <em><strong>eval</strong></em>. Here
+);  
+</code></pre></div><p>This syntax can then be used the same way JSON is used, using <em><strong>eval</strong></em>. Here
 is how and you will immediately notice how the eval() syntax has to differ
 from the JavaScript one:</p>
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">    $remote_str = <span class="err">&lt;</span><span class="p">&lt;</span> <span class="nt">array</span><span class="err">(</span>  
@@ -249,8 +253,8 @@ from the JavaScript one:</p>
 );  
 EOB;  
 // ...  
-eval(&#39;$local_str=&#39;.$remote_str.&#39;;&#39;);  </code></pre></div>
-<p>Feels a bit clumsy. Fortunately, starting with PHP4, if you are not too sad
+eval(&#39;$local_str=&#39;.$remote_str.&#39;;&#39;);  
+</code></pre></div><p>Feels a bit clumsy. Fortunately, starting with PHP4, if you are not too sad
 about introducing a statement in your remote string, you can rewrite it like
 this:</p>
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">$remote_str = <span class="err">&lt;</span><span class="p">&lt;</span> <span class="nt">array</span><span class="err">(</span>  
@@ -261,13 +265,11 @@ this:</p>
 );  
 EOB;  
 // ...  
-$local_str = eval($remote_str);  </code></pre></div>
-<p>Better, isn&rsquo;t it?</p>
-
+$local_str = eval($remote_str);  
+</code></pre></div><p>Better, isn&rsquo;t it?</p>
 <p>In this last listing, you will find the very simple code I wrote to
 <strong>traverse</strong> the object. Note that I invoke a <strong>callback</strong> for every element,
 otherwise this code would not be very helpful.</p>
-
 <p>Note that this is just a concept for something I needed to throw together
 quickly therefore there are some <strong>limitations</strong> ; for instance, you cannot
 have numeric keys since in this context their &ldquo;keyness&rdquo; is ignored and even
@@ -331,23 +333,24 @@ $INS = array(
 traverse_tree(do_something, $INS, 0, 1);
 
 print &#34;DONE\n\n&#34;;  
-?&gt;  </code></pre></div>
-<p>Invoke with:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">    php my_php_script.php <span class="s2">&#34;Vehicles&#34;</span>  </code></pre></div>
-<p>&ldquo;What is this $iid variable?&rdquo; you may ask.<br />
+?&gt;  
+</code></pre></div><p>Invoke with:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">    php my_php_script.php <span class="s2">&#34;Vehicles&#34;</span>  
+</code></pre></div><p>&ldquo;What is this $iid variable?&rdquo; you may ask.<br>
 You will notice that this piece of code is particularly convenient if you want
 to add a whole tree structure to your database. Say the you are using
 <strong>MySQL</strong> and want to create <strong>categories</strong> and sub-categories, using the
-column &lsquo;pid&rsquo; as a category&rsquo;s <strong>parent id</strong>. You would rewrite _do<em>something</em> :</p>
+column &lsquo;pid&rsquo; as a category&rsquo;s <strong>parent id</strong>. You would rewrite <em>do_something</em> :</p>
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">function do_something($name, $padding, $uid)  
 {  
         mysql_query(&#34;INSERT INTO my_cat_table(pid, title) VALUES({$uid}, &#39;{$name}&#39;)&#34;);  
         $iid = mysql_insert_id();  
         print $padding.$name.&#34; ($iid)n&#34;;  
         return $iid;  
-}  </code></pre></div>
-<p>Voila!</p>
+}  
+</code></pre></div><p>Voila!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -394,11 +397,35 @@ column &lsquo;pid&rsquo; as a category&rsquo;s <strong>parent id</strong>. You w
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -415,7 +442,7 @@ column &lsquo;pid&rsquo; as a category&rsquo;s <strong>parent id</strong>. You w
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

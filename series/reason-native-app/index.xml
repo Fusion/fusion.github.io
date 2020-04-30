@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reason Native App on The Nexus</title>
@@ -117,7 +117,6 @@
       
       <guid>http://zteo.com/posts/reason-native-app-part-3/</guid>
       <description>&lt;p&gt;This is by far the most boring piece of this whole endeavor.&lt;/p&gt;
-
 &lt;p&gt;Unfortunately, as we accumulate years of experience, old habits accrete on the programmer and tools such as &lt;code&gt;Make&lt;/code&gt; become an integral part of our fossilized identity. You will have to forgive me for my use of Makefiles!&lt;/p&gt;</description>
     </item>
     
@@ -128,7 +127,6 @@
       
       <guid>http://zteo.com/posts/reason-native-app-part-2/</guid>
       <description>&lt;h1 id=&#34;installing-reason&#34;&gt;Installing Reason&lt;/h1&gt;
-
 &lt;p&gt;First, we will need OCaml. This is because our Reason code will be compiled to OCaml, then, using the OCaml compiler, to native code.&lt;/p&gt;</description>
     </item>
     

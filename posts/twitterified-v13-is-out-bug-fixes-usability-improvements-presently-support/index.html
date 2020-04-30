@@ -21,12 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Twitterified v1.3 is out: bug fixes, usability improvements, Present.ly support" />
     
-    <meta name="twitter:description" content="Well, the title pretty much says it all: v1.3 is out and it&rsquo;s an evolutionary release.
- Bug fixes - lots of &lsquo;em
- Usability improvements, such as text overflow indicator
- Support for the awesome Present.ly Twitter-compatible protocol
-  Get it while it&rsquo;s hot!
-(If you are confused as to where to get it, all you need is to go to http://twitterified.com, log in and follow this link)" />
+    <meta name="twitter:description" content="Well, the title pretty much says it all: v1.3 is out and it&rsquo;s an evolutionary release.	Bug fixes - lots of &lsquo;em	Usability improvements, such as text overflow indicator	Support for the awesome Present.ly Twitter-compatible protocolGet it while it&rsquo;s hot!(If you are confused as to where to get it, all you need is to go to http://twitterified.com, log in and follow this link)" />
     <meta name="twitter:url" content="http://zteo.com/posts/twitterified-v13-is-out-bug-fixes-usability-improvements-presently-support/" />
     
 
@@ -36,7 +31,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +72,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/twitterified-v13-is-out-bug-fixes-usability-improvements-presently-support/"
+          "@id": "http:\/\/zteo.com\/posts\/twitterified-v13-is-out-bug-fixes-usability-improvements-presently-support\/"
         },
         "headline": "Twitterified v1.3 is out: bug fixes, usability improvements, Present.ly support",
         "description": "Twitterified v1.3 is out: bug fixes, usability improvements, Present.ly support",
@@ -94,9 +89,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -113,7 +108,7 @@
         },
         "datePublished": "2009-03-17",
         "dateModified": "2009-03-17",
-        "wordCount": 65,
+        "wordCount":  65 ,
         
     }
     </script>
@@ -193,6 +188,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -216,21 +221,26 @@
                 
                 
 
-                <p>Well, the title pretty much says it all: v1.3 is out and it&rsquo;s an evolutionary
+
+                
+                    <p>Well, the title pretty much says it all: v1.3 is out and it&rsquo;s an evolutionary
 release.</p>
-
 <ul>
-<li><p>Bug fixes - lots of &lsquo;em</p></li>
-
-<li><p>Usability improvements, such as text overflow indicator</p></li>
-
-<li><p>Support for the awesome <a href="http://www.presently.com">Present.ly</a> Twitter-compatible protocol</p></li>
+<li>
+<p>Bug fixes - lots of &lsquo;em</p>
+</li>
+<li>
+<p>Usability improvements, such as text overflow indicator</p>
+</li>
+<li>
+<p>Support for the awesome <a href="http://www.presently.com">Present.ly</a> Twitter-compatible protocol</p>
+</li>
 </ul>
-
-<p>Get it while it&rsquo;s hot!<br />
+<p>Get it while it&rsquo;s hot!<br>
 (If you are confused as to where to get it, all you need is to go to
 <a href="http://twitterified.com">http://twitterified.com</a>, log in and <a href="http://twitterified.com/user/get/">follow this link</a>)</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -277,11 +287,35 @@ release.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -298,7 +332,7 @@ release.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

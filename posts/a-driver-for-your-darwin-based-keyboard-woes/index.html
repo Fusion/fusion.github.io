@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="A driver for your Darwin-based keyboard woes" />
     
-    <meta name="twitter:description" content="I built this driver in 2007, to support Leopard Darwin on my wife&rsquo;s laptop (hmmm where&rsquo;s the &ldquo;wink wink nudge nudge&rdquo; smiley when you need it?)
-I am offering a full driver for download, but it&rsquo;s only so that you could use my keyboard fix if you do not currently have an ApplePS2Controller.kext that support plug-ins.
-The point of this driver really is to provide keyboard support for laptops that see their built-in keyboard as PS2 -- ie the vast majority." />
+    <meta name="twitter:description" content="I built this driver in 2007, to support Leopard Darwin on my wife&rsquo;s laptop (hmmm where&rsquo;s the &ldquo;wink wink nudge nudge&rdquo; smiley when you need it?)" />
     <meta name="twitter:url" content="http://zteo.com/posts/a-driver-for-your-darwin-based-keyboard-woes/" />
     
 
@@ -33,7 +31,7 @@ The point of this driver really is to provide keyboard support for laptops that 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +72,7 @@ The point of this driver really is to provide keyboard support for laptops that 
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/a-driver-for-your-darwin-based-keyboard-woes/"
+          "@id": "http:\/\/zteo.com\/posts\/a-driver-for-your-darwin-based-keyboard-woes\/"
         },
         "headline": "A driver for your Darwin-based keyboard woes",
         "description": "A driver for your Darwin-based keyboard woes",
@@ -91,9 +89,9 @@ The point of this driver really is to provide keyboard support for laptops that 
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ The point of this driver really is to provide keyboard support for laptops that 
         },
         "datePublished": "2008-12-01",
         "dateModified": "2008-12-01",
-        "wordCount": 188,
+        "wordCount":  188 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ The point of this driver really is to provide keyboard support for laptops that 
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,33 +221,29 @@ The point of this driver really is to provide keyboard support for laptops that 
                 
                 
 
-                <p>I built this driver in 2007, to support <del>Leopard</del> Darwin on my wife&rsquo;s laptop
-(hmmm where&rsquo;s the &ldquo;wink wink nudge nudge&rdquo; smiley when you need it?)</p>
 
+                
+                    <p>I built this driver in 2007, to support <del>Leopard</del> Darwin on my wife&rsquo;s laptop
+(hmmm where&rsquo;s the &ldquo;wink wink nudge nudge&rdquo; smiley when you need it?)</p>
 <p>I am offering a full driver for download, but it&rsquo;s only so that you could use
 <strong>my keyboard fix</strong> if you do not currently have an ApplePS2Controller.kext
 that support plug-ins.</p>
-
 <p>The point of this driver really is to provide keyboard support for laptops
 that see their <strong>built-in keyboard as PS2</strong> -- ie the vast majority.
 Therefore the piece that is really interesting to you is ApplePS2Keyboard.kext
 (in ApplePS2Controller.kext/Contents/PlugIns/)</p>
-
 <p>There are other drivers that do just that, out there, but unfortunately many
 of them <strong>fail to properly detect the keyboard</strong>.</p>
-
 <p>So, here goes. If you have a laptop running <del>Leopard</del> Darwin but your built-
 in keyboard is not working, give this driver a try.</p>
-
 <p>[download#1#image]</p>
-
 <p>ps: Come to think of it, you may find this <strong>kext</strong> useful if you are using a
 desktop with a recalcitrant PS2 keyboard as well.</p>
-
 <p>pps: Miracle! After a year of having misplaced the source code, I found it on
 a USB stick. It&rsquo;s now <a href="http://github.com/Fusion/applekeyboarddriver/tree/master">available at
 Github</a>.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -286,11 +290,35 @@ Github</a>.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -307,7 +335,7 @@ Github</a>.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

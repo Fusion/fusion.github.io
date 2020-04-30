@@ -21,9 +21,8 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Tools" />
     
-    <meta name="twitter:description" content="TinySU TinySU is a very small &ldquo;su&rdquo; binary, compiled to run on all ARM-based Android devices.
-It does not interact with SuperUser.apk and thus the user is not prompted to grant access to their device. You may thus think of it as less &ldquo;secure&rdquo; than the su binary that comes with SuperUser.apk.
-On the other hand, TinySU works in every possible situation where its more complex brethren may not; for instance when automatically rooting a device (e." />
+    <meta name="twitter:description" content="TinySU
+TinySU is a very small &ldquo;su&rdquo; binary, compiled to run on all ARM-based Android devices." />
     <meta name="twitter:url" content="http://zteo.com/projects/tools/" />
     
 
@@ -33,7 +32,7 @@ On the other hand, TinySU works in every possible situation where its more compl
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +73,7 @@ On the other hand, TinySU works in every possible situation where its more compl
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/projects/tools/"
+          "@id": "http:\/\/zteo.com\/projects\/tools\/"
         },
         "headline": "Tools",
         "description": "Tools",
@@ -91,9 +90,9 @@ On the other hand, TinySU works in every possible situation where its more compl
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +109,7 @@ On the other hand, TinySU works in every possible situation where its more compl
         },
         "datePublished": "2012-11-21",
         "dateModified": "2012-11-21",
-        "wordCount": 262,
+        "wordCount":  262 ,
         
     }
     </script>
@@ -190,6 +189,16 @@ On the other hand, TinySU works in every possible situation where its more compl
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,33 +222,26 @@ On the other hand, TinySU works in every possible situation where its more compl
                 
                 
 
+
                 
-
-<h2 id="tinysu">TinySU</h2>
-
+                    <main>
+                        <div class="content blog-content">
+                        <h2 id="tinysu">TinySU</h2>
 <p>TinySU is a very small &ldquo;su&rdquo; binary, compiled to run on all ARM-based Android
 devices.</p>
-
 <p>It does not interact with SuperUser.apk and thus the user is not prompted to
 grant access to their device. You may thus think of it as less &ldquo;secure&rdquo; than
 the su binary that comes with SuperUser.apk.</p>
-
 <p>On the other hand, TinySU works in every possible situation where its more
 complex brethren may not; for instance when automatically rooting a device
 (e.g. LV Optimus V)</p>
-
 <p>If you wish to use TinySU in your ROM or rooting application, just drop me a
 note :)</p>
-
-<p><a href="/refdirect/?obj=tinysu"><img src="/images/download.gif" alt="" /></a></p>
-
+<p><a href="/refdirect/?obj=tinysu"><img src="/images/download.gif" alt=""></a></p>
 <h2 id="lg-optimus-v-tools">LG Optimus V Tools</h2>
-
 <p>This is a suite of tools that will let you root your LG Optimus V device and,
 optionally, flash a new ROM such as CyanogenMod 7.</p>
-
 <p>The zip file contains:</p>
-
 <ul>
 <li>psneuter, which will temporarily root your device</li>
 <li>TinySU (&ldquo;su&rdquo;) to add permanent, albeit unmonitored, root</li>
@@ -247,26 +249,37 @@ optionally, flash a new ROM such as CyanogenMod 7.</p>
 <li>recovery.img, a working recovery image</li>
 <li>Debug-FormatSYSTEM.zip, a flashable script that will prepare your phone for a new ROM.</li>
 </ul>
-
 <p>For complete information on the rooting process, please read <a href="http://forum.xda-developers.com/showthread.php?t=1070018">this
 thread</a></p>
-
-<p><a href="/refdirect/?obj=lgoptimus"><img src="/images/download.gif" alt="" /></a></p>
-
+<p><a href="/refdirect/?obj=lgoptimus"><img src="/images/download.gif" alt=""></a></p>
 <h2 id="rescuetime-addtask">RescueTime AddTask</h2>
-
-<p>A small utility for OS X/Linux, based on Angus Helm&rsquo;s Linux updater.<br />
+<p>A small utility for OS X/Linux, based on Angus Helm&rsquo;s Linux updater.<br>
 Using the command line (hint! Use &ldquo;Visor Mode&rdquo;) you can add tasks manually to
 RescueTime, which is the one thing it doesn&rsquo;t typically let you do.</p>
-
-<p><strong>Usage (OS X):</strong><br />
-Expand the archive in ~/Applications<br />
-Copy ~/Applications/rescuetime/CP_TO_USR_BIN/addtask to /usr/bin<br />
-To add a task, type &ldquo;addtask&rdquo;<br />
+<p><strong>Usage (OS X):</strong><br>
+Expand the archive in ~/Applications<br>
+Copy ~/Applications/rescuetime/CP_TO_USR_BIN/addtask to /usr/bin<br>
+To add a task, type &ldquo;addtask&rdquo;<br>
 If you leave the &ldquo;Name&rdquo; field blank, a task named &ldquo;ManualEntry&rdquo; will be added.</p>
+<p><a href="/refdirect/?obj=rescuetime"><img src="/images/download.gif" alt=""></a></p>
 
-<p><a href="/refdirect/?obj=rescuetime"><img src="/images/download.gif" alt="" /></a></p>
-
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#tinysu">TinySU</a></li>
+        <li><a href="#lg-optimus-v-tools">LG Optimus V Tools</a></li>
+        <li><a href="#rescuetime-addtask">RescueTime AddTask</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -313,11 +326,35 @@ If you leave the &ldquo;Name&rdquo; field blank, a task named &ldquo;ManualEntry
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -334,7 +371,7 @@ If you leave the &ldquo;Name&rdquo; field blank, a task named &ldquo;ManualEntry
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

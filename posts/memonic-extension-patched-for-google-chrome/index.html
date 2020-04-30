@@ -23,10 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/2530a289-cbd7-4d62-b7c9-e2d5cd8a8c0b.jpg" />
     
-    <meta name="twitter:description" content="The symptom is pretty simple: you click the &lsquo;Memonic&rsquo; extension icon and nothing happens. This patch aims to fix this behavior.
-A bit more than three years ago, I published here a patched version of SuperGenPass that would work with Google Chrome. It&rsquo;s been, since then, downloaded more than 1 million times.
-Recently, I also published a patched version of Memonic&rsquo;s Android app, patched to work with Jelly Bean.
-Today, I bring you a patched version of the Memonic clipper that will work even if you have pesky SVG objects in the page you are trying to capture." />
+    <meta name="twitter:description" content="The symptom is pretty simple: you click the &lsquo;Memonic&rsquo; extension icon and nothing happens. This patch aims to fix this behavior." />
     <meta name="twitter:url" content="http://zteo.com/posts/memonic-extension-patched-for-google-chrome/" />
     
 
@@ -36,7 +33,7 @@ Today, I bring you a patched version of the Memonic clipper that will work even 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +74,7 @@ Today, I bring you a patched version of the Memonic clipper that will work even 
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/memonic-extension-patched-for-google-chrome/"
+          "@id": "http:\/\/zteo.com\/posts\/memonic-extension-patched-for-google-chrome\/"
         },
         "headline": "Memonic extension patched for Google Chrome",
         "description": "Memonic extension patched for Google Chrome",
@@ -94,9 +91,9 @@ Today, I bring you a patched version of the Memonic clipper that will work even 
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -106,13 +103,13 @@ Today, I bring you a patched version of the Memonic clipper that will work even 
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/2530a289-cbd7-4d62-b7c9-e2d5cd8a8c0b.jpg",
+          "url": "http:\/\/zteo.com\/2530a289-cbd7-4d62-b7c9-e2d5cd8a8c0b.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2013-04-28",
         "dateModified": "2013-04-28",
-        "wordCount": 109,
+        "wordCount":  109 ,
         
     }
     </script>
@@ -192,6 +189,16 @@ Today, I bring you a patched version of the Memonic clipper that will work even 
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,23 +222,22 @@ Today, I bring you a patched version of the Memonic clipper that will work even 
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/rattodisabina/2460905893/"><img src="/images/2460905893_0c3fc213c5-300x225.jpg" alt="" /></a><strong>The
+
+                
+                    <p><a href="http://www.flickr.com/photos/rattodisabina/2460905893/"><img src="/images/2460905893_0c3fc213c5-300x225.jpg" alt=""></a><strong>The
 symptom is pretty simple: you click the &lsquo;Memonic&rsquo; extension icon and nothing
 happens. This patch aims to fix this behavior.</strong></p>
-
 <p>A bit more than three years ago, I published here a patched version of
 SuperGenPass that would work with Google Chrome. It&rsquo;s been, since then,
 downloaded more than 1 million times.</p>
-
 <p>Recently, I also published a patched version of Memonic&rsquo;s Android app, patched
 to work with Jelly Bean.</p>
-
 <p>Today, I bring you a patched version of the Memonic clipper that will work
 even if you have pesky SVG objects in the page you are trying to capture.</p>
-
 <p>Just <strong><a href="http://www.voilaweb.com/tools/memonicchrome.html">go to this page</a></strong>
 and get the patched extension (self-signed)</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -278,11 +284,35 @@ and get the patched extension (self-signed)</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -299,7 +329,7 @@ and get the patched extension (self-signed)</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

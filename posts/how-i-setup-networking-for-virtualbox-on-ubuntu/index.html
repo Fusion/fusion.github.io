@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="How I setup networking for VirtualBox on Ubuntu" />
     
-    <meta name="twitter:description" content="Just a quick note: I use VirtualBox daily at work. It provides excellent emulation for my original XP install (the one that came pre-installed on my Dell box!) while my main OS is Ubuntu. Setting up networking is not as straightforward as with VMWare, so here is what I had to do:
-First, edit /etc/udev/rules.d/20-names.rules and make sure this line exists:
-KERNEL=&#34;tun&#34;, NAME=&#34;net/%k&#34;  Then create this script - you will run it whenever you wish to reconfigure your network:" />
+    <meta name="twitter:description" content="Just a quick note: I use VirtualBox daily at work. It provides excellent emulation for my original XP install (the one that came pre-installed on my Dell box!) while my main OS is Ubuntu. Setting up networking is not as straightforward as with VMWare, so here is what I had to do:" />
     <meta name="twitter:url" content="http://zteo.com/posts/how-i-setup-networking-for-virtualbox-on-ubuntu/" />
     
 
@@ -33,7 +31,7 @@ KERNEL=&#34;tun&#34;, NAME=&#34;net/%k&#34;  Then create this script - you will 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +72,7 @@ KERNEL=&#34;tun&#34;, NAME=&#34;net/%k&#34;  Then create this script - you will 
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/how-i-setup-networking-for-virtualbox-on-ubuntu/"
+          "@id": "http:\/\/zteo.com\/posts\/how-i-setup-networking-for-virtualbox-on-ubuntu\/"
         },
         "headline": "How I setup networking for VirtualBox on Ubuntu",
         "description": "How I setup networking for VirtualBox on Ubuntu",
@@ -91,9 +89,9 @@ KERNEL=&#34;tun&#34;, NAME=&#34;net/%k&#34;  Then create this script - you will 
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ KERNEL=&#34;tun&#34;, NAME=&#34;net/%k&#34;  Then create this script - you will 
         },
         "datePublished": "2008-08-22",
         "dateModified": "2008-08-22",
-        "wordCount": 327,
+        "wordCount":  327 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ KERNEL=&#34;tun&#34;, NAME=&#34;net/%k&#34;  Then create this script - you will 
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,14 +221,15 @@ KERNEL=&#34;tun&#34;, NAME=&#34;net/%k&#34;  Then create this script - you will 
                 
                 
 
-                <p>Just a quick note: I use VirtualBox daily at work. It provides excellent
+
+                
+                    <p>Just a quick note: I use VirtualBox daily at work. It provides excellent
 emulation for my original XP install (the one that came pre-installed on my
 Dell box!) while my main OS is Ubuntu. Setting up networking is not as
 straightforward as with VMWare, so here is what I had to do:</p>
-
 <p>First, edit <em>/etc/udev/rules.d/20-names.rules</em> and make sure this line exists:</p>
-<div class="highlight"><pre class="chroma"><code class="language-plaintext" data-lang="plaintext">KERNEL=&#34;tun&#34;, NAME=&#34;net/%k&#34;  </code></pre></div>
-<p>Then create this script - you will run it whenever you wish to reconfigure
+<div class="highlight"><pre class="chroma"><code class="language-plaintext" data-lang="plaintext">KERNEL=&#34;tun&#34;, NAME=&#34;net/%k&#34;  
+</code></pre></div><p>Then create this script - you will run it whenever you wish to reconfigure
 your network:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash  
 </span><span class="cp"></span><span class="nb">echo</span> <span class="s2">&#34;Erasing old configuration&#34;</span>  
@@ -239,14 +248,14 @@ sleep <span class="m">1</span>
 sudo brctl addbr br0  
 sleep <span class="m">1</span>  
 <span class="nb">echo</span> <span class="s2">&#34;Making physical interface promiscuous&#34;</span>  
-sudo ifconfig eth0 <span class="m">0</span>.0.0.0 promisc  
+sudo ifconfig eth0 0.0.0.0 promisc  
 sleep <span class="m">1</span>  
 <span class="nb">echo</span> <span class="s2">&#34;Binding bridge to physical interface&#34;</span>  
 sudo brctl addif br0 eth0  
 sleep <span class="m">1</span>  
 <span class="c1">#sudo ifconfig br0 10.255.203.34 netmask 255.255.255.0</span>  
 <span class="nb">echo</span> <span class="s2">&#34;Configuring IP address&#34;</span>  
-sudo ifconfig br0 <span class="m">198</span>.206.186.210 netmask <span class="m">255</span>.255.255.0  
+sudo ifconfig br0 198.206.186.210 netmask 255.255.255.0  
 <span class="c1"># sudo dhclient br0 # The new way!</span>  
 sleep <span class="m">1</span>  
 <span class="nb">echo</span> <span class="s2">&#34;Binding bridge to virtual interface&#34;</span>  
@@ -257,18 +266,19 @@ sudo ifconfig tap0 up
 sleep <span class="m">1</span>  
 <span class="c1">#sudo route add default gw 10.255.203.254</span>  
 <span class="nb">echo</span> <span class="s2">&#34;Adding default route&#34;</span>  
-sudo route add default gw <span class="m">198</span>.206.186.254  
-<span class="nb">echo</span> <span class="s2">&#34;All done!&#34;</span>  </code></pre></div>
-<p>What&rsquo;s that, then?<br />
+sudo route add default gw 198.206.186.254  
+<span class="nb">echo</span> <span class="s2">&#34;All done!&#34;</span>  
+</code></pre></div><p>What&rsquo;s that, then?<br>
 We start by getting rid of any existing configuration; then I change my
 virtual interface device&rsquo;s owner to my own user, since I am logged in as a
 non-root user. Obviously you need to replace &lsquo;chris&rsquo; with your own user name.
-From now on, <strong>tap0</strong> will be the virtual interface seen by VirtualBox.<br />
+From now on, <strong>tap0</strong> will be the virtual interface seen by VirtualBox.<br>
 I make sure that my real interface is in promiscuous mode, which then allows
-me to bind it with a bridge interface.<br />
+me to bind it with a bridge interface.<br>
 All that is left to do it configure my bridge interface so that it can take
 over communicating with the rest of the world!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -315,11 +325,35 @@ over communicating with the rest of the world!</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -336,7 +370,7 @@ over communicating with the rest of the world!</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

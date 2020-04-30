@@ -23,10 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/5cda63d5-ad20-49ea-b055-c93c8f2d1e0e.png" />
     
-    <meta name="twitter:description" content="As a fairly recent LG urbane owner, I felt sad that so many great faces have a dim mode that doesn&rsquo;t look near as good as their bright mode.
-So I put together this small racket app: https://github.com/fusion/Watch-It-/releases
-It does the stupidest thing: it attempts to make a face&rsquo;s bright settings also its dim settings.
-It will not work with protected faces and will likely also not work it a face makes heavy usage of scripting." />
+    <meta name="twitter:description" content="As a fairly recent LG urbane owner, I felt sad that so many great faces have a dim mode that doesn&#39;t look near as good as their bright mode.So I put together this small racket app: https://github.com/fusion/Watch-It-/releasesIt does the stupidest thing: it attempts to make a face&#39;s bright settings also its dim settings.It will not work with protected faces and will likely also not work it a face makes heavy usage of scripting.If you download it, let me know how it is working for you (or not!)﻿" />
     <meta name="twitter:url" content="http://zteo.com/posts/as-a-fairly-recent-lg-urbane-owner-i-felt-sad-that-so-many-great-faces-have-a-dim-mode-that-doesn-t/" />
     
 
@@ -36,7 +33,7 @@ It will not work with protected faces and will likely also not work it a face ma
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,10 +74,10 @@ It will not work with protected faces and will likely also not work it a face ma
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/as-a-fairly-recent-lg-urbane-owner-i-felt-sad-that-so-many-great-faces-have-a-dim-mode-that-doesn-t/"
+          "@id": "http:\/\/zteo.com\/posts\/as-a-fairly-recent-lg-urbane-owner-i-felt-sad-that-so-many-great-faces-have-a-dim-mode-that-doesn-t\/"
         },
-        "headline": "As a fairly recent LG urbane owner, I felt sad that so many great faces have a dim mode that doesn&#39;t...",
-        "description": "As a fairly recent LG urbane owner, I felt sad that so many great faces have a dim mode that doesn&#39;t...",
+        "headline": "As a fairly recent LG urbane owner, I felt sad that so many great faces have a dim mode that doesn\x27t...",
+        "description": "As a fairly recent LG urbane owner, I felt sad that so many great faces have a dim mode that doesn\x27t...",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -94,9 +91,9 @@ It will not work with protected faces and will likely also not work it a face ma
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -106,13 +103,13 @@ It will not work with protected faces and will likely also not work it a face ma
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/5cda63d5-ad20-49ea-b055-c93c8f2d1e0e.png",
+          "url": "http:\/\/zteo.com\/5cda63d5-ad20-49ea-b055-c93c8f2d1e0e.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2015-08-31",
         "dateModified": "2015-08-31",
-        "wordCount": 91,
+        "wordCount":  91 ,
         
     }
     </script>
@@ -192,6 +189,16 @@ It will not work with protected faces and will likely also not work it a face ma
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,18 +222,18 @@ It will not work with protected faces and will likely also not work it a face ma
                 
                 
 
-                <p>As a fairly recent LG urbane owner, I felt sad that so many great faces have a
+
+                
+                    <p>As a fairly recent LG urbane owner, I felt sad that so many great faces have a
 dim mode that doesn&rsquo;t look near as good as their bright mode.</p>
-
 <p>So I put together this small racket app: <a href="https://github.com/fusion/Watch-It-/releases">https://github.com/fusion/Watch-It-/releases</a></p>
-
 <p>It does the stupidest thing: it attempts to make a face&rsquo;s bright settings also
-its dim settings.<br />
+its dim settings.<br>
 It will not work with protected faces and will likely also not work it a face
 makes heavy usage of scripting.</p>
-
 <p>If you download it, let me know how it is working for you (or not!)﻿</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -273,11 +280,35 @@ makes heavy usage of scripting.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -294,7 +325,7 @@ makes heavy usage of scripting.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

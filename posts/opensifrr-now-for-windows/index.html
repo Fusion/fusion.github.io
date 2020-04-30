@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="OpensIFRr now for Windows" />
     
-    <meta name="twitter:description" content="A couple months ago, I made a post about my new toy: OpensIFRr , which lets you easily create awesome Flash files that you can use to render just about any font in your web pages.
-I was pleased with the feedback it got but of course a lot of readers asked about the Windows version.
-Well, it&rsquo;s here now! In the process I&rsquo;ve learned a thing or two about Nullsoft&rsquo;s Scripting Engine :)" />
+    <meta name="twitter:description" content="A couple months ago, I made a post about my new toy: OpensIFRr, which lets you easily create awesome Flash files that you can use to render just about any font in your web pages." />
     <meta name="twitter:url" content="http://zteo.com/posts/opensifrr-now-for-windows/" />
     
 
@@ -33,7 +31,7 @@ Well, it&rsquo;s here now! In the process I&rsquo;ve learned a thing or two abou
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +72,7 @@ Well, it&rsquo;s here now! In the process I&rsquo;ve learned a thing or two abou
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/opensifrr-now-for-windows/"
+          "@id": "http:\/\/zteo.com\/posts\/opensifrr-now-for-windows\/"
         },
         "headline": "OpensIFRr now for Windows",
         "description": "OpensIFRr now for Windows",
@@ -91,9 +89,9 @@ Well, it&rsquo;s here now! In the process I&rsquo;ve learned a thing or two abou
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ Well, it&rsquo;s here now! In the process I&rsquo;ve learned a thing or two abou
         },
         "datePublished": "2007-07-16",
         "dateModified": "2007-07-16",
-        "wordCount": 138,
+        "wordCount":  138 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ Well, it&rsquo;s here now! In the process I&rsquo;ve learned a thing or two abou
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,25 +221,25 @@ Well, it&rsquo;s here now! In the process I&rsquo;ve learned a thing or two abou
                 
                 
 
-                <p><img src="/images/logo_sifr2.gif" alt="sIFR v2" />A couple months
+
+                
+                    <p><img src="/images/logo_sifr2.gif" alt="sIFR v2">A couple months
 ago, <a href="2007/05/18/create-your-own-sifr-flash-files-2/">I made a post</a> about my
 new toy: <strong>OpensIFRr</strong> , which lets you easily create awesome Flash files that
 you can use to render just about any font in your web pages.</p>
-
 <p>I was pleased with the feedback it got but of course a lot of readers asked
-about the Windows version.<br />
+about the Windows version.<br>
 Well, it&rsquo;s here now! In the process I&rsquo;ve learned a thing or two about
 Nullsoft&rsquo;s Scripting Engine :)</p>
-
-<p>Hope you like it and, once again, a tip of the hat to Mike Davidson &amp; al.<br />
+<p>Hope you like it and, once again, a tip of the hat to Mike Davidson &amp; al.<br>
 <a href="https://sourceforge.net/project/showfiles.php?group_id=121332&amp;package_id=216010&amp;release_id=508006" title="OpensIFRr">Get it now, courtesy of
 SourceForge</a></p>
-
 <p>ps: It appears that the version of swfmill that is currently working under
 OpensIFRr&rsquo;s hood does not always like spaces; therefore if the program seems
 stuck converting a font file, try again with less characters - which is good
 practice anyway!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -278,11 +286,35 @@ practice anyway!</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -299,7 +331,7 @@ practice anyway!</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -21,8 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Bespin in Titanium: From The Jaws Of Victory..." />
     
-    <meta name="twitter:description" content="bespin is really an intriguing project. Since I&rsquo;ve grown frustrated with the inconsistencies between the various code editors that I have been using &ndash; I work on Leopard at home and Ubuntu at work &ndash; I thought that creating my own editor would be the answer to that. Nothing fancy, mind you. Just something consistent.
-My first impulse was to use Flex. And it almost worked! Using mx:html I was able to wrap a nice web page in an otherwise very ActionScript-y application." />
+    <meta name="twitter:description" content="bespin is really an intriguing project. Since I&rsquo;ve grown frustrated with the inconsistencies between the various code editors that I have been using &ndash; I work on Leopard at home and Ubuntu at work &ndash; I thought that creating my own editor would be the answer to that. Nothing fancy, mind you. Just something consistent." />
     <meta name="twitter:url" content="http://zteo.com/posts/bespin-in-titanium-from-the-jaws-of-victory/" />
     
 
@@ -32,7 +31,7 @@ My first impulse was to use Flex. And it almost worked! Using mx:html I was able
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -73,7 +72,7 @@ My first impulse was to use Flex. And it almost worked! Using mx:html I was able
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/bespin-in-titanium-from-the-jaws-of-victory/"
+          "@id": "http:\/\/zteo.com\/posts\/bespin-in-titanium-from-the-jaws-of-victory\/"
         },
         "headline": "Bespin in Titanium: From The Jaws Of Victory...",
         "description": "Bespin in Titanium: From The Jaws Of Victory...",
@@ -90,9 +89,9 @@ My first impulse was to use Flex. And it almost worked! Using mx:html I was able
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -109,7 +108,7 @@ My first impulse was to use Flex. And it almost worked! Using mx:html I was able
         },
         "datePublished": "2009-04-06",
         "dateModified": "2009-04-06",
-        "wordCount": 324,
+        "wordCount":  324 ,
         
     }
     </script>
@@ -189,6 +188,16 @@ My first impulse was to use Flex. And it almost worked! Using mx:html I was able
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -212,26 +221,23 @@ My first impulse was to use Flex. And it almost worked! Using mx:html I was able
                 
                 
 
-                <p><a href="https://bespin.mozilla.com/">bespin</a> is really an intriguing project. Since
+
+                
+                    <p><a href="https://bespin.mozilla.com/">bespin</a> is really an intriguing project. Since
 I&rsquo;ve grown frustrated with the inconsistencies between the various code
 editors that I have been using &ndash; I work on Leopard at home and Ubuntu at work
 &ndash; I thought that creating my own editor would be the answer to that. Nothing
 fancy, mind you. Just something consistent.</p>
-
 <p>My first impulse was to use Flex. And it almost worked! Using <code>mx:html</code> I was
-able to wrap a nice web page in an otherwise very ActionScript-y application.<br />
+able to wrap a nice web page in an otherwise very ActionScript-y application.<br>
 And then, catastrophe! Flex Webkit&rsquo;s canvas implementation is subpar and I
 could only get a very mamed version of bespin. Nothing usable, anyway.</p>
-
-<p>Thus, I turned to <a href="http://titaniumapp.com/">Titanium</a>.<br />
+<p>Thus, I turned to <a href="http://titaniumapp.com/">Titanium</a>.<br>
 After some light trial and error, I got it to work!</p>
-
 <p>Unfortunately, the result is less than awesome: Titanium&rsquo;s Webkit gets easily
 overwhelmed and, worse, crashes reliably ( :g: ) as soon as I ask it to do
 some medium lifting.</p>
-
 <p>This video shows the original victory followed by the vexing defeat:</p>
-
 <p>Note that, to get it to work, I replaced <em>embed.js</em> with my own version that
 works around any <code>dojo.request()/eval</code> issue:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>  
@@ -302,11 +308,11 @@ works around any <code>dojo.request()/eval</code> issue:</p>
         <span class="nx">loadScript</span><span class="p">(</span><span class="nx">loadme</span><span class="p">.</span><span class="nx">shift</span><span class="p">(),</span> <span class="nx">onScriptLoaded</span><span class="p">);</span>  
     <span class="p">});</span>  
 <span class="p">})();</span>  
-</code></pre></div>
-<p>As you can see, I override dojo.request() with my own, stack up all the
+</code></pre></div><p>As you can see, I override dojo.request() with my own, stack up all the
 component names, then load them one by one, waiting for each to be fully
 loaded before moving on.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -353,11 +359,35 @@ loaded before moving on.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -374,7 +404,7 @@ loaded before moving on.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

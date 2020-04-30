@@ -21,11 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Fixing permissions after a Wordpress prefix change" />
     
-    <meta name="twitter:description" content="Let&rsquo;s say that you renamed your Wordpress tables.
-There may be several reasons for this. For instance, you installed Virtual Multiblog to support more than one blog with the same setup.
-And now, you are facing the dreaded &ldquo;You do not have sufficient permissions to access this page&rdquo;
-What to do, what to do?
-Turns out, after some research, I found out that there is a proper procedure for us lazy webmasters:" />
+    <meta name="twitter:description" content="Let&rsquo;s say that you renamed your Wordpress tables.There may be several reasons for this. For instance, you installed Virtual Multiblog to support more than one blog with the same setup." />
     <meta name="twitter:url" content="http://zteo.com/posts/fixing-permissions-after-a-wordpress-prefix-change/" />
     
 
@@ -35,7 +31,7 @@ Turns out, after some research, I found out that there is a proper procedure for
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +72,7 @@ Turns out, after some research, I found out that there is a proper procedure for
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/fixing-permissions-after-a-wordpress-prefix-change/"
+          "@id": "http:\/\/zteo.com\/posts\/fixing-permissions-after-a-wordpress-prefix-change\/"
         },
         "headline": "Fixing permissions after a Wordpress prefix change",
         "description": "Fixing permissions after a Wordpress prefix change",
@@ -93,9 +89,9 @@ Turns out, after some research, I found out that there is a proper procedure for
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -112,7 +108,7 @@ Turns out, after some research, I found out that there is a proper procedure for
         },
         "datePublished": "2009-02-14",
         "dateModified": "2009-02-14",
-        "wordCount": 174,
+        "wordCount":  176 ,
         
     }
     </script>
@@ -192,6 +188,16 @@ Turns out, after some research, I found out that there is a proper procedure for
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -201,7 +207,7 @@ Turns out, after some research, I found out that there is a proper procedure for
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">14 Feb 2009</span> <span class="reading-time">| <span class="estimated-reading-time">1 min.</span> (<span class="word-count">174</span> words)</span></span>
+                        <span class="post-date">14 Feb 2009</span> <span class="reading-time">| <span class="estimated-reading-time">1 min.</span> (<span class="word-count">176</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -215,33 +221,31 @@ Turns out, after some research, I found out that there is a proper procedure for
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/63301294@N00/2268492152/" title="Do not enter"><img src="http://farm3.static.flickr.com/2208/2268492152_3ecb52ff81_t.jpg" alt="Do not
-enter" /></a>Let&rsquo;s say that you renamed your Wordpress tables.<br />
-There may be several reasons for this. For instance, you installed <a href="http://striderweb.com/nerdaphernalia/features/virtual-
-multiblog/?cp=21#comments">Virtual
-Multiblog</a> to support more than one blog with the same setup.</p>
 
+                
+                    <p><a href="http://www.flickr.com/photos/63301294@N00/2268492152/" title="Do not enter"><img src="http://farm3.static.flickr.com/2208/2268492152_3ecb52ff81_t.jpg" alt="Do notenter"></a>Let&rsquo;s say that you renamed your Wordpress tables.<br>
+There may be several reasons for this. For instance, you installed [Virtual
+Multiblog](<a href="http://striderweb.com/nerdaphernalia/features/virtual-">http://striderweb.com/nerdaphernalia/features/virtual-</a>
+multiblog/?cp=21#comments) to support more than one blog with the same setup.</p>
 <p>And now, you are facing the dreaded &ldquo;You do not have sufficient permissions to
-access this page&rdquo;<br />
+access this page&rdquo;<br>
 What to do, what to do?</p>
-
 <p>Turns out, after some research, I found out that there is a proper procedure
 for us lazy webmasters:</p>
-
-<p>1. Download the <a href="http://markjaquith.wordpress.com/2006/03/28/wordpress-error-you-do-
-not-have-sufficient-permissions-to-access-this-page/#comment-89003">force-
-upgrade</a> script and
+<p>1. Download the [force-
+upgrade](<a href="http://markjaquith.wordpress.com/2006/03/28/wordpress-error-you-do-">http://markjaquith.wordpress.com/2006/03/28/wordpress-error-you-do-</a>
+not-have-sufficient-permissions-to-access-this-page/#comment-89003) script and
 run it. It&rsquo;s a fairly old script but since it all it does is invoke Wordpress&rsquo;
 upgrade mechanism, it still works very well with 2.7. I know, it&rsquo;s not an
 upgrade! But you can also run the script to right some wrongs&hellip;</p>
-
 <p>2. Using your favourite SQL editor, edit the &ldquo;usermedata&rdquo; table. Let&rsquo;s say
-that your old table prefix was &lsquo;wp_&rsquo; and your new prefix is &lsquo;wp<em>new</em>&rsquo; you
+that your old table prefix was &lsquo;wp_&rsquo; and your new prefix is &lsquo;wp_new_&rsquo; you
 would type this simple SQL command to make sure that your first user is still
 admin:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">update</span> <span class="n">wp_new_usermeta</span> <span class="k">set</span> <span class="n">meta_value</span><span class="o">=</span><span class="s1">&#39;a:1:{s:13:&#34;administrator&#34;;b:1;}&#39;</span> <span class="k">where</span> <span class="n">meta_key</span><span class="o">=</span><span class="s1">&#39;wp_new_capabilities&#39;</span> <span class="k">and</span> <span class="n">user_id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>  </code></pre></div>
-<p>You&rsquo;re all set.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">update</span> <span class="n">wp_new_usermeta</span> <span class="k">set</span> <span class="n">meta_value</span><span class="o">=</span><span class="s1">&#39;a:1:{s:13:&#34;administrator&#34;;b:1;}&#39;</span> <span class="k">where</span> <span class="n">meta_key</span><span class="o">=</span><span class="s1">&#39;wp_new_capabilities&#39;</span> <span class="k">and</span> <span class="n">user_id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>  
+</code></pre></div><p>You&rsquo;re all set.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -288,11 +292,35 @@ admin:</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -309,7 +337,7 @@ admin:</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

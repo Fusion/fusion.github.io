@@ -21,16 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Beware: Google Adwords Phishing" />
     
-    <meta name="twitter:description" content="I received this email today:
- Your AdWords Google Account is stoped.
-Dear Google AdWords Customer,
-We were unable to process your payment.
-Your ads will be suspended soon unless we can process your payment.
-To prevent your ads from being suspended, please update your payment information.
-Please sign in
-to your account at http://adwords.google.com/select/login,
-and update your payment information.
- Of course I got suspicious right away, when I noticed the spelling of &lsquo;stopped&rsquo;." />
+    <meta name="twitter:description" content="I received this email today:" />
     <meta name="twitter:url" content="http://zteo.com/posts/beware-google-adwords-phishing/" />
     
 
@@ -40,7 +31,7 @@ and update your payment information.
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -81,7 +72,7 @@ and update your payment information.
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/beware-google-adwords-phishing/"
+          "@id": "http:\/\/zteo.com\/posts\/beware-google-adwords-phishing\/"
         },
         "headline": "Beware: Google Adwords Phishing",
         "description": "Beware: Google Adwords Phishing",
@@ -98,9 +89,9 @@ and update your payment information.
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -117,7 +108,7 @@ and update your payment information.
         },
         "datePublished": "2008-05-07",
         "dateModified": "2008-05-07",
-        "wordCount": 78,
+        "wordCount":  78 ,
         
     }
     </script>
@@ -197,6 +188,16 @@ and update your payment information.
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -220,25 +221,32 @@ and update your payment information.
                 
                 
 
-                <p>I received this email today:</p>
 
+                
+                    <p>I received this email today:</p>
 <blockquote>
-<p><strong>Your AdWords Google Account is stoped.</strong><br />
- Dear Google AdWords Customer,</p>
-
-<p>We were unable to process your payment.<br />
-Your ads will be suspended soon unless we can process your payment.<br />
+<p><strong>Your AdWords Google Account is stoped.</strong><br>
+Dear Google AdWords Customer,</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>We were unable to process your payment.<br>
+Your ads will be suspended soon unless we can process your payment.<br>
 To prevent your ads from being suspended, please update your payment
 information.</p>
-
-<p>Please sign in<br />
-to your account at <a href="http://adwords.google.com/select/login">http://adwords.google.com/select/login</a>,<br />
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>Please sign in<br>
+to your account at <a href="http://adwords.google.com/select/login,">http://adwords.google.com/select/login,</a><br>
 and update your payment information.</p>
 </blockquote>
-
 <p>Of course I got suspicious right away, when I noticed the spelling of
 &lsquo;stopped&rsquo;. But, hey, consider yourselves warned.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -285,11 +293,35 @@ and update your payment information.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -306,7 +338,7 @@ and update your payment information.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

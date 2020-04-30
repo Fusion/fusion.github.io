@@ -23,7 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/701a3f6c-5caf-4142-878b-f2e6dfdb5abc.jpg" />
     
-    <meta name="twitter:description" content="_ Update:_ Now a few days later, Thesis has been GPL&rsquo;d and there isn&rsquo;t much left to say on this topic. However, for the sake of clarity, I would like to revisit a statement I made below: if Thesis contained no original WordPress code, considering that it is distributed on its own, and not shipped with a copy of WordPress, I am not sure how a court would see this." />
+    <meta name="twitter:description" content="Update:Now a few days later, Thesis has been GPL&rsquo;d and there isn&rsquo;t much left to say on this topic. However, for the sake of clarity, I would like to revisit a statement I made below: if Thesis contained no original WordPress code, considering that it is distributed on its own, and not shipped with a copy of WordPress, I am not sure how a court would see this. It is the intent of the GPL license that anything &ldquo;linked&rdquo; against GPL code becomes de facto GPL (if the executable and GPL code &ldquo;make function calls to each other and share data structures&rdquo;) but I am not aware of a case where &ldquo;linking&rdquo; was the only, successfully argued point." />
     <meta name="twitter:url" content="http://zteo.com/posts/wordpress-thesis-gpl-the-facts-are-simple/" />
     
 
@@ -33,7 +33,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +74,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/wordpress-thesis-gpl-the-facts-are-simple/"
+          "@id": "http:\/\/zteo.com\/posts\/wordpress-thesis-gpl-the-facts-are-simple\/"
         },
         "headline": "WordPress, Thesis, GPL: The Facts Are Simple",
         "description": "WordPress, Thesis, GPL: The Facts Are Simple",
@@ -91,9 +91,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -103,13 +103,13 @@
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/701a3f6c-5caf-4142-878b-f2e6dfdb5abc.jpg",
+          "url": "http:\/\/zteo.com\/701a3f6c-5caf-4142-878b-f2e6dfdb5abc.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2010-07-18",
         "dateModified": "2010-07-18",
-        "wordCount": 903,
+        "wordCount":  908 ,
         
     }
     </script>
@@ -189,6 +189,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -198,7 +208,7 @@
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">18 Jul 2010</span> <span class="reading-time">| <span class="estimated-reading-time">5 min.</span> (<span class="word-count">903</span> words)</span></span>
+                        <span class="post-date">18 Jul 2010</span> <span class="reading-time">| <span class="estimated-reading-time">5 min.</span> (<span class="word-count">908</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -212,113 +222,99 @@
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/svensson/45394401/"><img src="/images/gpl300.jpg" alt="" /></a>
+
+                
+                    <p><a href="http://www.flickr.com/photos/svensson/45394401/"><img src="/images/gpl300.jpg" alt=""></a>
 _ <strong>Update:</strong>_ Now a few days later, Thesis has been GPL&rsquo;d and there isn&rsquo;t
 much left to say on this topic. However, for the sake of clarity, I would like
-to revisit a statement I made below: if Thesis contained <em>no</em> original
+to revisit a statement I made below: if Thesis contained *no* original
 WordPress code, considering that it is distributed on its own, and not shipped
 with a copy of WordPress, I am not sure how a court would see this. It is the
-intent of the GPL license that anything &ldquo;linked&rdquo; against GPL code becomes <em>de
-facto</em> GPL ( <em>if the executable and GPL code &ldquo;make function calls to each
-other and share data structures&rdquo;</em> ) but I am not aware of a case where
+intent of the GPL license that anything &ldquo;linked&rdquo; against GPL code becomes _de
+facto_ GPL ( _if the executable and GPL code &ldquo;make function calls to each
+other and share data structures&rdquo;_ ) but I am not aware of a case where
 &ldquo;linking&rdquo; was the only, successfully argued point.</p>
-
 <p><em>Disclaimer: I am a member of the Free Software Foundation and I work in a
 corporate environment so I&rsquo;d like to think that my views on open source are
 fairly balanced.</em></p>
-
 <p>The debate of whether Thesis should be licensed under the GPL (GNU Open-source
 license) has been ongoing for a while but lately it has gotten more traction
 following a fairly sad debate between Matt Mullenweg, founder of the WordPress
 software and web sites, and Chris Pearson, who co-authored and distributes the
 Thesis WordPress theme.</p>
-
-<p><a href="http://wordpress.tv/2010/07/15/mixergy-
-interview-pearson-mullenweg/">Watch the video (50 minutes!)</a></p>
-
+<p>[Watch the video (50 minutes!)](<a href="http://wordpress.tv/2010/07/15/mixergy-">http://wordpress.tv/2010/07/15/mixergy-</a>
+interview-pearson-mullenweg/)</p>
 <p>This is another of these &ldquo;debates&rdquo; fueled by the notion that there are always
 two sides to every issue. In many unfortunate cases, it turns out that the two
 sides are &ldquo;the facts&rdquo; versus &ldquo;stuff I just made up.&rdquo;</p>
-
 <p>Let&rsquo;s get out the way the phrase that seems to be causing all the confusion:
-it is claimed that Thesis works &ldquo; <strong>on top of</strong> &ldquo; WordPress. Well, that is
-just plain misleading.<br />
+it is claimed that Thesis works &quot; <strong>on top of</strong> &quot; WordPress. Well, that is
+just plain misleading.<br>
 Themes do not work &ldquo;on top of&rdquo; WordPress. They are not just dumb HTML tags;
 they are PHP source code that is <strong>linked</strong> against WordPress&rsquo;s framework.</p>
-
-<p><a href="http://markjaquith.wordpress.com/2010/07/17/why-wordpress-
-themes-are-derivative-of-wordpress/">Some bloggers</a> have talked about the fact Chris lifted
+<p>[Some bloggers](<a href="http://markjaquith.wordpress.com/2010/07/17/why-wordpress-">http://markjaquith.wordpress.com/2010/07/17/why-wordpress-</a>
+themes-are-derivative-of-wordpress/) have talked about the fact Chris lifted
 some code from WordPress&rsquo; original GPL&rsquo;d code. Well, you know what? It is a
 good point, yet  it does not even matter: even if that code was removed from
 Thesis, its author would still have a problem.</p>
-
 <p>WordPress is licensed under the GPL. The GPL stipulates that if you link
 against a piece of GPL&rsquo;d code, and run in the same process space, then you
 have to GPL your code as well. This is very clearly stated in the
 <a href="http://www.gnu.org/licenses/gpl-faq.html#GPLIncompatibleAlone">FAQ:</a></p>
-
 <blockquote>
 <p><strong>If license for a module Q has a requirement that&rsquo;s incompatible with the
 GPL, but the requirement applies only when Q is distributed by itself, not
 when Q is included in a larger program, does that make the license GPL-
-compatible? Can I combine or link Q with a GPL-covered program?</strong><br />
- If a program P is released under the GPL that means <em>any and every part of
+compatible? Can I combine or link Q with a GPL-covered program?</strong><br>
+If a program P is released under the GPL that means <em>any and every part of
 it</em> can be used under the GPL. If you integrate module Q, and release the
 combined program P+Q under the GPL, that means any part of P+Q can be used
 under the GPL. One part of P+Q is Q. So releasing P+Q under the GPL says that
 Q any part of it can be used under the GPL. Putting it in other words, a user
 who obtains P+Q under the GPL can delete P, so that just Q remains, still
-under the GPL.<br />
+under the GPL.<br>
 If the license of module Q permits you to give permission for that, then it
-is GPL-compatible. Otherwise, it is not GPL-compatible.<br />
+is GPL-compatible. Otherwise, it is not GPL-compatible.<br>
 If the license for Q says in no uncertain terms that you must do certain
 things (not compatible with the GPL) when you redistribute Q on its own, then
 it does not permit you to distribute Q under the GPL. It follows that you
 can&rsquo;t release P+Q under the GPL either. So you cannot link or combine P with
 Q.</p>
 </blockquote>
-
 <p>Chris is, maybe on purpose, showing a lack of understanding of the GPL
 license. He argues that if you develop another application and wish to link it
 to WordPress, then WordPress&rsquo;s license is, somewhat abusively, demanding that
 you GPL your whole application.</p>
-
 <p>That is not exactly true and the distinction matters.</p>
-
 <p><em>To be clear</em> : GPL is not WordPress; it is disingenuous to paint WordPress as
 a dictator who decides how you should license your code. All WordPress&rsquo;
 authors did was GPL WordPress&rsquo; code, in effect saying &ldquo;That&rsquo;s the license we
 are adopting; please follow this license as well if you link to our product.&rdquo;</p>
-
 <p>So, back to GPL: GPL does not necessarily require you to also GPL your code.
 You have the alternative of NOT linking against GPL&rsquo;d code. This is why the
 FSF maintains a list of licenses known to be incompatible with GPL.</p>
-
-<p><a href="http://www.gnu.org/licenses/license-
-list.html#GPLIncompatibleLicenses">GPL-Incompatible Licenses (gnu.org)</a></p>
-
+<p>[GPL-Incompatible Licenses (gnu.org)](<a href="http://www.gnu.org/licenses/license-">http://www.gnu.org/licenses/license-</a>
+list.html#GPLIncompatibleLicenses)</p>
 <p>In a nutshell, it is the oldest rule in a free market: <strong>if you do not like
-our product, do not use it</strong>.<br />
+our product, do not use it</strong>.<br>
 If you do not like WordPress&rsquo; license, then link your code against another
 CMS.</p>
-
 <p>It is also very childish to claim that GPL cannot be enforced. Actually,
 claiming that violating your partner&rsquo;ss license (WordPress&rsquo; GPL) is like
 &ldquo;getting away with a blowjob&rdquo; is definitely not an argument that would hold
 water in a court of justice.</p>
-
 <p><a href="http://www.groklaw.net/article.php?story=20050225223848129">Michigan Finds GPL To Be
-Enforceable</a><br />
-<a href="http://www.linuxfordevices.com/c/a/News/Cisco-settles-with-FSF-on-
-GPL-violations/">Cisco settles with FSF on GPL
-violations</a><br />
-<a href="http://arstechnica.com/open-source/news/2009/09/big-gpl-copyright-
-enforcement-win-in-paris-court-of-appeals.ars">Big GPL copyright enforcement win in Paris Court of
-Appeals</a></p>
-
+Enforceable</a><br>
+[Cisco settles with FSF on GPL
+violations](<a href="http://www.linuxfordevices.com/c/a/News/Cisco-settles-with-FSF-on-">http://www.linuxfordevices.com/c/a/News/Cisco-settles-with-FSF-on-</a>
+GPL-violations/)<br>
+[Big GPL copyright enforcement win in Paris Court of
+Appeals](<a href="http://arstechnica.com/open-source/news/2009/09/big-gpl-copyright-">http://arstechnica.com/open-source/news/2009/09/big-gpl-copyright-</a>
+enforcement-win-in-paris-court-of-appeals.ars)</p>
 <p>Also, Google is your friend. It is very difficult to claim ignorance when all
 the relevant information is so readily available.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -365,11 +361,35 @@ the relevant information is so readily available.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -386,7 +406,7 @@ the relevant information is so readily available.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

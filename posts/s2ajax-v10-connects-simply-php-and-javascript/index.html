@@ -23,10 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/33b3049c-7751-42bd-afec-f00aef8afed6.png" />
     
-    <meta name="twitter:description" content="Here comes S2ajax v1.0!
-And it was long overdue. Six months already since I posted S2ajax says &ldquo;hi()&rdquo; I can hardly believe it.
-What I think of as v1.0&rsquo;s main feature is that it is now possible to simply export classes in PHP and these classes can be instantiated in JavaScript. Whenever these instances are modified through asynchronous method calls, these modifications are transparently persisted server-side.
-The concept Is it a PHP class?" />
+    <meta name="twitter:description" content="Here comes S2ajax v1.0!And it was long overdue. Six months already since I posted S2ajax says &ldquo;hi()&rdquo; I can hardly believe it." />
     <meta name="twitter:url" content="http://zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/" />
     
 
@@ -36,7 +33,7 @@ The concept Is it a PHP class?" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +74,7 @@ The concept Is it a PHP class?" />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/"
+          "@id": "http:\/\/zteo.com\/posts\/s2ajax-v10-connects-simply-php-and-javascript\/"
         },
         "headline": "S2ajax v1.0 connects simply PHP and JavaScript",
         "description": "S2ajax v1.0 connects simply PHP and JavaScript",
@@ -94,9 +91,9 @@ The concept Is it a PHP class?" />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -106,13 +103,13 @@ The concept Is it a PHP class?" />
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/33b3049c-7751-42bd-afec-f00aef8afed6.png",
+          "url": "http:\/\/zteo.com\/33b3049c-7751-42bd-afec-f00aef8afed6.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2009-10-07",
         "dateModified": "2009-10-07",
-        "wordCount": 429,
+        "wordCount":  429 ,
         
     }
     </script>
@@ -192,6 +189,16 @@ The concept Is it a PHP class?" />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,60 +222,46 @@ The concept Is it a PHP class?" />
                 
                 
 
+
                 
-
-<p><img src="/images/S2ajax2.png" alt="S2ajax" />Here comes S2ajax v1.0!<br />
-And it was long overdue. Six months already since I posted <a href="/2009/03/02/php-classes-and-javascript-s2ajax-says-hi/"><em>S2ajax says &ldquo;hi()&rdquo;</em></a> I can hardly
+                    <main>
+                        <div class="content blog-content">
+                        <p><img src="/images/S2ajax2.png" alt="S2ajax">Here comes S2ajax v1.0!<br>
+And it was long overdue. Six months already since I posted <a href="/2009/03/02/php-classes-and-javascript-s2ajax-says-hi/"><em>S2ajax says &ldquo;hi()&quot;</em></a> I can hardly
 believe it.</p>
-
 <p>What I think of as v1.0&rsquo;s main feature is that it is now possible to simply
 <strong>export classes</strong> in PHP and these classes can be instantiated in JavaScript.
 Whenever these instances are modified through asynchronous method calls, these
 modifications are transparently <strong>persisted</strong> server-side.</p>
-
 <h1 id="the-concept">The concept</h1>
-
 <p>Is it a PHP class? Is it a JavaScript class? Why, it&rsquo;s both! The class is
 defined in PHP on the server. Instances of the class are created on demand
 using JavaScript on the client. Whatever modifications are made to an instance
-are serialized on the server.<br />
+are serialized on the server.<br>
 You can create a complex application using as many classes and instances as
 you need.</p>
-
-<p><img src="/images/100.png" alt="100" /></p>
-
+<p><img src="/images/100.png" alt="100"></p>
 <h1 id="under-the-hood">Under the hood</h1>
-
-<p>The PHP class is exported; the proxy JavaScript code is generated.<br />
+<p>The PHP class is exported; the proxy JavaScript code is generated.<br>
 Whenever the client needs to access one of the class&rsquo; properties/methods, the
 proxy <strong>transparently</strong> talks to the class; the class lives server-side.</p>
-
-<p><img src="/images/99.png" alt="99" /></p>
-
-<h1 id="the-client-s-point-of-view">The Client&rsquo;s point of view</h1>
-
+<p><img src="/images/99.png" alt="99"></p>
+<h1 id="the-clients-point-of-view">The Client&rsquo;s point of view</h1>
 <p>An arbitrary number of <strong>instances</strong> of the class can be created in
-JavaScript.<br />
+JavaScript.<br>
 The only hint that you are using a client-server architecture is the fact that
 when invoking a method, its return value is obtained through a callback. This
 mechanism allows your client interface to remain responsive while the server
 is preparing a response.</p>
-
-<p><img src="/images/101.png" alt="101" /></p>
-
-<h1 id="the-server-s-point-of-view">The server&rsquo;s point of view</h1>
-
+<p><img src="/images/101.png" alt="101"></p>
+<h1 id="the-servers-point-of-view">The server&rsquo;s point of view</h1>
 <p>S2ajax automatically persists your instances&rsquo; <strong>state</strong> and <strong>data</strong> between
 consecutive asynchronous calls. You still get the benefits of the &ldquo;shared
 nothing&rdquo; approach of PHP but complex objects can be manipulated through an
 unlimited number of clients requests.</p>
-
-<p><img src="/images/102.png" alt="102" /></p>
-
+<p><img src="/images/102.png" alt="102"></p>
 <h1 id="a-code-sample">A code sample</h1>
-
 <h4 id="server-side">Server-side</h4>
-
 <p>Let&rsquo;s create a class that will increment an instance variable every time a
 method is invoked. Let&rsquo;s keep it as simple as possible:</p>
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">class CounterTester  
@@ -283,33 +276,54 @@ method is invoked. Let&rsquo;s keep it as simple as possible:</p>
         $this-&gt;counter++;  
         return $this-&gt;counter;  
     }  
-}  </code></pre></div>
-<p>Clearly, every time <strong>increment_counter()</strong> is invoked, <em>$counter</em> will be
+}  
+</code></pre></div><p>Clearly, every time <strong>increment_counter()</strong> is invoked, <em>$counter</em> will be
 incremented and its new value returned.</p>
-
 <h4 id="client-side">Client-Side</h4>
-
 <p>First, an instance of our class is created. Then, when a user click on the
 button labeled &lsquo;Increment counter&rsquo;, the instance&rsquo;s <strong>increment_counter()</strong>
 method will be invoked and the new <em>$counter</em> value returned to our callback
 and displayed.</p>
-
 <p>Increment counter</p>
-
 <p>Note that we could create as many instances of our class as we wish and
 provided we display the matching buttons, we could independently increment
 multiple counters.</p>
-
 <h1 id="get-it-now">Get it now!</h1>
-
 <p>Click our valiant friend &ldquo;Octocat&rdquo;, artistically represented below, to go to
 S2ajax&rsquo;s Github page. If you just wish to use the library, look for the
 [Download] button:</p>
-
-<p><a href="http://github.com/Fusion/s2ajax"><img src="https://avatars2.githubusercontent.com/u/6265563?s=460&amp;v=4" alt="Git!" /></a></p>
-
+<p><a href="http://github.com/Fusion/s2ajax"><img src="https://avatars2.githubusercontent.com/u/6265563?s=460&amp;v=4" alt="Git!"></a></p>
 <p>Git!</p>
 
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-concept">The concept</a></li>
+    <li><a href="#under-the-hood">Under the hood</a></li>
+    <li><a href="#the-clients-point-of-view">The Client&rsquo;s point of view</a></li>
+    <li><a href="#the-servers-point-of-view">The server&rsquo;s point of view</a></li>
+    <li><a href="#a-code-sample">A code sample</a>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#server-side">Server-side</a></li>
+                <li><a href="#client-side">Client-Side</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#get-it-now">Get it now!</a></li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -356,11 +370,35 @@ S2ajax&rsquo;s Github page. If you just wish to use the library, look for the
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -377,7 +415,7 @@ S2ajax&rsquo;s Github page. If you just wish to use the library, look for the
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

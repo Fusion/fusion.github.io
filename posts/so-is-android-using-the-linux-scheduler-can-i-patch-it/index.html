@@ -23,8 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/da2f006a-b1c6-4f58-a10a-7ef6cefdbffa.jpg" />
     
-    <meta name="twitter:description" content="These last few days, the Linux world has paid quite a lot of attention to this kernel patch, written by Mike Galbraith.
-Its purpose is to make your desktop more responsive by grouping your tasks so that they have a better chance at getting their fair share of CPU time when some other task, notably a CPU hog, is running in the background. Lennart Poettering then offered his own solution, which requires no tweak of the kernel itself." />
+    <meta name="twitter:description" content="These last few days, the Linux world has paid quite a lot of attention to this kernel patch, written by Mike Galbraith.Its purpose is to make your desktop more responsive by grouping your tasks so that they have a better chance at getting their fair share of CPU time when some other task, notably a CPU hog, is running in the background. Lennart Poettering then offered his own solution, which requires no tweak of the kernel itself." />
     <meta name="twitter:url" content="http://zteo.com/posts/so-is-android-using-the-linux-scheduler-can-i-patch-it/" />
     
 
@@ -34,7 +33,7 @@ Its purpose is to make your desktop more responsive by grouping your tasks so th
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +74,7 @@ Its purpose is to make your desktop more responsive by grouping your tasks so th
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/so-is-android-using-the-linux-scheduler-can-i-patch-it/"
+          "@id": "http:\/\/zteo.com\/posts\/so-is-android-using-the-linux-scheduler-can-i-patch-it\/"
         },
         "headline": "So, is Android using the Linux scheduler? Can I patch it?",
         "description": "So, is Android using the Linux scheduler? Can I patch it?",
@@ -92,9 +91,9 @@ Its purpose is to make your desktop more responsive by grouping your tasks so th
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -104,13 +103,13 @@ Its purpose is to make your desktop more responsive by grouping your tasks so th
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/da2f006a-b1c6-4f58-a10a-7ef6cefdbffa.jpg",
+          "url": "http:\/\/zteo.com\/da2f006a-b1c6-4f58-a10a-7ef6cefdbffa.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2010-11-27",
         "dateModified": "2010-11-27",
-        "wordCount": 631,
+        "wordCount":  632 ,
         
     }
     </script>
@@ -190,6 +189,16 @@ Its purpose is to make your desktop more responsive by grouping your tasks so th
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -199,7 +208,7 @@ Its purpose is to make your desktop more responsive by grouping your tasks so th
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">27 Nov 2010</span> <span class="reading-time">| <span class="estimated-reading-time">3 min.</span> (<span class="word-count">631</span> words)</span></span>
+                        <span class="post-date">27 Nov 2010</span> <span class="reading-time">| <span class="estimated-reading-time">3 min.</span> (<span class="word-count">632</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -213,84 +222,102 @@ Its purpose is to make your desktop more responsive by grouping your tasks so th
                 
                 
 
-                
 
-<p><a href="http://www.flickr.com/photos/kwamekwame/4643079802/"><img src="/images/oldfaithful-300x199.jpg" alt="" /></a>These
-last few days, the Linux world has paid quite a lot of attention to <a href="http://lkml.org/lkml/2010/10/19/123">this kernel patch</a>, written by Mike Galbraith.<br />
+                
+                    <main>
+                        <div class="content blog-content">
+                        <p><a href="http://www.flickr.com/photos/kwamekwame/4643079802/"><img src="/images/oldfaithful-300x199.jpg" alt=""></a>These
+last few days, the Linux world has paid quite a lot of attention to <a href="http://lkml.org/lkml/2010/10/19/123">this kernel patch</a>, written by Mike Galbraith.<br>
 Its purpose is to make your desktop <strong>more responsive</strong> by grouping your tasks
 so that they have a better chance at getting their fair share of CPU time when
 some other task, notably a CPU hog, is running in the background. Lennart
-Poettering then offered <a href="http://www.webupd8.org/2010/11/alternative-to-200-lines-kernel-
-patch.html">his own solution</a>, which requires no tweak of the kernel itself.</p>
-
+Poettering then offered [his own solution](<a href="http://www.webupd8.org/2010/11/alternative-to-200-lines-kernel-">http://www.webupd8.org/2010/11/alternative-to-200-lines-kernel-</a>
+patch.html), which requires no tweak of the kernel itself.</p>
 <p>While Mike&rsquo;s approach adds the concept of tty grouping to
 <a href="http://www.kernel.org/doc/Documentation/cgroups/cgroups.txt">cgroup</a>,
 Lennart&rsquo;s one consists of grouping every task you launch under your own bash
 shell. The latter take actually offers better granularity.</p>
-
 <p>It appears that this tweak just works. Hurray, then.</p>
-
 <h3 id="so">So..?</h3>
-
 <p>On Reddit, the question was asked: <a href="http://www.reddit.com/r/linux_devices/comments/ebat7/does_any_one_know_if_this_linked_linux_speed/">Does any one know if this linked linux speed patch will work on an ( linux based) android phone?</a></p>
-
 <p>I&rsquo;ve seen several replies that were quite off the mark so I added my own (I
-like being wrong too!)<br />
+like being wrong too!)<br>
 Allow me to expand on it a little here:</p>
-
-<p><a href="http://www.flickr.com/photos/bayat/7491311/"><img src="/images/nerd.jpg" alt="" /></a><em>&ldquo;android
-has its own custom scheduler&rdquo;</em><br />
+<p><a href="http://www.flickr.com/photos/bayat/7491311/"><img src="/images/nerd.jpg" alt=""></a><em>&ldquo;android
+has its own custom scheduler&rdquo;</em><br>
 Actually, it appears that <strong>it does not</strong> :</p>
-
 <p>Out of curiosity, I did a line-by-line comparison of the scheduler code
 between three kernels: Linux stock 2.6.32.26, Android snapshot branch and HTC
-Incredible MR3 2.6.32.<br />
+Incredible MR3 2.6.32.<br>
 Well, they are all different. But the question is: how different? In this
 case, not different enough to be seen as &ldquo;different schedulers.&rdquo;</p>
-
 <p>Overall, the three branches use the fair scheduler. With these differences:</p>
-
 <ul>
-<li><p>Unsurprisingly, the Android code cares about task freezing.</p></li>
-
-<li><p>On the Android side, the real-time portion does not let you add a task to the head of the queue</p></li>
-
-<li><p>It seems more concerned with proper IRQ handling</p></li>
-
-<li><p>The Incredible code aligns its timing on the clock rather than raw CPU time, again &ndash; I suppose &ndash; out of care for overall sync., including IRQ timing (It also pushes the logic a bit further by making sure that it uses the high-res timer)</p></li>
-
-<li><p>All tasks&rsquo; iowait time is included in <strong>init</strong> &rsquo;s own iowait time. My guess is for statistics purpose; possibly including battery life.</p></li>
-
-<li><p>Tasks enqueuing is simplified to ignore the &ldquo;migrate&rdquo; flag. However, load balancing is implemented and CPUs can be found not eligible for process migration. If they are, the <strong>same algorithm</strong> is used as in the stock kernel.</p></li>
-
-<li><p>When attaching a task, Android does not immediately check for ownership. It does, however, make up for this by testing that the process has the <a href="http://www.kernel.org/pub/linux/libs/security/linux-privs/kernel-2.4/capfaq-0.2.txt">CAP_SYS_ADMIN Posix capability</a>.</p></li>
+<li>
+<p>Unsurprisingly, the Android code cares about task freezing.</p>
+</li>
+<li>
+<p>On the Android side, the real-time portion does not let you add a task to the head of the queue</p>
+</li>
+<li>
+<p>It seems more concerned with proper IRQ handling</p>
+</li>
+<li>
+<p>The Incredible code aligns its timing on the clock rather than raw CPU time, again &ndash; I suppose &ndash; out of care for overall sync., including IRQ timing (It also pushes the logic a bit further by making sure that it uses the high-res timer)</p>
+</li>
+<li>
+<p>All tasks&rsquo; iowait time is included in <strong>init</strong> &lsquo;s own iowait time. My guess is for statistics purpose; possibly including battery life.</p>
+</li>
+<li>
+<p>Tasks enqueuing is simplified to ignore the &ldquo;migrate&rdquo; flag. However, load balancing is implemented and CPUs can be found not eligible for process migration. If they are, the <strong>same algorithm</strong> is used as in the stock kernel.</p>
+</li>
+<li>
+<p>When attaching a task, Android does not immediately check for ownership. It does, however, make up for this by testing that the process has the <a href="http://www.kernel.org/pub/linux/libs/security/linux-privs/kernel-2.4/capfaq-0.2.txt">CAP_SYS_ADMIN Posix capability</a>.</p>
+</li>
 </ul>
-
 <h3 id="oh-how-exciting">Oh, how exciting.</h3>
-
 <p>So, what does this mean for Android? Can we just tweak a phone as we would a
-desktop machine?<br />
-Unfortunately, <strong>the answer is no</strong>.<br />
+desktop machine?<br>
+Unfortunately, <strong>the answer is no</strong>.<br>
 Even though cgroups are alive and well in our phones, you do not log in on
 different ttys (<a href="http://www.reddit.com/r/linux_devices/comments/ebat7/does_any_one_know_if_this_linked_linux_speed/c16u6mz">best concise-yet-accurate comment winner</a>),
 which means that the kernel patch would not really help. And we do not have a
-bash shell that we could rely on to apply Lennart&rsquo;s tweak.<br />
+bash shell that we could rely on to apply Lennart&rsquo;s tweak.<br>
 OK, allow me to add a <strong>caveat</strong> : we may be able to group the applications
 you get from the market on one side and the phone&rsquo;s system applications on the
-other. This would be a different tweak but in the same spirit.<br />
+other. This would be a different tweak but in the same spirit.<br>
 This would not do anything to prevent market application &ldquo;A&rdquo; from starving
-market application &ldquo;B&rdquo;, though.<br />
+market application &ldquo;B&rdquo;, though.<br>
 As far as I can tell, Android does not see strong enough a difference between
 activities and services for it to be useful either.</p>
-
 <h3 id="need-more-cowbells">Need more cowbells!</h3>
-
 <p>Note, too, that while Android&rsquo;s code is ready to handle load balancing, <strong>this
-would not helps us much</strong>. Let&rsquo;s have a look a the three current top sellers:<br />
-[table id=1]<br />
+would not helps us much</strong>. Let&rsquo;s have a look a the three current top sellers:<br>
+[table id=1]<br>
 Ouch. Not much to balance against. This should change when the next generation
 of SnapDragon is released as it should have multiple cores.</p>
 
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#so">So..?</a></li>
+            <li><a href="#oh-how-exciting">Oh, how exciting.</a></li>
+            <li><a href="#need-more-cowbells">Need more cowbells!</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -337,11 +364,35 @@ of SnapDragon is released as it should have multiple cores.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -358,7 +409,7 @@ of SnapDragon is released as it should have multiple cores.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -23,10 +23,10 @@
     
     <meta name="twitter:description" content="(TODO: Update this page as it is quite out of date!)
 The goal of this blog is to keep you appraised of various project Chris FR and his team have been working on and plan to work on.These projects include:
- the new free blog host zteo.com,
- the open-source community software nextbbs.com,
- various web sites in our network, such as staffexpo.com and militate.com,
- external collaborations such as kittenauth (status: dead?" />
+  the new free blog host zteo.com,
+  the open-source community software nextbbs.com,
+  various web sites in our network, such as staffexpo.com and militate.com,
+  external collaborations such as kittenauth (status: dead?" />
     <meta name="twitter:url" content="http://zteo.com/meta/about/" />
     
 
@@ -36,7 +36,7 @@ The goal of this blog is to keep you appraised of various project Chris FR and h
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +77,7 @@ The goal of this blog is to keep you appraised of various project Chris FR and h
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/meta/about/"
+          "@id": "http:\/\/zteo.com\/meta\/about\/"
         },
         "headline": "About",
         "description": "About",
@@ -94,9 +94,9 @@ The goal of this blog is to keep you appraised of various project Chris FR and h
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -113,7 +113,7 @@ The goal of this blog is to keep you appraised of various project Chris FR and h
         },
         "datePublished": "2012-11-21",
         "dateModified": "2012-11-21",
-        "wordCount": 127,
+        "wordCount":  127 ,
         
     }
     </script>
@@ -193,6 +193,16 @@ The goal of this blog is to keep you appraised of various project Chris FR and h
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -216,29 +226,35 @@ The goal of this blog is to keep you appraised of various project Chris FR and h
                 
                 
 
-                <p>(TODO: Update this page as it is quite out of date!)<br />
+
+                
+                    <p>(TODO: Update this page as it is quite out of date!)<br>
 The goal of this blog is to keep you appraised of various project Chris FR and
 his team have been working on and plan to work on.These projects include:</p>
-
 <ul>
-<li><p>the new free blog host <a href="http://www.zteo.com">zteo.com</a>,</p></li>
-
-<li><p>the open-source community software <a href="http://www.nextbbs.com">nextbbs.com</a>,</p></li>
-
-<li><p>various web sites in our network, such as <a href="http://www.zteo.com">staffexpo.com</a> and <a href="http://www.militate.com">militate.com</a>,</p></li>
-
-<li><p>external collaborations such as <a href="http://www.kittenauth.com">kittenauth</a> (status: dead?), <a href="http://www.cg-arts.org">cg-arts</a> or <a href="http://www.zoints.com">zoints</a></p></li>
-
-<li><p>and more projects, to be addressed as the need to discuss them arises</p></li>
+<li>
+<p>the new free blog host <a href="http://www.zteo.com">zteo.com</a>,</p>
+</li>
+<li>
+<p>the open-source community software <a href="http://www.nextbbs.com">nextbbs.com</a>,</p>
+</li>
+<li>
+<p>various web sites in our network, such as <a href="http://www.zteo.com">staffexpo.com</a> and <a href="http://www.militate.com">militate.com</a>,</p>
+</li>
+<li>
+<p>external collaborations such as <a href="http://www.kittenauth.com">kittenauth</a> (status: dead?), <a href="http://www.cg-arts.org">cg-arts</a> or <a href="http://www.zoints.com">zoints</a></p>
+</li>
+<li>
+<p>and more projects, to be addressed as the need to discuss them arises</p>
+</li>
 </ul>
-
-<hr />
-
+<hr>
 <p>Please note: most of these projects would be defunct, save for the help of a
 fanatical team of volunteers who deserve as much credit for these projects as
 Chris does. Expect to see postings from some of these great people around
 here.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -276,11 +292,35 @@ here.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -297,7 +337,7 @@ here.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

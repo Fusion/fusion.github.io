@@ -23,10 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/62635866-b705-4104-a78c-ab7d2bf16589" />
     
-    <meta name="twitter:description" content="sBase for Android now updated with some ubase goodness as well.
-Use it in your software, use it directly or use it from RootTools: less sucky and MIT licensed!
-This set of commands does not suffer from Busybox&rsquo;s limited functionality as the concept is different: it&rsquo;s one binary per command rather than having to load the kitchen sink every time.
-ls, nice, du, wc, watch, kill, pidof, grep, dmesg, etc." />
+    <meta name="twitter:description" content="sBase for Android now updated with some ubase goodness as well." />
     <meta name="twitter:url" content="http://zteo.com/posts/sbase-for-android-now-updated-with-some-ubase-goodness-as-well/" />
     
 
@@ -36,7 +33,7 @@ ls, nice, du, wc, watch, kill, pidof, grep, dmesg, etc." />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +74,7 @@ ls, nice, du, wc, watch, kill, pidof, grep, dmesg, etc." />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/sbase-for-android-now-updated-with-some-ubase-goodness-as-well/"
+          "@id": "http:\/\/zteo.com\/posts\/sbase-for-android-now-updated-with-some-ubase-goodness-as-well\/"
         },
         "headline": "sBase for Android now updated with some uBase goodness as well.",
         "description": "sBase for Android now updated with some uBase goodness as well.",
@@ -94,9 +91,9 @@ ls, nice, du, wc, watch, kill, pidof, grep, dmesg, etc." />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -106,13 +103,13 @@ ls, nice, du, wc, watch, kill, pidof, grep, dmesg, etc." />
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/62635866-b705-4104-a78c-ab7d2bf16589",
+          "url": "http:\/\/zteo.com\/62635866-b705-4104-a78c-ab7d2bf16589",
           "height": 133,
           "width": 200
         },
         "datePublished": "2015-05-03",
         "dateModified": "2015-05-03",
-        "wordCount": 70,
+        "wordCount":  70 ,
         
     }
     </script>
@@ -192,6 +189,16 @@ ls, nice, du, wc, watch, kill, pidof, grep, dmesg, etc." />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,19 +222,18 @@ ls, nice, du, wc, watch, kill, pidof, grep, dmesg, etc." />
                 
                 
 
-                <p>sBase for Android now updated with some ubase goodness as well.</p>
 
+                
+                    <p>sBase for Android now updated with some ubase goodness as well.</p>
 <p>Use it in your software, use it directly or use it from RootTools: less sucky
 <strong>and</strong> MIT licensed!</p>
-
 <p>This set of commands does not suffer from Busybox&rsquo;s limited functionality as
 the concept is different: it&rsquo;s one binary per command rather than having to
 load the kitchen sink every time.</p>
-
 <p>ls, nice, du, wc, watch, kill, pidof, grep, dmesg, etc.</p>
+<p><a href="https://github.com/Fusion/sbase-for-android"><img src="https://lh6.googleusercontent.com/proxy/bF5vqTFqS7nNhYcyaykZV1bSHufGNYs0Qkqm955mgFlYLZ-BbPFN6gYM9w7z0d6IPQOiFYQwflVPS99jre1DY1gs2C4x9BnQD9hIdk3kGTHM0wI=w506-h303-p" alt=""></a></p>
 
-<p><a href="https://github.com/Fusion/sbase-for-android"><img src="https://lh6.googleusercontent.com/proxy/bF5vqTFqS7nNhYcyaykZV1bSHufGNYs0Qkqm955mgFlYLZ-BbPFN6gYM9w7z0d6IPQOiFYQwflVPS99jre1DY1gs2C4x9BnQD9hIdk3kGTHM0wI=w506-h303-p" alt="" /></a></p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -274,11 +280,35 @@ load the kitchen sink every time.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -295,7 +325,7 @@ load the kitchen sink every time.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

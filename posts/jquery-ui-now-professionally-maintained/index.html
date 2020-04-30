@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="jQuery UI now professionally maintained!" />
     
-    <meta name="twitter:description" content="Well, this is exciting:
-Paul Bakaus, lead jQuery UI developer, announced today that he was hired by Liferay, Inc., of L.A., to work full time on his baby.
-As an early adopter, I am very happy to see the project evolve this way. In case you are not familiar with Liferay, they develop open-source products, so all is well :)" />
+    <meta name="twitter:description" content="Well, this is exciting:Paul Bakaus, lead jQuery UI developer, announced today that he was hired by Liferay, Inc., of L.A., to work full time on his baby." />
     <meta name="twitter:url" content="http://zteo.com/posts/jquery-ui-now-professionally-maintained/" />
     
 
@@ -33,7 +31,7 @@ As an early adopter, I am very happy to see the project evolve this way. In case
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +72,7 @@ As an early adopter, I am very happy to see the project evolve this way. In case
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/jquery-ui-now-professionally-maintained/"
+          "@id": "http:\/\/zteo.com\/posts\/jquery-ui-now-professionally-maintained\/"
         },
         "headline": "jQuery UI now professionally maintained!",
         "description": "jQuery UI now professionally maintained!",
@@ -91,9 +89,9 @@ As an early adopter, I am very happy to see the project evolve this way. In case
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ As an early adopter, I am very happy to see the project evolve this way. In case
         },
         "datePublished": "2008-01-24",
         "dateModified": "2008-01-24",
-        "wordCount": 60,
+        "wordCount":  61 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ As an early adopter, I am very happy to see the project evolve this way. In case
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -199,7 +207,7 @@ As an early adopter, I am very happy to see the project evolve this way. In case
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">24 Jan 2008</span> <span class="reading-time">| <span class="estimated-reading-time">1 min.</span> (<span class="word-count">60</span> words)</span></span>
+                        <span class="post-date">24 Jan 2008</span> <span class="reading-time">| <span class="estimated-reading-time">1 min.</span> (<span class="word-count">61</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -213,17 +221,18 @@ As an early adopter, I am very happy to see the project evolve this way. In case
                 
                 
 
-                <p>Well, this is exciting:</p>
 
-<p>Paul Bakaus, lead jQuery UI developer, <a href="http://jquery.com/blog/2008/01/23/jquery-ui-and-beyond-the-jquery-
-liferay-partnership/">announced today that he was
-hired</a> by Liferay, Inc., of L.A., to work full time on his
+                
+                    <p>Well, this is exciting:</p>
+<p>Paul Bakaus, lead jQuery UI developer, [announced today that he was
+hired](<a href="http://jquery.com/blog/2008/01/23/jquery-ui-and-beyond-the-jquery-">http://jquery.com/blog/2008/01/23/jquery-ui-and-beyond-the-jquery-</a>
+liferay-partnership/) by Liferay, Inc., of L.A., to work full time on his
 baby.</p>
-
 <p>As an early adopter, I am very happy to see the project evolve this way. In
 case you are not familiar with Liferay, they develop open-source products, so
 all is well :)</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -270,11 +279,35 @@ all is well :)</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -291,7 +324,7 @@ all is well :)</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

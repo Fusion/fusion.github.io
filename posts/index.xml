@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on The Nexus</title>
@@ -6,23 +6,20 @@
     <description>Recent content in Posts on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Feb 2019 14:06:09 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 10:54:24 +0200</lastBuildDate>
     
 	<atom:link href="http://zteo.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Fixing Vmware Fusion Broken Vmmon</title>
-      <link>http://zteo.com/posts/fixing-vmware-fusion-broken-vmmon/</link>
-      <pubDate>Sat, 23 Feb 2019 14:06:09 -0800</pubDate>
+      <title>Istio, Cert-Manager and Let&#39;s Encrypt April &#39;20</title>
+      <link>http://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</link>
+      <pubDate>Wed, 29 Apr 2020 10:54:24 +0200</pubDate>
       
-      <guid>http://zteo.com/posts/fixing-vmware-fusion-broken-vmmon/</guid>
-      <description>Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded
- /dev/vmmon: broken pipe
- or
- /dev/vmmon: No such file or directory
- Here are three different fixes, because this is definitely nor a &amp;ldquo;one size fits all&amp;rdquo; scenario:
-1-If Fusion complains about not being authorized Go to the Security andd Privacy control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted.</description>
+      <guid>http://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</guid>
+      <description>What is this? It is very easy to find blog posts and articles explaining how to make some of these components work together. They are also completely outdated.
+It is not their fault: Kubernetes moves fast, Istio&amp;rsquo;s development seems to move even faster, and cert-manager breaks backward compatibility. Chances are, by the time you read it it will be too late!
+Anyway, in a futile attempt to remain somewhat ahead of the curve, this article was written for Istio-1.</description>
     </item>
     
     <item>
@@ -140,7 +137,6 @@
       
       <guid>http://zteo.com/posts/reason-native-app-part-3/</guid>
       <description>&lt;p&gt;This is by far the most boring piece of this whole endeavor.&lt;/p&gt;
-
 &lt;p&gt;Unfortunately, as we accumulate years of experience, old habits accrete on the programmer and tools such as &lt;code&gt;Make&lt;/code&gt; become an integral part of our fossilized identity. You will have to forgive me for my use of Makefiles!&lt;/p&gt;</description>
     </item>
     
@@ -151,7 +147,6 @@
       
       <guid>http://zteo.com/posts/reason-native-app-part-2/</guid>
       <description>&lt;h1 id=&#34;installing-reason&#34;&gt;Installing Reason&lt;/h1&gt;
-
 &lt;p&gt;First, we will need OCaml. This is because our Reason code will be compiled to OCaml, then, using the OCaml compiler, to native code.&lt;/p&gt;</description>
     </item>
     
@@ -170,8 +165,7 @@
       <pubDate>Wed, 03 Aug 2016 07:01:43 +0000</pubDate>
       
       <guid>http://zteo.com/posts/a-great-man-has-left-us/</guid>
-      <description>A great man has left us.
-http://www.media.mit.edu/people/in-memory/papert﻿</description>
+      <description>A great man has left us.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://www.media.mit.edu/people/in-memory/papert&#34;&gt;http://www.media.mit.edu/people/in-memory/papert&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;﻿</description>
     </item>
     
     <item>
@@ -180,9 +174,7 @@ http://www.media.mit.edu/people/in-memory/papert﻿</description>
       <pubDate>Sun, 19 Jun 2016 20:40:24 +0000</pubDate>
       
       <guid>http://zteo.com/posts/added-a-tiny-command-installer-to-sbase-for-android/</guid>
-      <description>Added a tiny command installer to sbase-for-android.
-Man, I use these commands all the time: so nice being table to type ls -ltr
-﻿</description>
+      <description>Added a tiny command installer to sbase-for-android.&lt;!-- raw HTML omitted --&gt;Man, I use these commands all the time: so nice being table to type &lt;code&gt;ls -ltr&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;﻿</description>
     </item>
     
     <item>
@@ -191,8 +183,7 @@ Man, I use these commands all the time: so nice being table to type ls -ltr
       <pubDate>Sun, 10 Apr 2016 00:01:32 +0000</pubDate>
       
       <guid>http://zteo.com/posts/full-automation-consul-monitoring-of-a-rancher-setup-across-the-board-with-some-ansible-help/</guid>
-      <description>Full automation: Consul monitoring of a Rancher setup across the board, with some Ansible help.﻿
-(https://github.com/Fusion/consul-in-rancher)</description>
+      <description>Full automation: Consul monitoring of a Rancher setup across the board, with some Ansible help.﻿</description>
     </item>
     
     <item>
@@ -201,12 +192,7 @@ Man, I use these commands all the time: so nice being table to type ls -ltr
       <pubDate>Thu, 24 Mar 2016 20:50:06 +0000</pubDate>
       
       <guid>http://zteo.com/posts/i-was-totally-not-completely-wrong-to-buy-a-mid-2010-mac-pro/</guid>
-      <description>I was totally not completely wrong to buy a mid 2010 Mac pro!
-&amp;hellip;because of course right after I bought it, it was discontinued. And I bought it for teh upgradez!
-Anyway, I just:
-1. Upped its RAM amount to 32GB (Apple begrudgingly updated their web site to finally admit that, yes, 8GB sticks are supported) (http://www.frys.com/product/8008624?site=sr:SEARCH:MAIN_RSLT_PG)
-2. Switched to a 980GB Patriot Ignite SSD (http://frys.com/product/8358357?site=sr:SEARCH:MAIN_RSLT_PG)
-3. Swapped the video card for my &amp;ldquo;old&amp;rdquo; PC&amp;rsquo;s GTX660 &amp;ndash; not officially supported but totally works except EFI boot.</description>
+      <description>&amp;hellip;because of course right after I bought it, it was discontinued&amp;hellip;</description>
     </item>
     
     <item>
@@ -215,8 +201,7 @@ Anyway, I just:
       <pubDate>Mon, 16 Nov 2015 23:23:37 +0000</pubDate>
       
       <guid>http://zteo.com/posts/this-is-so-ridiculous-hearing-the-same-folks-who-claim-that-gun-control-doesn-t-work-are-now-making/</guid>
-      <description>This is so ridiculous. Hearing the same folks who claim that gun control doesn&amp;rsquo;t work are now making the case that terrorists attacks could be prevented by forcing cell phone vendors to hand over encryption keys.
-You have to pick one: either the bad guys go through alternative channels than honest people, as can be the case with guns, or they don&amp;rsquo;t. In case you do not understand that, the baddies do not have to use the same encryption methods as other users, either.</description>
+      <description>This is so ridiculous. Hearing the same folks who claim that gun control doesn&#39;t work are now making the case that terrorists attacks could be prevented by forcing cell phone vendors to hand over encryption keys.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;You have to pick one: either the bad guys go through alternative channels than honest people, as can be the case with guns, or they don&#39;t. In case you do not understand that, the baddies do not have to use the same encryption methods as other users, either.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Well, at least we know how to survive a face palm&amp;hellip;﻿</description>
     </item>
     
     <item>
@@ -225,8 +210,7 @@ You have to pick one: either the bad guys go through alternative channels than h
       <pubDate>Mon, 14 Sep 2015 00:35:09 +0000</pubDate>
       
       <guid>http://zteo.com/posts/sobriety-counter-https-play-google-com-store-apps-details-id-com-voilaweb-mobile-sobrietycounter/</guid>
-      <description>Sobriety Counter (https://play.google.com/store/apps/details?id=com.voilaweb.mobile.sobrietycounter) a top alcoholism app.
-Reminds me of all the features I&amp;rsquo;ve been meaning to add to it and haven&amp;rsquo;t got around to, yet.﻿</description>
+      <description>(&lt;!-- raw HTML omitted --&gt;Sobriety Counter&lt;!-- raw HTML omitted --&gt;) a top alcoholism app.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Reminds me of all the features I&#39;ve been meaning to add to it and haven&#39;t got around to, yet.﻿</description>
     </item>
     
     <item>
@@ -235,10 +219,7 @@ Reminds me of all the features I&amp;rsquo;ve been meaning to add to it and have
       <pubDate>Mon, 31 Aug 2015 03:16:22 +0000</pubDate>
       
       <guid>http://zteo.com/posts/as-a-fairly-recent-lg-urbane-owner-i-felt-sad-that-so-many-great-faces-have-a-dim-mode-that-doesn-t/</guid>
-      <description>As a fairly recent LG urbane owner, I felt sad that so many great faces have a dim mode that doesn&amp;rsquo;t look near as good as their bright mode.
-So I put together this small racket app: https://github.com/fusion/Watch-It-/releases
-It does the stupidest thing: it attempts to make a face&amp;rsquo;s bright settings also its dim settings.
-It will not work with protected faces and will likely also not work it a face makes heavy usage of scripting.</description>
+      <description>As a fairly recent LG urbane owner, I felt sad that so many great faces have a dim mode that doesn&#39;t look near as good as their bright mode.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;So I put together this small racket app: &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://github.com/fusion/Watch-It-/releases&#34;&gt;https://github.com/fusion/Watch-It-/releases&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;It does the stupidest thing: it attempts to make a face&#39;s bright settings also its dim settings.&lt;!-- raw HTML omitted --&gt;It will not work with protected faces and will likely also not work it a face makes heavy usage of scripting.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;If you download it, let me know how it is working for you (or not!)﻿</description>
     </item>
     
     <item>
@@ -247,13 +228,7 @@ It will not work with protected faces and will likely also not work it a face ma
       <pubDate>Sat, 27 Jun 2015 23:54:51 +0000</pubDate>
       
       <guid>http://zteo.com/posts/lately-too-much-work-has-gotten-in-the-way-of-posting-about-non-work-related-projects/</guid>
-      <description>Lately, too much work has gotten in the way of posting about non-work related projects(!)
-So, quickly:
-I pushed to Github the code for my new aggregation/blogging engine: https://github.com/Fusion/HereNote
-More information: http://nexus.zteo.com/HereNote--publish-your-thoughts
-Then, I wrote a init process replacement for containers such as Docker instances: https://github.com/Fusion/cfr_reaper
-It doesn&amp;rsquo;t do everything init do, but it keeps your containers from being overrun with zombie processes.
-Also, sbase-for-android, which is obviously an Android project, is a lightweight and MIT licensed replacement for Busybox.</description>
+      <description>Lately, too much work has gotten in the way of posting about non-work related projects(!)&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;So, quickly:&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;I pushed to Github the code for my new aggregation/blogging engine: &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://github.com/Fusion/HereNote&#34;&gt;https://github.com/Fusion/HereNote&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;More information: &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://nexus.zteo.com/HereNote--publish-your-thoughts&#34;&gt;http://nexus.zteo.com/HereNote--publish-your-thoughts&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Then, I wrote a init process replacement for containers such as Docker instances: &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://github.com/Fusion/cfr_reaper&#34;&gt;https://github.com/Fusion/cfr_reaper&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;It doesn&#39;t do everything init do, but it keeps your containers from being overrun with zombie processes.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Also, sbase-for-android, which is obviously an Android project, is a lightweight and MIT licensed replacement for Busybox. It is also more featured (e.g. you can type &#39;ls -ltr&#39;) &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://github.com/Fusion/sbase-for-android&#34;&gt;https://github.com/Fusion/sbase-for-android&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;If you are running openvz, have a look at vcfr, which simplifies some tasks such as installing packages, etc: &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://github.com/Fusion/vzcfr&#34;&gt;https://github.com/Fusion/vzcfr&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;﻿</description>
     </item>
     
     <item>
@@ -262,11 +237,7 @@ Also, sbase-for-android, which is obviously an Android project, is a lightweight
       <pubDate>Fri, 15 May 2015 21:30:25 +0000</pubDate>
       
       <guid>http://zteo.com/posts/how-to-host-zeronet-in-a-private-ip-container/</guid>
-      <description>Not an issue, but I wasn&amp;rsquo;t sure where to post this tip: And, yes, I am aware that you may then want to protect your ZeroNet install(!)
-Here is a typical configuration:
- Host machine runs haproxy ZeroNet in a Docker or OpenVZ container  1-Make the main UI available to the world:
-In the container:
-python zeronet.py --ui_ip 0.0.0.0 On the host, you need to configure this container&amp;rsquo;s IP in haproxy &amp;ndash; for instance, edit haproxy.</description>
+      <description>Not an issue, but I wasn&amp;rsquo;t sure where to post this tip (so I posted it on Github, obviously)</description>
     </item>
     
     <item>
@@ -284,10 +255,7 @@ python zeronet.py --ui_ip 0.0.0.0 On the host, you need to configure this contai
       <pubDate>Sun, 03 May 2015 02:04:34 +0000</pubDate>
       
       <guid>http://zteo.com/posts/sbase-for-android-now-updated-with-some-ubase-goodness-as-well/</guid>
-      <description>sBase for Android now updated with some ubase goodness as well.
-Use it in your software, use it directly or use it from RootTools: less sucky and MIT licensed!
-This set of commands does not suffer from Busybox&amp;rsquo;s limited functionality as the concept is different: it&amp;rsquo;s one binary per command rather than having to load the kitchen sink every time.
-ls, nice, du, wc, watch, kill, pidof, grep, dmesg, etc.</description>
+      <description>sBase for Android now updated with some ubase goodness as well.</description>
     </item>
     
     <item>
@@ -305,8 +273,7 @@ ls, nice, du, wc, watch, kill, pidof, grep, dmesg, etc.</description>
       <pubDate>Thu, 09 Apr 2015 06:59:47 +0000</pubDate>
       
       <guid>http://zteo.com/posts/i-just-pushed-to-github-my-first-android-build-of-sbase-the-command-line-tools-that-suck-less/</guid>
-      <description>I just pushed to Github my first Android build of sbase, the command line tools that suck less.
-Check it out!﻿</description>
+      <description>I just pushed to Github my first Android build of sbase, the command line tools that suck less. &lt;!-- raw HTML omitted --&gt;Check it out!﻿</description>
     </item>
     
     <item>
@@ -333,8 +300,7 @@ Check it out!﻿</description>
       <pubDate>Mon, 16 Feb 2015 03:19:46 +0000</pubDate>
       
       <guid>http://zteo.com/posts/so-that-s-mary-s-new-car/</guid>
-      <description>So, that&amp;rsquo;s Mary&amp;rsquo;s new car.﻿
-2015-02-16</description>
+      <description>So, that&#39;s Mary&#39;s new car.﻿</description>
     </item>
     
     <item>
@@ -352,10 +318,7 @@ Check it out!﻿</description>
       <pubDate>Sun, 24 Aug 2014 21:51:06 +0000</pubDate>
       
       <guid>http://zteo.com/posts/no-doubt-about-that-we-are-about-to-hear-again-about-how-android-is-an-inherently-insecure-os-it-does/</guid>
-      <description>http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf
-No doubt about that: we are about to hear again about how Android is an inherently insecure OS. It does not matter that the same algorithm would likely work on other mobile devices or, for that matter, any OS.
-It&amp;rsquo;s a clever attack. Well, the &amp;ldquo;theft&amp;rdquo; bits of it (invisible activity or photo hijacking) are pretty standard but the first part, the activity detection one, is pretty smart.
-Note that it&amp;rsquo;s nothing new though; simply a mix of computer forensics and a timing attack.</description>
+      <description>No doubt about that: we are about to hear again about how Android is an inherently insecure OS. It does not matter that the same algorithm would likely work on other mobile devices or, for that matter, any OS.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;It&#39;s a clever attack. Well, the &amp;quot;theft&amp;quot; bits of it (invisible activity or photo hijacking) are pretty standard but the first part, the activity detection one, is pretty smart.&lt;!-- raw HTML omitted --&gt;Note that it&#39;s nothing new though; simply a mix of computer forensics and a timing attack.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;So, how do you protect your data?&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;In short: it&#39;s not too bad. Read on.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Bad news: not much you can do, at this point, to prevent the &amp;quot;active&amp;quot; part of the attack: it is easy to open a transparent activity; as opposed to a transparent screen overlay, which requires a special set of permissions that MIUI, for instance, denies by default.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Conceivably, though, if your phone is rooted, it would be fairly trivial to write an Xposed module that displays a Toast like: &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;    * switching to app_blah *&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Good news, though, regarding the detection bit: as if often the case, I believe that this experiment can only be reproduced in a tightly controlled environment.&lt;!-- raw HTML omitted --&gt;If your device has a different screen resolution/density; if you use an alternate keyboard (in some cases); if you are using a customized ROM; (insert here other factors that would change your activity&#39;s signature); then you are now dramatically lowering the odds that this exploit will work at all.&lt;!-- raw HTML omitted --&gt;These videos are impressive but keep in mind that they were made using the researchers&#39; own devices, not &lt;!-- raw HTML omitted --&gt;your&lt;!-- raw HTML omitted --&gt; device.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;I am not saying that you are safe, though. I am simply pointing out that this is definitely &lt;!-- raw HTML omitted --&gt;not&lt;!-- raw HTML omitted --&gt; a trivial attack and I am sure that as soon as my fellow XDA-ers start giving it some thoughts, a workaround will become available.﻿</description>
     </item>
     
     <item>
@@ -364,7 +327,7 @@ Note that it&amp;rsquo;s nothing new though; simply a mix of computer forensics 
       <pubDate>Mon, 18 Aug 2014 00:45:24 +0000</pubDate>
       
       <guid>http://zteo.com/posts/since-adam-outler-is-into-doing-networky-things-now-i-don-t-see-why-i-couldn-t-flash-a-few-eeproms/</guid>
-      <description>Since +Adam Outler is into doing networky things, now, I don&amp;rsquo;t see why I couldn&amp;rsquo;t flash a few EEPROMs.﻿</description>
+      <description>Since &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Adam Outler&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; is into doing networky things, now, I don&#39;t see why I couldn&#39;t flash a few EEPROMs.﻿</description>
     </item>
     
     <item>
@@ -373,9 +336,7 @@ Note that it&amp;rsquo;s nothing new though; simply a mix of computer forensics 
       <pubDate>Sun, 17 Aug 2014 20:32:31 +0000</pubDate>
       
       <guid>http://zteo.com/posts/interesting-so-we-already-knew-that-calico-cats-cannot-be-aesthetically-cloned-since-the-orange-gene/</guid>
-      <description>Interesting. So, we already knew that Calico cats cannot be aesthetically cloned since the orange gene is randomly expressed yet, if I am not misusing the lingo, spatially restricted, thus creating orange patches.
-Now, it appears that, as should be expected, extrinsic factors such as womb temperature will have a less dramatic yet still relevant effect on other coloring.
-In conclusion: I owe my wife an apology for buying into the oft made claim that cats can be visually cloned.</description>
+      <description>Interesting. So, we already knew that Calico cats cannot be aesthetically cloned since the orange gene is randomly expressed yet, if I am not misusing the lingo, spatially restricted, thus creating orange patches.&lt;!-- raw HTML omitted --&gt;Now, it appears that, as should be expected, extrinsic factors such as womb temperature will have a less dramatic yet still relevant effect on other coloring.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;In conclusion: I owe my wife an apology for buying into the oft made claim that cats can be visually cloned.﻿</description>
     </item>
     
     <item>
@@ -393,10 +354,7 @@ In conclusion: I owe my wife an apology for buying into the oft made claim that 
       <pubDate>Mon, 04 Aug 2014 05:38:25 +0000</pubDate>
       
       <guid>http://zteo.com/posts/chef-and-puppet-require-ruby-before-they-will-even-talk-to-you/</guid>
-      <description>Chef and Puppet require Ruby before they will even talk to you.
-Ansible does not require remote agents but is complex.
-Introducing TighBeam: because it works with the same tools sysadmins use all the time. This is a personal project, not some actual open source big deal. I wrote something for myself, keeping it as small as possible. Use it too in a week-end project or what not.
-But it has a logo!</description>
+      <description>Super minimalist remote configuration tool</description>
     </item>
     
     <item>
@@ -405,8 +363,7 @@ But it has a logo!</description>
       <pubDate>Sun, 03 Aug 2014 06:19:50 +0000</pubDate>
       
       <guid>http://zteo.com/posts/pale-moon-24-7-1-is-now-available-for-linux-os-x-and-of-course-android/</guid>
-      <description>Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.
-Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;amp;t=5243﻿</description>
+      <description>Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Changelist: &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://forum.palemoon.org/viewtopic.php?f=1&amp;amp;amp;t=5243&#34;&gt;http://forum.palemoon.org/viewtopic.php?f=1&amp;amp;amp;t=5243&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;﻿</description>
     </item>
     
     <item>
@@ -415,9 +372,7 @@ Changelist: http://forum.palemoon.org/viewtopic.php?f=1&amp;amp;t=5243﻿</descr
       <pubDate>Sat, 28 Jun 2014 22:10:45 +0000</pubDate>
       
       <guid>http://zteo.com/posts/russell-pavlicek-make-some-very-good-points-on-the-containers-v-hypervisors-race-of-course-he-would/</guid>
-      <description>http://open.citrix.com/blog/328-are-containers-the-right-answer-to-the-wrong-question.html
-Russell Pavlicek make some very good points on the containers v. hypervisors race. Of course, he would defend hypervisors; they are his bread and butter after all.
-I have to admit, though, that as I read his post, I felt that he was building a straw man as no one is saying that hypervisors will be replaced by containers. However&amp;hellip; I went back to my own recent post(http://nexus.zteo.com/posts/the-next-evolution-of-virtualization/), to confirm my thinking, and re-reading my own words I realize that I totally omitted mentioning one of my favorites things about containers: the fact that they can cohabitate with VMs.</description>
+      <description>Russell Pavlicek make some very good points on the containers v. hypervisors race. Of course, he would defend hypervisors; they are his bread and butter after all.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;I have to admit, though, that as I read his post, I felt that he was building a straw man as no one is saying that hypervisors will be replaced by containers. However&amp;hellip; I went back to my own recent post(&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://nexus.zteo.com/blog/the-next-evolution-of-virtualization/&#34;&gt;http://nexus.zteo.com/blog/the-next-evolution-of-virtualization/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;), to confirm my thinking, and re-reading my own words I realize that I totally omitted mentioning one of my favorites things about containers: the fact that they can cohabitate with VMs.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;When I refer to a future where container-specific applications would exist, I should mention that this is tied not to hypervisors disappearing but instead to the commoditization of VMs. I should have made this explicit.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;On the other hand, I still think his post is a straw man: what I hear from containers evangelists is not that hypervisors are bloated but that VMs are: there is a considerable nuance here as, while VMs are bound (IMO) to become a commodity, hypervisors are going to be an increasingly important tool in a network admin&#39;s toolbelt. However, I believe that, if you wish to take the lead in that particular market, you should start looking into hybrid hypervisors that support these different layers of virtualization (For future reference: &amp;quot;Fractal hypervisors.&amp;quot; &amp;ndash; there, I said it)﻿</description>
     </item>
     
     <item>
@@ -426,12 +381,7 @@ I have to admit, though, that as I read his post, I felt that he was building a 
       <pubDate>Wed, 25 Jun 2014 18:08:56 +0000</pubDate>
       
       <guid>http://zteo.com/posts/please-pass-this-around-as-it-is-a-very-good-opportunity-i-am-looking-for-more-engineers-to-work-in/</guid>
-      <description>Please pass this around as it is a very good opportunity: I am looking for more engineers to work in several of my teams.
-Who I am looking for:
-- you are comfortable developing using C, C++ and/or Java
-- you either work with embedded systems (looking at you Droiders or switch developers) or large web applications or SDN controllers
-Who we are:
-- think of us as a startup with great benefits</description>
+      <description>Please pass this around as it is a very good opportunity: I am looking for more engineers to work in several of my teams.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Who I am looking for:&lt;!-- raw HTML omitted --&gt;- you are comfortable developing using C, C++ and/or Java&lt;!-- raw HTML omitted --&gt;- you either work with embedded systems (looking at you Droiders or switch developers) or large web applications or SDN controllers&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Who we are:&lt;!-- raw HTML omitted --&gt;- think of us as a startup with great benefits&lt;!-- raw HTML omitted --&gt;- by that I mean health coverage, 401k, salary in the high 90s to 100ks&lt;!-- raw HTML omitted --&gt;- we pay relocation expenses if necessary&lt;!-- raw HTML omitted --&gt;- we are established, with a solid revenue stream&lt;!-- raw HTML omitted --&gt;- and yet, we also work on multiple, very forward looking projects&lt;!-- raw HTML omitted --&gt;- we are located in Southern California, near L.A.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;I am posting this here before making it more widely available as I&#39;d rather work with one of you guys so, if you are interested or think one of your friends might be a match, let me know immediately.﻿</description>
     </item>
     
     <item>
@@ -440,8 +390,7 @@ Who we are:
       <pubDate>Mon, 24 Mar 2014 06:16:02 +0000</pubDate>
       
       <guid>http://zteo.com/posts/the-next-evolution-of-virtualization/</guid>
-      <description>I usually reserve this kind of wall of text for my poor coworkers but not today. Share the pain!_
-You may know this about me or you may not but over the years I have been a kind of closet futurist: I mean by that that I will occasionally come up with a proof of concept for something that may happen within the next few years but I rarely take the time to do much more at it does not align with my current goals.</description>
+      <description>I usually reserve this kind of wall of text for my poor coworkers but not today. Share the pain!</description>
     </item>
     
     <item>
@@ -450,8 +399,7 @@ You may know this about me or you may not but over the years I have been a kind 
       <pubDate>Tue, 14 Jan 2014 08:57:44 +0000</pubDate>
       
       <guid>http://zteo.com/posts/journleragain-and-mavericks/</guid>
-      <description>As you may have noticed if using this app, any interaction with Spotlight now causes a crash. For instance, dragging a file to Journler means that it will try to display a preview of this file and if it is not sure what type the file is, it attempts to delegate this task to Spotlight and&amp;hellip;scene!
-I am aware of the issue and plan on fixing it, unfortunately it is a time consuming task and I have very little free time right now.</description>
+      <description>As you may have noticed if using this app, any interaction with Spotlight now causes a crash. For instance, dragging a file to Journler means that it will try to display a preview of this file and if it is not sure what type the file is, it attempts to delegate this task to Spotlight and&amp;hellip;scene!</description>
     </item>
     
     <item>
@@ -460,9 +408,7 @@ I am aware of the issue and plan on fixing it, unfortunately it is a time consum
       <pubDate>Wed, 21 Aug 2013 01:53:06 +0000</pubDate>
       
       <guid>http://zteo.com/posts/c-coroutines-no-assembly-bad-pun-required/</guid>
-      <description>I was reading Yossi Kreinin&amp;rsquo;s quick&amp;rsquo;n fun way to implement coroutines in C and, as an embedded development architect, was a bit saddened by the &amp;ndash; necessary &amp;ndash; use of assembly code to manage a separate stack.
-Granted, it&amp;rsquo;s only a few lines of code, but hey, why re-invent the wheel when we can use existing tools and badmouth Posix a little bit in the process?
-Posix? Well, yes. Reading his solution it is immediately obvious that rather than setjmp()/longjmp() one could use context management functions.</description>
+      <description>I was reading Yossi Kreinin&amp;rsquo;s quick&amp;rsquo;n fun way to implement coroutines in C and, as an embedded development architect, was a bit saddened by the &amp;ndash; necessary &amp;ndash; use of assembly code to manage a separate stack.</description>
     </item>
     
     <item>
@@ -471,10 +417,7 @@ Posix? Well, yes. Reading his solution it is immediately obvious that rather tha
       <pubDate>Sun, 28 Apr 2013 07:32:04 +0000</pubDate>
       
       <guid>http://zteo.com/posts/memonic-extension-patched-for-google-chrome/</guid>
-      <description>The symptom is pretty simple: you click the &amp;lsquo;Memonic&amp;rsquo; extension icon and nothing happens. This patch aims to fix this behavior.
-A bit more than three years ago, I published here a patched version of SuperGenPass that would work with Google Chrome. It&amp;rsquo;s been, since then, downloaded more than 1 million times.
-Recently, I also published a patched version of Memonic&amp;rsquo;s Android app, patched to work with Jelly Bean.
-Today, I bring you a patched version of the Memonic clipper that will work even if you have pesky SVG objects in the page you are trying to capture.</description>
+      <description>The symptom is pretty simple: you click the &amp;lsquo;Memonic&amp;rsquo; extension icon and nothing happens. This patch aims to fix this behavior.</description>
     </item>
     
     <item>
@@ -483,11 +426,7 @@ Today, I bring you a patched version of the Memonic clipper that will work even 
       <pubDate>Thu, 04 Apr 2013 23:56:13 +0000</pubDate>
       
       <guid>http://zteo.com/posts/productive-ambient-noise-beyond-white-noise/</guid>
-      <description>Need some work ambiance that&amp;rsquo;s not just pure white noise?
-The web delivers!
-Properly used, after all, noise is supposed to be our creative ally. There is a study touted by various web sites.
-Of course, at first there was rainymood. It really is an excellent quality loop. In fact, the web version is, in my opinion, superior to the mobile one, which adds a somewhat disturbing background music.
-If you find rainymood&amp;rsquo;s loop not eventful enough, you could give a try to simply rain.</description>
+      <description>Need some work ambiance that&amp;rsquo;s not just pure white noise? The web delivers!</description>
     </item>
     
     <item>
@@ -496,11 +435,7 @@ If you find rainymood&amp;rsquo;s loop not eventful enough, you could give a try
       <pubDate>Mon, 26 Nov 2012 07:01:03 +0000</pubDate>
       
       <guid>http://zteo.com/posts/sublimetext-as-a-minimal-ide-for-scala/</guid>
-      <description>Well, the Coursera &amp;ldquo;Functional Programming Principles in Scala&amp;rdquo; class was a success. Both Tom Chappell and I really enjoyed it. However, I&amp;rsquo;ve never much liked Eclipse as an IDE. Here is how I am using Sublime Text 2 instead.
-Syntax highlighting, error detection
-1-Install Sublime Text 2
-2- Now, let&amp;rsquo;s prepare our environment for Ensime (aka &amp;ldquo;ENhanced Scala Interaction Mode for Emac&amp;rdquo;) and its &amp;ldquo;sbt&amp;rdquo; plugin:
- Add to the end of ~/.</description>
+      <description>Well, the Coursera &amp;ldquo;Functional Programming Principles in Scala&amp;rdquo; class was a success. Both Tom Chappell and I really enjoyed it. However, I&amp;rsquo;ve never much liked Eclipse as an IDE. Here is how I am using Sublime Text 2 instead.</description>
     </item>
     
     <item>
@@ -509,8 +444,7 @@ Syntax highlighting, error detection
       <pubDate>Wed, 21 Nov 2012 09:16:35 +0000</pubDate>
       
       <guid>http://zteo.com/posts/comments-policy/</guid>
-      <description>This sets forth Zteo&amp;rsquo;s policy with regard to the use of Spam marketing techniques in connection with Internet Marketing. In the event that we deem you to be in violation of these policies, we shall immediately revoke your membership rights and close any active account.
-We have a strict policy against spamming. We forbid the sending of unsolicited mass Emails or unsolicited Emails of any kind in connection with the marketing of our programs, products and services.</description>
+      <description>This sets forth Zteo&amp;rsquo;s policy with regard to the use of Spam marketing techniques in connection with Internet Marketing. In the event that we deem you to be in violation of these policies, we shall immediately revoke your membership rights and close any active account.</description>
     </item>
     
     <item>
@@ -519,10 +453,7 @@ We have a strict policy against spamming. We forbid the sending of unsolicited m
       <pubDate>Sat, 22 Sep 2012 22:37:35 +0000</pubDate>
       
       <guid>http://zteo.com/posts/its-journleragain/</guid>
-      <description>It&amp;rsquo;s Journler&amp;hellip;Again!
-Many Mac users are aware of the now abandoned/open-sourced excellent productivity/journaling application known as Journler.
-Philip Dow, Journler&amp;rsquo;s author, is obviously a stand-up guy and felt that he needed to work one last time on Journler to add Snow Leopard compatibility while open-sourcing it.
-Here we are now, a few years later, and many Mac enthusiasts &amp;ndash; me included &amp;ndash; still use Journler, even if it&amp;rsquo;s not a daily thing.</description>
+      <description>It&amp;rsquo;s Journler&amp;hellip;Again!</description>
     </item>
     
     <item>
@@ -531,11 +462,7 @@ Here we are now, a few years later, and many Mac enthusiasts &amp;ndash; me incl
       <pubDate>Thu, 15 Mar 2012 23:21:40 +0000</pubDate>
       
       <guid>http://zteo.com/posts/second-life-for-enterprise-yup-it-died/</guid>
-      <description>_ Note: an improved, cleaned up version of this post is available on the Hypergrid Business website._
-
-How Bad Was Second Life Enterprise?
-This is the first post in a series about Virtual Reality in an Enterprise environment. I expect to talk about more positive experiences in future posts but I need to start somewhere, so why not with what did not work for us?
-My (and my company&amp;rsquo;s) experience Second Life for Enterprise was a failure, in my case, for several reasons.</description>
+      <description>Note: an improved, cleaned up version of this post is available on the Hypergrid Business website.</description>
     </item>
     
     <item>
@@ -544,13 +471,7 @@ My (and my company&amp;rsquo;s) experience Second Life for Enterprise was a fail
       <pubDate>Mon, 13 Feb 2012 04:08:14 +0000</pubDate>
       
       <guid>http://zteo.com/posts/install-parallel-tools-in-archchakra-linux/</guid>
-      <description>As niche posts go, I think this one may take the cake since it is about my experience installing Parallel 7&amp;rsquo;s tools in a Chakra Linux guest (of the venerable Arch family)
-Let me begin with pointing out that there are no Parallel Tools for Arch/Chakra but you can still make this work.
-What you need
- Parallels 7
- Chakra Linux
- Kernel 3.2
-  Let&amp;rsquo;s do this</description>
+      <description>As niche posts go, I think this one may take the cake since it is about my experience installing Parallel 7&amp;rsquo;s tools in a Chakra Linux guest (of the venerable Arch family)</description>
     </item>
     
     <item>
@@ -559,9 +480,7 @@ What you need
       <pubDate>Thu, 19 Jan 2012 22:43:42 +0000</pubDate>
       
       <guid>http://zteo.com/posts/devonthink-markdown-to-viewer/</guid>
-      <description>Like many other DEVONthink users, I have started to feel regret that MarkDown is not natively supported.
-Now, a piece of good news is that, as long as you edit a plain-text document in DT, you are, in effect, editing a potential MarkDown document.
-In the past, it was possible to open a DT document in an application such as the excellent Marked.app. But it is not any longer. I totally understand the author&amp;rsquo;s argument: as a pure viewer, it feels wrong for an application to register as an editor.</description>
+      <description>Like many other DEVONthink users, I have started to feel regret that MarkDown is not natively supported.Now, a piece of good news is that, as long as you edit a plain-text document in DT, you are, in effect, editing a potential MarkDown document.In the past, it was possible to open a DT document in an application such as the excellent Marked.app. But it is not any longer. I totally understand the author&amp;rsquo;s argument: as a pure viewer, it feels wrong for an application to register as an editor.</description>
     </item>
     
     <item>
@@ -570,8 +489,7 @@ In the past, it was possible to open a DT document in an application such as the
       <pubDate>Mon, 02 Jan 2012 10:38:50 +0000</pubDate>
       
       <guid>http://zteo.com/posts/delicious4shelves/</guid>
-      <description>I like things neatly organized. I absolutely hate the idea that I could buy a book I already own. So, it&amp;rsquo;s not surprise that, as a Mac user, I trust Delicious Library to keep tracks of my books, DVS and video games.
-As an Android user, I also like that Shelves even exists. After all, it is mostly when I am walking the aisles of Barnes &amp;amp; Noble that I am the most susceptible to wonder whether I already own a given book &amp;ndash; although Amazon may eventually lure me away from that experience &amp;ndash; and if that information is only available on my Mac happily waiting for my return back home, it&amp;rsquo;s not very helpful to me.</description>
+      <description>I like things neatly organized. I absolutely hate the idea that I could buy a book I already own. So, it&amp;rsquo;s not surprise that, as a Mac user, I trust Delicious Library to keep tracks of my books, DVS and video games.As an Android user, I also like that Shelves even exists. After all, it is mostly when I am walking the aisles of Barnes &amp;amp; Noble that I am the most susceptible to wonder whether I already own a given book &amp;ndash; although Amazon may eventually lure me away from that experience &amp;ndash; and if that information is only available on my Mac happily waiting for my return back home, it&amp;rsquo;s not very helpful to me. Therefore, Shelves is my saviour.</description>
     </item>
     
     <item>
@@ -580,9 +498,7 @@ As an Android user, I also like that Shelves even exists. After all, it is mostl
       <pubDate>Sat, 31 Dec 2011 09:33:02 +0000</pubDate>
       
       <guid>http://zteo.com/posts/android-self-contained-libraries-seamless-component-persistence/</guid>
-      <description>Slider by Yamanaka Tamaki
-Hello. Today, I am going to write about persisting a component&amp;rsquo;s values simply, using a hidden dialog; and how to turn a set of classes and assets into a &amp;ldquo;library&amp;rdquo; that other developers will not need to refactor prior to using it.
-A few months ago, needing an Android widget that would let me select values &amp;ldquo;naturally&amp;rdquo; using one or more sliders, I found Daniel Berndt&amp;rsquo;s excellent DateSlider.</description>
+      <description>Slider by Yamanaka Tamaki</description>
     </item>
     
     <item>
@@ -591,8 +507,7 @@ A few months ago, needing an Android widget that would let me select values &amp
       <pubDate>Thu, 29 Dec 2011 02:00:48 +0000</pubDate>
       
       <guid>http://zteo.com/posts/your-own-dynamic-dns-in-3-steps/</guid>
-      <description>This is a &amp;ldquo;niche&amp;rdquo; post: it will really only appeal to you if you have access to your own &amp;ndash; or a friend&amp;rsquo;s &amp;ndash; name servers and want to use your own domain to track your dynamic IP addresses, such as your home router&amp;rsquo;s.
-You will still have to buy your own domain, cheap if you go to internet.bs or namecheap.com. I hear that the latter even provide their own dynamic DNS service although I cannot tell you anything about its quality/flexibility.</description>
+      <description>This is a &amp;ldquo;niche&amp;rdquo; post: it will really only appeal to you if you have access to your own &amp;ndash; or a friend&amp;rsquo;s &amp;ndash; name servers and want to use your own domain to track your dynamic IP addresses, such as your home router&amp;rsquo;s.You will still have to buy your own domain, cheap if you go to internet.bs or namecheap.com. I hear that the latter even provide their own dynamic DNS service although I cannot tell you anything about its quality/flexibility.</description>
     </item>
     
     <item>
@@ -601,10 +516,7 @@ You will still have to buy your own domain, cheap if you go to internet.bs or na
       <pubDate>Tue, 22 Nov 2011 02:51:52 +0000</pubDate>
       
       <guid>http://zteo.com/posts/roottools-15-nativetools-10/</guid>
-      <description>I am both happy and relieved to announce RootTools 1.5 and NativeTools 1.0.
-What&amp;rsquo;s new in RootTools 1.5?
-Mostly build improvements: a new AndroidManifest.xml file for easier building in Eclipse; example version number is now taken from the manifest file; new makejar.ant for building and zipping the library.
-This version also offers a new function: isNativeToolsready(). This function does a silent install/check for correct install of the nativetools binary (you could conceivably use your own binary as you provide your resource id to the function)</description>
+      <description>I am both happy and relieved to announce RootTools 1.5 and NativeTools 1.0.</description>
     </item>
     
     <item>
@@ -613,9 +525,7 @@ This version also offers a new function: isNativeToolsready(). This function doe
       <pubDate>Tue, 08 Nov 2011 08:47:28 +0000</pubDate>
       
       <guid>http://zteo.com/posts/android-statusbar-height-the-cautious-way/</guid>
-      <description>A lot of applications expect the status bar to be at the top of your device&amp;rsquo;s screen. It&amp;rsquo;s true in most cases so their developers are somewhat justified in making this assumption.
-However, with more and more tablets on the market, this is becoming an increasingly dangerous assumption.
-Also somewhat dangerous: the notion that your status bar&amp;rsquo;s height will be (your visible area&amp;rsquo;s height - zero). Google never made any commitment that the status bar will always start at pixel zero.</description>
+      <description>A lot of applications expect the status bar to be at the top of your device&amp;rsquo;s screen. It&amp;rsquo;s true in most cases so their developers are somewhat justified in making this assumption.However, with more and more tablets on the market, this is becoming an increasingly dangerous assumption.</description>
     </item>
     
     <item>
@@ -624,8 +534,7 @@ Also somewhat dangerous: the notion that your status bar&amp;rsquo;s height will
       <pubDate>Tue, 01 Nov 2011 08:02:47 +0000</pubDate>
       
       <guid>http://zteo.com/posts/a-fast-low-memory-growable-array-for-android/</guid>
-      <description>A classic problem: you need an array where you are going to hold a set of values; you do not know that array&amp;rsquo;s size in advance but it may grow to be quite the monster.
-If you use, say, an ArrayList, you have a memory-hungry beast to deal with, making sure that Android will really think about your app when it needs to kill background processes to reclaim some memory.</description>
+      <description>A classic problem: you need an array where you are going to hold a set of values; you do not know that array&amp;rsquo;s size in advance but it may grow to be quite the monster.If you use, say, an ArrayList, you have a memory-hungry beast to deal with, making sure that Android will really think about your app when it needs to kill background processes to reclaim some memory.</description>
     </item>
     
     <item>
@@ -634,11 +543,7 @@ If you use, say, an ArrayList, you have a memory-hungry beast to deal with, maki
       <pubDate>Mon, 25 Jul 2011 01:32:52 +0000</pubDate>
       
       <guid>http://zteo.com/posts/google-on-your-desktopin-safari-user-script-just-working/</guid>
-      <description>In this post:
- Google+ on your Mac, using its own credentials
- Google+ as its own desktop app, with a nice icon
- Using a complex GreaseMonkey script in Safari or Fluid
-  I really like Google+ but I have more than one Google account so it was a pain to use because Google&amp;rsquo;s cookies are shared among all Google services and I had to constantly switch accounts.</description>
+      <description>In this post:</description>
     </item>
     
     <item>
@@ -647,11 +552,7 @@ If you use, say, an ArrayList, you have a memory-hungry beast to deal with, maki
       <pubDate>Wed, 11 May 2011 01:54:45 +0000</pubDate>
       
       <guid>http://zteo.com/posts/cross-compile-android-cm7-on-os-x/</guid>
-      <description>This is your &amp;ldquo;up-to-date 5 minutes ago&amp;rdquo; guide on how to build CyanogenMod 7 using your Mac. Check the date: 05/10/2011.
-Note that, obviously, these instructions should also help you with building other ROMs.
-Let&amp;rsquo;s start with the good news :
- This guide, found in the Cyanogen Wiki, still works (mostly) so we will follow it
- And the guide would work with any CM7 target. Simply use your own target name; e.</description>
+      <description>This is your &amp;ldquo;up-to-date 5 minutes ago&amp;rdquo; guide on how to build CyanogenMod 7 using your Mac. Check the date: 05/10/2011.Note that, obviously, these instructions should also help you with building other ROMs.</description>
     </item>
     
     <item>
@@ -660,9 +561,7 @@ Let&amp;rsquo;s start with the good news :
       <pubDate>Mon, 03 Jan 2011 03:25:10 +0000</pubDate>
       
       <guid>http://zteo.com/posts/tooredo-a-friendlier-toodledo-user-interface-public-beta/</guid>
-      <description>I am now opening Tooredo to public beta.
-I &amp;ndash; and others &amp;ndash; have been using it for several months without majors glitches so I think it&amp;rsquo;s time I shared the joy with you.
-What is Toodledo? Toodledo &amp;ndash; I am not affiliated with them in any way &amp;ndash; is an awesome web application that helps you write down and remember your tasks. Tasks can be organized in folders and contexts and tagged.</description>
+      <description>I am now opening Tooredo to public beta.I &amp;ndash; and others &amp;ndash; have been using it for several months without majors glitches so I think it&amp;rsquo;s time I shared the joy with you.</description>
     </item>
     
     <item>
@@ -671,8 +570,7 @@ What is Toodledo? Toodledo &amp;ndash; I am not affiliated with them in any way 
       <pubDate>Sat, 27 Nov 2010 04:03:47 +0000</pubDate>
       
       <guid>http://zteo.com/posts/so-is-android-using-the-linux-scheduler-can-i-patch-it/</guid>
-      <description>These last few days, the Linux world has paid quite a lot of attention to this kernel patch, written by Mike Galbraith.
-Its purpose is to make your desktop more responsive by grouping your tasks so that they have a better chance at getting their fair share of CPU time when some other task, notably a CPU hog, is running in the background. Lennart Poettering then offered his own solution, which requires no tweak of the kernel itself.</description>
+      <description>These last few days, the Linux world has paid quite a lot of attention to this kernel patch, written by Mike Galbraith.Its purpose is to make your desktop more responsive by grouping your tasks so that they have a better chance at getting their fair share of CPU time when some other task, notably a CPU hog, is running in the background. Lennart Poettering then offered his own solution, which requires no tweak of the kernel itself.</description>
     </item>
     
     <item>
@@ -681,9 +579,7 @@ Its purpose is to make your desktop more responsive by grouping your tasks so th
       <pubDate>Wed, 20 Oct 2010 04:10:41 +0000</pubDate>
       
       <guid>http://zteo.com/posts/android-create-a-lite-version-of-your-application/</guid>
-      <description>Like many Android developers, I recently realized that pushing a &amp;ldquo;lite&amp;rdquo; version of my application to the Android Marketplace would improve my application&amp;rsquo;s visibility.
-(My application: SplitAndTip; light version)
-It&amp;rsquo;s not as easy as it seems because Android uses your application&amp;rsquo;s main class&amp;rsquo; full path to identify it. Therefore, simply compiling two versions of the same source code with, say, two different certificates &amp;ndash; the Adobe approach &amp;ndash; does not work.</description>
+      <description>Like many Android developers, I recently realized that pushing a &amp;ldquo;lite&amp;rdquo; version of my application to the Android Marketplace would improve my application&amp;rsquo;s visibility.</description>
     </item>
     
     <item>
@@ -692,8 +588,7 @@ It&amp;rsquo;s not as easy as it seems because Android uses your application&amp
       <pubDate>Wed, 22 Sep 2010 07:19:29 +0000</pubDate>
       
       <guid>http://zteo.com/posts/update-your-xampp-php-and-keep-mediawiki-drupal-happy/</guid>
-      <description>Once again, the &amp;ndash; otherwise very nice, I&amp;rsquo;m sure &amp;ndash; PHP people have done this thing that has made me miserable with my own open-source code and is now also affecting Mediawiki: in PHP 5.3.1, references passed to __call() are silently turned into values.
-Apparently, this bug was fixed but a contract was broken in the process: even if packages such as Wikipedia or Drupal were wrong in the way they were passing references, this used to work.</description>
+      <description>Once again, the &amp;ndash; otherwise very nice, I&amp;rsquo;m sure &amp;ndash; PHP people have done this thing that has made me miserable with my own open-source code and is now also affecting Mediawiki: in PHP 5.3.1, references passed to __call() are silently turned into values.Apparently, this bug was fixed but a contract was broken in the process: even if packages such as Wikipedia or Drupal were wrong in the way they were passing references, this used to work. Now, when running the same code, not only is a warning issued &amp;ndash; good &amp;ndash; but the function is not called. The latter is quite hard to justify.Of course, this means that a simple “dot” upgrade can render your whole website unusable; it’s a pill that’s a tad hard to swallow.</description>
     </item>
     
     <item>
@@ -702,9 +597,7 @@ Apparently, this bug was fixed but a contract was broken in the process: even if
       <pubDate>Tue, 21 Sep 2010 06:52:06 +0000</pubDate>
       
       <guid>http://zteo.com/posts/suggestedittext-android-auto-suggest-component/</guid>
-      <description>My first Android application, SplitAndTip , makes splitting a restaurant check with your friends very easy.
-One of its key features is that I wanted the user to be able to change any parameter without feeling like the program gets in their way. For instance, you can open the &amp;lsquo;Tax &amp;amp; Tip&amp;rsquo; drawer and quickly change these values.
-However, like many, I live and work at the edge of a couple counties and the county tax goes from 8.</description>
+      <description>My first Android application, SplitAndTip, makes splitting a restaurant check with your friends very easy.One of its key features is that I wanted the user to be able to change any parameter without feeling like the program gets in their way. For instance, you can open the ‘Tax &amp;amp; Tip’ drawer and quickly change these values.However, like many, I live and work at the edge of a couple counties and the county tax goes from 8.25% to a whopping 9.75% (L.A. County of course!)It is a tedious proposition to re-enter the same two percentages every time I cross the “border.”On a desktop computer, this is usually addressed through the use of a drop-down list. However the Android UI does not have room for a full-size selection component, unless you add more steps by popping one up every time you wish to adjust a value. This is no friendly user interface.The solution I found is a text field that will provide suggestions based on past values, while remaining in the text field itself.</description>
     </item>
     
     <item>
@@ -713,9 +606,7 @@ However, like many, I live and work at the edge of a couple counties and the cou
       <pubDate>Tue, 03 Aug 2010 21:15:46 +0000</pubDate>
       
       <guid>http://zteo.com/posts/jailbroken-iphones-now-safer/</guid>
-      <description>I was reading this article and, in my opinion, it got the facts right but their conclusion is backwards:
- Meanwhile, whilst this particular unlock is the simplest, it also carries with it element of risk that you’re going to want to protect yourself against.
- What? No that&amp;rsquo;s not the correct conclusion. A conclusion that would make more sense is that everybody is at risk until this PDF hole is patched by Apple.</description>
+      <description>I was reading this article and, in my opinion, it got the facts right but their conclusion is backwards:Meanwhile, whilst this particular unlock is the simplest, it also carries with it element of risk that you’re going to want to protect yourself against.</description>
     </item>
     
     <item>
@@ -724,9 +615,7 @@ However, like many, I live and work at the edge of a couple counties and the cou
       <pubDate>Sat, 31 Jul 2010 09:34:08 +0000</pubDate>
       
       <guid>http://zteo.com/posts/make-your-iphone-3g-faster-with-ios4-some-assembly-required/</guid>
-      <description>Today, I am venturing outside my usual programming and open-source path and I am going to share my experience speeding up my iPhone with you.
-I am not going to write a long article where I copy/paste what everybody else has already written about how slow iPhone 3G&amp;rsquo;s can get when running iOS4. It is now a well established fact.
-Rumor has it, iOS4.1 should really make your iPhone faster.</description>
+      <description>Today, I am venturing outside my usual programming and open-source path and I am going to share my experience speeding up my iPhone with you.I am not going to write a long article where I copy/paste what everybody else has already written about how slow iPhone 3G&amp;rsquo;s can get when running iOS4. It is now a well established fact.Rumor has it, iOS4.1 should really make your iPhone faster.</description>
     </item>
     
     <item>
@@ -735,7 +624,7 @@ Rumor has it, iOS4.1 should really make your iPhone faster.</description>
       <pubDate>Sun, 18 Jul 2010 03:13:01 +0000</pubDate>
       
       <guid>http://zteo.com/posts/wordpress-thesis-gpl-the-facts-are-simple/</guid>
-      <description>_ Update:_ Now a few days later, Thesis has been GPL&amp;rsquo;d and there isn&amp;rsquo;t much left to say on this topic. However, for the sake of clarity, I would like to revisit a statement I made below: if Thesis contained no original WordPress code, considering that it is distributed on its own, and not shipped with a copy of WordPress, I am not sure how a court would see this.</description>
+      <description>Update:Now a few days later, Thesis has been GPL&amp;rsquo;d and there isn&amp;rsquo;t much left to say on this topic. However, for the sake of clarity, I would like to revisit a statement I made below: if Thesis contained &lt;em&gt;no&lt;/em&gt; original WordPress code, considering that it is distributed on its own, and not shipped with a copy of WordPress, I am not sure how a court would see this. It is the intent of the GPL license that anything &amp;ldquo;linked&amp;rdquo; against GPL code becomes de facto GPL (if the executable and GPL code &amp;ldquo;make function calls to each other and share data structures&amp;rdquo;) but I am not aware of a case where &amp;ldquo;linking&amp;rdquo; was the only, successfully argued point.</description>
     </item>
     
     <item>
@@ -744,14 +633,7 @@ Rumor has it, iOS4.1 should really make your iPhone faster.</description>
       <pubDate>Tue, 06 Jul 2010 08:28:34 +0000</pubDate>
       
       <guid>http://zteo.com/posts/page-theme-v13-not-just-for-pages-anymore/</guid>
-      <description>I am happy to announce the release of the Wordpress plugin &amp;ldquo;Page-Theme&amp;rdquo; v1.3.
-This version is a full rewrite.
-Its features are:
- Define themes on a per-page basis
- Define themes on a per-post basis ( ** new** )
- Support for SEO-friendly permalinks
- Support for basic permalinks ( ** new** )
- Full integration with posts and pages screens in the admin control panel ( ** new** )</description>
+      <description>I am happy to announce the release of the Wordpress plugin &amp;ldquo;Page-Theme&amp;rdquo; v1.3.This version is a full rewrite.</description>
     </item>
     
     <item>
@@ -760,8 +642,7 @@ Its features are:
       <pubDate>Wed, 23 Jun 2010 07:10:38 +0000</pubDate>
       
       <guid>http://zteo.com/posts/freebie-a-real-blog-editing-tool/</guid>
-      <description>Until now, this freebie has been known only to my Twitter followers, but considering the positive feedback it received, I am going to put it out there for everybody: a few months ago, being disappointed with the lack of true rich-text editing provided by typical blog editing tools, I started work on mine.
-It&amp;rsquo;s still a very unambitious thing but at least it does what every blog owner wants: it allows you to work on your posts in a convenient and intuitive way.</description>
+      <description>Until now, this freebie has been known only to my Twitter followers, but considering the positive feedback it received, I am going to put it out there for everybody: a few months ago, being disappointed with the lack of true rich-text editing provided by typical blog editing tools, I started work on mine.</description>
     </item>
     
     <item>
@@ -770,8 +651,7 @@ It&amp;rsquo;s still a very unambitious thing but at least it does what every bl
       <pubDate>Mon, 14 Jun 2010 08:56:54 +0000</pubDate>
       
       <guid>http://zteo.com/posts/twitterified-no-more/</guid>
-      <description>When you play with an 800-pound gorilla, sometimes, you have to accept that the gorilla will inadvertently stomp on you. After a couple months spent researching a possible strategic realignment, we have decided that it would not be reasonable to spend more time and money on Twitterified, at least not in its current incarnation.
-On April 4th 2010, Fred Wilson, who is on Twitter&amp;rsquo;s board of directors, sent a very clear message to application developers: stop writing applications that &amp;ldquo;fill holes in the Twitter product.</description>
+      <description>When you play with an 800-pound gorilla, sometimes, you have to accept that the gorilla will inadvertently stomp on you. After a couple months spent researching a possible strategic realignment, we have decided that it would not be reasonable to spend more time and money on Twitterified, at least not in its current incarnation.On April 4th 2010, Fred Wilson, who is on Twitter&amp;rsquo;s board of directors, sent a very clear message to application developers: stop writing applications that &amp;ldquo;fill holes in the Twitter product.&amp;ldquo;Emphasizing his point, Twitter quickly went on to buy Tweetie and declaring it its official client.</description>
     </item>
     
     <item>
@@ -780,8 +660,7 @@ On April 4th 2010, Fred Wilson, who is on Twitter&amp;rsquo;s board of directors
       <pubDate>Sun, 06 Jun 2010 01:24:23 +0000</pubDate>
       
       <guid>http://zteo.com/posts/wordpress-plugin-page-themethemes-your-pages/</guid>
-      <description>I was quite surprised, when looking for a way to assign different themes to some pages, to not manage to find an easy way to do that. It is not baked into WordPress, and I could not find a suitable plugin either.
-I had, a while ago, created a tiny plugin that did just that for me but it was way too simple and unfriendly to configure. I eventually stumbled upon the &amp;lsquo;domain theme&amp;rsquo; plugin which, even though it does not do what I need, at least showed me that there is a way to perform a proper theme switch cleanly.</description>
+      <description>I was quite surprised, when looking for a way to assign different themes to some pages, to not manage to find an easy way to do that. It is not baked into WordPress, and I could not find a suitable plugin either.I had, a while ago, created a tiny plugin that did just that for me but it was way too simple and unfriendly to configure. I eventually stumbled upon the &amp;lsquo;domain theme&amp;rsquo; plugin which, even though it does not do what I need, at least showed me that there is a way to perform a proper theme switch cleanly.Note: if you&amp;rsquo;ve been reading this intro, thinking: &amp;ldquo;But there is a way to switch templates!&amp;quot;, then you&amp;rsquo;re right because there is; however I am not talking about templates but themes. Templates are pre-recorded page structures whereas themes are about changing your blog&amp;rsquo;s complete look and feel, including logo, stylesheet, etc.</description>
     </item>
     
     <item>
@@ -790,10 +669,7 @@ I had, a while ago, created a tiny plugin that did just that for me but it was w
       <pubDate>Sat, 29 May 2010 08:17:48 +0000</pubDate>
       
       <guid>http://zteo.com/posts/notes-on-enabling-multisites-in-wp30/</guid>
-      <description>This is not a real article per se. It is more intended to be a conversation because Twitter would make this a tad difficult, with its 140 characters limit.
-Two notes on moving to multisites:
-1. Wordpress 3.0 final has not been released yet; I have no idea whether a safe upgrade can be guaranteed after enabling multisites
-2. Multisites based on subdomains are possible; if you blog is not recent, you will not be offered directory-based sites</description>
+      <description>This is not a real article per se. It is more intended to be a conversation because Twitter would make this a tad difficult, with its 140 characters limit.</description>
     </item>
     
     <item>
@@ -802,8 +678,7 @@ Two notes on moving to multisites:
       <pubDate>Thu, 27 May 2010 08:27:57 +0000</pubDate>
       
       <guid>http://zteo.com/posts/clean-up-wordpress-and-upgrade-to-30/</guid>
-      <description>That&amp;rsquo;s something I had to do myself recently. It was not quite as painful as I feared it to be.
-My aging Wordpress install had certainly gone through its share of hacking: I started with a 1.x version, added multi-blog plugins, uninstalled them, moved to Wordpress MU, then back to single-blog Wordpress. In the process I wrote scripts to rename my tables, added multi- domains plugins&amp;hellip;all the while manually upgrading to various 2.</description>
+      <description>That&amp;rsquo;s something I had to do myself recently. It was not quite as painful as I feared it to be.My aging Wordpress install had certainly gone through its share of hacking: I started with a 1.x version, added multi-blog plugins, uninstalled them, moved to Wordpress MU, then back to single-blog Wordpress. In the process I wrote scripts to rename my tables, added multi-domains plugins&amp;hellip;all the while manually upgrading to various 2.x releases.Things stopped working. Helpful things, such as JavaScript, just about everywhere.</description>
     </item>
     
     <item>
@@ -835,9 +710,7 @@ The CMS back-end is in a self-contained file as well.</description>
       <pubDate>Tue, 01 Dec 2009 03:25:35 +0000</pubDate>
       
       <guid>http://zteo.com/posts/supergenpass-patched-for-google-chrome/</guid>
-      <description>I am a huge fan of SuperGenPass. There are so many obvious reasons why it&amp;rsquo;s a great concept that I won&amp;rsquo;t bore you with a rehash of all of them.
-Unfortunately, in Google Chrome, SuperGenPass chokes on some pages. I do not blame Chrome for that: it&amp;rsquo;s for security reasons.
-I&amp;rsquo;ve patched the basic version of SuperGenPass so that it can now work on those pages. I am not sure that it fixes everything for everybody but I hope it makes your life easier, like it does mine.</description>
+      <description>I am a huge fan of SuperGenPass. There are so many obvious reasons why it&amp;rsquo;s a great concept that I won&amp;rsquo;t bore you with a rehash of all of them.Unfortunately, in Google Chrome, SuperGenPass chokes on some pages. I do not blame Chrome for that: it&amp;rsquo;s for security reasons.</description>
     </item>
     
     <item>
@@ -846,8 +719,7 @@ I&amp;rsquo;ve patched the basic version of SuperGenPass so that it can now work
       <pubDate>Sun, 29 Nov 2009 09:51:38 +0000</pubDate>
       
       <guid>http://zteo.com/posts/magic-ruby-185-191railssinatra-and-lighttpd/</guid>
-      <description>Ladies and gentlemen, gather &amp;lsquo;round! The Great Panini is going to perform an incredible illusion before your very eyes! You will tell your grandchildren of this day and they will not believe you! Take pictures!
-The Great Panini will start with a pre-steam machines era CentOS 4 server. He will install two versions of Ruby and they will coexist peacefully! He will then use the blazing fast Lighttpd server to proxy queries to various Ruby frameworks and he will even make it look easy!</description>
+      <description>Ladies and gentlemen, gather &amp;lsquo;round! The Great Panini is going to perform an incredible illusion before your very eyes! You will tell your grandchildren of this day and they will not believe you! Take pictures!</description>
     </item>
     
     <item>
@@ -856,9 +728,7 @@ The Great Panini will start with a pre-steam machines era CentOS 4 server. He wi
       <pubDate>Tue, 20 Oct 2009 05:07:36 +0000</pubDate>
       
       <guid>http://zteo.com/posts/help-blog-editors-reliably-discover-your-api/</guid>
-      <description>It seems that tons of people have the same complaint: the Wordpress application for iPhone does not discover their blog and, therefore, is of no use to them.
-The same goes for many desktop-based applications.
-I, too, spent quite a lot of time trying to figure that one out but now that I have succeeded, here is how I would recommend working on this issue if your blog is affected:</description>
+      <description>It seems that tons of people have the same complaint: the Wordpress application for iPhone does not discover their blog and, therefore, is of no use to them.The same goes for many desktop-based applications.I, too, spent quite a lot of time trying to figure that one out but now that I have succeeded, here is how I would recommend working on this issue if your blog is affected:</description>
     </item>
     
     <item>
@@ -876,10 +746,7 @@ I, too, spent quite a lot of time trying to figure that one out but now that I h
       <pubDate>Wed, 07 Oct 2009 08:18:49 +0000</pubDate>
       
       <guid>http://zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/</guid>
-      <description>Here comes S2ajax v1.0!
-And it was long overdue. Six months already since I posted S2ajax says &amp;ldquo;hi()&amp;rdquo; I can hardly believe it.
-What I think of as v1.0&amp;rsquo;s main feature is that it is now possible to simply export classes in PHP and these classes can be instantiated in JavaScript. Whenever these instances are modified through asynchronous method calls, these modifications are transparently persisted server-side.
-The concept Is it a PHP class?</description>
+      <description>Here comes S2ajax v1.0!And it was long overdue. Six months already since I posted S2ajax says &amp;ldquo;hi()&amp;rdquo; I can hardly believe it.</description>
     </item>
     
     <item>
@@ -888,9 +755,7 @@ The concept Is it a PHP class?</description>
       <pubDate>Thu, 01 Oct 2009 09:26:51 +0000</pubDate>
       
       <guid>http://zteo.com/posts/php-pdo-class-and-xamppexotic-mysql-configurations/</guid>
-      <description>Last night I was trying to setup a @mail server but the installer kept choking when attempting to connect to my local database.
-I am posting here my quick workaround in case you too, dear reader, get a dreaded &amp;ldquo;PDO&amp;rdquo; error message complaining about your attempt to &amp;ldquo; connect to unix:// &amp;ldquo;
-Here is I how I solved the issue for @mail: I opened library/Zend/Db/Adapter/Pdo/Abstract.php , found the line that creates the PDO object (&amp;rdquo; new PDO(&amp;hellip; &amp;ldquo;) and, in this example, the first argument passed to the constructor was $dsn.</description>
+      <description>Last night I was trying to setup a @mail server but the installer kept choking when attempting to connect to my local database.</description>
     </item>
     
     <item>
@@ -899,11 +764,7 @@ Here is I how I solved the issue for @mail: I opened library/Zend/Db/Adapter/Pdo
       <pubDate>Mon, 28 Sep 2009 00:23:36 +0000</pubDate>
       
       <guid>http://zteo.com/posts/add-your-google-app-account-to-thunderbird-3-beta-4/</guid>
-      <description>Beta 4 is out and it is very sweet. It even offers Gmail integration like never before.
-Well, if you have a @gmail.com account, that is.
-But don&amp;rsquo;t worry! If you have a Google App account, it can be made to work with little extra work. Here is how:
-1. You need a standard @gmail.com account. Create a bogus one if necessary.
-2. You will not want to do anything with this account.</description>
+      <description>Beta 4 is out and it is &lt;em&gt;very&lt;/em&gt; sweet. It even offers Gmail integration like never before.</description>
     </item>
     
     <item>
@@ -912,11 +773,7 @@ But don&amp;rsquo;t worry! If you have a Google App account, it can be made to w
       <pubDate>Fri, 07 Aug 2009 07:45:04 +0000</pubDate>
       
       <guid>http://zteo.com/posts/rich-text-editor-in-sharepoint-with-firefox/</guid>
-      <description>If, like me, your company&amp;rsquo;s insistence on using Sharepoint as an Intranet tool contributes to rapid neurons death, there is as least a glimmer of hope: you can still use Firefox without being punished by having to type raw HTML code when editing a page (Sharepoint, unsurprisingly, only likes IE)
-Simple steps to use your own rich-text editor:
- Install Xinha
- Edit SharePoint page
- Right-click, select &amp;ldquo;Open Xinha here!</description>
+      <description>If, like me, your company&amp;rsquo;s insistence on using Sharepoint as an Intranet tool contributes to rapid neurons death, there is as least a glimmer of hope: you can still use Firefox without being punished by having to type raw HTML code when editing a page (Sharepoint, unsurprisingly, only likes IE)</description>
     </item>
     
     <item>
@@ -925,11 +782,7 @@ Simple steps to use your own rich-text editor:
       <pubDate>Sat, 04 Jul 2009 08:34:18 +0000</pubDate>
       
       <guid>http://zteo.com/posts/n2-message-board-software-update/</guid>
-      <description>This is a cross-posting with the nextBBS support board.
-Some of you already know about this but keep reading&amp;hellip;
-Development of nextBBS v2 was steered in a new direction about two months ago and this is for the better.
-&amp;ldquo;n2&amp;rdquo; is the software&amp;rsquo;s new code name. And the change is more than skin-deep because it is actually the result of the merger of three different pieces of software:
-+ wtcBB</description>
+      <description>This is a cross-posting with the nextBBS support board.</description>
     </item>
     
     <item>
@@ -938,10 +791,7 @@ Development of nextBBS v2 was steered in a new direction about two months ago an
       <pubDate>Thu, 18 Jun 2009 00:29:56 +0000</pubDate>
       
       <guid>http://zteo.com/posts/mount-a-recalcitrant-dmg-file/</guid>
-      <description>I have no idea why but sometimes a .dmg file will just-not-mount.
-For instance I just downloaded the latest PostBox from http://postbox-inc.com/ and the silly little image will not cooperate.
-My amazingly quick&amp;rsquo;nt dirty workaround? Convert it to another format file (using the command-line)!
-hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso</description>
+      <description>I have no idea why but sometimes a .dmg file will just-not-mount.For instance I just downloaded the latest PostBox from &lt;a href=&#34;http://postbox-inc.com/&#34;&gt;http://postbox-inc.com/&lt;/a&gt; and the silly little image will &lt;em&gt;not&lt;/em&gt; cooperate.</description>
     </item>
     
     <item>
@@ -950,8 +800,7 @@ hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso</description>
       <pubDate>Sun, 14 Jun 2009 09:32:51 +0000</pubDate>
       
       <guid>http://zteo.com/posts/wordpress-flv-player-plugin-v20/</guid>
-      <description>Close to two years ago, after quickly putting together my own FLV Player plugin for Wordpress (original post) I added it to Wordpress.org&amp;rsquo;s already impressive list of plugins. Who knows? Someone else might find it useful (it&amp;rsquo;s been downloaded more than 4,500 times since then so I guess that means someone did)
-Yesterday a few people commented on that original post, thus reminding me of that plugin. It shamed me when I revisited its packaging to find out that it required from its users to download more pieces left and right.</description>
+      <description>Close to two years ago, after quickly putting together my own FLV Player plugin for Wordpress (original post) I added it to Wordpress.org&amp;rsquo;s already impressive list of plugins. Who knows? Someone else might find it useful (it&amp;rsquo;s been downloaded more than 4,500 times since then so I guess that means someone did)</description>
     </item>
     
     <item>
@@ -960,8 +809,7 @@ Yesterday a few people commented on that original post, thus reminding me of tha
       <pubDate>Sun, 07 Jun 2009 23:32:10 +0000</pubDate>
       
       <guid>http://zteo.com/posts/sunday-hacking-cuecat-delicious-library/</guid>
-      <description>Sunday Hacking is going to be this new and irregular feature, where I blather about how I made my week-end a bit geekier by doing such or such hardware hack. I do not guarantee originality, nor much software-related content. If you&amp;rsquo;re not into that kind of thing, I promise that it shouldn&amp;rsquo;t feel much worse than a flu shot.
-I like hacking on Sundays; that&amp;rsquo;s how I ended up with a stack of Wiimotes even though I did not own a Wii.</description>
+      <description>Sunday Hacking is going to be this new and irregular feature, where I blather about how I made my week-end a bit geekier by doing such or such hardware hack. I do not guarantee originality, nor much software-related content. If you&amp;rsquo;re not into that kind of thing, I promise that it shouldn&amp;rsquo;t feel much worse than a flu shot.</description>
     </item>
     
     <item>
@@ -970,9 +818,7 @@ I like hacking on Sundays; that&amp;rsquo;s how I ended up with a stack of Wiimo
       <pubDate>Sun, 10 May 2009 23:58:28 +0000</pubDate>
       
       <guid>http://zteo.com/posts/twitterified-client-now-fully-open-source/</guid>
-      <description>[Well, this title says it all!
-Find the announcement here.
-And, of course, find the source code at GitHub: here.</description>
+      <description>Well, this title says it all!</description>
     </item>
     
     <item>
@@ -981,8 +827,7 @@ And, of course, find the source code at GitHub: here.</description>
       <pubDate>Thu, 30 Apr 2009 08:11:05 +0000</pubDate>
       
       <guid>http://zteo.com/posts/determining-if-an-ip-is-within-a-specific-range-redux/</guid>
-      <description>I was reading Paul Gregg&amp;rsquo;s very clear explanation of &amp;ldquo;classless&amp;rdquo; ranges comparison when I realized that his code was not as &amp;ldquo;bare metal&amp;rdquo; as could be.So, here is the code I&amp;rsquo;ve been using in nextBBS.It only accepts ranges in the form &amp;ldquo;x.x.x.x/b&amp;rdquo; but it&amp;rsquo;s short and all I needed, really.
-function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison $cursubnet = explode(&amp;#39;/&amp;#39;, $subnet); $longsubnet = ip2long($cursubnet[0]); $longip = ip2long($ip); if(count($cursubnet){ // Compare IP itself return ($longip==$longsubnet); } // IPv4 only!</description>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
@@ -991,8 +836,7 @@ function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison
       <pubDate>Mon, 06 Apr 2009 07:31:59 +0000</pubDate>
       
       <guid>http://zteo.com/posts/bespin-in-titanium-from-the-jaws-of-victory/</guid>
-      <description>bespin is really an intriguing project. Since I&amp;rsquo;ve grown frustrated with the inconsistencies between the various code editors that I have been using &amp;ndash; I work on Leopard at home and Ubuntu at work &amp;ndash; I thought that creating my own editor would be the answer to that. Nothing fancy, mind you. Just something consistent.
-My first impulse was to use Flex. And it almost worked! Using mx:html I was able to wrap a nice web page in an otherwise very ActionScript-y application.</description>
+      <description>bespin is really an intriguing project. Since I&amp;rsquo;ve grown frustrated with the inconsistencies between the various code editors that I have been using &amp;ndash; I work on Leopard at home and Ubuntu at work &amp;ndash; I thought that creating my own editor would be the answer to that. Nothing fancy, mind you. Just something consistent.</description>
     </item>
     
     <item>
@@ -1001,12 +845,7 @@ My first impulse was to use Flex. And it almost worked! Using mx:html I was able
       <pubDate>Tue, 17 Mar 2009 08:42:52 +0000</pubDate>
       
       <guid>http://zteo.com/posts/twitterified-v13-is-out-bug-fixes-usability-improvements-presently-support/</guid>
-      <description>Well, the title pretty much says it all: v1.3 is out and it&amp;rsquo;s an evolutionary release.
- Bug fixes - lots of &amp;lsquo;em
- Usability improvements, such as text overflow indicator
- Support for the awesome Present.ly Twitter-compatible protocol
-  Get it while it&amp;rsquo;s hot!
-(If you are confused as to where to get it, all you need is to go to http://twitterified.com, log in and follow this link)</description>
+      <description>Well, the title pretty much says it all: v1.3 is out and it&amp;rsquo;s an evolutionary release.	Bug fixes - lots of &amp;lsquo;em	Usability improvements, such as text overflow indicator	Support for the awesome Present.ly Twitter-compatible protocolGet it while it&amp;rsquo;s hot!(If you are confused as to where to get it, all you need is to go to &lt;a href=&#34;http://twitterified.com&#34;&gt;http://twitterified.com&lt;/a&gt;, log in and follow this link)</description>
     </item>
     
     <item>
@@ -1015,22 +854,7 @@ My first impulse was to use Flex. And it almost worked! Using mx:html I was able
       <pubDate>Tue, 17 Mar 2009 00:50:01 +0000</pubDate>
       
       <guid>http://zteo.com/posts/sxsw-09-microsoft-accelerator-tally/</guid>
-      <description>Winners:
-ribbit Innovative Technology
-tubemogul Video
-weardrobe Social Network
-popcuts Music
-High hopes:
-moontoast Very nice concept for remote learning.
-zoomorama Very useful technology.
-klout Great concept but there are concerns over cost.
-Neutral:
-spawn labs
-echodio Impressive technology but confusion regarding their business model.
-gigotron Cool app but suffers competition from turn2live
-mugasha
-Lukewarm:
-otherinbox Another inbox? Why? Does it work with Microsoft products? Are they going to sell my data?</description>
+      <description>Winners:</description>
     </item>
     
     <item>
@@ -1039,11 +863,7 @@ otherinbox Another inbox? Why? Does it work with Microsoft products? Are they go
       <pubDate>Mon, 16 Mar 2009 07:34:33 +0000</pubDate>
       
       <guid>http://zteo.com/posts/twitterified-client-v13-almost-ready/</guid>
-      <description>I should be able to release this new client tomorrow or day after tomorrow.
-I am currently battling a couple bugs with beta support for Present.ly:
- Time zone discrepancy: all posts appear as seven hours behind
- Avatars are too big!
-  </description>
+      <description>I should be able to release this new client tomorrow or day after tomorrow.</description>
     </item>
     
     <item>
@@ -1052,10 +872,7 @@ I am currently battling a couple bugs with beta support for Present.ly:
       <pubDate>Mon, 02 Mar 2009 08:27:55 +0000</pubDate>
       
       <guid>http://zteo.com/posts/php-classes-and-javascript-s2ajax-says-hi/</guid>
-      <description>Sajax is a ‘managed’ AJAX framework that was created by the fine folks at Modern Method a few years ago.
-What’s so great about it is the seamless communication between your back-end and the web page itself: you write your PHP code, tell Sajax which functions to export and they are now accessible from Javascript.
-For instance &amp;ndash; from the ‘example_types.php’ file:
-function return_string() { return &amp;#34;Name: Tom / Age: 26&amp;#34;; }  The corresponding Javascript call would be:</description>
+      <description>Sajax is a ‘managed’ AJAX framework that was created by the fine folks at Modern Method a few years ago.What’s so great about it is the seamless communication between your back-end and the web page itself: you write your PHP code, tell Sajax which functions to export and they are now accessible from Javascript.</description>
     </item>
     
     <item>
@@ -1064,10 +881,7 @@ function return_string() { return &amp;#34;Name: Tom / Age: 26&amp;#34;; }  The 
       <pubDate>Tue, 17 Feb 2009 03:23:45 +0000</pubDate>
       
       <guid>http://zteo.com/posts/wordpress-toolbar-plugin-and-wordpress-prefixes-a-fix/</guid>
-      <description>First of all, that&amp;rsquo;s an awesome plugin that will allow your visitors to have a look at external links while retaining the ability to comment locally on your blog. Get it!
-Unfortunately, if you have modified your Wordpress database prefix, for instance because you are using Wordpress MU or the Virtual Module, the toolbar will fail to display.
-Here is my very modest fix that will make it work.
-1. Open wordpress-toolbar/toolbar.</description>
+      <description>First of all, that&amp;rsquo;s an awesome plugin that will allow your visitors to have a look at external links while retaining the ability to comment locally on your blog. Get it!</description>
     </item>
     
     <item>
@@ -1076,11 +890,7 @@ Here is my very modest fix that will make it work.
       <pubDate>Sat, 14 Feb 2009 01:48:55 +0000</pubDate>
       
       <guid>http://zteo.com/posts/fixing-permissions-after-a-wordpress-prefix-change/</guid>
-      <description>Let&amp;rsquo;s say that you renamed your Wordpress tables.
-There may be several reasons for this. For instance, you installed Virtual Multiblog to support more than one blog with the same setup.
-And now, you are facing the dreaded &amp;ldquo;You do not have sufficient permissions to access this page&amp;rdquo;
-What to do, what to do?
-Turns out, after some research, I found out that there is a proper procedure for us lazy webmasters:</description>
+      <description>Let&amp;rsquo;s say that you renamed your Wordpress tables.There may be several reasons for this. For instance, you installed Virtual Multiblog to support more than one blog with the same setup.</description>
     </item>
     
     <item>
@@ -1089,8 +899,7 @@ Turns out, after some research, I found out that there is a proper procedure for
       <pubDate>Mon, 19 Jan 2009 01:17:01 +0000</pubDate>
       
       <guid>http://zteo.com/posts/a-quick-fix-for-the-tweetback-spam-issue/</guid>
-      <description>I do not get it. I am a big fan of Smashing Magazine and I think that it was very nice of @jdevalk to write a plug-in that gives us full control over &amp;ldquo;Tweetbacks&amp;rdquo;. See this blog entry.
-Where Smashing Magazine and the author lose me, though, is that I have not seen any reaction, either on the magazine&amp;rsquo;s web site, or the author&amp;rsquo;s blog, regarding the issue that many blogs who installed the plug-in seem to now be suffering: they are being inundated with thousands of spammy Tweetbacks, most of them containing text like &amp;ldquo;This is a test&amp;rdquo;, presaging a potentially much more virulent attack when the spammers get their tool working.</description>
+      <description>I do not get it. I am a big fan of Smashing Magazine and I think that it was very nice of @jdevalk to write a plug-in that gives us full control over &amp;ldquo;Tweetbacks&amp;rdquo;. See this blog entry.Where Smashing Magazine and the author lose me, though, is that I have not seen any reaction, either on the magazine&amp;rsquo;s web site, or the author&amp;rsquo;s blog, regarding the issue that many blogs who installed the plug-in seem to now be suffering: they are being  inundated with thousands of spammy Tweetbacks, most of them containing text like &amp;ldquo;This is a test&amp;rdquo;, presaging a potentially much more virulent attack when the spammers get their tool working.In fact, it may not be spam, but simply some tests gone wrong, but whatever the reason it caused grief to many blog owners &amp;ndash; including me.</description>
     </item>
     
     <item>
@@ -1099,9 +908,7 @@ Where Smashing Magazine and the author lose me, though, is that I have not seen 
       <pubDate>Mon, 19 Jan 2009 00:29:05 +0000</pubDate>
       
       <guid>http://zteo.com/posts/extphp-now-on-github/</guid>
-      <description>About 10 months ago, I released this tool, allowing developers to handle ExtJS like &amp;ldquo;managed&amp;rdquo; code in PHP: ExtPHP.
-Shortly thereafter, Jack Slocum changed ExtJS&amp;rsquo; licensing model and it all became very muddy but my main question was: &amp;ldquo;As a commercial user, what would the status of the extensions be?&amp;rdquo;
-It seems that it&amp;rsquo;s OK to create an extension and not GPL it as long as it doesn&amp;rsquo;t contain any ExtJS original code.</description>
+      <description>About 10 months ago, I released this tool, allowing developers to handle ExtJS like &amp;ldquo;managed&amp;rdquo; code in PHP: ExtPHP.</description>
     </item>
     
     <item>
@@ -1110,7 +917,7 @@ It seems that it&amp;rsquo;s OK to create an extension and not GPL it as long as
       <pubDate>Mon, 05 Jan 2009 03:29:30 +0000</pubDate>
       
       <guid>http://zteo.com/posts/six-resources-to-study-and-master-git-source-control/</guid>
-      <description>[It&amp;rsquo;s no secret that Git , as a source code control tool, has become quite popular in 2008, in part boosted by the success of the socially oriented github.com Here is a list of six resources that will help you get more comfy with Git, whatever your current knowledge of the tool. Let me know if you think that, after reading these six documents, you can still point to a few stones left unturned.</description>
+      <description>It&amp;rsquo;s no secret that Git, as a source code control tool, has become quite popular in 2008, in part boosted by the success of the socially oriented github.com Here is a list of six resources that will help you get more comfy with Git, whatever your current knowledge of the tool. Let me know if you think that, after reading these six documents, you can still point to a few stones left unturned.3 Reasons To Switch To Git From Subversion A to-the-point document, created by Mark McBride, that covers several scenarios and for each scenario, shows how Git could make your life easier if you are not using it yet.</description>
     </item>
     
     <item>
@@ -1131,9 +938,7 @@ I am still using his icon set in my Dock, unfortunately the set was created befo
       <pubDate>Wed, 24 Dec 2008 12:02:18 +0000</pubDate>
       
       <guid>http://zteo.com/posts/gmail-is-the-new-mutt-shortcuts-galore/</guid>
-      <description>I know, it&amp;rsquo;s a bold assertion. But, please, bear with me: as a longtime Unix- head, I need a tool that allows me to zoom through my emails rather than click-glance-click-glance-click-yawn-right-click-delete, etc.
-For years I&amp;rsquo;ve been happy with Mutt because nothing compares with using the arrow keys to navigate through my emails, ALT-O to open a folder, SHIFT- O-R to do a reverse-sort, M for a new message, etc.
-That, and using Visor, give me the comfort of a HUD-based email management tool whose speed is quite unbeatable.</description>
+      <description>I know, it&amp;rsquo;s a bold assertion. But, please, bear with me: as a longtime Unix-head, I need a tool that allows me to zoom through my emails rather than click-glance-click-glance-click-yawn-right-click-delete, etc.</description>
     </item>
     
     <item>
@@ -1142,9 +947,7 @@ That, and using Visor, give me the comfort of a HUD-based email management tool 
       <pubDate>Mon, 01 Dec 2008 01:05:36 +0000</pubDate>
       
       <guid>http://zteo.com/posts/a-driver-for-your-darwin-based-keyboard-woes/</guid>
-      <description>I built this driver in 2007, to support Leopard Darwin on my wife&amp;rsquo;s laptop (hmmm where&amp;rsquo;s the &amp;ldquo;wink wink nudge nudge&amp;rdquo; smiley when you need it?)
-I am offering a full driver for download, but it&amp;rsquo;s only so that you could use my keyboard fix if you do not currently have an ApplePS2Controller.kext that support plug-ins.
-The point of this driver really is to provide keyboard support for laptops that see their built-in keyboard as PS2 -- ie the vast majority.</description>
+      <description>I built this driver in 2007, to support Leopard Darwin on my wife&amp;rsquo;s laptop (hmmm where&amp;rsquo;s the &amp;ldquo;wink wink nudge nudge&amp;rdquo; smiley when you need it?)</description>
     </item>
     
     <item>
@@ -1153,15 +956,7 @@ The point of this driver really is to provide keyboard support for laptops that 
       <pubDate>Mon, 17 Nov 2008 07:55:19 +0000</pubDate>
       
       <guid>http://zteo.com/posts/twitterified-12-is-out-multi-accounts-mouse-gestures-visual-ignore/</guid>
-      <description>Based on the very helpful feedback I received from the Twitterified client users, here is version 1.2&amp;rsquo;s log:
-- Multiple accounts support:
--- Multiple accounts using the same server
--- Accounts using multiple servers (Twitter, Identi.ca&amp;hellip;)
--- Underlying architecture to eventually support any third-party server as long as they are compatible
-- Better error reporting
-- Better error recovery
-- Mouse Gestures support
-- Tweets can now be marked &amp;ldquo; read &amp;ldquo;</description>
+      <description>Based on the very helpful feedback I received from the Twitterified client users, here is version 1.2&amp;rsquo;s log:</description>
     </item>
     
     <item>
@@ -1170,8 +965,7 @@ The point of this driver really is to provide keyboard support for laptops that 
       <pubDate>Mon, 03 Nov 2008 03:33:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/twitterified-taking-off-is-private-beta-a-mistake/</guid>
-      <description>Somehow, seemingly out of nowhere, Twitterers have started to notice Twitterified. I guess a few positive reviews help.
-But would Twitterified have received these positive reviews, had it not moved to open beta? I think not. The service was in closed beta for a couple months, which allowed me to kill a few gremlins I found in the system, but even so it did not attract enough adventurous users for its own good.</description>
+      <description>Somehow, seemingly out of nowhere, Twitterers have started to notice Twitterified. I guess a few positive reviews help.</description>
     </item>
     
     <item>
@@ -1180,9 +974,7 @@ But would Twitterified have received these positive reviews, had it not moved to
       <pubDate>Fri, 22 Aug 2008 23:16:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/how-i-setup-networking-for-virtualbox-on-ubuntu/</guid>
-      <description>Just a quick note: I use VirtualBox daily at work. It provides excellent emulation for my original XP install (the one that came pre-installed on my Dell box!) while my main OS is Ubuntu. Setting up networking is not as straightforward as with VMWare, so here is what I had to do:
-First, edit /etc/udev/rules.d/20-names.rules and make sure this line exists:
-KERNEL=&amp;#34;tun&amp;#34;, NAME=&amp;#34;net/%k&amp;#34;  Then create this script - you will run it whenever you wish to reconfigure your network:</description>
+      <description>Just a quick note: I use VirtualBox daily at work. It provides excellent emulation for my original XP install (the one that came pre-installed on my Dell box!) while my main OS is Ubuntu. Setting up networking is not as straightforward as with VMWare, so here is what I had to do:</description>
     </item>
     
     <item>
@@ -1191,8 +983,7 @@ KERNEL=&amp;#34;tun&amp;#34;, NAME=&amp;#34;net/%k&amp;#34;  Then create this sc
       <pubDate>Sat, 02 Aug 2008 22:54:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/</guid>
-      <description>I love the idea of Switzerland, the new EFF tool for checking ISP throttling ; unfortunately as of release Zero.0.5, Leopard seems to still be a mere afterthought. Here is how I worked around the few things that were not working out of the box.
-First, Switzerland is written in Python and will require Psyco. It&amp;rsquo;s a good thing since Psyco is all about performance. If you do not have it already installed:</description>
+      <description>I love the idea of Switzerland, the new EFF tool for checking ISP throttling; unfortunately as of release Zero.0.5, Leopard seems to still be a mere afterthought. Here is how I worked around the few things that were not working out of the box.</description>
     </item>
     
     <item>
@@ -1201,9 +992,7 @@ First, Switzerland is written in Python and will require Psyco. It&amp;rsquo;s a
       <pubDate>Sat, 26 Jul 2008 23:56:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/twitterifiedat-last/</guid>
-      <description>I cannot believe that it took me so long to get my ducks in a row.
-First, Twitterified was entirely written in Javascript, like most AIR clients. But some testing showed that rewriting in AS3 would dramatically increase responsiveness.
-Then, I had to work on my web framework while creating twitterified.com. And finally I was only able to offer a decent video thanks to the overall godness offered by Vimeo.</description>
+      <description>I cannot believe that it took me so long to get my ducks in a row.First, Twitterified was entirely written in Javascript, like most AIR clients. But some testing showed that rewriting in AS3 would dramatically increase responsiveness.Then, I had to work on my web framework while creating twitterified.com. And finally I was only able to offer a decent video thanks to the overall godness offered by Vimeo.But hey, here it is! For a limited period of time, if you go to the invite page and enter the code &amp;ldquo;nexus&amp;rdquo;, you will be automatically added to the private beta program.</description>
     </item>
     
     <item>
@@ -1212,8 +1001,7 @@ Then, I had to work on my web framework while creating twitterified.com. And fin
       <pubDate>Sat, 26 Jul 2008 08:49:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/how-i-added-real-activerecord-support-to-adodb/</guid>
-      <description>For my new projects, I have decided to use PHP5 , mostly because at least a couple projects will be worked on by a team and the learning curve is fairly forgiving.
-I decided, however, to follow the model offered by Rails. I looked into a few PHP frameworks, such as Akelos, but realized that they were too constraining for our purpose. That&amp;rsquo;s when I decided to develop my own thin layer framework.</description>
+      <description>For my new projects, I have decided to use PHP5, mostly because at least a couple projects will be worked on by a team and the learning curve is fairly forgiving.I decided, however, to follow the model offered by Rails.  I looked into a few PHP frameworks, such as Akelos, but realized that they were too constraining for our purpose. That&amp;rsquo;s when I decided to develop my own thin layer framework.</description>
     </item>
     
     <item>
@@ -1222,11 +1010,7 @@ I decided, however, to follow the model offered by Rails. I looked into a few PH
       <pubDate>Mon, 09 Jun 2008 17:59:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/current-obsessions-june-08/</guid>
-      <description>It&amp;rsquo;s a new feature! I spend way too much time reading interesting papers&amp;hellip; I should not be so selfish as to not share them.
-Steve Yegge&amp;rsquo;s ramblings will enlighten you or depress you, but at least they are enjoyable. There, on my list, right under Joel Spolsky (all-time Nerd Superstar).
-Clustering and Cloud Computing
-The Helmer Cluster, but only because I can also be a hardware nerd.
-Dr Queue, not the only one, but a queue manager that proved its worth.</description>
+      <description>It&amp;rsquo;s a new feature! I spend way too much time reading interesting papers&amp;hellip; I should not be so selfish as to not share them.</description>
     </item>
     
     <item>
@@ -1235,16 +1019,7 @@ Dr Queue, not the only one, but a queue manager that proved its worth.</descript
       <pubDate>Wed, 07 May 2008 07:16:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/beware-google-adwords-phishing/</guid>
-      <description>I received this email today:
- Your AdWords Google Account is stoped.
-Dear Google AdWords Customer,
-We were unable to process your payment.
-Your ads will be suspended soon unless we can process your payment.
-To prevent your ads from being suspended, please update your payment information.
-Please sign in
-to your account at http://adwords.google.com/select/login,
-and update your payment information.
- Of course I got suspicious right away, when I noticed the spelling of &amp;lsquo;stopped&amp;rsquo;.</description>
+      <description>I received this email today:</description>
     </item>
     
     <item>
@@ -1253,8 +1028,7 @@ and update your payment information.
       <pubDate>Sun, 27 Apr 2008 09:46:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/ext-licensing-oh-what-a-mess/</guid>
-      <description>When things start smelling &amp;ldquo;funny&amp;rdquo; in the open-source community, they tend to go to the dogs with the haste of a drunk marching band.
-Today&amp;rsquo;s drama is brought to you by your friendly ExtJS community. For those of you not familiar with ExtJS, it is a professionally made Javascript library that allows web application developers to create very elaborate desktop-like applications. Jack Slocum originally started this project as a YUI extension.</description>
+      <description>When things start smelling &amp;ldquo;funny&amp;rdquo; in the open-source community, they tend to go to the dogs with the haste of a drunk marching band.</description>
     </item>
     
     <item>
@@ -1263,7 +1037,7 @@ Today&amp;rsquo;s drama is brought to you by your friendly ExtJS community. For 
       <pubDate>Wed, 05 Mar 2008 04:49:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/extphp-an-extjs-converterwrapper-for-php-developers/</guid>
-      <description>It is something that I had to think about in my day job, because my team is migrating to PHP for web development and I believe that we simply do not have enough time for them to learn JavaScript&amp;rsquo;s intricacies, I needed to be the one person who would have to wrestle JavaScript when problems happened. I therefore needed a way to insulate them from the gory details, which is why I created ExtPHP.</description>
+      <description>It is something that I had to think about in my day job, because my team is migrating to PHP for web development and I believe that we simply do not have enough time for them to learn JavaScript&amp;rsquo;s intricacies, I needed to be the one person who would have to wrestle JavaScript when problems happened. I therefore needed a way to insulate them from the gory details, which is why I created ExtPHP.As you may have guessed from subtle hints, such as this entry&amp;rsquo;s 12-feet tall header, ExtPHP creates a PHP wrapper for ExtJS.</description>
     </item>
     
     <item>
@@ -1272,12 +1046,7 @@ Today&amp;rsquo;s drama is brought to you by your friendly ExtJS community. For 
       <pubDate>Sat, 09 Feb 2008 01:01:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/pon-or-php-object-notation-is-already-here/</guid>
-      <description>UPDATE
-MJ7&amp;rsquo;s post, below, reminded me of the existence of this long forgotten post.
-As I had written in the comments, this tongue-in-cheek post was not meant to be taken seriously. Please, do not do this.
-JSON, or JavaScript Object Notation, is fairly popular.
-This is just my modest take on a &amp;lsquo;PHP Object Notation&amp;rsquo; implementation.
-Note that it is meant to follow how your mind works rather than being syntactically correct; therefore, associative arrays are used in a loose manner where you have to worry about associative syntax as little as possible.</description>
+      <description>UPDATE</description>
     </item>
     
     <item>
@@ -1286,9 +1055,7 @@ Note that it is meant to follow how your mind works rather than being syntactica
       <pubDate>Thu, 24 Jan 2008 06:33:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/jquery-ui-now-professionally-maintained/</guid>
-      <description>Well, this is exciting:
-Paul Bakaus, lead jQuery UI developer, announced today that he was hired by Liferay, Inc., of L.A., to work full time on his baby.
-As an early adopter, I am very happy to see the project evolve this way. In case you are not familiar with Liferay, they develop open-source products, so all is well :)</description>
+      <description>Well, this is exciting:Paul Bakaus, lead jQuery UI developer, announced today that he was hired by Liferay, Inc., of L.A., to work full time on his baby.</description>
     </item>
     
     <item>
@@ -1297,11 +1064,7 @@ As an early adopter, I am very happy to see the project evolve this way. In case
       <pubDate>Fri, 04 Jan 2008 02:48:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/leopard-quick-removal-of-icalfix/</guid>
-      <description>Great news: with Leopard, there is no need for iCalFix anymore!
-Bad news: iCalFix is not compatible with the new version of iCal and the latter keeps complaining about the former.
-A lot of people have asked the author -BTW: thanks again, Robert, for creating iCalFix when it was needed- how to remove iCalFix but never got a reply.
-Here is a veeery simple fix:
-Simply remove the input manager from /Library/InputManagers</description>
+      <description>Great news: with Leopard, there is no need for iCalFix anymore!Bad news: iCalFix is not compatible with the new version of iCal and the latter keeps complaining about the former.A lot of people have asked the author -BTW: thanks again, Robert, for creating iCalFix when it was needed- how to remove iCalFix but never got a reply.</description>
     </item>
     
     <item>
@@ -1310,8 +1073,7 @@ Simply remove the input manager from /Library/InputManagers</description>
       <pubDate>Tue, 04 Dec 2007 08:27:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/kodachi-051-now-skinnable-and-more/</guid>
-      <description>Kodachi v0.5.1 is out! It&amp;rsquo;s good news for developers who want to write plug-ins or if you wish to change the look and feel of the application:
- A demo plug-in is now included. All it does is add a new direct word to Kodachi&amp;rsquo;s vocabulary: &amp;lsquo; Demo &amp;lsquo;. Type it, select some action, and it will display a Growl-like notification confirming your action. A very easy starting place for budding plug-in developers.</description>
+      <description>Kodachi v0.5.1 is out! It&amp;rsquo;s good news for developers who want to write plug-ins or if you wish to change the look and feel of the application:	A demo plug-in is now included.  All it does is add a new direct word to Kodachi&amp;rsquo;s vocabulary: &amp;lsquo;Demo&amp;rsquo;. Type it, select some action, and it will display a Growl-like notification confirming your action. A very easy starting place for budding plug-in developers.-	Kodachi&amp;rsquo;s user interface is now skinnable. Actually this goes a bit beyond a simple skin as you can change its behaviour alltogether. Note that when launching Kodachi, you will now see the new demo skin, called &amp;lsquo;Bezel&amp;rsquo;, that I created. If you are familiar with QuickSilver, this is certainly an interface you are already used to. If you wish to work with the old interface, simply disable the &amp;lsquo;BezelInterface&amp;rsquo; plug-in.-	The installer now checks which version of .Net is installed on your PC, if any, and offers to install the correct version if necessary.Download Kodachi 0.5.1</description>
     </item>
     
     <item>
@@ -1320,9 +1082,7 @@ Simply remove the input manager from /Library/InputManagers</description>
       <pubDate>Mon, 03 Dec 2007 00:54:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/kodachi-now-available-through-svntrac/</guid>
-      <description>You can now anonymously sync. to the bleeding edge version of Kodachi&amp;rsquo;s source code at svn://nextbbs.com/kodachi
-If you do not feel like installing svn/compiling Kodachi but are still curious about its source code, you can browse it at http://www.nextbbs.com/trac/kodachi/
-Note : if you sync. to the first check-in, you will get the version of Kodachi that is currently downloadable. If you sync. to the next one, you will get a new version with a temporary default interface.</description>
+      <description>You can now anonymously sync. to the bleeding edge version of Kodachi&amp;rsquo;s source code at svn://nextbbs.com/kodachi</description>
     </item>
     
     <item>
@@ -1331,11 +1091,7 @@ Note : if you sync. to the first check-in, you will get the version of Kodachi t
       <pubDate>Sun, 04 Nov 2007 08:47:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/here-comes-kodachi/</guid>
-      <description>Oh, man. Jack of all trades, master of&amp;hellip;not many?
-This week, my frustration over not finding a QuickSilver-like tool for Windows, was at an all-time high.
-Do not get me wrong: Colibri and Launchy are fine tools. They just do not have this QuickSilver-like feel that I miss so much at work.
-Fortunately, I came upon Kodachi completely by chance and I really like the tool.
-Unfortunately, there was no executable available, only source code.</description>
+      <description>Oh, man. Jack of all trades, master of&amp;hellip;not many?</description>
     </item>
     
     <item>
@@ -1344,10 +1100,7 @@ Unfortunately, there was no executable available, only source code.</description
       <pubDate>Thu, 18 Oct 2007 08:39:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/my-first-screencast/</guid>
-      <description>Well, this was much more work than I had anticipated.
-And now, of course, I find that my voice sounds weird, the rhythm seems off, etc. The way I&amp;rsquo;m supposed to feel about it, I guess.
-Here is the quite undecipherable version. For a better, bigger, readable one: http://www.nextbbs.com/do_topic_id_1166
-I will soon post on my newly acquired experience. If it saves you time just once -the first time you try creating your own screencast-, I will feel entitled to the warm feeling that comes from having helped somebody.</description>
+      <description>Well, this was much more work than I had anticipated.And now, of course, I find that my voice sounds weird, the rhythm seems off, etc. The way I&amp;rsquo;m supposed to feel about it, I guess.Here is the quite undecipherable version. For a better, bigger, readable one: &lt;a href=&#34;http://www.nextbbs.com/do_topic_id_1166&#34;&gt;http://www.nextbbs.com/do_topic_id_1166&lt;/a&gt;</description>
     </item>
     
     <item>
@@ -1356,12 +1109,7 @@ I will soon post on my newly acquired experience. If it saves you time just once
       <pubDate>Mon, 17 Sep 2007 06:05:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/la-wired-nextfest-07/</guid>
-      <description>Yesterday, Alex and I went to the Convention Center and had a look. We had never been to any NextFest or anything with the word wired in its name -not even the Denmark wired nipples Fest- so you bet that we were pretty curious.
-Cool
-
-One of the first things we saw. Pretty cool projection on a smoke screen!
-
-Modern &amp;lsquo;Tubular Bells&amp;rsquo;; use whatever limbs you feel like using, and interrupting the laser beams will play music.</description>
+      <description>Yesterday, Alex and I went to the Convention Center and had a look. We had never been to any NextFest or anything with the word wired in its name -not even the Denmark wired nipples Fest- so you bet that we were pretty curious.</description>
     </item>
     
     <item>
@@ -1370,8 +1118,7 @@ Modern &amp;lsquo;Tubular Bells&amp;rsquo;; use whatever limbs you feel like usi
       <pubDate>Sun, 09 Sep 2007 08:16:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/seo-how-i-killed-a-highly-successful-message-board-with-just-one-mistake-and-how-you-can-avoid-it/</guid>
-      <description>Do you have any idea how much disregarding basic SEO ( Search Engine Optimization ) rules can cost you? I have the answer and it&amp;rsquo;s &amp;ldquo; a lot &amp;ldquo;. And take my word for it: I am not an SEO consultant and have nothing to sell, here.
-Up until last year, one of my sites was wildly popular: militate.com. Note that after achieving success through word of mouth, it plateaued and never exceeded 300 simultaneous users.</description>
+      <description>Do you have any idea how much disregarding basic SEO (Search Engine Optimization) rules can cost you? I have the answer and it&amp;rsquo;s &amp;ldquo;a lot&amp;rdquo;. And take my word for it: I am not an SEO consultant and have nothing to sell, here.</description>
     </item>
     
     <item>
@@ -1380,8 +1127,7 @@ Up until last year, one of my sites was wildly popular: militate.com. Note that 
       <pubDate>Tue, 24 Jul 2007 08:15:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/open-source-management-feeling-a-bit-vindicated/</guid>
-      <description>Funny coincidence: mere days after I decide to re-post my views on open-source, Daniel Robbins, of Gentoo fame, decides to post a late-night rant trying to address the shortcomings of the Gentoo Foundation.
-More interesting than his original post, though, I enjoyed reading most comments as well as his own answers to these comments. The phrase &amp;ldquo; Benevolent Dictator &amp;ldquo; emerges fairly early on, and obviously this is what it is about.</description>
+      <description>Funny coincidence: mere days after I decide to re-post my views on open-source, Daniel Robbins, of Gentoo fame, decides to post a late-night rant trying to address the shortcomings of the Gentoo Foundation.</description>
     </item>
     
     <item>
@@ -1390,9 +1136,7 @@ More interesting than his original post, though, I enjoyed reading most comments
       <pubDate>Mon, 16 Jul 2007 07:35:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/opensifrr-now-for-windows/</guid>
-      <description>A couple months ago, I made a post about my new toy: OpensIFRr , which lets you easily create awesome Flash files that you can use to render just about any font in your web pages.
-I was pleased with the feedback it got but of course a lot of readers asked about the Windows version.
-Well, it&amp;rsquo;s here now! In the process I&amp;rsquo;ve learned a thing or two about Nullsoft&amp;rsquo;s Scripting Engine :)</description>
+      <description>A couple months ago, I made a post about my new toy: OpensIFRr, which lets you easily create awesome Flash files that you can use to render just about any font in your web pages.</description>
     </item>
     
     <item>
@@ -1401,12 +1145,7 @@ Well, it&amp;rsquo;s here now! In the process I&amp;rsquo;ve learned a thing or 
       <pubDate>Mon, 02 Jul 2007 00:19:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/flv-player/</guid>
-      <description>The player I used in my previous post ( &amp;lsquo;nBBS Admin CP&amp;rsquo; ) is now available in the Wordpress.org&amp;rsquo;s plugin directory.
-A quick overview:
- This plugin lets you embed a flash stream using Geoff Stearn&amp;rsquo;s player.
- You can embed multiple movies in the same page and/or post.
- You can embed movies in posts and comments.
- You can specify a width and a height to override the default values of 640x480.</description>
+      <description>The player I used in my previous post ( &amp;lsquo;nBBS Admin CP&amp;rsquo; ) is now available in the Wordpress.org&amp;rsquo;s plugin directory.</description>
     </item>
     
     <item>
@@ -1415,11 +1154,7 @@ A quick overview:
       <pubDate>Mon, 02 Jul 2007 00:03:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/nextbbs-new-admin-cp-preview/</guid>
-      <description>Soon to be unleashed on your unsuspecting screens (well&amp;hellip;if you&amp;rsquo;re using NextBBS, that is *):
-[flvplayer http://www.nextbbs.com/D/acp2.flv]
-.
-See Topic Here
-*: if you&amp;rsquo;re not, you really should :)</description>
+      <description>Soon to be unleashed on your unsuspecting screens (well&amp;hellip;if you&amp;rsquo;re using NextBBS, that is *):[flvplayer http://www.nextbbs.com/D/acp2.flv]</description>
     </item>
     
     <item>
@@ -1428,10 +1163,7 @@ See Topic Here
       <pubDate>Sat, 24 Mar 2007 22:29:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/os-x-please-try-installing-again/</guid>
-      <description>It&amp;rsquo;s like this message has become a feature of OS X.
-You download a .dmg, double-click and expect that all your files should be an exact copy of the original install files. And yet, sometimes, you get stuck with this message.
-Here is a very simple fix that works 90% of the time: make sure that your post-install script can be executed!
-Open a shell window, go to where your package is, and type:</description>
+      <description>It&amp;rsquo;s like this message has become a feature of OS X.</description>
     </item>
     
     <item>
@@ -1440,9 +1172,7 @@ Open a shell window, go to where your package is, and type:</description>
       <pubDate>Mon, 15 Jan 2007 00:11:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/where-is-getelementsbyclassname/</guid>
-      <description>Since one of the goals of this blog is to show you how we resolved some of the issues we encounter when writing modern Web applications, allow me to repost this short article that I originall posted at goodjavascript.com
-It&amp;rsquo;s an extremely common problem: you want to retrieve all the &amp;ldquo;special&amp;rdquo; links embedded in your web page. Or all the text areas with a certain style.
-You looked at someone else&amp;rsquo;s code and found that they use the method getElementsByClassName() profusely.</description>
+      <description>Since one of the goals of this blog is to show you how we resolved some of the issues we encounter when writing modern Web applications, allow me to repost this short article that I originall posted at goodjavascript.com</description>
     </item>
     
     <item>
@@ -1451,10 +1181,7 @@ You looked at someone else&amp;rsquo;s code and found that they use the method g
       <pubDate>Mon, 01 Jan 2007 04:00:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/create-your-own-webtop-in-phpjs-in-no-time/</guid>
-      <description>They are everywhere: protopage, pageflakes, netvibes et al are free, easy to use -as long as you have a powerful browser- and moderatly eye-pleasing.
-SO?
-A couple months ago, I wondered how long it would take me to build my own &amp;lsquo;WebTop&amp;rsquo; (You can play with it here). The challenge would be to get it to a satisfactory state over a week-end.
-Of course, I decided to use existing open-source code for the applications&amp;rsquo; primary needs.</description>
+      <description>They are everywhere: protopage, pageflakes, netvibes et al are free, easy to use -as long as you have a powerful browser- and moderatly eye-pleasing.</description>
     </item>
     
     <item>
@@ -1463,7 +1190,7 @@ Of course, I decided to use existing open-source code for the applications&amp;r
       <pubDate>Sun, 10 Dec 2006 09:26:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/cd-v2-nextbbs-multi/</guid>
-      <description>![nextBBS](/images/logo_nextbbs.png)Well, after spending quite some time cleaning up the code, making sure that no &#39;dangerous&#39; Admin CP operation is available in multi-boards mode, and identifying which settings need to be made immutable, we are almost there. I am currently working on the automatic setup script. Remaining to do: **mkdir** servers/SERVERID servers/SERVERID/attachments servers/SERVERID/avatars servers/SERVERID/emoticons servers/SERVERID/lang servers/SERVERID/lang/en servers/SERVERID/uploads servers/SERVERID/templates servers/SERVERID/templates/* servers/SERVERID/templates/*_c **cp** servers/SERVERID/emoticons/* servers/SERVERID/templates/*[!_c]/* Note that the only &#39;router&#39; module currently ready is the one based on subdomains.</description>
+      <description>Well, after spending quite some time cleaning up the code, making sure that no &amp;lsquo;dangerous&amp;rsquo; Admin CP operation is available in multi-boards mode, and identifying which settings need to be made immutable, we are almost there.</description>
     </item>
     
     <item>
@@ -1472,7 +1199,7 @@ Of course, I decided to use existing open-source code for the applications&amp;r
       <pubDate>Thu, 07 Dec 2006 07:33:46 +0000</pubDate>
       
       <guid>http://zteo.com/posts/opening-of-this-development-blog/</guid>
-      <description>Not much to say. It&#39;s open!  </description>
+      <description>Not much to say. It&amp;rsquo;s open!</description>
     </item>
     
     <item>
@@ -1481,11 +1208,7 @@ Of course, I decided to use existing open-source code for the applications&amp;r
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/google-again/</guid>
-      <description>In this post:
- Google+ on your Mac, using its own credentials
- Google+ as its own desktop app, with a nice icon
- Using a complex GreaseMonkey script in Safari or Fluid
-  I really like Google+ but I have more than one Google account so it was a pain to use because Google&amp;rsquo;s cookies are shared among all Google services and I had to constantly switch accounts.</description>
+      <description>In this post:	Google+ on your Mac, using its own credentials	Google+ as its own desktop app, with a nice icon	Using a complex GreaseMonkey script in Safari or Fluid</description>
     </item>
     
     <item>
@@ -1494,8 +1217,7 @@ Of course, I decided to use existing open-source code for the applications&amp;r
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
       
       <guid>http://zteo.com/posts/twitterified-v13-is-out-fixes-improvements-presently-support/</guid>
-      <description>Well, the title pretty much says it all: v1.3 is now officially out.
-It is not a revolutionary new release, it simply fixes some bugs</description>
+      <description>Well, the title pretty much says it all: v1.3 is now officially out.</description>
     </item>
     
   </channel>

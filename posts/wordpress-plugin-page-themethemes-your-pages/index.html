@@ -23,8 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/7f4d63d7-ce0c-46ad-bf5f-586bf97f1e71.jpg" />
     
-    <meta name="twitter:description" content="I was quite surprised, when looking for a way to assign different themes to some pages, to not manage to find an easy way to do that. It is not baked into WordPress, and I could not find a suitable plugin either.
-I had, a while ago, created a tiny plugin that did just that for me but it was way too simple and unfriendly to configure. I eventually stumbled upon the &lsquo;domain theme&rsquo; plugin which, even though it does not do what I need, at least showed me that there is a way to perform a proper theme switch cleanly." />
+    <meta name="twitter:description" content="I was quite surprised, when looking for a way to assign different themes to some pages, to not manage to find an easy way to do that. It is not baked into WordPress, and I could not find a suitable plugin either.I had, a while ago, created a tiny plugin that did just that for me but it was way too simple and unfriendly to configure. I eventually stumbled upon the &lsquo;domain theme&rsquo; plugin which, even though it does not do what I need, at least showed me that there is a way to perform a proper theme switch cleanly.Note: if you&rsquo;ve been reading this intro, thinking: &ldquo;But there is a way to switch templates!&quot;, then you&rsquo;re right because there is; however I am not talking about templates but themes. Templates are pre-recorded page structures whereas themes are about changing your blog&rsquo;s complete look and feel, including logo, stylesheet, etc." />
     <meta name="twitter:url" content="http://zteo.com/posts/wordpress-plugin-page-themethemes-your-pages/" />
     
 
@@ -34,7 +33,7 @@ I had, a while ago, created a tiny plugin that did just that for me but it was w
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +74,7 @@ I had, a while ago, created a tiny plugin that did just that for me but it was w
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/wordpress-plugin-page-themethemes-your-pages/"
+          "@id": "http:\/\/zteo.com\/posts\/wordpress-plugin-page-themethemes-your-pages\/"
         },
         "headline": "Wordpress Plugin: Page-Theme...themes your pages!",
         "description": "Wordpress Plugin: Page-Theme...themes your pages!",
@@ -92,9 +91,9 @@ I had, a while ago, created a tiny plugin that did just that for me but it was w
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -104,13 +103,13 @@ I had, a while ago, created a tiny plugin that did just that for me but it was w
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/7f4d63d7-ce0c-46ad-bf5f-586bf97f1e71.jpg",
+          "url": "http:\/\/zteo.com\/7f4d63d7-ce0c-46ad-bf5f-586bf97f1e71.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2010-06-06",
         "dateModified": "2010-06-06",
-        "wordCount": 296,
+        "wordCount":  296 ,
         
     }
     </script>
@@ -190,6 +189,16 @@ I had, a while ago, created a tiny plugin that did just that for me but it was w
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,36 +222,38 @@ I had, a while ago, created a tiny plugin that did just that for me but it was w
                 
                 
 
-                <p><img src="/images/3295125837_3e01677dde_b-300x168.jpg" alt="" /><br />
+
+                
+                    <p><img src="/images/3295125837_3e01677dde_b-300x168.jpg" alt=""><br>
 I was quite surprised, when looking for a way to assign different themes to
 some pages, to not manage to find an easy way to do that. It is not baked into
-WordPress, and I could not find a suitable plugin either.<br />
+WordPress, and I could not find a suitable plugin either.<br>
 I had, a while ago, created a tiny plugin that did just that for me but it was
 way too simple and unfriendly to configure. I eventually stumbled upon the
 &lsquo;domain theme&rsquo; plugin which, even though it does not do what I need, at least
-showed me that there is a way to perform a proper theme switch cleanly.<br />
+showed me that there is a way to perform a proper theme switch cleanly.<br>
 Note: if you&rsquo;ve been reading this intro, thinking: &ldquo;But there <em>is</em> a way to
-switch templates!&ldquo;, then you&rsquo;re right because there is; however I am not
+switch templates!&quot;, then you&rsquo;re right because there is; however I am not
 talking about templates but themes. Templates are pre-recorded page structures
 whereas themes are about changing your blog&rsquo;s complete look and feel,
 including logo, stylesheet, etc.</p>
-
 <p>Hence, <strong>page-theme</strong> : a simple plugin with a friendly user interface that
 lets you specify a given theme for any of your pages. Here is what it looks
-like:<br />
-<img src="/images/Page-Theme-Options-‹-The-Nexus-—-WordPress-1.jpg" alt="" /></p>
-
+like:<br>
+<img src="/images/Page-Theme-Options-%E2%80%B9-The-Nexus-%E2%80%94-WordPress-1.jpg" alt=""></p>
 <p>Two limitations you need to be aware of:</p>
-
 <ol>
-<li><p>This plugin is called very early on during the process of rendering a web page; so early, in fact, that I had to come up with my own way to detect which page you are looking at. This works well as long as you are using &ldquo;pretty links&rdquo; (e.g. &ldquo;yourdomain.com/2010/05/mypagename&rdquo;) but will not work with the other type of links (e.g. &ldquo;yourdomain.com/?p=5&rdquo;)</p></li>
-
-<li><p>Only pages are currently handled. Posts could also get their own theme, but I would need to modify the plugin to support this. Just let me know if you would like to see this feature implemented.</p></li>
+<li>
+<p>This plugin is called very early on during the process of rendering a web page; so early, in fact, that I had to come up with my own way to detect which page you are looking at. This works well as long as you are using &ldquo;pretty links&rdquo; (e.g. &ldquo;yourdomain.com/2010/05/mypagename&rdquo;) but will not work with the other type of links (e.g. &ldquo;yourdomain.com/?p=5&rdquo;)</p>
+</li>
+<li>
+<p>Only pages are currently handled. Posts could also get their own theme, but I would need to modify the plugin to support this. Just let me know if you would like to see this feature implemented.</p>
+</li>
 </ol>
-
-<p>So, if you&rsquo;re interested, go get it now:<br />
+<p>So, if you&rsquo;re interested, go get it now:<br>
 <a href="http://wordpress.org/extend/plugins/page-theme/">http://wordpress.org/extend/plugins/page-theme/</a></p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -289,11 +300,35 @@ like:<br />
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -310,7 +345,7 @@ like:<br />
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on The Nexus</title>
@@ -6,13 +6,31 @@
     <description>Recent content in Tags on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Sep 2018 13:33:01 -1400</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 10:54:24 +0200</lastBuildDate>
     
 	<atom:link href="http://zteo.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Functional</title>
+      <title>kubernetes</title>
+      <link>http://zteo.com/tags/kubernetes/</link>
+      <pubDate>Wed, 29 Apr 2020 10:54:24 +0200</pubDate>
+      
+      <guid>http://zteo.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>service mesh</title>
+      <link>http://zteo.com/tags/service-mesh/</link>
+      <pubDate>Wed, 29 Apr 2020 10:54:24 +0200</pubDate>
+      
+      <guid>http://zteo.com/tags/service-mesh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional</title>
       <link>http://zteo.com/tags/functional/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1400</pubDate>
       
@@ -21,7 +39,7 @@
     </item>
     
     <item>
-      <title>Reason</title>
+      <title>reason</title>
       <link>http://zteo.com/tags/reason/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1400</pubDate>
       

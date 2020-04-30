@@ -23,9 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/3e8598f9-a6bb-419f-8fbb-1f6d2e15493e.jpg" />
     
-    <meta name="twitter:description" content="I am a huge fan of SuperGenPass. There are so many obvious reasons why it&rsquo;s a great concept that I won&rsquo;t bore you with a rehash of all of them.
-Unfortunately, in Google Chrome, SuperGenPass chokes on some pages. I do not blame Chrome for that: it&rsquo;s for security reasons.
-I&rsquo;ve patched the basic version of SuperGenPass so that it can now work on those pages. I am not sure that it fixes everything for everybody but I hope it makes your life easier, like it does mine." />
+    <meta name="twitter:description" content="I am a huge fan of SuperGenPass. There are so many obvious reasons why it&rsquo;s a great concept that I won&rsquo;t bore you with a rehash of all of them.Unfortunately, in Google Chrome, SuperGenPass chokes on some pages. I do not blame Chrome for that: it&rsquo;s for security reasons." />
     <meta name="twitter:url" content="http://zteo.com/posts/supergenpass-patched-for-google-chrome/" />
     
 
@@ -35,7 +33,7 @@ I&rsquo;ve patched the basic version of SuperGenPass so that it can now work on 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +74,7 @@ I&rsquo;ve patched the basic version of SuperGenPass so that it can now work on 
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/supergenpass-patched-for-google-chrome/"
+          "@id": "http:\/\/zteo.com\/posts\/supergenpass-patched-for-google-chrome\/"
         },
         "headline": "SuperGenPass patched for Google Chrome",
         "description": "SuperGenPass patched for Google Chrome",
@@ -93,9 +91,9 @@ I&rsquo;ve patched the basic version of SuperGenPass so that it can now work on 
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -105,13 +103,13 @@ I&rsquo;ve patched the basic version of SuperGenPass so that it can now work on 
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/3e8598f9-a6bb-419f-8fbb-1f6d2e15493e.jpg",
+          "url": "http:\/\/zteo.com\/3e8598f9-a6bb-419f-8fbb-1f6d2e15493e.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2009-12-01",
         "dateModified": "2009-12-01",
-        "wordCount": 130,
+        "wordCount":  130 ,
         
     }
     </script>
@@ -191,6 +189,16 @@ I&rsquo;ve patched the basic version of SuperGenPass so that it can now work on 
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -214,31 +222,28 @@ I&rsquo;ve patched the basic version of SuperGenPass so that it can now work on 
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/rattodisabina/2460905893/"><img src="/images/2460905893_0c3fc213c5-300x225.jpg" alt="" /></a>I
+
+                
+                    <p><a href="http://www.flickr.com/photos/rattodisabina/2460905893/"><img src="/images/2460905893_0c3fc213c5-300x225.jpg" alt=""></a>I
 am a huge fan of <a href="http://supergenpass.com/">SuperGenPass</a>. There are so many
 obvious reasons why it&rsquo;s a great concept that I won&rsquo;t bore you with a rehash
-of all of them.<br />
+of all of them.<br>
 Unfortunately, in Google Chrome, SuperGenPass chokes on some pages. I do not
 blame Chrome for that: it&rsquo;s for security reasons.</p>
-
 <p>I&rsquo;ve patched the basic version of SuperGenPass so that it can now work on
 those pages. I am not sure that it fixes everything for everybody but I hope
 it makes your life easier, like it does mine.</p>
-
 <p>Just <strong><a href="http://www.voilaweb.com/tools/sgpchrome.html">go to this page</a></strong> and
 get the patched bookmark.</p>
-
 <p>If you are using a customized bookmark, I am afraid that you will have to
 patch it yourself. Here is what the patch looks like:</p>
-
 <p><em>Look for</em></p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span><span class="o">%</span><span class="mi">20</span><span class="nx">FrameTest</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">frames</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">src</span><span class="p">;</span>
-</code></pre></div>
-<p><em>Replace with</em></p>
+</code></pre></div><p><em>Replace with</em></p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span><span class="o">%</span><span class="mi">20</span><span class="nx">FrameTest</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">frames</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">src</span><span class="p">;</span><span class="kd">var</span><span class="o">%</span><span class="mi">20</span><span class="nx">FrameTest</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">frames</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">src</span><span class="p">;</span><span class="nx">FrameTest</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">frames</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">;</span>
-</code></pre></div>
-<p>Done!</p>
+</code></pre></div><p>Done!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -285,11 +290,35 @@ patch it yourself. Here is what the patch looks like:</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -306,7 +335,7 @@ patch it yourself. Here is what the patch looks like:</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

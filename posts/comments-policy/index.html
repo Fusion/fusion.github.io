@@ -21,8 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Comments Policy" />
     
-    <meta name="twitter:description" content="This sets forth Zteo&rsquo;s policy with regard to the use of Spam marketing techniques in connection with Internet Marketing. In the event that we deem you to be in violation of these policies, we shall immediately revoke your membership rights and close any active account.
-We have a strict policy against spamming. We forbid the sending of unsolicited mass Emails or unsolicited Emails of any kind in connection with the marketing of our programs, products and services." />
+    <meta name="twitter:description" content="This sets forth Zteo&rsquo;s policy with regard to the use of Spam marketing techniques in connection with Internet Marketing. In the event that we deem you to be in violation of these policies, we shall immediately revoke your membership rights and close any active account." />
     <meta name="twitter:url" content="http://zteo.com/posts/comments-policy/" />
     
 
@@ -32,7 +31,7 @@ We have a strict policy against spamming. We forbid the sending of unsolicited m
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -73,7 +72,7 @@ We have a strict policy against spamming. We forbid the sending of unsolicited m
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/comments-policy/"
+          "@id": "http:\/\/zteo.com\/posts\/comments-policy\/"
         },
         "headline": "Comments Policy",
         "description": "Comments Policy",
@@ -90,9 +89,9 @@ We have a strict policy against spamming. We forbid the sending of unsolicited m
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -109,7 +108,7 @@ We have a strict policy against spamming. We forbid the sending of unsolicited m
         },
         "datePublished": "2012-11-21",
         "dateModified": "2012-11-21",
-        "wordCount": 235,
+        "wordCount":  235 ,
         
     }
     </script>
@@ -189,6 +188,16 @@ We have a strict policy against spamming. We forbid the sending of unsolicited m
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -212,21 +221,20 @@ We have a strict policy against spamming. We forbid the sending of unsolicited m
                 
                 
 
-                <p>This sets forth Zteo&rsquo;s policy with regard to the use of Spam marketing
+
+                
+                    <p>This sets forth Zteo&rsquo;s policy with regard to the use of Spam marketing
 techniques in connection with Internet Marketing. In the event that we deem
 you to be in violation of these policies, we shall immediately revoke your
 membership rights and close any active account.</p>
-
 <p>We have a strict policy against spamming. We forbid the sending of unsolicited
 mass Emails or unsolicited Emails of any kind in connection with the marketing
 of our programs, products and services.</p>
-
 <p>We reserve the right to terminate your account and participation in our
 programs &ldquo;for cause&rdquo; if we deem you to be in violation of our anti-spamming
 policies. We also reserve the right to suspend your account and participation
 pending review upon receipt of any complaint or other evidence that you may be
 engaging in any spamming activity.</p>
-
 <p>We consider spamming to be any activity whereby you directly or indirectly
 transmit email messages to any email address that has not solicited such email
 and does not consent to such transmission. We also consider spamming to
@@ -234,10 +242,10 @@ constitute posting advertisements in our community areas in violation of the
 terms of participation in such areas, that are off topic, in areas that do not
 specifically permit advertisements. We also consider it spamming when
 advertisements are sent through messaging.</p>
-
 <p>If you are spammed by anyone regarding our products, services, web site, or
 any other matters, please report this activity to abuse [at] voilaweb.com</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -284,11 +292,35 @@ any other matters, please report this activity to abuse [at] voilaweb.com</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -305,7 +337,7 @@ any other matters, please report this activity to abuse [at] voilaweb.com</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

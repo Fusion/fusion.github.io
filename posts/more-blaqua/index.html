@@ -34,7 +34,7 @@ I am still using his icon set in my Dock, unfortunately the set was created befo
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +75,7 @@ I am still using his icon set in my Dock, unfortunately the set was created befo
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/more-blaqua/"
+          "@id": "http:\/\/zteo.com\/posts\/more-blaqua\/"
         },
         "headline": "More Blaqua",
         "description": "More Blaqua",
@@ -92,9 +92,9 @@ I am still using his icon set in my Dock, unfortunately the set was created befo
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -111,7 +111,7 @@ I am still using his icon set in my Dock, unfortunately the set was created befo
         },
         "datePublished": "2008-12-28",
         "dateModified": "2008-12-28",
-        "wordCount": 118,
+        "wordCount":  118 ,
         
     }
     </script>
@@ -191,6 +191,16 @@ I am still using his icon set in my Dock, unfortunately the set was created befo
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -214,23 +224,22 @@ I am still using his icon set in my Dock, unfortunately the set was created befo
                 
                 
 
-                <p><img src="/images/moreblaqua.png" alt="moreblaqua" /></p>
 
+                
+                    <p><img src="/images/moreblaqua.png" alt="moreblaqua"></p>
 <p>A couple years ago, some lad going by the pseudonym of @binderskagnaes, at
 <a href="http://binderskagnaes.deviantart.com/art/Blaqua-35443206">DeviantArt</a>,
 released a set of icons on a dark background lovingly named &ldquo;Blaqua.&rdquo;</p>
-
-<p>Then, he ventured to a great forest and got devoured. Or something.<br />
-Whatever the reason, he never created more icons, which frankly is a pity.<br />
+<p>Then, he ventured to a great forest and got devoured. Or something.<br>
+Whatever the reason, he never created more icons, which frankly is a pity.<br>
 I am still using his icon set in my Dock, unfortunately the set was created
-before Twitter got popular, uTorrent or Evernote were released on OS X, etc.<br />
+before Twitter got popular, uTorrent or Evernote were released on OS X, etc.<br>
 So, I took a few hours to re-create an original dark PSD and put together a
 pack of 24 new icons.</p>
-
 <p>I will create more packs if my beloved readers suggest more applications.</p>
-
 <p>In the meantime, <a href="http://cyansmoker.deviantart.com/art/More-Blaqua-107615954"><strong>go get it</strong></a>!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -277,11 +286,35 @@ pack of 24 new icons.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -298,7 +331,7 @@ pack of 24 new icons.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

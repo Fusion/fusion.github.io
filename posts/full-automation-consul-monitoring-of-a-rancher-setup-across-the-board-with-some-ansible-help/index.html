@@ -23,8 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/d703a14c-5cee-4c0a-8f0e-88cc7f159a69.png" />
     
-    <meta name="twitter:description" content="Full automation: Consul monitoring of a Rancher setup across the board, with some Ansible help.﻿
-(https://github.com/Fusion/consul-in-rancher)" />
+    <meta name="twitter:description" content="Full automation: Consul monitoring of a Rancher setup across the board, with some Ansible help.﻿" />
     <meta name="twitter:url" content="http://zteo.com/posts/full-automation-consul-monitoring-of-a-rancher-setup-across-the-board-with-some-ansible-help/" />
     
 
@@ -34,7 +33,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +74,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/full-automation-consul-monitoring-of-a-rancher-setup-across-the-board-with-some-ansible-help/"
+          "@id": "http:\/\/zteo.com\/posts\/full-automation-consul-monitoring-of-a-rancher-setup-across-the-board-with-some-ansible-help\/"
         },
         "headline": "Full automation: Consul monitoring of a Rancher setup across the board, with some Ansible help.",
         "description": "Full automation: Consul monitoring of a Rancher setup across the board, with some Ansible help.",
@@ -92,9 +91,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -104,13 +103,13 @@
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/d703a14c-5cee-4c0a-8f0e-88cc7f159a69.png",
+          "url": "http:\/\/zteo.com\/d703a14c-5cee-4c0a-8f0e-88cc7f159a69.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2016-04-10",
         "dateModified": "2016-04-10",
-        "wordCount": 16,
+        "wordCount":  16 ,
         
     }
     </script>
@@ -190,6 +189,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,11 +222,13 @@
                 
                 
 
-                <p>Full automation: Consul monitoring of a Rancher setup across the board, with
-some Ansible help.﻿</p>
 
+                
+                    <p>Full automation: Consul monitoring of a Rancher setup across the board, with
+some Ansible help.﻿</p>
 <p>(<a href="https://github.com/Fusion/consul-in-rancher">https://github.com/Fusion/consul-in-rancher</a>)</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -264,11 +275,35 @@ some Ansible help.﻿</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -285,7 +320,7 @@ some Ansible help.﻿</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

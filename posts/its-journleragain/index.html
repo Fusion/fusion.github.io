@@ -23,10 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/e305c880-b9ea-45ee-9445-bdd637a99dba.png" />
     
-    <meta name="twitter:description" content="It&rsquo;s Journler&hellip;Again!
-Many Mac users are aware of the now abandoned/open-sourced excellent productivity/journaling application known as Journler.
-Philip Dow, Journler&rsquo;s author, is obviously a stand-up guy and felt that he needed to work one last time on Journler to add Snow Leopard compatibility while open-sourcing it.
-Here we are now, a few years later, and many Mac enthusiasts &ndash; me included &ndash; still use Journler, even if it&rsquo;s not a daily thing." />
+    <meta name="twitter:description" content="It&rsquo;s Journler&hellip;Again!" />
     <meta name="twitter:url" content="http://zteo.com/posts/its-journleragain/" />
     
 
@@ -36,7 +33,7 @@ Here we are now, a few years later, and many Mac enthusiasts &ndash; me included
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,10 +74,10 @@ Here we are now, a few years later, and many Mac enthusiasts &ndash; me included
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/its-journleragain/"
+          "@id": "http:\/\/zteo.com\/posts\/its-journleragain\/"
         },
-        "headline": "It&#39;s Journler...Again!",
-        "description": "It&#39;s Journler...Again!",
+        "headline": "It\x27s Journler...Again!",
+        "description": "It\x27s Journler...Again!",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -94,9 +91,9 @@ Here we are now, a few years later, and many Mac enthusiasts &ndash; me included
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -106,13 +103,13 @@ Here we are now, a few years later, and many Mac enthusiasts &ndash; me included
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/e305c880-b9ea-45ee-9445-bdd637a99dba.png",
+          "url": "http:\/\/zteo.com\/e305c880-b9ea-45ee-9445-bdd637a99dba.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2012-09-22",
         "dateModified": "2012-09-22",
-        "wordCount": 207,
+        "wordCount":  207 ,
         
     }
     </script>
@@ -192,6 +189,16 @@ Here we are now, a few years later, and many Mac enthusiasts &ndash; me included
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,33 +222,30 @@ Here we are now, a few years later, and many Mac enthusiasts &ndash; me included
                 
                 
 
-                <p><img src="/images/Snapshot-92212-335-PM-300x242.png" alt="" />It&rsquo;s
-Journler&hellip;Again!</p>
 
+                
+                    <p><img src="/images/Snapshot-92212-335-PM-300x242.png" alt="">It&rsquo;s
+Journler&hellip;Again!</p>
 <p>Many Mac users are aware of the now abandoned/open-sourced excellent
 productivity/journaling application known as <a href="http://journler.com/">Journler</a>.</p>
-
 <p>Philip Dow, Journler&rsquo;s author, is obviously a stand-up guy and felt that he
 needed to work one last time on Journler to add Snow Leopard compatibility
 while open-sourcing it.</p>
-
 <p>Here we are now, a few years later, and many Mac enthusiasts &ndash; me included &ndash;
 still use Journler, even if it&rsquo;s not a daily thing. So, I forked the project
 on Github and made a few minor modifications and you can now download a more
 Lion and Mountain-Lion friendly version of Journler.</p>
-
 <p>I want to make very clear that I am not the author of Journler and if you use
 Phil&rsquo;s application, he&rsquo;s the person you need to be grateful to. Inf act, if
 you enjoy Journler &ndash; or, in my incarnation, &ldquo;Journler Again,&rdquo; I encourage you
 to <a href="http://www.journler.com/purchase/index.php">buy a license</a> from Phil&rsquo;s site.</p>
-
 <p>No, you do not have to; the application is fully functional and there is no
 limit of any kind on how you can use it. It would be nice of you to buy that
 license but considering you are getting very little (or no) support, it&rsquo;s
 definitely up to you.</p>
-
 <p><a href="/journler-again/">Get it from the project page</a></p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -288,11 +292,35 @@ definitely up to you.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -309,7 +337,7 @@ definitely up to you.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

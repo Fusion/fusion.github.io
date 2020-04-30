@@ -21,8 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Ext Licensing: Oh, what a mess." />
     
-    <meta name="twitter:description" content="When things start smelling &ldquo;funny&rdquo; in the open-source community, they tend to go to the dogs with the haste of a drunk marching band.
-Today&rsquo;s drama is brought to you by your friendly ExtJS community. For those of you not familiar with ExtJS, it is a professionally made Javascript library that allows web application developers to create very elaborate desktop-like applications. Jack Slocum originally started this project as a YUI extension." />
+    <meta name="twitter:description" content="When things start smelling &ldquo;funny&rdquo; in the open-source community, they tend to go to the dogs with the haste of a drunk marching band." />
     <meta name="twitter:url" content="http://zteo.com/posts/ext-licensing-oh-what-a-mess/" />
     
 
@@ -32,7 +31,7 @@ Today&rsquo;s drama is brought to you by your friendly ExtJS community. For thos
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -73,7 +72,7 @@ Today&rsquo;s drama is brought to you by your friendly ExtJS community. For thos
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/ext-licensing-oh-what-a-mess/"
+          "@id": "http:\/\/zteo.com\/posts\/ext-licensing-oh-what-a-mess\/"
         },
         "headline": "Ext Licensing: Oh, what a mess.",
         "description": "Ext Licensing: Oh, what a mess.",
@@ -90,9 +89,9 @@ Today&rsquo;s drama is brought to you by your friendly ExtJS community. For thos
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -109,7 +108,7 @@ Today&rsquo;s drama is brought to you by your friendly ExtJS community. For thos
         },
         "datePublished": "2008-04-27",
         "dateModified": "2008-04-27",
-        "wordCount": 547,
+        "wordCount":  547 ,
         
     }
     </script>
@@ -189,6 +188,16 @@ Today&rsquo;s drama is brought to you by your friendly ExtJS community. For thos
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -212,11 +221,11 @@ Today&rsquo;s drama is brought to you by your friendly ExtJS community. For thos
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/liquidx/594290795/" title="Lego Soap Opera"><img src="/images/594290795_fb37c77e06_m.jpg" alt="Lego Soap
-Opera" /></a>When things start smelling &ldquo;funny&rdquo; in the open-source
+
+                
+                    <p><a href="http://www.flickr.com/photos/liquidx/594290795/" title="Lego Soap Opera"><img src="/images/594290795_fb37c77e06_m.jpg" alt="Lego SoapOpera"></a>When things start smelling &ldquo;funny&rdquo; in the open-source
 community, they tend to go to the dogs with the haste of a drunk marching
 band.</p>
-
 <p>Today&rsquo;s drama is brought to you by your friendly ExtJS community. For those of
 you not familiar with <a href="http://extjs.com">ExtJS</a>, it is a professionally made
 Javascript library that allows web application developers to create very
@@ -227,20 +236,17 @@ JQuery and finally a full-ExtJS solution, reaching ExtJS 2.0. For those of you
 who have managed not to fall asleep while reading my ramblings, you already
 know that I&rsquo;ve used ExtJS myself, for instance when I created the ExtPHP
 wrapper.</p>
-
 <p>Where this gets complicated is that Jack decided to license the assets under a
 different license, allowing him to retain all rights. I would like to make
 very clear that it&rsquo;s <strong>his</strong> work and he can do <strong>whatever he wants</strong> with it.
 I am just narrating, here. He also added a clause that supposedly completely
 voids the LGPL license if someone attempted to use his work to create a
 derivative framework.</p>
-
 <p>After a lot of moaning in the community - to the drum of &ldquo;that&rsquo;s a GNU
-license, man, the whole idea is that you cannot add restrictions!&ldquo;, he decided
+license, man, the whole idea is that you cannot add restrictions!&quot;, he decided
 to change the LGPL license to a pure GPL one, while retaining a pure
 commercial license on the side. I&rsquo;ll bet he thought, at that point, &ldquo;At least
 now things are clear.&rdquo;</p>
-
 <p>Well, that was only the beginning of a real sh*tstorm that threatens to cause
 a lot of damage to everyone involved, culminating -fleetingly, to be sure-
 with Sanjiv Jivan&rsquo;s scathing <a href="http://www.jroller.com/sjivan/entry/my_response_to_jack_slocum">blog
@@ -250,17 +256,15 @@ note that there is another project, apparently endorsed by Jack, that connects
 ExtJS and GWT. Sanjiv decided that he would fork the last LGPL release of
 ExtJS and start a new project. You may remember that Jack tried to prevent
 this by adding a provision in his license agreement.</p>
-
 <p>The crux of Sanjiv&rsquo;s beef with Jack Slocum is this: Jack created a great
 product, led people to believe that it was truly open-source when it wasn&rsquo;t,
 and doesn&rsquo;t understand open-source licenses. Jack is greedy. Now, the crux of
 Jack&rsquo;s beef with Sanjiv is this: Sanjiv created a nice tool based on hits
 product, doesn&rsquo;t understand open-source licenses and, oh, is greedy.</p>
-
 <p>So, our protagonists are not talking to each other. This love story was
 consumed a long time ago. And potential &ldquo;corporate&rdquo; customers, like me, are
 revisiting the possibility of building their product on top of pure JQuery
-extensions and living happily ever after.<br />
+extensions and living happily ever after.<br>
 Now, in a move that would shame any seasoned soap opera writer, a new
 character enters left stage. And her name is
 <a href="http://sourceforge.net/projects/openext/">OpenEXT</a>. Contrary to what Dion
@@ -268,9 +272,9 @@ Almar <a href="http://ajaxian.com/archives/openext-the-fork">wrote</a>, it is no
 the idea is to create patches that can be dropped on top of ExtJS. Now, I am
 curious: was Dion right when he posted his own piece on the topic? After all,
 things seem to change at a meteoric pace around here.</p>
-
 <p>Anyway, stay tuned for even more implausible developments!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -317,11 +321,35 @@ things seem to change at a meteoric pace around here.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -338,7 +366,7 @@ things seem to change at a meteoric pace around here.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

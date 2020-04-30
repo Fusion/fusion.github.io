@@ -21,11 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Here Comes Kodachi!" />
     
-    <meta name="twitter:description" content="Oh, man. Jack of all trades, master of&hellip;not many?
-This week, my frustration over not finding a QuickSilver-like tool for Windows, was at an all-time high.
-Do not get me wrong: Colibri and Launchy are fine tools. They just do not have this QuickSilver-like feel that I miss so much at work.
-Fortunately, I came upon Kodachi completely by chance and I really like the tool.
-Unfortunately, there was no executable available, only source code." />
+    <meta name="twitter:description" content="Oh, man. Jack of all trades, master of&hellip;not many?" />
     <meta name="twitter:url" content="http://zteo.com/posts/here-comes-kodachi/" />
     
 
@@ -35,7 +31,7 @@ Unfortunately, there was no executable available, only source code." />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +72,7 @@ Unfortunately, there was no executable available, only source code." />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/here-comes-kodachi/"
+          "@id": "http:\/\/zteo.com\/posts\/here-comes-kodachi\/"
         },
         "headline": "Here Comes Kodachi!",
         "description": "Here Comes Kodachi!",
@@ -93,9 +89,9 @@ Unfortunately, there was no executable available, only source code." />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -112,7 +108,7 @@ Unfortunately, there was no executable available, only source code." />
         },
         "datePublished": "2007-11-04",
         "dateModified": "2007-11-04",
-        "wordCount": 168,
+        "wordCount":  168 ,
         
     }
     </script>
@@ -192,6 +188,16 @@ Unfortunately, there was no executable available, only source code." />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,38 +221,35 @@ Unfortunately, there was no executable available, only source code." />
                 
                 
 
-                <p><img src="/images/kodachi.png" alt="Kodachi" /> Oh, man. Jack of
-all trades, master of&hellip;not many?</p>
 
+                
+                    <p><img src="/images/kodachi.png" alt="Kodachi"> Oh, man. Jack of
+all trades, master of&hellip;not many?</p>
 <p>This week, my frustration over not finding a
 <a href="http://docs.blacktree.com/quicksilver/what_is_quicksilver">QuickSilver</a>-like
 tool for Windows, was at an all-time high.</p>
-
 <p>Do not get me wrong: Colibri and Launchy are fine tools. They just do not have
-this QuickSilver-like feel that I miss so much at work.<br />
+this QuickSilver-like feel that I miss so much at work.<br>
 Fortunately, I came upon Kodachi completely by chance and I really like the
 tool.</p>
-
 <p>Unfortunately, there was no executable available, only source code. Obviously,
 no installer either&hellip;And the project was abandoned by its original author. I
 contacted the interim maintainer and created a nice installer. I also did some
-clean-up.<br />
+clean-up.<br>
 I may or may not offer to take over the project, depending on the feedback I
 get.</p>
-
-<p>Here is a video of Kodachi in action:<br />
+<p>Here is a video of Kodachi in action:<br>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/iPzL9_W77pQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/iPzL9_W77pQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
-
 <p>And of course you can download it: <a href="https://sourceforge.net/project/showfiles.php?group_id=121332&amp;package_id=216010">thank you
 SourceForge</a>.</p>
-
 <p>Note: this is an alpha release. There is no guarantee that it will even work
 on your machine. All I can tell you is that it will not break your PC.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -293,11 +296,35 @@ on your machine. All I can tell you is that it will not break your PC.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -314,7 +341,7 @@ on your machine. All I can tell you is that it will not break your PC.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

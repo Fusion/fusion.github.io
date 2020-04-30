@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="ezEdit" />
     
-    <meta name="twitter:description" content="ezEdit is a very unintrusive script. It serves two different purposes:
- Work as a mini-CMS that you can add to your existing website. Work as a prototyping tool, to see &ldquo;what if:&rdquo; what would happen if you modified a page&rsquo;s content  ezEdit as a mini-CMS ezEdit can be installed by dropping in place two files: ezedit.js and ezedit.php.
-Including ezEdit in your existing web pages is as simple as:" />
+    <meta name="twitter:description" content="ezEdit is a very unintrusive script. It serves two different purposes:" />
     <meta name="twitter:url" content="http://zteo.com/projects/ezedit/" />
     
 
@@ -33,7 +31,7 @@ Including ezEdit in your existing web pages is as simple as:" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +72,7 @@ Including ezEdit in your existing web pages is as simple as:" />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/projects/ezedit/"
+          "@id": "http:\/\/zteo.com\/projects\/ezedit\/"
         },
         "headline": "ezEdit",
         "description": "ezEdit",
@@ -91,9 +89,9 @@ Including ezEdit in your existing web pages is as simple as:" />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ Including ezEdit in your existing web pages is as simple as:" />
         },
         "datePublished": "2012-11-21",
         "dateModified": "2012-11-21",
-        "wordCount": 1177,
+        "wordCount":  1177 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ Including ezEdit in your existing web pages is as simple as:" />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,204 +221,189 @@ Including ezEdit in your existing web pages is as simple as:" />
                 
                 
 
+
                 
-
-<p>ezEdit is a very unintrusive script. It serves two different purposes:</p>
-
+                    <main>
+                        <div class="content blog-content">
+                        <p>ezEdit is a very unintrusive script. It serves two different purposes:</p>
 <ol>
 <li>Work as a mini-CMS that you can add to your existing website.</li>
 <li>Work as a prototyping tool, to see &ldquo;what if:&rdquo; what would happen if you modified a page&rsquo;s content</li>
 </ol>
-
-<p><img src="/images/ezedit_google.png" alt="" /></p>
-
+<p><img src="/images/ezedit_google.png" alt=""></p>
 <h3 id="ezedit-as-a-mini-cms">ezEdit as a mini-CMS</h3>
-
 <p>ezEdit can be installed by dropping in place two files: <em>ezedit.js</em> and
-<em>ezedit.php</em>.<br />
+<em>ezedit.php</em>.<br>
 Including ezEdit in your existing web pages is as simple as:</p>
-
 <pre><code>&lt;script src=&quot;ezedit.js&quot;&gt;&lt;/script&gt;
 </code></pre>
-
 <p>This will load the short bootstrap code that will then be able to load an
-online editor and communicate with the back-end (ezedit.php)<br />
+online editor and communicate with the back-end (ezedit.php)<br>
 When submitting a modification, it will be sent to ezedit.php, which will in
 turn update the web page being edited.</p>
-
 <h3 id="ezedit-as-a-mock-up-tool">ezEdit as a mock-up tool</h3>
-
 <p>All you need to do is upload <em>ezedit.js</em> and include it in your web page as
 described earlier. You can now edit any part of your web page and see how this
 edit would impact your page overall appearance.</p>
-
 <h3 id="ezedit-as-a-bookmarklet">ezEdit as a bookmarklet</h3>
-
 <p>This is pretty much the same feature as the &ldquo;mock-up&rdquo; one, save for a couple
 things:</p>
-
 <pre><code>1. You do not need to install anything
 2. It will work on any web site, not just yours
 </code></pre>
-
 <p>This is an interesting way to discuss a site update with a client if you are a
 web designer. Or you simply wish to see what a site would look like &ldquo;if I
 changed this tiny thing&hellip;&rdquo; (*)</p>
-
-<p>To install the bookmarklet, simply <a href="javascript:var%20_ezbl=true;var%20s=document.createElement('script');s.setAttribute('src',%20'http://labs.voilaweb.com/ezedit/bookmarklet/ezedit.js');document.getElementsByTagName('body')[0].appendChild(s);void(s);"><strong>drag this
+<p>To install the bookmarklet, simply <a href=""><strong>drag this
 link</strong></a>
 to your bookmark toolbar.</p>
-
 <h3 id="usage">Usage</h3>
-
 <p>The idea is for this script to be <em>very</em> easy to use. Therefore, after either
 including the necessary JavaScript in your page header, or clicking the
-bookmarklet, all you need to do is press <em>Ctrl-Z</em> twice.<br />
+bookmarklet, all you need to do is press <em>Ctrl-Z</em> twice.<br>
 If an existing session is found, you enter the tracking mode directly. If not,
 and unless you are using the bookmarklet, you will have to log in using the
-username and password defined in the back-end.<br />
+username and password defined in the back-end.<br>
 You will notice that you can tell whether you are in tracking/editing mode
-thanks to the small &lsquo;editing&rsquo; medallion displayed at the top left of the page.<br />
+thanks to the small &lsquo;editing&rsquo; medallion displayed at the top left of the page.<br>
 In tracking mode, elements that can be edited get a discreet red border as you
-hover the mouse over them <em>while keeping the Ctrl key pressed</em><br />
+hover the mouse over them <em>while keeping the Ctrl key pressed</em><br>
 To start editing, simply let go of the Ctrl key and click. A rich-text toolbar
 should now be displayed.</p>
-
-<p><img src="/images/ezedit_weather.png" alt="" /></p>
-
+<p><img src="/images/ezedit_weather.png" alt=""></p>
 <h3 id="configuration">Configuration</h3>
-
-<h4 id="ezedit-js">ezedit.js</h4>
-
+<h4 id="ezeditjs">ezedit.js</h4>
 <p>Towards the top of the file, you will find a small structure called
 <em>ezconfig</em>. This is where you can modify the script&rsquo;s behaviour:</p>
-
-<p><code>mode:</code><br />
+<p><code>mode:</code><br>
 If you select &lsquo;cms&rsquo; the script will attempt to communicate with ezedit.php.
-This is how it will retrieve additional assets and save updated content.<br />
+This is how it will retrieve additional assets and save updated content.<br>
 If you select &lsquo;standalone&rsquo; the script will understand that ezedit.php is not
 available and will not try to save updated content.</p>
-
-<p><code>backend:</code><br />
+<p><code>backend:</code><br>
 Path to ezedit.php. By default it is in the same directory as ezedit.js. You
 may with to put this file somewhere else, for instance if your current server
 only serves static pages.</p>
-
-<p><code>editor:</code><br />
+<p><code>editor:</code><br>
 A link to the complete JavaScript editor.  If you do not wish to use
 ezedit.php, you will need to modify this value to point to nicEdit.js</p>
-
-<p><code>toolbar:</code><br />
+<p><code>toolbar:</code><br>
 A link to the image used to provide the images used by the JavaScript editor.
 Again, if running in standalone mode, you will need to modify this value to
 point to nicEditorIcons.gif</p>
-
-<p><code>select:</code><br />
+<p><code>select:</code><br>
 If you select &lsquo;all&rsquo; the script will allow you to try to edit any part of the
-current page.<br />
+current page.<br>
 If you select &lsquo;tagged&rsquo; it will only let you edit elements with the class
 &lsquo;ezedit&rsquo;</p>
-
 <p>Note that the default values should work for you when uploading just
 <em>ezedit.js</em> and <em>ezedit.php</em> and using the script as a mini-CMS with static
 pages.</p>
-
-<h4 id="ezedit-php">ezedit.php</h4>
-
+<h4 id="ezeditphp">ezedit.php</h4>
 <p>At the top of this file, you will find a structure called <em>$configuration</em>.
 Again, you can modify it to fit your needs:</p>
-
-<p><code>plugin:</code><br />
+<p><code>plugin:</code><br>
 You can write your own back-end plugins. If you do, simply store the path to
 your plugin here; e.g. <em>myplugin.php</em></p>
-
-<p><code>index:</code><br />
+<p><code>index:</code><br>
 When trying to update a page&rsquo;s content, ezedit.js will send to you what it
 thinks the current page name is. Sometimes there is no page name because the
 default index page is assumed. Therefore, this value is &lsquo;index.html&rsquo; but it
 could, for instance, be &lsquo;default.htm&rsquo; or any other value.</p>
-
-<p><code>path:</code><br />
+<p><code>path:</code><br>
 This is the default path to the page being updated. If you dropped ezedit.js
 and ezedit.php in the same directory, the default path setting should work for
 you.</p>
-
 <p>Note: When invoked, ezedit.php checks for the existence of a file called
-<em>ezedit.conf.html</em><br />
+<em>ezedit.conf.html</em><br>
 This feature was added for the convenience of users who do not wish to edit a
 php file, even to update its configuration. If you elect to use this file
 instead, simply store your favourite configuration using a &lsquo;key = value&rsquo;
 syntax; for instance:</p>
-
 <pre><code>index = default.htm  
 path = /home/joe/tests
 </code></pre>
-
 <h3 id="tagging-editable-elements-in-a-web-page">Tagging editable elements in a web page</h3>
-
 <p>You only need to care about this if you decide to go with the &lsquo;tagged&rsquo; mode.
-If you select &lsquo;all&rsquo; then everything is potentially editable.<br />
+If you select &lsquo;all&rsquo; then everything is potentially editable.<br>
 To make an element editable, simply add the class <em>ezedit</em> to that element and
 make sure it has an id that can be used by the back-end when updating that
-element.<br />
+element.<br>
 For instance,</p>
-
 <pre><code>&lt;p class=&quot;y-txt-1 y-ln-1&quot; style=&quot;line-height:1.231&quot;&gt;
 </code></pre>
-
 <p>becomes:</p>
-
 <pre><code>&lt;p class=&quot;y-txt-1 y-ln-1 ezedit&quot; id=&quot;id1&quot; style=&quot;line-height:1.231&quot;&gt;
 </code></pre>
-
 <h3 id="writing-a-plugin">Writing a plugin</h3>
-
-<p>It is a fairly easy task. But why would you want to write a plugin?<br />
+<p>It is a fairly easy task. But why would you want to write a plugin?<br>
 In its current incarnation, in &lsquo;CMS&rsquo; mode, ezEdit only supports one type of
 web page: static. It&rsquo;s a pity because it could certainly be improved as a tool
 for managing quick updates to your existing CMS, such as Drupal, Joomla or
-Wordpress (list not exhaustive!)<br />
+Wordpress (list not exhaustive!)<br>
 Here is how you can write your own plugin:</p>
-
 <pre><code>register_hook('getfile', 'myplugin_get_file');  
 $this-&gt;register_hook('savefile', 'myplugin_save_file'); // To overwrite how a page is updated  
 $this-&gt;register_hook('authenticate', 'myplugin_authenticate'); // To overwrite security
 </code></pre>
-
-<p>function myplugin_get_file($pageName) { &hellip; }<br />
+<p>function myplugin_get_file($pageName) { &hellip; }<br>
 function myplugin_save_file($fileName, $content, $id = false, $oldLength =
-false) { &hellip; }<br />
-function myplugin_authenticate($username, $password) { &hellip; }<br />
+false) { &hellip; }<br>
+function myplugin_authenticate($username, $password) { &hellip; }<br>
 ?&gt;</p>
-
-<p><img src="/images/ezedit_nexus.png" alt="" /></p>
-
+<p><img src="/images/ezedit_nexus.png" alt=""></p>
 <h3 id="faq">FAQ</h3>
-
-<p><strong>Why PHP for the back-end?</strong><br />
+<p><strong>Why PHP for the back-end?</strong><br>
 An easy choice: besides being an extremely simple language, for better or for
 worse, PHP is the most prevalent web language for back-end work. Chances are
 that, wherever your web site is hosted, PHP is available. I even decided to
 stick to a fully PHP4-compatible syntax. Just in case.</p>
-
-<p><strong>Will this tool allow me to hack others&rsquo; sites?</strong><br />
+<p><strong>Will this tool allow me to hack others&rsquo; sites?</strong><br>
 No. You need a back-end that will authenticate you and perform the updates on
 your behalf.</p>
-
-<p><strong>BTW, how secure is this script?</strong><br />
+<p><strong>BTW, how secure is this script?</strong><br>
 It is secure. However, you may with to make sure that you only access the
 back-end over https if you are worried about your username and password being
 intercepted. Note that this is a precaution that applies to all the CMS out
 there and is very rarely followed.</p>
-
-<p><strong>Where are the files?</strong><br />
+<p><strong>Where are the files?</strong><br>
 The two most important files are, again, <em>ezedit.js</em> and <em>ezedit.php</em> and can
-be downloaded <a href="http://github.com/Fusion/ezedit">here</a>.<br />
+be downloaded <a href="http://github.com/Fusion/ezedit">here</a>.<br>
 If you are using the bookmarklet, you do not need to download anything.</p>
-
 <p><em>(*) You could even use this tool to create a fake facebook conversation if
 you are a Redditor! ;)</em></p>
 
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#ezedit-as-a-mini-cms">ezEdit as a mini-CMS</a></li>
+            <li><a href="#ezedit-as-a-mock-up-tool">ezEdit as a mock-up tool</a></li>
+            <li><a href="#ezedit-as-a-bookmarklet">ezEdit as a bookmarklet</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#configuration">Configuration</a>
+              <ul>
+                <li><a href="#ezeditjs">ezedit.js</a></li>
+                <li><a href="#ezeditphp">ezedit.php</a></li>
+              </ul>
+            </li>
+            <li><a href="#tagging-editable-elements-in-a-web-page">Tagging editable elements in a web page</a></li>
+            <li><a href="#writing-a-plugin">Writing a plugin</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -442,11 +435,11 @@ you are a Redditor! ;)</em></p>
                     </a>
                 
                 
-                    <a class="post-nav-item post-nav-prev" href="http://zteo.com/projects/projects-list/">
+                    <a class="post-nav-item post-nav-prev" href="http://zteo.com/projects/n2/">
                         <section class="post-nav-teaser">
                             <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
                             <span class="post-nav-info">
-                                <h4 class="post-nav-title">Projects List</h4>
+                                <h4 class="post-nav-title">n2</h4>
                             </span>
                         </section>
                     </a>
@@ -457,11 +450,35 @@ you are a Redditor! ;)</em></p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -478,7 +495,7 @@ you are a Redditor! ;)</em></p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

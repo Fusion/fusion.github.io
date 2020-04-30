@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="PHP PDO class and XAMPP/&#34;exotic&#34; MySQL configurations" />
     
-    <meta name="twitter:description" content="Last night I was trying to setup a @mail server but the installer kept choking when attempting to connect to my local database.
-I am posting here my quick workaround in case you too, dear reader, get a dreaded &ldquo;PDO&rdquo; error message complaining about your attempt to &ldquo; connect to unix:// &ldquo;
-Here is I how I solved the issue for @mail: I opened library/Zend/Db/Adapter/Pdo/Abstract.php , found the line that creates the PDO object (&rdquo; new PDO(&hellip; &ldquo;) and, in this example, the first argument passed to the constructor was $dsn." />
+    <meta name="twitter:description" content="Last night I was trying to setup a @mail server but the installer kept choking when attempting to connect to my local database." />
     <meta name="twitter:url" content="http://zteo.com/posts/php-pdo-class-and-xamppexotic-mysql-configurations/" />
     
 
@@ -33,7 +31,7 @@ Here is I how I solved the issue for @mail: I opened library/Zend/Db/Adapter/Pdo
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,10 +72,10 @@ Here is I how I solved the issue for @mail: I opened library/Zend/Db/Adapter/Pdo
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/php-pdo-class-and-xamppexotic-mysql-configurations/"
+          "@id": "http:\/\/zteo.com\/posts\/php-pdo-class-and-xamppexotic-mysql-configurations\/"
         },
-        "headline": "PHP PDO class and XAMPP/&#34;exotic&#34; MySQL configurations",
-        "description": "PHP PDO class and XAMPP/&#34;exotic&#34; MySQL configurations",
+        "headline": "PHP PDO class and XAMPP\/\x22exotic\x22 MySQL configurations",
+        "description": "PHP PDO class and XAMPP\/\x22exotic\x22 MySQL configurations",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -91,9 +89,9 @@ Here is I how I solved the issue for @mail: I opened library/Zend/Db/Adapter/Pdo
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ Here is I how I solved the issue for @mail: I opened library/Zend/Db/Adapter/Pdo
         },
         "datePublished": "2009-10-01",
         "dateModified": "2009-10-01",
-        "wordCount": 194,
+        "wordCount":  194 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ Here is I how I solved the issue for @mail: I opened library/Zend/Db/Adapter/Pdo
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,33 +221,30 @@ Here is I how I solved the issue for @mail: I opened library/Zend/Db/Adapter/Pdo
                 
                 
 
-                <p>Last night I was trying to setup a <a href="http://atmail.com">@mail</a> server but the
+
+                
+                    <p>Last night I was trying to setup a <a href="http://atmail.com">@mail</a> server but the
 installer kept choking when attempting to connect to my local database.</p>
-
 <p>I am posting here my quick workaround in case you too, dear reader, get a
-dreaded &ldquo;PDO&rdquo; error message complaining about your attempt to &ldquo; <em>connect to
-unix://</em> &ldquo;</p>
-
+dreaded &ldquo;PDO&rdquo; error message complaining about your attempt to &quot; <em>connect to
+unix://</em> &quot;</p>
 <p>Here is I how I solved the issue for @mail: I opened
 <strong>library/Zend/Db/Adapter/Pdo/Abstract.php</strong> , found the line that creates the
 PDO object (&rdquo; <em>new PDO(&hellip;</em> &ldquo;) and, in this example, the first argument passed
 to the constructor was <strong>$dsn</strong>.</p>
-
-<p>The problem is that PDO sees that this variables references &ldquo; <em>localhost</em> &ldquo;
+<p>The problem is that PDO sees that this variables references &quot; <em>localhost</em> &quot;
 and decides that, since the database is local, it is going to use
 <strong>mysql.sock</strong> (hence the <em>unix://</em> scheme)</p>
-
 <p>This works as long as the file is found in its default location. If it is
 elsewhere, you are out of luck. This happens, for instance, if you use
 <a href="http://www.apachefriend.org">XAMPP</a>.</p>
-
 <p>Here is my quick fix, inserted right before the creation of the PDO object:</p>
-<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">$dsn = str_replace(&#39;host=localhost&#39;, &#39;unix_socket=/opt/lampp/var/mysql/mysql.sock&#39;, $dsn);</code></pre></div>
-<p>All done.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">$dsn = str_replace(&#39;host=localhost&#39;, &#39;unix_socket=/opt/lampp/var/mysql/mysql.sock&#39;, $dsn);
+</code></pre></div><p>All done.</p>
 <p>Note: I have not investigated enough to know whether this is something missing
 in the Zend Framework or in @mail itself.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -286,11 +291,35 @@ in the Zend Framework or in @mail itself.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -307,7 +336,7 @@ in the Zend Framework or in @mail itself.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

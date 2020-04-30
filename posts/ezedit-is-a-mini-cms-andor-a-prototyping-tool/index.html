@@ -38,7 +38,7 @@ The CMS back-end is in a self-contained file as well." />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -79,10 +79,10 @@ The CMS back-end is in a self-contained file as well." />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/ezedit-is-a-mini-cms-andor-a-prototyping-tool/"
+          "@id": "http:\/\/zteo.com\/posts\/ezedit-is-a-mini-cms-andor-a-prototyping-tool\/"
         },
-        "headline": "ezEdit is a mini CMS and/or a prototyping tool",
-        "description": "ezEdit is a mini CMS and/or a prototyping tool",
+        "headline": "ezEdit is a mini CMS and\/or a prototyping tool",
+        "description": "ezEdit is a mini CMS and\/or a prototyping tool",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -96,9 +96,9 @@ The CMS back-end is in a self-contained file as well." />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -108,13 +108,13 @@ The CMS back-end is in a self-contained file as well." />
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/a8dd81cd-9f7c-42f7-a90f-108c50b2eaf1.png",
+          "url": "http:\/\/zteo.com\/a8dd81cd-9f7c-42f7-a90f-108c50b2eaf1.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2010-04-26",
         "dateModified": "2010-04-26",
-        "wordCount": 234,
+        "wordCount":  234 ,
         
     }
     </script>
@@ -194,6 +194,16 @@ The CMS back-end is in a self-contained file as well." />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -217,41 +227,35 @@ The CMS back-end is in a self-contained file as well." />
                 
                 
 
-                <p><img src="/images/ezedit_google.png" alt="" /></p>
 
+                
+                    <p><img src="/images/ezedit_google.png" alt=""></p>
 <p>Also, ezEdit is very, very, very <strong>easy</strong> to install and use:</p>
-
-<p>You can add the <strong>CMS</strong> to your existing website;<br />
-You can use it to <strong>mock-up</strong> updates to your site;<br />
+<p>You can add the <strong>CMS</strong> to your existing website;<br>
+You can use it to <strong>mock-up</strong> updates to your site;<br>
 If you are a web designer, you can work on updates <strong>with your clients</strong> in
 real-time; and this is without installing anything: simply use the
 bookmarklet.</p>
-
-<p>ezEdit works as either a very short bootstrap <strong>script</strong> or a <strong>bookmarklet</strong>.<br />
+<p>ezEdit works as either a very short bootstrap <strong>script</strong> or a <strong>bookmarklet</strong>.<br>
 The CMS back-end is in a self-contained file as well.</p>
-
 <p>Currently the CMS works with static web pages but it even comes with a
 <strong>plugin</strong> architecture that makes it easy to write extensions to update the
 big guys (Drupal, Wordpress, etc.)</p>
-
 <p>ezEdit is <strong>free</strong> , <strong>open-source</strong> and both community and, if demand arises
 for it, commercially <strong>supported</strong>.</p>
-
 <p>The script has <strong>no dependencies</strong> on additional JavaScript: because it makes
 no assumption, it can cohabitate peacefully with jQuery, Prototype, YUI, etc.</p>
-
 <p>Using the script is very straightforward as well: a simple <strong>hotkey</strong> , enter
 your credentials if <strong>security</strong> is enabled, and start editing any part of a
 web page.</p>
-
 <p><strong>Configuration</strong> is painless: you can even maintain an external configuration
-file if you do not with to open the back-end script.<br />
+file if you do not with to open the back-end script.<br>
 And, yes, that is correct: you can use the front-end script without the back-
 end script even being available.</p>
-
 <p>To learn more about ezEdit and download the files or just get the bookmarklet,
 go to the <strong>project page:<a href="http://nexus.zteo.com/projects/ezedit/">http://nexus.zteo.com/projects/ezedit/</a></strong></p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -298,11 +302,35 @@ go to the <strong>project page:<a href="http://nexus.zteo.com/projects/ezedit/">
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -319,7 +347,7 @@ go to the <strong>project page:<a href="http://nexus.zteo.com/projects/ezedit/">
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

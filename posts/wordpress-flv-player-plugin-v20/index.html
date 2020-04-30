@@ -23,8 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/3f02d9ae-4784-42be-820f-37db0c875c69.jpg" />
     
-    <meta name="twitter:description" content="Close to two years ago, after quickly putting together my own FLV Player plugin for Wordpress (original post) I added it to Wordpress.org&rsquo;s already impressive list of plugins. Who knows? Someone else might find it useful (it&rsquo;s been downloaded more than 4,500 times since then so I guess that means someone did)
-Yesterday a few people commented on that original post, thus reminding me of that plugin. It shamed me when I revisited its packaging to find out that it required from its users to download more pieces left and right." />
+    <meta name="twitter:description" content="Close to two years ago, after quickly putting together my own FLV Player plugin for Wordpress (original post) I added it to Wordpress.org&rsquo;s already impressive list of plugins. Who knows? Someone else might find it useful (it&rsquo;s been downloaded more than 4,500 times since then so I guess that means someone did)" />
     <meta name="twitter:url" content="http://zteo.com/posts/wordpress-flv-player-plugin-v20/" />
     
 
@@ -34,7 +33,7 @@ Yesterday a few people commented on that original post, thus reminding me of tha
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +74,7 @@ Yesterday a few people commented on that original post, thus reminding me of tha
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/wordpress-flv-player-plugin-v20/"
+          "@id": "http:\/\/zteo.com\/posts\/wordpress-flv-player-plugin-v20\/"
         },
         "headline": "Wordpress FLV Player Plugin v2.0",
         "description": "Wordpress FLV Player Plugin v2.0",
@@ -92,9 +91,9 @@ Yesterday a few people commented on that original post, thus reminding me of tha
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -104,13 +103,13 @@ Yesterday a few people commented on that original post, thus reminding me of tha
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/3f02d9ae-4784-42be-820f-37db0c875c69.jpg",
+          "url": "http:\/\/zteo.com\/3f02d9ae-4784-42be-820f-37db0c875c69.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2009-06-14",
         "dateModified": "2009-06-14",
-        "wordCount": 252,
+        "wordCount":  252 ,
         
     }
     </script>
@@ -190,6 +189,16 @@ Yesterday a few people commented on that original post, thus reminding me of tha
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,36 +222,34 @@ Yesterday a few people commented on that original post, thus reminding me of tha
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/90731709@N00/2856957622/" title="Cat  reloaded"><img src="/images/2856957622_9d7429bf21_s.jpg" alt="Cat reloaded" /></a>Close to two years ago, after quickly putting together my own
+
+                
+                    <p><a href="http://www.flickr.com/photos/90731709@N00/2856957622/" title="Cat  reloaded"><img src="/images/2856957622_9d7429bf21_s.jpg" alt="Cat reloaded"></a>Close to two years ago, after quickly putting together my own
 FLV Player plugin for Wordpress (<a href="/2007/07/01/flv-player/">original post</a>) I
 added it to Wordpress.org&rsquo;s already impressive list of plugins. Who knows?
 Someone else might find it useful (it&rsquo;s been downloaded more than 4,500 times
 since then so I guess that means <em>someone</em> did)</p>
-
 <p>Yesterday a few people commented on that original post, thus reminding me of
 that plugin. It shamed me when I revisited its packaging to find out that it
 required from its users to download more pieces left and right. So, <strong>here it
 is</strong> , brand new <strong>v2.0</strong> , with everything included, and this means <strong>brand
 new SWF wrapper</strong> and <strong>brand new Flash file</strong>. Hope you forgive the fact that
 it took me all this time to provide a real self-contained archive.</p>
-
-<p><a href="http://wordpress.org/extend/plugins/flv-player/"><img src="/images/wordpress-e280ba-flv-player-c2ab-wordpress-plugins.png" alt="wordpress-e280ba-flv-player-c2ab-wordpress- plugins" /> Go to the Plugin Page</a></p>
-
+<p><a href="http://wordpress.org/extend/plugins/flv-player/"><img src="/images/wordpress-e280ba-flv-player-c2ab-wordpress-plugins.png" alt="wordpress-e280ba-flv-player-c2ab-wordpress- plugins"> Go to the Plugin Page</a></p>
 <p>Oh, and there is something I would like to address about this plugin. It&rsquo;s
 actually a reply to one of the comments I received recently:</p>
-
 <blockquote>
 <p>What do you mean by &ldquo;a flash stream&rdquo;? Does it stream an flv or use
 progressive download? To stream flash, you need a streaming media server. You
 should be clear and say what you mean - stop contributing to peoples&rsquo;
 ignorance.</p>
 </blockquote>
-
 <p>Well, I hope it helps you feel a little less ignorant to know that the answer
 is &ldquo;both.&rdquo; This plugin can stream both types, depending on your use of a http-
 type or a rtmp-type URI. It can also play live streams. More information can
 be found <a href="http://www.longtailvideo.com/support/faq">here</a>.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -289,11 +296,35 @@ be found <a href="http://www.longtailvideo.com/support/faq">here</a>.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -310,7 +341,7 @@ be found <a href="http://www.longtailvideo.com/support/faq">here</a>.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

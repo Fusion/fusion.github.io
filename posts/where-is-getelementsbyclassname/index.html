@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Where is getElementsByClassName()?" />
     
-    <meta name="twitter:description" content="Since one of the goals of this blog is to show you how we resolved some of the issues we encounter when writing modern Web applications, allow me to repost this short article that I originall posted at goodjavascript.com
-It&rsquo;s an extremely common problem: you want to retrieve all the &ldquo;special&rdquo; links embedded in your web page. Or all the text areas with a certain style.
-You looked at someone else&rsquo;s code and found that they use the method getElementsByClassName() profusely." />
+    <meta name="twitter:description" content="Since one of the goals of this blog is to show you how we resolved some of the issues we encounter when writing modern Web applications, allow me to repost this short article that I originall posted at goodjavascript.com" />
     <meta name="twitter:url" content="http://zteo.com/posts/where-is-getelementsbyclassname/" />
     
 
@@ -33,7 +31,7 @@ You looked at someone else&rsquo;s code and found that they use the method getEl
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +72,7 @@ You looked at someone else&rsquo;s code and found that they use the method getEl
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/where-is-getelementsbyclassname/"
+          "@id": "http:\/\/zteo.com\/posts\/where-is-getelementsbyclassname\/"
         },
         "headline": "Where is getElementsByClassName()?",
         "description": "Where is getElementsByClassName()?",
@@ -91,9 +89,9 @@ You looked at someone else&rsquo;s code and found that they use the method getEl
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ You looked at someone else&rsquo;s code and found that they use the method getEl
         },
         "datePublished": "2007-01-15",
         "dateModified": "2007-01-15",
-        "wordCount": 271,
+        "wordCount":  271 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ You looked at someone else&rsquo;s code and found that they use the method getEl
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,22 +221,21 @@ You looked at someone else&rsquo;s code and found that they use the method getEl
                 
                 
 
-                <p>Since one of the goals of this blog is to show you how we resolved some of the
+
+                
+                    <p>Since one of the goals of this blog is to show you how we resolved some of the
 issues we encounter when writing modern Web applications, allow me to repost
 this short article that I originall posted at
 <a href="http://www.goodjavascript.com">goodjavascript.com</a></p>
-
 <p>It&rsquo;s an extremely common problem: you want to retrieve all the &ldquo;special&rdquo; links
-embedded in your web page. Or all the text areas with a certain style.<br />
+embedded in your web page. Or all the text areas with a certain style.<br>
 You looked at someone else&rsquo;s code and found that they use the method
-<strong><em>getElementsByClassName()</em></strong> profusely.<br />
+<strong><em>getElementsByClassName()</em></strong> profusely.<br>
 However, when you tried, there was no such method.</p>
-
-<p><strong>Confused?</strong><br />
+<p><strong>Confused?</strong><br>
 Here is the skinny on this method: it does not exist. Everybody has to code
-their own. And most of the time, it is poorly coded and will catch<br />
+their own. And most of the time, it is poorly coded and will catch<br>
 unrelated classes in the process.</p>
-
 <p>So, here is my implementation, which I kept as short as possible and yet, it
 is reliable:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">className</span><span class="p">)</span>  
@@ -246,23 +253,20 @@ is reliable:</p>
         <span class="p">}</span>  
         <span class="k">return</span> <span class="nx">elements</span><span class="p">;</span>  
 <span class="p">};</span>
-</code></pre></div>
-<p>A quick explanation:</p>
+</code></pre></div><p>A quick explanation:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">expression</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="s1">&#39;(^| )&#39;</span><span class="o">+</span><span class="nx">className</span><span class="o">+</span><span class="s1">&#39;( |$)&#39;</span><span class="p">);</span>
-</code></pre></div>
-<p>We create a regular expression that can find the class name we are looking for
+</code></pre></div><p>We create a regular expression that can find the class name we are looking for
 anywhere in a string. Note that the DOM class attribute can contain a blank
 space-separated-list of class names.</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">allelements</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">);</span>
-</code></pre></div>
-<p>We retrieve all the elements in the current page.<br />
+</code></pre></div><p>We retrieve all the elements in the current page.<br>
 We could replace document.body with an existing DOM element and only perform a
 search on a subtree of our page.</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">if</span><span class="p">(</span><span class="nx">expression</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">className</span><span class="p">))</span>
-</code></pre></div>
-<p>Use the regular expression we created earlier to find whether an element uses
+</code></pre></div><p>Use the regular expression we created earlier to find whether an element uses
 this class name.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -309,11 +313,35 @@ this class name.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -330,7 +358,7 @@ this class name.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

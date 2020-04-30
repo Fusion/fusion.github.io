@@ -21,8 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="How To Make The EFF ISP Throttling Tool Work On Leopard" />
     
-    <meta name="twitter:description" content="I love the idea of Switzerland, the new EFF tool for checking ISP throttling ; unfortunately as of release Zero.0.5, Leopard seems to still be a mere afterthought. Here is how I worked around the few things that were not working out of the box.
-First, Switzerland is written in Python and will require Psyco. It&rsquo;s a good thing since Psyco is all about performance. If you do not have it already installed:" />
+    <meta name="twitter:description" content="I love the idea of Switzerland, the new EFF tool for checking ISP throttling; unfortunately as of release Zero.0.5, Leopard seems to still be a mere afterthought. Here is how I worked around the few things that were not working out of the box." />
     <meta name="twitter:url" content="http://zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/" />
     
 
@@ -32,7 +31,7 @@ First, Switzerland is written in Python and will require Psyco. It&rsquo;s a goo
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -73,7 +72,7 @@ First, Switzerland is written in Python and will require Psyco. It&rsquo;s a goo
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/"
+          "@id": "http:\/\/zteo.com\/posts\/how-to-make-the-eff-isp-throttling-tool-work-on-leopard\/"
         },
         "headline": "How To Make The EFF ISP Throttling Tool Work On Leopard",
         "description": "How To Make The EFF ISP Throttling Tool Work On Leopard",
@@ -90,9 +89,9 @@ First, Switzerland is written in Python and will require Psyco. It&rsquo;s a goo
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -109,7 +108,7 @@ First, Switzerland is written in Python and will require Psyco. It&rsquo;s a goo
         },
         "datePublished": "2008-08-02",
         "dateModified": "2008-08-02",
-        "wordCount": 317,
+        "wordCount":  317 ,
         
     }
     </script>
@@ -189,6 +188,16 @@ First, Switzerland is written in Python and will require Psyco. It&rsquo;s a goo
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -212,29 +221,28 @@ First, Switzerland is written in Python and will require Psyco. It&rsquo;s a goo
                 
                 
 
-                <p><img src="https://www.eff.org/files/action_images/switzerland_text_logo.png" alt="Switzerland
-Logo" />I love the idea of <a href="http://www.eff.org/press/archives/2008/07/31">Switzerland</a>,
+
+                
+                    <p><img src="https://www.eff.org/files/action_images/switzerland_text_logo.png" alt="SwitzerlandLogo">I love the idea of <a href="http://www.eff.org/press/archives/2008/07/31">Switzerland</a>,
 the new EFF tool for checking <strong>ISP throttling</strong> ; unfortunately as of release
 Zero.0.5, Leopard seems to still be a mere afterthought. Here is how I worked
 around the few things that were not working out of the box.</p>
-
 <p>First, Switzerland is written in <strong>Python</strong> and will require <strong>Psyco</strong>. It&rsquo;s a
 good thing since Psyco is all about performance. If you do not have it already
 installed:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">svn co http://codespeak.net/svn/psyco/dist/ psyco-dist  
 <span class="nb">cd</span> psyco-dist/  
 sudo python setup.py install  
-<span class="nb">cd</span> ..  </code></pre></div>
-<p>Download Switzerland from
-<a href="https://sourceforge.net/project/showfiles.php?group_id=233013">https://sourceforge.net/project/showfiles.php?group_id=233013</a><br />
+<span class="nb">cd</span> ..  
+</code></pre></div><p>Download Switzerland from
+<a href="https://sourceforge.net/project/showfiles.php?group_id=233013">https://sourceforge.net/project/showfiles.php?group_id=233013</a><br>
 Extract it and change to its directory; eg</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">tar zxvf switzerland-0.0.5.tgz  
-<span class="nb">cd</span> switzerland-0.0.5  </code></pre></div>
-<p>The <strong>FastCollector</strong> provided doesn&rsquo;t work. So&hellip;</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">rm bin/FastCollector.darwin  </code></pre></div>
-<p>Now when we build FastCollector, it will be available in
+<span class="nb">cd</span> switzerland-0.0.5  
+</code></pre></div><p>The <strong>FastCollector</strong> provided doesn&rsquo;t work. So&hellip;</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">rm bin/FastCollector.darwin  
+</code></pre></div><p>Now when we build FastCollector, it will be available in
 <em>/usr/local/bin/FastCollector</em></p>
-
 <p>Here comes the only moderately scary thing for non-developers. Use the
 <em><strong>patch</strong></em> command to modify <em>switzerland/client/PacketListener.py</em>. This is
 the input for patch:</p>
@@ -266,20 +274,20 @@ the input for patch:</p>
 +  
             elif p == &#34;Linux&#34;:  
             vars = [(&#34;/proc/sys/net/core/rmem_default&#34;, &#34;33554432&#34;),  
-                    (&#34;/proc/sys/net/core/rmem_max&#34;, &#34;33554432&#34;),</code></pre></div>
-<p>Let&rsquo;s build and install everything:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo python setup.py install  </code></pre></div>
-<p>Well, it was easy (if it worked!)</p>
-
+                    (&#34;/proc/sys/net/core/rmem_max&#34;, &#34;33554432&#34;),
+</code></pre></div><p>Let&rsquo;s build and install everything:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo python setup.py install  
+</code></pre></div><p>Well, it was easy (if it worked!)</p>
 <p>Let&rsquo;s create a log directory for Switzerland:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo mkdir /var/log/switzerland-pcaps  
-sudo chmod a+wx /var/log/switzerland-pcaps  </code></pre></div>
-<p>And finally let&rsquo;s run it:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo switzerland-client  </code></pre></div>
-<p>or if you wish to run your own server (you need to advertise it too!)</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo switzerland-client --server yourserveraddress  </code></pre></div>
-<p>Questions?</p>
+sudo chmod a+wx /var/log/switzerland-pcaps  
+</code></pre></div><p>And finally let&rsquo;s run it:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo switzerland-client  
+</code></pre></div><p>or if you wish to run your own server (you need to advertise it too!)</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo switzerland-client --server yourserveraddress  
+</code></pre></div><p>Questions?</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -326,11 +334,35 @@ sudo chmod a+wx /var/log/switzerland-pcaps  </code></pre></div>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -347,7 +379,7 @@ sudo chmod a+wx /var/log/switzerland-pcaps  </code></pre></div>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

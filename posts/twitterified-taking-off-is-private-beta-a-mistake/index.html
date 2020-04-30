@@ -21,8 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Twitterified taking off: is private beta a mistake?" />
     
-    <meta name="twitter:description" content="Somehow, seemingly out of nowhere, Twitterers have started to notice Twitterified. I guess a few positive reviews help.
-But would Twitterified have received these positive reviews, had it not moved to open beta? I think not. The service was in closed beta for a couple months, which allowed me to kill a few gremlins I found in the system, but even so it did not attract enough adventurous users for its own good." />
+    <meta name="twitter:description" content="Somehow, seemingly out of nowhere, Twitterers have started to notice Twitterified. I guess a few positive reviews help." />
     <meta name="twitter:url" content="http://zteo.com/posts/twitterified-taking-off-is-private-beta-a-mistake/" />
     
 
@@ -32,7 +31,7 @@ But would Twitterified have received these positive reviews, had it not moved to
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -73,7 +72,7 @@ But would Twitterified have received these positive reviews, had it not moved to
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/twitterified-taking-off-is-private-beta-a-mistake/"
+          "@id": "http:\/\/zteo.com\/posts\/twitterified-taking-off-is-private-beta-a-mistake\/"
         },
         "headline": "Twitterified taking off: is private beta a mistake?",
         "description": "Twitterified taking off: is private beta a mistake?",
@@ -90,9 +89,9 @@ But would Twitterified have received these positive reviews, had it not moved to
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -109,7 +108,7 @@ But would Twitterified have received these positive reviews, had it not moved to
         },
         "datePublished": "2008-11-03",
         "dateModified": "2008-11-03",
-        "wordCount": 333,
+        "wordCount":  333 ,
         
     }
     </script>
@@ -189,6 +188,16 @@ But would Twitterified have received these positive reviews, had it not moved to
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -212,11 +221,12 @@ But would Twitterified have received these positive reviews, had it not moved to
                 
                 
 
-                <p>Somehow, seemingly out of nowhere, Twitterers have started to notice
+
+                
+                    <p>Somehow, seemingly out of nowhere, Twitterers have started to notice
 <a href="http://twitterified.com">Twitterified</a>. I guess
 <a href="http://www.killerstartups.com/Social-Networking/twitterified-com-the-power-of-twitter-expanded">a</a>
 <a href="http://thesocialnetworker.com/tsn/tsn.nsf/dx/twitterified-the-new-air-client.htm">few</a> <a href="http://everythingtwitter.com/2008/10/31/twitterified-a-feature-rich-air-client/">positive</a> <a href="http://www.fredzone.org/twitterified-un-client-twitter-pour-echanger-des-images-des-videos-et-du-son.html">reviews</a> help.</p>
-
 <p>But would Twitterified have received these positive reviews, had it not moved
 to <strong>open beta</strong>? I think not. The service was in closed beta for a couple
 months, which allowed me to kill a few gremlins I found in the system, but
@@ -226,7 +236,6 @@ if you feel that it is not ready. Of course, I need to keep an eye on all
 feedback and <strong>fix problem</strong> s as soon as they are reported. I do not think
 that an open beta can work any other way. Fortunately, due to the tool&rsquo;s
 nature, feedback can be found in a very obvious place :)</p>
-
 <p>I consider myself lucky because I already have some experience with scaling
 applications &ndash; thanks to <em>clicdev.com</em> and past experience as a web host &ndash;
 and as a very clueless user interface &ldquo;victim&rdquo; I do spend a lot of time
@@ -235,16 +244,16 @@ that&rsquo;s no reason to dwell in closed beta country. When I look around, it s
 that no matter how talented and how successful web entrepreneurs have been,
 products launched as closed beta have always had <strong>a hard time</strong> making it as
 a mainstream product.</p>
-
 <p>Not that I am thinking of Twitterified&rsquo;s minuscule critical success as
 anything mainstream, or that I would dare compare its audience to <strong>Pownce</strong>!
 But, interestingly, when I look at Pownce and who its backers are, it doesn&rsquo;t
 seem to have achieved the success <strong>it seemed poised to</strong>. Of course, I am not
 singling out Pownce. It just happens to be one of the projects I found really
-interesting.<br />
+interesting.<br>
 In conclusion, I do not think that I will every launch anything in closed beta
 again. It&rsquo;s just not worth it!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -291,11 +300,35 @@ again. It&rsquo;s just not worth it!</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -312,7 +345,7 @@ again. It&rsquo;s just not worth it!</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

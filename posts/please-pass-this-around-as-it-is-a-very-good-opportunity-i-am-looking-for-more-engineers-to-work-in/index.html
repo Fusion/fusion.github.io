@@ -23,12 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/83a6006f-1ff2-4fb6-96d3-f18e3127ccc1.png" />
     
-    <meta name="twitter:description" content="Please pass this around as it is a very good opportunity: I am looking for more engineers to work in several of my teams.
-Who I am looking for:
-- you are comfortable developing using C, C&#43;&#43; and/or Java
-- you either work with embedded systems (looking at you Droiders or switch developers) or large web applications or SDN controllers
-Who we are:
-- think of us as a startup with great benefits" />
+    <meta name="twitter:description" content="Please pass this around as it is a very good opportunity: I am looking for more engineers to work in several of my teams.Who I am looking for:- you are comfortable developing using C, C&#43;&#43; and/or Java- you either work with embedded systems (looking at you Droiders or switch developers) or large web applications or SDN controllersWho we are:- think of us as a startup with great benefits- by that I mean health coverage, 401k, salary in the high 90s to 100ks- we pay relocation expenses if necessary- we are established, with a solid revenue stream- and yet, we also work on multiple, very forward looking projects- we are located in Southern California, near L.A.I am posting this here before making it more widely available as I&#39;d rather work with one of you guys so, if you are interested or think one of your friends might be a match, let me know immediately.﻿" />
     <meta name="twitter:url" content="http://zteo.com/posts/please-pass-this-around-as-it-is-a-very-good-opportunity-i-am-looking-for-more-engineers-to-work-in/" />
     
 
@@ -38,7 +33,7 @@ Who we are:
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -79,7 +74,7 @@ Who we are:
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/please-pass-this-around-as-it-is-a-very-good-opportunity-i-am-looking-for-more-engineers-to-work-in/"
+          "@id": "http:\/\/zteo.com\/posts\/please-pass-this-around-as-it-is-a-very-good-opportunity-i-am-looking-for-more-engineers-to-work-in\/"
         },
         "headline": "Please pass this around as it is a very good opportunity: I am looking for more engineers to work in...",
         "description": "Please pass this around as it is a very good opportunity: I am looking for more engineers to work in...",
@@ -96,9 +91,9 @@ Who we are:
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -108,13 +103,13 @@ Who we are:
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/83a6006f-1ff2-4fb6-96d3-f18e3127ccc1.png",
+          "url": "http:\/\/zteo.com\/83a6006f-1ff2-4fb6-96d3-f18e3127ccc1.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2014-06-25",
         "dateModified": "2014-06-25",
-        "wordCount": 164,
+        "wordCount":  164 ,
         
     }
     </script>
@@ -194,6 +189,16 @@ Who we are:
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -217,26 +222,26 @@ Who we are:
                 
                 
 
-                <p>Please pass this around as it is a very good opportunity: I am looking for
-more engineers to work in several of my teams.</p>
 
-<p>Who I am looking for:<br />
-- you are comfortable developing using C, C++ and/or Java<br />
+                
+                    <p>Please pass this around as it is a very good opportunity: I am looking for
+more engineers to work in several of my teams.</p>
+<p>Who I am looking for:<br>
+- you are comfortable developing using C, C++ and/or Java<br>
 - you either work with embedded systems (looking at you Droiders or switch
 developers) or large web applications or SDN controllers</p>
-
-<p>Who we are:<br />
-- think of us as a startup with great benefits<br />
-- by that I mean health coverage, 401k, salary in the high 90s to 100ks<br />
-- we pay relocation expenses if necessary<br />
-- we are established, with a solid revenue stream<br />
-- and yet, we also work on multiple, very forward looking projects<br />
+<p>Who we are:<br>
+- think of us as a startup with great benefits<br>
+- by that I mean health coverage, 401k, salary in the high 90s to 100ks<br>
+- we pay relocation expenses if necessary<br>
+- we are established, with a solid revenue stream<br>
+- and yet, we also work on multiple, very forward looking projects<br>
 - we are located in Southern California, near L.A.</p>
-
 <p>I am posting this here before making it more widely available as I&rsquo;d rather
 work with one of you guys so, if you are interested or think one of your
 friends might be a match, let me know immediately.﻿</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -283,11 +288,35 @@ friends might be a match, let me know immediately.﻿</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -304,7 +333,7 @@ friends might be a match, let me know immediately.﻿</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

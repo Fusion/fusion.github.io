@@ -21,11 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Current Obsessions, June ‘08" />
     
-    <meta name="twitter:description" content="It&rsquo;s a new feature! I spend way too much time reading interesting papers&hellip; I should not be so selfish as to not share them.
-Steve Yegge&rsquo;s ramblings will enlighten you or depress you, but at least they are enjoyable. There, on my list, right under Joel Spolsky (all-time Nerd Superstar).
-Clustering and Cloud Computing
-The Helmer Cluster, but only because I can also be a hardware nerd.
-Dr Queue, not the only one, but a queue manager that proved its worth." />
+    <meta name="twitter:description" content="It&rsquo;s a new feature! I spend way too much time reading interesting papers&hellip; I should not be so selfish as to not share them." />
     <meta name="twitter:url" content="http://zteo.com/posts/current-obsessions-june-08/" />
     
 
@@ -35,7 +31,7 @@ Dr Queue, not the only one, but a queue manager that proved its worth." />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +72,7 @@ Dr Queue, not the only one, but a queue manager that proved its worth." />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/current-obsessions-june-08/"
+          "@id": "http:\/\/zteo.com\/posts\/current-obsessions-june-08\/"
         },
         "headline": "Current Obsessions, June ‘08",
         "description": "Current Obsessions, June ‘08",
@@ -93,9 +89,9 @@ Dr Queue, not the only one, but a queue manager that proved its worth." />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -112,7 +108,7 @@ Dr Queue, not the only one, but a queue manager that proved its worth." />
         },
         "datePublished": "2008-06-09",
         "dateModified": "2008-06-09",
-        "wordCount": 372,
+        "wordCount":  374 ,
         
     }
     </script>
@@ -192,6 +188,16 @@ Dr Queue, not the only one, but a queue manager that proved its worth." />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -201,7 +207,7 @@ Dr Queue, not the only one, but a queue manager that proved its worth." />
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">9 Jun 2008</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">372</span> words)</span></span>
+                        <span class="post-date">9 Jun 2008</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">374</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -215,70 +221,60 @@ Dr Queue, not the only one, but a queue manager that proved its worth." />
                 
                 
 
-                <p>It&rsquo;s a new feature! I spend way too much time reading interesting papers&hellip; I
-should not be so selfish as to not share them.</p>
 
-<p><a href="http://steve-yegge.blogspot.com/2008/03/get-that-
-job-at-google.html">Steve Yegge&rsquo;s ramblings</a> will enlighten you or depress you, but at least they are
+                
+                    <p>It&rsquo;s a new feature! I spend way too much time reading interesting papers&hellip; I
+should not be so selfish as to not share them.</p>
+<p>[Steve Yegge&rsquo;s ramblings](<a href="http://steve-yegge.blogspot.com/2008/03/get-that-">http://steve-yegge.blogspot.com/2008/03/get-that-</a>
+job-at-google.html) will enlighten you or depress you, but at least they are
 enjoyable. There, on my list, right under <a href="http://joelonsoftware.com/">Joel
 Spolsky</a> (all-time Nerd Superstar).</p>
-
 <p><strong>Clustering and Cloud Computing</strong></p>
-
 <p><a href="http://helmer.sfe.se">The Helmer Cluster</a>, but only because I can also be a
-hardware nerd.<br />
+hardware nerd.<br>
 <a href="http://drqueue.org/cwebsite/">Dr Queue</a>, not the only one, but a queue
-manager that proved its worth.<br />
+manager that proved its worth.<br>
 <a href="http://www.terracotta.org">Terracotta</a> because I have a big Java project that
 needs scaling and I believe that scaling out is a more&hellip;er&hellip;scalable
 approach.</p>
-
 <p><strong>Performance</strong></p>
-
-<p>I mean <strong>raw</strong> performance;Ã‚Â as in scaling up, this time.<br />
+<p>I mean <strong>raw</strong> performance;Ã‚Â as in scaling up, this time.<br>
 <a href="http://tokyocabinet.sourceforge.net">Tokyo Cabinet</a> seems to be the best
 tree-based database available these days. Takes me back to when I was using
 C-ISAM from Informix. NO, not all problems need a big OORDB thrown at them. In
 fact, transitioning some of your data to Tokyo Cabinet seems like a good
-application of &ldquo;write first, optimize later.&rdquo;<br />
-&ldquo;How do they do it?&rdquo; LinkedIn are kind enough to <a href="http://cookiesareforclosers.com/blog/2008/06/linkedin-
-architecture">expose their
-architecture</a>.<br />
+application of &ldquo;write first, optimize later.&rdquo;<br>
+&ldquo;How do they do it?&rdquo; LinkedIn are kind enough to [expose their
+architecture](<a href="http://cookiesareforclosers.com/blog/2008/06/linkedin-">http://cookiesareforclosers.com/blog/2008/06/linkedin-</a>
+architecture).<br>
 Twitter! Sorry, no link. Oh, well, maybe <a href="http://status.twitter.com/">one</a>.
 Oh, no, wait it&rsquo;s down. No it&rsquo;s back up! Wow, the Twitter API is currently
 capped to 10 requests per hour. Application developers: keep your calls to no
 more than one every 6 minutes&hellip;except for the public timeline, unless they
 decide to restrict its usage as well.</p>
-
 <p><strong>Wireframing, Blueprinting and A/B Testing</strong></p>
-
-<p>I need to post links here. Keep an eye on this blog entry.<br />
+<p>I need to post links here. Keep an eye on this blog entry.<br>
 Anyway, Yahoo now conveniently provides <a href="http://developer.yahoo.com/ypatterns/wireframes/">stencils for web
 mockups</a>.</p>
-
 <p><strong>Erlang</strong></p>
-
 <p>It&rsquo;s <a href="http://www.erlang.org/doc/getting_started/part_frame.html">beautiful</a>.
 I&rsquo;m just getting started, though.</p>
-
 <p><strong>Git</strong></p>
-
 <p>For so-called &ldquo;virtual companies&rdquo; this would be the ultimate in source code
 management. Even if you&rsquo;re not &ldquo;virtual&rdquo;, you may want to give it a try. I
 absolutely love how it allows me to try the craziest framework modifications
-without having to suffer any consequence.<br />
-<a href="http://www.gnome.org/~newren/eg/">Easy Git</a> -- &ldquo;git for mere mortals&rdquo;<br />
+without having to suffer any consequence.<br>
+<a href="http://www.gnome.org/~newren/eg/">Easy Git</a> -- &ldquo;git for mere mortals&rdquo;<br>
 <a href="http://www.kernel.org/pub/software/scm/git/docs/git-svn.html">Interact</a> with
-your Subversion code base - man, I want the same thing for Perforce!<br />
+your Subversion code base - man, I want the same thing for Perforce!<br>
 <a href="http://www.gitcasts.com/">Educate yourself</a>. Well, seems to work for me&hellip;</p>
-
 <p><strong>The &ldquo;If I had more time&hellip;&rdquo; section</strong></p>
-
 <p><a href="http://nestedvm.ibex.org/">NestedVM</a>:Ã‚Â whatever your source language,
-cross-compile to MIPS .o files, then convert to pure Java.<br />
+cross-compile to MIPS .o files, then convert to pure Java.<br>
 Really optimized <a href="http://www.cs.huji.ac.il/~yweiss/Colorization/">image
 colorization</a>.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -325,11 +321,35 @@ colorization</a>.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -346,7 +366,7 @@ colorization</a>.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -23,10 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/32406981-a6c2-40d9-b78d-912f76099f04.png" />
     
-    <meta name="twitter:description" content="I am both happy and relieved to announce RootTools 1.5 and NativeTools 1.0.
-What&rsquo;s new in RootTools 1.5?
-Mostly build improvements: a new AndroidManifest.xml file for easier building in Eclipse; example version number is now taken from the manifest file; new makejar.ant for building and zipping the library.
-This version also offers a new function: isNativeToolsready(). This function does a silent install/check for correct install of the nativetools binary (you could conceivably use your own binary as you provide your resource id to the function)" />
+    <meta name="twitter:description" content="I am both happy and relieved to announce RootTools 1.5 and NativeTools 1.0." />
     <meta name="twitter:url" content="http://zteo.com/posts/roottools-15-nativetools-10/" />
     
 
@@ -36,7 +33,7 @@ This version also offers a new function: isNativeToolsready(). This function doe
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +74,7 @@ This version also offers a new function: isNativeToolsready(). This function doe
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/roottools-15-nativetools-10/"
+          "@id": "http:\/\/zteo.com\/posts\/roottools-15-nativetools-10\/"
         },
         "headline": "RootTools 1.5, NativeTools 1.0",
         "description": "RootTools 1.5, NativeTools 1.0",
@@ -94,9 +91,9 @@ This version also offers a new function: isNativeToolsready(). This function doe
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -106,13 +103,13 @@ This version also offers a new function: isNativeToolsready(). This function doe
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/32406981-a6c2-40d9-b78d-912f76099f04.png",
+          "url": "http:\/\/zteo.com\/32406981-a6c2-40d9-b78d-912f76099f04.png",
           "height": 133,
           "width": 200
         },
         "datePublished": "2011-11-22",
         "dateModified": "2011-11-22",
-        "wordCount": 167,
+        "wordCount":  167 ,
         
     }
     </script>
@@ -192,6 +189,16 @@ This version also offers a new function: isNativeToolsready(). This function doe
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,33 +222,30 @@ This version also offers a new function: isNativeToolsready(). This function doe
                 
                 
 
-                <p><img src="/images/project_roottools_thumb.png" alt="" />I am both happy and
+
+                
+                    <p><img src="/images/project_roottools_thumb.png" alt="">I am both happy and
 relieved to announce <a href="http://code.google.com/p/roottools/">RootTools 1.5</a> and
 <a href="https://github.com/Fusion/NativeTools">NativeTools 1.0</a>.</p>
-
 <p><strong>What&rsquo;s new in RootTools 1.5?</strong></p>
-
 <p>Mostly build improvements: a new AndroidManifest.xml file for easier building
 in Eclipse; example version number is now taken from the manifest file; new
 makejar.ant for building and zipping the library.</p>
-
 <p>This version also offers a new function: <em>isNativeToolsready()</em>. This function
 does a silent install/check for correct install of the nativetools binary (you
 could conceivably use your own binary as you provide your resource id to the
 function)</p>
-
 <p><strong>What is NativeTools 1.0?</strong></p>
-
 <p>It&rsquo;s the piece that has been, until now, missing from the equation. I
 recommend reading readme.md for more information but the short version is that
 NativeTools provide C/C++ functions in a convenient package that you can
 invoke to perform all sorts of operations (retrieve partition size, get file
 content, etc) without having to worry about the current device&rsquo;s shell
 idiosyncrasies.</p>
-
 <p>Its other advantage is that is runs much, much faster that performing the same
 operations recursively in Java.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -288,11 +292,35 @@ operations recursively in Java.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -309,7 +337,7 @@ operations recursively in Java.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

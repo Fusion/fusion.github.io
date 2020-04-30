@@ -23,8 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/16623541-d8d0-4ed7-b4e0-7b4991513c2d.jpg" />
     
-    <meta name="twitter:description" content="A classic problem: you need an array where you are going to hold a set of values; you do not know that array&rsquo;s size in advance but it may grow to be quite the monster.
-If you use, say, an ArrayList, you have a memory-hungry beast to deal with, making sure that Android will really think about your app when it needs to kill background processes to reclaim some memory." />
+    <meta name="twitter:description" content="A classic problem: you need an array where you are going to hold a set of values; you do not know that array&rsquo;s size in advance but it may grow to be quite the monster.If you use, say, an ArrayList, you have a memory-hungry beast to deal with, making sure that Android will really think about your app when it needs to kill background processes to reclaim some memory." />
     <meta name="twitter:url" content="http://zteo.com/posts/a-fast-low-memory-growable-array-for-android/" />
     
 
@@ -34,7 +33,7 @@ If you use, say, an ArrayList, you have a memory-hungry beast to deal with, maki
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +74,7 @@ If you use, say, an ArrayList, you have a memory-hungry beast to deal with, maki
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/a-fast-low-memory-growable-array-for-android/"
+          "@id": "http:\/\/zteo.com\/posts\/a-fast-low-memory-growable-array-for-android\/"
         },
         "headline": "A fast, low-memory growable array for Android",
         "description": "A fast, low-memory growable array for Android",
@@ -92,9 +91,9 @@ If you use, say, an ArrayList, you have a memory-hungry beast to deal with, maki
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -104,13 +103,13 @@ If you use, say, an ArrayList, you have a memory-hungry beast to deal with, maki
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/16623541-d8d0-4ed7-b4e0-7b4991513c2d.jpg",
+          "url": "http:\/\/zteo.com\/16623541-d8d0-4ed7-b4e0-7b4991513c2d.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2011-11-01",
         "dateModified": "2011-11-01",
-        "wordCount": 523,
+        "wordCount":  523 ,
         
     }
     </script>
@@ -190,6 +189,16 @@ If you use, say, an ArrayList, you have a memory-hungry beast to deal with, maki
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,23 +222,22 @@ If you use, say, an ArrayList, you have a memory-hungry beast to deal with, maki
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/asirap/5587611705/sizes/z/in/photostream/"><img src="/images/5587611705_2aa6dfbe31_z-300x200.jpg" alt="" /></a>A
+
+                
+                    <p><a href="http://www.flickr.com/photos/asirap/5587611705/sizes/z/in/photostream/"><img src="/images/5587611705_2aa6dfbe31_z-300x200.jpg" alt=""></a>A
 classic problem: you need an array where you are going to hold a set of
 values; you do not know that array&rsquo;s size in advance but it may grow to be
-quite the monster.<br />
+quite the monster.<br>
 If you use, say, an ArrayList, you have a memory-hungry beast to deal with,
 making sure that Android will really think about your app when it needs to
 kill background processes to reclaim some memory.</p>
-
 <p>The solutions offered here have a few downsides, not least of them being the
 copy operations; however they are kept to a minimum.</p>
-
 <p>Upon closer inspection you will notice that this code tries to deal with two-
 dimensional arrays by storing booleans in a [row][col] array; it is outside
 the scope of this post but, yes, I am using integers as bit fields to
 represent these booleans. The memory savings are huge.</p>
-
-<p><strong>Solution #1 &ndash; for an array growing linearly</strong><br />
+<p><strong>Solution #1 &ndash; for an array growing linearly</strong><br>
 I know that this table will be filled &ldquo;top to bottom&rdquo; so I simply double its
 size whenever I am about to reach its current boundary. If I waited to
 effectively reach the boundary, a loop relying on size() would not go beyond
@@ -240,7 +248,7 @@ growth but staggered linear growth.</p>
     int mRow<span class="o">[]</span><span class="p">;</span>
     
     public GridInfo<span class="o">()</span> <span class="o">{</span>
-        this<span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="p">;</span>
+        this<span class="o">(</span>2<span class="o">)</span><span class="p">;</span>
     <span class="o">}</span>
     
     public GridInfo<span class="o">(</span>int size<span class="o">)</span> <span class="o">{</span>
@@ -253,28 +261,28 @@ growth but staggered linear growth.</p>
     <span class="o">}</span>
     
     void resize<span class="o">()</span> <span class="o">{</span>
-        int resizedArray<span class="o">[]</span> <span class="o">=</span> new int<span class="o">[</span>mSize * <span class="m">2</span><span class="o">]</span><span class="p">;</span>
-        System.arraycopy<span class="o">(</span>mRow, <span class="m">0</span>, resizedArray, <span class="m">0</span>, mSize<span class="o">)</span><span class="p">;</span>
+        int resizedArray<span class="o">[]</span> <span class="o">=</span> new int<span class="o">[</span>mSize * 2<span class="o">]</span><span class="p">;</span>
+        System.arraycopy<span class="o">(</span>mRow, 0, resizedArray, 0, mSize<span class="o">)</span><span class="p">;</span>
         <span class="nv">mRow</span> <span class="o">=</span> resizedArray<span class="p">;</span>
-        mSize *<span class="o">=</span> <span class="m">2</span><span class="p">;</span>
+        mSize *<span class="o">=</span> 2<span class="p">;</span>
     <span class="o">}</span>
     
     void flickOn<span class="o">(</span>int row, int col<span class="o">)</span> <span class="o">{</span>
         <span class="k">if</span><span class="o">(</span>row + <span class="m">1</span> &gt;<span class="o">=</span> mSize<span class="o">)</span> resize<span class="o">(</span>row<span class="o">)</span><span class="p">;</span>
-        mRow<span class="o">[</span>row<span class="o">]</span> <span class="p">|</span><span class="o">=</span> <span class="o">(</span><span class="m">2</span><span class="s">&lt;&lt;col);
+        mRow<span class="o">[</span>row<span class="o">]</span> <span class="p">|</span><span class="o">=</span> <span class="o">(</span>2<span class="s">&lt;&lt;col);
 </span><span class="s">    }
 </span><span class="s">    
 </span><span class="s">    void flickOff(int row, int col</span><span class="o">)</span> <span class="o">{</span>
         <span class="k">if</span><span class="o">(</span>row + <span class="m">1</span> &gt;<span class="o">=</span> mSize<span class="o">)</span> resize<span class="o">(</span>row<span class="o">)</span><span class="p">;</span>
-        mRow<span class="o">[</span>row<span class="o">]</span> <span class="p">&amp;</span><span class="o">=</span> ~<span class="o">(</span><span class="m">2</span><span class="s">&lt;&lt;col);
+        mRow<span class="o">[</span>row<span class="o">]</span> <span class="p">&amp;</span><span class="o">=</span> ~<span class="o">(</span>2<span class="s">&lt;&lt;col);
 </span><span class="s">    }
 </span><span class="s">    
 </span><span class="s">    boolean isFlicked(int row, int col</span><span class="o">)</span> <span class="o">{</span>
         <span class="k">if</span><span class="o">(</span>row  + <span class="m">1</span> &gt;<span class="o">=</span> mSize<span class="o">)</span> resize<span class="o">(</span>row<span class="o">)</span><span class="p">;</span>
-        <span class="k">return</span> <span class="o">((</span>mRow<span class="o">[</span>row<span class="o">]</span> <span class="p">&amp;</span> <span class="o">(</span><span class="m">2</span>&lt;&lt;col<span class="o">))</span> !<span class="o">=</span> <span class="m">0</span><span class="o">)</span><span class="p">;</span>
+        <span class="k">return</span> <span class="o">((</span>mRow<span class="o">[</span>row<span class="o">]</span> <span class="p">&amp;</span> <span class="o">(</span>2&lt;&lt;col<span class="o">))</span> !<span class="o">=</span> 0<span class="o">)</span><span class="p">;</span>
     <span class="o">}</span>
-<span class="o">}</span></code></pre></div>
-<p><strong>Solution #2 &ndash; for a random-access array</strong><br />
+<span class="o">}</span>
+</code></pre></div><p><strong>Solution #2 &ndash; for a random-access array</strong><br>
 Here, the developer using this class may decide to look ahead for a value that
 may or may not exist. By resizing the array to 2 to the power of (log2(our
 desired row number&rsquo;s)+1), we make sure that this yet uncharted territory
@@ -321,11 +329,12 @@ exists.</p>
         <span class="k">if</span><span class="o">(</span><span class="n">row</span>  <span class="o">+</span> <span class="n">1</span> <span class="o">&gt;=</span> <span class="n">mSize</span><span class="o">)</span> <span class="n">resize</span><span class="o">(</span><span class="n">row</span><span class="o">);</span>
         <span class="k">return</span> <span class="o">((</span><span class="n">mRow</span><span class="o">[</span><span class="n">row</span><span class="o">]</span> <span class="o">&amp;</span> <span class="o">(</span><span class="n">2</span><span class="o">&lt;&lt;</span><span class="n">col</span><span class="o">))</span> <span class="o">!=</span> <span class="n">0</span><span class="o">);</span>
     <span class="o">}</span>
-<span class="o">}</span></code></pre></div>
-<p>Of course, make sure to pick an initial value as close as possible to what you
+<span class="o">}</span>
+</code></pre></div><p>Of course, make sure to pick an initial value as close as possible to what you
 expect your array&rsquo;s average size to be. &ldquo;2&rdquo; is not a very likely choice in
 most cases.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -372,11 +381,35 @@ most cases.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -393,7 +426,7 @@ most cases.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

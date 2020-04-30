@@ -23,8 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/5cd62ec8-8c6d-4d02-8ac8-99884605bda7.jpg" />
     
-    <meta name="twitter:description" content="I was reading Paul Gregg&rsquo;s very clear explanation of &ldquo;classless&rdquo; ranges comparison when I realized that his code was not as &ldquo;bare metal&rdquo; as could be.So, here is the code I&rsquo;ve been using in nextBBS.It only accepts ranges in the form &ldquo;x.x.x.x/b&rdquo; but it&rsquo;s short and all I needed, really.
-function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison $cursubnet = explode(&#39;/&#39;, $subnet); $longsubnet = ip2long($cursubnet[0]); $longip = ip2long($ip); if(count($cursubnet){ // Compare IP itself return ($longip==$longsubnet); } // IPv4 only!" />
+    <meta name="twitter:description" content="" />
     <meta name="twitter:url" content="http://zteo.com/posts/determining-if-an-ip-is-within-a-specific-range-redux/" />
     
 
@@ -34,7 +33,7 @@ function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +74,7 @@ function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/determining-if-an-ip-is-within-a-specific-range-redux/"
+          "@id": "http:\/\/zteo.com\/posts\/determining-if-an-ip-is-within-a-specific-range-redux\/"
         },
         "headline": "Determining if an IP is within a specific range: redux",
         "description": "Determining if an IP is within a specific range: redux",
@@ -92,9 +91,9 @@ function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -104,13 +103,13 @@ function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/5cd62ec8-8c6d-4d02-8ac8-99884605bda7.jpg",
+          "url": "http:\/\/zteo.com\/5cd62ec8-8c6d-4d02-8ac8-99884605bda7.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2009-04-30",
         "dateModified": "2009-04-30",
-        "wordCount": 97,
+        "wordCount":  97 ,
         
     }
     </script>
@@ -190,6 +189,16 @@ function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,7 +222,9 @@ function isSubnet($subnet, $ip) { // Classless (in more than one way) comparison
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/93752018@N00/3025827461/"><img src="/images/3025827461_5065a550e4_t.jpg" alt="Submarine Net" /></a>I was reading Paul Gregg&rsquo;s very clear explanation of
+
+                
+                    <p><a href="http://www.flickr.com/photos/93752018@N00/3025827461/"><img src="/images/3025827461_5065a550e4_t.jpg" alt="Submarine Net"></a>I was reading Paul Gregg&rsquo;s very clear explanation of
 &ldquo;classless&rdquo; ranges comparison when I realized that his code was not as &ldquo;bare
 metal&rdquo; as could be.So, here is the code I&rsquo;ve been using in nextBBS.It only
 accepts ranges in the form &ldquo;x.x.x.x/b&rdquo; but it&rsquo;s short and all I needed,
@@ -230,7 +241,9 @@ really.</p>
     // IPv4 only!
     $subnetmask = 0xffffffff <span class="err">&lt;&lt;</span> (32-$cursubnet[1]);
     return (($longip <span class="err">&amp;</span> $subnetmask) == ($longsubnet <span class="err">&amp;</span> $subnetmask));
-}</code></pre></div>
+}
+</code></pre></div>
+                
               </section>
 
               <footer class="post-footer">
@@ -277,11 +290,35 @@ really.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -298,7 +335,7 @@ really.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

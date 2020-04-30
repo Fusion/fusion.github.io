@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="ExtPHP now on Github" />
     
-    <meta name="twitter:description" content="About 10 months ago, I released this tool, allowing developers to handle ExtJS like &ldquo;managed&rdquo; code in PHP: ExtPHP.
-Shortly thereafter, Jack Slocum changed ExtJS&rsquo; licensing model and it all became very muddy but my main question was: &ldquo;As a commercial user, what would the status of the extensions be?&rdquo;
-It seems that it&rsquo;s OK to create an extension and not GPL it as long as it doesn&rsquo;t contain any ExtJS original code." />
+    <meta name="twitter:description" content="About 10 months ago, I released this tool, allowing developers to handle ExtJS like &ldquo;managed&rdquo; code in PHP: ExtPHP." />
     <meta name="twitter:url" content="http://zteo.com/posts/extphp-now-on-github/" />
     
 
@@ -33,7 +31,7 @@ It seems that it&rsquo;s OK to create an extension and not GPL it as long as it 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +72,7 @@ It seems that it&rsquo;s OK to create an extension and not GPL it as long as it 
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/extphp-now-on-github/"
+          "@id": "http:\/\/zteo.com\/posts\/extphp-now-on-github\/"
         },
         "headline": "ExtPHP now on Github",
         "description": "ExtPHP now on Github",
@@ -91,9 +89,9 @@ It seems that it&rsquo;s OK to create an extension and not GPL it as long as it 
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ It seems that it&rsquo;s OK to create an extension and not GPL it as long as it 
         },
         "datePublished": "2009-01-19",
         "dateModified": "2009-01-19",
-        "wordCount": 215,
+        "wordCount":  216 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ It seems that it&rsquo;s OK to create an extension and not GPL it as long as it 
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -199,7 +207,7 @@ It seems that it&rsquo;s OK to create an extension and not GPL it as long as it 
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">19 Jan 2009</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">215</span> words)</span></span>
+                        <span class="post-date">19 Jan 2009</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">216</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -213,15 +221,15 @@ It seems that it&rsquo;s OK to create an extension and not GPL it as long as it 
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/27078865@N00/3033140074/" title="Day CQ5 - Workflow Editor"><img src="http://farm4.static.flickr.com/3027/3033140074_d097832be7_t.jpg" alt="Day CQ5 - Workflow
-Editor" /></a>About 10 months ago, I released this tool,
-allowing developers to handle ExtJS like &ldquo;managed&rdquo; code in PHP:
-<a href="http://nexus.zteo.com/2008/03/04/extphp-an-extjs-converterwrapper-
-for-php-developers/">ExtPHP</a>.</p>
 
+                
+                    <p><a href="http://www.flickr.com/photos/27078865@N00/3033140074/" title="Day CQ5 - Workflow Editor"><img src="http://farm4.static.flickr.com/3027/3033140074_d097832be7_t.jpg" alt="Day CQ5 - WorkflowEditor"></a>About 10 months ago, I released this tool,
+allowing developers to handle ExtJS like &ldquo;managed&rdquo; code in PHP:
+[ExtPHP](<a href="http://nexus.zteo.com/2008/03/04/extphp-an-extjs-converterwrapper-">http://nexus.zteo.com/2008/03/04/extphp-an-extjs-converterwrapper-</a>
+for-php-developers/).</p>
 <p>Shortly thereafter, Jack Slocum changed ExtJS&rsquo; licensing model and it all
 became very muddy but my main question was: &ldquo;As a commercial user, what would
-the status of the extensions be?&rdquo;<br />
+the status of the extensions be?&rdquo;<br>
 It seems that it&rsquo;s OK to create an extension and not GPL it as long as it
 doesn&rsquo;t contain any ExtJS original code. The claim is that most extensions now
 fall under that category. Of course, there is still the risk of an extension
@@ -229,21 +237,18 @@ still containing ExtJS code &ndash; hint: that&rsquo;s very likely &ndash; and t
 paid for ExtJS commercial licensing is now burdened with&hellip;what? De-facto GPL
 code? Or does the code that was reused considered &ldquo;commercially licensed&rdquo; as
 well? Even though it is part of an open-source extension?</p>
-
 <p>Ten months later, I am not getting a sense that things were clarified well
 enough. Look at <a href="http://extjs.com/forum/showthread.php?t=33891&amp;page=10">this
 topic</a> on ExtJS&rsquo;
 forums. It looks like, after September, everybody gave up.</p>
-
 <p><strong>So, what now?</strong></p>
-
 <p>Well, if anyone could point me to a comprehensive answer regarding this issue,
 that will sure help me decide whether to revisit my decision to give up on
 ExtJS from a commercial standpoint.</p>
-
 <p>In the meantime, <strong>ExtPHP is now<a href="http://github.com/Fusion/extphp/tree/master">available at
 Github</a></strong>.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -290,11 +295,35 @@ Github</a></strong>.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -311,7 +340,7 @@ Github</a></strong>.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

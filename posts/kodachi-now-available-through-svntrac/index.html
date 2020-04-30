@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Kodachi now available through SVN/Trac" />
     
-    <meta name="twitter:description" content="You can now anonymously sync. to the bleeding edge version of Kodachi&rsquo;s source code at svn://nextbbs.com/kodachi
-If you do not feel like installing svn/compiling Kodachi but are still curious about its source code, you can browse it at http://www.nextbbs.com/trac/kodachi/
-Note : if you sync. to the first check-in, you will get the version of Kodachi that is currently downloadable. If you sync. to the next one, you will get a new version with a temporary default interface." />
+    <meta name="twitter:description" content="You can now anonymously sync. to the bleeding edge version of Kodachi&rsquo;s source code at svn://nextbbs.com/kodachi" />
     <meta name="twitter:url" content="http://zteo.com/posts/kodachi-now-available-through-svntrac/" />
     
 
@@ -33,7 +31,7 @@ Note : if you sync. to the first check-in, you will get the version of Kodachi t
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,10 +72,10 @@ Note : if you sync. to the first check-in, you will get the version of Kodachi t
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/kodachi-now-available-through-svntrac/"
+          "@id": "http:\/\/zteo.com\/posts\/kodachi-now-available-through-svntrac\/"
         },
-        "headline": "Kodachi now available through SVN/Trac",
-        "description": "Kodachi now available through SVN/Trac",
+        "headline": "Kodachi now available through SVN\/Trac",
+        "description": "Kodachi now available through SVN\/Trac",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -91,9 +89,9 @@ Note : if you sync. to the first check-in, you will get the version of Kodachi t
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ Note : if you sync. to the first check-in, you will get the version of Kodachi t
         },
         "datePublished": "2007-12-03",
         "dateModified": "2007-12-03",
-        "wordCount": 85,
+        "wordCount":  85 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ Note : if you sync. to the first check-in, you will get the version of Kodachi t
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,19 +221,20 @@ Note : if you sync. to the first check-in, you will get the version of Kodachi t
                 
                 
 
-                <p><img src="/images/kodachi.png" alt="Kodachi" />You can now
+
+                
+                    <p><img src="/images/kodachi.png" alt="Kodachi">You can now
 anonymously sync. to the bleeding edge version of Kodachi&rsquo;s source code at
 svn://nextbbs.com/kodachi</p>
-
 <p>If you do not feel like installing svn/compiling Kodachi but are still curious
 about its source code, you can browse it at
 <a href="http://www.nextbbs.com/trac/kodachi/">http://www.nextbbs.com/trac/kodachi/</a></p>
-
 <p><strong>Note</strong> : if you sync. to the first check-in, you will get the version of
 Kodachi that is currently downloadable. If you sync. to the next one, you will
 get a new version with a temporary default interface. Yes, I am working on
 adding customizable interfaces.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -272,11 +281,35 @@ adding customizable interfaces.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -293,7 +326,7 @@ adding customizable interfaces.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

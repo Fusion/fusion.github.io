@@ -23,8 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/74ea43b4-1e43-4294-a6b4-fa2f73e663ca.jpg" />
     
-    <meta name="twitter:description" content="This is a &ldquo;niche&rdquo; post: it will really only appeal to you if you have access to your own &ndash; or a friend&rsquo;s &ndash; name servers and want to use your own domain to track your dynamic IP addresses, such as your home router&rsquo;s.
-You will still have to buy your own domain, cheap if you go to internet.bs or namecheap.com. I hear that the latter even provide their own dynamic DNS service although I cannot tell you anything about its quality/flexibility." />
+    <meta name="twitter:description" content="This is a &ldquo;niche&rdquo; post: it will really only appeal to you if you have access to your own &ndash; or a friend&rsquo;s &ndash; name servers and want to use your own domain to track your dynamic IP addresses, such as your home router&rsquo;s.You will still have to buy your own domain, cheap if you go to internet.bs or namecheap.com. I hear that the latter even provide their own dynamic DNS service although I cannot tell you anything about its quality/flexibility." />
     <meta name="twitter:url" content="http://zteo.com/posts/your-own-dynamic-dns-in-3-steps/" />
     
 
@@ -34,7 +33,7 @@ You will still have to buy your own domain, cheap if you go to internet.bs or na
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +74,7 @@ You will still have to buy your own domain, cheap if you go to internet.bs or na
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/your-own-dynamic-dns-in-3-steps/"
+          "@id": "http:\/\/zteo.com\/posts\/your-own-dynamic-dns-in-3-steps\/"
         },
         "headline": "Your own Dynamic DNS in 3 steps",
         "description": "Your own Dynamic DNS in 3 steps",
@@ -92,9 +91,9 @@ You will still have to buy your own domain, cheap if you go to internet.bs or na
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -104,13 +103,13 @@ You will still have to buy your own domain, cheap if you go to internet.bs or na
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/74ea43b4-1e43-4294-a6b4-fa2f73e663ca.jpg",
+          "url": "http:\/\/zteo.com\/74ea43b4-1e43-4294-a6b4-fa2f73e663ca.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2011-12-29",
         "dateModified": "2011-12-29",
-        "wordCount": 1114,
+        "wordCount":  1114 ,
         
     }
     </script>
@@ -190,6 +189,16 @@ You will still have to buy your own domain, cheap if you go to internet.bs or na
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,93 +222,79 @@ You will still have to buy your own domain, cheap if you go to internet.bs or na
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/chazzlayne/3849853039/in/photostream/"><img src="/images/3849853039_7a466ff65a_z-225x300.jpg" alt="Picture by Chazz Layne" /></a><br />
+
+                
+                    <p><a href="http://www.flickr.com/photos/chazzlayne/3849853039/in/photostream/"><img src="/images/3849853039_7a466ff65a_z-225x300.jpg" alt="Picture by Chazz Layne"></a><br>
 This is a &ldquo;niche&rdquo; post: it will really only appeal to you if you have access
 to your own &ndash; or a friend&rsquo;s &ndash; name servers and want to use your own domain
-to track your dynamic IP addresses, such as your home router&rsquo;s.<br />
+to track your dynamic IP addresses, such as your home router&rsquo;s.<br>
 You will still have to buy your own domain, cheap if you go to
 <a href="http://internet.bs">internet.bs</a> or <a href="http://namecheap.com">namecheap.com</a>. I
 hear that the latter even provide their own dynamic DNS service although I
 cannot tell you anything about its quality/flexibility.</p>
-
 <p>So, why this post? It&rsquo;s for you, my friends, budding entrepreneurs who wish to
 bootstrap your business and know that every cent counts. Maybe you feel that
 you could host your product&rsquo;s web site on a home computer. Maybe you need more
 control over what happens on that server. Or maybe you want to be able to log
 on to your development machine from anywhere in the world.</p>
-
 <p>Whatever your reasons, you&rsquo;re still here. So let&rsquo;s get started.</p>
-
 <p><strong>1. NTP</strong></p>
-
 <p>First, for DNS updates to be accepted by BIND, the client that sends updates
 needs for its internal clock to be closely in step with the DNS&rsquo; clock. This
 is, of course, achieved by running the network time protocol (NTP) at both
 ends.</p>
-
 <p>On RedHat:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yum install ntp</code></pre></div>
-<p>On Debian/Ubuntu/Mint:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get install ntp</code></pre></div>
-<p>OS X comes with NTP pre-installed.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yum install ntp
+</code></pre></div><p>On Debian/Ubuntu/Mint:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get install ntp
+</code></pre></div><p>OS X comes with NTP pre-installed.</p>
 <p>Your NTP client should come with a configuration that will work with the
 distro&rsquo;s own NTP servers. Check the content of <em>/etc/ntp.conf</em>. If no server
 is provided, you can still test your configuration against
 <em><strong>0.pool.ntp.org</strong></em>. It is nowhere near as nice as <a href="http://www.pool.ntp.org/en/join.html">adding your own ntp
 server to the ntp system</a> though.</p>
-
 <p>Start the NTP daemon; this is typically done using:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">/etc/init.d/ntpd start</code></pre></div>
-<p>Install this daemon so that it will always be automatically started:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">chkconfig ntpd on</code></pre></div>
-<p>In OS X, this is a much easier configuration: open <em>System Preferences &gt; Data
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">/etc/init.d/ntpd start
+</code></pre></div><p>Install this daemon so that it will always be automatically started:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">chkconfig ntpd on
+</code></pre></div><p>In OS X, this is a much easier configuration: open <em>System Preferences &gt; Data
 &amp; Time</em> and check &lsquo;Set date and time automatically&rsquo;</p>
-
 <p>On Windows, various options are available, including the open-source
 <a href="http://www.timesynctool.com/">NetTime</a>.</p>
-
 <p><strong>2. BIND</strong></p>
-
 <p>Here is a bit of info that you need to know: dynamic DNS will generate zone
 files that will not be human-readable. Therefore you are not going to want to
 maintain files that mix dynamic and static DNS information. That is why I
 typically make a subdomain dynamic while leaving the domain itself static. For
 instance, if you own the domain <strong>mydomain.com</strong> , I would recommend that you
 create a new zone for <strong>d.mydomain.com</strong> and only that zone will be dynamic.</p>
-
 <p>If, on the other hand, you do not need to maintain both static and dynamic
 IPs, you obviously can make the whole <strong>mydomain.com</strong> dynamic.</p>
-
 <p>OK, so that&rsquo;s where I&rsquo;m lying. By omission. After all there is nothing
 preventing you, as we shall soon see, to maintain a set of static addresses
 alongside the dynamic ones in your update script.</p>
-
 <p>Let&rsquo;s declare a dynamic zone in <em>/etc/named.conf</em> (or
 <em>/var/named/chroot/etc/named.conf</em> if running BIND in a chroot environment):</p>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">zone</span> <span class="s2">&#34;d.mydomain.com&#34;</span> <span class="p">{</span>  
         <span class="err">type</span> <span class="err">master;</span>  
         <span class="err">file</span> <span class="nt">&#34;/var/named/data/d.mydomain.com.db&#34;</span><span class="err">;</span>   
         <span class="err">allow-update</span> <span class="p">{</span> <span class="err">key</span> <span class="err">host1.d.mydomain.com.;</span> <span class="p">}</span><span class="err">;</span>  
-    <span class="p">}</span><span class="err">;</span></code></pre></div>
-<p>This tells BIND that a client providing the correct key &lsquo;host1.d.mydomain.com&rsquo;
+    <span class="p">}</span><span class="err">;</span>
+</code></pre></div><p>This tells BIND that a client providing the correct key &lsquo;host1.d.mydomain.com&rsquo;
 is allowed to update this zone file (d.mydomain.com.db)</p>
-
 <p>This key needs to be present in named.conf as well:</p>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">key</span> <span class="err">host</span><span class="mi">1</span><span class="err">.d.mydomain.com.</span> <span class="p">{</span>  
         <span class="err">algorithm</span> <span class="err">hmac-md5;</span>  
         <span class="err">secret</span> <span class="nt">&#34;&lt; your public key here &gt;&#34;</span><span class="err">;</span>  
-<span class="p">}</span><span class="err">;</span></code></pre></div>
-<p>We will see very soon where we get this key from. Note that you could decide
+<span class="p">}</span><span class="err">;</span>
+</code></pre></div><p>We will see very soon where we get this key from. Note that you could decide
 that you wish to be cleaner and store that key in an external file.</p>
-
 <p>So, that was easy. However, this approach gives access to a full domain (
 <strong>d.mydomain.com</strong> ) to a single user as long as they have the correct private
-key in their possession.<br />
+key in their possession.<br>
 What if you wish to share a domain among multiple users, each only allowed to
 modify their own host name?</p>
-
-<p>That&rsquo;s where &lsquo;update-policy&rsquo; can be useful.<br />
+<p>That&rsquo;s where &lsquo;update-policy&rsquo; can be useful.<br>
 Here is your updated named.conf file to allow two different users to update
 their respective host info:</p>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">zone</span> <span class="s2">&#34;d.mydomain.com&#34;</span> <span class="p">{</span>  
@@ -310,38 +305,31 @@ their respective host info:</p>
         <span class="err">grant</span> <span class="err">host1.d.mydomain.com.</span> <span class="err">name</span> <span class="err">host1.d.mydomain.com.</span> <span class="err">A</span> <span class="err">TXT;</span>  
         <span class="err">grant</span> <span class="err">host2.d.mydomain.com.</span> <span class="err">name</span> <span class="err">host2.d.mydomain.com.</span> <span class="err">A</span> <span class="err">TXT;</span>  
     <span class="p">}</span><span class="err">;</span>  
-<span class="p">}</span><span class="err">;</span></code></pre></div>
-<p>Of course, the keys &lsquo;host1.d.mydomain.com&rsquo; and &lsquo;host2.d.mydomain.com&rsquo; need to
+<span class="p">}</span><span class="err">;</span>
+</code></pre></div><p>Of course, the keys &lsquo;host1.d.mydomain.com&rsquo; and &lsquo;host2.d.mydomain.com&rsquo; need to
 be present in the same file.</p>
-
 <p>OK, we&rsquo;re almost there. Just one last bit of preparation will go a long way,
 though: make sure that the user BIND is running as has write-access to the
 zone hierarchy! Keep in mind that BIND will end up generating zone files,
 unlike with static zones.</p>
-
 <p><strong>3. UPDATES</strong></p>
-
 <p>Now, to update these zones remotely, we will rely on a traditional BIND tool
-known as <em><strong>nsupdate</strong></em>.<br />
+known as <em><strong>nsupdate</strong></em>.<br>
 It is available on Linux and OS X. Instructions for installing on Windows can
 be found <a href="http://wiki.inisec.com/index.php/Nsupdate_for_windows">here</a> and, of
 course, as usual Cygwin provides its own version.</p>
-
 <p>Let&rsquo;s generate a key for our host1.d.mydomain.com. host:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">dnssec-keygen -a hmac-md5 -b <span class="m">128</span> -n USER host1.d.mydomain.com.</code></pre></div>
-<p>This will output two files:<br />
- <em>Khost1.d.mydomain.com.XXXXX.key</em><br />
-and<br />
- <em>Khost1.d.mydomain.com.XXXXX.private</em></p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">dnssec-keygen -a hmac-md5 -b <span class="m">128</span> -n USER host1.d.mydomain.com.
+</code></pre></div><p>This will output two files:<br>
+<em>Khost1.d.mydomain.com.XXXXX.key</em><br>
+and<br>
+<em>Khost1.d.mydomain.com.XXXXX.private</em></p>
 <p>Get the key from the first file (just the segment that ends in &lsquo;==&rsquo;) and use
 it to replace &lsquo;&lt; your public key here &gt;&rsquo; in named.conf.</p>
-
 <p>You can now focus on the client.</p>
-
 <p>Here is a sample script I wrote that will perform a very minimal update every
 half-hour. This script lives in /home/&lt; your home dir &gt;/DNS_KEY along with the
-<em>Khost1.d.mydomain.com.XXXXX.private</em> file.<br />
+<em>Khost1.d.mydomain.com.XXXXX.private</em> file.<br>
 Obviously you will need to modify &lt; your home dir &gt;, &lt; master DNS name &gt;,
 host1.d.mydomain.com and Khost1.d.mydomain.com.XXXXX.private:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
@@ -375,23 +363,21 @@ http://www.antedes.com/getip.php, ..?
 <span class="c1"># Sleeeeeeep I tell you</span>  
 <span class="c1"># 1800 = 30 minutes</span>  
 sleep <span class="m">1800</span>  
-<span class="k">done</span></code></pre></div>
-<p>You can install this script on Linux as your own daemon or run it manually
-using &lsquo;nohup &lt; scriptname &gt; &amp;&rsquo; or get rid of the loop and use crontab.<br />
+<span class="k">done</span>
+</code></pre></div><p>You can install this script on Linux as your own daemon or run it manually
+using &lsquo;nohup &lt; scriptname &gt; &amp;&rsquo; or get rid of the loop and use crontab.<br>
 On OS X, I ask <a href="http://www.peterborgapps.com/lingon/">Lingon</a> to start it
 early on.</p>
-
 <p>Do not modify the 30 minutes sleep time; be polite to these services that
 provide your IP for fre.</p>
-
 <p><strong>CONCLUSION</strong></p>
-
 <p>Of course, you want to remember to restart BIND so that it will read its new
 configuration. It will not need to be restarted again; it will automatically
-integrate all dynamic updates.<br />
+integrate all dynamic updates.<br>
 Hope this helps and as usual if you have questions I will try not to ignore
 them for too long :)</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -438,11 +424,35 @@ them for too long :)</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -459,7 +469,7 @@ them for too long :)</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

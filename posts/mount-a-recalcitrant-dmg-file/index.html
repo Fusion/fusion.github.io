@@ -23,10 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/64ef562f-d60c-4fcf-b7e3-0d3d49a0af08.jpg" />
     
-    <meta name="twitter:description" content="I have no idea why but sometimes a .dmg file will just-not-mount.
-For instance I just downloaded the latest PostBox from http://postbox-inc.com/ and the silly little image will not cooperate.
-My amazingly quick&rsquo;nt dirty workaround? Convert it to another format file (using the command-line)!
-hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso" />
+    <meta name="twitter:description" content="I have no idea why but sometimes a .dmg file will just-not-mount.For instance I just downloaded the latest PostBox from http://postbox-inc.com/ and the silly little image will not cooperate." />
     <meta name="twitter:url" content="http://zteo.com/posts/mount-a-recalcitrant-dmg-file/" />
     
 
@@ -36,7 +33,7 @@ hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -77,7 +74,7 @@ hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso" />
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/mount-a-recalcitrant-dmg-file/"
+          "@id": "http:\/\/zteo.com\/posts\/mount-a-recalcitrant-dmg-file\/"
         },
         "headline": "Mount a recalcitrant .dmg file",
         "description": "Mount a recalcitrant .dmg file",
@@ -94,9 +91,9 @@ hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso" />
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -106,13 +103,13 @@ hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso" />
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/64ef562f-d60c-4fcf-b7e3-0d3d49a0af08.jpg",
+          "url": "http:\/\/zteo.com\/64ef562f-d60c-4fcf-b7e3-0d3d49a0af08.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2009-06-18",
         "dateModified": "2009-06-18",
-        "wordCount": 51,
+        "wordCount":  51 ,
         
     }
     </script>
@@ -192,6 +189,16 @@ hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso" />
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,12 +222,15 @@ hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso" />
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/35237092727@N01/256597423/"><img src="/images/256597423_0ed45180a9_t.jpg" alt="pzizz" /></a>I have no idea why but sometimes a .dmg file will just-not-mount.<br />
-For instance I just downloaded the latest PostBox from <a href="http://postbox-inc.com/">http://postbox-inc.com/</a> and the silly little image will <em>not</em> cooperate.</p>
 
+                
+                    <p><a href="http://www.flickr.com/photos/35237092727@N01/256597423/"><img src="/images/256597423_0ed45180a9_t.jpg" alt="pzizz"></a>I have no idea why but sometimes a .dmg file will just-not-mount.<br>
+For instance I just downloaded the latest PostBox from <a href="http://postbox-inc.com/">http://postbox-inc.com/</a> and the silly little image will <em>not</em> cooperate.</p>
 <p>My amazingly quick&rsquo;nt dirty workaround? <strong>Convert it to another format file</strong>
 (using the command-line)!</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hdiutil convert postbox-1.0b12-mac.dmg -format UDTO -o postbox_iso
+</code></pre></div>
+                
               </section>
 
               <footer class="post-footer">
@@ -267,11 +277,35 @@ For instance I just downloaded the latest PostBox from <a href="http://postbox-i
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -288,7 +322,7 @@ For instance I just downloaded the latest PostBox from <a href="http://postbox-i
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

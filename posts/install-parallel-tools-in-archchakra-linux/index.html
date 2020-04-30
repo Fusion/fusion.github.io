@@ -23,13 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/f7b2f8de-d93f-4170-960c-d0f9a7c386f5.jpg" />
     
-    <meta name="twitter:description" content="As niche posts go, I think this one may take the cake since it is about my experience installing Parallel 7&rsquo;s tools in a Chakra Linux guest (of the venerable Arch family)
-Let me begin with pointing out that there are no Parallel Tools for Arch/Chakra but you can still make this work.
-What you need
- Parallels 7
- Chakra Linux
- Kernel 3.2
-  Let&rsquo;s do this" />
+    <meta name="twitter:description" content="As niche posts go, I think this one may take the cake since it is about my experience installing Parallel 7&rsquo;s tools in a Chakra Linux guest (of the venerable Arch family)" />
     <meta name="twitter:url" content="http://zteo.com/posts/install-parallel-tools-in-archchakra-linux/" />
     
 
@@ -39,7 +33,7 @@ What you need
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -80,10 +74,10 @@ What you need
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/install-parallel-tools-in-archchakra-linux/"
+          "@id": "http:\/\/zteo.com\/posts\/install-parallel-tools-in-archchakra-linux\/"
         },
-        "headline": "Install Parallel Tools in Arch/Chakra Linux",
-        "description": "Install Parallel Tools in Arch/Chakra Linux",
+        "headline": "Install Parallel Tools in Arch\/Chakra Linux",
+        "description": "Install Parallel Tools in Arch\/Chakra Linux",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -97,9 +91,9 @@ What you need
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -109,13 +103,13 @@ What you need
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/f7b2f8de-d93f-4170-960c-d0f9a7c386f5.jpg",
+          "url": "http:\/\/zteo.com\/f7b2f8de-d93f-4170-960c-d0f9a7c386f5.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2012-02-13",
         "dateModified": "2012-02-13",
-        "wordCount": 181,
+        "wordCount":  181 ,
         
     }
     </script>
@@ -195,6 +189,16 @@ What you need
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -218,30 +222,30 @@ What you need
                 
                 
 
-                <p><img src="/images/chakra-project.jpg" alt="" />As niche posts go, I think
+
+                
+                    <p><img src="/images/chakra-project.jpg" alt="">As niche posts go, I think
 this one may take the cake since it is about my experience installing Parallel
 7&rsquo;s tools in a Chakra Linux guest (of the venerable Arch family)</p>
-
 <p>Let me begin with pointing out that there are no Parallel Tools for
 Arch/Chakra but you can still make this work.</p>
-
 <p><strong>What you need</strong></p>
-
 <ul>
-<li><p>Parallels 7</p></li>
-
-<li><p>Chakra Linux</p></li>
-
-<li><p>Kernel 3.2</p></li>
+<li>
+<p>Parallels 7</p>
+</li>
+<li>
+<p>Chakra Linux</p>
+</li>
+<li>
+<p>Kernel 3.2</p>
+</li>
 </ul>
-
 <p><strong>Let&rsquo;s do this</strong></p>
-
 <p>1. On your host, select [cfrbc]Install Parallel Tools[/cfrbc]</p>
-
 <p>2. Shell time! You may first need to mount Parallel Tools manually.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sumount /dev/cdrom /mnt</code></pre></div>
-<p>3. Let&rsquo;s make a copy of the tools and patch it for kernel 3.2.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sumount /dev/cdrom /mnt
+</code></pre></div><p>3. Let&rsquo;s make a copy of the tools and patch it for kernel 3.2.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mkdir -p ~/Tmp/PT
 <span class="nb">cd</span> ~/Tmp/PT
 cp -r /mnt/* .
@@ -249,17 +253,17 @@ cp -r /mnt/* .
 tar zxvf prl_mod.tar.gz
 vi prl_eth/pvmnet/pvmnet.c
 Replace .ndo_set_multicast_list with .ndo_set_rx_mode
-tar zcvf prl_mod.tar.gz prl_eth prl_fs prl_fs_freeze prl_pv prl_tg dkms.conf Makefile.kmods</code></pre></div>
-<p>4. And finally, let&rsquo;s run the installer (fingers crossed!)</p>
+tar zcvf prl_mod.tar.gz prl_eth prl_fs prl_fs_freeze prl_pv prl_tg dkms.conf Makefile.kmods
+</code></pre></div><p>4. And finally, let&rsquo;s run the installer (fingers crossed!)</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ..
 <span class="nb">export</span> <span class="nv">def_sysconfdir</span><span class="o">=</span>/etc/rc.d
-./install</code></pre></div>
-<p>You may or may not have to set correct the resolution in
+./install
+</code></pre></div><p>You may or may not have to set correct the resolution in
 <strong>/etc/X11/xorg.conf</strong>. Personally I added &ldquo;1920x1080&rdquo; logged out, logged back
 in&hellip;it just worked.</p>
-
 <p>Note that all the host&rsquo;s shares can be found in <strong>/media/psf/</strong></p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -306,11 +310,35 @@ in&hellip;it just worked.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -327,7 +355,7 @@ in&hellip;it just worked.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

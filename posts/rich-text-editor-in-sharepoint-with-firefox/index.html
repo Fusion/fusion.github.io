@@ -21,11 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Rich-text editor in Sharepoint with Firefox" />
     
-    <meta name="twitter:description" content="If, like me, your company&rsquo;s insistence on using Sharepoint as an Intranet tool contributes to rapid neurons death, there is as least a glimmer of hope: you can still use Firefox without being punished by having to type raw HTML code when editing a page (Sharepoint, unsurprisingly, only likes IE)
-Simple steps to use your own rich-text editor:
- Install Xinha
- Edit SharePoint page
- Right-click, select &ldquo;Open Xinha here!" />
+    <meta name="twitter:description" content="If, like me, your company&rsquo;s insistence on using Sharepoint as an Intranet tool contributes to rapid neurons death, there is as least a glimmer of hope: you can still use Firefox without being punished by having to type raw HTML code when editing a page (Sharepoint, unsurprisingly, only likes IE)" />
     <meta name="twitter:url" content="http://zteo.com/posts/rich-text-editor-in-sharepoint-with-firefox/" />
     
 
@@ -35,7 +31,7 @@ Simple steps to use your own rich-text editor:
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +72,7 @@ Simple steps to use your own rich-text editor:
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/rich-text-editor-in-sharepoint-with-firefox/"
+          "@id": "http:\/\/zteo.com\/posts\/rich-text-editor-in-sharepoint-with-firefox\/"
         },
         "headline": "Rich-text editor in Sharepoint with Firefox",
         "description": "Rich-text editor in Sharepoint with Firefox",
@@ -93,9 +89,9 @@ Simple steps to use your own rich-text editor:
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -112,7 +108,7 @@ Simple steps to use your own rich-text editor:
         },
         "datePublished": "2009-08-07",
         "dateModified": "2009-08-07",
-        "wordCount": 89,
+        "wordCount":  89 ,
         
     }
     </script>
@@ -192,6 +188,16 @@ Simple steps to use your own rich-text editor:
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -215,27 +221,33 @@ Simple steps to use your own rich-text editor:
                 
                 
 
-                <p>If, like me, your company&rsquo;s insistence on using Sharepoint as an Intranet tool
+
+                
+                    <p>If, like me, your company&rsquo;s insistence on using Sharepoint as an Intranet tool
 contributes to rapid neurons death, there is as least a glimmer of hope: you
 can still use Firefox without being punished by having to type raw HTML code
 when editing a page (Sharepoint, unsurprisingly, only likes IE)</p>
-
 <p>Simple steps to use your own rich-text editor:</p>
-
 <ol>
-<li><p>Install <a href="https://addons.mozilla.org/en-US/firefox/addon/1449" title="Xinha here!">Xinha</a></p></li>
-
-<li><p>Edit SharePoint page</p></li>
-
-<li><p>Right-click, select &ldquo;Open Xinha here!&rdquo;</p></li>
-
-<li><p>Edit! then click [OK]</p></li>
-
-<li><p>Now, submit page with all its HTML code. Note: You can edit existing pages as well.</p></li>
+<li>
+<p>Install <a href="https://addons.mozilla.org/en-US/firefox/addon/1449" title="Xinha here!">Xinha</a></p>
+</li>
+<li>
+<p>Edit SharePoint page</p>
+</li>
+<li>
+<p>Right-click, select &ldquo;Open Xinha here!&rdquo;</p>
+</li>
+<li>
+<p>Edit! then click [OK]</p>
+</li>
+<li>
+<p>Now, submit page with all its HTML code. Note: You can edit existing pages as well.</p>
+</li>
 </ol>
-
 <p>Done!</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -282,11 +294,35 @@ when editing a page (Sharepoint, unsurprisingly, only likes IE)</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -303,7 +339,7 @@ when editing a page (Sharepoint, unsurprisingly, only likes IE)</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

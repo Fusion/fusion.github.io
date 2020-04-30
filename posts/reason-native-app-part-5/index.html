@@ -33,7 +33,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +74,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/reason-native-app-part-5/"
+          "@id": "http:\/\/zteo.com\/posts\/reason-native-app-part-5\/"
         },
         "headline": "Creating a ReasonML Native App: Configuration Files",
         "description": "",
@@ -91,9 +91,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,8 +110,8 @@
         },
         "datePublished": "2018-09-08",
         "dateModified": "2018-09-08",
-        "wordCount": 417,
-        "keywords": ["reason","functional"] 
+        "wordCount":  380 ,
+        "keywords": "[\"reason\",\"functional\"]" 
     }
     </script>
     
@@ -190,6 +190,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -199,7 +209,7 @@
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">8 Sep 2018</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">417</span> words)</span></span>
+                        <span class="post-date">8 Sep 2018</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">380</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -216,27 +226,6 @@
                     This post is part of a series. Related posts:
                     <ul>
                     
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
                     
                         
                         
@@ -726,9 +715,36 @@
                     
                         
                         
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
                             
                                 <li>Creating a ReasonML Native App: Memoizing DNS queries</li>
                             
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
                         
                     
                         
@@ -741,8 +757,9 @@
                     </div>
                 
 
-                <p>This is going to be a fairly short post, as it focuses on using the <code>config-file</code> library. As previously mentioned, when I mention a library in RasonML&rsquo;s native context, chances are pretty good that I am referring to one of OCaml&rsquo;s many available libraries.</p>
 
+                
+                    <p>This is going to be a fairly short post, as it focuses on using the <code>config-file</code> library. As previously mentioned, when I mention a library in RasonML&rsquo;s native context, chances are pretty good that I am referring to one of OCaml&rsquo;s many available libraries.</p>
 <p>Our configuration files are not going to be json-formatted of xml-based; instead they are a tad&hellip;OCaml-ish, which of course is instantly betrayed by our use of comments:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="n">host_info</span> <span class="o">=</span> <span class="o">{</span>
   <span class="c">(* Server ip address or host name *)</span>
@@ -750,54 +767,39 @@
   <span class="c">(* User name (or none if no login is required) *)</span>
   <span class="n">user</span> <span class="o">=</span> <span class="n">user</span>
 <span class="o">...</span>
-<span class="o">}</span></code></pre></div>
-<p>This library&rsquo;s usage is pretty straightforward: after opening the library, we instantiate a new <code>group</code> object. The first thing we will do is create a default configuration file with sane values. Thus far, we have:</p>
+<span class="o">}</span>
+</code></pre></div><p>This library&rsquo;s usage is pretty straightforward: after opening the library, we instantiate a new <code>group</code> object. The first thing we will do is create a default configuration file with sane values. Thus far, we have:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">open</span> <span class="nc">Config_file</span><span class="o">;</span>
 <span class="k">let</span> <span class="n">group</span> <span class="o">=</span> <span class="k">new</span> <span class="n">group</span><span class="o">;</span>
 <span class="o">...</span>
-<span class="n">group</span><span class="o">#</span><span class="n">write</span><span class="o">(</span><span class="s2">&#34;config/default.cfg&#34;</span><span class="o">);</span></code></pre></div>
-<div class="noticesc">
-    Classes&rsquo; members are accessed using <code>objectname#member</code> and not using dot notation. This behavior is inherited from OCaml.
-</div>
-
-
+<span class="n">group</span><span class="o">#</span><span class="n">write</span><span class="o">(</span><span class="s2">&#34;config/default.cfg&#34;</span><span class="o">);</span>
+</code></pre></div><!-- raw HTML omitted -->
 <p>To be clear, this code does not do much of anything: it is writing an empty configuration file. What we need to do, before writing the file, is create a few entries:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">let</span> <span class="o">_</span><span class="n">ip</span> <span class="o">=</span> <span class="o">(</span><span class="k">new</span> <span class="n">string_cp</span><span class="o">)(</span>
   <span class="o">~</span><span class="n">group</span><span class="o">,</span>
   <span class="o">[</span><span class="s2">&#34;host_info&#34;</span><span class="o">,</span> <span class="s2">&#34;ip&#34;</span><span class="o">],</span>
   <span class="s2">&#34;127.0.0.1&#34;</span><span class="o">,</span>
   <span class="s2">&#34;Server ip address or host name&#34;</span><span class="o">);</span>
-<span class="o">...</span></code></pre></div>
-<p>The library supports several types of configuration objects:</p>
-
+<span class="o">...</span>
+</code></pre></div><p>The library supports several types of configuration objects:</p>
 <ul>
 <li>int_cp, float_cp, bool_cp, string_cp, list_cp, option_cp, enumeration_cp, tuple2_cp, tuple3_cp, tuple4_cp, string2_cp, font_cp, filename_cp</li>
 </ul>
-
 <p>We construct an object with:</p>
-
 <ul>
 <li>which group this preference belongs to, the key&rsquo;s hierarchy, a default value and a description.</li>
 </ul>
-
-<div class="noticesc">
-    You can use a shortand when passing a variable named after the option being targeted: <code>myname = myname</code> =&gt; <code>~myname</code>
-</div>
-
-
+<!-- raw HTML omitted -->
 <p><strong>But, what if you want to make a preference optional?</strong></p>
-
 <p>This is the <code>option_cp</code> type. Use a wrapper to turn objects into these option types. For instance, to provide an optional string:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">let</span> <span class="o">_</span><span class="n">start_at</span> <span class="o">=</span> <span class="o">(</span><span class="k">new</span> <span class="n">option_cp</span><span class="o">)(</span>
   <span class="n">string_wrappers</span><span class="o">,</span>
   <span class="o">~</span><span class="n">group</span><span class="o">,</span>
   <span class="o">[</span><span class="s2">&#34;run_info&#34;</span><span class="o">,</span> <span class="s2">&#34;start_at&#34;</span><span class="o">],</span>
   <span class="nc">None</span><span class="o">,</span>
-  <span class="s2">&#34;Only start test when matching this record timestamp/duration&#34;</span><span class="o">);</span></code></pre></div>
-<p>Rather than <code>None</code> obviously our default value could have been <code>Some(&quot;my-time&quot;)</code></p>
-
+  <span class="s2">&#34;Only start test when matching this record timestamp/duration&#34;</span><span class="o">);</span>
+</code></pre></div><p>Rather than <code>None</code> obviously our default value could have been <code>Some(&quot;my-time&quot;)</code></p>
 <p><strong>Reading</strong></p>
-
 <p>Reading a configuration file is just as straightforward:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">let</span> <span class="n">read_config_file</span> <span class="o">=</span> <span class="o">(</span><span class="n">dir_path</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="o">{</span>
   <span class="n">group</span><span class="o">#</span><span class="n">read</span><span class="o">(</span>
@@ -810,9 +812,8 @@
            <span class="o">*/</span>
         <span class="o">},</span>
     <span class="n">sprintf</span><span class="o">(</span><span class="s2">&#34;%s/default.cfg&#34;</span><span class="o">,</span> <span class="n">dir_path</span><span class="o">));</span>
-<span class="o">};</span></code></pre></div>
-<p><strong>Bonus: reading a .ignore file line-by-line</strong></p>
-
+<span class="o">};</span>
+</code></pre></div><p><strong>Bonus: reading a .ignore file line-by-line</strong></p>
 <p>This is helpful for quick prototyping: how do you read an arbitrary collection of strings from a file?</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">let</span> <span class="n">read_ignore_list</span> <span class="o">=</span> <span class="o">(</span><span class="n">dir_path</span><span class="o">,</span> <span class="n">name</span><span class="o">)</span> <span class="o">=&gt;</span>
   <span class="nn">List</span><span class="p">.</span><span class="n">fold_left</span><span class="o">((</span><span class="n">accu</span><span class="o">,</span> <span class="n">item</span><span class="o">)</span> <span class="o">=&gt;</span>
@@ -821,7 +822,9 @@
     <span class="nn">Str</span><span class="p">.</span><span class="n">split</span><span class="o">(</span>
       <span class="nn">Str</span><span class="p">.</span><span class="n">regexp</span><span class="o">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">),</span>
       <span class="n">my_read_file_function</span><span class="o">(</span><span class="n">sprintf</span><span class="o">(</span><span class="s2">&#34;%s/ignored.%s&#34;</span><span class="o">,</span> <span class="n">dir_path</span><span class="o">,</span> <span class="n">name</span><span class="o">)))</span>
-  <span class="o">);</span></code></pre></div>
+  <span class="o">);</span>
+</code></pre></div>
+                
               </section>
 
               <footer class="post-footer">
@@ -874,11 +877,35 @@
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -895,7 +922,7 @@
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

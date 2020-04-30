@@ -21,9 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="GMail is the new Mutt! Shortcuts galore." />
     
-    <meta name="twitter:description" content="I know, it&rsquo;s a bold assertion. But, please, bear with me: as a longtime Unix- head, I need a tool that allows me to zoom through my emails rather than click-glance-click-glance-click-yawn-right-click-delete, etc.
-For years I&rsquo;ve been happy with Mutt because nothing compares with using the arrow keys to navigate through my emails, ALT-O to open a folder, SHIFT- O-R to do a reverse-sort, M for a new message, etc.
-That, and using Visor, give me the comfort of a HUD-based email management tool whose speed is quite unbeatable." />
+    <meta name="twitter:description" content="I know, it&rsquo;s a bold assertion. But, please, bear with me: as a longtime Unix-head, I need a tool that allows me to zoom through my emails rather than click-glance-click-glance-click-yawn-right-click-delete, etc." />
     <meta name="twitter:url" content="http://zteo.com/posts/gmail-is-the-new-mutt-shortcuts-galore/" />
     
 
@@ -33,7 +31,7 @@ That, and using Visor, give me the comfort of a HUD-based email management tool 
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -74,7 +72,7 @@ That, and using Visor, give me the comfort of a HUD-based email management tool 
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/gmail-is-the-new-mutt-shortcuts-galore/"
+          "@id": "http:\/\/zteo.com\/posts\/gmail-is-the-new-mutt-shortcuts-galore\/"
         },
         "headline": "GMail is the new Mutt! Shortcuts galore.",
         "description": "GMail is the new Mutt! Shortcuts galore.",
@@ -91,9 +89,9 @@ That, and using Visor, give me the comfort of a HUD-based email management tool 
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -110,7 +108,7 @@ That, and using Visor, give me the comfort of a HUD-based email management tool 
         },
         "datePublished": "2008-12-24",
         "dateModified": "2008-12-24",
-        "wordCount": 240,
+        "wordCount":  240 ,
         
     }
     </script>
@@ -190,6 +188,16 @@ That, and using Visor, give me the comfort of a HUD-based email management tool 
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -213,39 +221,37 @@ That, and using Visor, give me the comfort of a HUD-based email management tool 
                 
                 
 
-                <p>I know, it&rsquo;s a bold assertion. But, please, bear with me: as a longtime Unix-
+
+                
+                    <p>I know, it&rsquo;s a bold assertion. But, please, bear with me: as a longtime Unix-
 head, I need a tool that allows me to zoom through my emails rather than
 click-glance-click-glance-click-yawn-right-click-delete, etc.</p>
-
 <p>For years I&rsquo;ve been happy with <strong>Mutt</strong> because nothing compares with using
 the arrow keys to navigate through my emails, ALT-O to open a folder, SHIFT-
-O-R to do a reverse-sort, M for a new message, etc.<br />
+O-R to do a reverse-sort, M for a new message, etc.<br>
 That, and using <a href="http://code.google.com/p/blacktree-visor/">Visor</a>, give me
 the comfort of a HUD-based email management tool whose speed is quite
 unbeatable.</p>
-
 <p>Unfortunately, with today&rsquo;s evolution of mail, everything is more or less
 HTML-based, which really doesn&rsquo;t work well with Mutt &ndash; even using V to open
 in a text-based browser isn&rsquo;t that good. If I ask Mutt to open a full-fledged
 browser instead, there goes the speed advantage&hellip;</p>
-
 <p>So, I have reluctantly moved to a pure Google Mail solution and my experience
 has been positive so far: I run GMail as a standalone program using
 <a href="http://fluidapp.com">Fluid</a> -- on another platform I would use
 <a href="http://labs.mozilla.com/2007/10/prism/">Prism</a> -- and I can keep using
 keyboard shortcuts for all my tasks!</p>
-
 <p>If you wish to give it a try, start with only this subset of GMail&rsquo;s keyboard
 shortcuts: JKEX#[ENTER]U are all you need to replicate 99% of your Mutt
 experience&hellip;</p>
+<p><strong>K</strong> / <strong>J</strong> : cursor up/down<br>
+<strong>X</strong> : select message<br>
+<strong>E</strong> : archive messages<br>
+<strong>#</strong> : delete messages<br>
+<strong>ENTER</strong> : read message<br>
+<strong>U</strong> : back to messages list</p>
 
-<p><strong>K</strong> / <strong>J</strong> : cursor up/down<br />
- <strong>X</strong> : select message<br />
- <strong>E</strong> : archive messages<br />
- <strong>#</strong> : delete messages<br />
- <strong>ENTER</strong> : read message<br />
- <strong>U</strong> : back to messages list</p>
-
+                
               </section>
 
               <footer class="post-footer">
@@ -292,11 +298,35 @@ experience&hellip;</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -313,7 +343,7 @@ experience&hellip;</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

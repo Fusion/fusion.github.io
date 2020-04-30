@@ -24,7 +24,6 @@
     <meta name="twitter:title" content="Creating a ReasonML Native App: Installing, Editing, Configuring" />
     
     <meta name="twitter:description" content="Installing Reason
-
 First, we will need OCaml. This is because our Reason code will be compiled to OCaml, then, using the OCaml compiler, to native code." />
     <meta name="twitter:url" content="http://zteo.com/posts/reason-native-app-part-2/" />
     
@@ -35,7 +34,7 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,7 +75,7 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/reason-native-app-part-2/"
+          "@id": "http:\/\/zteo.com\/posts\/reason-native-app-part-2\/"
         },
         "headline": "Creating a ReasonML Native App: Installing, Editing, Configuring",
         "description": "",
@@ -93,9 +92,9 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -112,8 +111,8 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
         },
         "datePublished": "2018-09-08",
         "dateModified": "2018-09-08",
-        "wordCount": 445,
-        "keywords": ["reason","functional"] 
+        "wordCount":  424 ,
+        "keywords": "[\"reason\",\"functional\"]" 
     }
     </script>
     
@@ -192,6 +191,16 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -201,7 +210,7 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">8 Sep 2018</span> <span class="reading-time">| <span class="estimated-reading-time">3 min.</span> (<span class="word-count">445</span> words)</span></span>
+                        <span class="post-date">8 Sep 2018</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">424</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -218,27 +227,6 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
                     This post is part of a series. Related posts:
                     <ul>
                     
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
-                    
-                        
-                        
                     
                         
                         
@@ -728,9 +716,36 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
                     
                         
                         
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
                             
                                 <li>Creating a ReasonML Native App: Memoizing DNS queries</li>
                             
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
                         
                     
                         
@@ -743,67 +758,75 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
                     </div>
                 
 
-                <h1 id="installing-reason">Installing Reason</h1>
 
+                
+                    <main>
+                        <div class="content blog-content">
+                        <h1 id="installing-reason">Installing Reason</h1>
 <p>First, we will need OCaml. This is because our Reason code will be compiled to OCaml, then, using the OCaml compiler, to native code.</p>
-
 <p>I would strongly recommend installing opam, rather than directly installing any distribution-native flavor of OCaml. The simplest way is using this bootstrap script:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.github.com/ocaml/opam/master/shell/opam_installer.sh -O - <span class="p">|</span> sh -s /usr/local/bin</code></pre></div>
-<p>You can now simply update and install the desired version of OCaml. Right now, Reason works best with versions ~ 4.05:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">opam update <span class="o">&amp;&amp;</span> opam switch <span class="m">4</span>.05.0</code></pre></div>
-<p>And finally reason and merlin, its completion tool:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">opam install reason merlin</code></pre></div>
-<h1 id="configuring-our-favorite-editor">Configuring our favorite editor</h1>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.github.com/ocaml/opam/master/shell/opam_installer.sh -O - <span class="p">|</span> sh -s /usr/local/bin
+</code></pre></div><p>You can now simply update and install the desired version of OCaml. Right now, Reason works best with versions ~ 4.05:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">opam update <span class="o">&amp;&amp;</span> opam switch 4.05.0
+</code></pre></div><p>And finally reason and merlin, its completion tool:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">opam install reason merlin
+</code></pre></div><h1 id="configuring-our-favorite-editor">Configuring our favorite editor</h1>
 <p>If you happen to be in love with <a href="https://marketplace.visualstudio.com/items?itemName=jaredly.reason-vscode">VSCode</a>, you&rsquo;are almost there. It&rsquo;s definitely the editor that Reason&rsquo;s authors seem to favor.</p>
-
 <p>If you are more interested in the nitty gritty of a proper, clean install for native code, let&rsquo;s have a look at my <code>vim</code> setup&hellip;</p>
-
 <h2 id="our-favorite-editor-is-vim-today-anyway">Our favorite editor is vim (today, anyway)</h2>
-
-<div class="noticesc">
-    Note: recently, support for Reason was baked into OniVim. This makes it a very easy starting point! <a href="https://github.com/jaredly/reason-language-server#onivim">Check it out</a>
-</div>
-
-
+<!-- raw HTML omitted -->
 <p>First, you need to install the <a href="https://github.com/freebroccolo/ocaml-language-server">OCaml language server</a>. I know a language server specific to Reason also exists, but again, that plugin may not perform as well w/r/t native OCaml integrations.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm install -g ocaml-language-server</code></pre></div>
-<p>Yes,I know: Node, again, totally inescapable!</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm install -g ocaml-language-server
+</code></pre></div><p>Yes,I know: Node, again, totally inescapable!</p>
 <p>Now, let&rsquo;s install our vim plugins: <a href="https://github.com/autozimu/LanguageClient-neovim">Language Support Client</a> and <a href="https://github.com/reasonml-editor/vim-reason-plus">vim-reason-plus</a> &ndash; if you are using Vim-Plug (my favorite plugin manager) simply add these lines to your <code>~/.vimrc</code></p>
 <div class="highlight"><pre class="chroma"><code class="language-vim" data-lang="vim"><span class="nx">Plug</span> <span class="s1">&#39;reasonml-editor/vim-reason-plus&#39;</span><span class="err">
 </span><span class="err"></span><span class="nx">Plug</span> <span class="s1">&#39;autozimu/LanguageClient-neovim&#39;</span><span class="p">,</span> {<span class="err">
-</span><span class="err"></span>\ <span class="s1">&#39;branch&#39;</span><span class="p">:</span> <span class="s1">&#39;next&#39;</span><span class="p">,</span><span class="err">
-</span><span class="err"></span>\ <span class="s1">&#39;do&#39;</span><span class="p">:</span> <span class="s1">&#39;bash install.sh&#39;</span><span class="p">,</span><span class="err">
+</span><span class="err"></span>\ <span class="s1">&#39;branch&#39;</span>: <span class="s1">&#39;next&#39;</span><span class="p">,</span><span class="err">
+</span><span class="err"></span>\ <span class="s1">&#39;do&#39;</span>: <span class="s1">&#39;bash install.sh&#39;</span><span class="p">,</span><span class="err">
 </span><span class="err"></span>\ }<span class="err">
 </span><span class="err"></span>...<span class="err">
 </span><span class="err"></span><span class="nx">autocmd</span> <span class="nx">BufReadPost</span> *.<span class="nx">re</span> <span class="nx">setlocal</span> <span class="nx">filetype</span><span class="p">=</span><span class="nx">reason</span><span class="err">
 </span><span class="err"></span>...<span class="err">
-</span><span class="err"></span><span class="k">let</span> <span class="nx">g</span><span class="p">:</span><span class="nx">LanguageClient_loggingLevel</span> <span class="p">=</span> <span class="s1">&#39;DEBUG&#39;</span><span class="err">
+</span><span class="err"></span><span class="k">let</span> <span class="nx">g</span>:<span class="nx">LanguageClient_loggingLevel</span> <span class="p">=</span> <span class="s1">&#39;DEBUG&#39;</span><span class="err">
 </span><span class="err">
-</span><span class="err"></span><span class="k">let</span> <span class="nx">g</span><span class="p">:</span><span class="nx">LanguageClient_serverCommands</span> <span class="p">=</span> {<span class="err">
-</span><span class="err"></span>    \ <span class="s1">&#39;reason&#39;</span><span class="p">:</span> [<span class="s1">&#39;ocaml-language-server&#39;</span><span class="p">,</span> <span class="s1">&#39;--stdio&#39;</span>]<span class="p">,</span><span class="err">
-</span><span class="err"></span>    \ <span class="s1">&#39;ocaml&#39;</span><span class="p">:</span> [<span class="s1">&#39;ocaml-language-server&#39;</span><span class="p">,</span> <span class="s1">&#39;--stdio&#39;</span>]<span class="p">,</span><span class="err">
+</span><span class="err"></span><span class="k">let</span> <span class="nx">g</span>:<span class="nx">LanguageClient_serverCommands</span> <span class="p">=</span> {<span class="err">
+</span><span class="err"></span>    \ <span class="s1">&#39;reason&#39;</span>: [<span class="s1">&#39;ocaml-language-server&#39;</span><span class="p">,</span> <span class="s1">&#39;--stdio&#39;</span>]<span class="p">,</span><span class="err">
+</span><span class="err"></span>    \ <span class="s1">&#39;ocaml&#39;</span>: [<span class="s1">&#39;ocaml-language-server&#39;</span><span class="p">,</span> <span class="s1">&#39;--stdio&#39;</span>]<span class="p">,</span><span class="err">
 </span><span class="err"></span>    \ }<span class="err">
-</span><span class="err"></span><span class="k">let</span> <span class="nx">g</span><span class="p">:</span><span class="nx">LanguageClient_autoStart</span> <span class="p">=</span> <span class="m">1</span><span class="err">
+</span><span class="err"></span><span class="k">let</span> <span class="nx">g</span>:<span class="nx">LanguageClient_autoStart</span> <span class="p">=</span> <span class="m">1</span><span class="err">
 </span><span class="err">
-</span><span class="err"></span><span class="nx">nnoremap</span> <span class="p">&lt;</span><span class="nx">silent</span><span class="p">&gt;</span> <span class="nx">gd</span> <span class="p">:</span><span class="nx">call</span> <span class="nx">LanguageClient_textDocument_definition</span><span class="p">()&lt;</span><span class="nx">cr</span><span class="p">&gt;</span><span class="err">
-</span><span class="err"></span><span class="nx">nnoremap</span> <span class="p">&lt;</span><span class="nx">silent</span><span class="p">&gt;</span> <span class="nx">gf</span> <span class="p">:</span><span class="nx">call</span> <span class="nx">LanguageClient_textDocument_formatting</span><span class="p">()&lt;</span><span class="nx">cr</span><span class="p">&gt;</span><span class="err">
-</span><span class="err"></span><span class="nx">nnoremap</span> <span class="p">&lt;</span><span class="nx">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nx">cr</span><span class="p">&gt;</span> <span class="p">:</span><span class="nx">call</span> <span class="nx">LanguageClient_textDocument_hover</span><span class="p">()&lt;</span><span class="nx">cr</span><span class="p">&gt;</span></code></pre></div>
-<p>After opening a Reason project directory (dumb way: <code>vim src/*.re</code>) you may find that the first file is not properly highlighted: you may need to issue a <code>:e</code> command. Worse: if you open all the files together (<code>vim -p src/*.re</code>) you will have to repeat this for every buffer. Hit me up if you figure out what I&rsquo;ve done wrong!</p>
-
+</span><span class="err"></span><span class="nx">nnoremap</span> <span class="p">&lt;</span><span class="nx">silent</span><span class="p">&gt;</span> <span class="nx">gd</span> :<span class="nx">call</span> <span class="nx">LanguageClient_textDocument_definition</span><span class="p">()&lt;</span><span class="nx">cr</span><span class="p">&gt;</span><span class="err">
+</span><span class="err"></span><span class="nx">nnoremap</span> <span class="p">&lt;</span><span class="nx">silent</span><span class="p">&gt;</span> <span class="nx">gf</span> :<span class="nx">call</span> <span class="nx">LanguageClient_textDocument_formatting</span><span class="p">()&lt;</span><span class="nx">cr</span><span class="p">&gt;</span><span class="err">
+</span><span class="err"></span><span class="nx">nnoremap</span> <span class="p">&lt;</span><span class="nx">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nx">cr</span><span class="p">&gt;</span> :<span class="nx">call</span> <span class="nx">LanguageClient_textDocument_hover</span><span class="p">()&lt;</span><span class="nx">cr</span><span class="p">&gt;</span><span class="err">
+</span></code></pre></div><p>After opening a Reason project directory (dumb way: <code>vim src/*.re</code>) you may find that the first file is not properly highlighted: you may need to issue a <code>:e</code> command. Worse: if you open all the files together (<code>vim -p src/*.re</code>) you will have to repeat this for every buffer. Hit me up if you figure out what I&rsquo;ve done wrong!</p>
 <p>At this point, I recommend that you clone &lsquo;reasonable fidelity&rsquo; so that you can follow along:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git clone git@github.com:Fusion/reasonable-fidelity.git</code></pre></div>
-<p>Of particular interest: <code>src/jbuild</code> &ndash; we are going to list all our libraries in this file to provide some helpful hints to editors and builder:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git clone git@github.com:Fusion/reasonable-fidelity.git
+</code></pre></div><p>Of particular interest: <code>src/jbuild</code> &ndash; we are going to list all our libraries in this file to provide some helpful hints to editors and builder:</p>
 <div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nv">jbuild_version</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="p">(</span><span class="nv">executable</span>
  <span class="p">((</span><span class="nv">name</span> <span class="nv">main</span><span class="p">)</span>
   <span class="p">(</span><span class="nv">public_name</span> <span class="nv">reasonable-fidelity</span><span class="p">)</span>
-  <span class="p">(</span><span class="nv">libraries</span> <span class="p">(</span><span class="nv">lwt</span> <span class="nv">cohttp</span> <span class="nv">cohttp-lwt-unix</span> <span class="nv">yojson</span> <span class="nv">str</span> <span class="nv">config-file</span> <span class="nv">extlib</span> <span class="nv">lymp</span> <span class="nv">diff</span> <span class="nv">curses</span><span class="p">))))</span></code></pre></div>
-<p>You can use the same list, almost verbatim, to manually install the required libraries:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">opam install lwt cohttp cohttp-lwt-unix yojson str config-file extlib lymp diff curses</code></pre></div>
-<p>We are now ready to get to work&hellip;</p>
+  <span class="p">(</span><span class="nv">libraries</span> <span class="p">(</span><span class="nv">lwt</span> <span class="nv">cohttp</span> <span class="nv">cohttp-lwt-unix</span> <span class="nv">yojson</span> <span class="nv">str</span> <span class="nv">config-file</span> <span class="nv">extlib</span> <span class="nv">lymp</span> <span class="nv">diff</span> <span class="nv">curses</span><span class="p">))))</span>
+</code></pre></div><p>You can use the same list, almost verbatim, to manually install the required libraries:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">opam install lwt cohttp cohttp-lwt-unix yojson str config-file extlib lymp diff curses
+</code></pre></div><p>We are now ready to get to work&hellip;</p>
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#installing-reason">Installing Reason</a></li>
+    <li><a href="#configuring-our-favorite-editor">Configuring our favorite editor</a>
+      <ul>
+        <li><a href="#our-favorite-editor-is-vim-today-anyway">Our favorite editor is vim (today, anyway)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -856,11 +879,35 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -877,7 +924,7 @@ First, we will need OCaml. This is because our Reason code will be compiled to O
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

@@ -21,7 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Tooredo Alpha" />
     
-    <meta name="twitter:description" content=" [August 2018 Update] Well, since 2012, Toodledo have extensively reworked their user interface and Tooredo is not needed anymore. Screenshots" />
+    <meta name="twitter:description" content="[August 2018 Update] Well, since 2012, Toodledo have extensively reworked their user interface and Tooredo is not needed anymore. Screenshots" />
     <meta name="twitter:url" content="http://zteo.com/projects/tooredo-alpha/" />
     
 
@@ -31,7 +31,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -72,7 +72,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/projects/tooredo-alpha/"
+          "@id": "http:\/\/zteo.com\/projects\/tooredo-alpha\/"
         },
         "headline": "Tooredo Alpha",
         "description": "Tooredo Alpha",
@@ -89,9 +89,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -108,7 +108,7 @@
         },
         "datePublished": "2012-11-21",
         "dateModified": "2012-11-21",
-        "wordCount": 20,
+        "wordCount":  20 ,
         
     }
     </script>
@@ -188,6 +188,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -211,14 +221,30 @@
                 
                 
 
+
                 
-
-<h2 id="august-2018-update">[August 2018 Update]</h2>
-
+                    <main>
+                        <div class="content blog-content">
+                        <h2 id="august-2018-update">[August 2018 Update]</h2>
 <h2 id="well-since-2012-toodledo-have-extensively-reworked-their-user-interface-and-tooredo-is-not-needed-anymore">Well, since 2012, Toodledo have extensively reworked their user interface and Tooredo is not needed anymore.</h2>
+<p>Screenshots<img src="/images/tooredo3.png" alt=""></p>
 
-<p>Screenshots<img src="/images/tooredo3.png" alt="" /></p>
-
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#august-2018-update">[August 2018 Update]</a></li>
+        <li><a href="#well-since-2012-toodledo-have-extensively-reworked-their-user-interface-and-tooredo-is-not-needed-anymore">Well, since 2012, Toodledo have extensively reworked their user interface and Tooredo is not needed anymore.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -265,11 +291,35 @@
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -286,7 +336,7 @@
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

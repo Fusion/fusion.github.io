@@ -23,9 +23,7 @@
     
     <meta name="twitter:image" content="http://zteo.com/images/50dbafdd-45db-4290-b8df-ef8646a496f6.jpg" />
     
-    <meta name="twitter:description" content="Slider by Yamanaka Tamaki
-Hello. Today, I am going to write about persisting a component&rsquo;s values simply, using a hidden dialog; and how to turn a set of classes and assets into a &ldquo;library&rdquo; that other developers will not need to refactor prior to using it.
-A few months ago, needing an Android widget that would let me select values &ldquo;naturally&rdquo; using one or more sliders, I found Daniel Berndt&rsquo;s excellent DateSlider." />
+    <meta name="twitter:description" content="Slider by Yamanaka Tamaki" />
     <meta name="twitter:url" content="http://zteo.com/posts/android-self-contained-libraries-seamless-component-persistence/" />
     
 
@@ -35,7 +33,7 @@ A few months ago, needing an Android widget that would let me select values &ldq
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -76,10 +74,10 @@ A few months ago, needing an Android widget that would let me select values &ldq
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/android-self-contained-libraries-seamless-component-persistence/"
+          "@id": "http:\/\/zteo.com\/posts\/android-self-contained-libraries-seamless-component-persistence\/"
         },
-        "headline": "Android: self-contained &#34;libraries,&#34; seamless component persistence",
-        "description": "Android: self-contained &#34;libraries,&#34; seamless component persistence",
+        "headline": "Android: self-contained \x22libraries,\x22 seamless component persistence",
+        "description": "Android: self-contained \x22libraries,\x22 seamless component persistence",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -93,9 +91,9 @@ A few months ago, needing an Android widget that would let me select values &ldq
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -105,13 +103,13 @@ A few months ago, needing an Android widget that would let me select values &ldq
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://zteo.com/50dbafdd-45db-4290-b8df-ef8646a496f6.jpg",
+          "url": "http:\/\/zteo.com\/50dbafdd-45db-4290-b8df-ef8646a496f6.jpg",
           "height": 133,
           "width": 200
         },
         "datePublished": "2011-12-31",
         "dateModified": "2011-12-31",
-        "wordCount": 693,
+        "wordCount":  693 ,
         
     }
     </script>
@@ -191,6 +189,16 @@ A few months ago, needing an Android widget that would let me select values &ldq
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -214,73 +222,58 @@ A few months ago, needing an Android widget that would let me select values &ldq
                 
                 
 
-                <p><a href="http://www.flickr.com/photos/tamaki/1402365/"><img src="/images/1402365_aa34336932_z-300x225.jpg" alt="" /></a></p>
 
+                
+                    <p><a href="http://www.flickr.com/photos/tamaki/1402365/"><img src="/images/1402365_aa34336932_z-300x225.jpg" alt=""></a></p>
 <p>Slider by Yamanaka Tamaki</p>
-
 <p>Hello. Today, I am going to write about persisting a component&rsquo;s values
 simply, using a hidden dialog; and how to turn a set of classes and assets
 into a &ldquo;library&rdquo; that other developers will not need to refactor prior to
 using it.</p>
-
 <p>A few months ago, needing an Android widget that would let me select values
 &ldquo;naturally&rdquo; using one or more sliders, I found Daniel Berndt&rsquo;s excellent
 <a href="http://code.google.com/p/android-dateslider/">DateSlider</a>.</p>
-
 <p>I added a few functionalities to it:</p>
-
-<p>1. Cohabitation of sliders in a tabbed interface<br />
-2. An &ldquo;Enumeration&rdquo; type of slider (so, not necessarily dates anymore!)<br />
+<p>1. Cohabitation of sliders in a tabbed interface<br>
+2. An &ldquo;Enumeration&rdquo; type of slider (so, not necessarily dates anymore!)<br>
 3. Sliders can now belong to a dialog or be embedded in an activity (ala
-progress bar)<br />
+progress bar)<br>
 4. Now truly self-contained in ajar zip file.</p>
-
 <p>For more information on the new features, have a look at the additional
 <a href="https://github.com/Fusion/DateSlider/blob/develop/CFR_README">readme file</a> I
 created.</p>
-
 <p>For those of you who have tried to play with these concepts, you will
 immediately identify a few painful items here:</p>
-
-<p>1. How can a component be a dialog&rsquo;s content, or not, at will?<br />
+<p>1. How can a component be a dialog&rsquo;s content, or not, at will?<br>
 2. How can a single component automatically persist its values, for instance
-over an orientation change?<br />
+over an orientation change?<br>
 3. How do you include all assets in a jar file when the SDK dislikes that?</p>
-
 <p>These are the challenges that I had to address. I exchanged a few emails with
 Daniel about pushing these changes back to DateSlider&rsquo;s main branch but I
 guess we&rsquo;ve both been working on other things since July.</p>
-
 <p>The source code is, of course, available on
 <a href="https://github.com/Fusion/DateSlider">GitHub</a> so for in-depth understanding,
 I would recommend having a look at the commit history.</p>
-
 <p>Regarding the three annoyances mentioned above:</p>
-
 <p><strong>How can a component be a dialog&rsquo;s content, or not, at will?</strong></p>
-
 <p>This was the easiest one. I simply refactored the parent class (DateSlider) so
-that it is now a child of LinearLayout rather than Dialog.<br />
+that it is now a child of LinearLayout rather than Dialog.<br>
 This object is now instanced normally, and two methods, <em>asDialog()</em> and
 <em>asEmbed()</em> , allow you to get the component properly wrapped.</p>
-
 <p><strong>How can a single component automatically persist its values, for instance
 over an orientation change?</strong></p>
-
 <p>The idea I had is a bit appalling but not too bad, in my opinion: dialogs come
 with their own <em>onSaveInstanceState()</em> method, which is automatically invoked
 when your application is about to be paused. That is, as long as this dialog
 was displayed using <em>showDialog()</em> rather than directly realized in your code.
-This takes care of dialogs.<br />
+This takes care of dialogs.<br>
 Components found in a regular activity, however, have no such method. So, what
-to do?<br />
+to do?<br>
 My approach is to use an inner class representing an invisible dialog &ndash;
 conveniently called FauxDialog &ndash; that sits next to the slider, and that
 dialog is the one whose methods get invoked for saving and restoring your
 component&rsquo;s state.</p>
-
 <p>That invisible dialog&rsquo;s style is:</p>
-
 <p>and its save method can be as simple as:</p>
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Override</span>  
 <span class="kd">public</span> <span class="n">Bundle</span> <span class="nf">onSaveInstanceState</span><span class="o">()</span> <span class="o">{</span>  
@@ -288,38 +281,33 @@ component&rsquo;s state.</p>
     <span class="k">if</span> <span class="o">(</span><span class="n">savedInstanceState</span><span class="o">==</span><span class="kc">null</span><span class="o">)</span> <span class="n">savedInstanceState</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bundle</span><span class="o">();</span>  
     <span class="n">savedInstanceState</span><span class="o">.</span><span class="na">putSerializable</span><span class="o">(</span><span class="s">&#34;time&#34;</span><span class="o">,</span> <span class="n">getTime</span><span class="o">());</span>  
     <span class="k">return</span> <span class="n">savedInstanceState</span><span class="o">;</span>  
-<span class="o">}</span>  </code></pre></div>
-<p><strong>How do you include all assets in a jar file when the SDK dislikes that?</strong></p>
-
+<span class="o">}</span>  
+</code></pre></div><p><strong>How do you include all assets in a jar file when the SDK dislikes that?</strong></p>
 <p>This one is actually VERY simple, thanks &ndash; again &ndash; to the guys at
 <a href="http://commonsware.com/">CommonsWare</a>.</p>
-
 <p>They provide an incredibly convenient file called
-<a href="https://github.com/Fusion/DateSlider/blob/develop/src/com/commonsware/cwac/parcel/ParcelHelper.java">ParcelHelper.java</a><br />
+<a href="https://github.com/Fusion/DateSlider/blob/develop/src/com/commonsware/cwac/parcel/ParcelHelper.java">ParcelHelper.java</a><br>
 This file allows developers to invoke a package&rsquo;s resources through a class
 called, obviously ParcelHelper.</p>
-
 <p>Therefore, all I had to do to turn DateSlider into a usable jar library, was:</p>
-
 <p>1. Create a class called SliderController, that uses the singleton pattern to
 return an instance of ParcelHelper (I know! A singleton! Where is my
-pitchfork?)<br />
+pitchfork?)<br>
 2. Replace direct references to resources, such as</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">R</span><span class="o">.</span><span class="na">styleable</span><span class="o">.</span><span class="na">ScrollLayout_childWidth</span></code></pre></div>
-<p>with their helper counterpart:</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">SliderController</span><span class="o">.</span><span class="na">instance</span><span class="o">().</span><span class="na">getParcel</span><span class="o">().</span><span class="na">getStyleableId</span><span class="o">(</span><span class="s">&#34;ScrollLayout&#34;</span><span class="o">,</span> <span class="s">&#34;childWidth&#34;</span><span class="o">)</span></code></pre></div>
-<p>3. Rename the resources, prefixing them a string specified in ParcelHelper&rsquo;s
-<em>getParcel()</em> method<br />
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">R</span><span class="o">.</span><span class="na">styleable</span><span class="o">.</span><span class="na">ScrollLayout_childWidth</span>
+</code></pre></div><p>with their helper counterpart:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">SliderController</span><span class="o">.</span><span class="na">instance</span><span class="o">().</span><span class="na">getParcel</span><span class="o">().</span><span class="na">getStyleableId</span><span class="o">(</span><span class="s">&#34;ScrollLayout&#34;</span><span class="o">,</span> <span class="s">&#34;childWidth&#34;</span><span class="o">)</span>
+</code></pre></div><p>3. Rename the resources, prefixing them a string specified in ParcelHelper&rsquo;s
+<em>getParcel()</em> method<br>
 4. And finally, after generating the jar file, store it into a zip file along
 with its own resources (i.e. icons and layouts)</p>
-
 <p>Now, any developer who wishes to use this &ldquo;library&rdquo; can simply extract this
 zip file at the root of their project and the jar file and the renamed
 resources will be made available to their own code.</p>
-
 <p>As usual, feel free to ask questions if there are things that make little
 sense to you in this fairly succinct write-up.</p>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -366,11 +354,35 @@ sense to you in this fairly succinct write-up.</p>
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -387,7 +399,7 @@ sense to you in this fairly succinct write-up.</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

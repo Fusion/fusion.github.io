@@ -21,7 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Opening of this development blog" />
     
-    <meta name="twitter:description" content="Not much to say. It&#39;s open!  " />
+    <meta name="twitter:description" content="Not much to say. It&rsquo;s open!" />
     <meta name="twitter:url" content="http://zteo.com/posts/opening-of-this-development-blog/" />
     
 
@@ -31,7 +31,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -72,7 +72,7 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/posts/opening-of-this-development-blog/"
+          "@id": "http:\/\/zteo.com\/posts\/opening-of-this-development-blog\/"
         },
         "headline": "Opening of this development blog",
         "description": "Opening of this development blog",
@@ -89,9 +89,9 @@
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -108,7 +108,7 @@
         },
         "datePublished": "2006-12-07",
         "dateModified": "2006-12-07",
-        "wordCount": 6,
+        "wordCount":  6 ,
         
     }
     </script>
@@ -188,6 +188,16 @@
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -211,9 +221,12 @@
                 
                 
 
-                <pre><code>Not much to say. It's open!
+
+                
+                    <pre><code>Not much to say. It's open!
 </code></pre>
 
+                
               </section>
 
               <footer class="post-footer">
@@ -260,11 +273,35 @@
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -281,7 +318,7 @@
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>

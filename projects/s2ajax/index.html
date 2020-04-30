@@ -21,10 +21,7 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="S2ajax" />
     
-    <meta name="twitter:description" content="[August 2018 Update] Feel free to user S2ajax if you are looking for something lightweight.
-On the other hand, between jQuery 3, React, Angular, etc. S2&rsquo;s concept is definitely getting quite long in the tooth.
-S2ajax is a &lsquo;managed&rsquo; AJAX framework. It is derived from Sajax, written by the Modern Method folks a few years ago.
-This modern implementation allows the developer to declare classes on the server and instantiate them on demand on the client." />
+    <meta name="twitter:description" content="S2ajax is a &lsquo;managed&rsquo; AJAX framework. It is derived from Sajax, written by the Modern Method folks a few years ago." />
     <meta name="twitter:url" content="http://zteo.com/projects/s2ajax/" />
     
 
@@ -34,7 +31,7 @@ This modern implementation allows the developer to declare classes on the server
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1550962214" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588206894" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -75,7 +72,7 @@ This modern implementation allows the developer to declare classes on the server
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://zteo.com/projects/s2ajax/"
+          "@id": "http:\/\/zteo.com\/projects\/s2ajax\/"
         },
         "headline": "S2ajax",
         "description": "S2ajax",
@@ -92,9 +89,9 @@ This modern implementation allows the developer to declare classes on the server
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "http://zteo.com/",
+          "@id": "http:\/\/zteo.com\/",
           "name": "The Nexus",
-          "url": "http://zteo.com/",
+          "url": "http:\/\/zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -111,7 +108,7 @@ This modern implementation allows the developer to declare classes on the server
         },
         "datePublished": "2012-11-21",
         "dateModified": "2012-11-21",
-        "wordCount": 109,
+        "wordCount":  109 ,
         
     }
     </script>
@@ -191,6 +188,16 @@ This modern implementation allows the developer to declare classes on the server
         </nav>
 
 
+<style>
+@media(min-width:1024px) {
+	main {
+		display: grid;
+		grid-template-columns: 100% 100%;
+	}
+}
+
+</style>
+
 <main class="content" role="main">
     <article class="post post-with-bg">
         <div class="inner">
@@ -214,34 +221,43 @@ This modern implementation allows the developer to declare classes on the server
                 
                 
 
+
                 
-
-<h2 id="august-2018-update">[August 2018 Update]</h2>
-
+                    <main>
+                        <div class="content blog-content">
+                        <h2 id="august-2018-update">[August 2018 Update]</h2>
 <p><em>Feel free to user S2ajax if you are looking for something lightweight.</em></p>
-
 <p><em>On the other hand, between jQuery 3, React, Angular, etc. S2&rsquo;s concept is definitely getting quite long in the tooth.</em></p>
-
-<hr />
-
-<p><img src="/images/S2ajax2.png" alt="" />S2ajax is a &lsquo;managed&rsquo; AJAX
+<hr>
+<p><img src="/images/S2ajax2.png" alt="">S2ajax is a &lsquo;managed&rsquo; AJAX
 framework. It is derived from Sajax, written by the Modern Method folks a few
 years ago.</p>
-
 <p>This modern implementation allows the developer to declare classes on the
 server and instantiate them on demand on the client.</p>
-
 <p>Note that S2ajax combines two common computing concepts:
 <a href="http://en.wikipedia.org/wiki/Foreign_function_interface">FFI</a> (Foreign
 Function Interface) and
 <a href="http://en.wikipedia.org/wiki/Remote_procedure_call">RPC</a> (Remote Procedure
 Call)</p>
-
 <p>S2ajax is available under the very permissive BSD license.</p>
+<p>-= Click below to download S2ajax =-<br>
+<a href="http://github.com/Fusion/s2ajax/archives/master"><img src="/images/download.png" alt=""></a></p>
 
-<p>-= Click below to download S2ajax =-<br />
-<a href="http://github.com/Fusion/s2ajax/archives/master"><img src="/images/download.png" alt="" /></a></p>
-
+                        </div>
+                        <aside class="hidden lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#august-2018-update">[August 2018 Update]</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
+                
               </section>
 
               <footer class="post-footer">
@@ -273,26 +289,41 @@ Call)</p>
                     </a>
                 
                 
-                    <a class="post-nav-item post-nav-prev" href="http://zteo.com/projects/n2/">
-                        <section class="post-nav-teaser">
-                            <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
-                            <span class="post-nav-info">
-                                <h4 class="post-nav-title">n2</h4>
-                            </span>
-                        </section>
-                    </a>
-                
                 <div class="clear"></div>
             </nav>
 
         </div>
     </article>
 </main>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.intersectionRatio > 0) {
+                clearActiveStatesInTableOfContents();
+                document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            }
+        });
+    });
+
+    document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+        observerForTableOfContentActiveState.observe(section);
+    });
+});
+
+function clearActiveStatesInTableOfContents() {
+    document.querySelectorAll('aside nav li').forEach((section) => {
+        section.classList.remove('active');
+    });
+}
+</script>
 
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2019 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2020 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -309,7 +340,7 @@ Call)</p>
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1550962214"></script>
+<script src="/mermaid/mermaid.js?1588206894"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 
 <script>
