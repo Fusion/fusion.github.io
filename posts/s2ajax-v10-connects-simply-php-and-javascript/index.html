@@ -29,15 +29,19 @@
 
     <title> S2ajax v1.0 connects simply PHP and JavaScript &middot;  The Nexus</title>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://zteo.com//css/fontawesome-all.min.css" as="style" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1588230842" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588393676" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://zteo.com//css/pure-min.css">
+    <link rel="preload" href="http://zteo.com//js/basicLightbox.min.js" as="script" />
+    <link rel="stylesheet" href="http://zteo.com//css/basicLightbox.min.css">
+    <link rel="stylesheet" href="http://zteo.com//css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
     <link rel="stylesheet" href="http://zteo.com//css/syntax.css">
     
@@ -226,7 +230,8 @@
                 
                     <main>
                         <div class="content blog-content">
-                        <p><img src="/images/S2ajax2.png" alt="S2ajax">Here comes S2ajax v1.0!<br>
+                        <p><img src="/images/S2ajax2.png" alt="S2ajax"  />
+Here comes S2ajax v1.0!<br>
 And it was long overdue. Six months already since I posted <a href="/2009/03/02/php-classes-and-javascript-s2ajax-says-hi/"><em>S2ajax says &ldquo;hi()&quot;</em></a> I can hardly
 believe it.</p>
 <p>What I think of as v1.0&rsquo;s main feature is that it is now possible to simply
@@ -240,12 +245,14 @@ using JavaScript on the client. Whatever modifications are made to an instance
 are serialized on the server.<br>
 You can create a complex application using as many classes and instances as
 you need.</p>
-<p><img src="/images/100.png" alt="100"></p>
+<p><img src="/images/100.png" alt="100"  />
+</p>
 <h1 id="under-the-hood">Under the hood</h1>
 <p>The PHP class is exported; the proxy JavaScript code is generated.<br>
 Whenever the client needs to access one of the class&rsquo; properties/methods, the
 proxy <strong>transparently</strong> talks to the class; the class lives server-side.</p>
-<p><img src="/images/99.png" alt="99"></p>
+<p><img src="/images/99.png" alt="99"  />
+</p>
 <h1 id="the-clients-point-of-view">The Client&rsquo;s point of view</h1>
 <p>An arbitrary number of <strong>instances</strong> of the class can be created in
 JavaScript.<br>
@@ -253,13 +260,15 @@ The only hint that you are using a client-server architecture is the fact that
 when invoking a method, its return value is obtained through a callback. This
 mechanism allows your client interface to remain responsive while the server
 is preparing a response.</p>
-<p><img src="/images/101.png" alt="101"></p>
+<p><img src="/images/101.png" alt="101"  />
+</p>
 <h1 id="the-servers-point-of-view">The server&rsquo;s point of view</h1>
 <p>S2ajax automatically persists your instances&rsquo; <strong>state</strong> and <strong>data</strong> between
 consecutive asynchronous calls. You still get the benefits of the &ldquo;shared
 nothing&rdquo; approach of PHP but complex objects can be manipulated through an
 unlimited number of clients requests.</p>
-<p><img src="/images/102.png" alt="102"></p>
+<p><img src="/images/102.png" alt="102"  />
+</p>
 <h1 id="a-code-sample">A code sample</h1>
 <h4 id="server-side">Server-side</h4>
 <p>Let&rsquo;s create a class that will increment an instance variable every time a
@@ -292,7 +301,8 @@ multiple counters.</p>
 <p>Click our valiant friend &ldquo;Octocat&rdquo;, artistically represented below, to go to
 S2ajax&rsquo;s Github page. If you just wish to use the library, look for the
 [Download] button:</p>
-<p><a href="http://github.com/Fusion/s2ajax"><img src="https://avatars2.githubusercontent.com/u/6265563?s=460&amp;v=4" alt="Git!"></a></p>
+<p><a href="http://github.com/Fusion/s2ajax"><img src="https://avatars2.githubusercontent.com/u/6265563?s=460&amp;v=4" alt="Git!"  />
+</a></p>
 <p>Git!</p>
 
                         </div>
@@ -426,8 +436,9 @@ function clearActiveStatesInTableOfContents() {
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1588230842"></script>
+<script src="/mermaid/mermaid.js?1588393676"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+<script async src="http://zteo.com//js/basicLightbox.min.js"></script>
 
 <script>
 

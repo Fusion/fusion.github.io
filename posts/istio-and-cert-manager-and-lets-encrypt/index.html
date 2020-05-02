@@ -33,15 +33,19 @@ Anyway, in a futile attempt to remain somewhat ahead of the curve, this article 
 
     <title> Istio, Cert-Manager and Let&#39;s Encrypt April &#39;20 &middot;  The Nexus</title>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://zteo.com//css/fontawesome-all.min.css" as="style" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1588230842" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588393676" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://zteo.com//css/pure-min.css">
+    <link rel="preload" href="http://zteo.com//js/basicLightbox.min.js" as="script" />
+    <link rel="stylesheet" href="http://zteo.com//css/basicLightbox.min.css">
+    <link rel="stylesheet" href="http://zteo.com//css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
     <link rel="stylesheet" href="http://zteo.com//css/syntax.css">
     
@@ -393,9 +397,11 @@ sudo socat tcp-listen:443,reuseaddr,fork tcp:<span class="nv">$INGRESS_HOST</spa
 <p><code>--set values.global.k8sIngress.enabled=true</code> enables an auto-generated k8s ingress gateway — this is a LEGACY ingress we do not want anymore. In fact, in 1.6 this option is gone.</p>
 <h1 id="tutorial">Tutorial</h1>
 <p>In this tutorial, we are going to setup the now well known bookinfo application, demonstrating Istio&rsquo;s mesh management capabilities:</p>
-<p><img src="/images/bookinfo.png" alt="/images/bookinfo.png"></p>
+<p><img src="/images/bookinfo.png" alt="/images/bookinfo.png"  />
+</p>
 <p>Note: Namespace visibility is very important. If you do not pay attention to it, you will spend hours of hair pulling over this &ldquo;almost working&rdquo; situation.</p>
-<p><img src="/images/istio1.png" alt="/images/istio1.png"></p>
+<p><img src="/images/istio1.png" alt="/images/istio1.png"  />
+</p>
 <h2 id="cert-manager">cert-manager</h2>
 <p>Let&rsquo;s install cert-manager.</p>
 <p>It is possible that the webhook pod will not come up and <code>describe</code> will reveal that it could not find &lsquo;cert-manager-webhook-tls&rsquo;
@@ -526,7 +532,8 @@ kubectl apply -f web-yoursite-com-cert.yaml
 kubectl describe certificaterequest <span class="o">{</span>cert request name<span class="o">}</span>
 kubectl describe order <span class="o">{</span>order name<span class="o">}</span>
 kubectl describe challenge <span class="o">{</span>challenge name<span class="o">}</span>
-</code></pre></div><p><img src="/images/istio2.png" alt="/images/istio2.png"></p>
+</code></pre></div><p><img src="/images/istio2.png" alt="/images/istio2.png"  />
+</p>
 <h2 id="ingress">Ingress</h2>
 <p>It&rsquo;s still not reachable. We need to add a virtual service</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cat <span class="s">&lt;&lt;EOF &gt; cfr-virtual-service.yaml
@@ -822,8 +829,9 @@ function clearActiveStatesInTableOfContents() {
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1588230842"></script>
+<script src="/mermaid/mermaid.js?1588393676"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+<script async src="http://zteo.com//js/basicLightbox.min.js"></script>
 
 <script>
 

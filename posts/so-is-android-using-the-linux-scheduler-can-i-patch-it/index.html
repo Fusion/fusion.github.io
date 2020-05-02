@@ -29,15 +29,19 @@
 
     <title> So, is Android using the Linux scheduler? Can I patch it? &middot;  The Nexus</title>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://zteo.com//css/fontawesome-all.min.css" as="style" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1588230842" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588393676" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://zteo.com//css/pure-min.css">
+    <link rel="preload" href="http://zteo.com//js/basicLightbox.min.js" as="script" />
+    <link rel="stylesheet" href="http://zteo.com//css/basicLightbox.min.css">
+    <link rel="stylesheet" href="http://zteo.com//css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
     <link rel="stylesheet" href="http://zteo.com//css/syntax.css">
     
@@ -226,7 +230,8 @@
                 
                     <main>
                         <div class="content blog-content">
-                        <p><a href="http://www.flickr.com/photos/kwamekwame/4643079802/"><img src="/images/oldfaithful-300x199.jpg" alt=""></a>These
+                        <p><a href="http://www.flickr.com/photos/kwamekwame/4643079802/"><img src="/images/oldfaithful-300x199.jpg" alt=""  />
+</a>These
 last few days, the Linux world has paid quite a lot of attention to <a href="http://lkml.org/lkml/2010/10/19/123">this kernel patch</a>, written by Mike Galbraith.<br>
 Its purpose is to make your desktop <strong>more responsive</strong> by grouping your tasks
 so that they have a better chance at getting their fair share of CPU time when
@@ -243,7 +248,8 @@ shell. The latter take actually offers better granularity.</p>
 <p>I&rsquo;ve seen several replies that were quite off the mark so I added my own (I
 like being wrong too!)<br>
 Allow me to expand on it a little here:</p>
-<p><a href="http://www.flickr.com/photos/bayat/7491311/"><img src="/images/nerd.jpg" alt=""></a><em>&ldquo;android
+<p><a href="http://www.flickr.com/photos/bayat/7491311/"><img src="/images/nerd.jpg" alt=""  />
+</a><em>&ldquo;android
 has its own custom scheduler&rdquo;</em><br>
 Actually, it appears that <strong>it does not</strong> :</p>
 <p>Out of curiosity, I did a line-by-line comparison of the scheduler code
@@ -420,8 +426,9 @@ function clearActiveStatesInTableOfContents() {
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1588230842"></script>
+<script src="/mermaid/mermaid.js?1588393676"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+<script async src="http://zteo.com//js/basicLightbox.min.js"></script>
 
 <script>
 

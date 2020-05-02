@@ -27,15 +27,19 @@
 
     <title> Create your own WebTop in php/js in no time &middot;  The Nexus</title>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://zteo.com//css/fontawesome-all.min.css" as="style" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1588230842" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588393676" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://zteo.com//css/pure-min.css">
+    <link rel="preload" href="http://zteo.com//js/basicLightbox.min.js" as="script" />
+    <link rel="stylesheet" href="http://zteo.com//css/basicLightbox.min.css">
+    <link rel="stylesheet" href="http://zteo.com//css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
     <link rel="stylesheet" href="http://zteo.com//css/syntax.css">
     
@@ -257,15 +261,25 @@ picked these four because they allowed me to hit the ground running.</p>
 For instance, I added a drop-down contextual menu to windows, activated when
 clicking on the new &lsquo;menu&rsquo; button, next to the &lsquo;close&rsquo;, &lsquo;expand&rsquo; and &lsquo;iconify&rsquo;
 buttons.<br>
-<img src="/images/contextualmenu.png" alt="home.clicdev.com ContextualMenu"><br>
+<img src="/images/contextualmenu.png" alt="home.clicdev.com Contextual
+Menu"  />
+<br>
 These three menu items let the user:</p>
 <p>1. Change the background color of the iconified version of the window<br>
-<img src="/images/colorpicker.png" alt="home.clicdev.com ColorPicker"><br>
+<img src="/images/colorpicker.png" alt="home.clicdev.com Color
+Picker"  />
+<br>
 Let&rsquo;s say&hellip;purple<br>
-<img src="/images/iconified.png" alt="home.clicdev.comIconified"><br>
+<img src="/images/iconified.png" alt="home.clicdev.com
+Iconified"  />
+<br>
 Well&hellip;it <em>is</em> purple</p>
 <p>2. Change the window&rsquo;s overall theme<br>
-<a href="http://nexus.zteo.com/files/2006/12/wintheme1.png" title="home.clicdev.com Window Theme 1"><img src="/images/wintheme1.thumbnail.png" alt="home.clicdev.com Window Theme1"></a> <a href="http://nexus.zteo.com/files/2006/12/wintheme2.png" title="home.clicdev.com Window Theme 2"><img src="/images/wintheme2.thumbnail.png" alt="home.clicdev.com Window Theme2"></a></p>
+<a href="http://nexus.zteo.com/files/2006/12/wintheme1.png" title="home.clicdev.com Window Theme 1"><img src="/images/wintheme1.thumbnail.png" alt="home.clicdev.com Window Theme
+1"  />
+</a> <a href="http://nexus.zteo.com/files/2006/12/wintheme2.png" title="home.clicdev.com Window Theme 2"><img src="/images/wintheme2.thumbnail.png" alt="home.clicdev.com Window Theme
+2"  />
+</a></p>
 <p>3. Reload the content of the window</p>
 <p>To create these menus, I went with my usual method of creating HTML elements
 that I position and display on demand, instead of re-creating them every time.</p>
@@ -302,7 +316,9 @@ to work in all the browsers I tested.</p>
 </li>
 <li>
 <p>The login window itself is simply Mohame&rsquo;s login code embedded within an iframe, which in turn I turned into a CSS window.<br>
-<a href="http://nexus.zteo.com/files/2006/12/loginscreen.png" title="home.clicdev.com Login Screen"><img src="/images/loginscreen.thumbnail.png" alt="home.clicdev.com LoginScreen"></a></p>
+<a href="http://nexus.zteo.com/files/2006/12/loginscreen.png" title="home.clicdev.com Login Screen"><img src="/images/loginscreen.thumbnail.png" alt="home.clicdev.com Login
+Screen"  />
+</a></p>
 <p>function cfrNewLogin()</p>
 <p>{</p>
 <pre><code>_loginwin = _doOpenWindow('Login', ROOTPATH+'login/', false, 340, 240);
@@ -965,8 +981,9 @@ function clearActiveStatesInTableOfContents() {
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1588230842"></script>
+<script src="/mermaid/mermaid.js?1588393676"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+<script async src="http://zteo.com//js/basicLightbox.min.js"></script>
 
 <script>
 

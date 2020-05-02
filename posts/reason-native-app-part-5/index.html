@@ -29,15 +29,19 @@
 
     <title> Creating a ReasonML Native App: Configuration Files &middot;  The Nexus</title>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preload" href="http://zteo.com//css/fontawesome-all.min.css" as="style" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1588230842" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1588393676" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
     <link rel="stylesheet" href="http://zteo.com//css/main.css">
+    <link rel="stylesheet" href="http://zteo.com//css/pure-min.css">
+    <link rel="preload" href="http://zteo.com//js/basicLightbox.min.js" as="script" />
+    <link rel="stylesheet" href="http://zteo.com//css/basicLightbox.min.css">
+    <link rel="stylesheet" href="http://zteo.com//css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="http://zteo.com//css/cfr.css">
     <link rel="stylesheet" href="http://zteo.com//css/syntax.css">
     
@@ -110,7 +114,7 @@
         },
         "datePublished": "2018-09-08",
         "dateModified": "2018-09-08",
-        "wordCount":  380 ,
+        "wordCount":  417 ,
         "keywords": "[\"reason\",\"functional\"]" 
     }
     </script>
@@ -209,7 +213,7 @@
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">8 Sep 2018</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">380</span> words)</span></span>
+                        <span class="post-date">8 Sep 2018</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">417</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
@@ -773,7 +777,9 @@
 <span class="k">let</span> <span class="n">group</span> <span class="o">=</span> <span class="k">new</span> <span class="n">group</span><span class="o">;</span>
 <span class="o">...</span>
 <span class="n">group</span><span class="o">#</span><span class="n">write</span><span class="o">(</span><span class="s2">&#34;config/default.cfg&#34;</span><span class="o">);</span>
-</code></pre></div><!-- raw HTML omitted -->
+</code></pre></div>
+<div class="notices " >Classes&rsquo; members are accessed using <code>objectname#member</code> and not using dot notation. This behavior is inherited from OCaml.</div>
+
 <p>To be clear, this code does not do much of anything: it is writing an empty configuration file. What we need to do, before writing the file, is create a few entries:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">let</span> <span class="o">_</span><span class="n">ip</span> <span class="o">=</span> <span class="o">(</span><span class="k">new</span> <span class="n">string_cp</span><span class="o">)(</span>
   <span class="o">~</span><span class="n">group</span><span class="o">,</span>
@@ -789,7 +795,9 @@
 <ul>
 <li>which group this preference belongs to, the key&rsquo;s hierarchy, a default value and a description.</li>
 </ul>
-<!-- raw HTML omitted -->
+
+<div class="notices " >You can use a shortand when passing a variable named after the option being targeted: <code>myname = myname</code> =&gt; <code>~myname</code></div>
+
 <p><strong>But, what if you want to make a preference optional?</strong></p>
 <p>This is the <code>option_cp</code> type. Use a wrapper to turn objects into these option types. For instance, to provide an optional string:</p>
 <div class="highlight"><pre class="chroma"><code class="language-ocaml" data-lang="ocaml"><span class="k">let</span> <span class="o">_</span><span class="n">start_at</span> <span class="o">=</span> <span class="o">(</span><span class="k">new</span> <span class="n">option_cp</span><span class="o">)(</span>
@@ -933,8 +941,9 @@ function clearActiveStatesInTableOfContents() {
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1588230842"></script>
+<script src="/mermaid/mermaid.js?1588393676"></script>
 <script async src="http://zteo.com//js/main.js"></script>
+<script async src="http://zteo.com//js/basicLightbox.min.js"></script>
 
 <script>
 
