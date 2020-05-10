@@ -6,10 +6,20 @@
     <description>Recent content on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2020 10:54:24 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 10:54:24 +0200</lastBuildDate>
     
 	<atom:link href="http://zteo.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Setup Kiali, Analyse Your Mesh</title>
+      <link>http://zteo.com/posts/kiali-and-your-mesh/</link>
+      <pubDate>Wed, 06 May 2020 10:54:24 +0200</pubDate>
+      
+      <guid>http://zteo.com/posts/kiali-and-your-mesh/</guid>
+      <description>&lt;h1 id=&#34;why-would-i-want-kiali&#34;&gt;Why would I want Kiali?&lt;/h1&gt;
+&lt;p&gt;If you have been playing/using a service mesh for any length of time, you may have noticed that there is a certain cognitive overhead in trying to figure out traffic flows. Even using the CLI to understand injected routes can require spending a good long time in the &amp;ldquo;zone.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Istio, Cert-Manager and Let&#39;s Encrypt April &#39;20</title>
@@ -364,16 +374,6 @@ Anyway, in a futile attempt to remain somewhat ahead of the curve, this article 
       
       <guid>http://zteo.com/posts/pale-moon-24-7-1-is-now-available-for-linux-os-x-and-of-course-android/</guid>
       <description>Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Changelist: &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://forum.palemoon.org/viewtopic.php?f=1&amp;amp;amp;t=5243&#34;&gt;http://forum.palemoon.org/viewtopic.php?f=1&amp;amp;amp;t=5243&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;﻿</description>
-    </item>
-    
-    <item>
-      <title>Post title</title>
-      <link>http://zteo.com/posts/post-title/</link>
-      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
-      
-      <guid>http://zteo.com/posts/post-title/</guid>
-      <description>ISTIO
- major bug: 443 there are simpler alternatives: linkerd should u use in production? yes it is a steep learning curve breaking changes not negative: like changes are good &amp;ndash; also very flexible complexity debugging routes for instance01~  </description>
     </item>
     
     <item>
@@ -1359,16 +1359,6 @@ No content shown here is rendered, all content is based in the template layouts/
 Setting a very low sitemap priority will tell search engines this is not important content.
 This implementation uses Fusejs, jquery and mark.js
 Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
-    </item>
-    
-    <item>
-      <title>Setup Kiali, Analyse Your Mesh</title>
-      <link>http://zteo.com/posts/kiali-and-your-mesh/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zteo.com/posts/kiali-and-your-mesh/</guid>
-      <description>Why would I want Kiali? If you have been playing/using a service mesh for any length of time, you may have noticed that there is a certain cognitive overhead in trying to figure out traffic flows. Even using the CLI to understand injected routes can require spending a good long time in the &amp;ldquo;zone.&amp;rdquo;
-  document.getElementById(&#39;prgint&#39;).onclick = () = { const instance = basicLightbox.create(` &#34;\u003cdiv class=&#39;modal&#39; height=100% style=&#39;max-height: calc(100vh - 210px); overflow-y: auto;&#39;\u003e\u003cimg src=\&#34;</description>
     </item>
     
   </channel>

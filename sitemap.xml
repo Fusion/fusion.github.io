@@ -3,32 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</loc>
-    <lastmod>2020-04-29T10:54:24+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://zteo.com/tags/kubernetes/</loc>
-    <lastmod>2020-04-29T10:54:24+02:00</lastmod>
+    <lastmod>2020-05-06T10:54:24+02:00</lastmod>
   </url>
   
   <url>
     <loc>http://zteo.com/posts/</loc>
-    <lastmod>2020-04-29T10:54:24+02:00</lastmod>
+    <lastmod>2020-05-06T10:54:24+02:00</lastmod>
   </url>
   
   <url>
     <loc>http://zteo.com/tags/service-mesh/</loc>
-    <lastmod>2020-04-29T10:54:24+02:00</lastmod>
+    <lastmod>2020-05-06T10:54:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zteo.com/posts/kiali-and-your-mesh/</loc>
+    <lastmod>2020-05-06T10:54:24+02:00</lastmod>
   </url>
   
   <url>
     <loc>http://zteo.com/tags/</loc>
-    <lastmod>2020-04-29T10:54:24+02:00</lastmod>
+    <lastmod>2020-05-06T10:54:24+02:00</lastmod>
   </url>
   
   <url>
     <loc>http://zteo.com/</loc>
+    <lastmod>2020-05-06T10:54:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</loc>
     <lastmod>2020-04-29T10:54:24+02:00</lastmod>
   </url>
   
@@ -240,11 +245,6 @@
   <url>
     <loc>http://zteo.com/posts/pale-moon-24-7-1-is-now-available-for-linux-os-x-and-of-course-android/</loc>
     <lastmod>2014-08-03T06:19:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://zteo.com/posts/post-title/</loc>
-    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
   </url>
   
   <url>
@@ -798,10 +798,6 @@
   <url>
     <loc>http://zteo.com/search/</loc>
     <priority>0.1</priority>
-  </url>
-  
-  <url>
-    <loc>http://zteo.com/posts/kiali-and-your-mesh/</loc>
   </url>
   
 </urlset>
