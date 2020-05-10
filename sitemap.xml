@@ -243,6 +243,11 @@
   </url>
   
   <url>
+    <loc>http://zteo.com/posts/post-title/</loc>
+    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://zteo.com/posts/russell-pavlicek-make-some-very-good-points-on-the-containers-v-hypervisors-race-of-course-he-would/</loc>
     <lastmod>2014-06-28T22:10:45+00:00</lastmod>
   </url>
@@ -783,12 +788,20 @@
   </url>
   
   <url>
+    <loc>http://zteo.com/images/</loc>
+  </url>
+  
+  <url>
     <loc>http://zteo.com/categories/</loc>
   </url>
   
   <url>
     <loc>http://zteo.com/search/</loc>
     <priority>0.1</priority>
+  </url>
+  
+  <url>
+    <loc>http://zteo.com/posts/kiali-and-your-mesh/</loc>
   </url>
   
 </urlset>

@@ -367,6 +367,16 @@ Anyway, in a futile attempt to remain somewhat ahead of the curve, this article 
     </item>
     
     <item>
+      <title>Post title</title>
+      <link>http://zteo.com/posts/post-title/</link>
+      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
+      
+      <guid>http://zteo.com/posts/post-title/</guid>
+      <description>ISTIO
+ major bug: 443 there are simpler alternatives: linkerd should u use in production? yes it is a steep learning curve breaking changes not negative: like changes are good &amp;ndash; also very flexible complexity debugging routes for instance01~  </description>
+    </item>
+    
+    <item>
       <title>Russell Pavlicek make some very good points on the containers v. hypervisors race. Of course, he would...</title>
       <link>http://zteo.com/posts/russell-pavlicek-make-some-very-good-points-on-the-containers-v-hypervisors-race-of-course-he-would/</link>
       <pubDate>Sat, 28 Jun 2014 22:10:45 +0000</pubDate>
@@ -1218,6 +1228,16 @@ I am still using his icon set in my Dock, unfortunately the set was created befo
       
       <guid>http://zteo.com/posts/twitterified-v13-is-out-fixes-improvements-presently-support/</guid>
       <description>Well, the title pretty much says it all: v1.3 is now officially out.</description>
+    </item>
+    
+    <item>
+      <title>Setup Kiali, Analyse Your Mesh</title>
+      <link>http://zteo.com/posts/kiali-and-your-mesh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zteo.com/posts/kiali-and-your-mesh/</guid>
+      <description>Why would I want Kiali? If you have been playing/using a service mesh for any length of time, you may have noticed that there is a certain cognitive overhead in trying to figure out traffic flows. Even using the CLI to understand injected routes can require spending a good long time in the &amp;ldquo;zone.&amp;rdquo;
+  document.getElementById(&#39;prgint&#39;).onclick = () = { const instance = basicLightbox.create(` &#34;\u003cdiv class=&#39;modal&#39; height=100% style=&#39;max-height: calc(100vh - 210px); overflow-y: auto;&#39;\u003e\u003cimg src=\&#34;</description>
     </item>
     
   </channel>
