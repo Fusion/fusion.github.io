@@ -33,7 +33,7 @@
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1590996838" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1597885202" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -272,7 +272,7 @@ case, not different enough to be seen as &ldquo;different schedulers.&rdquo;</p>
 <p>The Incredible code aligns its timing on the clock rather than raw CPU time, again &ndash; I suppose &ndash; out of care for overall sync., including IRQ timing (It also pushes the logic a bit further by making sure that it uses the high-res timer)</p>
 </li>
 <li>
-<p>All tasks&rsquo; iowait time is included in <strong>init</strong> &lsquo;s own iowait time. My guess is for statistics purpose; possibly including battery life.</p>
+<p>All tasks&rsquo; iowait time is included in <strong>init</strong> &rsquo;s own iowait time. My guess is for statistics purpose; possibly including battery life.</p>
 </li>
 <li>
 <p>Tasks enqueuing is simplified to ignore the &ldquo;migrate&rdquo; flag. However, load balancing is implemented and CPUs can be found not eligible for process migration. If they are, the <strong>same algorithm</strong> is used as in the stock kernel.</p>
@@ -426,7 +426,7 @@ function clearActiveStatesInTableOfContents() {
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1590996838"></script>
+<script src="/mermaid/mermaid.js?1597885202"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 <script async src="http://zteo.com//js/basicLightbox.min.js"></script>
 

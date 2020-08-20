@@ -6,10 +6,22 @@
     <description>Recent content in Posts on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2020 10:54:24 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2020 10:50:00 +0200</lastBuildDate>
     
 	<atom:link href="http://zteo.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rainbow and Video Virtual Backgrounds</title>
+      <link>http://zteo.com/posts/rainbow-virtual-backgrounds/</link>
+      <pubDate>Wed, 19 Aug 2020 10:50:00 +0200</pubDate>
+      
+      <guid>http://zteo.com/posts/rainbow-virtual-backgrounds/</guid>
+      <description>Several folks have been asking me this: how complex is it to get a virtual background when using Rainbow, just like when using Zoom?
+Turns out, it&amp;rsquo;s not all that hard.
+You basically have two options:
+ You can go down the professional road and film yourself with a green background. There are some great offerings and the best reviewed one by many semi-famous people is the Elgato collpasible chroma key panel.</description>
+    </item>
     
     <item>
       <title>Decoy pricing: Why, Bloomberg?</title>
@@ -681,7 +693,7 @@ Anyway, in a futile attempt to remain somewhat ahead of the curve, this article 
       <pubDate>Sun, 06 Jun 2010 01:24:23 +0000</pubDate>
       
       <guid>http://zteo.com/posts/wordpress-plugin-page-themethemes-your-pages/</guid>
-      <description>I was quite surprised, when looking for a way to assign different themes to some pages, to not manage to find an easy way to do that. It is not baked into WordPress, and I could not find a suitable plugin either.I had, a while ago, created a tiny plugin that did just that for me but it was way too simple and unfriendly to configure. I eventually stumbled upon the &amp;lsquo;domain theme&amp;rsquo; plugin which, even though it does not do what I need, at least showed me that there is a way to perform a proper theme switch cleanly.Note: if you&amp;rsquo;ve been reading this intro, thinking: &amp;ldquo;But there is a way to switch templates!&amp;quot;, then you&amp;rsquo;re right because there is; however I am not talking about templates but themes. Templates are pre-recorded page structures whereas themes are about changing your blog&amp;rsquo;s complete look and feel, including logo, stylesheet, etc.</description>
+      <description>I was quite surprised, when looking for a way to assign different themes to some pages, to not manage to find an easy way to do that. It is not baked into WordPress, and I could not find a suitable plugin either.I had, a while ago, created a tiny plugin that did just that for me but it was way too simple and unfriendly to configure. I eventually stumbled upon the &amp;lsquo;domain theme&amp;rsquo; plugin which, even though it does not do what I need, at least showed me that there is a way to perform a proper theme switch cleanly.Note: if you&amp;rsquo;ve been reading this intro, thinking: &amp;ldquo;But there is a way to switch templates!&amp;rdquo;, then you&amp;rsquo;re right because there is; however I am not talking about templates but themes. Templates are pre-recorded page structures whereas themes are about changing your blog&amp;rsquo;s complete look and feel, including logo, stylesheet, etc.</description>
     </item>
     
     <item>

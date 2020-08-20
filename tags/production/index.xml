@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>production on The Nexus</title>
+    <link>http://zteo.com/tags/production/</link>
+    <description>Recent content in production on The Nexus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Aug 2020 10:50:00 +0200</lastBuildDate>
+    
+	<atom:link href="http://zteo.com/tags/production/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rainbow and Video Virtual Backgrounds</title>
+      <link>http://zteo.com/posts/rainbow-virtual-backgrounds/</link>
+      <pubDate>Wed, 19 Aug 2020 10:50:00 +0200</pubDate>
+      
+      <guid>http://zteo.com/posts/rainbow-virtual-backgrounds/</guid>
+      <description>Several folks have been asking me this: how complex is it to get a virtual background when using Rainbow, just like when using Zoom?
+Turns out, it&amp;rsquo;s not all that hard.
+You basically have two options:
+ You can go down the professional road and film yourself with a green background. There are some great offerings and the best reviewed one by many semi-famous people is the Elgato collpasible chroma key panel.</description>
+    </item>
+    
+  </channel>
+</rss>
