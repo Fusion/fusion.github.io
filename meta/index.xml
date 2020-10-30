@@ -20,13 +20,13 @@
       <description>&lt;p&gt;For glory or shame, this is all me:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a rel=&#34;me&#34; href=&#34;https://social.zteo.com/@chris&#34;&gt;Federated&lt;/a&gt;
+&lt;a rel=&#34;me&#34; href=&#34;https://social.zteo.com/@chris&#34; authn&gt;Federated&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a rel=&#34;me&#34; href=&#34;https://github.com/fusion&#34;&gt;GitHub&lt;/a&gt;
+&lt;a rel=&#34;me&#34; href=&#34;https://github.com/fusion&#34; authn&gt;GitHub&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;a rel=&#34;me&#34; href=&#34;https://www.linkedin.com/in/raven/&#34;&gt;LinkedIn&lt;/a&gt;
+&lt;a rel=&#34;me&#34; href=&#34;https://www.linkedin.com/in/raven/&#34; authn&gt;LinkedIn&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;a rel=&#34;me&#34; href=&#34;https://forum.xda-developers.com/member.php?u=2965329&#34;&gt;xda-developers&lt;/a&gt; (&lt;a rel=&#34;me&#34; href=&#34;https://www.appbrain.com/dev/Chris+Ravenscroft/&#34;&gt;stats&lt;/a&gt;)
