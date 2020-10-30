@@ -7,13 +7,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta property="og:title" content=" Decoy pricing: Why, Bloomberg? &middot;  The Nexus" />
+    <meta property="og:title" content=" Fixing Vmware Fusion Broken Vmmon &middot;  The Nexus" />
     <meta property="og:site_name" content="The Nexus" />
     <meta property="og:url" content="http://zteo.com/posts/decoy-pricing-bloomberg/" />
 
     
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content="2020-05-30T10:54:24&#43;02:00" />
+    <meta property="og:article:published_time" content="2019-02-23T14:54:24-08:00" />
     <meta property="og:article:tag" content="business" />
     <meta property="og:article:tag" content="cogsci" />
     
@@ -21,23 +21,26 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
-    <meta name="twitter:title" content="Decoy pricing: Why, Bloomberg?" />
+    <meta name="twitter:title" content="Fixing Vmware Fusion Broken Vmmon" />
     
     <meta name="twitter:image" content="http://zteo.com/images/bloomberg-subscription.jpg" />
     
-    <meta name="twitter:description" content="A quick note on something currently mistifying me.
-Dan Ariely&rsquo;s Predictably Irrational is a wonderful book, full of studies and academic research and whose sole purpose is to make us feel bad about how far from smart we can be, when it comes to marketing.
- Predicably Irrational  Get this book!     In it, he goes beyong simply describing price anchoring, which is the practice of steering your mind towards what the seller thinks is a fair price, and would really like you to agree that, why, but of course it is!" />
+    <meta name="twitter:description" content="Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded
+ /dev/vmmon: broken pipe
+ or
+ /dev/vmmon: No such file or directory
+ Here are three different fixes, because this is definitely nor a &ldquo;one size fits all&rdquo; scenario:
+1-If Fusion complains about not being authorized Go to the Security and Privacy control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted." />
     <meta name="twitter:url" content="http://zteo.com/posts/decoy-pricing-bloomberg/" />
     
 
-    <title> Decoy pricing: Why, Bloomberg? &middot;  The Nexus</title>
+    <title> Fixing Vmware Fusion Broken Vmmon &middot;  The Nexus</title>
 
     <link rel="preload" href="http://zteo.com//css/fontawesome-all.min.css" as="style" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="http://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1597885202" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1604037891" type="text/css" rel="stylesheet" />
     
     
     <link rel="preload" href="http://zteo.com//css/cfr.css" as="style" />
@@ -84,7 +87,7 @@ Dan Ariely&rsquo;s Predictably Irrational is a wonderful book, full of studies a
           "@type": "WebPage",
           "@id": "http:\/\/zteo.com\/posts\/decoy-pricing-bloomberg\/"
         },
-        "headline": "Decoy pricing: Why, Bloomberg?",
+        "headline": "Fixing Vmware Fusion Broken Vmmon",
         "description": "",
         "author": {
             "@type": "Person",
@@ -115,9 +118,9 @@ Dan Ariely&rsquo;s Predictably Irrational is a wonderful book, full of studies a
           "height": 133,
           "width": 200
         },
-        "datePublished": "2020-05-30",
-        "dateModified": "2020-05-30",
-        "wordCount":  225 ,
+        "datePublished": "2019-02-23",
+        "dateModified": "2019-02-23",
+        "wordCount":  290 ,
         "keywords": "[\"business\",\"cogsci\"]" 
     }
     </script>
@@ -216,11 +219,11 @@ Dan Ariely&rsquo;s Predictably Irrational is a wonderful book, full of studies a
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">30 May 2020</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">225</span> words)</span></span>
+                        <span class="post-date">23 Feb 2019</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">290</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
-                <h1 class="post-title">Decoy pricing: Why, Bloomberg?</h1>
+                <h1 class="post-title">Fixing Vmware Fusion Broken Vmmon</h1>
               </header>
 
               <section class="post-content">
@@ -232,42 +235,71 @@ Dan Ariely&rsquo;s Predictably Irrational is a wonderful book, full of studies a
 
 
                 
-                    <p><strong>A quick note on something currently mistifying me.</strong></p>
-<p>Dan Ariely&rsquo;s <em>Predictably Irrational</em> is a wonderful book, full of studies and academic research and whose sole purpose is to make us feel bad about how far from smart we can be, when it comes to marketing.</p>
+                    <main>
+                        <div class="content blog-content">
+                        <p>Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded</p>
+<blockquote>
+<p>/dev/vmmon: broken pipe</p>
+</blockquote>
+<p>or</p>
+<blockquote>
+<p>/dev/vmmon: No such file or directory</p>
+</blockquote>
+<p>Here are three different fixes, because this is definitely nor a &ldquo;one size fits all&rdquo; scenario:</p>
+<h2 id="1-if-fusion-complains-about-not-being-authorized">1-If Fusion complains about not being authorized</h2>
+<p>Go to the <span class="simpleitem1">Security and Privacy</span>
+ control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted.</p>
+<h2 id="2-starting-with-mojave-is-disk-access-authorized">2-Starting with Mojave: is disk access authorized?</h2>
+<p>In the same control panel, go to the <span class="simpletab1">Privacy</span>
+ tab and make sure that Fusion is allowed to write to disk&hellip;</p>
+<h2 id="3-if-fusion-still-complains-about-not-being-authorized">3-If Fusion still complains about not being authorized</h2>
+<p>Check if it&rsquo;s because the image itself got quarantined: run</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">xattr -l ~/Downloads/VMware-Fusion-*.dmg <span class="p">|</span> grep quarantine
+</code></pre></div><p>If you are getting any output, this is going to be a bit more work: you need to uninstall Fusion; run the command below; re-install Fusion:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">xattr -dr com.apple.quarantine ~/Downloads/VMware-Fusion-*.dmg
+</code></pre></div><h2 id="4-if-that-still-did-not-help">4-If that still did not help</h2>
+<p>Maybe you have loaded too many kernel extensions (kext files) &ndash; this can happen easily if you also installed VirtualBox, Parallels, etc.</p>
+<p>Run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">kextstat <span class="p">|</span> grep com.vmware <span class="p">|</span>  awk <span class="s1">&#39;{print $6}&#39;</span>
+</code></pre></div><p>You should get something similar to:</p>
+<blockquote>
+<p>com.vmware.kext.vmci</p>
+</blockquote>
+<blockquote>
+<p>com.vmware.kext.vmnet</p>
+</blockquote>
+<blockquote>
+<p>com.vmware.kext.vmx86</p>
+</blockquote>
+<blockquote>
+<p>com.vmware.kext.vmioplug.18.1.2</p>
+</blockquote>
+<p>If you are getting fewer rows, this could be your issue. Now, you need to select what other software you wish to sacrifice to allow Fusion to work.</p>
+<p>Let&rsquo;s say you decide on VirtualBox. First, remove it from your system. I find something like <a href="https://www.appzapper.com/">App Zapper</a> to be quite thorough. Unfortunately, even this little guy will not remove the kexts. You will need to remove them manually.</p>
+<p>As super user, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> kext in <span class="k">$(</span>ls /Library/Application<span class="se">\ </span>Support/VirtualBox<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+  kextutil /Library/Application<span class="se">\ </span>Support/VirtualBox/<span class="si">${</span><span class="nv">kext</span><span class="si">}</span> <span class="se">\
+</span><span class="se"></span>    -r /Library/Application<span class="se">\ </span>Support/VirtualBox<span class="p">;</span>
+<span class="k">done</span>
+</code></pre></div><p>Voila. (I hope!)</p>
 
-
-<div class="LinkPreview">
-    <a href="https://www.amazon.com/dp/B002RI9QJE/">
-    <img src="/images/predictably-irrational.jpg">
-      <div class="content">
-      <h4>
-          Predicably Irrational
-      </h4>
-      <div class="description">
-          Get this book!
-      </div>
-    </div>
-  </a>
-</div>
-
-
-<p>In it, he goes beyong simply describing <strong>price anchoring</strong>, which is the practice of steering your mind towards what <em>the seller</em> thinks is a fair price, and would really like <em>you</em> to agree that, why, but of course it is!</p>
-<p>He describes <strong>decoy pricing</strong>, where you are introduced to a pricing scheme that will make the seller&rsquo;s target price more desirable by introducing a highly favorable comparison to a not-so-sexy alternative.</p>
-<p>See, for instance, the famous example of a subscription to the Economist. Unsurprisingly, introducing option #2 gave option #3 a nice bump where, previously, people realized that they were perfectly content with paying half that for option #1.</p>
-<p><img src="/images/decoy-pricing-subscription.png" alt="decoy-pricing-subscription"  />
-</p>
-<p>So far, I imagine that this has been fairly easy to follow.</p>
-<p>I will now simply post a couple screenshots from Bloomberg&rsquo;s website.</p>
-<p>Here is the first one. As you can see, <strong>totally by the book</strong>:</p>
-<p><img src="/images/bloomberg-2.png" alt="bloomberg-subscription"  />
-</p>
-<p>And here is the second one. <strong>Feel free to let me know if you break the code.</strong></p>
-<p><img src="/images/bloomberg-1.png" alt="bloomberg-subscription"  />
-</p>
-<p>What happened to their annual plan? Did they break their <em>Credit Card Imprinter?</em></p>
-<p><img src="/images/credit-card-imprinter.jpg" alt="credit-card-imprinter"  />
-</p>
-
+                        </div>
+                        <aside class="lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-if-fusion-complains-about-not-being-authorized">1-If Fusion complains about not being authorized</a></li>
+        <li><a href="#2-starting-with-mojave-is-disk-access-authorized">2-Starting with Mojave: is disk access authorized?</a></li>
+        <li><a href="#3-if-fusion-still-complains-about-not-being-authorized">3-If Fusion still complains about not being authorized</a></li>
+        <li><a href="#4-if-that-still-did-not-help">4-If that still did not help</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
                 
               </section>
 
@@ -298,7 +330,7 @@ Dan Ariely&rsquo;s Predictably Irrational is a wonderful book, full of studies a
                         <a class="fa fa-reddit-alien" href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false">
                             <span>Reddit</span>
                         </a>
-                        <a class="fa fa-twitter" href="https://twitter.com/share?text=Decoy%20pricing%3a%20Why%2c%20Bloomberg%3f&url=http%3a%2f%2fzteo.com%2fposts%2fdecoy-pricing-bloomberg%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <a class="fa fa-twitter" href="https://twitter.com/share?text=Fixing%20Vmware%20Fusion%20Broken%20Vmmon&url=http%3a%2f%2fzteo.com%2fposts%2fdecoy-pricing-bloomberg%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                             <span>Twitter</span>
                         </a>
                     </div>
@@ -318,21 +350,21 @@ Dan Ariely&rsquo;s Predictably Irrational is a wonderful book, full of studies a
 
             <nav class="post-nav">
                 
-                    <a class="post-nav-item post-nav-next" href="http://zteo.com/posts/rainbow-virtual-backgrounds/">
+                    <a class="post-nav-item post-nav-next" href="http://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/">
                         <section class="post-nav-teaser">
                             <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
                             <span class="post-nav-info">
-                                <h4 class="post-nav-title">Rainbow and Video Virtual Backgrounds</h4>
+                                <h4 class="post-nav-title">Istio, Cert-Manager and Let&#39;s Encrypt April &#39;20</h4>
                             </span>
                         </section>
                     </a>
                 
                 
-                    <a class="post-nav-item post-nav-prev" href="http://zteo.com/posts/kiali-and-your-mesh/">
+                    <a class="post-nav-item post-nav-prev" href="http://zteo.com/posts/zigbee2mqtt-step-by-step/">
                         <section class="post-nav-teaser">
                             <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
                             <span class="post-nav-info">
-                                <h4 class="post-nav-title">Setup Kiali, Analyse Your Mesh</h4>
+                                <h4 class="post-nav-title">Zigbee2mqtt Step by Step</h4>
                             </span>
                         </section>
                     </a>
@@ -388,7 +420,7 @@ function clearActiveStatesInTableOfContents() {
 <source src="http://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1597885202"></script>
+<script src="/mermaid/mermaid.js?1604037891"></script>
 <script async src="http://zteo.com//js/main.js"></script>
 <script async src="http://zteo.com//js/basicLightbox.min.js"></script>
 

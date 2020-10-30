@@ -6,10 +6,28 @@
     <description>Recent content in Tags on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2020 10:50:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 10:54:24 -0800</lastBuildDate>
     
 	<atom:link href="http://zteo.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>kubernetes</title>
+      <link>http://zteo.com/tags/kubernetes/</link>
+      <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
+      
+      <guid>http://zteo.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>service mesh</title>
+      <link>http://zteo.com/tags/service-mesh/</link>
+      <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
+      
+      <guid>http://zteo.com/tags/service-mesh/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>media</title>
@@ -53,24 +71,6 @@
       <pubDate>Sat, 30 May 2020 10:54:24 +0200</pubDate>
       
       <guid>http://zteo.com/tags/cogsci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>http://zteo.com/tags/kubernetes/</link>
-      <pubDate>Wed, 06 May 2020 10:54:24 +0200</pubDate>
-      
-      <guid>http://zteo.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>service mesh</title>
-      <link>http://zteo.com/tags/service-mesh/</link>
-      <pubDate>Wed, 06 May 2020 10:54:24 +0200</pubDate>
-      
-      <guid>http://zteo.com/tags/service-mesh/</guid>
       <description></description>
     </item>
     

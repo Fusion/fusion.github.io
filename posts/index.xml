@@ -6,10 +6,20 @@
     <description>Recent content in Posts on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2020 10:50:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 10:54:24 -0800</lastBuildDate>
     
 	<atom:link href="http://zteo.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Things to know about Istio</title>
+      <link>http://zteo.com/posts/things-to-know-about-istio/</link>
+      <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
+      
+      <guid>http://zteo.com/posts/things-to-know-about-istio/</guid>
+      <description>This post has spent so much time in my draft folder that I am finally pulling the trigger even though I would styll very much find the time to tell you about these additional points:
+ major bug: 443 there are simpler alternatives: linkerd should u use in production? yes it is a steep learning curve breaking changes not negative: like changes are good &amp;ndash; also very flexible complexity debugging routes for instance01~  So, without further ado:</description>
+    </item>
     
     <item>
       <title>Rainbow and Video Virtual Backgrounds</title>
@@ -53,6 +63,20 @@ Dan Ariely&amp;rsquo;s Predictably Irrational is a wonderful book, full of studi
       <description>What is this? It is very easy to find blog posts and articles explaining how to make some of these components work together. They are also completely outdated.
 It is not their fault: Kubernetes moves fast, Istio&amp;rsquo;s development seems to move even faster, and cert-manager breaks backward compatibility. Chances are, by the time you read it it will be too late!
 Anyway, in a futile attempt to remain somewhat ahead of the curve, this article was written for Istio-1.</description>
+    </item>
+    
+    <item>
+      <title>Fixing Vmware Fusion Broken Vmmon</title>
+      <link>http://zteo.com/posts/decoy-pricing-bloomberg/</link>
+      <pubDate>Sat, 23 Feb 2019 14:54:24 -0800</pubDate>
+      
+      <guid>http://zteo.com/posts/decoy-pricing-bloomberg/</guid>
+      <description>Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded
+ /dev/vmmon: broken pipe
+ or
+ /dev/vmmon: No such file or directory
+ Here are three different fixes, because this is definitely nor a &amp;ldquo;one size fits all&amp;rdquo; scenario:
+1-If Fusion complains about not being authorized Go to the Security and Privacy control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted.</description>
     </item>
     
     <item>

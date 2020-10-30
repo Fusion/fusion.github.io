@@ -6,10 +6,20 @@
     <description>Recent content in kubernetes on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2020 10:54:24 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 10:54:24 -0800</lastBuildDate>
     
 	<atom:link href="http://zteo.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Things to know about Istio</title>
+      <link>http://zteo.com/posts/things-to-know-about-istio/</link>
+      <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
+      
+      <guid>http://zteo.com/posts/things-to-know-about-istio/</guid>
+      <description>This post has spent so much time in my draft folder that I am finally pulling the trigger even though I would styll very much find the time to tell you about these additional points:
+ major bug: 443 there are simpler alternatives: linkerd should u use in production? yes it is a steep learning curve breaking changes not negative: like changes are good &amp;ndash; also very flexible complexity debugging routes for instance01~  So, without further ado:</description>
+    </item>
     
     <item>
       <title>Setup Kiali, Analyse Your Mesh</title>

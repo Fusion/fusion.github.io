@@ -7,27 +7,28 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta property="og:title" content=" check-it-out! &middot;  The Nexus" />
+    <meta property="og:title" content=" Things to know about Istio &middot;  The Nexus" />
     <meta property="og:site_name" content="The Nexus" />
-    <meta property="og:url" content="http://zteo.com/posts/check-it-out/" />
+    <meta property="og:url" content="http://zteo.com/posts/things-to-know-about-istio/" />
 
     
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content="2015-04-14T21:23:25Z" />
+    <meta property="og:article:published_time" content="2020-10-06T10:54:24-08:00" />
+    <meta property="og:article:tag" content="kubernetes" />
+    <meta property="og:article:tag" content="service mesh" />
     
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
-    <meta name="twitter:title" content="check-it-out!" />
+    <meta name="twitter:title" content="Things to know about Istio" />
     
-    <meta name="twitter:image" content="http://zteo.com/images/c2b9f28d-64e1-4621-a50f-c3f6db778d8e" />
-    
-    <meta name="twitter:description" content="check-it-out!﻿" />
-    <meta name="twitter:url" content="http://zteo.com/posts/check-it-out/" />
+    <meta name="twitter:description" content="This post has spent so much time in my draft folder that I am finally pulling the trigger even though I would styll very much find the time to tell you about these additional points:
+ major bug: 443 there are simpler alternatives: linkerd should u use in production? yes it is a steep learning curve breaking changes not negative: like changes are good &ndash; also very flexible complexity debugging routes for instance01~  So, without further ado:" />
+    <meta name="twitter:url" content="http://zteo.com/posts/things-to-know-about-istio/" />
     
 
-    <title> check-it-out! &middot;  The Nexus</title>
+    <title> Things to know about Istio &middot;  The Nexus</title>
 
     <link rel="preload" href="http://zteo.com//css/fontawesome-all.min.css" as="style" />
     <link rel="preload" href="http://zteo.com//js/main.js" as="script" />
@@ -50,7 +51,7 @@
 
 
     
-    <meta name="description" content="check-it-out!" />
+    <meta name="description" content="" />
     
 
     
@@ -69,7 +70,7 @@
     
 
     
-    <link rel="canonical" href="http://zteo.com/posts/check-it-out/" />
+    <link rel="canonical" href="http://zteo.com/posts/things-to-know-about-istio/" />
 
     
     <script type="application/ld+json">
@@ -78,10 +79,10 @@
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http:\/\/zteo.com\/posts\/check-it-out\/"
+          "@id": "http:\/\/zteo.com\/posts\/things-to-know-about-istio\/"
         },
-        "headline": "check-it-out!",
-        "description": "check-it-out!",
+        "headline": "Things to know about Istio",
+        "description": "",
         "author": {
             "@type": "Person",
             "name": " ",
@@ -105,16 +106,17 @@
             "width": 80
           }
         },
+        
         "image": {
           "@type": "ImageObject",
-          "url": "http:\/\/zteo.com\/c2b9f28d-64e1-4621-a50f-c3f6db778d8e",
-          "height": 133,
-          "width": 200
+          "url": "",
+          "height": 80,
+          "width": 80
         },
-        "datePublished": "2015-04-14",
-        "dateModified": "2015-04-14",
-        "wordCount":  4 ,
-        
+        "datePublished": "2020-10-06",
+        "dateModified": "2020-10-06",
+        "wordCount":  492 ,
+        "keywords": "[\"kubernetes\",\"service mesh\"]" 
     }
     </script>
     
@@ -212,11 +214,11 @@
                 <header class="post-header">
                 
                     <span class="post-meta">
-                        <span class="post-date">14 Apr 2015</span> <span class="reading-time">| <span class="estimated-reading-time">1 min.</span> (<span class="word-count">4</span> words)</span></span>
+                        <span class="post-date">6 Oct 2020</span> <span class="reading-time">| <span class="estimated-reading-time">3 min.</span> (<span class="word-count">492</span> words)</span></span>
                     </span>
                 <div class="clear"></div>
                 
-                <h1 class="post-title">check-it-out!</h1>
+                <h1 class="post-title">Things to know about Istio</h1>
               </header>
 
               <section class="post-content">
@@ -228,11 +230,106 @@
 
 
                 
-                    <p>check-it-out!﻿</p>
-<p>[![](https://lh6.googleusercontent.com/proxy/Kb0uLhIXHOvNkiIUsGCVkLyuCzcP110AU7w2B8lVeByE27s-ZRW-38I8-ksRlPxih_CJkf6Uapdxwjg2ce7f0eMM12QJKgiVZr-
-C_HsrcIZ3XKdtwDJttcMqMh9K0FnQduqYZjLk=w506-h303)](<a href="http://zeroturnaround.com/software/jrebel-">http://zeroturnaround.com/software/jrebel-</a>
-for-android/)</p>
+                    <main>
+                        <div class="content blog-content">
+                        <p><strong>This post has spent so much time in my draft folder that I am finally pulling the trigger even though I would styll very much find the time to tell you about these additional points:</strong></p>
+<ul>
+<li>major bug: 443</li>
+<li>there are simpler alternatives: linkerd</li>
+<li>should u use in production?</li>
+<li>yes it is a steep learning curve</li>
+<li>breaking changes
+not negative: like changes are good &ndash; also very flexible
+complexity debugging routes for instance01~</li>
+</ul>
+<p>So, without further ado:</p>
+<h1 id="some-major-bugs-are-lurking">Some major bugs are lurking</h1>
+<p>For instance, here is one I wasted quite a lof of time figuring out: all outgoing HTTPS connections were failing with protocol error messages. As I will discuss in another post, this was making it difficult to convince Argocd to communicate with Github. But why?</p>
+<p>Eventually, I found this discussion about port 443 ingress conflicts as well as how the gateway is not supposed to support TLS in istio: 
+<div class="LinkPreview">
+    <a href="https://github.com/istio/istio/issues/16458">
+    <img src="">
+      <div class="content">
+      <h4>
+          Github&amp;nbsp;Issue
+      </h4>
+      <div class="description">
+          Any HTTP service will block all HTTPS/TCP traffic on the same port
+      </div>
+    </div>
+  </a>
+</div>
+</p>
+<p>This bug report, as well as <a href="https://github.com/istio/istio/issues/14264">https://github.com/istio/istio/issues/14264</a> point out that it is not possible to call external services if any internal service is listening on port 443!</p>
+<p>There is hope it will be fixed in the 1.6 branch.</p>
+<p>Careful, though! While some bugs disappear with a new release, new ones may take their place. According to Reddit, quality varies greatly. According to the world, 503 errors are likely bugs.</p>
+<p>In order to get a better grasp of what is an aberrant behavior vs something simply surprising, I strongly recommend familiarizing yourself with the concepts of Envoy. Bonus: you can also use Envoy without Istio, so that knowledge is not wasted. For instance, when using ingress gateways sitting directly on top of Kubernetes, I tend to favor Contour, which is one of the many packages that rely on Envoy.</p>
+<p><div class="LinkPreview">
+    <a href="https://www.envoyproxy.io/">
+    <img src="/images/envoy-proxy-logo.png">
+      <div class="content">
+      <h4>
+          Envoy
+      </h4>
+      <div class="description">
+          A self contained, high performance server with a small memory footprint.
+      </div>
+    </div>
+  </a>
+</div>
 
+<div class="LinkPreview">
+    <a href="https://projectcontour.io/">
+    <img src="/images/contour-logo.png">
+      <div class="content">
+      <h4>
+          Contour
+      </h4>
+      <div class="description">
+          An open source Kubernetes ingress controller providing the control plane for the Envoy edge and service proxy.
+      </div>
+    </div>
+  </a>
+</div>
+</p>
+<h1 id="production-or-development">Production or Development?</h1>
+<p>Nick Joyce made a good introductory post about cautiously introducing a production cluster to Istio: 
+<div class="LinkPreview">
+    <a href="https://blog.realkinetic.com/introducing-istio-to-a-production-cluster-ef5820148fe4">
+    <img src="">
+      <div class="content">
+      <h4>
+          Blog&amp;nbsp;Post
+      </h4>
+      <div class="description">
+          Introducing Istio to a production cluster
+      </div>
+    </div>
+  </a>
+</div>
+</p>
+<h1 id="simpler-alternatives">Simpler Alternatives</h1>
+<h1 id="steep-learning-curve">Steep Learning Curve</h1>
+<p>And you will keep on learning, mostly through failure. Sometimes, limitations that are built in Kubernetes itself will bite you. For instance, the fact that side cars are started in a non deterministic order, meaning that if Istio&rsquo;s sidecar doesn&rsquo;t start first, your app may not be able to exit the mesh. Of course, your design is robust enough to survive that, right? It is pretty easy to find entertaining youtube videos where the presenter explains the various ways they imagined to manager their sidecars run order, as well as how these failed.</p>
+<p>At least, starting with Kubernetes 1.18, sidecard containers can at least be prioritized to run first. Read more about this <a href="https://banzaicloud.com/blog/k8s-sidecars/">here</a>.</p>
+<h1 id="breaking-changes">Breaking Changes</h1>
+<p>not negative: like changes are good &ndash; also very flexible
+complexity debugging routes for instance</p>
+
+                        </div>
+                        <aside class="lg:block tableOfContentContainer border-indigo-200" id="tableOfContentContainer">
+                        <h3>Contents</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#some-major-bugs-are-lurking">Some major bugs are lurking</a></li>
+    <li><a href="#production-or-development">Production or Development?</a></li>
+    <li><a href="#simpler-alternatives">Simpler Alternatives</a></li>
+    <li><a href="#steep-learning-curve">Steep Learning Curve</a></li>
+    <li><a href="#breaking-changes">Breaking Changes</a></li>
+  </ul>
+</nav>
+                        </aside>
+                    </main>
                 
               </section>
 
@@ -250,8 +347,25 @@ for-android/)</p>
               <footer class="post-footer">
                   <div class="post-tags">
             
+            
+                <a href="http://zteo.com/tags/kubernetes">kubernetes</a>
+            
+                <a href="http://zteo.com/tags/service-mesh">service mesh</a>
+            
+            
                   </div>
                 
+                
+                    <div class="post-share">
+                        <a class="fa fa-reddit-alien" href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false">
+                            <span>Reddit</span>
+                        </a>
+                        <a class="fa fa-twitter" href="https://twitter.com/share?text=Things%20to%20know%20about%20Istio&url=http%3a%2f%2fzteo.com%2fposts%2fthings-to-know-about-istio%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                
+            
               </footer>
 
             
@@ -266,21 +380,12 @@ for-android/)</p>
 
             <nav class="post-nav">
                 
-                    <a class="post-nav-item post-nav-next" href="http://zteo.com/posts/sbase-for-android-now-updated-with-some-ubase-goodness-as-well/">
-                        <section class="post-nav-teaser">
-                            <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
-                            <span class="post-nav-info">
-                                <h4 class="post-nav-title">sBase for Android now updated with some uBase goodness as well.</h4>
-                            </span>
-                        </section>
-                    </a>
                 
-                
-                    <a class="post-nav-item post-nav-prev" href="http://zteo.com/posts/i-just-pushed-to-github-my-first-android-build-of-sbase-the-command-line-tools-that-suck-less/">
+                    <a class="post-nav-item post-nav-prev" href="http://zteo.com/posts/rainbow-virtual-backgrounds/">
                         <section class="post-nav-teaser">
                             <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
                             <span class="post-nav-info">
-                                <h4 class="post-nav-title">I just pushed to Github my first Android build of sbase, the command line tools that suck less.</h4>
+                                <h4 class="post-nav-title">Rainbow and Video Virtual Backgrounds</h4>
                             </span>
                         </section>
                     </a>
