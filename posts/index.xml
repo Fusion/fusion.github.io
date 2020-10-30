@@ -17,8 +17,14 @@
       <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
       
       <guid>http://zteo.com/posts/things-to-know-about-istio/</guid>
-      <description>This post has spent so much time in my draft folder that I am finally pulling the trigger even though I would styll very much find the time to tell you about these additional points:
- major bug: 443 there are simpler alternatives: linkerd should u use in production? yes it is a steep learning curve breaking changes not negative: like changes are good &amp;ndash; also very flexible complexity debugging routes for instance01~  So, without further ado:</description>
+      <description>&lt;p&gt;This post has spent so much time in my draft folder that I am finally pulling the trigger even though I would styll very much find the time to tell you about these additional points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;major bug: 443&lt;/li&gt;
+&lt;li&gt;there are simpler alternatives: linkerd&lt;/li&gt;
+&lt;li&gt;should u use in production?&lt;/li&gt;
+&lt;li&gt;yes it is a steep learning curve&lt;/li&gt;
+&lt;li&gt;breaking changes&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>

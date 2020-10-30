@@ -6,10 +6,36 @@
     <description>Recent content in Meta on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Nov 2012 09:16:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="http://zteo.com/meta/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About Me</title>
+      <link>http://zteo.com/meta/about-me/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 -0800</pubDate>
+      
+      <guid>http://zteo.com/meta/about-me/</guid>
+      <description>&lt;p&gt;For glory or shame, this is all me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a rel=&#34;me&#34; href=&#34;https://social.zteo.com/@chris&#34;&gt;Federated&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a rel=&#34;me&#34; href=&#34;https://github.com/fusion&#34;&gt;GitHub&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a rel=&#34;me&#34; href=&#34;https://www.linkedin.com/in/raven/&#34;&gt;LinkedIn&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a rel=&#34;me&#34; href=&#34;https://forum.xda-developers.com/member.php?u=2965329&#34;&gt;xda-developers&lt;/a&gt; (&lt;a rel=&#34;me&#34; href=&#34;https://www.appbrain.com/dev/Chris+Ravenscroft/&#34;&gt;stats&lt;/a&gt;)
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a rel=&#34;me&#34; href=&#34;https://community.spiceworks.com/people/chrisravenscroft&#34;&gt;SpiceWorks&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Overview</title>
