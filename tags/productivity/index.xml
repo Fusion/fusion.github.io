@@ -6,10 +6,21 @@
     <description>Recent content in productivity on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2020 10:50:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2020 10:54:24 -0800</lastBuildDate>
     
 	<atom:link href="http://zteo.com/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Workona</title>
+      <link>http://zteo.com/posts/using-workona/</link>
+      <pubDate>Sat, 31 Oct 2020 10:54:24 -0800</pubDate>
+      
+      <guid>http://zteo.com/posts/using-workona/</guid>
+      <description>.main-image { background-position: center; background-size: cover; background-image: url(/images/workona.jpg); height: 300px; }      Hello! This is not going to be an post geared towards Workona super users. It&amp;rsquo;s going to be about what I have learnt so far about this productivity tool.
+Because, boy oh boy does this thing lack a simple &amp;ldquo;getting started&amp;rdquo; page.
+Disclaimer I feel particularly stupid when I look back at my first steps with Workona.</description>
+    </item>
     
     <item>
       <title>Rainbow and Video Virtual Backgrounds</title>
