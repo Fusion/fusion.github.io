@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on The Nexus</title>
-    <link>http://zteo.com/series/</link>
+    <link>https://zteo.com/series/</link>
     <description>Recent content in Series on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Sep 2018 13:33:01 -1400</lastBuildDate>
-    
-	<atom:link href="http://zteo.com/series/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 08 Sep 2018 13:33:01 -1400</lastBuildDate><atom:link href="https://zteo.com/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reason Native App</title>
-      <link>http://zteo.com/series/reason-native-app/</link>
+      <link>https://zteo.com/series/reason-native-app/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1400</pubDate>
       
-      <guid>http://zteo.com/series/reason-native-app/</guid>
+      <guid>https://zteo.com/series/reason-native-app/</guid>
       <description></description>
     </item>
     

@@ -2,102 +2,98 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on The Nexus</title>
-    <link>http://zteo.com/tags/</link>
+    <link>https://zteo.com/tags/</link>
     <description>Recent content in Tags on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2020 10:54:24 -0800</lastBuildDate>
-    
-	<atom:link href="http://zteo.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 31 Oct 2020 10:54:24 -0800</lastBuildDate><atom:link href="https://zteo.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>productivity</title>
-      <link>http://zteo.com/tags/productivity/</link>
+      <link>https://zteo.com/tags/productivity/</link>
       <pubDate>Sat, 31 Oct 2020 10:54:24 -0800</pubDate>
       
-      <guid>http://zteo.com/tags/productivity/</guid>
+      <guid>https://zteo.com/tags/productivity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kubernetes</title>
-      <link>http://zteo.com/tags/kubernetes/</link>
+      <link>https://zteo.com/tags/kubernetes/</link>
       <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
       
-      <guid>http://zteo.com/tags/kubernetes/</guid>
+      <guid>https://zteo.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>service mesh</title>
-      <link>http://zteo.com/tags/service-mesh/</link>
+      <link>https://zteo.com/tags/service-mesh/</link>
       <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
       
-      <guid>http://zteo.com/tags/service-mesh/</guid>
+      <guid>https://zteo.com/tags/service-mesh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>urgent</title>
-      <link>http://zteo.com/tags/urgent/</link>
+      <link>https://zteo.com/tags/urgent/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 -0800</pubDate>
       
-      <guid>http://zteo.com/tags/urgent/</guid>
+      <guid>https://zteo.com/tags/urgent/</guid>
       <description></description>
     </item>
     
     <item>
       <title>media</title>
-      <link>http://zteo.com/tags/media/</link>
+      <link>https://zteo.com/tags/media/</link>
       <pubDate>Wed, 19 Aug 2020 10:50:00 +0200</pubDate>
       
-      <guid>http://zteo.com/tags/media/</guid>
+      <guid>https://zteo.com/tags/media/</guid>
       <description></description>
     </item>
     
     <item>
       <title>production</title>
-      <link>http://zteo.com/tags/production/</link>
+      <link>https://zteo.com/tags/production/</link>
       <pubDate>Wed, 19 Aug 2020 10:50:00 +0200</pubDate>
       
-      <guid>http://zteo.com/tags/production/</guid>
+      <guid>https://zteo.com/tags/production/</guid>
       <description></description>
     </item>
     
     <item>
       <title>business</title>
-      <link>http://zteo.com/tags/business/</link>
+      <link>https://zteo.com/tags/business/</link>
       <pubDate>Sat, 30 May 2020 10:54:24 +0200</pubDate>
       
-      <guid>http://zteo.com/tags/business/</guid>
+      <guid>https://zteo.com/tags/business/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cogsci</title>
-      <link>http://zteo.com/tags/cogsci/</link>
+      <link>https://zteo.com/tags/cogsci/</link>
       <pubDate>Sat, 30 May 2020 10:54:24 +0200</pubDate>
       
-      <guid>http://zteo.com/tags/cogsci/</guid>
+      <guid>https://zteo.com/tags/cogsci/</guid>
       <description></description>
     </item>
     
     <item>
       <title>functional</title>
-      <link>http://zteo.com/tags/functional/</link>
+      <link>https://zteo.com/tags/functional/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1400</pubDate>
       
-      <guid>http://zteo.com/tags/functional/</guid>
+      <guid>https://zteo.com/tags/functional/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reason</title>
-      <link>http://zteo.com/tags/reason/</link>
+      <link>https://zteo.com/tags/reason/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1400</pubDate>
       
-      <guid>http://zteo.com/tags/reason/</guid>
+      <guid>https://zteo.com/tags/reason/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meta on The Nexus</title>
-    <link>http://zteo.com/meta/</link>
+    <link>https://zteo.com/meta/</link>
     <description>Recent content in Meta on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0800</lastBuildDate>
-    
-	<atom:link href="http://zteo.com/meta/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://zteo.com/meta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>http://zteo.com/meta/about-me/</link>
+      <link>https://zteo.com/meta/about-me/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 -0800</pubDate>
       
-      <guid>http://zteo.com/meta/about-me/</guid>
+      <guid>https://zteo.com/meta/about-me/</guid>
       <description>&lt;p&gt;For glory or shame, this is all me:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -39,10 +35,10 @@
     
     <item>
       <title>Overview</title>
-      <link>http://zteo.com/meta/overview/</link>
+      <link>https://zteo.com/meta/overview/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:41 +0000</pubDate>
       
-      <guid>http://zteo.com/meta/overview/</guid>
+      <guid>https://zteo.com/meta/overview/</guid>
       <description>n2 BBS n2 is the result of the merger of two exciting forums software: wtcBB and nextBBS. It&amp;rsquo;s easy to use and easy to admin. Committed to remain open-source forever. Fork it!
    
 Tooredo Tooredo offers instant filtering, context and project management, all in one page!
@@ -51,19 +47,19 @@ It relies on Toodledo to store these tasks as many mobile applications do.</desc
     
     <item>
       <title>EgoSurfing</title>
-      <link>http://zteo.com/meta/egosurfing/</link>
+      <link>https://zteo.com/meta/egosurfing/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:34 +0000</pubDate>
       
-      <guid>http://zteo.com/meta/egosurfing/</guid>
+      <guid>https://zteo.com/meta/egosurfing/</guid>
       <description>They had good things to say about this blog(and I do not mind sending some page ranking their way for that)</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://zteo.com/meta/about/</link>
+      <link>https://zteo.com/meta/about/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:33 +0000</pubDate>
       
-      <guid>http://zteo.com/meta/about/</guid>
+      <guid>https://zteo.com/meta/about/</guid>
       <description>(TODO: Update this page as it is quite out of date!)
 The goal of this blog is to keep you appraised of various project Chris FR and his team have been working on and plan to work on.These projects include:
   the new free blog host zteo.com,

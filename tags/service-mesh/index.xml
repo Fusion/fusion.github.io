@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>service mesh on The Nexus</title>
-    <link>http://zteo.com/tags/service-mesh/</link>
+    <link>https://zteo.com/tags/service-mesh/</link>
     <description>Recent content in service mesh on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2020 10:54:24 -0800</lastBuildDate>
-    
-	<atom:link href="http://zteo.com/tags/service-mesh/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 06 Oct 2020 10:54:24 -0800</lastBuildDate><atom:link href="https://zteo.com/tags/service-mesh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Things to know about Istio</title>
-      <link>http://zteo.com/posts/things-to-know-about-istio/</link>
+      <link>https://zteo.com/posts/things-to-know-about-istio/</link>
       <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
       
-      <guid>http://zteo.com/posts/things-to-know-about-istio/</guid>
+      <guid>https://zteo.com/posts/things-to-know-about-istio/</guid>
       <description>&lt;p&gt;This post has spent so much time in my draft folder that I am finally pulling the trigger even though I would styll very much find the time to tell you about these additional points:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;major bug: 443&lt;/li&gt;
@@ -29,20 +25,20 @@
     
     <item>
       <title>Setup Kiali, Analyse Your Mesh</title>
-      <link>http://zteo.com/posts/kiali-and-your-mesh/</link>
+      <link>https://zteo.com/posts/kiali-and-your-mesh/</link>
       <pubDate>Wed, 06 May 2020 10:54:24 +0200</pubDate>
       
-      <guid>http://zteo.com/posts/kiali-and-your-mesh/</guid>
+      <guid>https://zteo.com/posts/kiali-and-your-mesh/</guid>
       <description>&lt;h1 id=&#34;why-would-i-want-kiali&#34;&gt;Why would I want Kiali?&lt;/h1&gt;
 &lt;p&gt;If you have been playing/using a service mesh for any length of time, you may have noticed that there is a certain cognitive overhead in trying to figure out traffic flows. Even using the CLI to understand injected routes can require spending a good long time in the &amp;ldquo;zone.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Istio, Cert-Manager and Let&#39;s Encrypt April &#39;20</title>
-      <link>http://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</link>
+      <link>https://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</link>
       <pubDate>Wed, 29 Apr 2020 10:54:24 +0200</pubDate>
       
-      <guid>http://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</guid>
+      <guid>https://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</guid>
       <description>What is this? It is very easy to find blog posts and articles explaining how to make some of these components work together. They are also completely outdated.
 It is not their fault: Kubernetes moves fast, Istio&amp;rsquo;s development seems to move even faster, and cert-manager breaks backward compatibility. Chances are, by the time you read it it will be too late!
 Anyway, in a futile attempt to remain somewhat ahead of the curve, this article was written for Istio-1.</description>
