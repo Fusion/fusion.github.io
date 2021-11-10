@@ -33,7 +33,7 @@
     <link rel="preload" href="https://zteo.com//js/main.js" as="script" />
     <link rel="preload" href="https://zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1630106372" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1636582245" type="text/css" rel="stylesheet" />
     
     
     <link rel="webmention" href="https://webmention.io/zteo.com/webmention" />
@@ -253,18 +253,18 @@ And, yes, I am aware that you may then want to protect your ZeroNet install(!)</
 </code></pre></div><p>Restart haproxy.</p>
 <p>2-Make the file server available: I would recommend using NAT to avoid any surprise. In /etc/../iptables:</p>
 <p>nat:</p>
-<pre><code># we will nat incoming packets on port 15441
+<pre tabindex="0"><code># we will nat incoming packets on port 15441
 -A PREROUTING -i eth0 -p tcp -m tcp --dport 15441 -j DNAT --to-destination &lt;container ip&gt;:15441
 -A PREROUTING -i eth0 -p udp -m udp --dport 15441 -j DNAT --to-destination &lt;container ip&gt;:15441
 </code></pre><p>filter:</p>
-<pre><code># host forwards incoming container packets
+<pre tabindex="0"><code># host forwards incoming container packets
 -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
 -A FORWARD -s &lt;container network&gt;/24 -i &lt;bridge interface&gt; -j ACCEPT
 # host
 accepts incoming container packets to its own services
 -A INPUT -s &lt;container network&gt;/24 -i &lt;bridge interface&gt; -j ACCEPT
 </code></pre><p>Cleanup your iptables configuration then</p>
-<pre><code>iptable-restore &lt; etc/../iptable
+<pre tabindex="0"><code>iptable-restore &lt; etc/../iptable
 </code></pre><p>And you&rsquo;re good to go! (in theory)</p>
 
                 
@@ -370,7 +370,7 @@ function clearActiveStatesInTableOfContents() {
 <source src="https://zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1630106372"></script>
+<script src="/mermaid/mermaid.js?1636582245"></script>
 <script async src="https://zteo.com//js/main.js"></script>
 <script async src="https://zteo.com//js/basicLightbox.min.js"></script>
 
