@@ -6,7 +6,16 @@
     <description>Recent content on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2020 10:54:24 -0800</lastBuildDate><atom:link href="https://zteo.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Nov 2021 10:54:24 -0800</lastBuildDate><atom:link href="https://zteo.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notion Backups and Obsidian</title>
+      <link>https://zteo.com/posts/notion-backups-and-obsidian/</link>
+      <pubDate>Sat, 27 Nov 2021 10:54:24 -0800</pubDate>
+      
+      <guid>https://zteo.com/posts/notion-backups-and-obsidian/</guid>
+      <description>Notion backups and Obsidian search, also for idiots like me.</description>
+    </item>
+    
     <item>
       <title>Using Workona</title>
       <link>https://zteo.com/posts/using-workona/</link>
