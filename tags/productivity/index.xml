@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>productivity on The Nexus</title>
-    <link>https://zteo.com/tags/productivity/</link>
+    <link>https://nexus.zteo.com/tags/productivity/</link>
     <description>Recent content in productivity on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Nov 2021 10:54:24 -0800</lastBuildDate><atom:link href="https://zteo.com/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Nov 2021 10:54:24 -0800</lastBuildDate><atom:link href="https://nexus.zteo.com/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notion Backups and Obsidian</title>
-      <link>https://zteo.com/posts/notion-backups-and-obsidian/</link>
+      <link>https://nexus.zteo.com/posts/notion-backups-and-obsidian/</link>
       <pubDate>Sat, 27 Nov 2021 10:54:24 -0800</pubDate>
       
-      <guid>https://zteo.com/posts/notion-backups-and-obsidian/</guid>
+      <guid>https://nexus.zteo.com/posts/notion-backups-and-obsidian/</guid>
       <description>Notion backups and Obsidian search, also for idiots like me.</description>
     </item>
     
     <item>
       <title>Using Workona</title>
-      <link>https://zteo.com/posts/using-workona/</link>
+      <link>https://nexus.zteo.com/posts/using-workona/</link>
       <pubDate>Sat, 31 Oct 2020 10:54:24 -0800</pubDate>
       
-      <guid>https://zteo.com/posts/using-workona/</guid>
+      <guid>https://nexus.zteo.com/posts/using-workona/</guid>
       <description>An introduction to Workona&amp;rsquo;s tab for idiots like me.</description>
     </item>
     
     <item>
       <title>Rainbow and Video Virtual Backgrounds</title>
-      <link>https://zteo.com/posts/rainbow-virtual-backgrounds/</link>
+      <link>https://nexus.zteo.com/posts/rainbow-virtual-backgrounds/</link>
       <pubDate>Wed, 19 Aug 2020 10:50:00 +0200</pubDate>
       
-      <guid>https://zteo.com/posts/rainbow-virtual-backgrounds/</guid>
+      <guid>https://nexus.zteo.com/posts/rainbow-virtual-backgrounds/</guid>
       <description>Several folks have been asking me this: how complex is it to get a virtual background when using Rainbow, just like when using Zoom?
 Turns out, it&amp;rsquo;s not all that hard.
 You basically have two options:

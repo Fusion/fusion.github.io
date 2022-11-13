@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cogsci on The Nexus</title>
-    <link>https://zteo.com/tags/cogsci/</link>
+    <link>https://nexus.zteo.com/tags/cogsci/</link>
     <description>Recent content in cogsci on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2020 10:54:24 +0200</lastBuildDate><atom:link href="https://zteo.com/tags/cogsci/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 May 2020 10:54:24 +0200</lastBuildDate><atom:link href="https://nexus.zteo.com/tags/cogsci/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decoy pricing: Why, Bloomberg?</title>
-      <link>https://zteo.com/posts/decoy-pricing-bloomberg/</link>
+      <link>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</link>
       <pubDate>Sat, 30 May 2020 10:54:24 +0200</pubDate>
       
-      <guid>https://zteo.com/posts/decoy-pricing-bloomberg/</guid>
+      <guid>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</guid>
       <description>A quick note on something currently mistifying me.
 Dan Ariely&amp;rsquo;s Predictably Irrational is a wonderful book, full of studies and academic research and whose sole purpose is to make us feel bad about how far from smart we can be, when it comes to marketing.
  Predicably Irrational  Get this book!     In it, he goes beyong simply describing price anchoring, which is the practice of steering your mind towards what the seller thinks is a fair price, and would really like you to agree that, why, but of course it is!</description>
@@ -20,10 +20,10 @@ Dan Ariely&amp;rsquo;s Predictably Irrational is a wonderful book, full of studi
     
     <item>
       <title>Fixing Vmware Fusion Broken Vmmon</title>
-      <link>https://zteo.com/posts/decoy-pricing-bloomberg/</link>
+      <link>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</link>
       <pubDate>Sat, 23 Feb 2019 14:54:24 -0800</pubDate>
       
-      <guid>https://zteo.com/posts/decoy-pricing-bloomberg/</guid>
+      <guid>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</guid>
       <description>Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded
  /dev/vmmon: broken pipe
  or

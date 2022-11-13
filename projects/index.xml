@@ -2,91 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on The Nexus</title>
-    <link>https://zteo.com/projects/</link>
+    <link>https://nexus.zteo.com/projects/</link>
     <description>Recent content in Projects on The Nexus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Nov 2012 09:16:42 +0000</lastBuildDate><atom:link href="https://zteo.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Nov 2012 09:16:42 +0000</lastBuildDate><atom:link href="https://nexus.zteo.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Journler, Again!</title>
-      <link>https://zteo.com/projects/journler-again/</link>
+      <link>https://nexus.zteo.com/projects/journler-again/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:42 +0000</pubDate>
       
-      <guid>https://zteo.com/projects/journler-again/</guid>
+      <guid>https://nexus.zteo.com/projects/journler-again/</guid>
       <description>A &amp;ldquo;refreshed,&amp;rdquo; Lion and Mountain-Lion compatible Journler: read the blog post</description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>https://zteo.com/projects/tools/</link>
+      <link>https://nexus.zteo.com/projects/tools/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:41 +0000</pubDate>
       
-      <guid>https://zteo.com/projects/tools/</guid>
+      <guid>https://nexus.zteo.com/projects/tools/</guid>
       <description>TinySU
 TinySU is a very small &amp;ldquo;su&amp;rdquo; binary, compiled to run on all ARM-based Android devices.</description>
     </item>
     
     <item>
       <title>Tooredo Alpha</title>
-      <link>https://zteo.com/projects/tooredo-alpha/</link>
+      <link>https://nexus.zteo.com/projects/tooredo-alpha/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:40 +0000</pubDate>
       
-      <guid>https://zteo.com/projects/tooredo-alpha/</guid>
+      <guid>https://nexus.zteo.com/projects/tooredo-alpha/</guid>
       <description>[August 2018 Update] Well, since 2012, Toodledo have extensively reworked their user interface and Tooredo is not needed anymore. Screenshots</description>
     </item>
     
     <item>
       <title>FreeBlog - Air</title>
-      <link>https://zteo.com/projects/freeblog/</link>
+      <link>https://nexus.zteo.com/projects/freeblog/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:39 +0000</pubDate>
       
-      <guid>https://zteo.com/projects/freeblog/</guid>
+      <guid>https://nexus.zteo.com/projects/freeblog/</guid>
       <description>FreeBlog is a multi-platform tool (Linux, Windows, OS X) that helps you in your blogging tasks.
 FreeBlog was born out of frustration after its author tried various blogging software, most of it on the Mac: that type of software usually offers all sorts of features, such as publishing which music you are currently listening to, and seem to forget to focus on the basics: a real rich-text editor that renders your posts as closely to what they will look like on your weblog as possible.</description>
     </item>
     
     <item>
       <title>Condo</title>
-      <link>https://zteo.com/projects/condo/</link>
+      <link>https://nexus.zteo.com/projects/condo/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:36 +0000</pubDate>
       
-      <guid>https://zteo.com/projects/condo/</guid>
+      <guid>https://nexus.zteo.com/projects/condo/</guid>
       <description>Condo is brand-new multi-environment hosting project that is currently in its early development stage.</description>
     </item>
     
     <item>
       <title>ezEdit</title>
-      <link>https://zteo.com/projects/ezedit/</link>
+      <link>https://nexus.zteo.com/projects/ezedit/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:36 +0000</pubDate>
       
-      <guid>https://zteo.com/projects/ezedit/</guid>
+      <guid>https://nexus.zteo.com/projects/ezedit/</guid>
       <description>ezEdit is a very unintrusive script. It serves two different purposes:</description>
     </item>
     
     <item>
       <title>n2</title>
-      <link>https://zteo.com/projects/n2/</link>
+      <link>https://nexus.zteo.com/projects/n2/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:35 +0000</pubDate>
       
-      <guid>https://zteo.com/projects/n2/</guid>
+      <guid>https://nexus.zteo.com/projects/n2/</guid>
       <description>n2 is the result of the merger of two exciting forums software: wtcBB and nextBBS.</description>
     </item>
     
     <item>
       <title>Projects List</title>
-      <link>https://zteo.com/projects/projects-list/</link>
+      <link>https://nexus.zteo.com/projects/projects-list/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:35 +0000</pubDate>
       
-      <guid>https://zteo.com/projects/projects-list/</guid>
+      <guid>https://nexus.zteo.com/projects/projects-list/</guid>
       <description>Some projects are not shown here because they are still under development; some because they are too old; some because there is no promo material for them!</description>
     </item>
     
     <item>
       <title>S2ajax</title>
-      <link>https://zteo.com/projects/s2ajax/</link>
+      <link>https://nexus.zteo.com/projects/s2ajax/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:35 +0000</pubDate>
       
-      <guid>https://zteo.com/projects/s2ajax/</guid>
+      <guid>https://nexus.zteo.com/projects/s2ajax/</guid>
       <description>S2ajax is a &amp;lsquo;managed&amp;rsquo; AJAX framework. It is derived from Sajax, written by the Modern Method folks a few years ago.</description>
     </item>
     

@@ -2,521 +2,536 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zteo.com/posts/notion-backups-and-obsidian/</loc>
+    <loc>https://nexus.zteo.com/posts/notion-backups-and-obsidian/</loc>
     <lastmod>2021-11-27T10:54:24-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/</loc>
+    <loc>https://nexus.zteo.com/posts/</loc>
     <lastmod>2021-11-27T10:54:24-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/productivity/</loc>
+    <loc>https://nexus.zteo.com/tags/productivity/</loc>
     <lastmod>2021-11-27T10:54:24-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/</loc>
+    <loc>https://nexus.zteo.com/tags/</loc>
     <lastmod>2021-11-27T10:54:24-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/</loc>
+    <loc>https://nexus.zteo.com/</loc>
     <lastmod>2021-11-27T10:54:24-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/using-workona/</loc>
+    <loc>https://nexus.zteo.com/posts/using-workona/</loc>
     <lastmod>2020-10-31T10:54:24-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/kubernetes/</loc>
+    <loc>https://nexus.zteo.com/tags/kubernetes/</loc>
     <lastmod>2020-10-06T10:54:24-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/service-mesh/</loc>
+    <loc>https://nexus.zteo.com/tags/service-mesh/</loc>
     <lastmod>2020-10-06T10:54:24-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/things-to-know-about-istio/</loc>
+    <loc>https://nexus.zteo.com/posts/things-to-know-about-istio/</loc>
     <lastmod>2020-10-06T10:54:24-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/meta/about-me/</loc>
+    <loc>https://nexus.zteo.com/meta/about-me/</loc>
     <lastmod>2020-10-01T00:00:00-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/meta/</loc>
+    <loc>https://nexus.zteo.com/tags/do-not-publish/</loc>
     <lastmod>2020-10-01T00:00:00-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/urgent/</loc>
+    <loc>https://nexus.zteo.com/meta/</loc>
     <lastmod>2020-10-01T00:00:00-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/media/</loc>
+    <loc>https://nexus.zteo.com/meta/playground/</loc>
+    <lastmod>2020-10-01T00:00:00-08:00</lastmod>
+  </url><url>
+    <loc>https://nexus.zteo.com/tags/urgent/</loc>
+    <lastmod>2020-10-01T00:00:00-08:00</lastmod>
+  </url><url>
+    <loc>https://nexus.zteo.com/tags/media/</loc>
     <lastmod>2020-08-19T10:50:00+02:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/production/</loc>
+    <loc>https://nexus.zteo.com/tags/production/</loc>
     <lastmod>2020-08-19T10:50:00+02:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/rainbow-virtual-backgrounds/</loc>
+    <loc>https://nexus.zteo.com/posts/rainbow-virtual-backgrounds/</loc>
     <lastmod>2020-08-19T10:50:00+02:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/business/</loc>
+    <loc>https://nexus.zteo.com/tags/business/</loc>
     <lastmod>2020-05-30T10:54:24+02:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/cogsci/</loc>
+    <loc>https://nexus.zteo.com/tags/cogsci/</loc>
     <lastmod>2020-05-30T10:54:24+02:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/decoy-pricing-bloomberg/</loc>
+    <loc>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</loc>
     <lastmod>2020-05-30T10:54:24+02:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/kiali-and-your-mesh/</loc>
+    <loc>https://nexus.zteo.com/posts/kiali-and-your-mesh/</loc>
     <lastmod>2020-05-06T10:54:24+02:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</loc>
+    <loc>https://nexus.zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</loc>
     <lastmod>2020-04-29T10:54:24+02:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/decoy-pricing-bloomberg/</loc>
+    <loc>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</loc>
     <lastmod>2019-02-23T14:54:24-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/zigbee2mqtt-step-by-step/</loc>
+    <loc>https://nexus.zteo.com/posts/zigbee2mqtt-step-by-step/</loc>
     <lastmod>2018-12-25T16:24:11-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-14/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-14/</loc>
     <lastmod>2018-09-08T13:33:01-14:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/functional/</loc>
+    <loc>https://nexus.zteo.com/tags/functional/</loc>
     <lastmod>2018-09-08T13:33:01-14:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/tags/reason/</loc>
+    <loc>https://nexus.zteo.com/tags/reason/</loc>
     <lastmod>2018-09-08T13:33:01-14:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/series/reason-native-app/</loc>
+    <loc>https://nexus.zteo.com/series/reason-native-app/</loc>
     <lastmod>2018-09-08T13:33:01-14:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/series/</loc>
+    <loc>https://nexus.zteo.com/series/</loc>
     <lastmod>2018-09-08T13:33:01-14:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-13/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-13/</loc>
     <lastmod>2018-09-08T13:33:01-13:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-12/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-12/</loc>
     <lastmod>2018-09-08T13:33:01-12:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-11/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-11/</loc>
     <lastmod>2018-09-08T13:33:01-11:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-10/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-10/</loc>
     <lastmod>2018-09-08T13:33:01-10:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-9/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-9/</loc>
     <lastmod>2018-09-08T13:33:01-09:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-8/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-8/</loc>
     <lastmod>2018-09-08T13:33:01-08:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-7/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-7/</loc>
     <lastmod>2018-09-08T13:33:01-07:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-6/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-6/</loc>
     <lastmod>2018-09-08T13:33:01-06:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-5/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-5/</loc>
     <lastmod>2018-09-08T13:33:01-05:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-4/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-4/</loc>
     <lastmod>2018-09-08T13:33:01-04:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-3/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-3/</loc>
     <lastmod>2018-09-08T13:33:01-03:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app-part-2/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app-part-2/</loc>
     <lastmod>2018-09-08T13:33:01-02:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/reason-native-app/</loc>
+    <loc>https://nexus.zteo.com/posts/reason-native-app/</loc>
     <lastmod>2018-09-08T13:33:01-01:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/a-great-man-has-left-us/</loc>
+    <loc>https://nexus.zteo.com/posts/a-great-man-has-left-us/</loc>
     <lastmod>2016-08-03T07:01:43+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/added-a-tiny-command-installer-to-sbase-for-android/</loc>
+    <loc>https://nexus.zteo.com/posts/added-a-tiny-command-installer-to-sbase-for-android/</loc>
     <lastmod>2016-06-19T20:40:24+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/full-automation-consul-monitoring-of-a-rancher-setup-across-the-board-with-some-ansible-help/</loc>
+    <loc>https://nexus.zteo.com/posts/full-automation-consul-monitoring-of-a-rancher-setup-across-the-board-with-some-ansible-help/</loc>
     <lastmod>2016-04-10T00:01:32+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/i-was-totally-not-completely-wrong-to-buy-a-mid-2010-mac-pro/</loc>
+    <loc>https://nexus.zteo.com/posts/i-was-totally-not-completely-wrong-to-buy-a-mid-2010-mac-pro/</loc>
     <lastmod>2016-03-24T20:50:06+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/this-is-so-ridiculous-hearing-the-same-folks-who-claim-that-gun-control-doesn-t-work-are-now-making/</loc>
+    <loc>https://nexus.zteo.com/posts/this-is-so-ridiculous-hearing-the-same-folks-who-claim-that-gun-control-doesn-t-work-are-now-making/</loc>
     <lastmod>2015-11-16T23:23:37+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/sobriety-counter-https-play-google-com-store-apps-details-id-com-voilaweb-mobile-sobrietycounter/</loc>
+    <loc>https://nexus.zteo.com/posts/sobriety-counter-https-play-google-com-store-apps-details-id-com-voilaweb-mobile-sobrietycounter/</loc>
     <lastmod>2015-09-14T00:35:09+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/as-a-fairly-recent-lg-urbane-owner-i-felt-sad-that-so-many-great-faces-have-a-dim-mode-that-doesn-t/</loc>
+    <loc>https://nexus.zteo.com/posts/as-a-fairly-recent-lg-urbane-owner-i-felt-sad-that-so-many-great-faces-have-a-dim-mode-that-doesn-t/</loc>
     <lastmod>2015-08-31T03:16:22+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/lately-too-much-work-has-gotten-in-the-way-of-posting-about-non-work-related-projects/</loc>
+    <loc>https://nexus.zteo.com/posts/lately-too-much-work-has-gotten-in-the-way-of-posting-about-non-work-related-projects/</loc>
     <lastmod>2015-06-27T23:54:51+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/how-to-host-zeronet-in-a-private-ip-container/</loc>
+    <loc>https://nexus.zteo.com/posts/how-to-host-zeronet-in-a-private-ip-container/</loc>
     <lastmod>2015-05-15T21:30:25+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/rent-a-foreigner-in-china/</loc>
+    <loc>https://nexus.zteo.com/posts/rent-a-foreigner-in-china/</loc>
     <lastmod>2015-05-04T20:45:05+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/sbase-for-android-now-updated-with-some-ubase-goodness-as-well/</loc>
+    <loc>https://nexus.zteo.com/posts/sbase-for-android-now-updated-with-some-ubase-goodness-as-well/</loc>
     <lastmod>2015-05-03T02:04:34+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/check-it-out/</loc>
+    <loc>https://nexus.zteo.com/posts/check-it-out/</loc>
     <lastmod>2015-04-14T21:23:25+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/i-just-pushed-to-github-my-first-android-build-of-sbase-the-command-line-tools-that-suck-less/</loc>
+    <loc>https://nexus.zteo.com/posts/i-just-pushed-to-github-my-first-android-build-of-sbase-the-command-line-tools-that-suck-less/</loc>
     <lastmod>2015-04-09T06:59:47+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/unwitting-models/</loc>
+    <loc>https://nexus.zteo.com/posts/unwitting-models/</loc>
     <lastmod>2015-03-22T23:51:42+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/so-it-looks-like-a-need-was-identified-good-marketing/</loc>
+    <loc>https://nexus.zteo.com/posts/so-it-looks-like-a-need-was-identified-good-marketing/</loc>
     <lastmod>2015-03-22T23:38:44+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/so-that-s-mary-s-new-car/</loc>
+    <loc>https://nexus.zteo.com/posts/so-that-s-mary-s-new-car/</loc>
     <lastmod>2015-02-16T03:19:46+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/just-a-few-awesome-people-i-work-with/</loc>
+    <loc>https://nexus.zteo.com/posts/just-a-few-awesome-people-i-work-with/</loc>
     <lastmod>2014-10-19T19:26:47+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/no-doubt-about-that-we-are-about-to-hear-again-about-how-android-is-an-inherently-insecure-os-it-does/</loc>
+    <loc>https://nexus.zteo.com/posts/no-doubt-about-that-we-are-about-to-hear-again-about-how-android-is-an-inherently-insecure-os-it-does/</loc>
     <lastmod>2014-08-24T21:51:06+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/since-adam-outler-is-into-doing-networky-things-now-i-don-t-see-why-i-couldn-t-flash-a-few-eeproms/</loc>
+    <loc>https://nexus.zteo.com/posts/since-adam-outler-is-into-doing-networky-things-now-i-don-t-see-why-i-couldn-t-flash-a-few-eeproms/</loc>
     <lastmod>2014-08-18T00:45:24+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/interesting-so-we-already-knew-that-calico-cats-cannot-be-aesthetically-cloned-since-the-orange-gene/</loc>
+    <loc>https://nexus.zteo.com/posts/interesting-so-we-already-knew-that-calico-cats-cannot-be-aesthetically-cloned-since-the-orange-gene/</loc>
     <lastmod>2014-08-17T20:32:31+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/hollywood-reservoir/</loc>
+    <loc>https://nexus.zteo.com/posts/hollywood-reservoir/</loc>
     <lastmod>2014-08-17T19:47:45+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/chef-and-puppet-require-ruby-before-they-will-even-talk-to-you/</loc>
+    <loc>https://nexus.zteo.com/posts/chef-and-puppet-require-ruby-before-they-will-even-talk-to-you/</loc>
     <lastmod>2014-08-04T05:38:25+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/pale-moon-24-7-1-is-now-available-for-linux-os-x-and-of-course-android/</loc>
+    <loc>https://nexus.zteo.com/posts/pale-moon-24-7-1-is-now-available-for-linux-os-x-and-of-course-android/</loc>
     <lastmod>2014-08-03T06:19:50+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/russell-pavlicek-make-some-very-good-points-on-the-containers-v-hypervisors-race-of-course-he-would/</loc>
+    <loc>https://nexus.zteo.com/tags/tag1/</loc>
+    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
+  </url><url>
+    <loc>https://nexus.zteo.com/tags/tag2/</loc>
+    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
+  </url><url>
+    <loc>https://nexus.zteo.com/posts/test/</loc>
+    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
+  </url><url>
+    <loc>https://nexus.zteo.com/posts/russell-pavlicek-make-some-very-good-points-on-the-containers-v-hypervisors-race-of-course-he-would/</loc>
     <lastmod>2014-06-28T22:10:45+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/please-pass-this-around-as-it-is-a-very-good-opportunity-i-am-looking-for-more-engineers-to-work-in/</loc>
+    <loc>https://nexus.zteo.com/posts/please-pass-this-around-as-it-is-a-very-good-opportunity-i-am-looking-for-more-engineers-to-work-in/</loc>
     <lastmod>2014-06-25T18:08:56+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/the-next-evolution-of-virtualization/</loc>
+    <loc>https://nexus.zteo.com/posts/the-next-evolution-of-virtualization/</loc>
     <lastmod>2014-03-24T06:16:02+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/journleragain-and-mavericks/</loc>
+    <loc>https://nexus.zteo.com/posts/journleragain-and-mavericks/</loc>
     <lastmod>2014-01-14T08:57:44+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/c-coroutines-no-assembly-bad-pun-required/</loc>
+    <loc>https://nexus.zteo.com/posts/c-coroutines-no-assembly-bad-pun-required/</loc>
     <lastmod>2013-08-21T01:53:06+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/memonic-extension-patched-for-google-chrome/</loc>
+    <loc>https://nexus.zteo.com/posts/memonic-extension-patched-for-google-chrome/</loc>
     <lastmod>2013-04-28T07:32:04+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/productive-ambient-noise-beyond-white-noise/</loc>
+    <loc>https://nexus.zteo.com/posts/productive-ambient-noise-beyond-white-noise/</loc>
     <lastmod>2013-04-04T23:56:13+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/sublimetext-as-a-minimal-ide-for-scala/</loc>
+    <loc>https://nexus.zteo.com/posts/sublimetext-as-a-minimal-ide-for-scala/</loc>
     <lastmod>2012-11-26T07:01:03+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/projects/journler-again/</loc>
+    <loc>https://nexus.zteo.com/projects/journler-again/</loc>
     <lastmod>2012-11-21T09:16:42+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/projects/</loc>
+    <loc>https://nexus.zteo.com/projects/</loc>
     <lastmod>2012-11-21T09:16:42+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/meta/overview/</loc>
+    <loc>https://nexus.zteo.com/meta/overview/</loc>
     <lastmod>2012-11-21T09:16:41+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/projects/tools/</loc>
+    <loc>https://nexus.zteo.com/projects/tools/</loc>
     <lastmod>2012-11-21T09:16:41+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/projects/tooredo-alpha/</loc>
+    <loc>https://nexus.zteo.com/projects/tooredo-alpha/</loc>
     <lastmod>2012-11-21T09:16:40+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/projects/freeblog/</loc>
+    <loc>https://nexus.zteo.com/projects/freeblog/</loc>
     <lastmod>2012-11-21T09:16:39+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/projects/condo/</loc>
+    <loc>https://nexus.zteo.com/projects/condo/</loc>
     <lastmod>2012-11-21T09:16:36+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/projects/ezedit/</loc>
+    <loc>https://nexus.zteo.com/projects/ezedit/</loc>
     <lastmod>2012-11-21T09:16:36+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/comments-policy/</loc>
+    <loc>https://nexus.zteo.com/posts/comments-policy/</loc>
     <lastmod>2012-11-21T09:16:35+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/projects/n2/</loc>
+    <loc>https://nexus.zteo.com/projects/n2/</loc>
     <lastmod>2012-11-21T09:16:35+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/projects/projects-list/</loc>
+    <loc>https://nexus.zteo.com/projects/projects-list/</loc>
     <lastmod>2012-11-21T09:16:35+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/projects/s2ajax/</loc>
+    <loc>https://nexus.zteo.com/projects/s2ajax/</loc>
     <lastmod>2012-11-21T09:16:35+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/meta/egosurfing/</loc>
+    <loc>https://nexus.zteo.com/meta/egosurfing/</loc>
     <lastmod>2012-11-21T09:16:34+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/meta/about/</loc>
+    <loc>https://nexus.zteo.com/meta/about/</loc>
     <lastmod>2012-11-21T09:16:33+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/its-journleragain/</loc>
+    <loc>https://nexus.zteo.com/posts/its-journleragain/</loc>
     <lastmod>2012-09-22T22:37:35+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/second-life-for-enterprise-yup-it-died/</loc>
+    <loc>https://nexus.zteo.com/posts/second-life-for-enterprise-yup-it-died/</loc>
     <lastmod>2012-03-15T23:21:40+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/install-parallel-tools-in-archchakra-linux/</loc>
+    <loc>https://nexus.zteo.com/posts/install-parallel-tools-in-archchakra-linux/</loc>
     <lastmod>2012-02-13T04:08:14+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/devonthink-markdown-to-viewer/</loc>
+    <loc>https://nexus.zteo.com/posts/devonthink-markdown-to-viewer/</loc>
     <lastmod>2012-01-19T22:43:42+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/delicious4shelves/</loc>
+    <loc>https://nexus.zteo.com/posts/delicious4shelves/</loc>
     <lastmod>2012-01-02T10:38:50+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/android-self-contained-libraries-seamless-component-persistence/</loc>
+    <loc>https://nexus.zteo.com/posts/android-self-contained-libraries-seamless-component-persistence/</loc>
     <lastmod>2011-12-31T09:33:02+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/your-own-dynamic-dns-in-3-steps/</loc>
+    <loc>https://nexus.zteo.com/posts/your-own-dynamic-dns-in-3-steps/</loc>
     <lastmod>2011-12-29T02:00:48+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/roottools-15-nativetools-10/</loc>
+    <loc>https://nexus.zteo.com/posts/roottools-15-nativetools-10/</loc>
     <lastmod>2011-11-22T02:51:52+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/android-statusbar-height-the-cautious-way/</loc>
+    <loc>https://nexus.zteo.com/posts/android-statusbar-height-the-cautious-way/</loc>
     <lastmod>2011-11-08T08:47:28+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/a-fast-low-memory-growable-array-for-android/</loc>
+    <loc>https://nexus.zteo.com/posts/a-fast-low-memory-growable-array-for-android/</loc>
     <lastmod>2011-11-01T08:02:47+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/google-on-your-desktopin-safari-user-script-just-working/</loc>
+    <loc>https://nexus.zteo.com/posts/google-on-your-desktopin-safari-user-script-just-working/</loc>
     <lastmod>2011-07-25T01:32:52+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/cross-compile-android-cm7-on-os-x/</loc>
+    <loc>https://nexus.zteo.com/posts/cross-compile-android-cm7-on-os-x/</loc>
     <lastmod>2011-05-11T01:54:45+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/tooredo-a-friendlier-toodledo-user-interface-public-beta/</loc>
+    <loc>https://nexus.zteo.com/posts/tooredo-a-friendlier-toodledo-user-interface-public-beta/</loc>
     <lastmod>2011-01-03T03:25:10+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/so-is-android-using-the-linux-scheduler-can-i-patch-it/</loc>
+    <loc>https://nexus.zteo.com/posts/so-is-android-using-the-linux-scheduler-can-i-patch-it/</loc>
     <lastmod>2010-11-27T04:03:47+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/android-create-a-lite-version-of-your-application/</loc>
+    <loc>https://nexus.zteo.com/posts/android-create-a-lite-version-of-your-application/</loc>
     <lastmod>2010-10-20T04:10:41+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/update-your-xampp-php-and-keep-mediawiki-drupal-happy/</loc>
+    <loc>https://nexus.zteo.com/posts/update-your-xampp-php-and-keep-mediawiki-drupal-happy/</loc>
     <lastmod>2010-09-22T07:19:29+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/suggestedittext-android-auto-suggest-component/</loc>
+    <loc>https://nexus.zteo.com/posts/suggestedittext-android-auto-suggest-component/</loc>
     <lastmod>2010-09-21T06:52:06+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/jailbroken-iphones-now-safer/</loc>
+    <loc>https://nexus.zteo.com/posts/jailbroken-iphones-now-safer/</loc>
     <lastmod>2010-08-03T21:15:46+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/make-your-iphone-3g-faster-with-ios4-some-assembly-required/</loc>
+    <loc>https://nexus.zteo.com/posts/make-your-iphone-3g-faster-with-ios4-some-assembly-required/</loc>
     <lastmod>2010-07-31T09:34:08+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/wordpress-thesis-gpl-the-facts-are-simple/</loc>
+    <loc>https://nexus.zteo.com/posts/wordpress-thesis-gpl-the-facts-are-simple/</loc>
     <lastmod>2010-07-18T03:13:01+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/page-theme-v13-not-just-for-pages-anymore/</loc>
+    <loc>https://nexus.zteo.com/posts/page-theme-v13-not-just-for-pages-anymore/</loc>
     <lastmod>2010-07-06T08:28:34+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/freebie-a-real-blog-editing-tool/</loc>
+    <loc>https://nexus.zteo.com/posts/freebie-a-real-blog-editing-tool/</loc>
     <lastmod>2010-06-23T07:10:38+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/twitterified-no-more/</loc>
+    <loc>https://nexus.zteo.com/posts/twitterified-no-more/</loc>
     <lastmod>2010-06-14T08:56:54+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/wordpress-plugin-page-themethemes-your-pages/</loc>
+    <loc>https://nexus.zteo.com/posts/wordpress-plugin-page-themethemes-your-pages/</loc>
     <lastmod>2010-06-06T01:24:23+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/notes-on-enabling-multisites-in-wp30/</loc>
+    <loc>https://nexus.zteo.com/posts/notes-on-enabling-multisites-in-wp30/</loc>
     <lastmod>2010-05-29T08:17:48+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/clean-up-wordpress-and-upgrade-to-30/</loc>
+    <loc>https://nexus.zteo.com/posts/clean-up-wordpress-and-upgrade-to-30/</loc>
     <lastmod>2010-05-27T08:27:57+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/google-analytics-wordpress-plugins/</loc>
+    <loc>https://nexus.zteo.com/posts/google-analytics-wordpress-plugins/</loc>
     <lastmod>2010-05-26T00:25:34+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/ezedit-is-a-mini-cms-andor-a-prototyping-tool/</loc>
+    <loc>https://nexus.zteo.com/posts/ezedit-is-a-mini-cms-andor-a-prototyping-tool/</loc>
     <lastmod>2010-04-26T00:44:20+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/supergenpass-patched-for-google-chrome/</loc>
+    <loc>https://nexus.zteo.com/posts/supergenpass-patched-for-google-chrome/</loc>
     <lastmod>2009-12-01T03:25:35+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/magic-ruby-185-191railssinatra-and-lighttpd/</loc>
+    <loc>https://nexus.zteo.com/posts/magic-ruby-185-191railssinatra-and-lighttpd/</loc>
     <lastmod>2009-11-29T09:51:38+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/help-blog-editors-reliably-discover-your-api/</loc>
+    <loc>https://nexus.zteo.com/posts/help-blog-editors-reliably-discover-your-api/</loc>
     <lastmod>2009-10-20T05:07:36+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/clicdev-display-last-24-hours-visitors/</loc>
+    <loc>https://nexus.zteo.com/posts/clicdev-display-last-24-hours-visitors/</loc>
     <lastmod>2009-10-10T23:57:42+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/</loc>
+    <loc>https://nexus.zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/</loc>
     <lastmod>2009-10-07T08:18:49+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/php-pdo-class-and-xamppexotic-mysql-configurations/</loc>
+    <loc>https://nexus.zteo.com/posts/php-pdo-class-and-xamppexotic-mysql-configurations/</loc>
     <lastmod>2009-10-01T09:26:51+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/add-your-google-app-account-to-thunderbird-3-beta-4/</loc>
+    <loc>https://nexus.zteo.com/posts/add-your-google-app-account-to-thunderbird-3-beta-4/</loc>
     <lastmod>2009-09-28T00:23:36+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/rich-text-editor-in-sharepoint-with-firefox/</loc>
+    <loc>https://nexus.zteo.com/posts/rich-text-editor-in-sharepoint-with-firefox/</loc>
     <lastmod>2009-08-07T07:45:04+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/n2-message-board-software-update/</loc>
+    <loc>https://nexus.zteo.com/posts/n2-message-board-software-update/</loc>
     <lastmod>2009-07-04T08:34:18+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/mount-a-recalcitrant-dmg-file/</loc>
+    <loc>https://nexus.zteo.com/posts/mount-a-recalcitrant-dmg-file/</loc>
     <lastmod>2009-06-18T00:29:56+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/wordpress-flv-player-plugin-v20/</loc>
+    <loc>https://nexus.zteo.com/posts/wordpress-flv-player-plugin-v20/</loc>
     <lastmod>2009-06-14T09:32:51+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/sunday-hacking-cuecat-delicious-library/</loc>
+    <loc>https://nexus.zteo.com/posts/sunday-hacking-cuecat-delicious-library/</loc>
     <lastmod>2009-06-07T23:32:10+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/twitterified-client-now-fully-open-source/</loc>
+    <loc>https://nexus.zteo.com/posts/twitterified-client-now-fully-open-source/</loc>
     <lastmod>2009-05-10T23:58:28+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/determining-if-an-ip-is-within-a-specific-range-redux/</loc>
+    <loc>https://nexus.zteo.com/posts/determining-if-an-ip-is-within-a-specific-range-redux/</loc>
     <lastmod>2009-04-30T08:11:05+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/bespin-in-titanium-from-the-jaws-of-victory/</loc>
+    <loc>https://nexus.zteo.com/posts/bespin-in-titanium-from-the-jaws-of-victory/</loc>
     <lastmod>2009-04-06T07:31:59+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/twitterified-v13-is-out-bug-fixes-usability-improvements-presently-support/</loc>
+    <loc>https://nexus.zteo.com/posts/twitterified-v13-is-out-bug-fixes-usability-improvements-presently-support/</loc>
     <lastmod>2009-03-17T08:42:52+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/sxsw-09-microsoft-accelerator-tally/</loc>
+    <loc>https://nexus.zteo.com/posts/sxsw-09-microsoft-accelerator-tally/</loc>
     <lastmod>2009-03-17T00:50:01+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/twitterified-client-v13-almost-ready/</loc>
+    <loc>https://nexus.zteo.com/posts/twitterified-client-v13-almost-ready/</loc>
     <lastmod>2009-03-16T07:34:33+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/php-classes-and-javascript-s2ajax-says-hi/</loc>
+    <loc>https://nexus.zteo.com/posts/php-classes-and-javascript-s2ajax-says-hi/</loc>
     <lastmod>2009-03-02T08:27:55+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/wordpress-toolbar-plugin-and-wordpress-prefixes-a-fix/</loc>
+    <loc>https://nexus.zteo.com/posts/wordpress-toolbar-plugin-and-wordpress-prefixes-a-fix/</loc>
     <lastmod>2009-02-17T03:23:45+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/fixing-permissions-after-a-wordpress-prefix-change/</loc>
+    <loc>https://nexus.zteo.com/posts/fixing-permissions-after-a-wordpress-prefix-change/</loc>
     <lastmod>2009-02-14T01:48:55+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/a-quick-fix-for-the-tweetback-spam-issue/</loc>
+    <loc>https://nexus.zteo.com/posts/a-quick-fix-for-the-tweetback-spam-issue/</loc>
     <lastmod>2009-01-19T01:17:01+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/extphp-now-on-github/</loc>
+    <loc>https://nexus.zteo.com/posts/extphp-now-on-github/</loc>
     <lastmod>2009-01-19T00:29:05+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/six-resources-to-study-and-master-git-source-control/</loc>
+    <loc>https://nexus.zteo.com/posts/six-resources-to-study-and-master-git-source-control/</loc>
     <lastmod>2009-01-05T03:29:30+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/more-blaqua/</loc>
+    <loc>https://nexus.zteo.com/posts/more-blaqua/</loc>
     <lastmod>2008-12-28T08:28:11+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/gmail-is-the-new-mutt-shortcuts-galore/</loc>
+    <loc>https://nexus.zteo.com/posts/gmail-is-the-new-mutt-shortcuts-galore/</loc>
     <lastmod>2008-12-24T12:02:18+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/a-driver-for-your-darwin-based-keyboard-woes/</loc>
+    <loc>https://nexus.zteo.com/posts/a-driver-for-your-darwin-based-keyboard-woes/</loc>
     <lastmod>2008-12-01T01:05:36+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/twitterified-12-is-out-multi-accounts-mouse-gestures-visual-ignore/</loc>
+    <loc>https://nexus.zteo.com/posts/twitterified-12-is-out-multi-accounts-mouse-gestures-visual-ignore/</loc>
     <lastmod>2008-11-17T07:55:19+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/twitterified-taking-off-is-private-beta-a-mistake/</loc>
+    <loc>https://nexus.zteo.com/posts/twitterified-taking-off-is-private-beta-a-mistake/</loc>
     <lastmod>2008-11-03T03:33:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/how-i-setup-networking-for-virtualbox-on-ubuntu/</loc>
+    <loc>https://nexus.zteo.com/posts/how-i-setup-networking-for-virtualbox-on-ubuntu/</loc>
     <lastmod>2008-08-22T23:16:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/</loc>
+    <loc>https://nexus.zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/</loc>
     <lastmod>2008-08-02T22:54:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/twitterifiedat-last/</loc>
+    <loc>https://nexus.zteo.com/posts/twitterifiedat-last/</loc>
     <lastmod>2008-07-26T23:56:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/how-i-added-real-activerecord-support-to-adodb/</loc>
+    <loc>https://nexus.zteo.com/posts/how-i-added-real-activerecord-support-to-adodb/</loc>
     <lastmod>2008-07-26T08:49:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/current-obsessions-june-08/</loc>
+    <loc>https://nexus.zteo.com/posts/current-obsessions-june-08/</loc>
     <lastmod>2008-06-09T17:59:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/beware-google-adwords-phishing/</loc>
+    <loc>https://nexus.zteo.com/posts/beware-google-adwords-phishing/</loc>
     <lastmod>2008-05-07T07:16:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/ext-licensing-oh-what-a-mess/</loc>
+    <loc>https://nexus.zteo.com/posts/ext-licensing-oh-what-a-mess/</loc>
     <lastmod>2008-04-27T09:46:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/extphp-an-extjs-converterwrapper-for-php-developers/</loc>
+    <loc>https://nexus.zteo.com/posts/extphp-an-extjs-converterwrapper-for-php-developers/</loc>
     <lastmod>2008-03-05T04:49:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/pon-or-php-object-notation-is-already-here/</loc>
+    <loc>https://nexus.zteo.com/posts/pon-or-php-object-notation-is-already-here/</loc>
     <lastmod>2008-02-09T01:01:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/jquery-ui-now-professionally-maintained/</loc>
+    <loc>https://nexus.zteo.com/posts/jquery-ui-now-professionally-maintained/</loc>
     <lastmod>2008-01-24T06:33:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/leopard-quick-removal-of-icalfix/</loc>
+    <loc>https://nexus.zteo.com/posts/leopard-quick-removal-of-icalfix/</loc>
     <lastmod>2008-01-04T02:48:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/kodachi-051-now-skinnable-and-more/</loc>
+    <loc>https://nexus.zteo.com/posts/kodachi-051-now-skinnable-and-more/</loc>
     <lastmod>2007-12-04T08:27:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/kodachi-now-available-through-svntrac/</loc>
+    <loc>https://nexus.zteo.com/posts/kodachi-now-available-through-svntrac/</loc>
     <lastmod>2007-12-03T00:54:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/here-comes-kodachi/</loc>
+    <loc>https://nexus.zteo.com/posts/here-comes-kodachi/</loc>
     <lastmod>2007-11-04T08:47:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/my-first-screencast/</loc>
+    <loc>https://nexus.zteo.com/posts/my-first-screencast/</loc>
     <lastmod>2007-10-18T08:39:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/la-wired-nextfest-07/</loc>
+    <loc>https://nexus.zteo.com/posts/la-wired-nextfest-07/</loc>
     <lastmod>2007-09-17T06:05:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/seo-how-i-killed-a-highly-successful-message-board-with-just-one-mistake-and-how-you-can-avoid-it/</loc>
+    <loc>https://nexus.zteo.com/posts/seo-how-i-killed-a-highly-successful-message-board-with-just-one-mistake-and-how-you-can-avoid-it/</loc>
     <lastmod>2007-09-09T08:16:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/open-source-management-feeling-a-bit-vindicated/</loc>
+    <loc>https://nexus.zteo.com/posts/open-source-management-feeling-a-bit-vindicated/</loc>
     <lastmod>2007-07-24T08:15:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/opensifrr-now-for-windows/</loc>
+    <loc>https://nexus.zteo.com/posts/opensifrr-now-for-windows/</loc>
     <lastmod>2007-07-16T07:35:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/flv-player/</loc>
+    <loc>https://nexus.zteo.com/posts/flv-player/</loc>
     <lastmod>2007-07-02T00:19:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/nextbbs-new-admin-cp-preview/</loc>
+    <loc>https://nexus.zteo.com/posts/nextbbs-new-admin-cp-preview/</loc>
     <lastmod>2007-07-02T00:03:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/os-x-please-try-installing-again/</loc>
+    <loc>https://nexus.zteo.com/posts/os-x-please-try-installing-again/</loc>
     <lastmod>2007-03-24T22:29:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/where-is-getelementsbyclassname/</loc>
+    <loc>https://nexus.zteo.com/posts/where-is-getelementsbyclassname/</loc>
     <lastmod>2007-01-15T00:11:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/create-your-own-webtop-in-phpjs-in-no-time/</loc>
+    <loc>https://nexus.zteo.com/posts/create-your-own-webtop-in-phpjs-in-no-time/</loc>
     <lastmod>2007-01-01T04:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/cd-v2-nextbbs-multi/</loc>
+    <loc>https://nexus.zteo.com/posts/cd-v2-nextbbs-multi/</loc>
     <lastmod>2006-12-10T09:26:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/opening-of-this-development-blog/</loc>
+    <loc>https://nexus.zteo.com/posts/opening-of-this-development-blog/</loc>
     <lastmod>2006-12-07T07:33:46+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/google-again/</loc>
+    <loc>https://nexus.zteo.com/posts/google-again/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/posts/twitterified-v13-is-out-fixes-improvements-presently-support/</loc>
+    <loc>https://nexus.zteo.com/posts/twitterified-v13-is-out-fixes-improvements-presently-support/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zteo.com/images/</loc>
+    <loc>https://nexus.zteo.com/images/</loc>
   </url><url>
-    <loc>https://zteo.com/categories/</loc>
+    <loc>https://nexus.zteo.com/categories/</loc>
   </url><url>
-    <loc>https://zteo.com/search/</loc>
+    <loc>https://nexus.zteo.com/search/</loc>
     <priority>0.1</priority>
   </url>
 </urlset>

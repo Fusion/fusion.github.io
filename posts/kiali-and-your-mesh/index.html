@@ -9,7 +9,7 @@
 
     <meta property="og:title" content=" Setup Kiali, Analyse Your Mesh &middot;  The Nexus" />
     <meta property="og:site_name" content="The Nexus" />
-    <meta property="og:url" content="https://zteo.com/posts/kiali-and-your-mesh/" />
+    <meta property="og:url" content="https://nexus.zteo.com/posts/kiali-and-your-mesh/" />
 
     
     <meta property="og:type" content="article" />
@@ -23,20 +23,20 @@
     <meta name="twitter:creator" content="@" />
     <meta name="twitter:title" content="Setup Kiali, Analyse Your Mesh" />
     
-    <meta name="twitter:image" content="https://zteo.com/images/kiali2.png" />
+    <meta name="twitter:image" content="https://nexus.zteo.com/images/kiali2.png" />
     
     <meta name="twitter:description" content="Why would I want Kiali?
 If you have been playing/using a service mesh for any length of time, you may have noticed that there is a certain cognitive overhead in trying to figure out traffic flows. Even using the CLI to understand injected routes can require spending a good long time in the &ldquo;zone.&rdquo;" />
-    <meta name="twitter:url" content="https://zteo.com/posts/kiali-and-your-mesh/" />
+    <meta name="twitter:url" content="https://nexus.zteo.com/posts/kiali-and-your-mesh/" />
     
 
     <title> Setup Kiali, Analyse Your Mesh &middot;  The Nexus</title>
 
-    <link rel="preload" href="https://zteo.com//css/fontawesome-all.min.css" as="style" />
-    <link rel="preload" href="https://zteo.com//js/main.js" as="script" />
-    <link rel="preload" href="https://zteo.com//css/main.css" as="style" />
+    <link rel="preload" href="https://nexus.zteo.com//css/fontawesome-all.min.css" as="style" />
+    <link rel="preload" href="https://nexus.zteo.com//js/main.js" as="script" />
+    <link rel="preload" href="https://nexus.zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1638062013" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1668307611" type="text/css" rel="stylesheet" />
     
     
     <link rel="webmention" href="https://webmention.io/zteo.com/webmention" />
@@ -47,14 +47,14 @@ If you have been playing/using a service mesh for any length of time, you may ha
     <link rel="me" href="https://twitter.com/chrisfr" />
     
     
-    <link rel="preload" href="https://zteo.com//css/cfr.css" as="style" />
-    <link rel="stylesheet" href="https://zteo.com//css/main.css">
-    <link rel="stylesheet" href="https://zteo.com//css/pure-min.css">
-    <link rel="preload" href="https://zteo.com//js/basicLightbox.min.js" as="script" />
-    <link rel="stylesheet" href="https://zteo.com//css/basicLightbox.min.css">
-    <link rel="stylesheet" href="https://zteo.com//css/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="https://zteo.com//css/cfr.css">
-    <link rel="stylesheet" href="https://zteo.com//css/syntax.css">
+    <link rel="preload" href="https://nexus.zteo.com//css/cfr.css" as="style" />
+    <link rel="stylesheet" href="https://nexus.zteo.com//css/main.css">
+    <link rel="stylesheet" href="https://nexus.zteo.com//css/pure-min.css">
+    <link rel="preload" href="https://nexus.zteo.com//js/basicLightbox.min.js" as="script" />
+    <link rel="stylesheet" href="https://nexus.zteo.com//css/basicLightbox.min.css">
+    <link rel="stylesheet" href="https://nexus.zteo.com//css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="https://nexus.zteo.com//css/cfr.css">
+    <link rel="stylesheet" href="https://nexus.zteo.com//css/syntax.css">
     
     
     
@@ -76,11 +76,11 @@ If you have been playing/using a service mesh for any length of time, you may ha
     
 
     
-    <link href="https://zteo.com/index.xml" rel="alternate" type="application/rss+xml" title="The Nexus" />
+    <link href="https://nexus.zteo.com/index.xml" rel="alternate" type="application/rss+xml" title="The Nexus" />
     
 
     
-    <link rel="canonical" href="https://zteo.com/posts/kiali-and-your-mesh/" />
+    <link rel="canonical" href="https://nexus.zteo.com/posts/kiali-and-your-mesh/" />
 
     
     <script type="application/ld+json">
@@ -89,7 +89,7 @@ If you have been playing/using a service mesh for any length of time, you may ha
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https:\/\/zteo.com\/posts\/kiali-and-your-mesh\/"
+          "@id": "https:\/\/nexus.zteo.com\/posts\/kiali-and-your-mesh\/"
         },
         "headline": "Setup Kiali, Analyse Your Mesh",
         "description": "",
@@ -106,9 +106,9 @@ If you have been playing/using a service mesh for any length of time, you may ha
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "https:\/\/zteo.com\/",
+          "@id": "https:\/\/nexus.zteo.com\/",
           "name": "The Nexus",
-          "url": "https:\/\/zteo.com\/",
+          "url": "https:\/\/nexus.zteo.com\/",
           "logo": {
             "@type": "ImageObject",
             "url": "https:",
@@ -118,7 +118,7 @@ If you have been playing/using a service mesh for any length of time, you may ha
         },
         "image": {
           "@type": "ImageObject",
-          "url": "https:\/\/zteo.com\/kiali2.png",
+          "url": "https:\/\/nexus.zteo.com\/kiali2.png",
           "height": 133,
           "width": 200
         },
@@ -139,7 +139,7 @@ If you have been playing/using a service mesh for any length of time, you may ha
 
     <script type="text/javascript">
         var config = {
-            baseUrl: "https:\/\/zteo.com\/"
+            baseUrl: "https:\/\/nexus.zteo.com\/"
         };
     </script>
 
@@ -152,7 +152,7 @@ If you have been playing/using a service mesh for any length of time, you may ha
     <div id="ajax-container">
         <nav id="nav" class="nav">
             <div class="nav-logo">
-                <a href="https://zteo.com/">
+                <a href="https://nexus.zteo.com/">
                     
                     The Nexus
                     
@@ -163,24 +163,24 @@ If you have been playing/using a service mesh for any length of time, you may ha
                 <a href="#nav" title="Show navigation">Show navigation</a>
                 <a href="#" title="Hide navigation">Hide navigation</a>
                 <ul class="clearfix">
-                    <li><a href="https://zteo.com/">BLOG</a></li>
+                    <li><a href="https://nexus.zteo.com/">BLOG</a></li>
                     <li>
-                        <a href="https://zteo.com/meta/about" aria-haspopup="true"><span>ABOUT</span></a>
+                        <a href="https://nexus.zteo.com/meta/about" aria-haspopup="true"><span>ABOUT</span></a>
                         <ul>
-                            <li><a href="https://zteo.com/meta/egosurfing">Ego Surfing</a></li>
+                            <li><a href="https://nexus.zteo.com/meta/egosurfing">Ego Surfing</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="https://zteo.com/projects/projects-list" aria-haspopup="true"><span>PROJECTS</span></a>
+                        <a href="https://nexus.zteo.com/projects/projects-list" aria-haspopup="true"><span>PROJECTS</span></a>
                         <ul>
-                            <li><a href="https://zteo.com/projects/n2">n2</a></li>
-                            <li><a href="https://zteo.com/projects/s2ajax">S2ajax</a></li>
-                            <li><a href="https://zteo.com/projects/condo">Condo</a></li>
-                            <li><a href="https://zteo.com/projects/ezedit">ezEdit</a></li>
-                            <li><a href="https://zteo.com/projects/freeblog">FreeBlog - Air</a></li>
-                            <li><a href="https://zteo.com/projects/tooredo-alpha">Tooredo Alpha</a></li>
-                            <li><a href="https://zteo.com/projects/tools">Tools</a></li>
-                            <li><a href="https://zteo.com/projects/journler-again">Journlr, Again!</a></li>
+                            <li><a href="https://nexus.zteo.com/projects/n2">n2</a></li>
+                            <li><a href="https://nexus.zteo.com/projects/s2ajax">S2ajax</a></li>
+                            <li><a href="https://nexus.zteo.com/projects/condo">Condo</a></li>
+                            <li><a href="https://nexus.zteo.com/projects/ezedit">ezEdit</a></li>
+                            <li><a href="https://nexus.zteo.com/projects/freeblog">FreeBlog - Air</a></li>
+                            <li><a href="https://nexus.zteo.com/projects/tooredo-alpha">Tooredo Alpha</a></li>
+                            <li><a href="https://nexus.zteo.com/projects/tools">Tools</a></li>
+                            <li><a href="https://nexus.zteo.com/projects/journler-again">Journlr, Again!</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -192,7 +192,7 @@ If you have been playing/using a service mesh for any length of time, you may ha
                 
                 <a id="search-button" onclick="$('#search-form').toggle();" title="Search"><i class="fa fa-search"></i></a>
                 <form id="search-form" method="get" role="search" action="https://google.com/search">
-                    <input type="hidden" name="as_sitesearch" value="https://zteo.com/">
+                    <input type="hidden" name="as_sitesearch" value="https://nexus.zteo.com/">
                     <input type="text" name="q" maxlength="255" placeholder="Search..." class="form-control">
                     <input type="submit" value="Search">
                 </form>
@@ -228,7 +228,7 @@ If you have been playing/using a service mesh for any length of time, you may ha
                 <div class="clear"></div>
                 
                 <h1 class="post-title p-name">Setup Kiali, Analyse Your Mesh</h1>
-                <a class="u-url" href="https://zteo.com/posts/kiali-and-your-mesh/"></a>
+                <a class="u-url" href="https://nexus.zteo.com/posts/kiali-and-your-mesh/"></a>
               </header>
 
               <section class="post-content">
@@ -277,96 +277,95 @@ If you have been playing/using a service mesh for any length of time, you may ha
 <p>We can install Kiali, either from Istio or using its operator. It will then end up either in the <code>istio-system</code> namespace, or in both this namespace and in <code>kiali-operator</code>.</p>
 <h2 id="installing-from-istio">Installing from Istio</h2>
 <p>Prepare a nice secret:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cat <span class="s">&lt;&lt;EOF | kubectl apply -f -
-</span><span class="s">apiVersion: v1
-</span><span class="s">kind: Secret
-</span><span class="s">metadata:
-</span><span class="s">  name: kiali
-</span><span class="s">  namespace: istio-system
-</span><span class="s">  labels:
-</span><span class="s">    app: kiali
-</span><span class="s">type: Opaque
-</span><span class="s">data:
-</span><span class="s">  username: $KIALI_USERNAME
-</span><span class="s">  passphrase: $KIALI_PASSPHRASE
-</span><span class="s">EOF</span>
-
-</code></pre></div><p>Install:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">istioctl manifest apply --set values.kiali.enabled<span class="o">=</span><span class="nb">true</span>
-</code></pre></div><p>Note: after applying our manifest again, our ingress ports will have changed so just keep this in mind.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat <span class="s">&lt;&lt;EOF | kubectl apply -f -
+</span></span></span><span class="line"><span class="cl"><span class="s">apiVersion: v1
+</span></span></span><span class="line"><span class="cl"><span class="s">kind: Secret
+</span></span></span><span class="line"><span class="cl"><span class="s">metadata:
+</span></span></span><span class="line"><span class="cl"><span class="s">  name: kiali
+</span></span></span><span class="line"><span class="cl"><span class="s">  namespace: istio-system
+</span></span></span><span class="line"><span class="cl"><span class="s">  labels:
+</span></span></span><span class="line"><span class="cl"><span class="s">    app: kiali
+</span></span></span><span class="line"><span class="cl"><span class="s">type: Opaque
+</span></span></span><span class="line"><span class="cl"><span class="s">data:
+</span></span></span><span class="line"><span class="cl"><span class="s">  username: $KIALI_USERNAME
+</span></span></span><span class="line"><span class="cl"><span class="s">  passphrase: $KIALI_PASSPHRASE
+</span></span></span><span class="line"><span class="cl"><span class="s">EOF</span>
+</span></span></code></pre></div><p>Install:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">istioctl manifest apply --set values.kiali.enabled<span class="o">=</span><span class="nb">true</span>
+</span></span></code></pre></div><p>Note: after applying our manifest again, our ingress ports will have changed so just keep this in mind.</p>
 <p>Then run the dashboard proxy — or not. See below.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">istioctl dashboard kiali
-</code></pre></div><h3 id="uninstalling-kiali">Uninstalling kiali</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">istioctl dashboard kiali
+</span></span></code></pre></div><h3 id="uninstalling-kiali">Uninstalling kiali</h3>
 <p>Convenient if you went down this path and found out you cannot use it properly.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">kubectl delete all,secrets,sa,templates,configmaps,deployments,clusterroles,clusterrolebindings,virtualservices,destinationrules --selector<span class="o">=</span><span class="nv">app</span><span class="o">=</span>kiali -n istio-system
-istioctl manifest apply --set values.kiali.enabled<span class="o">=</span><span class="nb">false</span>
-</code></pre></div><h2 id="installing-latest-release-using-operator">Installing latest release, using Operator</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl delete all,secrets,sa,templates,configmaps,deployments,clusterroles,clusterrolebindings,virtualservices,destinationrules --selector<span class="o">=</span><span class="nv">app</span><span class="o">=</span>kiali -n istio-system
+</span></span><span class="line"><span class="cl">istioctl manifest apply --set values.kiali.enabled<span class="o">=</span><span class="nb">false</span>
+</span></span></code></pre></div><h2 id="installing-latest-release-using-operator">Installing latest release, using Operator</h2>
 <p>Here is a good motivation to go through the operator install: when installing directly from Istio, I was not able to log in as the login page itself was throwing Javascript errors. So, here goes:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">bash &lt;<span class="o">(</span>curl -L https://kiali.io/getLatestKialiOperator<span class="o">)</span> --accessible-namespaces <span class="s1">&#39;**&#39;</span>
-</code></pre></div><h1 id="using">Using</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bash &lt;<span class="o">(</span>curl -L https://kiali.io/getLatestKialiOperator<span class="o">)</span> --accessible-namespaces <span class="s1">&#39;**&#39;</span>
+</span></span></code></pre></div><h1 id="using">Using</h1>
 <p>This is the easiest part. While tutorials tell you about running <code>isctioctl dashboard kiali</code> why not instead setup a nice ingress route so that you can access it like any other first-class service?</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">apiVersion: cert-manager.io/v1alpha2
-kind: Certificate
-metadata:
-  name: acme-kiali-yourhost-com-certs
-  namespace: istio-system
-spec:
-  dnsNames:
-    - kiali.yourhost.com
-  secretName: acme-kiali-yourhost-com-secret
-  issuerRef:
-    name: cloudflare-letsencrypt-prod
-    kind: ClusterIssuer
----
-apiVersion: networking.istio.io/v1alpha3
-kind: Gateway
-metadata:
-  name: kiali-gateway
-  namespace: default
-spec:
-  selector:
-    istio: ingressgateway
-  servers:
-  - port:
-      number: <span class="m">443</span>
-      name: https-kiali
-      protocol: HTTPS
-    hosts:
-    - kiali.yourhost.com
-    tls:
-      credentialName: acme-kiali-yourhost-com-secret
-      mode: SIMPLE
-      privateKey: sds
-      serverCertificate: sds
-  - port:
-      number: <span class="m">80</span>
-      name: http-kiali
-      protocol: HTTP
-    tls:
-      httpsRedirect: <span class="nb">true</span>
-    hosts:
-    - kiali.yourhost.com
----
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
-metadata:
-  name: kiali
-spec:
-  hosts:
-  - kiali.yourhost.com
-  gateways:
-  - kiali-gateway
-  http:
-  - name: http
-    route:
-    - destination:
-        host: kiali.istio-system.svc.cluster.local
-        port:
-          number: <span class="m">20001</span>
-</code></pre></div><p>And here we are, looking into Argocd&rsquo;s flows:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apiVersion: cert-manager.io/v1alpha2
+</span></span><span class="line"><span class="cl">kind: Certificate
+</span></span><span class="line"><span class="cl">metadata:
+</span></span><span class="line"><span class="cl">  name: acme-kiali-yourhost-com-certs
+</span></span><span class="line"><span class="cl">  namespace: istio-system
+</span></span><span class="line"><span class="cl">spec:
+</span></span><span class="line"><span class="cl">  dnsNames:
+</span></span><span class="line"><span class="cl">    - kiali.yourhost.com
+</span></span><span class="line"><span class="cl">  secretName: acme-kiali-yourhost-com-secret
+</span></span><span class="line"><span class="cl">  issuerRef:
+</span></span><span class="line"><span class="cl">    name: cloudflare-letsencrypt-prod
+</span></span><span class="line"><span class="cl">    kind: ClusterIssuer
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">apiVersion: networking.istio.io/v1alpha3
+</span></span><span class="line"><span class="cl">kind: Gateway
+</span></span><span class="line"><span class="cl">metadata:
+</span></span><span class="line"><span class="cl">  name: kiali-gateway
+</span></span><span class="line"><span class="cl">  namespace: default
+</span></span><span class="line"><span class="cl">spec:
+</span></span><span class="line"><span class="cl">  selector:
+</span></span><span class="line"><span class="cl">    istio: ingressgateway
+</span></span><span class="line"><span class="cl">  servers:
+</span></span><span class="line"><span class="cl">  - port:
+</span></span><span class="line"><span class="cl">      number: <span class="m">443</span>
+</span></span><span class="line"><span class="cl">      name: https-kiali
+</span></span><span class="line"><span class="cl">      protocol: HTTPS
+</span></span><span class="line"><span class="cl">    hosts:
+</span></span><span class="line"><span class="cl">    - kiali.yourhost.com
+</span></span><span class="line"><span class="cl">    tls:
+</span></span><span class="line"><span class="cl">      credentialName: acme-kiali-yourhost-com-secret
+</span></span><span class="line"><span class="cl">      mode: SIMPLE
+</span></span><span class="line"><span class="cl">      privateKey: sds
+</span></span><span class="line"><span class="cl">      serverCertificate: sds
+</span></span><span class="line"><span class="cl">  - port:
+</span></span><span class="line"><span class="cl">      number: <span class="m">80</span>
+</span></span><span class="line"><span class="cl">      name: http-kiali
+</span></span><span class="line"><span class="cl">      protocol: HTTP
+</span></span><span class="line"><span class="cl">    tls:
+</span></span><span class="line"><span class="cl">      httpsRedirect: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">    hosts:
+</span></span><span class="line"><span class="cl">    - kiali.yourhost.com
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">apiVersion: networking.istio.io/v1alpha3
+</span></span><span class="line"><span class="cl">kind: VirtualService
+</span></span><span class="line"><span class="cl">metadata:
+</span></span><span class="line"><span class="cl">  name: kiali
+</span></span><span class="line"><span class="cl">spec:
+</span></span><span class="line"><span class="cl">  hosts:
+</span></span><span class="line"><span class="cl">  - kiali.yourhost.com
+</span></span><span class="line"><span class="cl">  gateways:
+</span></span><span class="line"><span class="cl">  - kiali-gateway
+</span></span><span class="line"><span class="cl">  http:
+</span></span><span class="line"><span class="cl">  - name: http
+</span></span><span class="line"><span class="cl">    route:
+</span></span><span class="line"><span class="cl">    - destination:
+</span></span><span class="line"><span class="cl">        host: kiali.istio-system.svc.cluster.local
+</span></span><span class="line"><span class="cl">        port:
+</span></span><span class="line"><span class="cl">          number: <span class="m">20001</span>
+</span></span></code></pre></div><p>And here we are, looking into Argocd&rsquo;s flows:
 <img src="/images/kiali1.png" alt="Kiali"  />
 </p>
-<p>And focusing on Redis' traffic:
+<p>And focusing on Redis&rsquo; traffic:
 <img src="/images/kiali2.png" alt="Kiali"  />
 </p>
 
@@ -411,9 +410,9 @@ spec:
                   <div class="post-tags">
             
             
-                <a href="https://zteo.com/tags/kubernetes">kubernetes</a>
+                <a href="https://nexus.zteo.com/tags/kubernetes">kubernetes</a>
             
-                <a href="https://zteo.com/tags/service-mesh">service mesh</a>
+                <a href="https://nexus.zteo.com/tags/service-mesh">service mesh</a>
             
             
                   </div>
@@ -423,7 +422,7 @@ spec:
                         <a class="fa fa-reddit-alien" href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false">
                             <span>Reddit</span>
                         </a>
-                        <a class="fa fa-twitter" href="https://twitter.com/share?text=Setup%20Kiali%2c%20Analyse%20Your%20Mesh&url=https%3a%2f%2fzteo.com%2fposts%2fkiali-and-your-mesh%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <a class="fa fa-twitter" href="https://twitter.com/share?text=Setup%20Kiali%2c%20Analyse%20Your%20Mesh&url=https%3a%2f%2fnexus.zteo.com%2fposts%2fkiali-and-your-mesh%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                             <span>Twitter</span>
                         </a>
                     </div>
@@ -443,7 +442,7 @@ spec:
 
             <nav class="post-nav">
                 
-                    <a class="post-nav-item post-nav-next" href="https://zteo.com/posts/decoy-pricing-bloomberg/">
+                    <a class="post-nav-item post-nav-next" href="https://nexus.zteo.com/posts/decoy-pricing-bloomberg/">
                         <section class="post-nav-teaser">
                             <span class="post-nav-icon"><i class="fa fa-chevron-left"></i></span>
                             <span class="post-nav-info">
@@ -453,7 +452,7 @@ spec:
                     </a>
                 
                 
-                    <a class="post-nav-item post-nav-prev" href="https://zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/">
+                    <a class="post-nav-item post-nav-prev" href="https://nexus.zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/">
                         <section class="post-nav-teaser">
                             <span class="post-nav-icon"><i class="fa fa-chevron-right"></i></span>
                             <span class="post-nav-info">
@@ -496,7 +495,7 @@ function clearActiveStatesInTableOfContents() {
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2021 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2022 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -510,12 +509,12 @@ function clearActiveStatesInTableOfContents() {
         </section>
 
 <video autoplay loop id="video-background" muted plays-inline>
-<source src="https://zteo.com/images/hd0198.mp4" type="video/mp4">
+<source src="https://nexus.zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1638062013"></script>
-<script async src="https://zteo.com//js/main.js"></script>
-<script async src="https://zteo.com//js/basicLightbox.min.js"></script>
+<script src="/mermaid/mermaid.js?1668307611"></script>
+<script async src="https://nexus.zteo.com//js/main.js"></script>
+<script async src="https://nexus.zteo.com//js/basicLightbox.min.js"></script>
 
 <script>
 
@@ -573,7 +572,7 @@ defer(function() {
 
 
 
-  <noscript><link rel="stylesheet" href="https://zteo.com//css/main.css"></noscript>
+  <noscript><link rel="stylesheet" href="https://nexus.zteo.com//css/main.css"></noscript>
 </body>
 </html>
 

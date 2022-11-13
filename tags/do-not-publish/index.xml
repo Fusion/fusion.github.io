@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>do-not-publish on The Nexus</title>
+    <link>https://nexus.zteo.com/tags/do-not-publish/</link>
+    <description>Recent content in do-not-publish on The Nexus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://nexus.zteo.com/tags/do-not-publish/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playground</title>
+      <link>https://nexus.zteo.com/meta/playground/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 -0800</pubDate>
+      
+      <guid>https://nexus.zteo.com/meta/playground/</guid>
+      <description>hey ho
+this is your first (leftmost) column!
+ this is your second (rightmost) column!
+  </description>
+    </item>
+    
+  </channel>
+</rss>

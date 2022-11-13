@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag2 on The Nexus</title>
+    <link>https://nexus.zteo.com/tags/tag2/</link>
+    <description>Recent content in tag2 on The Nexus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Jul 2014 10:54:24 +0200</lastBuildDate><atom:link href="https://nexus.zteo.com/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://nexus.zteo.com/posts/test/</link>
+      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
+      
+      <guid>https://nexus.zteo.com/posts/test/</guid>
+      <description>Configuration parameters   Parameter Description Default     timeout The timeout for requests 30s   logLevel The log level for log output INFO    Configuration parameters   Parameter Description Default     timeout The timeout for requests 30s   logLevel The log level for log output INFO      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+  </channel>
+</rss>
