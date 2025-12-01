@@ -33,7 +33,7 @@
     <link rel="preload" href="https://nexus.zteo.com//js/main.js" as="script" />
     <link rel="preload" href="https://nexus.zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1668307611" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1764568659" type="text/css" rel="stylesheet" />
     
     
     <link rel="webmention" href="https://webmention.io/zteo.com/webmention" />
@@ -290,14 +290,14 @@ dialog is the one whose methods get invoked for saving and restoring your
 component&rsquo;s state.</p>
 <p>That invisible dialog&rsquo;s style is:</p>
 <p>and its save method can be as simple as:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Override</span>  
-</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">Bundle</span> <span class="nf">onSaveInstanceState</span><span class="o">()</span> <span class="o">{</span>  
-</span></span><span class="line"><span class="cl">    <span class="n">Bundle</span> <span class="n">savedInstanceState</span> <span class="o">=</span> <span class="kd">super</span><span class="o">.</span><span class="na">onSaveInstanceState</span><span class="o">();</span>  
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">(</span><span class="n">savedInstanceState</span><span class="o">==</span><span class="kc">null</span><span class="o">)</span> <span class="n">savedInstanceState</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bundle</span><span class="o">();</span>  
-</span></span><span class="line"><span class="cl">    <span class="n">savedInstanceState</span><span class="o">.</span><span class="na">putSerializable</span><span class="o">(</span><span class="s">&#34;time&#34;</span><span class="o">,</span> <span class="n">getTime</span><span class="o">());</span>  
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">savedInstanceState</span><span class="o">;</span>  
-</span></span><span class="line"><span class="cl"><span class="o">}</span>  
-</span></span></code></pre></div><p><strong>How do you include all assets in a jar file when the SDK dislikes that?</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Override</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="n">Bundle</span><span class="w"> </span><span class="nf">onSaveInstanceState</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">Bundle</span><span class="w"> </span><span class="n">savedInstanceState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">super</span><span class="p">.</span><span class="na">onSaveInstanceState</span><span class="p">();</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">savedInstanceState</span><span class="o">==</span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="n">savedInstanceState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Bundle</span><span class="p">();</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">savedInstanceState</span><span class="p">.</span><span class="na">putSerializable</span><span class="p">(</span><span class="s">&#34;time&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">getTime</span><span class="p">());</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">savedInstanceState</span><span class="p">;</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">  
+</span></span></span></code></pre></div><p><strong>How do you include all assets in a jar file when the SDK dislikes that?</strong></p>
 <p>This one is actually VERY simple, thanks &ndash; again &ndash; to the guys at
 <a href="http://commonsware.com/">CommonsWare</a>.</p>
 <p>They provide an incredibly convenient file called
@@ -309,10 +309,10 @@ called, obviously ParcelHelper.</p>
 return an instance of ParcelHelper (I know! A singleton! Where is my
 pitchfork?)<br>
 2. Replace direct references to resources, such as</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">R</span><span class="o">.</span><span class="na">styleable</span><span class="o">.</span><span class="na">ScrollLayout_childWidth</span>
-</span></span></code></pre></div><p>with their helper counterpart:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">SliderController</span><span class="o">.</span><span class="na">instance</span><span class="o">().</span><span class="na">getParcel</span><span class="o">().</span><span class="na">getStyleableId</span><span class="o">(</span><span class="s">&#34;ScrollLayout&#34;</span><span class="o">,</span> <span class="s">&#34;childWidth&#34;</span><span class="o">)</span>
-</span></span></code></pre></div><p>3. Rename the resources, prefixing them a string specified in ParcelHelper&rsquo;s
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">R</span><span class="p">.</span><span class="na">styleable</span><span class="p">.</span><span class="na">ScrollLayout_childWidth</span><span class="w">
+</span></span></span></code></pre></div><p>with their helper counterpart:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">SliderController</span><span class="p">.</span><span class="na">instance</span><span class="p">().</span><span class="na">getParcel</span><span class="p">().</span><span class="na">getStyleableId</span><span class="p">(</span><span class="s">&#34;ScrollLayout&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;childWidth&#34;</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p>3. Rename the resources, prefixing them a string specified in ParcelHelper&rsquo;s
 <em>getParcel()</em> method<br>
 4. And finally, after generating the jar file, store it into a zip file along
 with its own resources (i.e. icons and layouts)</p>
@@ -409,7 +409,7 @@ function clearActiveStatesInTableOfContents() {
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2022 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2025 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -426,7 +426,7 @@ function clearActiveStatesInTableOfContents() {
 <source src="https://nexus.zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1668307611"></script>
+<script src="/mermaid/mermaid.js?1764568659"></script>
 <script async src="https://nexus.zteo.com//js/main.js"></script>
 <script async src="https://nexus.zteo.com//js/basicLightbox.min.js"></script>
 

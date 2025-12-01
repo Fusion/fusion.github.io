@@ -4,125 +4,93 @@
     <title>Tags on The Nexus</title>
     <link>https://nexus.zteo.com/tags/</link>
     <description>Recent content in Tags on The Nexus</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Nov 2021 10:54:24 -0800</lastBuildDate><atom:link href="https://nexus.zteo.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Nov 2025 10:54:24 -0800</lastBuildDate>
+    <atom:link href="https://nexus.zteo.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>productivity</title>
+      <title>Ios</title>
+      <link>https://nexus.zteo.com/tags/ios/</link>
+      <pubDate>Sun, 30 Nov 2025 10:54:24 -0800</pubDate>
+      <guid>https://nexus.zteo.com/tags/ios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Obsidian</title>
+      <link>https://nexus.zteo.com/tags/obsidian/</link>
+      <pubDate>Sun, 30 Nov 2025 10:54:24 -0800</pubDate>
+      <guid>https://nexus.zteo.com/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
       <link>https://nexus.zteo.com/tags/productivity/</link>
-      <pubDate>Sat, 27 Nov 2021 10:54:24 -0800</pubDate>
-      
+      <pubDate>Sun, 30 Nov 2025 10:54:24 -0800</pubDate>
       <guid>https://nexus.zteo.com/tags/productivity/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kubernetes</title>
+      <title>Kubernetes</title>
       <link>https://nexus.zteo.com/tags/kubernetes/</link>
       <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/tags/kubernetes/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>service mesh</title>
+      <title>Service Mesh</title>
       <link>https://nexus.zteo.com/tags/service-mesh/</link>
       <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/tags/service-mesh/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>do-not-publish</title>
-      <link>https://nexus.zteo.com/tags/do-not-publish/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://nexus.zteo.com/tags/do-not-publish/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>urgent</title>
+      <title>Urgent</title>
       <link>https://nexus.zteo.com/tags/urgent/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/tags/urgent/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>media</title>
+      <title>Media</title>
       <link>https://nexus.zteo.com/tags/media/</link>
       <pubDate>Wed, 19 Aug 2020 10:50:00 +0200</pubDate>
-      
       <guid>https://nexus.zteo.com/tags/media/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>production</title>
+      <title>Production</title>
       <link>https://nexus.zteo.com/tags/production/</link>
       <pubDate>Wed, 19 Aug 2020 10:50:00 +0200</pubDate>
-      
       <guid>https://nexus.zteo.com/tags/production/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>business</title>
+      <title>Business</title>
       <link>https://nexus.zteo.com/tags/business/</link>
       <pubDate>Sat, 30 May 2020 10:54:24 +0200</pubDate>
-      
       <guid>https://nexus.zteo.com/tags/business/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cogsci</title>
+      <title>Cogsci</title>
       <link>https://nexus.zteo.com/tags/cogsci/</link>
       <pubDate>Sat, 30 May 2020 10:54:24 +0200</pubDate>
-      
       <guid>https://nexus.zteo.com/tags/cogsci/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>functional</title>
+      <title>Functional</title>
       <link>https://nexus.zteo.com/tags/functional/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1400</pubDate>
-      
       <guid>https://nexus.zteo.com/tags/functional/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>reason</title>
+      <title>Reason</title>
       <link>https://nexus.zteo.com/tags/reason/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1400</pubDate>
-      
       <guid>https://nexus.zteo.com/tags/reason/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>tag1</title>
-      <link>https://nexus.zteo.com/tags/tag1/</link>
-      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
-      
-      <guid>https://nexus.zteo.com/tags/tag1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag2</title>
-      <link>https://nexus.zteo.com/tags/tag2/</link>
-      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
-      
-      <guid>https://nexus.zteo.com/tags/tag2/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

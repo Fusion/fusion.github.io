@@ -4,81 +4,37 @@
     <title>Meta on The Nexus</title>
     <link>https://nexus.zteo.com/meta/</link>
     <description>Recent content in Meta on The Nexus</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://nexus.zteo.com/meta/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0800</lastBuildDate>
+    <atom:link href="https://nexus.zteo.com/meta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
       <link>https://nexus.zteo.com/meta/about-me/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/meta/about-me/</guid>
-      <description>&lt;p&gt;For glory or shame, this is all me:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a rel=&#34;me authn&#34; href=&#34;https://social.zteo.com/@chris&#34;&gt;Federated&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a rel=&#34;me authn&#34; href=&#34;https://github.com/fusion&#34;&gt;GitHub&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a rel=&#34;me authn&#34; href=&#34;https://www.linkedin.com/in/raven/&#34;&gt;LinkedIn&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a rel=&#34;me&#34; href=&#34;https://forum.xda-developers.com/member.php?u=2965329&#34;&gt;xda-developers&lt;/a&gt; (&lt;a rel=&#34;me&#34; href=&#34;https://www.appbrain.com/dev/Chris+Ravenscroft/&#34;&gt;stats&lt;/a&gt;)
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a rel=&#34;me&#34; href=&#34;https://community.spiceworks.com/people/chrisravenscroft&#34;&gt;SpiceWorks&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;For glory or shame, this is all me:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;a rel=&#34;me authn&#34; href=&#34;https://social.zteo.com/@chris&#34;&gt;Federated&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;a rel=&#34;me authn&#34; href=&#34;https://github.com/fusion&#34;&gt;GitHub&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;a rel=&#34;me authn&#34; href=&#34;https://www.linkedin.com/in/raven/&#34;&gt;LinkedIn&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;a rel=&#34;me&#34; href=&#34;https://forum.xda-developers.com/member.php?u=2965329&#34;&gt;xda-developers&lt;/a&gt; (&lt;a rel=&#34;me&#34; href=&#34;https://www.appbrain.com/dev/Chris+Ravenscroft/&#34;&gt;stats&lt;/a&gt;)&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;a rel=&#34;me&#34; href=&#34;https://community.spiceworks.com/people/chrisravenscroft&#34;&gt;SpiceWorks&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
-    <item>
-      <title>Playground</title>
-      <link>https://nexus.zteo.com/meta/playground/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://nexus.zteo.com/meta/playground/</guid>
-      <description>hey ho
-this is your first (leftmost) column!
- this is your second (rightmost) column!
-  </description>
-    </item>
-    
     <item>
       <title>Overview</title>
       <link>https://nexus.zteo.com/meta/overview/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:41 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/meta/overview/</guid>
-      <description>n2 BBS n2 is the result of the merger of two exciting forums software: wtcBB and nextBBS. It&amp;rsquo;s easy to use and easy to admin. Committed to remain open-source forever. Fork it!
-   Tooredo Tooredo offers instant filtering, context and project management, all in one page!
-It relies on Toodledo to store these tasks as many mobile applications do.
-   S2Ajax Library S2ajax is a ‘managed’ AJAX framework; it allows the developer to declare classes on the server and instantiate them on demand on the client.</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;www.nextbbs.com&#34;&gt;&lt;img src=&#34;https://nexus.zteo.com/images/project_n2_thumb.png&#34; alt=&#34;&#34;  /&gt;&#xA;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;n2-bbs&#34;&gt;&lt;a href=&#34;www.nextbbs.com&#34;&gt;n2 BBS&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;n2 is the result of the merger of two exciting forums software: wtcBB and&#xA;nextBBS. It&amp;rsquo;s easy to use and easy to admin. Committed to remain open-source&#xA;forever. Fork it!&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tooredo.zteo.com&#34;&gt;&lt;img src=&#34;https://nexus.zteo.com/images/project_tooredo_thumb.png&#34; alt=&#34;&#34;  /&gt;&#xA;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;tooredo&#34;&gt;&lt;a href=&#34;http://tooredo.zteo.com&#34;&gt;Tooredo&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Tooredo offers instant filtering, context and project management, all in one&#xA;page!&lt;br&gt;&#xA;It relies on Toodledo to store these tasks as many mobile applications do.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://nexus.zteo.com/projects/s2ajax/&#34;&gt;&lt;img src=&#34;https://nexus.zteo.com/images/project_s2ajax_thumb.png&#34; alt=&#34;&#34;  /&gt;&#xA;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;s2ajax-library&#34;&gt;&lt;a href=&#34;https://nexus.zteo.com/projects/s2ajax/&#34;&gt;S2Ajax Library&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;S2ajax is a ‘managed’ AJAX framework; it allows the developer to declare&#xA;classes on the server and instantiate them on demand on the client.&lt;br&gt;&#xA;It combines two common computing concepts:&#xA;&lt;a href=&#34;http://en.wikipedia.org/wiki/Foreign_function_interface&#34;&gt;FFI&lt;/a&gt; and&#xA;&lt;a href=&#34;http://en.wikipedia.org/wiki/Remote_procedure_call&#34;&gt;RPC&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>EgoSurfing</title>
       <link>https://nexus.zteo.com/meta/egosurfing/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:34 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/meta/egosurfing/</guid>
       <description>They had good things to say about this blog(and I do not mind sending some page ranking their way for that)</description>
     </item>
-    
     <item>
       <title>About</title>
       <link>https://nexus.zteo.com/meta/about/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:33 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/meta/about/</guid>
-      <description>(TODO: Update this page as it is quite out of date!)
-The goal of this blog is to keep you appraised of various project Chris FR and his team have been working on and plan to work on.These projects include:
-  the new free blog host zteo.com,
-  the open-source community software nextbbs.com,
-  various web sites in our network, such as staffexpo.com and militate.com,
-  external collaborations such as kittenauth (status: dead?</description>
+      <description>&lt;p&gt;(TODO: Update this page as it is quite out of date!)&lt;br&gt;&#xA;The goal of this blog is to keep you appraised of various project Chris FR and&#xA;his team have been working on and plan to work on.These projects include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;the new free blog host &lt;a href=&#34;http://www.zteo.com&#34;&gt;zteo.com&lt;/a&gt;,&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;the open-source community software &lt;a href=&#34;http://www.nextbbs.com&#34;&gt;nextbbs.com&lt;/a&gt;,&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;various web sites in our network, such as &lt;a href=&#34;http://www.zteo.com&#34;&gt;staffexpo.com&lt;/a&gt; and &lt;a href=&#34;http://www.militate.com&#34;&gt;militate.com&lt;/a&gt;,&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;external collaborations such as &lt;a href=&#34;http://www.kittenauth.com&#34;&gt;kittenauth&lt;/a&gt; (status: dead?), &lt;a href=&#34;http://www.cg-arts.org&#34;&gt;cg-arts&lt;/a&gt; or &lt;a href=&#34;http://www.zoints.com&#34;&gt;zoints&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;and more projects, to be addressed as the need to discuss them arises&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,1307 +4,996 @@
     <title>Posts on The Nexus</title>
     <link>https://nexus.zteo.com/posts/</link>
     <description>Recent content in Posts on The Nexus</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Nov 2021 10:54:24 -0800</lastBuildDate><atom:link href="https://nexus.zteo.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Nov 2025 10:54:24 -0800</lastBuildDate>
+    <atom:link href="https://nexus.zteo.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Topsidan v1.0</title>
+      <link>https://nexus.zteo.com/posts/topsidian-v1/</link>
+      <pubDate>Sun, 30 Nov 2025 10:54:24 -0800</pubDate>
+      <guid>https://nexus.zteo.com/posts/topsidian-v1/</guid>
+      <description>&lt;p&gt;So, I made a thing: it&amp;rsquo;s a small application that lets you see your current &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; task list on your home screen. Yes, it&amp;rsquo;s widgets. You would expect the feature to somehow be an integral piece of Obsidian, but these guys have so much on their &lt;a href=&#34;https://obsidian.md/roadmap/&#34;&gt;roadmap&lt;/a&gt; that this somehow never got prioritized.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Check out this video to get a sense of what you&amp;rsquo;re getting:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;iframe&#xA;          width=&#34;560&#34; height=&#34;315&#34; loading=&#34;eager&#34; src=&#34;https://www.youtube.com/embed/0J8T3jUXZr8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; title=&#34;YouTube video&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34;&#xA;          allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34;&#xA;          allowfullscreen&gt;&#xA;      &lt;/iframe&gt;&#xA;&#xA;&lt;p&gt;I am going to describe my own setup. Yours may differ, and that&amp;rsquo;s a strength of Obsidian.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Notion Backups and Obsidian</title>
       <link>https://nexus.zteo.com/posts/notion-backups-and-obsidian/</link>
       <pubDate>Sat, 27 Nov 2021 10:54:24 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/notion-backups-and-obsidian/</guid>
       <description>Notion backups and Obsidian search, also for idiots like me.</description>
     </item>
-    
     <item>
       <title>Using Workona</title>
       <link>https://nexus.zteo.com/posts/using-workona/</link>
       <pubDate>Sat, 31 Oct 2020 10:54:24 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/using-workona/</guid>
       <description>An introduction to Workona&amp;rsquo;s tab for idiots like me.</description>
     </item>
-    
     <item>
       <title>Things to know about Istio</title>
       <link>https://nexus.zteo.com/posts/things-to-know-about-istio/</link>
       <pubDate>Tue, 06 Oct 2020 10:54:24 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/things-to-know-about-istio/</guid>
-      <description>&lt;p&gt;This post has spent so much time in my draft folder that I am finally pulling the trigger even though I would styll very much find the time to tell you about these additional points:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;major bug: 443&lt;/li&gt;
-&lt;li&gt;there are simpler alternatives: linkerd&lt;/li&gt;
-&lt;li&gt;should u use in production?&lt;/li&gt;
-&lt;li&gt;yes it is a steep learning curve&lt;/li&gt;
-&lt;li&gt;breaking changes&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This post has spent so much time in my draft folder that I am finally pulling the trigger even though I would styll very much find the time to tell you about these additional points:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;major bug: 443&lt;/li&gt;&#xA;&lt;li&gt;there are simpler alternatives: linkerd&lt;/li&gt;&#xA;&lt;li&gt;should u use in production?&lt;/li&gt;&#xA;&lt;li&gt;yes it is a steep learning curve&lt;/li&gt;&#xA;&lt;li&gt;breaking changes&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Rainbow and Video Virtual Backgrounds</title>
       <link>https://nexus.zteo.com/posts/rainbow-virtual-backgrounds/</link>
       <pubDate>Wed, 19 Aug 2020 10:50:00 +0200</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/rainbow-virtual-backgrounds/</guid>
-      <description>Several folks have been asking me this: how complex is it to get a virtual background when using Rainbow, just like when using Zoom?
-Turns out, it&amp;rsquo;s not all that hard.
-You basically have two options:
- You can go down the professional road and film yourself with a green background. There are some great offerings and the best reviewed one by many semi-famous people is the Elgato collpasible chroma key panel.</description>
+      <description>&lt;p&gt;Several folks have been asking me this: how complex is it to get a virtual background when using &lt;a href=&#34;https://www.openrainbow.com/&#34;&gt;Rainbow&lt;/a&gt;, just like when using Zoom?&lt;/p&gt;&#xA;&lt;p&gt;Turns out, it&amp;rsquo;s not all that hard.&lt;/p&gt;&#xA;&lt;p&gt;You basically have two options:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You can go down the professional road and film yourself with a green background. There are some great offerings and the best reviewed one by many semi-famous people is the &lt;a href=&#34;https://www.amazon.com/Elgato-Green-Screen-auto-locking-wrinkle-resistant/dp/B0743Z892W/ref=sxin_9?ascsubtag=amzn1.osa.2b9992b0-96da-465b-8bea-0afa6a3d7f15.ATVPDKIKX0DER.en_US&amp;amp;creativeASIN=B0743Z892W&amp;amp;cv_ct_cx=green+screen&amp;amp;cv_ct_id=amzn1.osa.2b9992b0-96da-465b-8bea-0afa6a3d7f15.ATVPDKIKX0DER.en_US&amp;amp;cv_ct_pg=search&amp;amp;cv_ct_wn=osp-single-source-gl-ranking&amp;amp;dchild=1&amp;amp;keywords=green+screen&amp;amp;linkCode=oas&amp;amp;pd_rd_i=B0743Z892W&amp;amp;pd_rd_r=4cf538a7-7018-43f8-9aac-51e40c474982&amp;amp;pd_rd_w=3iKws&amp;amp;pd_rd_wg=jrXAD&amp;amp;pf_rd_p=215d02cd-1dfa-4f52-adfa-365154472adf&amp;amp;pf_rd_r=8AXXPAMHQ2FQYRN1936K&amp;amp;qid=1597882478&amp;amp;sr=1-1-d9dc7690-f7e1-44eb-ad06-aebbef559a37&amp;amp;tag=ezvid-wiki-reviews-20&#34;&gt;Elgato collpasible chroma key panel&lt;/a&gt;. If you are unfamiliar with the concept, this is what chroma keying is: compositing yourself over a background that will replace all areas sporting the same shade of green,&lt;/li&gt;&#xA;&lt;li&gt;Or you can use one of &amp;rsquo;em newfangled fancy neural networks that will remove the actual background and substitute one of your choosing through educated guesses. As you can imagine, this &lt;em&gt;mostly&lt;/em&gt; works. Depending on the software being used, you will get vastly different results. I also don&amp;rsquo;t imagine you want to run the video signal through your own Python scripts so I am going to talk about turnkey software.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This is going to be pretty straightforward:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Decoy pricing: Why, Bloomberg?</title>
       <link>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</link>
       <pubDate>Sat, 30 May 2020 10:54:24 +0200</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</guid>
-      <description>A quick note on something currently mistifying me.
-Dan Ariely&amp;rsquo;s Predictably Irrational is a wonderful book, full of studies and academic research and whose sole purpose is to make us feel bad about how far from smart we can be, when it comes to marketing.
- Predicably Irrational  Get this book!     In it, he goes beyong simply describing price anchoring, which is the practice of steering your mind towards what the seller thinks is a fair price, and would really like you to agree that, why, but of course it is!</description>
+      <description>&lt;p&gt;&lt;strong&gt;A quick note on something currently mistifying me.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Dan Ariely&amp;rsquo;s &lt;em&gt;Predictably Irrational&lt;/em&gt; is a wonderful book, full of studies and academic research and whose sole purpose is to make us feel bad about how far from smart we can be, when it comes to marketing.&lt;/p&gt;&#xA;&lt;div class=&#34;LinkPreview&#34;&gt;&#xA;    &lt;a href=&#34;https://www.amazon.com/dp/B002RI9QJE/&#34;&gt;&#xA;    &lt;img src=&#34;https://nexus.zteo.com/images/predictably-irrational.jpg&#34;&gt;&#xA;      &lt;div class=&#34;content&#34;&gt;&#xA;      &lt;h4&gt;&#xA;          Predicably Irrational&#xA;      &lt;/h4&gt;&#xA;      &lt;div class=&#34;description&#34;&gt;&#xA;          Get this book!&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;In it, he goes beyong simply describing &lt;strong&gt;price anchoring&lt;/strong&gt;, which is the practice of steering your mind towards what &lt;em&gt;the seller&lt;/em&gt; thinks is a fair price, and would really like &lt;em&gt;you&lt;/em&gt; to agree that, why, but of course it is!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Setup Kiali, Analyse Your Mesh</title>
       <link>https://nexus.zteo.com/posts/kiali-and-your-mesh/</link>
       <pubDate>Wed, 06 May 2020 10:54:24 +0200</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/kiali-and-your-mesh/</guid>
-      <description>&lt;h1 id=&#34;why-would-i-want-kiali&#34;&gt;Why would I want Kiali?&lt;/h1&gt;
-&lt;p&gt;If you have been playing/using a service mesh for any length of time, you may have noticed that there is a certain cognitive overhead in trying to figure out traffic flows. Even using the CLI to understand injected routes can require spending a good long time in the &amp;ldquo;zone.&amp;rdquo;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;why-would-i-want-kiali&#34;&gt;Why would I want Kiali?&lt;/h1&gt;&#xA;&lt;p&gt;If you have been playing/using a service mesh for any length of time, you may have noticed that there is a certain cognitive overhead in trying to figure out traffic flows. Even using the CLI to understand injected routes can require spending a good long time in the &amp;ldquo;zone.&amp;rdquo;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Istio, Cert-Manager and Let&#39;s Encrypt April &#39;20</title>
       <link>https://nexus.zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</link>
       <pubDate>Wed, 29 Apr 2020 10:54:24 +0200</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/istio-and-cert-manager-and-lets-encrypt/</guid>
-      <description>What is this? It is very easy to find blog posts and articles explaining how to make some of these components work together. They are also completely outdated.
-It is not their fault: Kubernetes moves fast, Istio&amp;rsquo;s development seems to move even faster, and cert-manager breaks backward compatibility. Chances are, by the time you read it it will be too late!
-Anyway, in a futile attempt to remain somewhat ahead of the curve, this article was written for Istio-1.</description>
+      <description>&lt;h1 id=&#34;what-is-this&#34;&gt;What is this?&lt;/h1&gt;&#xA;&lt;p&gt;It is very easy to find blog posts and articles explaining how to make some of these components work together. They are also completely outdated.&lt;/p&gt;&#xA;&lt;p&gt;It is not their fault: Kubernetes moves fast, Istio&amp;rsquo;s development seems to move even faster, and cert-manager breaks backward compatibility. Chances are, by the time you read it it will be too late!&lt;/p&gt;&#xA;&lt;p&gt;Anyway, in a futile attempt to remain somewhat ahead of the curve, this article was written for Istio-1.6.0-alpha.2. It is fresh!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fixing Vmware Fusion Broken Vmmon</title>
       <link>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</link>
       <pubDate>Sat, 23 Feb 2019 14:54:24 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</guid>
-      <description>Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded
- /dev/vmmon: broken pipe
- or
- /dev/vmmon: No such file or directory
- Here are three different fixes, because this is definitely nor a &amp;ldquo;one size fits all&amp;rdquo; scenario:
-1-If Fusion complains about not being authorized Go to the Security and Privacy control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted.</description>
+      <description>&lt;p&gt;Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;/dev/vmmon: broken pipe&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;or&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;/dev/vmmon: No such file or directory&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Here are three different fixes, because this is definitely nor a &amp;ldquo;one size fits all&amp;rdquo; scenario:&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-if-fusion-complains-about-not-being-authorized&#34;&gt;1-If Fusion complains about not being authorized&lt;/h2&gt;&#xA;&lt;p&gt;Go to the &lt;span class=&#34;simpleitem1&#34;&gt;Security and Privacy&lt;/span&gt;&#xA; control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Zigbee2mqtt Step by Step</title>
       <link>https://nexus.zteo.com/posts/zigbee2mqtt-step-by-step/</link>
       <pubDate>Tue, 25 Dec 2018 16:24:11 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/zigbee2mqtt-step-by-step/</guid>
       <description>&lt;p&gt;Here is a solution to build and use your own Zigbee controller. It will work with most Zigbee devices out there, simply because it doesn&amp;rsquo;t come with any manufacturer-specific assumptions.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Memoizing DNS queries</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-14/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1400</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-14/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Native JSON Handling</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-13/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1300</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-13/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Handling CSV Files</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-12/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1200</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-12/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Shell Commands</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-11/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1100</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-11/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Web Requests</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-10/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-10/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Native Promises</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-9/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0900</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-9/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Files I/Os</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-8/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-8/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Python Plugins</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-7/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0700</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-7/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Curses Terminal Interface</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-6/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0600</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Configuration Files</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-5/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0500</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-5/</guid>
       <description>&lt;p&gt;This is going to be a fairly short post, as it focuses on using the &lt;code&gt;config-file&lt;/code&gt; library. As previously mentioned, when I mention a library in RasonML&amp;rsquo;s native context, chances are pretty good that I am referring to one of OCaml&amp;rsquo;s many available libraries.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Command Line Arguments</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-4/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0400</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-4/</guid>
       <description>&lt;p&gt;Before going into how specific features were implemented with Reason and OCaml&amp;rsquo;s help, let&amp;rsquo;s have a quick look at our application&amp;rsquo;s logic&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Building and Running</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-3/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0300</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-3/</guid>
-      <description>&lt;p&gt;This is by far the most boring piece of this whole endeavor.&lt;/p&gt;
-&lt;p&gt;Unfortunately, as we accumulate years of experience, old habits accrete on the programmer and tools such as &lt;code&gt;Make&lt;/code&gt; become an integral part of our fossilized identity. You will have to forgive me for my use of Makefiles!&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is by far the most boring piece of this whole endeavor.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately, as we accumulate years of experience, old habits accrete on the programmer and tools such as &lt;code&gt;Make&lt;/code&gt; become an integral part of our fossilized identity. You will have to forgive me for my use of Makefiles!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Installing, Editing, Configuring</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-2/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0200</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-2/</guid>
-      <description>&lt;h1 id=&#34;installing-reason&#34;&gt;Installing Reason&lt;/h1&gt;
-&lt;p&gt;First, we will need OCaml. This is because our Reason code will be compiled to OCaml, then, using the OCaml compiler, to native code.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;installing-reason&#34;&gt;Installing Reason&lt;/h1&gt;&#xA;&lt;p&gt;First, we will need OCaml. This is because our Reason code will be compiled to OCaml, then, using the OCaml compiler, to native code.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: What We Are Building</title>
       <link>https://nexus.zteo.com/posts/reason-native-app/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0100</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app/</guid>
       <description>&lt;p&gt;I believe this is, as of now (2018), one of few articles you will find about creating a native application using &lt;a href=&#34;https://reasonml.github.io/&#34;&gt;ReasonML&lt;/a&gt;. While Facebook came up with this interesting language/syntax that compiles to OCaml, it seems that they have focused their energy on transpiling it to JavaScript using &lt;a href=&#34;https://github.com/BuckleScript/bucklescript&#34;&gt;BuckleScript&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A great man has left us.</title>
       <link>https://nexus.zteo.com/posts/a-great-man-has-left-us/</link>
       <pubDate>Wed, 03 Aug 2016 07:01:43 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/a-great-man-has-left-us/</guid>
       <description>A great man has left us.&lt;br /&gt;&lt;br /&gt;&lt;a href=&#34;http://www.media.mit.edu/people/in-memory/papert&#34;&gt;&lt;a href=&#34;http://www.media.mit.edu/people/in-memory/papert&#34;&gt;http://www.media.mit.edu/people/in-memory/papert&lt;/a&gt;&lt;/a&gt;﻿</description>
     </item>
-    
     <item>
       <title>Added a tiny command installer to sbase-for-android.</title>
       <link>https://nexus.zteo.com/posts/added-a-tiny-command-installer-to-sbase-for-android/</link>
       <pubDate>Sun, 19 Jun 2016 20:40:24 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/added-a-tiny-command-installer-to-sbase-for-android/</guid>
       <description>Added a tiny command installer to sbase-for-android.&lt;br /&gt;Man, I use these commands all the time: so nice being table to type &lt;code&gt;ls -ltr&lt;/code&gt;&lt;br /&gt;﻿</description>
     </item>
-    
     <item>
       <title>Full automation: Consul monitoring of a Rancher setup across the board, with some Ansible help.</title>
       <link>https://nexus.zteo.com/posts/full-automation-consul-monitoring-of-a-rancher-setup-across-the-board-with-some-ansible-help/</link>
       <pubDate>Sun, 10 Apr 2016 00:01:32 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/full-automation-consul-monitoring-of-a-rancher-setup-across-the-board-with-some-ansible-help/</guid>
       <description>Full automation: Consul monitoring of a Rancher setup across the board, with some Ansible help.﻿</description>
     </item>
-    
     <item>
       <title>I was totally not completely wrong to buy a mid 2010 Mac pro!</title>
       <link>https://nexus.zteo.com/posts/i-was-totally-not-completely-wrong-to-buy-a-mid-2010-mac-pro/</link>
       <pubDate>Thu, 24 Mar 2016 20:50:06 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/i-was-totally-not-completely-wrong-to-buy-a-mid-2010-mac-pro/</guid>
       <description>&amp;hellip;because of course right after I bought it, it was discontinued&amp;hellip;</description>
     </item>
-    
     <item>
       <title>This is so ridiculous. Hearing the same folks who claim that gun control doesn&#39;t work are now making...</title>
       <link>https://nexus.zteo.com/posts/this-is-so-ridiculous-hearing-the-same-folks-who-claim-that-gun-control-doesn-t-work-are-now-making/</link>
       <pubDate>Mon, 16 Nov 2015 23:23:37 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/this-is-so-ridiculous-hearing-the-same-folks-who-claim-that-gun-control-doesn-t-work-are-now-making/</guid>
       <description>This is so ridiculous. Hearing the same folks who claim that gun control doesn&#39;t work are now making the case that terrorists attacks could be prevented by forcing cell phone vendors to hand over encryption keys.&lt;br /&gt;&lt;br /&gt;You have to pick one: either the bad guys go through alternative channels than honest people, as can be the case with guns, or they don&#39;t. In case you do not understand that, the baddies do not have to use the same encryption methods as other users, either.&lt;br /&gt;&lt;br /&gt;Well, at least we know how to survive a face palm&amp;hellip;﻿</description>
     </item>
-    
     <item>
       <title>Sobriety Counter awarded top alcoholism app...</title>
       <link>https://nexus.zteo.com/posts/sobriety-counter-https-play-google-com-store-apps-details-id-com-voilaweb-mobile-sobrietycounter/</link>
       <pubDate>Mon, 14 Sep 2015 00:35:09 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/sobriety-counter-https-play-google-com-store-apps-details-id-com-voilaweb-mobile-sobrietycounter/</guid>
       <description>(&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.voilaweb.mobile.sobrietycounter&#34;&gt;Sobriety Counter&lt;/a&gt;) a top alcoholism app.&lt;br /&gt;&lt;br /&gt;Reminds me of all the features I&#39;ve been meaning to add to it and haven&#39;t got around to, yet.﻿</description>
     </item>
-    
     <item>
       <title>As a fairly recent LG urbane owner, I felt sad that so many great faces have a dim mode that doesn&#39;t...</title>
       <link>https://nexus.zteo.com/posts/as-a-fairly-recent-lg-urbane-owner-i-felt-sad-that-so-many-great-faces-have-a-dim-mode-that-doesn-t/</link>
       <pubDate>Mon, 31 Aug 2015 03:16:22 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/as-a-fairly-recent-lg-urbane-owner-i-felt-sad-that-so-many-great-faces-have-a-dim-mode-that-doesn-t/</guid>
       <description>As a fairly recent LG urbane owner, I felt sad that so many great faces have a dim mode that doesn&#39;t look near as good as their bright mode.&lt;br /&gt;&lt;br /&gt;So I put together this small racket app: &lt;a href=&#34;https://github.com/fusion/Watch-It-/releases&#34;&gt;&lt;a href=&#34;https://github.com/fusion/Watch-It-/releases&#34;&gt;https://github.com/fusion/Watch-It-/releases&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;It does the stupidest thing: it attempts to make a face&#39;s bright settings also its dim settings.&lt;br /&gt;It will not work with protected faces and will likely also not work it a face makes heavy usage of scripting.&lt;br /&gt;&lt;br /&gt;If you download it, let me know how it is working for you (or not!)﻿</description>
     </item>
-    
     <item>
       <title>Lately, too much work has gotten in the way of posting about non-work related projects(!)</title>
       <link>https://nexus.zteo.com/posts/lately-too-much-work-has-gotten-in-the-way-of-posting-about-non-work-related-projects/</link>
       <pubDate>Sat, 27 Jun 2015 23:54:51 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/lately-too-much-work-has-gotten-in-the-way-of-posting-about-non-work-related-projects/</guid>
       <description>Lately, too much work has gotten in the way of posting about non-work related projects(!)&lt;br /&gt;&lt;br /&gt;So, quickly:&lt;br /&gt;&lt;br /&gt;I pushed to Github the code for my new aggregation/blogging engine: &lt;a href=&#34;https://github.com/Fusion/HereNote&#34;&gt;&lt;a href=&#34;https://github.com/Fusion/HereNote&#34;&gt;https://github.com/Fusion/HereNote&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;More information: &lt;a href=&#34;http://nexus.zteo.com/HereNote--publish-your-thoughts&#34;&gt;&lt;a href=&#34;http://nexus.zteo.com/HereNote--publish-your-thoughts&#34;&gt;http://nexus.zteo.com/HereNote--publish-your-thoughts&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Then, I wrote a init process replacement for containers such as Docker instances: &lt;a href=&#34;https://github.com/Fusion/cfr_reaper&#34;&gt;&lt;a href=&#34;https://github.com/Fusion/cfr_reaper&#34;&gt;https://github.com/Fusion/cfr_reaper&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;It doesn&#39;t do everything init do, but it keeps your containers from being overrun with zombie processes.&lt;br /&gt;&lt;br /&gt;Also, sbase-for-android, which is obviously an Android project, is a lightweight and MIT licensed replacement for Busybox. It is also more featured (e.g. you can type &#39;ls -ltr&#39;) &lt;a href=&#34;https://github.com/Fusion/sbase-for-android&#34;&gt;&lt;a href=&#34;https://github.com/Fusion/sbase-for-android&#34;&gt;https://github.com/Fusion/sbase-for-android&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;If you are running openvz, have a look at vcfr, which simplifies some tasks such as installing packages, etc: &lt;a href=&#34;https://github.com/Fusion/vzcfr&#34;&gt;&lt;a href=&#34;https://github.com/Fusion/vzcfr&#34;&gt;https://github.com/Fusion/vzcfr&lt;/a&gt;&lt;/a&gt;﻿</description>
     </item>
-    
     <item>
       <title>How to host ZeroNet in a private IP container</title>
       <link>https://nexus.zteo.com/posts/how-to-host-zeronet-in-a-private-ip-container/</link>
       <pubDate>Fri, 15 May 2015 21:30:25 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/how-to-host-zeronet-in-a-private-ip-container/</guid>
       <description>Not an issue, but I wasn&amp;rsquo;t sure where to post this tip (so I posted it on Github, obviously)</description>
     </item>
-    
     <item>
       <title>‘Rent-a-Foreigner in China’</title>
       <link>https://nexus.zteo.com/posts/rent-a-foreigner-in-china/</link>
       <pubDate>Mon, 04 May 2015 20:45:05 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/rent-a-foreigner-in-china/</guid>
       <description>In this short documentary, housing developers in China hire ordinary foreigners to pose as celebrities to raise flagging property sales.</description>
     </item>
-    
     <item>
       <title>sBase for Android now updated with some uBase goodness as well.</title>
       <link>https://nexus.zteo.com/posts/sbase-for-android-now-updated-with-some-ubase-goodness-as-well/</link>
       <pubDate>Sun, 03 May 2015 02:04:34 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/sbase-for-android-now-updated-with-some-ubase-goodness-as-well/</guid>
       <description>sBase for Android now updated with some ubase goodness as well.</description>
     </item>
-    
     <item>
       <title>check-it-out!</title>
       <link>https://nexus.zteo.com/posts/check-it-out/</link>
       <pubDate>Tue, 14 Apr 2015 21:23:25 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/check-it-out/</guid>
       <description>check-it-out!﻿</description>
     </item>
-    
     <item>
       <title>I just pushed to Github my first Android build of sbase, the command line tools that suck less.</title>
       <link>https://nexus.zteo.com/posts/i-just-pushed-to-github-my-first-android-build-of-sbase-the-command-line-tools-that-suck-less/</link>
       <pubDate>Thu, 09 Apr 2015 06:59:47 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/i-just-pushed-to-github-my-first-android-build-of-sbase-the-command-line-tools-that-suck-less/</guid>
       <description>I just pushed to Github my first Android build of sbase, the command line tools that suck less. &lt;br /&gt;Check it out!﻿</description>
     </item>
-    
     <item>
       <title>Unwitting models</title>
       <link>https://nexus.zteo.com/posts/unwitting-models/</link>
       <pubDate>Sun, 22 Mar 2015 23:51:42 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/unwitting-models/</guid>
       <description>Unwitting models﻿</description>
     </item>
-    
     <item>
       <title>So, it looks like a need was identified. Good marketing.</title>
       <link>https://nexus.zteo.com/posts/so-it-looks-like-a-need-was-identified-good-marketing/</link>
       <pubDate>Sun, 22 Mar 2015 23:38:44 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/so-it-looks-like-a-need-was-identified-good-marketing/</guid>
       <description>So, it looks like a need was identified. Good marketing.﻿</description>
     </item>
-    
     <item>
       <title>So, that&#39;s Mary&#39;s new car.</title>
       <link>https://nexus.zteo.com/posts/so-that-s-mary-s-new-car/</link>
       <pubDate>Mon, 16 Feb 2015 03:19:46 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/so-that-s-mary-s-new-car/</guid>
       <description>So, that&#39;s Mary&#39;s new car.﻿</description>
     </item>
-    
     <item>
       <title>Just a few awesome people I work with</title>
       <link>https://nexus.zteo.com/posts/just-a-few-awesome-people-i-work-with/</link>
       <pubDate>Sun, 19 Oct 2014 19:26:47 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/just-a-few-awesome-people-i-work-with/</guid>
       <description>Just a few awesome people I work with﻿</description>
     </item>
-    
     <item>
       <title>No doubt about that: we are about to hear again about how Android is an inherently insecure OS. It does...</title>
       <link>https://nexus.zteo.com/posts/no-doubt-about-that-we-are-about-to-hear-again-about-how-android-is-an-inherently-insecure-os-it-does/</link>
       <pubDate>Sun, 24 Aug 2014 21:51:06 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/no-doubt-about-that-we-are-about-to-hear-again-about-how-android-is-an-inherently-insecure-os-it-does/</guid>
       <description>No doubt about that: we are about to hear again about how Android is an inherently insecure OS. It does not matter that the same algorithm would likely work on other mobile devices or, for that matter, any OS.&lt;br /&gt;&lt;br /&gt;It&#39;s a clever attack. Well, the &amp;quot;theft&amp;quot; bits of it (invisible activity or photo hijacking) are pretty standard but the first part, the activity detection one, is pretty smart.&lt;br /&gt;Note that it&#39;s nothing new though; simply a mix of computer forensics and a timing attack.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;So, how do you protect your data?&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;In short: it&#39;s not too bad. Read on.&lt;br /&gt;&lt;br /&gt;Bad news: not much you can do, at this point, to prevent the &amp;quot;active&amp;quot; part of the attack: it is easy to open a transparent activity; as opposed to a transparent screen overlay, which requires a special set of permissions that MIUI, for instance, denies by default.&lt;br /&gt;&lt;br /&gt;Conceivably, though, if your phone is rooted, it would be fairly trivial to write an Xposed module that displays a Toast like: &lt;br /&gt;&lt;br /&gt;    * switching to app_blah *&lt;br /&gt;&lt;br /&gt;Good news, though, regarding the detection bit: as if often the case, I believe that this experiment can only be reproduced in a tightly controlled environment.&lt;br /&gt;If your device has a different screen resolution/density; if you use an alternate keyboard (in some cases); if you are using a customized ROM; (insert here other factors that would change your activity&#39;s signature); then you are now dramatically lowering the odds that this exploit will work at all.&lt;br /&gt;These videos are impressive but keep in mind that they were made using the researchers&#39; own devices, not &lt;i&gt;your&lt;/i&gt; device.&lt;br /&gt;&lt;br /&gt;I am not saying that you are safe, though. I am simply pointing out that this is definitely &lt;b&gt;not&lt;/b&gt; a trivial attack and I am sure that as soon as my fellow XDA-ers start giving it some thoughts, a workaround will become available.﻿</description>
     </item>
-    
     <item>
       <title>Since &#43;Adam Outler is into doing networky things, now, I don&#39;t see why I couldn&#39;t flash a few EEPROMs...</title>
       <link>https://nexus.zteo.com/posts/since-adam-outler-is-into-doing-networky-things-now-i-don-t-see-why-i-couldn-t-flash-a-few-eeproms/</link>
       <pubDate>Mon, 18 Aug 2014 00:45:24 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/since-adam-outler-is-into-doing-networky-things-now-i-don-t-see-why-i-couldn-t-flash-a-few-eeproms/</guid>
       <description>Since &lt;span class=&#34;proflinkWrapper&#34;&gt;&lt;span class=&#34;proflinkPrefix&#34;&gt;+&lt;/span&gt;&lt;a class=&#34;proflink&#34; href=&#34;https://plus.google.com/104711040110222472212&#34; oid=&#34;104711040110222472212&#34;&gt;Adam Outler&lt;/a&gt;&lt;/span&gt; is into doing networky things, now, I don&#39;t see why I couldn&#39;t flash a few EEPROMs.﻿</description>
     </item>
-    
     <item>
       <title>Interesting. So, we already knew that Calico cats cannot be aesthetically cloned since the orange gene...</title>
       <link>https://nexus.zteo.com/posts/interesting-so-we-already-knew-that-calico-cats-cannot-be-aesthetically-cloned-since-the-orange-gene/</link>
       <pubDate>Sun, 17 Aug 2014 20:32:31 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/interesting-so-we-already-knew-that-calico-cats-cannot-be-aesthetically-cloned-since-the-orange-gene/</guid>
       <description>Interesting. So, we already knew that Calico cats cannot be aesthetically cloned since the orange gene is randomly expressed yet, if I am not misusing the lingo, spatially restricted, thus creating orange patches.&lt;br /&gt;Now, it appears that, as should be expected, extrinsic factors such as womb temperature will have a less dramatic yet still relevant effect on other coloring.&lt;br /&gt;&lt;br /&gt;In conclusion: I owe my wife an apology for buying into the oft made claim that cats can be visually cloned.﻿</description>
     </item>
-    
     <item>
       <title>Hollywood Reservoir</title>
       <link>https://nexus.zteo.com/posts/hollywood-reservoir/</link>
       <pubDate>Sun, 17 Aug 2014 19:47:45 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/hollywood-reservoir/</guid>
       <description>Hollywood Reservoir﻿</description>
     </item>
-    
     <item>
       <title>Chef and Puppet require Ruby before they will even talk to you.</title>
       <link>https://nexus.zteo.com/posts/chef-and-puppet-require-ruby-before-they-will-even-talk-to-you/</link>
       <pubDate>Mon, 04 Aug 2014 05:38:25 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/chef-and-puppet-require-ruby-before-they-will-even-talk-to-you/</guid>
       <description>Super minimalist remote configuration tool</description>
     </item>
-    
     <item>
       <title>Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.</title>
       <link>https://nexus.zteo.com/posts/pale-moon-24-7-1-is-now-available-for-linux-os-x-and-of-course-android/</link>
       <pubDate>Sun, 03 Aug 2014 06:19:50 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/pale-moon-24-7-1-is-now-available-for-linux-os-x-and-of-course-android/</guid>
       <description>Pale Moon 24.7.1 is now available for Linux, OS X and of course Android.&lt;br /&gt;&lt;br /&gt;Changelist: &lt;a href=&#34;http://forum.palemoon.org/viewtopic.php?f=1&amp;amp;t=5243&#34;&gt;&lt;a href=&#34;http://forum.palemoon.org/viewtopic.php?f=1&amp;amp;amp;t=5243&#34;&gt;http://forum.palemoon.org/viewtopic.php?f=1&amp;amp;amp;t=5243&lt;/a&gt;&lt;/a&gt;﻿</description>
     </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://nexus.zteo.com/posts/test/</link>
-      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
-      
-      <guid>https://nexus.zteo.com/posts/test/</guid>
-      <description>Configuration parameters   Parameter Description Default     timeout The timeout for requests 30s   logLevel The log level for log output INFO    Configuration parameters   Parameter Description Default     timeout The timeout for requests 30s   logLevel The log level for log output INFO      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
     <item>
       <title>Russell Pavlicek make some very good points on the containers v. hypervisors race. Of course, he would...</title>
       <link>https://nexus.zteo.com/posts/russell-pavlicek-make-some-very-good-points-on-the-containers-v-hypervisors-race-of-course-he-would/</link>
       <pubDate>Sat, 28 Jun 2014 22:10:45 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/russell-pavlicek-make-some-very-good-points-on-the-containers-v-hypervisors-race-of-course-he-would/</guid>
       <description>Russell Pavlicek make some very good points on the containers v. hypervisors race. Of course, he would defend hypervisors; they are his bread and butter after all.&lt;br /&gt;&lt;br /&gt;I have to admit, though, that as I read his post, I felt that he was building a straw man as no one is saying that hypervisors will be replaced by containers. However&amp;hellip; I went back to my own recent post(&lt;a href=&#34;http://nexus.zteo.com/blog/the-next-evolution-of-virtualization/&#34;&gt;&lt;a href=&#34;http://nexus.zteo.com/blog/the-next-evolution-of-virtualization/&#34;&gt;http://nexus.zteo.com/blog/the-next-evolution-of-virtualization/&lt;/a&gt;&lt;/a&gt;), to confirm my thinking, and re-reading my own words I realize that I totally omitted mentioning one of my favorites things about containers: the fact that they can cohabitate with VMs.&lt;br /&gt;&lt;br /&gt;When I refer to a future where container-specific applications would exist, I should mention that this is tied not to hypervisors disappearing but instead to the commoditization of VMs. I should have made this explicit.&lt;br /&gt;&lt;br /&gt;On the other hand, I still think his post is a straw man: what I hear from containers evangelists is not that hypervisors are bloated but that VMs are: there is a considerable nuance here as, while VMs are bound (IMO) to become a commodity, hypervisors are going to be an increasingly important tool in a network admin&#39;s toolbelt. However, I believe that, if you wish to take the lead in that particular market, you should start looking into hybrid hypervisors that support these different layers of virtualization (For future reference: &amp;quot;Fractal hypervisors.&amp;quot; &amp;ndash; there, I said it)﻿</description>
     </item>
-    
     <item>
       <title>Please pass this around as it is a very good opportunity: I am looking for more engineers to work in...</title>
       <link>https://nexus.zteo.com/posts/please-pass-this-around-as-it-is-a-very-good-opportunity-i-am-looking-for-more-engineers-to-work-in/</link>
       <pubDate>Wed, 25 Jun 2014 18:08:56 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/please-pass-this-around-as-it-is-a-very-good-opportunity-i-am-looking-for-more-engineers-to-work-in/</guid>
       <description>Please pass this around as it is a very good opportunity: I am looking for more engineers to work in several of my teams.&lt;br /&gt;&lt;br /&gt;Who I am looking for:&lt;br /&gt;- you are comfortable developing using C, C++ and/or Java&lt;br /&gt;- you either work with embedded systems (looking at you Droiders or switch developers) or large web applications or SDN controllers&lt;br /&gt;&lt;br /&gt;Who we are:&lt;br /&gt;- think of us as a startup with great benefits&lt;br /&gt;- by that I mean health coverage, 401k, salary in the high 90s to 100ks&lt;br /&gt;- we pay relocation expenses if necessary&lt;br /&gt;- we are established, with a solid revenue stream&lt;br /&gt;- and yet, we also work on multiple, very forward looking projects&lt;br /&gt;- we are located in Southern California, near L.A.&lt;br /&gt;&lt;br /&gt;I am posting this here before making it more widely available as I&#39;d rather work with one of you guys so, if you are interested or think one of your friends might be a match, let me know immediately.﻿</description>
     </item>
-    
     <item>
       <title>Virtual Machines Are Not The Future Of Virtualization</title>
       <link>https://nexus.zteo.com/posts/the-next-evolution-of-virtualization/</link>
       <pubDate>Mon, 24 Mar 2014 06:16:02 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/the-next-evolution-of-virtualization/</guid>
       <description>I usually reserve this kind of wall of text for my poor coworkers but not today. Share the pain!</description>
     </item>
-    
     <item>
       <title>Journler(Again) and Mavericks</title>
       <link>https://nexus.zteo.com/posts/journleragain-and-mavericks/</link>
       <pubDate>Tue, 14 Jan 2014 08:57:44 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/journleragain-and-mavericks/</guid>
       <description>As you may have noticed if using this app, any interaction with Spotlight now causes a crash. For instance, dragging a file to Journler means that it will try to display a preview of this file and if it is not sure what type the file is, it attempts to delegate this task to Spotlight and&amp;hellip;scene!</description>
     </item>
-    
     <item>
       <title>C coroutines: no assembly (bad pun) required</title>
       <link>https://nexus.zteo.com/posts/c-coroutines-no-assembly-bad-pun-required/</link>
       <pubDate>Wed, 21 Aug 2013 01:53:06 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/c-coroutines-no-assembly-bad-pun-required/</guid>
       <description>I was reading Yossi Kreinin&amp;rsquo;s quick&amp;rsquo;n fun way to implement coroutines in C and, as an embedded development architect, was a bit saddened by the &amp;ndash; necessary &amp;ndash; use of assembly code to manage a separate stack.</description>
     </item>
-    
     <item>
       <title>Memonic extension patched for Google Chrome</title>
       <link>https://nexus.zteo.com/posts/memonic-extension-patched-for-google-chrome/</link>
       <pubDate>Sun, 28 Apr 2013 07:32:04 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/memonic-extension-patched-for-google-chrome/</guid>
       <description>The symptom is pretty simple: you click the &amp;lsquo;Memonic&amp;rsquo; extension icon and nothing happens. This patch aims to fix this behavior.</description>
     </item>
-    
     <item>
       <title>Productive Ambient Noise: beyond white noise</title>
       <link>https://nexus.zteo.com/posts/productive-ambient-noise-beyond-white-noise/</link>
       <pubDate>Thu, 04 Apr 2013 23:56:13 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/productive-ambient-noise-beyond-white-noise/</guid>
       <description>Need some work ambiance that&amp;rsquo;s not just pure white noise? The web delivers!</description>
     </item>
-    
     <item>
       <title>SublimeText as a minimal IDE for Scala</title>
       <link>https://nexus.zteo.com/posts/sublimetext-as-a-minimal-ide-for-scala/</link>
       <pubDate>Mon, 26 Nov 2012 07:01:03 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/sublimetext-as-a-minimal-ide-for-scala/</guid>
       <description>Well, the Coursera &amp;ldquo;Functional Programming Principles in Scala&amp;rdquo; class was a success. Both Tom Chappell and I really enjoyed it. However, I&amp;rsquo;ve never much liked Eclipse as an IDE. Here is how I am using Sublime Text 2 instead.</description>
     </item>
-    
     <item>
       <title>Comments Policy</title>
       <link>https://nexus.zteo.com/posts/comments-policy/</link>
       <pubDate>Wed, 21 Nov 2012 09:16:35 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/comments-policy/</guid>
       <description>This sets forth Zteo&amp;rsquo;s policy with regard to the use of Spam marketing techniques in connection with Internet Marketing. In the event that we deem you to be in violation of these policies, we shall immediately revoke your membership rights and close any active account.</description>
     </item>
-    
     <item>
       <title>It&#39;s Journler...Again!</title>
       <link>https://nexus.zteo.com/posts/its-journleragain/</link>
       <pubDate>Sat, 22 Sep 2012 22:37:35 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/its-journleragain/</guid>
       <description>It&amp;rsquo;s Journler&amp;hellip;Again!</description>
     </item>
-    
     <item>
       <title>Second Life for Enterprise: Yup, it died</title>
       <link>https://nexus.zteo.com/posts/second-life-for-enterprise-yup-it-died/</link>
       <pubDate>Thu, 15 Mar 2012 23:21:40 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/second-life-for-enterprise-yup-it-died/</guid>
       <description>Note: an improved, cleaned up version of this post is available on the Hypergrid Business website.</description>
     </item>
-    
     <item>
       <title>Install Parallel Tools in Arch/Chakra Linux</title>
       <link>https://nexus.zteo.com/posts/install-parallel-tools-in-archchakra-linux/</link>
       <pubDate>Mon, 13 Feb 2012 04:08:14 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/install-parallel-tools-in-archchakra-linux/</guid>
       <description>As niche posts go, I think this one may take the cake since it is about my experience installing Parallel 7&amp;rsquo;s tools in a Chakra Linux guest (of the venerable Arch family)</description>
     </item>
-    
     <item>
       <title>DEVONthink: MarkDown to Viewer</title>
       <link>https://nexus.zteo.com/posts/devonthink-markdown-to-viewer/</link>
       <pubDate>Thu, 19 Jan 2012 22:43:42 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/devonthink-markdown-to-viewer/</guid>
       <description>Like many other DEVONthink users, I have started to feel regret that MarkDown is not natively supported.Now, a piece of good news is that, as long as you edit a plain-text document in DT, you are, in effect, editing a potential MarkDown document.In the past, it was possible to open a DT document in an application such as the excellent Marked.app. But it is not any longer. I totally understand the author&amp;rsquo;s argument: as a pure viewer, it feels wrong for an application to register as an editor.</description>
     </item>
-    
     <item>
       <title>Delicious4Shelves</title>
       <link>https://nexus.zteo.com/posts/delicious4shelves/</link>
       <pubDate>Mon, 02 Jan 2012 10:38:50 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/delicious4shelves/</guid>
       <description>I like things neatly organized. I absolutely hate the idea that I could buy a book I already own. So, it&amp;rsquo;s not surprise that, as a Mac user, I trust Delicious Library to keep tracks of my books, DVS and video games.As an Android user, I also like that Shelves even exists. After all, it is mostly when I am walking the aisles of Barnes &amp;amp; Noble that I am the most susceptible to wonder whether I already own a given book &amp;ndash; although Amazon may eventually lure me away from that experience &amp;ndash; and if that information is only available on my Mac happily waiting for my return back home, it&amp;rsquo;s not very helpful to me. Therefore, Shelves is my saviour.</description>
     </item>
-    
     <item>
       <title>Android: self-contained &#34;libraries,&#34; seamless component persistence</title>
       <link>https://nexus.zteo.com/posts/android-self-contained-libraries-seamless-component-persistence/</link>
       <pubDate>Sat, 31 Dec 2011 09:33:02 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/android-self-contained-libraries-seamless-component-persistence/</guid>
       <description>Slider by Yamanaka Tamaki</description>
     </item>
-    
     <item>
       <title>Your own Dynamic DNS in 3 steps</title>
       <link>https://nexus.zteo.com/posts/your-own-dynamic-dns-in-3-steps/</link>
       <pubDate>Thu, 29 Dec 2011 02:00:48 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/your-own-dynamic-dns-in-3-steps/</guid>
       <description>This is a &amp;ldquo;niche&amp;rdquo; post: it will really only appeal to you if you have access to your own &amp;ndash; or a friend&amp;rsquo;s &amp;ndash; name servers and want to use your own domain to track your dynamic IP addresses, such as your home router&amp;rsquo;s.You will still have to buy your own domain, cheap if you go to internet.bs or namecheap.com. I hear that the latter even provide their own dynamic DNS service although I cannot tell you anything about its quality/flexibility.</description>
     </item>
-    
     <item>
       <title>RootTools 1.5, NativeTools 1.0</title>
       <link>https://nexus.zteo.com/posts/roottools-15-nativetools-10/</link>
       <pubDate>Tue, 22 Nov 2011 02:51:52 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/roottools-15-nativetools-10/</guid>
       <description>I am both happy and relieved to announce RootTools 1.5 and NativeTools 1.0.</description>
     </item>
-    
     <item>
       <title>Android StatusBar Height, the cautious way</title>
       <link>https://nexus.zteo.com/posts/android-statusbar-height-the-cautious-way/</link>
       <pubDate>Tue, 08 Nov 2011 08:47:28 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/android-statusbar-height-the-cautious-way/</guid>
       <description>A lot of applications expect the status bar to be at the top of your device&amp;rsquo;s screen. It&amp;rsquo;s true in most cases so their developers are somewhat justified in making this assumption.However, with more and more tablets on the market, this is becoming an increasingly dangerous assumption.</description>
     </item>
-    
     <item>
       <title>A fast, low-memory growable array for Android</title>
       <link>https://nexus.zteo.com/posts/a-fast-low-memory-growable-array-for-android/</link>
       <pubDate>Tue, 01 Nov 2011 08:02:47 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/a-fast-low-memory-growable-array-for-android/</guid>
       <description>A classic problem: you need an array where you are going to hold a set of values; you do not know that array&amp;rsquo;s size in advance but it may grow to be quite the monster.If you use, say, an ArrayList, you have a memory-hungry beast to deal with, making sure that Android will really think about your app when it needs to kill background processes to reclaim some memory.</description>
     </item>
-    
     <item>
       <title>Google&#43; on your desktop/in Safari &#43; user script, just working</title>
       <link>https://nexus.zteo.com/posts/google-on-your-desktopin-safari-user-script-just-working/</link>
       <pubDate>Mon, 25 Jul 2011 01:32:52 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/google-on-your-desktopin-safari-user-script-just-working/</guid>
       <description>In this post:</description>
     </item>
-    
     <item>
       <title>Cross-Compile Android (CM7) on OS X</title>
       <link>https://nexus.zteo.com/posts/cross-compile-android-cm7-on-os-x/</link>
       <pubDate>Wed, 11 May 2011 01:54:45 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/cross-compile-android-cm7-on-os-x/</guid>
       <description>This is your &amp;ldquo;up-to-date 5 minutes ago&amp;rdquo; guide on how to build CyanogenMod 7 using your Mac. Check the date: 05/10/2011.Note that, obviously, these instructions should also help you with building other ROMs.</description>
     </item>
-    
     <item>
       <title>Tooredo: a friendlier Toodledo user interface -- Public Beta</title>
       <link>https://nexus.zteo.com/posts/tooredo-a-friendlier-toodledo-user-interface-public-beta/</link>
       <pubDate>Mon, 03 Jan 2011 03:25:10 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/tooredo-a-friendlier-toodledo-user-interface-public-beta/</guid>
       <description>I am now opening Tooredo to public beta.I &amp;ndash; and others &amp;ndash; have been using it for several months without majors glitches so I think it&amp;rsquo;s time I shared the joy with you.</description>
     </item>
-    
     <item>
       <title>So, is Android using the Linux scheduler? Can I patch it?</title>
       <link>https://nexus.zteo.com/posts/so-is-android-using-the-linux-scheduler-can-i-patch-it/</link>
       <pubDate>Sat, 27 Nov 2010 04:03:47 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/so-is-android-using-the-linux-scheduler-can-i-patch-it/</guid>
       <description>These last few days, the Linux world has paid quite a lot of attention to this kernel patch, written by Mike Galbraith.Its purpose is to make your desktop more responsive by grouping your tasks so that they have a better chance at getting their fair share of CPU time when some other task, notably a CPU hog, is running in the background. Lennart Poettering then offered his own solution, which requires no tweak of the kernel itself.</description>
     </item>
-    
     <item>
       <title>Android: Create a &#34;lite&#34; version of your application</title>
       <link>https://nexus.zteo.com/posts/android-create-a-lite-version-of-your-application/</link>
       <pubDate>Wed, 20 Oct 2010 04:10:41 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/android-create-a-lite-version-of-your-application/</guid>
       <description>Like many Android developers, I recently realized that pushing a &amp;ldquo;lite&amp;rdquo; version of my application to the Android Marketplace would improve my application&amp;rsquo;s visibility.</description>
     </item>
-    
     <item>
       <title>Update your XAMPP PHP and keep Mediawiki &amp; Drupal happy</title>
       <link>https://nexus.zteo.com/posts/update-your-xampp-php-and-keep-mediawiki-drupal-happy/</link>
       <pubDate>Wed, 22 Sep 2010 07:19:29 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/update-your-xampp-php-and-keep-mediawiki-drupal-happy/</guid>
       <description>Once again, the &amp;ndash; otherwise very nice, I&amp;rsquo;m sure &amp;ndash; PHP people have done this thing that has made me miserable with my own open-source code and is now also affecting Mediawiki: in PHP 5.3.1, references passed to __call() are silently turned into values.Apparently, this bug was fixed but a contract was broken in the process: even if packages such as Wikipedia or Drupal were wrong in the way they were passing references, this used to work. Now, when running the same code, not only is a warning issued &amp;ndash; good &amp;ndash; but the function is not called. The latter is quite hard to justify.Of course, this means that a simple “dot” upgrade can render your whole website unusable; it’s a pill that’s a tad hard to swallow.</description>
     </item>
-    
     <item>
       <title>SuggestEditText: Android auto-suggest component</title>
       <link>https://nexus.zteo.com/posts/suggestedittext-android-auto-suggest-component/</link>
       <pubDate>Tue, 21 Sep 2010 06:52:06 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/suggestedittext-android-auto-suggest-component/</guid>
       <description>My first Android application, SplitAndTip, makes splitting a restaurant check with your friends very easy.One of its key features is that I wanted the user to be able to change any parameter without feeling like the program gets in their way. For instance, you can open the ‘Tax &amp;amp; Tip’ drawer and quickly change these values.However, like many, I live and work at the edge of a couple counties and the county tax goes from 8.25% to a whopping 9.75% (L.A. County of course!)It is a tedious proposition to re-enter the same two percentages every time I cross the “border.”On a desktop computer, this is usually addressed through the use of a drop-down list. However the Android UI does not have room for a full-size selection component, unless you add more steps by popping one up every time you wish to adjust a value. This is no friendly user interface.The solution I found is a text field that will provide suggestions based on past values, while remaining in the text field itself.</description>
     </item>
-    
     <item>
       <title>Jailbroken iPhones now safer?</title>
       <link>https://nexus.zteo.com/posts/jailbroken-iphones-now-safer/</link>
       <pubDate>Tue, 03 Aug 2010 21:15:46 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/jailbroken-iphones-now-safer/</guid>
       <description>I was reading this article and, in my opinion, it got the facts right but their conclusion is backwards:Meanwhile, whilst this particular unlock is the simplest, it also carries with it element of risk that you’re going to want to protect yourself against.</description>
     </item>
-    
     <item>
       <title>Make your iPhone 3G faster with iOS4 (some assembly required)</title>
       <link>https://nexus.zteo.com/posts/make-your-iphone-3g-faster-with-ios4-some-assembly-required/</link>
       <pubDate>Sat, 31 Jul 2010 09:34:08 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/make-your-iphone-3g-faster-with-ios4-some-assembly-required/</guid>
       <description>Today, I am venturing outside my usual programming and open-source path and I am going to share my experience speeding up my iPhone with you.I am not going to write a long article where I copy/paste what everybody else has already written about how slow iPhone 3G&amp;rsquo;s can get when running iOS4. It is now a well established fact.Rumor has it, iOS4.1 should really make your iPhone faster.</description>
     </item>
-    
     <item>
       <title>WordPress, Thesis, GPL: The Facts Are Simple</title>
       <link>https://nexus.zteo.com/posts/wordpress-thesis-gpl-the-facts-are-simple/</link>
       <pubDate>Sun, 18 Jul 2010 03:13:01 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/wordpress-thesis-gpl-the-facts-are-simple/</guid>
       <description>Update:Now a few days later, Thesis has been GPL&amp;rsquo;d and there isn&amp;rsquo;t much left to say on this topic. However, for the sake of clarity, I would like to revisit a statement I made below: if Thesis contained &lt;em&gt;no&lt;/em&gt; original WordPress code, considering that it is distributed on its own, and not shipped with a copy of WordPress, I am not sure how a court would see this. It is the intent of the GPL license that anything &amp;ldquo;linked&amp;rdquo; against GPL code becomes de facto GPL (if the executable and GPL code &amp;ldquo;make function calls to each other and share data structures&amp;rdquo;) but I am not aware of a case where &amp;ldquo;linking&amp;rdquo; was the only, successfully argued point.</description>
     </item>
-    
     <item>
       <title>Page-Theme v1.3: Not just for pages anymore...</title>
       <link>https://nexus.zteo.com/posts/page-theme-v13-not-just-for-pages-anymore/</link>
       <pubDate>Tue, 06 Jul 2010 08:28:34 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/page-theme-v13-not-just-for-pages-anymore/</guid>
       <description>I am happy to announce the release of the Wordpress plugin &amp;ldquo;Page-Theme&amp;rdquo; v1.3.This version is a full rewrite.</description>
     </item>
-    
     <item>
       <title>Freebie: A real blog editing tool</title>
       <link>https://nexus.zteo.com/posts/freebie-a-real-blog-editing-tool/</link>
       <pubDate>Wed, 23 Jun 2010 07:10:38 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/freebie-a-real-blog-editing-tool/</guid>
       <description>Until now, this freebie has been known only to my Twitter followers, but considering the positive feedback it received, I am going to put it out there for everybody: a few months ago, being disappointed with the lack of true rich-text editing provided by typical blog editing tools, I started work on mine.</description>
     </item>
-    
     <item>
       <title>Twitterified no more</title>
       <link>https://nexus.zteo.com/posts/twitterified-no-more/</link>
       <pubDate>Mon, 14 Jun 2010 08:56:54 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/twitterified-no-more/</guid>
       <description>When you play with an 800-pound gorilla, sometimes, you have to accept that the gorilla will inadvertently stomp on you. After a couple months spent researching a possible strategic realignment, we have decided that it would not be reasonable to spend more time and money on Twitterified, at least not in its current incarnation.On April 4th 2010, Fred Wilson, who is on Twitter&amp;rsquo;s board of directors, sent a very clear message to application developers: stop writing applications that &amp;ldquo;fill holes in the Twitter product.&amp;ldquo;Emphasizing his point, Twitter quickly went on to buy Tweetie and declaring it its official client.</description>
     </item>
-    
     <item>
       <title>Wordpress Plugin: Page-Theme...themes your pages!</title>
       <link>https://nexus.zteo.com/posts/wordpress-plugin-page-themethemes-your-pages/</link>
       <pubDate>Sun, 06 Jun 2010 01:24:23 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/wordpress-plugin-page-themethemes-your-pages/</guid>
       <description>I was quite surprised, when looking for a way to assign different themes to some pages, to not manage to find an easy way to do that. It is not baked into WordPress, and I could not find a suitable plugin either.I had, a while ago, created a tiny plugin that did just that for me but it was way too simple and unfriendly to configure. I eventually stumbled upon the &amp;lsquo;domain theme&amp;rsquo; plugin which, even though it does not do what I need, at least showed me that there is a way to perform a proper theme switch cleanly.Note: if you&amp;rsquo;ve been reading this intro, thinking: &amp;ldquo;But there is a way to switch templates!&amp;rdquo;, then you&amp;rsquo;re right because there is; however I am not talking about templates but themes. Templates are pre-recorded page structures whereas themes are about changing your blog&amp;rsquo;s complete look and feel, including logo, stylesheet, etc.</description>
     </item>
-    
     <item>
       <title>Notes on enabling multisites in WP3.0</title>
       <link>https://nexus.zteo.com/posts/notes-on-enabling-multisites-in-wp30/</link>
       <pubDate>Sat, 29 May 2010 08:17:48 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/notes-on-enabling-multisites-in-wp30/</guid>
       <description>This is not a real article per se. It is more intended to be a conversation because Twitter would make this a tad difficult, with its 140 characters limit.</description>
     </item>
-    
     <item>
       <title>Clean-up Wordpress and upgrade to 3.0</title>
       <link>https://nexus.zteo.com/posts/clean-up-wordpress-and-upgrade-to-30/</link>
       <pubDate>Thu, 27 May 2010 08:27:57 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/clean-up-wordpress-and-upgrade-to-30/</guid>
       <description>That&amp;rsquo;s something I had to do myself recently. It was not quite as painful as I feared it to be.My aging Wordpress install had certainly gone through its share of hacking: I started with a 1.x version, added multi-blog plugins, uninstalled them, moved to Wordpress MU, then back to single-blog Wordpress. In the process I wrote scripts to rename my tables, added multi-domains plugins&amp;hellip;all the while manually upgrading to various 2.x releases.Things stopped working. Helpful things, such as JavaScript, just about everywhere.</description>
     </item>
-    
     <item>
       <title>Google Analytics Wordpress Plugins</title>
       <link>https://nexus.zteo.com/posts/google-analytics-wordpress-plugins/</link>
       <pubDate>Wed, 26 May 2010 00:25:34 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/google-analytics-wordpress-plugins/</guid>
       <description>Google Analytics. I&amp;rsquo;m sure you&amp;rsquo;re already familiar with it. If not, just know that it&amp;rsquo;s a free service that gives you a pretty accurate idea of why people visit your blog, whether they, in fact, visit it at all, and what kind of demographics they represent. Unless you already use a better, but not free, analytics service, you really have nothing to lose, so just go ahead and sign up.</description>
     </item>
-    
     <item>
       <title>ezEdit is a mini CMS and/or a prototyping tool</title>
       <link>https://nexus.zteo.com/posts/ezedit-is-a-mini-cms-andor-a-prototyping-tool/</link>
       <pubDate>Mon, 26 Apr 2010 00:44:20 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/ezedit-is-a-mini-cms-andor-a-prototyping-tool/</guid>
-      <description>Also, ezEdit is very, very, very easy to install and use:
-You can add the CMS to your existing website;
-You can use it to mock-up updates to your site;
-If you are a web designer, you can work on updates with your clients in real-time; and this is without installing anything: simply use the bookmarklet.
-ezEdit works as either a very short bootstrap script or a bookmarklet.
-The CMS back-end is in a self-contained file as well.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://nexus.zteo.com/images/ezedit_google.png&#34; alt=&#34;&#34;  /&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Also, ezEdit is very, very, very &lt;strong&gt;easy&lt;/strong&gt; to install and use:&lt;/p&gt;&#xA;&lt;p&gt;You can add the &lt;strong&gt;CMS&lt;/strong&gt; to your existing website;&lt;br&gt;&#xA;You can use it to &lt;strong&gt;mock-up&lt;/strong&gt; updates to your site;&lt;br&gt;&#xA;If you are a web designer, you can work on updates &lt;strong&gt;with your clients&lt;/strong&gt; in&#xA;real-time; and this is without installing anything: simply use the&#xA;bookmarklet.&lt;/p&gt;&#xA;&lt;p&gt;ezEdit works as either a very short bootstrap &lt;strong&gt;script&lt;/strong&gt; or a &lt;strong&gt;bookmarklet&lt;/strong&gt;.&lt;br&gt;&#xA;The CMS back-end is in a self-contained file as well.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SuperGenPass patched for Google Chrome</title>
       <link>https://nexus.zteo.com/posts/supergenpass-patched-for-google-chrome/</link>
       <pubDate>Tue, 01 Dec 2009 03:25:35 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/supergenpass-patched-for-google-chrome/</guid>
       <description>I am a huge fan of SuperGenPass. There are so many obvious reasons why it&amp;rsquo;s a great concept that I won&amp;rsquo;t bore you with a rehash of all of them.Unfortunately, in Google Chrome, SuperGenPass chokes on some pages. I do not blame Chrome for that: it&amp;rsquo;s for security reasons.</description>
     </item>
-    
     <item>
       <title>Magic: Ruby 1.8.5 &#43; 1.9.1/Rails/Sinatra and Lighttpd</title>
       <link>https://nexus.zteo.com/posts/magic-ruby-185-191railssinatra-and-lighttpd/</link>
       <pubDate>Sun, 29 Nov 2009 09:51:38 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/magic-ruby-185-191railssinatra-and-lighttpd/</guid>
       <description>Ladies and gentlemen, gather &amp;lsquo;round! The Great Panini is going to perform an incredible illusion before your very eyes! You will tell your grandchildren of this day and they will not believe you! Take pictures!</description>
     </item>
-    
     <item>
       <title>Help Blog Editors Reliably Discover Your API</title>
       <link>https://nexus.zteo.com/posts/help-blog-editors-reliably-discover-your-api/</link>
       <pubDate>Tue, 20 Oct 2009 05:07:36 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/help-blog-editors-reliably-discover-your-api/</guid>
       <description>It seems that tons of people have the same complaint: the Wordpress application for iPhone does not discover their blog and, therefore, is of no use to them.The same goes for many desktop-based applications.I, too, spent quite a lot of time trying to figure that one out but now that I have succeeded, here is how I would recommend working on this issue if your blog is affected:</description>
     </item>
-    
     <item>
       <title>ClicDev: display last 24 hours visitors</title>
       <link>https://nexus.zteo.com/posts/clicdev-display-last-24-hours-visitors/</link>
       <pubDate>Sat, 10 Oct 2009 23:57:42 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/clicdev-display-last-24-hours-visitors/</guid>
       <description>A quick note about Clic!Dev: it is now possible, in the admin control panel, to select Setup Hacks &amp;gt; enable 24 hour users to add an extra information dialog to the footer of your hosted board&amp;rsquo;s main page. This will end up looking like so (but obviously adapted to whatever skins you are using):</description>
     </item>
-    
     <item>
       <title>S2ajax v1.0 connects simply PHP and JavaScript</title>
       <link>https://nexus.zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/</link>
       <pubDate>Wed, 07 Oct 2009 08:18:49 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/s2ajax-v10-connects-simply-php-and-javascript/</guid>
       <description>Here comes S2ajax v1.0!And it was long overdue. Six months already since I posted S2ajax says &amp;ldquo;hi()&amp;rdquo; I can hardly believe it.</description>
     </item>
-    
     <item>
       <title>PHP PDO class and XAMPP/&#34;exotic&#34; MySQL configurations</title>
       <link>https://nexus.zteo.com/posts/php-pdo-class-and-xamppexotic-mysql-configurations/</link>
       <pubDate>Thu, 01 Oct 2009 09:26:51 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/php-pdo-class-and-xamppexotic-mysql-configurations/</guid>
       <description>Last night I was trying to setup a @mail server but the installer kept choking when attempting to connect to my local database.</description>
     </item>
-    
     <item>
       <title>Add your Google App account to Thunderbird 3 beta 4</title>
       <link>https://nexus.zteo.com/posts/add-your-google-app-account-to-thunderbird-3-beta-4/</link>
       <pubDate>Mon, 28 Sep 2009 00:23:36 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/add-your-google-app-account-to-thunderbird-3-beta-4/</guid>
       <description>Beta 4 is out and it is &lt;em&gt;very&lt;/em&gt; sweet. It even offers Gmail integration like never before.</description>
     </item>
-    
     <item>
       <title>Rich-text editor in Sharepoint with Firefox</title>
       <link>https://nexus.zteo.com/posts/rich-text-editor-in-sharepoint-with-firefox/</link>
       <pubDate>Fri, 07 Aug 2009 07:45:04 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/rich-text-editor-in-sharepoint-with-firefox/</guid>
       <description>If, like me, your company&amp;rsquo;s insistence on using Sharepoint as an Intranet tool contributes to rapid neurons death, there is as least a glimmer of hope: you can still use Firefox without being punished by having to type raw HTML code when editing a page (Sharepoint, unsurprisingly, only likes IE)</description>
     </item>
-    
     <item>
       <title>&#34;n2&#34; Message Board Software: Update</title>
       <link>https://nexus.zteo.com/posts/n2-message-board-software-update/</link>
       <pubDate>Sat, 04 Jul 2009 08:34:18 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/n2-message-board-software-update/</guid>
       <description>This is a cross-posting with the nextBBS support board.</description>
     </item>
-    
     <item>
       <title>Mount a recalcitrant .dmg file</title>
       <link>https://nexus.zteo.com/posts/mount-a-recalcitrant-dmg-file/</link>
       <pubDate>Thu, 18 Jun 2009 00:29:56 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/mount-a-recalcitrant-dmg-file/</guid>
       <description>I have no idea why but sometimes a .dmg file will just-not-mount.For instance I just downloaded the latest PostBox from &lt;a href=&#34;http://postbox-inc.com/&#34;&gt;http://postbox-inc.com/&lt;/a&gt; and the silly little image will &lt;em&gt;not&lt;/em&gt; cooperate.</description>
     </item>
-    
     <item>
       <title>Wordpress FLV Player Plugin v2.0</title>
       <link>https://nexus.zteo.com/posts/wordpress-flv-player-plugin-v20/</link>
       <pubDate>Sun, 14 Jun 2009 09:32:51 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/wordpress-flv-player-plugin-v20/</guid>
       <description>Close to two years ago, after quickly putting together my own FLV Player plugin for Wordpress (original post) I added it to Wordpress.org&amp;rsquo;s already impressive list of plugins. Who knows? Someone else might find it useful (it&amp;rsquo;s been downloaded more than 4,500 times since then so I guess that means someone did)</description>
     </item>
-    
     <item>
       <title>Sunday Hacking: Cue:Cat, Delicious Library</title>
       <link>https://nexus.zteo.com/posts/sunday-hacking-cuecat-delicious-library/</link>
       <pubDate>Sun, 07 Jun 2009 23:32:10 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/sunday-hacking-cuecat-delicious-library/</guid>
       <description>Sunday Hacking is going to be this new and irregular feature, where I blather about how I made my week-end a bit geekier by doing such or such hardware hack. I do not guarantee originality, nor much software-related content. If you&amp;rsquo;re not into that kind of thing, I promise that it shouldn&amp;rsquo;t feel much worse than a flu shot.</description>
     </item>
-    
     <item>
       <title>Twitterified Client now fully Open-Source</title>
       <link>https://nexus.zteo.com/posts/twitterified-client-now-fully-open-source/</link>
       <pubDate>Sun, 10 May 2009 23:58:28 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/twitterified-client-now-fully-open-source/</guid>
       <description>Well, this title says it all!</description>
     </item>
-    
     <item>
       <title>Determining if an IP is within a specific range: redux</title>
       <link>https://nexus.zteo.com/posts/determining-if-an-ip-is-within-a-specific-range-redux/</link>
       <pubDate>Thu, 30 Apr 2009 08:11:05 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/determining-if-an-ip-is-within-a-specific-range-redux/</guid>
       <description>&lt;div&gt;I was reading Paul Gregg&#39;s very clear explanation of &#34;classless&#34; ranges comparison when I realized that his code was not as &#34;bare metal&#34; as could be.&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Bespin in Titanium: From The Jaws Of Victory...</title>
       <link>https://nexus.zteo.com/posts/bespin-in-titanium-from-the-jaws-of-victory/</link>
       <pubDate>Mon, 06 Apr 2009 07:31:59 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/bespin-in-titanium-from-the-jaws-of-victory/</guid>
       <description>bespin is really an intriguing project. Since I&amp;rsquo;ve grown frustrated with the inconsistencies between the various code editors that I have been using &amp;ndash; I work on Leopard at home and Ubuntu at work &amp;ndash; I thought that creating my own editor would be the answer to that. Nothing fancy, mind you. Just something consistent.</description>
     </item>
-    
     <item>
       <title>Twitterified v1.3 is out: bug fixes, usability improvements, Present.ly support</title>
       <link>https://nexus.zteo.com/posts/twitterified-v13-is-out-bug-fixes-usability-improvements-presently-support/</link>
       <pubDate>Tue, 17 Mar 2009 08:42:52 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/twitterified-v13-is-out-bug-fixes-usability-improvements-presently-support/</guid>
-      <description>Well, the title pretty much says it all: v1.3 is out and it&amp;rsquo;s an evolutionary release.	Bug fixes - lots of &amp;rsquo;em	Usability improvements, such as text overflow indicator	Support for the awesome Present.ly Twitter-compatible protocolGet it while it&amp;rsquo;s hot!(If you are confused as to where to get it, all you need is to go to &lt;a href=&#34;http://twitterified.com&#34;&gt;http://twitterified.com&lt;/a&gt;, log in and follow this link)</description>
+      <description>Well, the title pretty much says it all: v1.3 is out and it&amp;rsquo;s an evolutionary release.&#x9;Bug fixes - lots of &amp;rsquo;em&#x9;Usability improvements, such as text overflow indicator&#x9;Support for the awesome Present.ly Twitter-compatible protocolGet it while it&amp;rsquo;s hot!(If you are confused as to where to get it, all you need is to go to &lt;a href=&#34;http://twitterified.com&#34;&gt;http://twitterified.com&lt;/a&gt;, log in and follow this link)</description>
     </item>
-    
     <item>
       <title>SXSW &#39;09 Microsoft Accelerator Tally</title>
       <link>https://nexus.zteo.com/posts/sxsw-09-microsoft-accelerator-tally/</link>
       <pubDate>Tue, 17 Mar 2009 00:50:01 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/sxsw-09-microsoft-accelerator-tally/</guid>
       <description>Winners:</description>
     </item>
-    
     <item>
       <title>Twitterified Client v1.3 Almost Ready</title>
       <link>https://nexus.zteo.com/posts/twitterified-client-v13-almost-ready/</link>
       <pubDate>Mon, 16 Mar 2009 07:34:33 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/twitterified-client-v13-almost-ready/</guid>
       <description>I should be able to release this new client tomorrow or day after tomorrow.</description>
     </item>
-    
     <item>
       <title>PHP classes and Javascript: S2ajax says &#34;hi()&#34;</title>
       <link>https://nexus.zteo.com/posts/php-classes-and-javascript-s2ajax-says-hi/</link>
       <pubDate>Mon, 02 Mar 2009 08:27:55 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/php-classes-and-javascript-s2ajax-says-hi/</guid>
       <description>Sajax is a ‘managed’ AJAX framework that was created by the fine folks at Modern Method a few years ago.What’s so great about it is the seamless communication between your back-end and the web page itself: you write your PHP code, tell Sajax which functions to export and they are now accessible from Javascript.</description>
     </item>
-    
     <item>
       <title>Wordpress Toolbar Plugin and Wordpress Prefixes: A Fix</title>
       <link>https://nexus.zteo.com/posts/wordpress-toolbar-plugin-and-wordpress-prefixes-a-fix/</link>
       <pubDate>Tue, 17 Feb 2009 03:23:45 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/wordpress-toolbar-plugin-and-wordpress-prefixes-a-fix/</guid>
       <description>First of all, that&amp;rsquo;s an awesome plugin that will allow your visitors to have a look at external links while retaining the ability to comment locally on your blog. Get it!</description>
     </item>
-    
     <item>
       <title>Fixing permissions after a Wordpress prefix change</title>
       <link>https://nexus.zteo.com/posts/fixing-permissions-after-a-wordpress-prefix-change/</link>
       <pubDate>Sat, 14 Feb 2009 01:48:55 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/fixing-permissions-after-a-wordpress-prefix-change/</guid>
       <description>Let&amp;rsquo;s say that you renamed your Wordpress tables.There may be several reasons for this. For instance, you installed Virtual Multiblog to support more than one blog with the same setup.</description>
     </item>
-    
     <item>
       <title>A quick-fix for the Tweetback spam issue</title>
       <link>https://nexus.zteo.com/posts/a-quick-fix-for-the-tweetback-spam-issue/</link>
       <pubDate>Mon, 19 Jan 2009 01:17:01 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/a-quick-fix-for-the-tweetback-spam-issue/</guid>
       <description>I do not get it. I am a big fan of Smashing Magazine and I think that it was very nice of @jdevalk to write a plug-in that gives us full control over &amp;ldquo;Tweetbacks&amp;rdquo;. See this blog entry.Where Smashing Magazine and the author lose me, though, is that I have not seen any reaction, either on the magazine&amp;rsquo;s web site, or the author&amp;rsquo;s blog, regarding the issue that many blogs who installed the plug-in seem to now be suffering: they are being  inundated with thousands of spammy Tweetbacks, most of them containing text like &amp;ldquo;This is a test&amp;rdquo;, presaging a potentially much more virulent attack when the spammers get their tool working.In fact, it may not be spam, but simply some tests gone wrong, but whatever the reason it caused grief to many blog owners &amp;ndash; including me.</description>
     </item>
-    
     <item>
       <title>ExtPHP now on Github</title>
       <link>https://nexus.zteo.com/posts/extphp-now-on-github/</link>
       <pubDate>Mon, 19 Jan 2009 00:29:05 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/extphp-now-on-github/</guid>
       <description>About 10 months ago, I released this tool, allowing developers to handle ExtJS like &amp;ldquo;managed&amp;rdquo; code in PHP: ExtPHP.</description>
     </item>
-    
     <item>
       <title>Six Resources To Study And Master Git Source Control</title>
       <link>https://nexus.zteo.com/posts/six-resources-to-study-and-master-git-source-control/</link>
       <pubDate>Mon, 05 Jan 2009 03:29:30 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/six-resources-to-study-and-master-git-source-control/</guid>
       <description>It&amp;rsquo;s no secret that Git, as a source code control tool, has become quite popular in 2008, in part boosted by the success of the socially oriented github.com Here is a list of six resources that will help you get more comfy with Git, whatever your current knowledge of the tool. Let me know if you think that, after reading these six documents, you can still point to a few stones left unturned.3 Reasons To Switch To Git From Subversion A to-the-point document, created by Mark McBride, that covers several scenarios and for each scenario, shows how Git could make your life easier if you are not using it yet.</description>
     </item>
-    
     <item>
       <title>More Blaqua</title>
       <link>https://nexus.zteo.com/posts/more-blaqua/</link>
       <pubDate>Sun, 28 Dec 2008 08:28:11 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/more-blaqua/</guid>
-      <description>A couple years ago, some lad going by the pseudonym of @binderskagnaes, at DeviantArt, released a set of icons on a dark background lovingly named &amp;ldquo;Blaqua.&amp;rdquo;
-Then, he ventured to a great forest and got devoured. Or something.
-Whatever the reason, he never created more icons, which frankly is a pity.
-I am still using his icon set in my Dock, unfortunately the set was created before Twitter got popular, uTorrent or Evernote were released on OS X, etc.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://nexus.zteo.com/images/moreblaqua.png&#34; alt=&#34;moreblaqua&#34;  /&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;A couple years ago, some lad going by the pseudonym of @binderskagnaes, at&#xA;&lt;a href=&#34;http://binderskagnaes.deviantart.com/art/Blaqua-35443206&#34;&gt;DeviantArt&lt;/a&gt;,&#xA;released a set of icons on a dark background lovingly named &amp;ldquo;Blaqua.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Then, he ventured to a great forest and got devoured. Or something.&lt;br&gt;&#xA;Whatever the reason, he never created more icons, which frankly is a pity.&lt;br&gt;&#xA;I am still using his icon set in my Dock, unfortunately the set was created&#xA;before Twitter got popular, uTorrent or Evernote were released on OS X, etc.&lt;br&gt;&#xA;So, I took a few hours to re-create an original dark PSD and put together a&#xA;pack of 24 new icons.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GMail is the new Mutt! Shortcuts galore.</title>
       <link>https://nexus.zteo.com/posts/gmail-is-the-new-mutt-shortcuts-galore/</link>
       <pubDate>Wed, 24 Dec 2008 12:02:18 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/gmail-is-the-new-mutt-shortcuts-galore/</guid>
       <description>I know, it&amp;rsquo;s a bold assertion. But, please, bear with me: as a longtime Unix-head, I need a tool that allows me to zoom through my emails rather than click-glance-click-glance-click-yawn-right-click-delete, etc.</description>
     </item>
-    
     <item>
       <title>A driver for your Darwin-based keyboard woes</title>
       <link>https://nexus.zteo.com/posts/a-driver-for-your-darwin-based-keyboard-woes/</link>
       <pubDate>Mon, 01 Dec 2008 01:05:36 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/a-driver-for-your-darwin-based-keyboard-woes/</guid>
       <description>I built this driver in 2007, to support Leopard Darwin on my wife&amp;rsquo;s laptop (hmmm where&amp;rsquo;s the &amp;ldquo;wink wink nudge nudge&amp;rdquo; smiley when you need it?)</description>
     </item>
-    
     <item>
       <title>Twitterified 1.2 is out: multi-accounts, mouse gestures, visual ignore...</title>
       <link>https://nexus.zteo.com/posts/twitterified-12-is-out-multi-accounts-mouse-gestures-visual-ignore/</link>
       <pubDate>Mon, 17 Nov 2008 07:55:19 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/twitterified-12-is-out-multi-accounts-mouse-gestures-visual-ignore/</guid>
       <description>Based on the very helpful feedback I received from the Twitterified client users, here is version 1.2&amp;rsquo;s log:</description>
     </item>
-    
     <item>
       <title>Twitterified taking off: is private beta a mistake?</title>
       <link>https://nexus.zteo.com/posts/twitterified-taking-off-is-private-beta-a-mistake/</link>
       <pubDate>Mon, 03 Nov 2008 03:33:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/twitterified-taking-off-is-private-beta-a-mistake/</guid>
       <description>Somehow, seemingly out of nowhere, Twitterers have started to notice Twitterified. I guess a few positive reviews help.</description>
     </item>
-    
     <item>
       <title>How I setup networking for VirtualBox on Ubuntu</title>
       <link>https://nexus.zteo.com/posts/how-i-setup-networking-for-virtualbox-on-ubuntu/</link>
       <pubDate>Fri, 22 Aug 2008 23:16:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/how-i-setup-networking-for-virtualbox-on-ubuntu/</guid>
       <description>Just a quick note: I use VirtualBox daily at work. It provides excellent emulation for my original XP install (the one that came pre-installed on my Dell box!) while my main OS is Ubuntu. Setting up networking is not as straightforward as with VMWare, so here is what I had to do:</description>
     </item>
-    
     <item>
       <title>How To Make The EFF ISP Throttling Tool Work On Leopard</title>
       <link>https://nexus.zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/</link>
       <pubDate>Sat, 02 Aug 2008 22:54:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/how-to-make-the-eff-isp-throttling-tool-work-on-leopard/</guid>
       <description>I love the idea of Switzerland, the new EFF tool for checking ISP throttling; unfortunately as of release Zero.0.5, Leopard seems to still be a mere afterthought. Here is how I worked around the few things that were not working out of the box.</description>
     </item>
-    
     <item>
       <title>Twitterified…at last!</title>
       <link>https://nexus.zteo.com/posts/twitterifiedat-last/</link>
       <pubDate>Sat, 26 Jul 2008 23:56:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/twitterifiedat-last/</guid>
       <description>I cannot believe that it took me so long to get my ducks in a row.First, Twitterified was entirely written in Javascript, like most AIR clients. But some testing showed that rewriting in AS3 would dramatically increase responsiveness.Then, I had to work on my web framework while creating twitterified.com. And finally I was only able to offer a decent video thanks to the overall godness offered by Vimeo.But hey, here it is! For a limited period of time, if you go to the invite page and enter the code &amp;ldquo;nexus&amp;rdquo;, you will be automatically added to the private beta program.</description>
     </item>
-    
     <item>
       <title>How I added real ActiveRecord support to adodb</title>
       <link>https://nexus.zteo.com/posts/how-i-added-real-activerecord-support-to-adodb/</link>
       <pubDate>Sat, 26 Jul 2008 08:49:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/how-i-added-real-activerecord-support-to-adodb/</guid>
       <description>For my new projects, I have decided to use PHP5, mostly because at least a couple projects will be worked on by a team and the learning curve is fairly forgiving.I decided, however, to follow the model offered by Rails.  I looked into a few PHP frameworks, such as Akelos, but realized that they were too constraining for our purpose. That&amp;rsquo;s when I decided to develop my own thin layer framework.</description>
     </item>
-    
     <item>
       <title>Current Obsessions, June ‘08</title>
       <link>https://nexus.zteo.com/posts/current-obsessions-june-08/</link>
       <pubDate>Mon, 09 Jun 2008 17:59:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/current-obsessions-june-08/</guid>
       <description>It&amp;rsquo;s a new feature! I spend way too much time reading interesting papers&amp;hellip; I should not be so selfish as to not share them.</description>
     </item>
-    
     <item>
       <title>Beware: Google Adwords Phishing</title>
       <link>https://nexus.zteo.com/posts/beware-google-adwords-phishing/</link>
       <pubDate>Wed, 07 May 2008 07:16:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/beware-google-adwords-phishing/</guid>
       <description>I received this email today:</description>
     </item>
-    
     <item>
       <title>Ext Licensing: Oh, what a mess.</title>
       <link>https://nexus.zteo.com/posts/ext-licensing-oh-what-a-mess/</link>
       <pubDate>Sun, 27 Apr 2008 09:46:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/ext-licensing-oh-what-a-mess/</guid>
       <description>When things start smelling &amp;ldquo;funny&amp;rdquo; in the open-source community, they tend to go to the dogs with the haste of a drunk marching band.</description>
     </item>
-    
     <item>
       <title>ExtPHP: An ExtJS Converter/Wrapper for PHP Developers</title>
       <link>https://nexus.zteo.com/posts/extphp-an-extjs-converterwrapper-for-php-developers/</link>
       <pubDate>Wed, 05 Mar 2008 04:49:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/extphp-an-extjs-converterwrapper-for-php-developers/</guid>
       <description>It is something that I had to think about in my day job, because my team is migrating to PHP for web development and I believe that we simply do not have enough time for them to learn JavaScript&amp;rsquo;s intricacies, I needed to be the one person who would have to wrestle JavaScript when problems happened. I therefore needed a way to insulate them from the gory details, which is why I created ExtPHP.As you may have guessed from subtle hints, such as this entry&amp;rsquo;s 12-feet tall header, ExtPHP creates a PHP wrapper for ExtJS.</description>
     </item>
-    
     <item>
       <title>PON or “PHP Object Notation” Is Already Here</title>
       <link>https://nexus.zteo.com/posts/pon-or-php-object-notation-is-already-here/</link>
       <pubDate>Sat, 09 Feb 2008 01:01:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/pon-or-php-object-notation-is-already-here/</guid>
       <description>UPDATE</description>
     </item>
-    
     <item>
       <title>jQuery UI now professionally maintained!</title>
       <link>https://nexus.zteo.com/posts/jquery-ui-now-professionally-maintained/</link>
       <pubDate>Thu, 24 Jan 2008 06:33:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/jquery-ui-now-professionally-maintained/</guid>
       <description>Well, this is exciting:Paul Bakaus, lead jQuery UI developer, announced today that he was hired by Liferay, Inc., of L.A., to work full time on his baby.</description>
     </item>
-    
     <item>
       <title>Leopard: Quick Removal of iCalFix</title>
       <link>https://nexus.zteo.com/posts/leopard-quick-removal-of-icalfix/</link>
       <pubDate>Fri, 04 Jan 2008 02:48:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/leopard-quick-removal-of-icalfix/</guid>
       <description>Great news: with Leopard, there is no need for iCalFix anymore!Bad news: iCalFix is not compatible with the new version of iCal and the latter keeps complaining about the former.A lot of people have asked the author -BTW: thanks again, Robert, for creating iCalFix when it was needed- how to remove iCalFix but never got a reply.</description>
     </item>
-    
     <item>
       <title>Kodachi 0.5.1 now skinnable (and more)</title>
       <link>https://nexus.zteo.com/posts/kodachi-051-now-skinnable-and-more/</link>
       <pubDate>Tue, 04 Dec 2007 08:27:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/kodachi-051-now-skinnable-and-more/</guid>
-      <description>Kodachi v0.5.1 is out! It&amp;rsquo;s good news for developers who want to write plug-ins or if you wish to change the look and feel of the application:	A demo plug-in is now included.  All it does is add a new direct word to Kodachi&amp;rsquo;s vocabulary: &amp;lsquo;Demo&amp;rsquo;. Type it, select some action, and it will display a Growl-like notification confirming your action. A very easy starting place for budding plug-in developers.-	Kodachi&amp;rsquo;s user interface is now skinnable. Actually this goes a bit beyond a simple skin as you can change its behaviour alltogether. Note that when launching Kodachi, you will now see the new demo skin, called &amp;lsquo;Bezel&amp;rsquo;, that I created. If you are familiar with QuickSilver, this is certainly an interface you are already used to. If you wish to work with the old interface, simply disable the &amp;lsquo;BezelInterface&amp;rsquo; plug-in.-	The installer now checks which version of .Net is installed on your PC, if any, and offers to install the correct version if necessary.Download Kodachi 0.5.1</description>
+      <description>Kodachi v0.5.1 is out! It&amp;rsquo;s good news for developers who want to write plug-ins or if you wish to change the look and feel of the application:&#x9;A demo plug-in is now included.  All it does is add a new direct word to Kodachi&amp;rsquo;s vocabulary: &amp;lsquo;Demo&amp;rsquo;. Type it, select some action, and it will display a Growl-like notification confirming your action. A very easy starting place for budding plug-in developers.-&#x9;Kodachi&amp;rsquo;s user interface is now skinnable. Actually this goes a bit beyond a simple skin as you can change its behaviour alltogether. Note that when launching Kodachi, you will now see the new demo skin, called &amp;lsquo;Bezel&amp;rsquo;, that I created. If you are familiar with QuickSilver, this is certainly an interface you are already used to. If you wish to work with the old interface, simply disable the &amp;lsquo;BezelInterface&amp;rsquo; plug-in.-&#x9;The installer now checks which version of .Net is installed on your PC, if any, and offers to install the correct version if necessary.Download Kodachi 0.5.1</description>
     </item>
-    
     <item>
       <title>Kodachi now available through SVN/Trac</title>
       <link>https://nexus.zteo.com/posts/kodachi-now-available-through-svntrac/</link>
       <pubDate>Mon, 03 Dec 2007 00:54:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/kodachi-now-available-through-svntrac/</guid>
       <description>You can now anonymously sync. to the bleeding edge version of Kodachi&amp;rsquo;s source code at svn://nextbbs.com/kodachi</description>
     </item>
-    
     <item>
       <title>Here Comes Kodachi!</title>
       <link>https://nexus.zteo.com/posts/here-comes-kodachi/</link>
       <pubDate>Sun, 04 Nov 2007 08:47:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/here-comes-kodachi/</guid>
       <description>Oh, man. Jack of all trades, master of&amp;hellip;not many?</description>
     </item>
-    
     <item>
       <title>My First Screencast</title>
       <link>https://nexus.zteo.com/posts/my-first-screencast/</link>
       <pubDate>Thu, 18 Oct 2007 08:39:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/my-first-screencast/</guid>
       <description>Well, this was much more work than I had anticipated.And now, of course, I find that my voice sounds weird, the rhythm seems off, etc. The way I&amp;rsquo;m supposed to feel about it, I guess.Here is the quite undecipherable version. For a better, bigger, readable one: &lt;a href=&#34;http://www.nextbbs.com/do_topic_id_1166&#34;&gt;http://www.nextbbs.com/do_topic_id_1166&lt;/a&gt;</description>
     </item>
-    
     <item>
       <title>L.A. Wired NextFest ‘07</title>
       <link>https://nexus.zteo.com/posts/la-wired-nextfest-07/</link>
       <pubDate>Mon, 17 Sep 2007 06:05:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/la-wired-nextfest-07/</guid>
       <description>Yesterday, Alex and I went to the Convention Center and had a look. We had never been to any NextFest or anything with the word wired in its name -not even the Denmark wired nipples Fest- so you bet that we were pretty curious.</description>
     </item>
-    
     <item>
       <title>SEO: How I killed a highly successful message board with just ONE mistake (and how you can avoid it)</title>
       <link>https://nexus.zteo.com/posts/seo-how-i-killed-a-highly-successful-message-board-with-just-one-mistake-and-how-you-can-avoid-it/</link>
       <pubDate>Sun, 09 Sep 2007 08:16:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/seo-how-i-killed-a-highly-successful-message-board-with-just-one-mistake-and-how-you-can-avoid-it/</guid>
       <description>Do you have any idea how much disregarding basic SEO (Search Engine Optimization) rules can cost you? I have the answer and it&amp;rsquo;s &amp;ldquo;a lot&amp;rdquo;. And take my word for it: I am not an SEO consultant and have nothing to sell, here.</description>
     </item>
-    
     <item>
       <title>Open-Source Management: feeling a bit vindicated…</title>
       <link>https://nexus.zteo.com/posts/open-source-management-feeling-a-bit-vindicated/</link>
       <pubDate>Tue, 24 Jul 2007 08:15:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/open-source-management-feeling-a-bit-vindicated/</guid>
       <description>Funny coincidence: mere days after I decide to re-post my views on open-source, Daniel Robbins, of Gentoo fame, decides to post a late-night rant trying to address the shortcomings of the Gentoo Foundation.</description>
     </item>
-    
     <item>
       <title>OpensIFRr now for Windows</title>
       <link>https://nexus.zteo.com/posts/opensifrr-now-for-windows/</link>
       <pubDate>Mon, 16 Jul 2007 07:35:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/opensifrr-now-for-windows/</guid>
       <description>A couple months ago, I made a post about my new toy: OpensIFRr, which lets you easily create awesome Flash files that you can use to render just about any font in your web pages.</description>
     </item>
-    
     <item>
       <title>Flv Player</title>
       <link>https://nexus.zteo.com/posts/flv-player/</link>
       <pubDate>Mon, 02 Jul 2007 00:19:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/flv-player/</guid>
       <description>The player I used in my previous post ( &amp;rsquo;nBBS Admin CP&amp;rsquo; ) is now available in the Wordpress.org&amp;rsquo;s plugin directory.</description>
     </item>
-    
     <item>
       <title>NextBBS: New Admin CP Preview</title>
       <link>https://nexus.zteo.com/posts/nextbbs-new-admin-cp-preview/</link>
       <pubDate>Mon, 02 Jul 2007 00:03:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/nextbbs-new-admin-cp-preview/</guid>
       <description>Soon to be unleashed on your unsuspecting screens (well&amp;hellip;if you&amp;rsquo;re using NextBBS, that is *):[flvplayer http://www.nextbbs.com/D/acp2.flv]</description>
     </item>
-    
     <item>
       <title>OS X: “Please try installing again”</title>
       <link>https://nexus.zteo.com/posts/os-x-please-try-installing-again/</link>
       <pubDate>Sat, 24 Mar 2007 22:29:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/os-x-please-try-installing-again/</guid>
       <description>It&amp;rsquo;s like this message has become a feature of OS X.</description>
     </item>
-    
     <item>
       <title>Where is getElementsByClassName()?</title>
       <link>https://nexus.zteo.com/posts/where-is-getelementsbyclassname/</link>
       <pubDate>Mon, 15 Jan 2007 00:11:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/where-is-getelementsbyclassname/</guid>
       <description>Since one of the goals of this blog is to show you how we resolved some of the issues we encounter when writing modern Web applications, allow me to repost this short article that I originall posted at goodjavascript.com</description>
     </item>
-    
     <item>
       <title>Create your own WebTop in php/js in no time</title>
       <link>https://nexus.zteo.com/posts/create-your-own-webtop-in-phpjs-in-no-time/</link>
       <pubDate>Mon, 01 Jan 2007 04:00:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/create-your-own-webtop-in-phpjs-in-no-time/</guid>
       <description>They are everywhere: protopage, pageflakes, netvibes et al are free, easy to use -as long as you have a powerful browser- and moderatly eye-pleasing.</description>
     </item>
-    
     <item>
       <title>C!D v2 = nextBBS multi</title>
       <link>https://nexus.zteo.com/posts/cd-v2-nextbbs-multi/</link>
       <pubDate>Sun, 10 Dec 2006 09:26:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/cd-v2-nextbbs-multi/</guid>
       <description>Well, after spending quite some time cleaning up the code, making sure that no &amp;lsquo;dangerous&amp;rsquo; Admin CP operation is available in multi-boards mode, and identifying which settings need to be made immutable, we are almost there.</description>
     </item>
-    
     <item>
       <title>Opening of this development blog</title>
       <link>https://nexus.zteo.com/posts/opening-of-this-development-blog/</link>
       <pubDate>Thu, 07 Dec 2006 07:33:46 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/opening-of-this-development-blog/</guid>
       <description>Not much to say. It&amp;rsquo;s open!</description>
     </item>
-    
     <item>
       <title>Google&#43; (again)</title>
       <link>https://nexus.zteo.com/posts/google-again/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/google-again/</guid>
-      <description>In this post:	Google+ on your Mac, using its own credentials	Google+ as its own desktop app, with a nice icon	Using a complex GreaseMonkey script in Safari or Fluid</description>
+      <description>In this post:&#x9;Google+ on your Mac, using its own credentials&#x9;Google+ as its own desktop app, with a nice icon&#x9;Using a complex GreaseMonkey script in Safari or Fluid</description>
     </item>
-    
     <item>
       <title>Twitterified v1.3 is out: fixes, improvements, Present.ly support</title>
       <link>https://nexus.zteo.com/posts/twitterified-v13-is-out-fixes-improvements-presently-support/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/twitterified-v13-is-out-fixes-improvements-presently-support/</guid>
       <description>Well, the title pretty much says it all: v1.3 is now officially out.</description>
     </item>
-    
   </channel>
 </rss>

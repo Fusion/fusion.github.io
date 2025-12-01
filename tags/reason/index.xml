@@ -1,139 +1,110 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>reason on The Nexus</title>
+    <title>Reason on The Nexus</title>
     <link>https://nexus.zteo.com/tags/reason/</link>
-    <description>Recent content in reason on The Nexus</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Reason on The Nexus</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Sep 2018 13:33:01 -1400</lastBuildDate><atom:link href="https://nexus.zteo.com/tags/reason/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Sep 2018 13:33:01 -1400</lastBuildDate>
+    <atom:link href="https://nexus.zteo.com/tags/reason/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a ReasonML Native App: Memoizing DNS queries</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-14/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1400</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-14/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Native JSON Handling</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-13/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1300</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-13/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Handling CSV Files</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-12/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1200</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-12/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Shell Commands</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-11/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1100</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-11/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Web Requests</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-10/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -1000</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-10/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Native Promises</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-9/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0900</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-9/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Files I/Os</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-8/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-8/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Python Plugins</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-7/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0700</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-7/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Curses Terminal Interface</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-6/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0600</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Configuration Files</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-5/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0500</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-5/</guid>
       <description>&lt;p&gt;This is going to be a fairly short post, as it focuses on using the &lt;code&gt;config-file&lt;/code&gt; library. As previously mentioned, when I mention a library in RasonML&amp;rsquo;s native context, chances are pretty good that I am referring to one of OCaml&amp;rsquo;s many available libraries.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Command Line Arguments</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-4/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0400</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-4/</guid>
       <description>&lt;p&gt;Before going into how specific features were implemented with Reason and OCaml&amp;rsquo;s help, let&amp;rsquo;s have a quick look at our application&amp;rsquo;s logic&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Building and Running</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-3/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0300</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-3/</guid>
-      <description>&lt;p&gt;This is by far the most boring piece of this whole endeavor.&lt;/p&gt;
-&lt;p&gt;Unfortunately, as we accumulate years of experience, old habits accrete on the programmer and tools such as &lt;code&gt;Make&lt;/code&gt; become an integral part of our fossilized identity. You will have to forgive me for my use of Makefiles!&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is by far the most boring piece of this whole endeavor.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately, as we accumulate years of experience, old habits accrete on the programmer and tools such as &lt;code&gt;Make&lt;/code&gt; become an integral part of our fossilized identity. You will have to forgive me for my use of Makefiles!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: Installing, Editing, Configuring</title>
       <link>https://nexus.zteo.com/posts/reason-native-app-part-2/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0200</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app-part-2/</guid>
-      <description>&lt;h1 id=&#34;installing-reason&#34;&gt;Installing Reason&lt;/h1&gt;
-&lt;p&gt;First, we will need OCaml. This is because our Reason code will be compiled to OCaml, then, using the OCaml compiler, to native code.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;installing-reason&#34;&gt;Installing Reason&lt;/h1&gt;&#xA;&lt;p&gt;First, we will need OCaml. This is because our Reason code will be compiled to OCaml, then, using the OCaml compiler, to native code.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating a ReasonML Native App: What We Are Building</title>
       <link>https://nexus.zteo.com/posts/reason-native-app/</link>
       <pubDate>Sat, 08 Sep 2018 13:33:01 -0100</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/reason-native-app/</guid>
       <description>&lt;p&gt;I believe this is, as of now (2018), one of few articles you will find about creating a native application using &lt;a href=&#34;https://reasonml.github.io/&#34;&gt;ReasonML&lt;/a&gt;. While Facebook came up with this interesting language/syntax that compiles to OCaml, it seems that they have focused their energy on transpiling it to JavaScript using &lt;a href=&#34;https://github.com/BuckleScript/bucklescript&#34;&gt;BuckleScript&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

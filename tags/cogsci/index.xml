@@ -1,36 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cogsci on The Nexus</title>
+    <title>Cogsci on The Nexus</title>
     <link>https://nexus.zteo.com/tags/cogsci/</link>
-    <description>Recent content in cogsci on The Nexus</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Cogsci on The Nexus</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2020 10:54:24 +0200</lastBuildDate><atom:link href="https://nexus.zteo.com/tags/cogsci/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 May 2020 10:54:24 +0200</lastBuildDate>
+    <atom:link href="https://nexus.zteo.com/tags/cogsci/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decoy pricing: Why, Bloomberg?</title>
       <link>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</link>
       <pubDate>Sat, 30 May 2020 10:54:24 +0200</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</guid>
-      <description>A quick note on something currently mistifying me.
-Dan Ariely&amp;rsquo;s Predictably Irrational is a wonderful book, full of studies and academic research and whose sole purpose is to make us feel bad about how far from smart we can be, when it comes to marketing.
- Predicably Irrational  Get this book!     In it, he goes beyong simply describing price anchoring, which is the practice of steering your mind towards what the seller thinks is a fair price, and would really like you to agree that, why, but of course it is!</description>
+      <description>&lt;p&gt;&lt;strong&gt;A quick note on something currently mistifying me.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Dan Ariely&amp;rsquo;s &lt;em&gt;Predictably Irrational&lt;/em&gt; is a wonderful book, full of studies and academic research and whose sole purpose is to make us feel bad about how far from smart we can be, when it comes to marketing.&lt;/p&gt;&#xA;&lt;div class=&#34;LinkPreview&#34;&gt;&#xA;    &lt;a href=&#34;https://www.amazon.com/dp/B002RI9QJE/&#34;&gt;&#xA;    &lt;img src=&#34;https://nexus.zteo.com/images/predictably-irrational.jpg&#34;&gt;&#xA;      &lt;div class=&#34;content&#34;&gt;&#xA;      &lt;h4&gt;&#xA;          Predicably Irrational&#xA;      &lt;/h4&gt;&#xA;      &lt;div class=&#34;description&#34;&gt;&#xA;          Get this book!&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;In it, he goes beyong simply describing &lt;strong&gt;price anchoring&lt;/strong&gt;, which is the practice of steering your mind towards what &lt;em&gt;the seller&lt;/em&gt; thinks is a fair price, and would really like &lt;em&gt;you&lt;/em&gt; to agree that, why, but of course it is!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fixing Vmware Fusion Broken Vmmon</title>
       <link>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</link>
       <pubDate>Sat, 23 Feb 2019 14:54:24 -0800</pubDate>
-      
       <guid>https://nexus.zteo.com/posts/decoy-pricing-bloomberg/</guid>
-      <description>Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded
- /dev/vmmon: broken pipe
- or
- /dev/vmmon: No such file or directory
- Here are three different fixes, because this is definitely nor a &amp;ldquo;one size fits all&amp;rdquo; scenario:
-1-If Fusion complains about not being authorized Go to the Security and Privacy control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted.</description>
+      <description>&lt;p&gt;Obviously, this post is MacOS-specific. This is about when Fusion throws the dreaded&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;/dev/vmmon: broken pipe&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;or&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;/dev/vmmon: No such file or directory&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Here are three different fixes, because this is definitely nor a &amp;ldquo;one size fits all&amp;rdquo; scenario:&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-if-fusion-complains-about-not-being-authorized&#34;&gt;1-If Fusion complains about not being authorized&lt;/h2&gt;&#xA;&lt;p&gt;Go to the &lt;span class=&#34;simpleitem1&#34;&gt;Security and Privacy&lt;/span&gt;&#xA; control panel; make sure that both App Store and signed applications are authorized; check that Fusion is not explicitely blacklisted.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

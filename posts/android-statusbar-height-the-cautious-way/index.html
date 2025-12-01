@@ -33,7 +33,7 @@
     <link rel="preload" href="https://nexus.zteo.com//js/main.js" as="script" />
     <link rel="preload" href="https://nexus.zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1668307611" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1764568659" type="text/css" rel="stylesheet" />
     
     
     <link rel="webmention" href="https://webmention.io/zteo.com/webmention" />
@@ -249,18 +249,18 @@ increasingly dangerous assumption.</p>
 (your visible area&rsquo;s height - zero). Google never made any commitment that the
 status bar will always start at pixel zero.</p>
 <p>So, here is how I do it:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Rect</span> <span class="n">outerRect</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rect</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="n">Rect</span> <span class="n">usableRect</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rect</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="n">Window</span> <span class="n">window</span><span class="o">=</span> <span class="n">Home</span><span class="o">.</span><span class="na">getInstance</span><span class="o">().</span><span class="na">getWindow</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="n">window</span><span class="o">.</span><span class="na">getDecorView</span><span class="o">().</span><span class="na">getGlobalVisibleRect</span><span class="o">(</span><span class="n">outerRect</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl"><span class="n">window</span><span class="o">.</span><span class="na">getDecorView</span><span class="o">().</span><span class="na">getWindowVisibleDisplayFrame</span><span class="o">(</span><span class="n">usableRect</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl"><span class="n">statusBarHeight</span> <span class="o">=</span> <span class="n">usableRect</span><span class="o">.</span><span class="na">top</span> <span class="o">-</span> <span class="n">outerRect</span><span class="o">.</span><span class="na">top</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">// Sometimes, status bar is at bottom...
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">bottomGap</span> <span class="o">=</span> <span class="n">outerRect</span><span class="o">.</span><span class="na">bottom</span> <span class="o">-</span> <span class="n">usableRect</span><span class="o">.</span><span class="na">bottom</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="o">(</span><span class="n">bottomGap</span> <span class="o">&gt;</span> <span class="n">statusBarHeight</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">statusBarHeight</span> <span class="o">=</span> <span class="n">bottomGap</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Rect</span><span class="w"> </span><span class="n">outerRect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rect</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Rect</span><span class="w"> </span><span class="n">usableRect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rect</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Window</span><span class="w"> </span><span class="n">window</span><span class="o">=</span><span class="w"> </span><span class="n">Home</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getWindow</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">window</span><span class="p">.</span><span class="na">getDecorView</span><span class="p">().</span><span class="na">getGlobalVisibleRect</span><span class="p">(</span><span class="n">outerRect</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">window</span><span class="p">.</span><span class="na">getDecorView</span><span class="p">().</span><span class="na">getWindowVisibleDisplayFrame</span><span class="p">(</span><span class="n">usableRect</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">statusBarHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">usableRect</span><span class="p">.</span><span class="na">top</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">outerRect</span><span class="p">.</span><span class="na">top</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Sometimes, status bar is at bottom...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">int</span><span class="w"> </span><span class="n">bottomGap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outerRect</span><span class="p">.</span><span class="na">bottom</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">usableRect</span><span class="p">.</span><span class="na">bottom</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">if</span><span class="p">(</span><span class="n">bottomGap</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">statusBarHeight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">statusBarHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bottomGap</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div>
                     </div>
                 
               </section>
@@ -348,7 +348,7 @@ function clearActiveStatesInTableOfContents() {
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2022 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2025 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -365,7 +365,7 @@ function clearActiveStatesInTableOfContents() {
 <source src="https://nexus.zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1668307611"></script>
+<script src="/mermaid/mermaid.js?1764568659"></script>
 <script async src="https://nexus.zteo.com//js/main.js"></script>
 <script async src="https://nexus.zteo.com//js/basicLightbox.min.js"></script>
 

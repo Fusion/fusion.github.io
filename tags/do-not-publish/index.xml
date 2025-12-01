@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>do-not-publish on The Nexus</title>
-    <link>https://nexus.zteo.com/tags/do-not-publish/</link>
-    <description>Recent content in do-not-publish on The Nexus</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Do-Not-Publish on The Nexus</title>
+    <link>http://localhost:1313/tags/do-not-publish/</link>
+    <description>Recent content in Do-Not-Publish on The Nexus</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0800</lastBuildDate><atom:link href="https://nexus.zteo.com/tags/do-not-publish/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/do-not-publish/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Playground</title>
-      <link>https://nexus.zteo.com/meta/playground/</link>
+      <link>http://localhost:1313/meta/playground/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 -0800</pubDate>
-      
-      <guid>https://nexus.zteo.com/meta/playground/</guid>
-      <description>hey ho
-this is your first (leftmost) column!
- this is your second (rightmost) column!
-  </description>
+      <guid>http://localhost:1313/meta/playground/</guid>
+      <description>&lt;p&gt;hey ho&lt;/p&gt;&#xA;&lt;div class =&#34;flex-container&#34;&gt;&#xA;  &#xD;&#xA;    &lt;div class=&#34;flex-column&#34;&gt;&#xA;  &#xD;&#xA;        &lt;center&gt;&#xD;&#xA;            &lt;p&gt;this is your first (leftmost) column!&lt;/p&gt;&#xD;&#xA;        &lt;/center&gt;&#xD;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xD;&#xA;    &lt;div class=&#34;flex-column&#34;&gt;&#xA;  &#xD;&#xA;        &lt;center&gt;&#xD;&#xA;            &lt;p&gt;this is your second (rightmost) column!&lt;/p&gt;&#xD;&#xA;        &lt;/center&gt;&#xD;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xD;&#xA;&#xA;&lt;/div&gt;</description>
     </item>
-    
   </channel>
 </rss>

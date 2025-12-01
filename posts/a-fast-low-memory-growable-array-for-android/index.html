@@ -33,7 +33,7 @@
     <link rel="preload" href="https://nexus.zteo.com//js/main.js" as="script" />
     <link rel="preload" href="https://nexus.zteo.com//css/main.css" as="style" />
     
-    <link href="/mermaid/mermaid.cfr.css?1668307611" type="text/css" rel="stylesheet" />
+    <link href="/mermaid/mermaid.cfr.css?1764568659" type="text/css" rel="stylesheet" />
     
     
     <link rel="webmention" href="https://webmention.io/zteo.com/webmention" />
@@ -302,50 +302,50 @@ Here, the developer using this class may decide to look ahead for a value that
 may or may not exist. By resizing the array to 2 to the power of (log2(our
 desired row number&rsquo;s)+1), we make sure that this yet uncharted territory
 exists.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">GridInfo</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">mSize</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">mRow</span><span class="o">[];</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">GridInfo</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">(</span><span class="n">2</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">GridInfo</span><span class="o">(</span><span class="kt">int</span> <span class="n">size</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">mSize</span> <span class="o">=</span> <span class="n">size</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">mRow</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">mSize</span><span class="o">];</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">size</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">mSize</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">resize</span><span class="o">(</span><span class="kt">int</span> <span class="n">row</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">l2</span> <span class="o">=</span> <span class="n">1</span> <span class="o">+</span> <span class="o">(</span><span class="kt">int</span><span class="o">)(</span><span class="n">Math</span><span class="o">.</span><span class="na">log</span><span class="o">(</span><span class="n">row</span> <span class="o">+</span> <span class="n">1</span><span class="o">)</span> <span class="o">/</span> <span class="n">Math</span><span class="o">.</span><span class="na">log</span><span class="o">(</span><span class="n">2</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">pw</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span><span class="n">Math</span><span class="o">.</span><span class="na">pow</span><span class="o">(</span><span class="n">2</span><span class="o">,</span> <span class="n">l2</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="o">(</span><span class="n">pw</span> <span class="o">&gt;</span> <span class="n">mSize</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">resizedArray</span><span class="o">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">pw</span><span class="o">];</span>
-</span></span><span class="line"><span class="cl">            <span class="n">System</span><span class="o">.</span><span class="na">arraycopy</span><span class="o">(</span><span class="n">mRow</span><span class="o">,</span> <span class="n">0</span><span class="o">,</span> <span class="n">resizedArray</span><span class="o">,</span> <span class="n">0</span><span class="o">,</span> <span class="n">mSize</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">            <span class="n">mRow</span> <span class="o">=</span> <span class="n">resizedArray</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">mSize</span> <span class="o">=</span> <span class="n">pw</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">flickOn</span><span class="o">(</span><span class="kt">int</span> <span class="n">row</span><span class="o">,</span> <span class="kt">int</span> <span class="n">col</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="o">(</span><span class="n">row</span> <span class="o">+</span> <span class="n">1</span> <span class="o">&gt;=</span> <span class="n">mSize</span><span class="o">)</span> <span class="n">resize</span><span class="o">(</span><span class="n">row</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">mRow</span><span class="o">[</span><span class="n">row</span><span class="o">]</span> <span class="o">|=</span> <span class="o">(</span><span class="n">2</span><span class="o">&lt;&lt;</span><span class="n">col</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">flickOff</span><span class="o">(</span><span class="kt">int</span> <span class="n">row</span><span class="o">,</span> <span class="kt">int</span> <span class="n">col</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="o">(</span><span class="n">row</span> <span class="o">+</span> <span class="n">1</span> <span class="o">&gt;=</span> <span class="n">mSize</span><span class="o">)</span> <span class="n">resize</span><span class="o">(</span><span class="n">row</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">mRow</span><span class="o">[</span><span class="n">row</span><span class="o">]</span> <span class="o">&amp;=</span> <span class="o">~(</span><span class="n">2</span><span class="o">&lt;&lt;</span><span class="n">col</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kt">boolean</span> <span class="nf">isFlicked</span><span class="o">(</span><span class="kt">int</span> <span class="n">row</span><span class="o">,</span> <span class="kt">int</span> <span class="n">col</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="o">(</span><span class="n">row</span>  <span class="o">+</span> <span class="n">1</span> <span class="o">&gt;=</span> <span class="n">mSize</span><span class="o">)</span> <span class="n">resize</span><span class="o">(</span><span class="n">row</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">((</span><span class="n">mRow</span><span class="o">[</span><span class="n">row</span><span class="o">]</span> <span class="o">&amp;</span> <span class="o">(</span><span class="n">2</span><span class="o">&lt;&lt;</span><span class="n">col</span><span class="o">))</span> <span class="o">!=</span> <span class="n">0</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div><p>Of course, make sure to pick an initial value as close as possible to what you
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">GridInfo</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mSize</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mRow</span><span class="o">[]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">GridInfo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">(</span><span class="n">2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">GridInfo</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mRow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">mSize</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">size</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mSize</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">resize</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">row</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">l2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">log</span><span class="p">(</span><span class="n">row</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">1</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">log</span><span class="p">(</span><span class="n">2</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">pw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">l2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">pw</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">mSize</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">resizedArray</span><span class="o">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">pw</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">arraycopy</span><span class="p">(</span><span class="n">mRow</span><span class="p">,</span><span class="w"> </span><span class="n">0</span><span class="p">,</span><span class="w"> </span><span class="n">resizedArray</span><span class="p">,</span><span class="w"> </span><span class="n">0</span><span class="p">,</span><span class="w"> </span><span class="n">mSize</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">mRow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resizedArray</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">mSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pw</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">flickOn</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">row</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">col</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">row</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">1</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">mSize</span><span class="p">)</span><span class="w"> </span><span class="n">resize</span><span class="p">(</span><span class="n">row</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mRow</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="p">(</span><span class="n">2</span><span class="o">&lt;&lt;</span><span class="n">col</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">flickOff</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">row</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">col</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">row</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">1</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">mSize</span><span class="p">)</span><span class="w"> </span><span class="n">resize</span><span class="p">(</span><span class="n">row</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mRow</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;=</span><span class="w"> </span><span class="o">~</span><span class="p">(</span><span class="n">2</span><span class="o">&lt;&lt;</span><span class="n">col</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">isFlicked</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">row</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">col</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">row</span><span class="w">  </span><span class="o">+</span><span class="w"> </span><span class="n">1</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">mSize</span><span class="p">)</span><span class="w"> </span><span class="n">resize</span><span class="p">(</span><span class="n">row</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">((</span><span class="n">mRow</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">2</span><span class="o">&lt;&lt;</span><span class="n">col</span><span class="p">))</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">0</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Of course, make sure to pick an initial value as close as possible to what you
 expect your array&rsquo;s average size to be. &ldquo;2&rdquo; is not a very likely choice in
 most cases.</p>
 
@@ -436,7 +436,7 @@ function clearActiveStatesInTableOfContents() {
                 <div id="body-class" style="display: none;"></div>
                 <footer id="footer">
                     <section class="credits">
-                        <span class="credits-license"><i class="fa fa-copyright"></i>2022 The Nexus
+                        <span class="credits-license"><i class="fa fa-copyright"></i>2025 The Nexus
                     </span>
                     </section>
                 </footer>
@@ -453,7 +453,7 @@ function clearActiveStatesInTableOfContents() {
 <source src="https://nexus.zteo.com/images/hd0198.mp4" type="video/mp4">
 </video>
 
-<script src="/mermaid/mermaid.js?1668307611"></script>
+<script src="/mermaid/mermaid.js?1764568659"></script>
 <script async src="https://nexus.zteo.com//js/main.js"></script>
 <script async src="https://nexus.zteo.com//js/basicLightbox.min.js"></script>
 
